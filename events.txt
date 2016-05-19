@@ -1,4 +1,0 @@
-event "enclave opens"
-	link Xenos Suhail
-	unvisit Xenos
-	unvisit Suhail
