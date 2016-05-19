@@ -1,0 +1,65 @@
+person "Miras the Omniscient"
+	government "Free Worlds"
+	frequency 1000
+	personality
+		plunders
+	phrase
+		word
+			"Please be aware that you've currently got The Enclave installed- while it only adds a new galaxy and some outfits currently, if you're experiencing bugs please remember to uninstall this mod before asking on the Steam forums for help. Hope you're enjoying the mod so far!"
+	ship Bactrian "F.S. Inferno"
+		"never disabled"
+		attributes
+			category "Heavy Warship"
+			"cost" 17600000
+			"shields" 17500
+			"hull" 8600
+			"required crew" 70
+			"bunks" 245
+			"mass" 940
+			"drag" 16.1
+			"heat dissipation" 0.4
+			"fuel capacity" 700
+			"cargo space" 530
+			"outfit space" 740
+			"weapon capacity" 300
+			"engine capacity" 180			
+		outfits
+			"Quarg Skylance" 2
+			"Intrusion Countermeasures" 16
+			"Quantum Shield Generator"
+			"Jump Drive"
+			"Korath Warder" 4
+			"Korath Tek'nel Reactor"
+			"Korath Heat Shunt" 2
+			Ramscoop
+			"A520 Atomic Thruster"
+			"A125 Atomic Steering"
+			"A525 Atomic Steering"
+			"AR120 Reverse Thruster"
+			"Mass Expansion" 14
+			"Fuel Pod" 5
+			"White Sun Reactor"
+			"Laser Rifle" 247
+			"Small Bunk Room"
+			"Fragmentation Grenades" 247
+			"Nerve Gas" 247
+			
+		engine -18 230
+		engine 18 230
+		gun -15 -226
+		gun 15 -226
+		gun -40 -133
+		gun -45 -128
+		turret -22 -148 "Quarg Skylance"
+		turret 26 -80 "Quarg Skylance"
+		turret -41 -20 "Korath Warder"
+		turret 32 -7 "Korath Warder"
+		turret 53 82 "Korath Warder"
+		turret -37 186 "Korath Warder"
+		fighter -38 -26
+		fighter 35 36
+		fighter -47 97
+		explode "small explosion" 25
+		explode "medium explosion" 35
+		explode "big explosion" 45
+		explode "huge explosion" 30
