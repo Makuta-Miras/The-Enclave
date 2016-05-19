@@ -1,0 +1,31 @@
+government Enclave
+	swizzle 4
+	color .99 .99 .99
+		
+	"player reputation" 1000
+	"attitude toward"
+		"XSZ Corporation" 5
+		"Ascendancy" -50000
+		"Merchant" 100
+	bribe 0
+	
+government "XSZ Corporation"
+	swizzle 3
+	color 0 .41 .71
+		
+	"player reputation" 500
+	"attitude toward"
+		"Enclave" 5
+		"Merchant" 150
+		"Ascendancy" 0		
+	bribe 0
+	
+government Ascendancy
+	swizzle 6
+	color 0 0 0
+	
+	"player reputation" 0
+	"attitude toward"
+		"Enclave" -50000
+		"XSZ Corporation" 0
+	bribe 0

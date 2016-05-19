@@ -1,0 +1,238 @@
+ship Bloodhound
+	sprite ship/Bloodhound
+	attributes
+		category "Heavy Warship"
+		cost 4000000
+		shields 50000
+		hull 10000
+		"required crew" 15
+		bunks 30
+		mass 600
+		drag 8.0
+		"heat dissipation" .7
+		"fuel capacity" 600
+		"cargo space" 20
+		"outfit space" 996
+		"weapon capacity" 350
+		"engine capacity" 225
+		weapon
+			"blast radius" 80
+			"shield damage" 800
+			"hull damage" 400
+			"hit force" 1200
+	outfits
+		"Particle Cannon" 2
+		"Electron Turret" 5
+		"Armageddon Core"
+		"Breeder Reactor"
+		"LP576a Battery Pack"
+		"S-970 Regenerator"
+		"Liquid Helium Cooler"
+		"A370 Atomic Thruster"
+		"A865 Atomic Steering"
+		"Hyperdrive"
+	engine -24 180
+	engine 24 180
+	gun 23 -188 "Particle Cannon"
+	gun -23 -188 "Particle Cannon"
+	turret 75 -31 "Electron Turret"
+	turret -75 -31 "Electron Turret"
+	turret 0 140 "Heavy Anti-Missile Turret"
+	turret 30 44 "Electron Turret"
+	turret -30 44 "Electron Turret"
+	explode "tiny explosion" 10
+	explode "small explosion" 25
+	explode "medium explosion" 25
+	explode "big explosion" 10
+	description "The Bloodhound is a lean, mean fighting vessel recently produced by XSZ Shipyards. Equipped with slightly outdated weaponry, for Enclave space at least, the Bloodhound makes up for the lack of high-end weapons through its impressive speed, handling like an interceptor as it dominates the battlefield."
+	description "	As a result of the massive energy production systems on board, the Bloodhound is currently one of the most expensive ships available in this galaxy."
+
+ship "Muesli Carrier"
+	sprite "ship/SuperDuperCarrier"
+	attributes
+		category "Heavy Warship"
+		"cost" 10000000
+		"shields" 21400
+		"hull" 8300
+		"required crew" 70
+		"bunks" 100
+		"mass" 900
+		"drag" 10
+		"heat dissipation" .6
+		"fuel capacity" 600
+		"cargo space" 70
+		"outfit space" 1000
+		"weapon capacity" 200
+		"engine capacity" 200
+		weapon
+			"blast radius" 120
+			"shield damage" 1200
+			"hull damage" 600
+			"hit force" 1800
+	outfits
+		"Heavy Anti-Missile Turret" 3
+		
+		"Fusion Reactor"
+		"LP288a Battery Pack"
+		"D94-YV Shield Generator"
+		"Water Coolant System"
+		
+		"X5700 Ion Thruster"
+		"X4200 Ion Steering"
+		"Hyperdrive"
+		
+	engine 13.5 152.5
+	engine -13.5 152.5
+	turret 0 90.5 "Heavy Anti-Missile Turret"
+	turret 0 32 "Heavy Anti-Missile Turret"
+	turret 0 -25.5 "Heavy Anti-Missile Turret"
+	fighter -75 -93.5 left
+	fighter -75 -55 left
+	fighter -75 -18 left
+	fighter -75 22 left
+	fighter -75 62 left
+	fighter -75 103 left
+	fighter 75 -93.5 right
+	fighter 75 -55 right
+	fighter 75 -18 right
+	fighter 75 22 right
+	fighter 75 62 right
+	fighter 75 103 right
+	explode "tiny explosion" 20
+	explode "small explosion" 45
+	explode "medium explosion" 50
+	explode "big explosion" 40
+	explode "huge explosion" 10
+	description "##### there's a lot of fighter bays on this thing"	
+	description "	This is a somewhat weird ship that the Enclave appear to have cobbled together from pieces of Bactrians. Able to carry twelve fighters, the Muesli Carrier is a force to be reckoned with."
+	description "	Okay, I admit it- I've got no idea where the name came from. No idea at all."
+	
+ship "Sea Drake"	
+	sprite "ship/Sea Drake"
+	attributes
+		category "Light Warship"
+		"cost" 1000000
+		"shields" 3000
+		"hull" 850
+		"required crew" 5
+		"bunks" 10
+		"mass" 150
+		"drag" 3.7
+		"heat dissipation" .8
+		"fuel capacity" 500
+		"cargo space" 50
+		"outfit space" 270
+		"weapon capacity" 70
+		"engine capacity" 80
+		weapon
+			"blast radius" 36
+			"shield damage" 360
+			"hull damage" 180
+			"hit force" 540
+	outfits
+		"Beam Laser" 2
+		"Electron Beam" 2
+				
+		"nGVF-DD Fuel Cell"
+		"Kindle-Class Power Pack"
+		"D23-QP Shield Generator"
+		
+		"Greyhound Plasma Thruster"
+		"Greyhound Plasma Steering"
+		"Hyperdrive"
+		
+	engine 10.5 54
+	engine -10.5 54
+	engine 0 52.5
+	gun -65 7.5 "Beam Laser"
+	gun 65 7.5 "Beam Laser"
+	gun -39.5 -16 "Electron Beam"
+	gun 39.5 -16 "Electron Beam"
+	explode "tiny explosion" 15
+	explode "small explosion" 20
+	explode "medium explosion" 10
+	description "
+	
+	
+ship "Fregter"
+	sprite "ship/Fregter"
+	attributes
+		category "Light Freighter"
+		cost 200000
+		shields 2750
+		hull 2100
+		"required crew" 9
+		bunks 50
+		mass 500
+		drag 5
+		"heat dissipation" .5
+		"fuel capacity" 600 
+		"cargo space" 140
+		"outfit space" 270
+		"weapon capacity" 85
+		"engine capacity" 80
+		weapon
+			"blast radius" 2
+			"shield damage" 2
+			"hull damage" 2
+			"hit force" 2
+	outfits
+		"Heavy Anti-Missile Turret"
+		"Quad Blaster Turret"
+		
+		"NT-200 Nucleovoltaic"
+		"LP072a Battery Pack"
+		"D23-QP Shield Generator"
+		
+		"Greyhound Plasma Steering"
+		"Greyhound Plasma Thruster"
+		"Scram Drive"
+	
+	engine 9 82.5
+	engine -9 82.5
+	turret 0 -1.5 "Quad Blaster Turret"
+	turret 0 48 "Heavy Anti-Missile Turret"
+	
+	explode "tiny explosion" 10
+	explode "small explosion" 25
+	explode "medium explosion" 25
+	explode "big explosion" 10
+	description "This was one of the first ships developed by XSZ after the company's inception. Not much more than the traditional freighters found back in the Republic, this ship is a slice of home oddly out of place in this galaxy."
+	description "	Oddly enough, this ship's name came about due to a data corruption. Originally referred to by XSZ developers as The Freighter, when XSZ's servers were hacked, the schematic's name was changed to `The Fregter`- and it stuck."
+	
+ship "Dart"
+	sprite "ship/Dart"
+	attributes
+		category "Fighter"
+		"cost" 120000
+		"shields" 1200
+		"hull" 200
+		"required crew" 1
+		"bunks" 1
+		"mass" 37
+		"drag" .81
+		"heat dissipation" .85
+		"outfit space" 100
+		"weapon capacity" 20
+		"engine capacity" 40
+		weapon
+			"blast radius" 12
+			"shield damage" 120
+			"hull damage" 60
+			"hit force" 180
+	outfits
+		"Beam Laser" 2
+		
+		"nGVF-BB Fuel Cell"
+		"Spark-Class Power Pack"
+		"D14-RN Shield Generator"
+		
+		"Chipmunk Plasma Thruster"
+		"Chipmunk Plasma Steering"
+		
+	engine 0 30.5
+	gun 5.5 -8.5 "Beam Laser"
+	gun -5.5 -8.5 "Beam Laser"
+	explode "tiny explosion" 15
+	explode "small explosion" 5
+	description "The Dart is an efficient fighter, developed by the Enclave's government shipyards to replace the aging Lance as their primary fighter. Equipped with a slightly more comprehensive set of outfits than the Lance, a Dart piloted by a skilled captain has potential to survive many a battle." 

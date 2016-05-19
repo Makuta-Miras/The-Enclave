@@ -1,0 +1,90 @@
+outfit "Railgun"
+	category "Secondary Weapons"
+	cost 20000
+	thumbnail "outfit/Railgun"
+	"mass" 12
+	"outfit space" -12
+	"weapon capacity" -12
+	"gun ports" -1
+	"Ball-bearing capacity" 200
+	weapon
+		sprite "projectile/Ball-bearing"
+		sound "javelin"
+		ammo "Ball-bearing"
+		icon "icon/javelin"
+		"hit effect" "smoke"
+		"inaccuracy" 1
+		"velocity" 20
+		"lifetime" 60
+		"reload" 25
+		"firing energy" .2
+		"firing heat" 12
+		"shield damage" 500
+		"hull damage" 100
+		"hit force" 200
+		"acceleration" .7
+		"drag" .05
+		"turn" 1.2
+		"homing" 2
+		"missile strength" 35
+	description "The railgun is one of the few weapons designed solely by the Enclave's government-owned labs without any input from XSZ."
+	description " Using principles first used in warfare in the early 21st century, the railgun accelerates a metal projectile along a track using a series of electromagnets, before shooting the projectile at a target. Railguns have been proven to have supreme shield-piercing capabilities, and are devastating against a target with no shields."
+	
+outfit "HFS-8B1 Particle Cannon"
+	category "Guns"
+	cost 2500000
+	thumbnail "outfit/particle cannon"
+	"mass" 45
+	"outfit space" -45
+	"weapon capacity" -45
+	"gun ports" -1
+	weapon
+		sprite "projectile/particle beam"
+		sound "particle"
+		"hit effect" "particle impact"
+		"inaccuracy" 1
+		"velocity" 30
+		"lifetime" 250
+		"reload" 5
+		"firing energy" 950
+		"firing force" 100
+		"firing heat" 150
+		"hit force" 800
+		"shield damage" 60
+		"hull damage" 80
+	description "As you can probably see, XSZ's weapons designers are bat-##### crazy."
+	
+outfit "Heavy Electron Turret"
+	category "Turrets"
+	cost 600000
+	thumbnail "outfit/heavy electron turret"
+	"mass" 60
+	"outfit space" -60
+	"weapon capacity" -60
+	"turret mounts" -1
+	"required crew" 1
+	weapon
+		sprite "projectile/2x electron"
+			"frame rate" 60
+		sound "electron beam"
+		"hit effect" "electron impact"
+		"inaccuracy" .3
+		"velocity" 450
+		"lifetime" 1
+		"reload" 1
+		"firing energy" 4.0
+		"firing heat" 5.1
+		"shield damage" 8.8
+		"hull damage" 15.8
+	description "Having escaped the dark ages of human space exploration in the Milky Way, the Enclave has developed and refined electron beam technology further than the Deep's researchers have done thus far."
+	description " This is a variation on the heavy electron beam design, featuring the beam mounted on a turret, allowing it to track and aim at moving targets without the entire ship being forced to turn. If it were not for this turret's high outfit space requirements, it could have rendered fighters and drones practically worthless in combat."
+
+	
+outfit "Ball-bearing"
+	category "Ammunition"
+	cost 50
+	thumbnail "outfit/Ball-bearing"
+	"Ball-bearing capacity" -1
+	description "Ball-bearings are simple steel spheres, designed to be fired from the railgun. The latest versions of military-grade ball-bearings are mostly solid steel, with basic homing systems installed at the core of the sphere, as the magnetic forces exerted on the projectile during firing disrupt most electrical systems."
+	description " You cannot install ball-bearings unless you have also installed a launcher to fire them from."
+	
