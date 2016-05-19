@@ -1,0 +1,31 @@
+Additions:
+----------------------------
+
+-Fleets
+-More outfits and ships (v0.1.0)	
+-Most systems should be inhabited (To be complete by v0.1.0; ideally as soon as possible)
+-Story in the Enclave Galaxy; based around XSZ, its potential links to the Pug, and the Ascendancy (Low priority; after v0.1.0)
+
+Changes to existing content:
+------------------------------
+
+-Touching-up of sprite for the Bloodhound and new description to fit in with established Enclave lore (Post-v0.0.4)
+-Add landscape and proper description for Pug Morbosa and other planets (Pre-v0.0.5)
+
+Achieved:
+------------------------------
+
+-Renaming of Portal to something less generic and more fitting for the universe            								[Achieved 27/04/16]
+-Change all references to Phyrexia to Metalweavers 																		[Achieved 17/04/16]
+-Alter Electron Turret sprite to add red lights for the Heavy Electron Turret											[Achieved 06/05/16]
+-New in-flight sprite for the ball-bearing																				[Achieved 27/04/16]
+-Completely revamped picture and renaming for the XSZ MK I Freighter													[Achieved 07/05/16]
+-Complete removal of all MTG references except for Kaladesh and Muraganda system names									[Achieved 06/05/16]
+-Add thumbnail for Violet Core																							[Achieved 08/05/16]
+-Add X-Core and Infra-Core with thumbnails																				[Achieved 08/05/16]
+-Add Conflagration-Class Power Pack																						[Achieved 08/05/16]
+-Add Blaze-Class Power Pack																								[Achieved 08/05/16]
+-Redo thumbnails for Kindle- and Ember-Class Power Packs																[Achieved 08/05/16]
+-Rename Ember-Class Power Pack to Spark-Class Power Pack																[Achieved 08/05/16]
+-Redone Railgun sprite; aligned to outfitter grid and pointing to bottom-left instead of top-left						[Achieved 08/05/16]
+-Storyline addition to open the hyperspace link to Xenos after the FW story ends										[Achieved 19/05/16]

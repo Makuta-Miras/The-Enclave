@@ -1,0 +1,100 @@
+19/05/16 [v0.0.5]
+
+-Added a new Enclave fighter, the Dart.
+-Renamed the Enclave and XSZ shipyards to reflect a "tiered" system.
+-Added a variant on the vanilla Lance with a new description to reflect the Enclave's development of it- can be found in the "Enclave Tier 3" shipyard.
+-Added a really bad bit of story to open the Enclave wormhole when the player lands on Valhalla if they've completed the main plotline.
+-Shifted Xenos to be south-west of Suhail.
+-Added a new landscape image for Puggleshank.
+
+17/05/16 [v0.0.5]
+
+-The Igneous system has been renamed to Pug Morbosa.
+-Pug Morbosa has a planet in it which doesn't really have anything on it yet.
+
+15/05/16 [v0.0.5]
+
+-New Ascendancy territory.
+-Added a variant of the Arfecta which doesn't have a cloaking device.
+-Put one of said Arfectas in the Igneous system.
+
+
+13/05/16 [v0.0.5]
+
+-New ship, the Sea Drake. Available at the XSZ Shipyard.
+-Integrated the SuperDuperCarrier plugin- the renamed "Muesli Carrier" can now be found on Lyfon in the Five system.
+-Added some new shipyards and shifted some ships around.
+
+------------------------------------------------------------------------  v0.0.4  -------------------------------------------------------------------------------
+
+08/05/16 [v0.0.4]
+
+-New thumbnail for the Violet Core
+-Violet Core now appears in the "Ascendancy Advanced" outfitter
+-Infra-Core added
+	-Infra-Core appears in the new "Ascendancy Basics" outfitter
+-Violet Core moved to "Ascendancy Basics"
+-Miras the Omniscient now no longer comments on Endless Sky's lack of unicode
+-Yet another new Gamma Core sprite
+-Added Conflagration-Class Power Pack
+-Added Blaze-Class Power Pack
+-Ember-Class Power Pack renamed to Spark-Class Power Pack
+-New Railgun sprite and slight rebalance
+-New sprites for Kindle- and Spark-Class Power Packs
+-Bloodhound's description has been changed to fit current lore
+
+
+07/05/16 [v0.0.4]
+
+-Title changed so that "The Enclave" is displayed beneath the main game title
+-New sprite for the XSZ MK I Freighter!
+	-Renamed to Fregter
+	-Description added
+-New thumbnail for the Gamma Core
+
+
+06/05/16 [v0.0.4]
+
+-New Ascendancy interceptor- the Anteater
+-Cleaner sprite for the Ravager
+	-Weapon and engine hardpoints have been redefined in order to fit with the new sprite
+	-Drag has been increased
+-Three new Ascendancy power cores- the EM Core, the Violet Core, and the Gamma Core.
+-The Metalweavers have been renamed to the Ascendancy so that more alerts etc in the game make sense gramatically (E.g. fines and so on- "The Ascendancy fines you 1.000M for carrying illegal outfits" vs "The Metalweaver fiens you 1.000M for carrying illegal outfits")
+-Miras the Omniscient now notifies the player that this mod is installed and advises them to uninstall it before seeking help if their game is experiencing bugs.
+-ALL OBNOXIOUS MTG IS GONE, GONE I TELL YOU!
+-Heavy Electron Turret now has its own sprite and appears in the "Enclave Outfits" outfitter
+-The Ninth Sphere renamed to Cromerium
+
+
+27/04/16 [v0.0.4]
+
+-New ship- the Strike Drone
+-Miniaturised outfits
+	-Outfitter for miniaturised outfits (Currently available on The Ninth Sphere in the Glephum system)
+	-Miniaturised Beam Laser
+-Ravager can now use up to five miniaturised outfits
+-The Ravager no longer comes with a shield generator installed, and the battery pack has been replaced by one of the XSZ batteries.
+-Portal has been renamed to Xenos
+-Enclave Shipyard renamed to XSZ Shipyard- Basics
+-New sprite for the Ball-bearing
+
+
+24/04/16 [v0.0.4]
+
+-New ship added- the Ravager
+-New shipyard- the Metalweaver Shipyard
+-Heavy Electron Turret added; currently using stock electron turret sprite
+
+
+17/04/16 [v0.0.4]
+
+-All references to Phyrexia have been changed to Metalweavers
+
+
+16/04/16 [v0.0.4]
+
+-Added the HFS-8B1 Particle Cannon
+-New outfitter- "XSZ Advanced"
+-"XSZ Advanced" shipyard temporarily renamed to "Enclave Shipyard"
+-Mirrodin and Latent now support the "XSZ Advanced" outfitter
