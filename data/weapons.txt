@@ -50,8 +50,8 @@ outfit "HFS-8B1 Particle Cannon"
 		"firing force" 100
 		"firing heat" 150
 		"hit force" 800
-		"shield damage" 60
-		"hull damage" 80
+		"shield damage" 600
+		"hull damage" 60
 	description "As you can probably see, XSZ's weapons designers are bat-##### crazy."
 	
 outfit "Heavy Electron Turret"
