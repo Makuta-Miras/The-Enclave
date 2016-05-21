@@ -1,5 +1,6 @@
 shipyard "XSZ Tier 2"
 	"Fregter"
+	"Buzzard"
 
 shipyard "XSZ Tier 3"
 	"Bloodhound"
