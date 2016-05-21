@@ -236,3 +236,45 @@ ship "Dart"
 	explode "tiny explosion" 15
 	explode "small explosion" 5
 	description "The Dart is an efficient fighter, developed by the Enclave's government shipyards to replace the aging Lance as their primary fighter. Equipped with a slightly more comprehensive set of outfits than the Lance, a Dart piloted by a skilled captain has potential to survive many a battle." 
+
+ship "Buzzard"
+	sprite "ship/Buzzard"
+	attributes
+		category "Light Warship"
+		"cost" 1100000
+		"shields" 2800
+		"hull" 700
+		"required crew" 3
+		"bunks" 6
+		"mass" 110
+		"drag" 2.5
+		"heat dissipation" .6
+		"fuel capacity" 400
+		"cargo space" 10
+		"outfit space" 270
+		"weapon capacity" 90
+		"engine capacity" 70
+		weapon
+			"blast radius" 40
+			"shield damage" 400
+			"hull damage" 10
+			"hit force" 60
+	outfits
+		"HFS-8B1 Particle Cannon" 2
+		
+		"RT-I Radiothermal"
+		"LP036a Battery Pack"
+		"D23-QP Shield Generator"
+		"Cooling Ducts"
+		
+		"Greyhound Plasma Thruster"
+		"Greyhound Plasma Steering"
+		"Hyperdrive"
+		
+	engine -4 54
+	engine 4 54
+	gun 6 -43
+	gun -6 -43
+	explode "tiny explosion" 12
+	explode "small explosion" 16
+	description "The Buzzard is a light warship designed by the XSZ Corporation to be able to carry two of their heavy particle cannons. As a result, this ship has very little outfit space free, and has been designed to use the most efficient setup possible in order to extract the most value from the HFS-8B1."
