@@ -5,6 +5,9 @@ shipyard "XSZ Tier 2"
 shipyard "XSZ Tier 3"
 	"Bloodhound"
 
+shipyard "Enclave Tier 1"
+	"Scout"
+
 shipyard "Enclave Tier 2"
 	"Sea Drake"
 	

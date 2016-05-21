@@ -2,6 +2,8 @@
 
 -Added a new XSZ light warship, the Buzzard. Available at XSZ Tier 2 shipyards.
 -Decreased energy/shot for HFS-8B1, increased shield damage, decreased hull damage.
+-Added the Scout to the Enclave Tier 1 shipyard
+-Added the Enclave Tiers 1+2 shipyards to Lyfon
 
 19/05/16 [v0.0.5]
 
