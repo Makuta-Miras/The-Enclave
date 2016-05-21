@@ -1,6 +1,7 @@
 21/05/16 [v0.0.5]
 
 -Added a new XSZ light warship, the Buzzard. Available at XSZ Tier 2 shipyards.
+-Decreased energy/shot for HFS-8B1, increased shield damage, decreased hull damage.
 
 19/05/16 [v0.0.5]
 
