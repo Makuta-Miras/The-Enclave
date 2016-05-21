@@ -46,7 +46,7 @@ outfit "HFS-8B1 Particle Cannon"
 		"velocity" 30
 		"lifetime" 250
 		"reload" 5
-		"firing energy" 950
+		"firing energy" 300
 		"firing force" 100
 		"firing heat" 150
 		"hit force" 800
