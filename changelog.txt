@@ -1,3 +1,24 @@
+28/05/16 [v0.0.5]
+
+-Tweaks to get the missions to work.
+-Added a sprite for the Apollo; no data yet.
+
+27/05/16 [v0.0.5]
+
+-Continued work on the "co-operation" branch of the Enclave unlock plot.
+
+26/05/16 [v0.0.5]
+
+-Finished the first mission to open the Enclave wormhole.
+-Added a story branch which involves the player going to Earth instead of going to Bourne to gather a FW fleet.
+
+25/05/16 [v0.0.5]
+
+-New description for Puggleshank.
+-New description for Magna, a mining moon in the Orff system.
+-New description for Cynic.
+-Begun reworking the mission to open access to the Enclave galaxy.
+
 21/05/16 [v0.0.5]
 
 -Added a new XSZ light warship, the Buzzard. Available at XSZ Tier 2 shipyards.
