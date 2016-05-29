@@ -14,8 +14,8 @@ outfit "Kindle-Class Power Pack"
 	thumbnail "outfit/Kindle-Class Power Pack"
 	"mass" 24
 	"outfit space" -24
-	"energy capacity" 3000
-	"heat generation" 6
+	"energy capacity" 3600
+	"heat generation" 8
 	description "A step up from the entry-level Spark Power Pack, XSZ's Kindle-Class batteries have enough energy capacity to potentially allow a small ship to run without a reactor, instead relying on careful power usage and the recharging systems in spaceports in order to not run out of fuel."
 	description " However, the Kindle-Class Power Pack sees more usage as a power supplement in small to medium-size ships, thanks to its relatively small outfit space and high energy capacity."
 	
@@ -23,20 +23,20 @@ outfit "Conflagration-Class Power Pack"
 	category "Power"
 	cost 90000
 	thumbnail "outfit/Conflagration-Class Power Pack"
-	"mass" 42
-	"outfit space" -42
-	"energy capacity" 5700
-	"heat generation" 8
+	"mass" 48
+	"outfit space" -48
+	"energy capacity" 7000
+	"heat generation" 16
 	description "The Conflagration-Class Power Pack is one tier above the Kindle-Class. Boasting an impressive energy storage/mass ratio, this set of batteries is perfect for medium-sized warships, as it can take the role of a slightly more powerful generator in order to allow more room for weapons."
 	
 outfit "Blaze-Class Power Pack"
 	category "Power"
 	cost 150000
 	thumbnail "outfit/Blaze-Class Power Pack"
-	"mass" 84
-	"outfit space" -84
-	"energy capacity" 12000
-	"heat generation" 15
+	"mass" 96
+	"outfit space" -96
+	"energy capacity" 18000
+	"heat generation" 32
 	description "This is the largest battery pack developed by XSZ so far. More efficient than its counterpart, the LP288a Battery Pack, the Blaze power pack is the baseline for capital ships in Enclave and XSZ space."
 	
 outfit "Infra-Core"
