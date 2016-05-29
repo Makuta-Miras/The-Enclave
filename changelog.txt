@@ -3,6 +3,7 @@
 29/05/16 [v0.0.5]
 
 -Added data for the Apollo.
+-Rebalanced the Power Packs.
 
 
 28/05/16 [v0.0.5]
