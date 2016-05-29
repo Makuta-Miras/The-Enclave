@@ -10,10 +10,11 @@ shipyard "Enclave Tier 1"
 
 shipyard "Enclave Tier 2"
 	"Sea Drake"
-	
-shipyard "Enclave Tier 3"
 	"Enclave Lance"
 	"Dart"
+	
+shipyard "Enclave Tier 3"
+	"Apollo"
 	"Muesli Carrier"
 	
 shipyard "Ascendancy"
