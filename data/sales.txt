@@ -4,6 +4,7 @@ shipyard "XSZ Tier 2"
 
 shipyard "XSZ Tier 3"
 	"Bloodhound"
+	"Scorched Earth"
 
 shipyard "Enclave Tier 1"
 	"Scout"
