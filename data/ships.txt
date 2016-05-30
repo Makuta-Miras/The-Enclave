@@ -337,3 +337,41 @@ ship "Buzzard"
 	explode "tiny explosion" 12
 	explode "small explosion" 16
 	description "The Buzzard is a light warship designed by the XSZ Corporation to be able to carry two of their heavy particle cannons. As a result, this ship has very little outfit space free, and has been designed to use the most efficient setup possible in order to extract the most value from the HFS-8B1."
+
+ship "Scorched Earth"
+	sprite "ship/Scorched Earth"
+	attributes
+		category "Interceptor"
+		"cost" 126000
+		"shields" 1100
+		"hull" 200
+		"automaton" 1
+		"mass" 40
+		"drag" .83
+		"heat dissipation" .85
+		"fuel capacity" 300
+		"outfit space" 110
+		"weapon capacity" 20
+		"engine capacity" 40
+		weapon
+			"blast radius" 12
+			"shield damage" 120
+			"hull damage" 60
+			"hit force" 180
+	outfits		
+		"Nuclear Missile MK 5"
+	
+		"nGVF-BB Fuel Cell"
+		"LP036a Battery Pack"
+		"D14-RN Shield Generator"
+		
+		"Chipmunk Plasma Thruster"
+		"Chipmunk Plasma Steering"
+		"Hyperdrive"
+		
+	gun 0 0
+	engine -5 32
+	engine 5 32
+	explode "huge explosion" 50
+	"final explode" "final explosion large"
+	description "The 'Scorched Earth' interceptor is a hyperspace-enabled drone which XSZ uses to carry its nuclear missiles. Due to the lack of a pilot, the missiles can be built without much thought given to radiation shielding in the casing, and the ships can also be piloted very recklessly straight into the middle of an enemy fleet without fear of losing the pilot."
