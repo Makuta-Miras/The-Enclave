@@ -1,3 +1,61 @@
+ship "Apollo"
+	sprite "ship/Apollo"
+	attributes
+		category "Heavy Warship"
+		"cost" 15200000
+		"shields" 21400
+		"hull" 8300
+		"required crew" 85
+		"bunks" 120
+		"mass" 800
+		"drag" 17.7
+		"heat dissipation" .5
+		"fuel capacity" 800
+		"cargo space" 80
+		"outfit space" 790
+		"weapon capacity" 345
+		"engine capacity" 190
+		weapon
+			"blast radius" 280
+			"shield damage" 2800
+			"hull damage" 1400
+			"hit force" 4200
+	outfits
+		Hyperdrive
+		"A525 Atomic Steering"
+		"A860 Atomic Thruster"
+		"Electron Beam" 4
+		"D94-YV Shield Generator"
+		"Fusion Reactor"
+		"Heavy Anti-Missile Turret" 2
+		"Kindle-Class Power Pack"
+		"Conflagration-Class Power Pack"
+		"Liquid Helium Cooler"
+		"D23-QP Shield Generator"
+		"Large Radar Jammer"
+		"Heavy Electron Turret" 2
+		
+	engine 21.5 185.5
+	engine -21.5 185.5
+	gun 21 -165.5 "Electron Beam"
+	gun 26 -154 "Electron Beam"
+	gun -21 -165.5 "Electron Beam"
+	gun -26 -154 "Electron Beam"
+	turret 0 -78.5 "Heavy Electron Turret"
+	turret 0 -2.5 "Heavy Electron Turret"
+	turret -16.5 118.5 "Heavy Anti-Missile Turret"
+	turret 16.5 118.5 "Heavy Anti-Missile Turret"
+	fighter 53.5 0.5
+	fighter -53.5 0.5
+	explode "tiny explosion" 20
+	explode "small explosion" 45
+	explode "medium explosion" 50
+	explode "big explosion" 40
+	explode "huge explosion" 10
+	"final explode" "final explosion large"
+	description "The Apollo is the largest and most advanced warship developed by the Enclave so far, somewhere between the Cruisers and the Carriers of the Republic in terms of size. The Apollo is able to carry two fighters in its bays, usually Darts. Despite its size, the Apollo is fairly maneuverable, capable of matching many interceptors in combat."
+	description "	The Apollo was named after the series of missions during the second half of the 20th century which allowed humanity to set foot on a stellar object other than Earth for the first time."
+
 ship Bloodhound
 	sprite ship/Bloodhound
 	attributes
@@ -151,7 +209,7 @@ ship "Sea Drake"
 	explode "tiny explosion" 15
 	explode "small explosion" 20
 	explode "medium explosion" 10
-	description "
+	description "The Sea Drake is a medium-strength warship favoured by bounty hunters for its large weapons capacity and relatively strong shielding."
 	
 	
 ship "Fregter"
@@ -236,6 +294,7 @@ ship "Dart"
 	explode "tiny explosion" 15
 	explode "small explosion" 5
 	description "The Dart is an efficient fighter, developed by the Enclave's government shipyards to replace the aging Lance as their primary fighter. Equipped with a slightly more comprehensive set of outfits than the Lance, a Dart piloted by a skilled captain has potential to survive many a battle." 
+	description "	The Dart was designed in tandem with the Apollo- this is where the resemblance between the two comes from."
 
 ship "Buzzard"
 	sprite "ship/Buzzard"

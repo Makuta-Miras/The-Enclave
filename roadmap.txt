@@ -11,6 +11,7 @@ Changes to existing content:
 
 -Touching-up of sprite for the Bloodhound and new description to fit in with established Enclave lore (Post-v0.0.4)
 -Add landscape and proper description for Pug Morbosa and other planets (Pre-v0.0.5)
+-Continue "Enclave opens" storyline over two branches, one involving protesting against Parliament's decision and the other involving the FW fleet going with them. (Pre-v0.0.5)
 
 Achieved:
 ------------------------------
@@ -28,4 +29,3 @@ Achieved:
 -Redo thumbnails for Kindle- and Ember-Class Power Packs																[Achieved 08/05/16]
 -Rename Ember-Class Power Pack to Spark-Class Power Pack																[Achieved 08/05/16]
 -Redone Railgun sprite; aligned to outfitter grid and pointing to bottom-left instead of top-left						[Achieved 08/05/16]
--Storyline addition to open the hyperspace link to Xenos after the FW story ends										[Achieved 19/05/16]

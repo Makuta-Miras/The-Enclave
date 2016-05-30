@@ -2978,6 +2978,8 @@ planet Lyfon
 	description `Lyfon is the capital of the Enclave, named after the Enclave's first leader. While Lyfon is, admittedly, not the most hospitable of planets, the habitable regions around the equator as well as the apparently vast amounts of natural resources contained within the planet allowed it to quickly develop into the safest planet in Enclave space.`
 	description ` Lyfon's system, Five, is named as such due to its astonishing five hospitable planets.`
 	spaceport `The spaceport in Lyfon's capital city is situated a few miles out from the city centre, surrounded by massive areas of savannah. As you sit in the spaceport bar, you wonder what it must be like to grow up in the city, watching the bright flashes of ships taking off into the night.`
+	shipyard "Enclave Tier 1"
+	shipyard "Enclave Tier 2"
 	shipyard "Enclave Tier 3"
 	outfitter "Enclave Outfits"
 	outfitter "XSZ Basics"
