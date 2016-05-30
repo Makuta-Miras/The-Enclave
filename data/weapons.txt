@@ -56,7 +56,7 @@ outfit "HFS-8B1 Particle Cannon"
 	
 outfit "Heavy Electron Turret"
 	category "Turrets"
-	cost 600000
+	cost 800000
 	thumbnail "outfit/heavy electron turret"
 	"mass" 60
 	"outfit space" -60
@@ -68,16 +68,16 @@ outfit "Heavy Electron Turret"
 			"frame rate" 60
 		sound "electron beam"
 		"hit effect" "electron impact"
-		"inaccuracy" .3
+		"inaccuracy" .4
 		"velocity" 450
 		"lifetime" 1
 		"reload" 1
-		"firing energy" 4.0
-		"firing heat" 5.1
-		"shield damage" 8.8
-		"hull damage" 15.8
+		"firing energy" 3.3
+		"firing heat" 5.7
+		"shield damage" 6.4
+		"hull damage" 8.6
 	description "Having escaped the dark ages of human space exploration in the Milky Way, the Enclave has developed and refined electron beam technology further than the Deep's researchers have done thus far."
-	description " This is a variation on the heavy electron beam design, featuring the beam mounted on a turret, allowing it to track and aim at moving targets without the entire ship being forced to turn. If it were not for this turret's high outfit space requirements, it could have rendered fighters and drones practically worthless in combat."
+	description "	This is a variation on the heavy electron beam design, featuring the beam mounted on a turret, allowing it to track and aim at moving targets without the entire ship being forced to turn. If it were not for this turret's high outfit space requirements, it could have rendered fighters and drones practically worthless in combat."
 
 	
 outfit "Ball-bearing"
