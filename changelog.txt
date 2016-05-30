@@ -1,4 +1,11 @@
 ------------------------------------------------------------------------  v0.0.5  -------------------------------------------------------------------------------
+30/5/16 [v0.0.5]
+
+-Messed around balancing the Apollo and the Bloodhound against each other.
+-Rebalanced the Heavy Electron Turret.
+-Added the "Scorched Earth" interceptor.
+-Added the "Nuclear Missile MK 5" outfit for the Scorched Earth.
+
 
 29/05/16 [v0.0.5]
 
