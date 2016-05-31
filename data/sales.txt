@@ -1,3 +1,6 @@
+shipyard "XSZ Tier 1"
+	"Cheetah"
+
 shipyard "XSZ Tier 2"
 	"Fregter"
 	"Buzzard"
