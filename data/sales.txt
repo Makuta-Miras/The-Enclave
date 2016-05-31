@@ -2,11 +2,12 @@ shipyard "XSZ Tier 1"
 	"Cheetah"
 
 shipyard "XSZ Tier 2"
-	"Fregter"
 	"Buzzard"
+	"Fregter"
 
 shipyard "XSZ Tier 3"
 	"Bloodhound"
+	"Leatherback"
 	"Scorched Earth"
 
 shipyard "Enclave Tier 1"
