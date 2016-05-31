@@ -7,6 +7,21 @@
 -Added the "Nuclear Missile MK 5" outfit for the Scorched Earth.
 
 
+31/05/16 [v0.0.5]
+
+-Added a new shuttlecraft, the Cheetah.
+-New XSZ Tier 1 shipyard. Currently only implemented on Latent.
+-Added a new heavy freighter, the Leatherback.
+
+
+30/05/16 [v0.0.5]
+
+-Messed around balancing the Apollo and the Bloodhound against each other.
+-Rebalanced the Heavy Electron Turret.
+-Added the "Scorched Earth" interceptor.
+-Added the "Nuclear Missile MK 5" outfit for the Scorched Earth.
+
+
 29/05/16 [v0.0.5]
 
 -Added data for the Apollo.
