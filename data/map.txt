@@ -2967,6 +2967,7 @@ planet Latent
 	description `Latent is the capital of the XSZ Corporation, covered in gleaming office blocks and automated factories deep below ground.`
 	description ` Settled in the first years of the Enclave, Latent's population skyrocketed when an abundance of natural resources was discovered on the planet- eventually becoming the economic juggernaut that XSZ is today.`
 	spaceport `Latent's spaceport is a large, sprawling affair; landing pads and terminals stretch as far as the eye can see. A number of the landing pads within sight of the one where your ship is parked appear to be marked for use exclusively by XSZ, no doubt for the export of outfits constructed by on Latent and the import of basic necessities like food and clothing.`
+	shipyard "XSZ Tier 1"
 	shipyard "XSZ Tier 2"
 	shipyard "XSZ Tier 3"
 	outfitter "XSZ Basics"
