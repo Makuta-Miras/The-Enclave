@@ -273,6 +273,62 @@ ship "Fregter"
 	explode "big explosion" 10
 	description "This was one of the first ships developed by XSZ after the company's inception. Not much more than the traditional freighters found back in the Republic, this ship is a slice of home oddly out of place in this galaxy."
 	description "	Oddly enough, this ship's name came about due to a data corruption. Originally referred to by XSZ developers as The Freighter, when XSZ's servers were hacked, the schematic's name was changed to `The Fregter`- and it stuck."	
+
+ship "Leatherback"
+	sprite "ship/Leatherback"
+	attributes
+		category "Heavy Freighter"
+		"cost" 8400000
+		"shields" 4000
+		"hull" 7600
+		"required crew" 5
+		"bunks" 20
+		"mass" 870
+		"drag" 12.8
+		"heat dissipation" .6
+		"fuel capacity" 600
+		"cargo space" 540
+		"outfit space" 410
+		"weapon capacity" 180
+		"engine capacity" 95
+		weapon
+			"blast radius" 120
+			"shield damage" 1200
+			"hull damage" 600
+			"hit force" 1800
+	outfits
+		Flamethrower 2
+		"Laser Turret" 2
+		"Heavy Anti-Missile Turret" 2
+		
+		"LP144a Battery Pack"
+		Ramscoop 2
+		"Interference Plating" 2
+		"Large Radar Jammer"
+		"S3 Thermionic"	
+		"D23-QP Shield Generator"
+		
+		"Scram Drive"
+		"X3700 Ion Thruster"
+		"X3200 Ion Steering"
+		
+	engine -0.5 145
+	engine 18.5 138
+	engine -19.5 138
+	gun 22.5 -105 "Flamethrower"
+	gun -23.5 -105 "Flamethrower"
+	turret -0.5 -71.5 "Laser Turret"
+	turret -0.5 -32 "Heavy Anti-Missile Turret"
+	turret -0.5 10 "Laser Turret"
+	turret -0.5 54 "Heavy Anti-Missile Turret"
+	explode "small explosion" 15
+	explode "medium explosion" 25
+	explode "big explosion" 35
+	explode "huge explosion" 20
+	"final explode" "final explosion large"
+	description "The Leatherback is a heavy freighter designed by XSZ to facilitate the growth of larger independent merchant fleets- to this end, it is equipped with strong anti-missile systems, as well as a pair of flamethrowers, unusually. It even has interference plating added, for those few captains who may be transporting slightly less legal commodities than the norm."
+	description "	To offset the fuel consumption of the flamethrowers, the Leatherback comes straight off the assembly line with a pair of ramscoops already installed."
+	description "	The Leatherback's name came about as a result of an XSZ executive watching an ancient, classic film from Earth, which featured enormous alien monsters invading the planet. One of these monsters was named Leatherback, and in a drunken haze, he decided to name this freighter after it."
 	
 ship "Muesli Carrier"
 	sprite "ship/SuperDuperCarrier"
