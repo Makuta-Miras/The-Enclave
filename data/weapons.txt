@@ -30,6 +30,7 @@ outfit "Railgun"
 	description "The railgun is one of the few weapons designed solely by the Enclave's government-owned labs without any input from XSZ."
 	description " Using principles first used in warfare in the early 21st century, the railgun accelerates a metal projectile along a track using a series of electromagnets, before shooting the projectile at a target. Railguns have been proven to have supreme shield-piercing capabilities, and are devastating against a target with no shields."
 	
+	
 outfit "HFS-8B1 Particle Cannon"
 	category "Guns"
 	cost 2500000
@@ -54,9 +55,10 @@ outfit "HFS-8B1 Particle Cannon"
 		"hull damage" 60
 	description "As you can probably see, XSZ's weapons designers are bat-##### crazy."
 	
+	
 outfit "Heavy Electron Turret"
 	category "Turrets"
-	cost 600000
+	cost 800000
 	thumbnail "outfit/heavy electron turret"
 	"mass" 60
 	"outfit space" -60
@@ -68,16 +70,16 @@ outfit "Heavy Electron Turret"
 			"frame rate" 60
 		sound "electron beam"
 		"hit effect" "electron impact"
-		"inaccuracy" .3
+		"inaccuracy" .4
 		"velocity" 450
 		"lifetime" 1
 		"reload" 1
-		"firing energy" 4.0
-		"firing heat" 5.1
-		"shield damage" 8.8
-		"hull damage" 15.8
+		"firing energy" 3.3
+		"firing heat" 5.7
+		"shield damage" 6.4
+		"hull damage" 8.6
 	description "Having escaped the dark ages of human space exploration in the Milky Way, the Enclave has developed and refined electron beam technology further than the Deep's researchers have done thus far."
-	description " This is a variation on the heavy electron beam design, featuring the beam mounted on a turret, allowing it to track and aim at moving targets without the entire ship being forced to turn. If it were not for this turret's high outfit space requirements, it could have rendered fighters and drones practically worthless in combat."
+	description "	This is a variation on the heavy electron beam design, featuring the beam mounted on a turret, allowing it to track and aim at moving targets without the entire ship being forced to turn. If it were not for this turret's high outfit space requirements, it could have rendered fighters and drones practically worthless in combat."
 
 	
 outfit "Ball-bearing"
@@ -88,3 +90,42 @@ outfit "Ball-bearing"
 	description "Ball-bearings are simple steel spheres, designed to be fired from the railgun. The latest versions of military-grade ball-bearings are mostly solid steel, with basic homing systems installed at the core of the sphere, as the magnetic forces exerted on the projectile during firing disrupt most electrical systems."
 	description " You cannot install ball-bearings unless you have also installed a launcher to fire them from."
 	
+outfit "Nuclear Missile MK 5"
+	category "Secondary Weapons"
+	cost 1000000
+	thumbnail "outfit/nuke"
+	"mass" 10
+	"outfit space" -10
+	"weapon capacity" -10
+	"gun ports" -1
+	weapon
+		sprite "projectile/missile"
+			"no repeat"
+			"frame rate" .25
+		sound "nuke"
+		ammo "Nuclear Missile MK 5"
+		stream
+		icon "icon/nuke"
+		"hit effect" "nuke explosion"
+		"hit effect" "nuke residue fast" 10
+		"hit effect" "nuke residue slow" 10
+		"die effect" "missile death"
+		"inaccuracy" 1
+		"velocity" 7
+		"lifetime" 1800
+		"reload" 400
+		"firing energy" 10
+		"firing heat" 500
+		"acceleration" 8
+		"drag" .1
+		"turn" 5
+		"homing" 4
+		"radar tracking" .5
+		"optical tracking" 1
+		"trigger radius" 30
+		"blast radius" 150
+		"shield damage" 19000
+		"hull damage" 17000
+		"hit force" 40000
+		"missile strength" 2000
+	description "XSZ has been making massive advancements recently in nuclear weaponry."
