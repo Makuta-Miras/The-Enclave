@@ -4,6 +4,7 @@
 -New Ravager sprite.
 -New Strike Drone sprite.
 -New Buzzard sprite.
+-New Bloodhound sprite.
 
 
 31/05/16 [v0.0.5]
