@@ -1,65 +1,64 @@
-person "Miras the Omniscient"
+person "Storm Crow"
 	government "Free Worlds"
 	frequency 1000
 	personality
 		plunders
 	phrase
 		word
-			"Please be aware that you've currently got The Enclave installed- while it only adds a new galaxy and some outfits currently, if you're experiencing bugs please remember to uninstall this mod before asking on the Steam forums for help. Hope you're enjoying the mod so far!"
-	ship Bactrian "F.S. Inferno"
+			"349 is bae"
+	ship "Kar Ik Vot 349"
 		"never disabled"
 		attributes
 			category "Heavy Warship"
-			"cost" 17600000
-			"shields" 17500
-			"hull" 8600
-			"required crew" 70
-			"bunks" 245
-			"mass" 940
-			"drag" 16.1
-			"heat dissipation" 0.4
-			"fuel capacity" 700
-			"cargo space" 530
-			"outfit space" 740
-			"weapon capacity" 300
-			"engine capacity" 180			
+			cost 41280000
+			automaton 1
+			"cargo space" 87
+			drag 16.8
+			"engine capacity" 173
+			"fuel capacity" 400
+			"gun ports" 4
+			"heat dissipation" 0.5
+			hull 65400
+			mass 1350
+			"outfit space" 1054
+			"self destruct" 0.8
+			shields 57200
+			"turret mounts" 8
+			"weapon capacity" 447
 		outfits
-			"Quarg Skylance" 2
-			"Intrusion Countermeasures" 16
+			"Mass Expansion" 3
+			"Fuel Pod" 2
+			Ramscoop 2
+			"Korath Warder" 2
+			"Steering (Planetary Class)"
+			"Small Heat Shunt" 2
+			"Triple Plasma Core"
+			"Thruster (Stellar Class)"
+			"Large Heat Shunt" 4
+			"Nanotech Battery"
+			"Quarg Skylance" 6
 			"Quantum Shield Generator"
 			"Jump Drive"
-			"Korath Warder" 4
-			"Korath Tek'nel Reactor"
-			"Korath Heat Shunt" 2
-			Ramscoop
-			"A520 Atomic Thruster"
-			"A125 Atomic Steering"
-			"A525 Atomic Steering"
-			"AR120 Reverse Thruster"
-			"Mass Expansion" 14
-			"Fuel Pod" 5
-			"White Sun Reactor"
-			"Laser Rifle" 247
-			"Small Bunk Room"
-			"Fragmentation Grenades" 247
-			"Nerve Gas" 247
-			
-		engine -18 230
-		engine 18 230
-		gun -15 -226
-		gun 15 -226
-		gun -40 -133
-		gun -45 -128
-		turret -22 -148 "Quarg Skylance"
-		turret 26 -80 "Quarg Skylance"
-		turret -41 -20 "Korath Warder"
-		turret 32 -7 "Korath Warder"
-		turret 53 82 "Korath Warder"
-		turret -37 186 "Korath Warder"
-		fighter -38 -26
-		fighter 35 36
-		fighter -47 97
-		explode "small explosion" 25
-		explode "medium explosion" 35
-		explode "big explosion" 45
-		explode "huge explosion" 30
+		fuel 600
+		shields 57200
+		hull 65400
+		position 916.0975 941.33022
+		engine -24 237
+		engine 24 237
+		gun -8 -212
+		gun 8 -212
+		gun -16 -158
+		gun 16 -158
+		turret -37 -150 "Quarg Skylance"
+		turret 37 -150 "Quarg Skylance"
+		turret -38 -132 "Quarg Skylance"
+		turret 38 -132 "Quarg Skylance"
+		turret -40 -111 "Quarg Skylance"
+		turret 40 -111 "Quarg Skylance"
+		turret -102 188 "Korath Warder"
+		turret 102 188 "Korath Warder"
+		explode "big explosion" 50
+		explode "medium explosion" 70
+		explode "huge explosion" 15
+		explode "small explosion" 60
+		explode "tiny explosion" 120
