@@ -5,7 +5,7 @@ person "Storm Crow"
 		plunders
 	phrase
 		word
-			"349 is bae"
+			"Please be aware that you've currently got The Enclave installed- while it only adds a new galaxy and some outfits currently, if you're experiencing bugs please remember to uninstall this mod before asking on the Steam forums for help. Hope you're enjoying the mod so far!"
 	ship "Kar Ik Vot 349"
 		"never disabled"
 		attributes
@@ -62,3 +62,59 @@ person "Storm Crow"
 		explode "huge explosion" 15
 		explode "small explosion" 60
 		explode "tiny explosion" 120
+		
+	
+person "Laserman_23"
+	government "Merchant"
+	frequency 500
+	personality
+		surveillance
+	phrase
+		word
+			"I "
+		word
+			"fly "
+			"pilot "
+		word
+			"terrible "
+			"awful "
+			"horrendous "
+			"bad "
+			"atrocious "
+			"lousy "
+			"dreadful "
+		word
+			"ships."
+			"vessels."
+			"spacecraft."
+	ship "Star Queen" "Star Queen"
+		"never disabled"
+		outfits
+			"Heavy Anti-Missile Turret" 2
+			"Breeder Reactor"
+			Hyperdrive
+			"A370 Atomic Thruster"
+			"A255 Atomic Steering"
+			"Mass Expansion"
+			"D94-YV Shield Generator"
+			Flamethrower 3
+			"Cooling Ducts"
+			"Catalytic Ramscoop" 2
+			"Water Coolant System"
+		crew 43
+	fuel 500
+	shields 4100
+	hull 2200
+	position 330.17801 -918.96985
+	engine -18 116
+	engine 18 116
+	gun 0 -116 Flamethrower
+	gun -22 -80 Flamethrower
+	gun 22 -80 Flamethrower
+	turret -28 -9 "Heavy Anti-Missile Turret"
+	turret 28 -9 "Heavy Anti-Missile Turret"
+	explode "medium explosion" 25
+	explode "tiny explosion" 10
+	explode "small explosion" 25
+	explode "big explosion" 10
+	"final explode" "final explosion medium" 1
