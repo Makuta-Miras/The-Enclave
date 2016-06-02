@@ -118,3 +118,63 @@ person "Laserman_23"
 	explode "small explosion" 25
 	explode "big explosion" 10
 	"final explode" "final explosion medium" 1
+	
+	
+person "Jacob, the Inexplicable"
+	government "Syndicate"
+	frequency 500
+	personality
+		surveillance
+	phrase
+		word
+			"20% of the time, "
+			"Sometimes, "
+			"Occasionally, "
+		word
+			"my ships work "
+			"my MTG decks work "
+			"fleet works "
+		word
+			"every time!"
+			"all the time!"
+	ship "Cruiser" "Cruiser"
+		"never disabled"
+		outfits
+			Hyperdrive
+			"A370 Atomic Thruster"
+			"A375 Atomic Steering"
+			"Mass Expansion" 3
+			"Small Heat Shunt"
+			"Large Heat Shunt" 3
+			"Triple Plasma Core"
+			"Wanderer Anti-Missile"
+			"Sunbeam Turret" 2
+			"Dark Storm Shielding" 3
+			Sunbeam 6
+		crew 83
+		fuel 600
+		shields 19600
+		hull 6400
+		position -94.38424 -320.76242
+		engine -29 156
+		engine 29 156
+		gun -41 -52 Sunbeam
+		gun 41 -52 Sunbeam
+		gun -31 -63 Sunbeam
+		gun 31 -63 Sunbeam
+		gun -20 -44 Sunbeam
+		gun 20 -44 Sunbeam
+		turret 0 -40
+		turret -33 -19 "Sunbeam Turret"
+		turret 33 -19 "Sunbeam Turret"
+		turret 0 0 "Wanderer Anti-Missile"
+		drone -25 18
+		drone 25 18
+		drone -25 49
+		drone 25 49
+		explode "tiny explosion" 20
+		explode "big explosion" 40
+		explode "small explosion" 45
+		explode "huge explosion" 10
+		explode "medium explosion" 50
+		"final explode" "final explosion large" 1
