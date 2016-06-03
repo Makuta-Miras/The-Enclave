@@ -1,5 +1,5 @@
 person "Storm Crow"
-	government "Free Worlds"
+	government "Ascendancy"
 	frequency 1000
 	personality
 		plunders
@@ -133,7 +133,7 @@ person "Jacob, the Inexplicable"
 		word
 			"my ships work "
 			"my MTG decks work "
-			"fleet works "
+			"my fleet works "
 		word
 			"every time!"
 			"all the time!"
