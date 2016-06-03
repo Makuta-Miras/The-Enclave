@@ -58,6 +58,7 @@ ship "Apollo"
 	description "The Apollo is the largest and most advanced warship developed by the Enclave so far, somewhere between the Cruisers and the Carriers of the Republic in terms of size. The Apollo is able to carry two fighters in its bays, usually Darts. Despite its size, the Apollo is fairly maneuverable, capable of matching many interceptors in combat."
 	description "	The Apollo was named after the series of missions during the second half of the 20th century which allowed humanity to set foot on a stellar object other than Earth for the first time."
 
+	
 ship Bloodhound
 	sprite ship/Bloodhound
 	attributes
@@ -96,18 +97,19 @@ ship Bloodhound
 	engine 24 180
 	gun 23 -188 "Particle Cannon"
 	gun -23 -188 "Particle Cannon"
-	turret -22 4.5 "Electron Turret"
-	turret 29 4.5 "Electron Turret"
-	turret 0.5 132 "Heavy Anti-Missile Turret"
-	turret 22.5 47.5 "Heavy Anti-Missile Turret"
-	turret -20 46.5 "Heavy Anti-Missile Turret"
+	turret 75 -31 "Electron Turret"
+	turret -75 -31 "Electron Turret"
+	turret 0 140 "Heavy Anti-Missile Turret"
+	turret 30 44 "Heavy Anti-Missile Turret"
+	turret -30 44 "Heavy Anti-Missile Turret"
 	explode "tiny explosion" 10
 	explode "small explosion" 25
 	explode "medium explosion" 25
 	explode "big explosion" 10
-	description "The Bloodhound is a lean, mean fighting vessel recently produced by XSZ Shipyards. Equipped with slightly outdated weaponry, for Enclave space at least, the Bloodhound makes up for the lack of high-end weapons simply by virtue of how many it has."
+	description "The Bloodhound is a lean, mean fighting vessel recently produced by XSZ Shipyards. Equipped with slightly outdated weaponry, for Enclave space at least, the Bloodhound makes up for the lack of high-end weapons through its impressive speed, handling like an interceptor as it dominates the battlefield."
 	description "	As a result of the massive energy production systems on board, the Bloodhound is currently one of the most expensive ships available in this galaxy."
 
+	
 ship "Buzzard"
 	sprite "ship/Buzzard"
 	attributes
@@ -150,6 +152,7 @@ ship "Buzzard"
 	explode "small explosion" 16
 	description "The Buzzard is a light warship designed by the XSZ Corporation to be able to carry two of their heavy particle cannons. As a result, this ship has very little outfit space free, and has been designed to use the most efficient setup possible in order to extract the most value from the HFS-8B1."	
 	
+	
 ship "Cheetah"
 	sprite "ship/Cheetah"
 	attributes
@@ -190,6 +193,7 @@ ship "Cheetah"
 	description "Do not be fooled- this ship's name is a deception. While not the fastest of ships, the Cheetah does have a relatively large number of bunks, making it an excellent shuttlecraft. What's more, it also has reasonably strong shields, allowing it to weather an attack if it can't outrun a hostile."
 	description "	The Cheetah was developed towards the end of the war against the Ascendancy, designed as a ship to quickly move around personnel in order to assist with rebuilding in the aftermath of the war."
 	
+	
 ship "Dart"
 	sprite "ship/Dart"
 	attributes
@@ -226,7 +230,60 @@ ship "Dart"
 	explode "tiny explosion" 15
 	explode "small explosion" 5
 	description "The Dart is an efficient fighter, developed by the Enclave's government shipyards to replace the aging Lance as their primary fighter. Equipped with a slightly more comprehensive set of outfits than the Lance, a Dart piloted by a skilled captain has potential to survive many a battle." 
-	description "	The Dart was designed in tandem with the Apollo- this is where the resemblance between the two comes from."
+	description "	The Dart was designed in tandem with the Apollo- this is where the resemblance between the two comes from."	
+
+	
+ship "Flurry"
+	sprite "ship/Flurry"
+	attributes
+		category "Transport"
+		"cost" 2230000
+		"shields" 4400
+		"hull" 850
+		"required crew" 4
+		"bunks" 30
+		"mass" 220
+		"drag" 5.0
+		"heat dissipation" .7
+		"fuel capacity" 700
+		"cargo space" 50
+		"outfit space" 375
+		"weapon capacity" 90
+		"engine capacity" 110
+		weapon
+			"blast radius" 60
+			"shield damage" 600
+			"hull damage" 300
+			"hit force" 900
+	outfits
+		Hyperdrive
+		Afterburner
+		"X3200 Ion Steering"
+		"Impala Plasma Thruster"
+		"D94-YV Shield Generator"
+		"Fuel Pod"
+		Ramscoop
+		"S3 Thermionic"
+		"Meteor Missile Launcher" 2
+		"Meteor Missile" 70
+		"Laser Turret" 2
+		"Small Radar Jammer"
+		"Kindle-Class Power Pack"
+		
+	engine -7.25 64.5
+	engine 7.75 64.5
+	gun 23.25 -42.5 "Meteor Missile Launcher"
+	gun -23.25 -42 "Meteor Missile Launcher"
+	turret 14.25 -31.5 "Laser Turret"
+	turret -13.25 -31.5 "Laser Turret"
+	explode "tiny explosion" 15
+	explode "small explosion" 34
+	explode "medium explosion" 18
+	explode "big explosion" 2
+	"final explode" "final explosion small"
+	description "The Flurry is a large passenger ship, designed alongside the Leatherback as a way to quickly move large amounts of workers to help rebuild in the aftermath of the war against the Ascendancy."
+	description "	In extreme contrast to the other XSZ ships you have seen, however, the Flurry could almost be described as elegant."
+
 	
 ship "Fregter"
 	sprite "ship/Fregter"
@@ -272,8 +329,9 @@ ship "Fregter"
 	explode "medium explosion" 25
 	explode "big explosion" 10
 	description "This was one of the first ships developed by XSZ after the company's inception. Not much more than the traditional freighters found back in the Republic, this ship is a slice of home oddly out of place in this galaxy."
-	description "	Oddly enough, this ship's name came about due to a data corruption. Originally referred to by XSZ developers as The Freighter, when XSZ's servers were hacked, the schematic's name was changed to `The Fregter`- and it stuck."
-
+	description "	Oddly enough, this ship's name came about due to a data corruption. Originally referred to by XSZ developers as The Freighter, when XSZ's servers were hacked, the schematic's name was changed to `The Fregter`- and it stuck."	
+		
+	
 ship "Leatherback"
 	sprite "ship/Leatherback"
 	attributes
@@ -329,6 +387,7 @@ ship "Leatherback"
 	description "The Leatherback is a heavy freighter designed by XSZ to facilitate the growth of larger independent merchant fleets- to this end, it is equipped with strong anti-missile systems, as well as a pair of flamethrowers, unusually. It even has interference plating added, for those few captains who may be transporting slightly less legal commodities than the norm."
 	description "	To offset the fuel consumption of the flamethrowers, the Leatherback comes straight off the assembly line with a pair of ramscoops already installed."
 	description "	The Leatherback's name came about as a result of an XSZ executive watching an ancient, classic film from Earth, which featured enormous alien monsters invading the planet. One of these monsters was named Leatherback, and in a drunken haze, he decided to name this freighter after it."
+	
 	
 ship "Muesli Carrier"
 	sprite "ship/SuperDuperCarrier"
@@ -390,6 +449,7 @@ ship "Muesli Carrier"
 	description "	This is a somewhat weird ship that the Enclave appear to have cobbled together from pieces of Bactrians. Able to carry twelve fighters, the Muesli Carrier is a force to be reckoned with."
 	description "	Okay, I admit it- I've got no idea where the name came from. No idea at all."
 	
+	
 ship "Scorched Earth"
 	sprite "ship/Scorched Earth"
 	attributes
@@ -427,6 +487,7 @@ ship "Scorched Earth"
 	explode "huge explosion" 50
 	"final explode" "final explosion large"
 	description "The 'Scorched Earth' interceptor is a hyperspace-enabled drone which XSZ uses to carry its nuclear missiles. Due to the lack of a pilot, the missiles can be built without much thought given to radiation shielding in the casing, and the ships can also be piloted very recklessly straight into the middle of an enemy fleet without fear of losing the pilot."
+	
 	
 ship "Sea Drake"	
 	sprite "ship/Sea Drake"
@@ -473,6 +534,7 @@ ship "Sea Drake"
 	explode "small explosion" 20
 	explode "medium explosion" 10
 	description "The Sea Drake is a medium-strength warship favoured by bounty hunters for its large weapons capacity and relatively strong shielding."
+	
 	
 ship "Turbulence"
 	sprite "ship/Turbulence"
