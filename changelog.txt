@@ -4,6 +4,9 @@
 -Added a new ship, the Turbulence.
 -Removed the Nuclear Missile MK 5 from outfitters.
 -Rebalanced the railgun.
+-Added a new ship, the Flurry.
+-New Anteater sprite.
+-Fixed a bug with Jacob, the Inexplicable's hails.
 
 
 02/06/16 [v0.0.5]
