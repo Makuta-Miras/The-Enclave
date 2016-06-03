@@ -3,6 +3,52 @@ galaxy "Enclave Galaxy"
 	pos 5000 500
 	sprite ui/EnclaveGalaxy2
 
+system Abomin
+	pos 4788.53 346.251
+	government Enclave
+	habitable 851.84
+	link Thornton
+	link Pralmia
+	asteroids "small rock" 6 3.4804
+	asteroids "medium rock" 46 4.2504
+	asteroids "large rock" 12 3.8808
+	asteroids "small metal" 17 2.4024
+	asteroids "medium metal" 18 4.1888
+	asteroids "large metal" 10 4.4044
+	object
+		sprite star/k5
+		distance 42.5
+		period 10.7401
+		offset 180
+	object
+		sprite star/k5
+		distance 42.5
+		period 10.7401
+	object
+		sprite planet/lava1
+		distance 167.75
+		period 29.7766
+	object
+		sprite planet/desert2
+		distance 466.24
+		period 137.973
+	object
+		sprite planet/gas15
+		distance 1210.85
+		period 577.453
+	object
+		sprite planet/rock17
+		distance 1961.09
+		period 1190.22
+	object
+		sprite planet/gas6
+		distance 2458.78
+		period 1670.94
+		object
+			sprite planet/lava0
+			distance 296
+			period 13.0078
+
 system Adke
 	pos 4831.55 548.712
 	government Enclave
@@ -460,6 +506,7 @@ system Arkhos
 
 system Ascendant
 	pos 4928.74 234.501
+	government Ascendancy
 	habitable 945
 	link Glephum
 	link Blackfriar
@@ -487,10 +534,11 @@ system Ascendant
 		sprite planet/cloud2
 		distance 513.206
 		period 151.28
-	object
+	object Imperative
 		sprite planet/gas11
-		distance 1366.9
-		period 657.578
+		distance 1239.21
+		period 567.622
+		offset 265.484
 		object
 			sprite planet/dust1
 			distance 260
@@ -505,8 +553,9 @@ system Ascendant
 			period 41.1577
 	object
 		sprite planet/gas7
-		distance 3048.26
-		period 2189.88
+		distance 2920.57
+		period 2053.74
+		offset 348.527
 		object
 			sprite planet/desert4
 			distance 218
@@ -518,6 +567,7 @@ system Ascendant
 
 system Blackfriar
 	pos 4949.74 288.501
+	government Ascendancy
 	habitable 625
 	link Ascendant
 	link Glephum
@@ -533,28 +583,33 @@ system Blackfriar
 		period 10
 	object
 		sprite planet/ice4
-		distance 151.96
-		period 29.9719
+		distance 245.101
+		period 61.3956
+		offset 128.403
 	object
 		sprite planet/mars
-		distance 568
-		period 216.592
-	object
+		distance 661.141
+		period 271.995
+		offset 30.0553
+	object Indefatigable
 		sprite planet/forest1
-		distance 1255.64
-		period 711.898
+		distance 1348.78
+		period 792.56
+		offset 59.2861
 		object
 			sprite planet/ice7
 			distance 150
 			period 20.5761
 	object
 		sprite planet/venus
-		distance 1589.4
-		period 1013.84
+		distance 1675.78
+		period 1097.6
+		offset 31.4997
 	object
 		sprite planet/gas8
-		distance 2951.49
-		period 2565.56
+		distance 2286.45
+		period 1749.29
+		offset 292.142
 		object
 			sprite planet/tethys
 			distance 176
@@ -1238,7 +1293,7 @@ system Four
 			period 20.3575
 
 system Frill
-	pos 4791.61 493.955
+	pos 4788.61 502.955
 	government Enclave
 	habitable 1080
 	link Adke
@@ -1288,6 +1343,7 @@ system Frill
 
 system Frontier
 	pos 4933.74 161.501
+	government " Ascendancy"
 	habitable 640
 	link Ascendant
 	asteroids "small rock" 4 2.6125
@@ -1329,10 +1385,11 @@ system Frontier
 			sprite planet/miranda
 			distance 487
 			period 43.7675
-		object
+		object Forefather
 			sprite planet/ice8
-			distance 652
-			period 67.8001
+			distance 653.142
+			period 67.9783
+			offset 18.0661
 
 system Gautus
 	pos 5192.61 699.365
@@ -1960,7 +2017,7 @@ system Orff
 			sprite planet/ice8
 			distance 274
 			period 11.9127
-		object "Some weird mining outpost"
+		object Magna
 			sprite planet/tethys
 			distance 395.17
 			period 20.6329
@@ -2134,6 +2191,7 @@ system Pralmia
 	habitable 320
 	link Ninsug
 	link Thornton
+	link Abomin
 	asteroids "large metal" 1 6.1776
 	object
 		sprite star/m0
@@ -2661,6 +2719,7 @@ system Thornton
 	link Ninsug
 	link Frill
 	link Pralmia
+	link Abomin
 	asteroids "small rock" 51 3.168
 	asteroids "medium rock" 143 3.234
 	asteroids "large rock" 50 1.452
@@ -2918,13 +2977,11 @@ planet Bantilium
 
 planet Cromerium
 	attributes Ascendancy
-	landscape land/nasa5
-	description `Balancing on the edge of a black hole is fun.`
-	spaceport there
-	spaceport `	is`
-	spaceport `	a`
-	spaceport `	spaceport`
-	spaceport `	here`
+	landscape land/mfield1
+	description `Cromerium is the world which was first settled by the Ascendancy upon their banishment. It is situated right next to the event horizon of a black hole, yet some strange forces seem to be keeping it from tipping into the abyss.`
+	description `	Much of the surface is formed of ragged peaks and crags- presumably, this is as a result of the massive gravitational forces acting on the planet, yet which are unable to fully pull the planet into the black hole.`
+	spaceport `Cromerium's spaceport is a series of very tall buildings. They appear to be sculpted out of a single piece of metal, without impurities, although you know that that is impossible. Landing bays for ships are on the sides of the buildings, fully automated- a ship can land, be refueled, repaired and recharged without a single spaceport worker needing to enter the hangar.`
+	spaceport `	Oddly enough, there are no massive arrays of merchants here hawking their wares- it appears that all businesses are owned by the central Ascendancy government, and as a result, the trading areas are oddly calm.`
 	shipyard Ascendancy
 	outfitter "Ascendancy Miniaturised"
 	outfitter "Ascendancy Basics"
@@ -2939,11 +2996,22 @@ planet Cygite
 
 planet Cynic
 	attributes xsz
-	landscape land/badlands0
-	description `Cynic is a planet. Yay.`
-	spaceport SPACEPORT
-	outfitter "Delta V Basics"
+	landscape land/snow2
+	description `The governing authorites on Cynic are notoriously stubborn and rebellious, landing it the title of "Largest Thorn in XSZ's Backside" year after year.`
+	description `	Despite this, XSZ still seems to pour large amounts of money into the energy development industries here on Cynic, pushing reactors and batteries to ever greater heights.`
+	spaceport `The main spaceport complex on Cynic is a flat, stumpy set of buildings towards the coast of Cynic's largest ocean. The whole thing is surrounded by a barricade of concrete walls, razor wire and presumably mines, almost ten yards thick- doubtlessly to protect the spaceport against the frequent political protests that occur on this planet.`
+	spaceport `	No matter what anyone does, the people of Cynic will always find something to complain about.`
+	shipyard "XSZ Tier 2"
 	outfitter "XSZ Basics"
+	outfitter "XSZ Advanced"
+
+planet Forefather
+	landscape land/nasa3
+	description `This planet is the home of the Ascendancy's revolutionary miniaturised outfits- but ironically, it appears to be the least efficient in Ascendancy space. Using strip mining and fossil fuels, Forefather stands out in stark contrast to other Ascendancy planets in its inefficiency, although results are results- it is here that most of the major Ascendancy technological breakthroughs have occured.`
+	description `	According to broadcasts you received from the local government as you were coming in to land, inhabitants of Forefather are the happiest, on average, of any planet ruled by the Ascendancy. `
+	spaceport `The spaceport is full of old takeoff gantries, like the ones that were used in the very first years of the space age to launch humanity's primitive rockets. While Ascendancy technology has obviously advanced far past this, it is interesting to see them testing such ancient techniques to see how effective they are.`
+	outfitter "Ascendancy Miniaturised"
+	outfitter "Ascendancy Basics"
 
 planet Idivine
 	attributes enclave
@@ -2953,6 +3021,26 @@ planet Idivine
 	outfitter "Delta V Basics"
 	security 0
 	shipyard
+
+planet Imperative
+	landscape land/desert9-sfiera
+	description `In case you didn't guess, Imperative is the capital of the Ascendancy. It is here that their centres of government are located, among vast landscapes seemingly devoid of sentient life. Despite this, it is also home to the largest Ascendancy cities.`
+	description `	Despite the large population, pollution on Imperative is nearly nonexistent; this is a direct result of the Ascendancy being far more long-sighted than many other human governments, including both the Free Worlds and the Enclave.`
+	spaceport `Imperative has a number of spaceports dotted across the globe, although the main one is, obviously, located in the capital city. The main spaceport is built from a material which seems to defy explanation; the largest buildings bend and curve in an impossible fashion.`
+	spaceport `	As with all of the other Ascendancy spaceports which you have seen, there is very little disorder in the trading areas.`
+	shipyard Ascendancy
+	outfitter "Ascendancy Miniaturised"
+	outfitter "Ascendancy Basics"
+	outfitter "Ascendancy Advanced"
+
+planet Indefatigable
+	landscape land/dmottl5
+	description `Indefatigable is the Ascendancy's largest manufacturing world. It is here that their most advanced outfits, ships and weapons are constructed.`
+	description `	Despite the large amounts of industry, Indefatigable is untouched by any major environmental destruction, and the skies are often clear enough that the stars can be seen every night, even in urban centres. The cold climate has not discouraged any settlers, either- thanks to the presence of the Ascendancy shipyards, work is always available.`
+	spaceport `The spaceport is at the bottom of a large valley, a few miles away from the first urban areas. As you were bringing your ship in to land, however, you noticed a large network of security drones patrolling the airspace above the valley. Evidently, the Ascendancy is very mindful of security here, doubtless due to the shipyards.`
+	shipyard Ascendancy
+	outfitter "Ascendancy Basics"
+	outfitter "Ascendancy Advanced"
 
 planet Korine
 	attributes enclave
@@ -2965,7 +3053,7 @@ planet Latent
 	attributes xsz
 	landscape land/city0
 	description `Latent is the capital of the XSZ Corporation, covered in gleaming office blocks and automated factories deep below ground.`
-	description ` Settled in the first years of the Enclave, Latent's population skyrocketed when an abundance of natural resources was discovered on the planet- eventually becoming the economic juggernaut that XSZ is today.`
+	description `	Settled in the first years of the Enclave, Latent's population skyrocketed when an abundance of natural resources was discovered on the planet- eventually becoming the economic juggernaut that XSZ is today.`
 	spaceport `Latent's spaceport is a large, sprawling affair; landing pads and terminals stretch as far as the eye can see. A number of the landing pads within sight of the one where your ship is parked appear to be marked for use exclusively by XSZ, no doubt for the export of outfits constructed by on Latent and the import of basic necessities like food and clothing.`
 	shipyard "XSZ Tier 1"
 	shipyard "XSZ Tier 2"
@@ -2985,6 +3073,18 @@ planet Lyfon
 	outfitter "Enclave Outfits"
 	outfitter "XSZ Basics"
 	security 0
+
+planet Magna
+	attributes xsz
+	landscape land/hills1
+	description `Magna is a desolate planet, having been continually strip mined by XSZ for the past two centuries. However, there are a reasonable number of settlements here. The reason why? XSZ's largest shipyards are located here, meaning thousands of people migrate here each year to fill the massive number of jobs required to work in the shipyards, as well as the mines.`
+	description `	Surprisingly enough, the relative background radiation levels here are abnormally low; despite XSZ's normal record of bad radiation safety, it appears that everything here is at least half lead, doubtlessly to prevent any possibility of workers being discouraged from coming to work here due to dangerous conditions.`
+	spaceport `The spaceport is a large, sprawling affair, taking advantage of the massive space afforded by being in an area that has already been exhausted of its raw materials.`
+	spaceport `	A good third of the spaceport is filled by recruiting offices for various divisions of XSZ- XSZ Shipyards, XSZ Steel, XSZ Systems- and more. As a result, there are equally long lines of people, many of whom look desperate, queuing out of these offices in an attempt to secure a job for themselves.`
+	shipyard "XSZ Tier 1"
+	shipyard "XSZ Tier 2"
+	shipyard "XSZ Tier 3"
+	outfitter "XSZ Basics"
 
 planet Memorandum
 	attributes enclave
@@ -3022,8 +3122,10 @@ planet Ortite
 planet Puggleshank
 	attributes pug
 	landscape land/gorge1
-	description `PUG PLANET`
-	spaceport `PUG SPACEPORT`
+	description `This world seems to be covered in dense forests, stretching as far as the eye can see. The only break in the canopy appears to be for a massive Pug city. Strange structures rise far above the treetops, their organic-looking architecture mirroring the design of the Pug ships that you have seen.`
+	description `	There is an unfathomable sense of calm permeating this planet and all of its Pug inhabitants.`
+	spaceport `The spaceport on Puggleshank lies in the centre of the city. Strangely enough, the landing pads are few and far between, nowhere near enough to accomodate the Pug ships flying through the system. You suspect that there are hangars far below the ground, although the density of buildings around the spaceport and their apparent weight would seem to suggest otherwise.`
+	spaceport `	As with most Pug-controlled planets, the Pug here ignore you mostly.`
 	"required reputation" 50
 
 planet Quaver
@@ -3042,13 +3144,6 @@ planet Seminar
 	description PLANET
 	spaceport SPACEPORT
 
-planet "Some weird mining outpost"
-	attributes xsz
-	landscape land/badlands0
-	description thing
-	spaceport SPACEPORT
-	outfitter "XSZ Basics"
-
 planet Tarkir
 	attributes enclave
 	landscape land/badlands2
@@ -3057,4 +3152,3 @@ planet Tarkir
 	spaceport `The spaceport is well defended against the dragons.`
 	shipyard "Enclave Tier 2"
 	outfitter "Delta V Basics"
-

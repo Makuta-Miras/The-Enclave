@@ -96,16 +96,16 @@ ship Bloodhound
 	engine 24 180
 	gun 23 -188 "Particle Cannon"
 	gun -23 -188 "Particle Cannon"
-	turret 75 -31 "Electron Turret"
-	turret -75 -31 "Electron Turret"
-	turret 0 140 "Heavy Anti-Missile Turret"
-	turret 30 44 "Heavy Anti-Missile Turret"
-	turret -30 44 "Heavy Anti-Missile Turret"
+	turret -22 4.5 "Electron Turret"
+	turret 29 4.5 "Electron Turret"
+	turret 0.5 132 "Heavy Anti-Missile Turret"
+	turret 22.5 47.5 "Heavy Anti-Missile Turret"
+	turret -20 46.5 "Heavy Anti-Missile Turret"
 	explode "tiny explosion" 10
 	explode "small explosion" 25
 	explode "medium explosion" 25
 	explode "big explosion" 10
-	description "The Bloodhound is a lean, mean fighting vessel recently produced by XSZ Shipyards. Equipped with slightly outdated weaponry, for Enclave space at least, the Bloodhound makes up for the lack of high-end weapons through its impressive speed, handling like an interceptor as it dominates the battlefield."
+	description "The Bloodhound is a lean, mean fighting vessel recently produced by XSZ Shipyards. Equipped with slightly outdated weaponry, for Enclave space at least, the Bloodhound makes up for the lack of high-end weapons simply by virtue of how many it has."
 	description "	As a result of the massive energy production systems on board, the Bloodhound is currently one of the most expensive ships available in this galaxy."
 
 ship "Buzzard"
