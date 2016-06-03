@@ -226,7 +226,7 @@ ship "Dart"
 	explode "tiny explosion" 15
 	explode "small explosion" 5
 	description "The Dart is an efficient fighter, developed by the Enclave's government shipyards to replace the aging Lance as their primary fighter. Equipped with a slightly more comprehensive set of outfits than the Lance, a Dart piloted by a skilled captain has potential to survive many a battle." 
-	description "	The Dart was designed in tandem with the Apollo- this is where the resemblance between the two comes from."	
+	description "	The Dart was designed in tandem with the Apollo- this is where the resemblance between the two comes from."
 	
 ship "Fregter"
 	sprite "ship/Fregter"
@@ -272,7 +272,7 @@ ship "Fregter"
 	explode "medium explosion" 25
 	explode "big explosion" 10
 	description "This was one of the first ships developed by XSZ after the company's inception. Not much more than the traditional freighters found back in the Republic, this ship is a slice of home oddly out of place in this galaxy."
-	description "	Oddly enough, this ship's name came about due to a data corruption. Originally referred to by XSZ developers as The Freighter, when XSZ's servers were hacked, the schematic's name was changed to `The Fregter`- and it stuck."	
+	description "	Oddly enough, this ship's name came about due to a data corruption. Originally referred to by XSZ developers as The Freighter, when XSZ's servers were hacked, the schematic's name was changed to `The Fregter`- and it stuck."
 
 ship "Leatherback"
 	sprite "ship/Leatherback"
@@ -473,3 +473,58 @@ ship "Sea Drake"
 	explode "small explosion" 20
 	explode "medium explosion" 10
 	description "The Sea Drake is a medium-strength warship favoured by bounty hunters for its large weapons capacity and relatively strong shielding."
+	
+ship "Turbulence"
+	sprite "ship/Turbulence"
+	attributes
+		category "Medium Warship"
+		"cost" 3100000
+		"shields" 5200
+		"hull" 1700
+		"required crew" 12
+		"bunks" 21
+		"mass" 250
+		"drag" 4.0
+		"heat dissipation" .7
+		"fuel capacity" 600
+		"cargo space" 75
+		"outfit space" 400
+		"weapon capacity" 150
+		"engine capacity" 100
+		weapon
+			"blast radius" 60
+			"shield damage" 600
+			"hull damage" 300
+			"hit force" 900
+	outfits
+		"X3700 Ion Thruster"
+		Hyperdrive
+		"X3200 Ion Steering"
+		"LP144a Battery Pack"
+		"RT-I Radiothermal"
+		"Small Radar Jammer" 2
+		"Water Coolant System"
+		"D67-TM Shield Generator"
+		Railgun 4
+		Ball-bearing 800
+		"HFS-8B1 Particle Cannon" 2		
+	engine -13.25 119
+	engine 11.75 119.5	
+	gun 8.75 -100 Railgun
+	gun -10.25 -100 Railgun
+	gun -15.25 -93 Railgun
+	gun 13.75 -93 Railgun
+	gun -33.25 -12.5
+	gun 31.75 -12.5
+	gun 37.75 16 "HFS-8B1 Particle Cannon"
+	gun -39.25 16 "HFS-8B1 Particle Cannon"
+	turret 14.75 -0.5
+	turret -16.75 -0.5
+	explode "tiny explosion" 18
+	explode "small explosion" 36
+	explode "medium explosion" 24
+	explode "big explosion" 8
+	"final explode" "final explosion medium"
+	description "The Turbulence is a medium warship designed by XSZ to act as the primary flagships for their fleets."
+	description "	As a result, although the Turbulence is available for sale to the public, it has been built with nuclear capabilities in mind, and as a result, XSZ has added a massive eight gun ports for nuclear missiles. Despite this, they do appear to have taken into consideration at least some of the needs of average ship-owners, adding two turret mounts for anti-missile systems."
+	description "	The nuclear version of the Turbulence is not available to the public."
