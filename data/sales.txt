@@ -4,6 +4,7 @@ shipyard "XSZ Tier 1"
 shipyard "XSZ Tier 2"
 	"Buzzard"
 	"Fregter"
+	"Turbulence"
 
 shipyard "XSZ Tier 3"
 	"Bloodhound"
