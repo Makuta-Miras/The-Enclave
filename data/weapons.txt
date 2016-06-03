@@ -2,9 +2,9 @@ outfit "Railgun"
 	category "Secondary Weapons"
 	cost 20000
 	thumbnail "outfit/Railgun"
-	"mass" 12
-	"outfit space" -12
-	"weapon capacity" -12
+	"mass" 15
+	"outfit space" -15
+	"weapon capacity" -15
 	"gun ports" -1
 	"Ball-bearing capacity" 200
 	weapon
@@ -17,8 +17,8 @@ outfit "Railgun"
 		"velocity" 20
 		"lifetime" 60
 		"reload" 25
-		"firing energy" .2
-		"firing heat" 12
+		"firing energy" 2
+		"firing heat" 125
 		"shield damage" 500
 		"hull damage" 100
 		"hit force" 200
@@ -89,6 +89,7 @@ outfit "Ball-bearing"
 	"Ball-bearing capacity" -1
 	description "Ball-bearings are simple steel spheres, designed to be fired from the railgun. The latest versions of military-grade ball-bearings are mostly solid steel, with basic homing systems installed at the core of the sphere, as the magnetic forces exerted on the projectile during firing disrupt most electrical systems."
 	description " You cannot install ball-bearings unless you have also installed a launcher to fire them from."
+	
 	
 outfit "Nuclear Missile MK 5"
 	category "Secondary Weapons"
