@@ -1,4 +1,11 @@
 ------------------------------------------------------------------------  v0.0.5  -------------------------------------------------------------------------------
+03/06/16 [v0.0.5]
+
+-Added a new ship, the Turbulence.
+-Removed the Nuclear Missile MK 5 from outfitters.
+-Rebalanced the railgun.
+
+
 02/06/16 [v0.0.5]
 
 -Added some new persons.
