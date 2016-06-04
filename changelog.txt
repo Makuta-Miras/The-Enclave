@@ -4,6 +4,7 @@
 -Added a new ship, the Penguin.
 -Added an Enclave variant of the Scout.
 -Added a nuclear variant of the Turbulence, although it cannot be bought and doesn't currently appear in any fleets or anything.
+-Added an "Enclave Everything" shipyard so that I can keep track of all ships currently added.
 
 
 03/06/16 [v0.0.5]
