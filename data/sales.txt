@@ -1,18 +1,20 @@
 shipyard "XSZ Tier 1"
 	"Cheetah"
-
-shipyard "XSZ Tier 2"
-	"Buzzard"
 	"Fregter"
+	"Penguin"
+	
+shipyard "XSZ Tier 2"
+	"Flurry"
+	"Buzzard"
 	"Turbulence"
 
 shipyard "XSZ Tier 3"
 	"Bloodhound"
-	"Leatherback"
 	"Scorched Earth"
-
+	"Leatherback"
+	
 shipyard "Enclave Tier 1"
-	"Scout"
+	"Enclave Scout"
 
 shipyard "Enclave Tier 2"
 	"Sea Drake"
@@ -20,8 +22,8 @@ shipyard "Enclave Tier 2"
 	"Dart"
 	
 shipyard "Enclave Tier 3"
-	"Apollo"
 	"Muesli Carrier"
+	"Apollo"
 	
 shipyard "Ascendancy"
 	"Ravager"
