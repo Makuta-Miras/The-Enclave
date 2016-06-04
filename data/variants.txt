@@ -20,7 +20,9 @@ ship "Scout" "Enclave Scout"
 	description "	Although these Scouts are a lot more rugged and battle-worn than those found in the Milky Way, they seem to be no different in the way they are outfitted."
 
 	
-ship "Turbulence" "Nuclear Turbulence"
+ship "Turbulence" "Turbulence (Nuclear)"
+	licenses
+		"XSZ Nuclear"
 	outfits
 		"X3700 Ion Thruster"
 		Hyperdrive
