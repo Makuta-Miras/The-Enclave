@@ -450,6 +450,49 @@ ship "Muesli Carrier"
 	description "	Okay, I admit it- I've got no idea where the name came from. No idea at all."
 	
 	
+ship "Penguin"
+	sprite "ship/Penguin"
+	attributes
+		category "Interceptor"
+		"cost" 250000
+		"shields" 1200
+		"hull" 325
+		"required crew" 1
+		"bunks" 2
+		"mass" 60
+		"drag" 1.2
+		"heat dissipation" .8
+		"fuel capacity" 300
+		"cargo space" 15
+		"outfit space" 140
+		"weapon capacity" 20
+		"engine capacity" 40
+		weapon
+			"blast radius" 16
+			"shield damage" 160
+			"hull damage" 80
+			"hit force" 240
+	outfits
+		"Meteor Missile Launcher" 2
+		"Meteor Missile" 70
+		
+		"nGVF-BB Fuel Cell"
+		"Spark-Class Power Pack"
+		"D14-RN Shield Generator"
+		
+		"Chipmunk Plasma Thruster"
+		"Chipmunk Plasma Steering"
+		"Hyperdrive"
+		
+	engine 0 35.5
+	gun 10.75 -22 "Meteor Missile Launcher"
+	gun -10.75 -22 "Meteor Missile Launcher"
+	explode "tiny explosion" 15
+	explode "small explosion" 5
+	description "The Penguin is a small, slightly dumpy interceptor which is clearly aimed at first-time ship captains who want to be flying a missile boat, not a shuttlecraft."
+	description "	While slightly slower and more expensive than Tarazed Corporation's Sparrow, the Penguin makes up for this with some extra outfit space and a heavier armament of Meteor Missiles."	
+	
+	
 ship "Scorched Earth"
 	sprite "ship/Scorched Earth"
 	attributes
