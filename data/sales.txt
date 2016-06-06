@@ -22,6 +22,7 @@ shipyard "Enclave Tier 2"
 	"Dart"
 	
 shipyard "Enclave Tier 3"
+	"Destroyer"
 	"Muesli Carrier"
 	"Apollo"
 	
@@ -49,7 +50,8 @@ shipyard "Enclave Everything"
 	"Apollo"
 	"Ravager"
 	"Strike Drone"
-	"Anteater"	
+	"Anteater"
+	"Destroyer"
 	
 outfitter "Ascendancy Miniaturised"
 	"Miniaturised Beam Laser"
