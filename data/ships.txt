@@ -232,6 +232,55 @@ ship "Dart"
 	description "The Dart is an efficient fighter, developed by the Enclave's government shipyards to replace the aging Lance as their primary fighter. Equipped with a slightly more comprehensive set of outfits than the Lance, a Dart piloted by a skilled captain has potential to survive many a battle." 
 	description "	The Dart was designed in tandem with the Apollo- this is where the resemblance between the two comes from."	
 
+
+ship "Destroyer"
+	sprite "ship/Destroyer"
+	attributes
+		category "Medium Warship"
+		"cost" 4500000
+		"shields" 8000
+		"hull" 2500
+		"required crew" 21
+		"bunks" 44
+		"mass" 310
+		"drag" 5.2
+		"heat dissipation" .7
+		"fuel capacity" 500
+		"cargo space" 35
+		"outfit space" 350
+		"weapon capacity" 150
+		"engine capacity" 130
+		weapon
+			"blast radius" 100
+			"shield damage" 1000
+			"hull damage" 500
+			"hit force" 1500
+	outfits
+		"Torpedo Launcher" 2
+		"Torpedo" 60
+		"Heavy Anti-Missile Turret" 1
+		
+		"NT-200 Nucleovoltaic"
+		"LP144a Battery Pack"
+		"D41-HY Shield Generator"
+		
+		"X4700 Ion Thruster"
+		"X3200 Ion Steering"
+		"Hyperdrive"
+		
+	engine 24.75 99.5
+	engine -24.75 99.5
+	gun 13.75 -90 "Torpedo Launcher"
+	gun -13.75 -90 "Torpedo Launcher"
+	turret 0 6 "Heavy Anti-Missile Turret"
+	explode "tiny explosion" 18
+	explode "small explosion" 36
+	explode "medium explosion" 24
+	explode "big explosion" 8
+	"final explode" "final explosion medium"
+	description "The Destroyer is a medium-sized warship produced by the Enclave's government shipyards as a fast-moving supplement for their capital ships."
+	description "	While somewhat less comprehensively equipped than the Republic's Frigate, the Destroyer makes up for this with larger capacity for engines, allowing it to attain a level of speed usually unseen in craft this size."
+
 	
 ship "Flurry"
 	sprite "ship/Flurry"
