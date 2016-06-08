@@ -1,4 +1,16 @@
 ------------------------------------------------------------------------  v0.0.5  -------------------------------------------------------------------------------
+08/06/16 [v0.0.5]
+
+-STORY!!!!!!!
+	-Enclave opens; all four branches done.
+	
+
+06/06/16 [v0.0.5]
+
+-Added a new ship, the Destroyer.
+-Lost my streak of working on this every day. ;_; Current record: 11 days
+
+
 04/06/16 [v0.0.5]
 
 -Added a new ship, the Penguin.
