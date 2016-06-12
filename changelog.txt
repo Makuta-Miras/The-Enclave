@@ -1,4 +1,30 @@
 ------------------------------------------------------------------------  v0.0.5  -------------------------------------------------------------------------------
+12/06/16 [v0.0.5]
+
+-ANOTHER new Apollo sprite. (Symmetry should be fixed now)
+-Moar planets.
+-FLEETS!
+
+
+11/06/16 [v0.0.5]
+
+-More new planets.
+-New descriptions for Seminar.
+-Added a label for The Nether Regions.
+-New Apollo sprite.
+
+
+10/06/16 [v0.0.5]
+
+-New descriptions for Tarkir, new planet in the Theurrhaeus system.
+-Group of alien systems in the south-west; they're they're in readiness for (probably) v0.0.6.
+
+
+09/06/16 [v0.0.5]
+
+-Updated the map; there are now planets in pretty much all of XSZ space, plus Adke, Pipaeus, Abomin and Antithesis.
+
+
 08/06/16 [v0.0.5]
 
 -STORY!!!!!!!
@@ -17,7 +43,6 @@
 -Added an Enclave variant of the Scout.
 -Added a nuclear variant of the Turbulence, although it cannot be bought and doesn't currently appear in any fleets or anything.
 -Added an "Enclave Everything" shipyard so that I can keep track of all ships currently added.
--Made some ships require an "XSZ Nuclear" licence.
 
 
 03/06/16 [v0.0.5]
@@ -93,8 +118,8 @@
 
 -Added a new XSZ light warship, the Buzzard. Available at XSZ Tier 2 shipyards.
 -Decreased energy/shot for HFS-8B1, increased shield damage, decreased hull damage.
--Added the Scout to the Enclave Tier 1 shipyard
--Added the Enclave Tiers 1+2 shipyards to Lyfon
+-Added the Scout to the Enclave Tier 1 shipyard.
+-Added the Enclave Tiers 1+2 shipyards to Lyfon.
 
 
 19/05/16 [v0.0.5]
@@ -125,6 +150,7 @@
 -New ship, the Sea Drake. Available at the XSZ Shipyard.
 -Integrated the SuperDuperCarrier plugin- the renamed "Muesli Carrier" can now be found on Lyfon in the Five system.
 -Added some new shipyards and shifted some ships around.
+
 
 ------------------------------------------------------------------------  v0.0.4  -------------------------------------------------------------------------------
 
