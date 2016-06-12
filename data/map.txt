@@ -3,9 +3,13 @@ galaxy "Enclave Galaxy"
 	pos 5000 500
 	sprite ui/EnclaveGalaxy2
 
+galaxy "The Nether Regions"
+	pos 5000 500
+	sprite label/TheNetherRegions
+
 system Abomin
 	pos 4788.53 346.251
-	government Enclave
+	government Independent
 	habitable 851.84
 	link Thornton
 	link Pralmia
@@ -15,6 +19,16 @@ system Abomin
 	asteroids "small metal" 17 2.4024
 	asteroids "medium metal" 18 4.1888
 	asteroids "large metal" 10 4.4044
+	trade Clothing 250
+	trade Electronics 800
+	trade Equipment 420
+	trade Food 190
+	trade "Heavy Metals" 940
+	trade Industrial 290
+	trade "Luxury Goods" 1420
+	trade Medical 760
+	trade Metal 640
+	trade Plastic 460
 	object
 		sprite star/k5
 		distance 42.5
@@ -30,20 +44,24 @@ system Abomin
 		period 29.7766
 	object
 		sprite planet/desert2
-		distance 466.24
-		period 137.973
-	object
+		distance 487.418
+		period 147.48
+		offset 210.942
+	object Scalpel
 		sprite planet/gas15
-		distance 1210.85
-		period 577.453
+		distance 1232.03
+		period 592.668
+		offset 20.654
 	object
 		sprite planet/rock17
-		distance 1961.09
-		period 1190.22
+		distance 1982.27
+		period 1209.55
+		offset 6.23837
 	object
 		sprite planet/gas6
-		distance 2458.78
-		period 1670.94
+		distance 2404.27
+		period 1615.68
+		offset 349.507
 		object
 			sprite planet/lava0
 			distance 296
@@ -56,44 +74,52 @@ system Adke
 	link Ithaos
 	link Ninsug
 	link Frill
-	asteroids "small rock" 180 3.2318
-	asteroids "large rock" 31 2.6026
-	asteroids "small metal" 37 3.7466
-	asteroids "medium metal" 23 2.574
-	asteroids "large metal" 15 2.9458
-	trade Clothing 290
-	trade Electronics 740
-	trade Equipment 530
-	trade Food 350
-	trade "Heavy Metals" 960
-	trade Industrial 720
-	trade "Luxury Goods" 1220
+	asteroids "small rock" 1 2.6838
+	asteroids "medium rock" 11 2.0412
+	asteroids "large rock" 22 4.0446
+	asteroids "small metal" 2 3.402
+	asteroids "medium metal" 7 1.89
+	asteroids "large metal" 14 2.9106
+	trade Clothing 450
+	trade Electronics 580
+	trade Equipment 490
+	trade Food 710
+	trade "Heavy Metals" 880
+	trade Industrial 640
+	trade "Luxury Goods" 1400
 	trade Medical 680
-	trade Metal 390
-	trade Plastic 390
+	trade Metal 260
+	trade Plastic 440
+	fleet Trader 600
+	fleet Transporter 600
+	fleet "Enclave Patrol" 1000
+	fleet "Enclave Capital" 500
 	object
 		sprite star/f5
 		period 10
-	object
+	object Alleshafen
 		sprite planet/cloud6
-		distance 307.21
-		period 52.0093
+		distance 350.133
+		period 63.2817
+		offset 269.008
 		object
 			sprite planet/rock3
 			distance 148
 			period 18.4331
 	object
 		sprite planet/gas0
-		distance 846.9
-		period 238.054
+		distance 926.992
+		period 272.61
+		offset 196.586
 		object
 			sprite planet/miranda
 			distance 258
 			period 12.1447
 	object
 		sprite planet/gas7
-		distance 1635.9
-		period 639.092
+		distance 1715.99
+		period 686.595
+		offset 42.2159
 		object
 			sprite planet/ice7
 			distance 263
@@ -109,6 +135,7 @@ system Aether
 	habitable 486.68
 	link Four
 	link Thaen
+	link "Deg Deg"
 	asteroids "medium rock" 3 4.7824
 	asteroids "large rock" 2 2.1168
 	asteroids "small metal" 2 2.6656
@@ -242,7 +269,7 @@ system Alcove
 
 system Antithesis
 	pos 5108.86 448.628
-	government "XSZ Corporation"
+	government Enclave
 	habitable 1080
 	link Maduras
 	link Indigo
@@ -254,21 +281,39 @@ system Antithesis
 	asteroids "small metal" 9 3.1416
 	asteroids "medium metal" 13 6.006
 	asteroids "large metal" 1 3.927
+	trade Clothing 190
+	trade Electronics 860
+	trade Equipment 430
+	trade Food 310
+	trade "Heavy Metals" 780
+	trade Industrial 770
+	trade "Luxury Goods" 1300
+	trade Medical 630
+	trade Metal 390
+	trade Plastic 490
+	fleet Trader 700
+	fleet Transporter 700
+	fleet "XSZ Small" 2000
+	fleet "Enclave Patrol" 2000
+	fleet "Enclave Capital" 2000
 	object
 		sprite star/g0
 		period 10
-	object
-		sprite planet/venus
-		distance 217.76
-		period 39.1125
+	object Perihelion
+		sprite planet/cloud5
+		distance 319.733
+		period 69.5873
+		offset 3.22645
 	object
 		sprite planet/lava2
-		distance 449.6
-		period 116.035
+		distance 587.573
+		period 173.357
+		offset 122.937
 	object
 		sprite planet/neptune
-		distance 1565.84
-		period 754.17
+		distance 1641.77
+		period 809.686
+		offset 41.1304
 		object
 			sprite planet/rock14
 			distance 214
@@ -419,6 +464,9 @@ system Ark
 	trade Medical 680
 	trade Metal 390
 	trade Plastic 390
+	fleet Trader 500
+	fleet Transporter 500
+	fleet "XSZ Small" 1600
 	object
 		sprite star/k5
 		period 10
@@ -455,8 +503,8 @@ system Ark
 		offset 0.946964
 
 system Arkhos
-	pos 4793 569
-	government Neutral
+	pos 4794 564
+	government Enclave
 	habitable 135
 	link Theurrhaeus
 	link Five
@@ -565,6 +613,67 @@ system Ascendant
 			distance 363
 			period 24.6031
 
+system Banq'rujol'ifus
+	pos 5354.41 785.128
+	government Kaltheim
+	habitable 1566.68
+	link Umba'draeuin
+	link Kama'la'ez
+	link Ik'ari'aka
+	link Fo'gar'helien
+	asteroids "small rock" 5 6.0102
+	asteroids "medium rock" 7 3.2886
+	asteroids "large rock" 1 6.9741
+	asteroids "medium metal" 5 6.5205
+	asteroids "large metal" 1 7.3143
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 530
+	trade Food 350
+	trade "Heavy Metals" 960
+	trade Industrial 720
+	trade "Luxury Goods" 1220
+	trade Medical 680
+	trade Metal 390
+	trade Plastic 390
+	object
+		sprite star/g0
+		distance 31.9963
+		period 10.5639
+		offset 180
+	object
+		sprite star/k0
+		distance 71.0037
+		period 10.5639
+	object
+		sprite planet/rock3
+		distance 188.844
+		period 26.2255
+	object
+		sprite planet/ice2
+		distance 480.804
+		period 106.542
+	object
+		sprite planet/cloud2
+		distance 778.214
+		period 219.391
+		object
+			sprite planet/dust0
+			distance 140
+			period 13.3249
+	object
+		sprite planet/rock7
+		distance 1097.1
+		period 367.233
+	object
+		sprite planet/neptune
+		distance 1966.71
+		period 881.417
+		object
+			sprite planet/dust4
+			distance 212
+			period 15.3793
+
 system Blackfriar
 	pos 4949.74 288.501
 	government Ascendancy
@@ -641,6 +750,9 @@ system Breijkip
 	trade Medical 680
 	trade Metal 390
 	trade Plastic 390
+	fleet Trader 2000
+	fleet Transporter 2000
+	fleet "XSZ Small" 3200
 	object
 		sprite star/a5
 		distance 19.0281
@@ -690,7 +802,18 @@ system Cispia
 	link Eskidilium
 	link "Deg Deg"
 	link Ortus
+	link Daia
 	asteroids "large metal" 1 6.075
+	trade Clothing 330
+	trade Electronics 790
+	trade Equipment 450
+	trade Food 330
+	trade "Heavy Metals" 770
+	trade Industrial 700
+	trade "Luxury Goods" 1190
+	trade Medical 510
+	trade Metal 450
+	trade Plastic 370
 	object
 		sprite star/g5
 		distance 47.8234
@@ -709,19 +832,20 @@ system Cispia
 		distance 497.267
 		period 136.823
 	object Memorandum
-		sprite planet/rock2
-		distance 756.267
-		period 256.618
-		offset 313.578
+		sprite planet/desert1
+		distance 769.267
+		period 263.264
+		offset 351.202
 		object
 			sprite planet/rock17
-			distance 125
-			period 15.0905
+			distance 138
+			period 14.0723
+			offset 316.974
 	object
 		sprite planet/gas1
-		distance 1738.11
-		period 894.108
-		offset 354.529
+		distance 1764.11
+		period 914.247
+		offset 3.95056
 		object
 			sprite planet/dust5
 			distance 239
@@ -779,10 +903,80 @@ system Clurth
 			sprite planet/callisto
 			distance 538
 			period 53.3147
+	object "Kaltheim Wormhole"
+		sprite planet/wormhole
+		distance 800
+		period 89
+
+system Crul'im'heim
+	pos 5453.41 783.128
+	government Kaltheim
+	habitable 625
+	link Fo'gar'helien
+	link Ik'ari'aka
+	asteroids "small rock" 1 2.7531
+	asteroids "medium rock" 32 2.2344
+	asteroids "large rock" 8 5.5062
+	asteroids "small metal" 1 5.187
+	asteroids "medium metal" 3 3.5112
+	asteroids "large metal" 1 3.8703
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 530
+	trade Food 350
+	trade "Heavy Metals" 960
+	trade Industrial 720
+	trade "Luxury Goods" 1220
+	trade Medical 680
+	trade Metal 390
+	trade Plastic 390
+	object
+		sprite star/g5
+		period 10
+	object
+		sprite planet/ice8
+		distance 118.25
+		period 20.5741
+	object
+		sprite planet/rock3
+		distance 249.54
+		period 63.0711
+	object
+		sprite planet/gas0
+		distance 645.5
+		period 262.4
+		object
+			sprite planet/ice7
+			distance 260
+			period 12.2862
+	object
+		sprite planet/gas5
+		distance 1530.59
+		period 958.094
+		object
+			sprite planet/miranda
+			distance 261
+			period 14.0219
+	object
+		sprite planet/jupiter
+		distance 2338.23
+		period 1809.05
+		object
+			sprite planet/rock17
+			distance 228
+			period 10.8184
+		object
+			sprite planet/dust7
+			distance 310
+			period 17.1516
+	object "Kaltheim Wormhole"
+		sprite planet/wormhole
+		distance 800
+		period 89
 
 system Cymexes
 	pos 4801 651
-	government Neutral
+	government Enclave
 	habitable 1050.92
 	link Whuroxla
 	link Muraganda
@@ -842,10 +1036,11 @@ system Cymexes
 			period 33.5621
 
 system Daia
-	pos 5135.61 732.365
+	pos 5141.61 743.365
 	government Enclave
 	habitable 486.68
 	link "Deg Deg"
+	link Cispia
 	asteroids "small rock" 2 5.4144
 	asteroids "medium rock" 79 2.8416
 	asteroids "large rock" 5 3.5712
@@ -888,6 +1083,7 @@ system "Deg Deg"
 	link Cispia
 	link Daia
 	link Gautus
+	link Aether
 	asteroids "small rock" 6 4.2224
 	asteroids "medium rock" 1 4.186
 	asteroids "large rock" 7 2.73
@@ -1131,29 +1327,38 @@ system Finitum
 	asteroids "small metal" 3 2.754
 	asteroids "medium metal" 10 3.604
 	asteroids "large metal" 2 4.318
+	fleet Trader 1000
+	fleet Transporter 1000
+	fleet "XSZ Small" 3000
+	fleet "XSZ Large" 5000
 	object
 		sprite star/g0
 		period 10
 	object
 		sprite planet/rhea
-		distance 124.44
-		period 16.8962
+		distance 123
+		period 16.6037
+		offset 275.883
 	object
 		sprite planet/cloud4
-		distance 308.45
-		period 65.9364
+		distance 307
+		period 65.472
+		offset 3.30557
 	object
 		sprite planet/cloud7
-		distance 547.54
-		period 155.945
-	object
+		distance 518
+		period 143.497
+		offset 118.775
+	object Termite
 		sprite planet/lava2
-		distance 1041.54
-		period 409.131
+		distance 688
+		period 219.65
+		offset 257.006
 	object
 		sprite planet/neptune
-		distance 2477.7
-		period 1501.14
+		distance 927
+		period 343.532
+		offset 193.706
 
 system Five
 	pos 4832 588
@@ -1178,6 +1383,10 @@ system Five
 	trade Medical 680
 	trade Metal 390
 	trade Plastic 390
+	fleet "Enclave Capital" 900
+	fleet Trader 500
+	fleet Transporter 500
+	fleet "Enclave Patrol" 600
 	object
 		sprite star/g5
 		distance 19.5395
@@ -1228,6 +1437,72 @@ system Five
 		period 1889.22
 		offset 1.12596
 
+system Fo'gar'helien
+	pos 5409.41 760.128
+	government Kaltheim
+	habitable 233.28
+	link Banq'rujol'ifus
+	link Jaaaar'aaaaa'l'u
+	link Crul'im'heim
+	asteroids "medium rock" 1 4.752
+	asteroids "large rock" 2 5.256
+	asteroids "small metal" 3 1.944
+	asteroids "medium metal" 3 2.34
+	asteroids "large metal" 4 4.68
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 530
+	trade Food 350
+	trade "Heavy Metals" 960
+	trade Industrial 720
+	trade "Luxury Goods" 1220
+	trade Medical 680
+	trade Metal 390
+	trade Plastic 390
+	object
+		sprite star/m4
+		period 10
+	object
+		sprite planet/lava6
+		distance 199.69
+		period 73.9019
+	object
+		sprite planet/ocean8
+		distance 422.78
+		period 227.663
+	object
+		sprite planet/rock6
+		distance 725.59
+		period 511.868
+	object
+		sprite planet/ice2
+		distance 1282.8
+		period 1203.26
+	object
+		sprite planet/desert9
+		distance 1477.41
+		period 1487.21
+	object
+		sprite planet/gas2
+		distance 2256.7
+		period 2807.58
+		object
+			sprite planet/ice8
+			distance 186
+			period 15.3704
+		object
+			sprite planet/oberon
+			distance 329
+			period 36.1583
+		object
+			sprite planet/ice7
+			distance 486
+			period 64.9186
+		object
+			sprite planet/rhea
+			distance 615
+			period 92.4118
+
 system Four
 	pos 5239.86 669.628
 	government Enclave
@@ -1242,6 +1517,16 @@ system Four
 	asteroids "small metal" 19 7.14
 	asteroids "medium metal" 5 6.9
 	asteroids "large metal" 5 6.6
+	trade Clothing 250
+	trade Electronics 720
+	trade Equipment 590
+	trade Food 460
+	trade "Heavy Metals" 870
+	trade Industrial 650
+	trade "Luxury Goods" 1030
+	trade Medical 850
+	trade Metal 300
+	trade Plastic 380
 	object
 		sprite star/g0
 		distance 33.5496
@@ -1253,16 +1538,19 @@ system Four
 		period 11.3424
 	object
 		sprite planet/mars
-		distance 231.7
-		period 35.6418
+		distance 318.918
+		period 57.5557
+		offset 330.498
 	object
 		sprite planet/lava4
-		distance 451.71
-		period 97.0197
+		distance 538.928
+		period 126.435
+		offset 164.255
 	object
 		sprite planet/gas6
-		distance 1294.4
-		period 470.623
+		distance 1305.93
+		period 476.924
+		offset 7.3029
 		object
 			sprite planet/rock3
 			distance 267
@@ -1279,18 +1567,21 @@ system Four
 			sprite planet/miranda
 			distance 610
 			period 38.4822
-	object
-		sprite planet/gas3
-		distance 2694.96
-		period 1413.83
+	object "New Scotland"
+		sprite planet/gas16
+		distance 2516
+		period 1275.37
+		offset 325.381
 		object
 			sprite planet/dust3
-			distance 303
-			period 13.4719
+			distance 220
+			period 17.1764
+			offset 153.123
 		object
 			sprite planet/desert4
-			distance 399
-			period 20.3575
+			distance 316
+			period 29.5684
+			offset 201.735
 
 system Frill
 	pos 4788.61 502.955
@@ -1343,7 +1634,7 @@ system Frill
 
 system Frontier
 	pos 4933.74 161.501
-	government " Ascendancy"
+	government Ascendancy
 	habitable 640
 	link Ascendant
 	asteroids "small rock" 4 2.6125
@@ -1392,7 +1683,7 @@ system Frontier
 			offset 18.0661
 
 system Gautus
-	pos 5192.61 699.365
+	pos 5203.61 712.365
 	government Enclave
 	habitable 486.68
 	link "Deg Deg"
@@ -1460,6 +1751,126 @@ system Glephum
 		period 4560.22
 		offset 113.271
 
+system Grundel'froae
+	pos 5345.41 868.128
+	government Kaltheim
+	habitable 486.68
+	link Kama'la'ez
+	asteroids "small rock" 2 0.8788
+	asteroids "medium rock" 25 1.69
+	asteroids "large rock" 8 1.8928
+	asteroids "small metal" 22 1.5717
+	asteroids "medium metal" 26 0.9295
+	asteroids "large metal" 14 0.9633
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 530
+	trade Food 350
+	trade "Heavy Metals" 960
+	trade Industrial 720
+	trade "Luxury Goods" 1220
+	trade Medical 680
+	trade Metal 390
+	trade Plastic 390
+	object
+		sprite star/k0
+		period 10
+	object
+		sprite planet/rock0
+		distance 154.89
+		period 34.9521
+	object
+		sprite planet/forest5
+		distance 351.93
+		period 119.708
+	object
+		sprite planet/earth
+		distance 619.93
+		period 279.867
+	object
+		sprite planet/mars
+		distance 1334.09
+		period 883.519
+		object
+			sprite planet/callisto
+			distance 147
+			period 23.8194
+	object
+		sprite planet/gas9
+		distance 2138.73
+		period 1793.38
+		object
+			sprite planet/ice8
+			distance 237
+			period 13.6808
+		object
+			sprite planet/ice0
+			distance 378
+			period 27.5568
+		object
+			sprite planet/desert4
+			distance 494
+			period 41.17
+
+system Ik'ari'aka
+	pos 5399.41 839.128
+	government Kaltheim
+	habitable 425.92
+	link Kama'la'ez
+	link Banq'rujol'ifus
+	link Crul'im'heim
+	asteroids "small rock" 43 2.9463
+	asteroids "medium rock" 7 4.6851
+	asteroids "large rock" 2 6.5688
+	asteroids "small metal" 33 5.8926
+	asteroids "medium metal" 35 2.9463
+	asteroids "large metal" 25 5.2647
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 530
+	trade Food 350
+	trade "Heavy Metals" 960
+	trade Industrial 720
+	trade "Luxury Goods" 1220
+	trade Medical 680
+	trade Metal 390
+	trade Plastic 390
+	object
+		sprite star/k5
+		period 10
+	object
+		sprite planet/ice4
+		distance 148.44
+		period 35.0528
+	object
+		sprite planet/gas15
+		distance 740.2
+		period 390.319
+		object
+			sprite planet/rock7
+			distance 215
+			period 16.5941
+		object
+			sprite planet/luna
+			distance 336
+			period 32.4195
+		object
+			sprite planet/dust3
+			distance 424
+			period 45.9564
+	object
+		sprite planet/lava0
+		distance 1299.45
+		period 907.894
+	object
+		sprite planet/gas16
+		distance 2693.21
+		period 2708.95
+		object
+			sprite planet/ice0
+			distance 209
+			period 15.9044
+
 system Indigo
 	pos 5131.86 501.628
 	government "XSZ Corporation"
@@ -1475,25 +1886,62 @@ system Indigo
 	asteroids "large rock" 14 4.6816
 	asteroids "medium metal" 28 4.048
 	asteroids "large metal" 3 4.2944
+	fleet Trader 700
+	fleet Transporter 700
+	fleet "XSZ Small" 2000
 	object
 		sprite star/k5
 		period 10
 	object
-		sprite planet/lava0
-		distance 204.64
-		period 56.739
+		sprite planet/tethys
+		distance 194.797
+		period 52.6948
+		offset 149.894
+	object Fluorine
+		sprite planet/earth
+		distance 496.527
+		period 214.442
+		offset 42.433
 	object
-		sprite planet/desert2
-		distance 485.65
-		period 207.435
-	object
-		sprite planet/rock2
-		distance 812.01
-		period 448.475
+		sprite planet/rock11
+		distance 990.325
+		period 604.035
+		offset 244.05
+		object
+			sprite planet/desert4
+			distance 142.036
+			period 33.885
+			offset 330.295
 	object
 		sprite planet/gas1
-		distance 1906.9
-		period 1613.94
+		distance 2461.75
+		period 2367.35
+		offset 89.6029
+		object
+			sprite planet/ice8
+			distance 266.755
+			period 17.4134
+			offset 155.89
+		object
+			sprite planet/dust5
+			distance 360.755
+			period 27.3863
+			offset 18.0397
+		object
+			sprite planet/callisto
+			distance 464.755
+			period 40.0453
+			offset 57.779
+		object
+			sprite planet/dust1
+			distance 563.755
+			period 53.4996
+			offset 39.8623
+		object
+			sprite planet/dust0
+			distance 643.755
+			period 65.2824
+			offset 241.197
 
 system Innenheim
 	pos 5206.86 595.628
@@ -1508,6 +1956,16 @@ system Innenheim
 	asteroids "large rock" 2 1.352
 	asteroids "small metal" 5 2.8704
 	asteroids "large metal" 3 2.6832
+	trade Clothing 300
+	trade Electronics 730
+	trade Equipment 640
+	trade Food 510
+	trade "Heavy Metals" 820
+	trade Industrial 620
+	trade "Luxury Goods" 1170
+	trade Medical 840
+	trade Metal 260
+	trade Plastic 420
 	object
 		sprite star/m0
 		period 10
@@ -1515,22 +1973,30 @@ system Innenheim
 		sprite planet/rock16
 		distance 151.89
 		period 41.858
-	object
+	object Jumblar
 		sprite planet/ocean4
-		distance 422.14
-		period 193.941
+		distance 512.779
+		period 259.645
+		offset 286.538
+		object
+			sprite planet/oberon
+			distance 168
+			period 19.8241
 	object
 		sprite planet/desert6
-		distance 832.39
-		period 537.001
+		distance 1026.03
+		period 734.893
+		offset 248.146
 	object
 		sprite planet/dust3
-		distance 1492.8
-		period 1289.7
+		distance 1686.44
+		period 1548.61
+		offset 64.1491
 	object
 		sprite planet/gas3
-		distance 3425.64
-		period 4483.3
+		distance 3619.28
+		period 4868.76
+		offset 8.73852
 		object
 			sprite planet/callisto
 			distance 308
@@ -1631,6 +2097,67 @@ system Ithaos
 		distance 1985.42
 		period 1604.05
 
+system Jaaaar'aaaaa'l'u
+	pos 5372.41 722.128
+	government Kaltheim
+	habitable 425.92
+	link Fo'gar'helien
+	asteroids "small rock" 7 3.5802
+	asteroids "medium rock" 41 5.1246
+	asteroids "large rock" 2 5.4756
+	asteroids "small metal" 13 5.8266
+	asteroids "medium metal" 9 4.4226
+	asteroids "large metal" 9 4.563
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 530
+	trade Food 350
+	trade "Heavy Metals" 960
+	trade Industrial 720
+	trade "Luxury Goods" 1220
+	trade Medical 680
+	trade Metal 390
+	trade Plastic 390
+	object
+		sprite star/k5
+		period 10
+	object
+		sprite planet/desert0
+		distance 280.76
+		period 91.1798
+		object
+			sprite planet/dust1
+			distance 160
+			period 25.4415
+	object
+		sprite planet/ice7
+		distance 700.76
+		period 359.542
+	object
+		sprite planet/mars
+		distance 1021
+		period 632.317
+		object
+			sprite planet/dust5
+			distance 130
+			period 19.8094
+	object
+		sprite planet/gas8
+		distance 2528.96
+		period 2464.95
+		object
+			sprite planet/ice0
+			distance 194
+			period 14.384
+		object
+			sprite planet/rock3
+			distance 340
+			period 33.373
+		object
+			sprite planet/dust3
+			distance 426
+			period 46.8049
+
 system Kaladesh
 	pos 5069 590
 	government "XSZ Corporation"
@@ -1654,6 +2181,10 @@ system Kaladesh
 	trade Medical 680
 	trade Metal 390
 	trade Plastic 390
+	fleet Trader 400
+	fleet Transporter 400
+	fleet "XSZ Small" 1000
+	fleet "XSZ Large" 800
 	object
 		sprite star/f5
 		period 10
@@ -1669,14 +2200,21 @@ system Kaladesh
 			sprite planet/europa
 			distance 158
 			period 21.4448
-	object
-		sprite planet/gas4
-		distance 1171.34
-		period 387.215
+	object Crackle
+		sprite planet/gas2
+		distance 1250.04
+		period 426.888
+		offset 92.2757
+		object "Cavalier Station"
+			sprite planet/station4
+			distance 205.097
+			period 17.7973
+			offset 113.19
 	object
 		sprite planet/gas7
-		distance 2447.38
-		period 1169.45
+		distance 2601.18
+		period 1281.39
+		offset 29.2569
 		object
 			sprite planet/lava0
 			distance 256
@@ -1685,6 +2223,62 @@ system Kaladesh
 			sprite planet/luna
 			distance 378
 			period 26.1438
+
+system Kama'la'ez
+	pos 5326.41 825.128
+	government Kaltheim
+	habitable 858.28
+	link Ik'ari'aka
+	link Umba'draeuin
+	link Banq'rujol'ifus
+	link Grundel'froae
+	asteroids "medium rock" 10 2.628
+	asteroids "large rock" 13 0.99
+	asteroids "medium metal" 2 1.368
+	asteroids "large metal" 2 2.34
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 530
+	trade Food 350
+	trade "Heavy Metals" 960
+	trade Industrial 720
+	trade "Luxury Goods" 1220
+	trade Medical 680
+	trade Metal 390
+	trade Plastic 390
+	object
+		sprite star/g5
+		distance 25.8209
+		period 12.6424
+	object
+		sprite star/m4
+		distance 69.1791
+		period 12.6424
+		offset 180
+	object
+		sprite planet/dust1
+		distance 180.179
+		period 33.0219
+	object
+		sprite planet/desert5
+		distance 580.269
+		period 190.849
+		object
+			sprite planet/dust5
+			distance 167
+			period 23.7306
+	object
+		sprite planet/neptune
+		distance 1645.28
+		period 911.181
+		object
+			sprite planet/callisto
+			distance 220
+			period 16.258
+		object
+			sprite planet/rock7
+			distance 373
+			period 35.8918
 
 system Lyvven
 	pos 4949.09 698.128
@@ -1765,6 +2359,10 @@ system Maduras
 	trade Medical 680
 	trade Metal 390
 	trade Plastic 390
+	fleet Trader 500
+	fleet Transporter 500
+	fleet "XSZ Small" 600
+	fleet "XSZ Large" 800
 	object
 		sprite star/f5
 		period 10
@@ -1807,6 +2405,16 @@ system Memus
 	link "Deg Deg"
 	asteroids "large rock" 4 2.052
 	asteroids "large metal" 1 4.032
+	trade Clothing 180
+	trade Electronics 730
+	trade Equipment 510
+	trade Food 270
+	trade "Heavy Metals" 730
+	trade Industrial 620
+	trade "Luxury Goods" 1400
+	trade Medical 730
+	trade Metal 450
+	trade Plastic 490
 	object
 		sprite star/g0
 		distance 28.5659
@@ -1821,21 +2429,30 @@ system Memus
 		distance 253.244
 		period 41.5402
 	object
-		sprite planet/ice1
-		distance 519.134
-		period 121.921
-	object
-		sprite planet/desert7
-		distance 734.544
-		period 205.204
+		sprite planet/cloud4
+		distance 627.624
+		period 162.072
+		offset 175.403
+	object Frodo
+		sprite planet/earth
+		distance 965.661
+		period 309.312
+		offset 356.841
+		object Bilbo
+			sprite planet/miranda
+			distance 155.218
+			period 19.7978
+			offset 193.941
 	object
 		sprite planet/ice8
-		distance 1625.38
-		period 675.45
+		distance 1980.71
+		period 908.64
+		offset 167.981
 	object
 		sprite planet/neptune
-		distance 2413.07
-		period 1221.84
+		distance 2768.4
+		period 1501.42
+		offset 67.38
 
 system Mezzanine
 	pos 5133 570
@@ -1860,6 +2477,10 @@ system Mezzanine
 	trade Medical 680
 	trade Metal 390
 	trade Plastic 390
+	fleet "XSZ Small" 3000
+	fleet "XSZ Large" 4000
+	fleet Trader 1000
+	fleet Transporter 1000
 	object
 		sprite star/k0
 		period 10
@@ -1875,14 +2496,21 @@ system Mezzanine
 			sprite planet/rock17
 			distance 137
 			period 16.4168
-	object
+	object Affalan
 		sprite planet/cloud7
-		distance 1029.14
-		period 598.618
+		distance 1136.14
+		period 694.362
+		offset 85.3434
+		object "Euclid Station"
+			sprite planet/station2
+			distance 142
+			period 23.5906
+			offset 320.781
 	object
 		sprite planet/gas2
-		distance 2119.98
-		period 1769.85
+		distance 2333.98
+		period 2044.49
+		offset 28.12
 		object
 			sprite planet/ice8
 			distance 194
@@ -1890,7 +2518,7 @@ system Mezzanine
 
 system Muraganda
 	pos 4853 675
-	government Neutral
+	government Enclave
 	habitable 1080
 	link Whuroxla
 	link Cymexes
@@ -1991,6 +2619,9 @@ system Orff
 	link Ark
 	link Smoline
 	asteroids "large metal" 1 3.19
+	fleet Trader 500
+	fleet Transporter 500
+	fleet "XSZ Small" 1000
 	object
 		sprite star/g5
 		period 10
@@ -2019,9 +2650,9 @@ system Orff
 			period 11.9127
 		object Magna
 			sprite planet/tethys
-			distance 395.17
-			period 20.6329
-			offset 138.301
+			distance 392.874
+			period 20.4534
+			offset 331.553
 
 system Ortus
 	pos 4965.86 747.628
@@ -2084,25 +2715,39 @@ system Outenheim
 	asteroids "small metal" 1 6.75
 	asteroids "medium metal" 9 8.025
 	asteroids "large metal" 2 11.25
+	trade Clothing 410
+	trade Electronics 770
+	trade Equipment 670
+	trade Food 540
+	trade "Heavy Metals" 920
+	trade Industrial 650
+	trade "Luxury Goods" 1090
+	trade Medical 750
+	trade Metal 400
+	trade Plastic 350
 	object
 		sprite star/g0
 		period 10
 	object
 		sprite planet/ice4
-		distance 228.96
-		period 42.1684
+		distance 185.753
+		period 30.8143
+		offset 302.765
 	object
-		sprite planet/rhea
-		distance 607.21
-		period 182.12
-	object
-		sprite planet/lava3
-		distance 1023.42
-		period 398.501
+		sprite planet/callisto
+		distance 522.117
+		period 145.211
+		offset 198.216
+	object Mein
+		sprite planet/ice1
+		distance 716.117
+		period 233.251
+		offset 140.745
 	object
 		sprite planet/gas17
-		distance 2456.63
-		period 1482.03
+		distance 2220.33
+		period 1273.43
+		offset 295.017
 		object
 			sprite planet/rock17
 			distance 220
@@ -2119,7 +2764,7 @@ system Outenheim
 system Pipaeus
 	pos 4881.01 534.484
 	government Enclave
-	habitable 806.68
+	habitable 2201.68
 	link Ithaos
 	link Ninsug
 	link Smoline
@@ -2129,53 +2774,62 @@ system Pipaeus
 	asteroids "small metal" 9 6.555
 	asteroids "medium metal" 8 3.895
 	asteroids "large metal" 17 5.13
-	trade Clothing 290
-	trade Electronics 740
+	trade Clothing 240
+	trade Electronics 690
 	trade Equipment 530
-	trade Food 350
-	trade "Heavy Metals" 960
+	trade Food 510
+	trade "Heavy Metals" 1040
 	trade Industrial 720
-	trade "Luxury Goods" 1220
-	trade Medical 680
-	trade Metal 390
-	trade Plastic 390
+	trade "Luxury Goods" 1290
+	trade Medical 610
+	trade Metal 470
+	trade Plastic 430
+	fleet Trader 500
+	fleet Transporter 500
+	fleet "Enclave Patrol" 1000
+	fleet "Enclave Capital" 2000
+	object
+		sprite star/f5
+		distance 27.6312
+		period 11.9137
 	object
 		sprite star/k0
-		distance 39.2721
-		period 13.8727
+		distance 97.3688
+		period 11.9137
 		offset 180
 	object
-		sprite star/m0
-		distance 59.7279
-		period 13.8727
-	object
 		sprite planet/rock19
-		distance 345.728
-		period 90.5339
+		distance 421.759
+		period 73.838
+		offset 355.517
 		object
 			sprite planet/dust1
 			distance 125
 			period 18.6776
 	object
 		sprite planet/lava5
-		distance 647.218
-		period 231.892
-	object
-		sprite planet/lava3
-		distance 1133.47
-		period 537.432
+		distance 725.821
+		period 166.697
+		offset 167.292
+	object Carmine
+		sprite planet/rock10
+		distance 1293.28
+		period 396.48
+		offset 345.255
 	object
 		sprite planet/jupiter
-		distance 1544.47
-		period 854.826
+		distance 2064.6
+		period 799.717
+		offset 306.276
 		object
 			sprite planet/rhea
 			distance 250
 			period 12.4214
 	object
 		sprite planet/gas4
-		distance 2306.56
-		period 1560.11
+		distance 2826.6
+		period 1281.09
+		offset 257.452
 		object
 			sprite planet/rock7
 			distance 245
@@ -2284,7 +2938,7 @@ system "Pug Morbosa"
 system Saeus
 	pos 4787 606
 	government Enclave
-	habitable 560.92
+	habitable 425.92
 	link Five
 	link Theurrhaeus
 	asteroids "small rock" 5 1.785
@@ -2294,34 +2948,32 @@ system Saeus
 	asteroids "medium metal" 25 2.793
 	asteroids "large metal" 4 2.877
 	trade Clothing 290
-	trade Electronics 740
+	trade Electronics 860
 	trade Equipment 530
-	trade Food 350
-	trade "Heavy Metals" 960
+	trade Food 490
+	trade "Heavy Metals" 1030
 	trade Industrial 720
-	trade "Luxury Goods" 1220
-	trade Medical 680
-	trade Metal 390
-	trade Plastic 390
+	trade "Luxury Goods" 1120
+	trade Medical 740
+	trade Metal 320
+	trade Plastic 290
+	fleet Trader 400
+	fleet Transporter 400
+	fleet "Enclave Patrol" 800
+	fleet "Enclave Capital" 1500
 	object
 		sprite star/k5
-		distance 20.2168
-		period 13.0025
-		offset 180
-	object
-		sprite star/m8
-		distance 63.7832
-		period 13.0025
+		period 10
 	object
 		sprite planet/rock14
-		distance 458.203
-		period 165.652
-		offset 269.571
+		distance 401.42
+		period 155.881
+		offset 20.9592
 	object Tarkir
 		sprite planet/gas9
-		distance 851.163
-		period 419.4
-		offset 264.261
+		distance 794.38
+		period 433.949
+		offset 316.783
 		object
 			sprite planet/rock7
 			distance 213
@@ -2329,9 +2981,9 @@ system Saeus
 			offset 277.42
 	object
 		sprite planet/neptune
-		distance 2712.3
-		period 2385.7
-		offset 303.062
+		distance 2655.52
+		period 2652.28
+		offset 330.743
 		object
 			sprite planet/ice8
 			distance 199
@@ -2361,6 +3013,10 @@ system Skryydr
 	trade Medical 680
 	trade Metal 390
 	trade Plastic 390
+	fleet Trader 300
+	fleet Transporter 300
+	fleet "XSZ Small" 500
+	fleet "XSZ Large" 600
 	object
 		sprite star/g5
 		period 10
@@ -2472,6 +3128,12 @@ system Smoline
 	asteroids "large rock" 1 1.904
 	asteroids "medium metal" 4 3.556
 	asteroids "large metal" 2 1.988
+	fleet Trader 600
+	fleet Transporter 600
+	fleet "Enclave Patrol" 3000
+	fleet "Enclave Capital" 5000
+	fleet "XSZ Small" 3000
+	fleet "XSZ Large" 5000
 	object
 		sprite star/f5
 		period 10
@@ -2562,7 +3224,7 @@ system Staircase
 system Svind
 	pos 5213.86 504.628
 	government Enclave
-	habitable 425.92
+	habitable 4087.76
 	link Fallout
 	link Ares
 	link Dvorak
@@ -2572,41 +3234,64 @@ system Svind
 	asteroids "large rock" 49 2.75
 	asteroids "medium metal" 16 2.35
 	asteroids "large metal" 9 2.4
+	trade Clothing 250
+	trade Electronics 860
+	trade Equipment 390
+	trade Food 570
+	trade "Heavy Metals" 910
+	trade Industrial 620
+	trade "Luxury Goods" 1420
+	trade Medical 750
+	trade Metal 380
+	trade Plastic 430
 	object
-		sprite star/k5
-		period 10
+		sprite star/f0
+		distance 50.765
+		period 8.32713
+	object
+		sprite star/f5
+		distance 70.235
+		period 8.32713
+		offset 180
 	object
 		sprite planet/rock8
-		distance 202.61
-		period 55.8968
+		distance 285.845
+		period 30.2352
+		offset 165.274
 	object
 		sprite planet/gas14
-		distance 491.05
-		period 210.904
+		distance 574.285
+		period 86.1011
+		offset 69.888
 	object
 		sprite planet/ice2
-		distance 1006.09
-		period 618.516
+		distance 1089.33
+		period 224.933
+		offset 136.367
 	object
 		sprite planet/jupiter
-		distance 2125.45
-		period 1899.21
+		distance 2591.52
+		period 825.373
+		offset 32.9954
 		object
 			sprite planet/lava0
 			distance 285
 			period 15.1192
-		object
-			sprite planet/rock3
-			distance 437
-			period 28.7067
+		object "New Asgard"
+			sprite planet/europa
+			distance 409.302
+			period 26.0212
+			offset 17.1649
 		object
 			sprite planet/rock14
-			distance 611
-			period 47.4595
+			distance 577.302
+			period 43.588
+			offset 168.789
 		object
 			sprite planet/miranda
-			distance 754
-			period 65.0607
+			distance 720.302
+			period 60.7482
+			offset 188.745
 
 system Thaen
 	pos 5168.86 643.628
@@ -2620,6 +3305,16 @@ system Thaen
 	asteroids "small metal" 6 2.1216
 	asteroids "medium metal" 1 1.0452
 	asteroids "large metal" 1 2.34
+	trade Clothing 100
+	trade Electronics 100
+	trade Equipment 100
+	trade Food 100
+	trade "Heavy Metals" 100
+	trade Industrial 100
+	trade "Luxury Goods" 100
+	trade Medical 100
+	trade Metal 100
+	trade Plastic 100
 	object
 		sprite star/g5
 		period 10
@@ -2654,7 +3349,7 @@ system Thaen
 
 system Theurrhaeus
 	pos 4733 557
-	government Neutral
+	government Enclave
 	habitable 455
 	link Arkhos
 	link Saeus
@@ -2664,16 +3359,19 @@ system Theurrhaeus
 	asteroids "small metal" 1 1.593
 	asteroids "medium metal" 19 3.402
 	asteroids "large metal" 7 2.862
-	trade Clothing 290
-	trade Electronics 740
-	trade Equipment 530
-	trade Food 350
-	trade "Heavy Metals" 960
-	trade Industrial 720
-	trade "Luxury Goods" 1220
-	trade Medical 680
-	trade Metal 390
-	trade Plastic 390
+	trade Clothing 200
+	trade Electronics 780
+	trade Equipment 600
+	trade Food 170
+	trade "Heavy Metals" 870
+	trade Industrial 580
+	trade "Luxury Goods" 1170
+	trade Medical 830
+	trade Metal 350
+	trade Plastic 430
+	fleet Trader 3000
+	fleet Transporter 3000
+	fleet "Enclave Patrol" 2000
 	object
 		sprite star/m0
 		distance 27.5934
@@ -2687,18 +3385,21 @@ system Theurrhaeus
 		sprite planet/lava1
 		distance 266.217
 		period 81.453
-	object
-		sprite planet/desert7
-		distance 433.257
-		period 169.111
+	object Saal
+		sprite planet/desert5
+		distance 452.576
+		period 180.548
+		offset 157.643
 	object
 		sprite planet/jupiter
-		distance 935.067
-		period 536.189
+		distance 972.386
+		period 568.607
+		offset 45.0512
 	object
 		sprite planet/gas14
-		distance 1531.68
-		period 1124.1
+		distance 1565.39
+		period 1161.41
+		offset 3.5481
 		object
 			sprite planet/rock3
 			distance 216
@@ -2709,8 +3410,9 @@ system Theurrhaeus
 			period 23.9709
 	object
 		sprite planet/gas4
-		distance 2301.12
-		period 2069.96
+		distance 2203.47
+		period 1939.61
+		offset 350.137
 
 system Thornton
 	pos 4758.61 400.955
@@ -2760,7 +3462,7 @@ system Thornton
 
 system Three
 	pos 5086.86 410.628
-	government "XSZ Corporation"
+	government Enclave
 	habitable 625
 	link Antithesis
 	asteroids "small rock" 24 2.3287
@@ -2817,18 +3519,19 @@ system Three
 			distance 465
 			period 40.077
 
-system Unobu
-	pos 4909.09 663.745
-	government Enclave
-	habitable 320
-	link Lyvven
-	link Clurth
-	asteroids "small rock" 35 3.3152
-	asteroids "medium rock" 44 2.9344
-	asteroids "large rock" 4 2.7328
-	asteroids "small metal" 20 3.1584
-	asteroids "medium metal" 30 1.456
-	asteroids "large metal" 8 2.5088
+system Umba'draeuin
+	pos 5276.41 789.128
+	government Kaltheim
+	habitable 1715
+	link Vo'jaerun
+	link Kama'la'ez
+	link Banq'rujol'ifus
+	asteroids "small rock" 15 3.312
+	asteroids "medium rock" 46 4.848
+	asteroids "large rock" 22 5.136
+	asteroids "small metal" 2 3.36
+	asteroids "medium metal" 6 6.144
+	asteroids "large metal" 5 2.496
 	trade Clothing 290
 	trade Electronics 740
 	trade Equipment 530
@@ -2840,13 +3543,71 @@ system Unobu
 	trade Metal 390
 	trade Plastic 390
 	object
+		sprite star/f5
+		period 10
+	object
+		sprite planet/dust2
+		distance 138.25
+		period 15.7009
+	object
+		sprite planet/ganymede
+		distance 291.89
+		period 48.1678
+	object
+		sprite planet/jupiter
+		distance 873.7
+		period 249.443
+		object
+			sprite planet/callisto
+			distance 252
+			period 12.5708
+		object
+			sprite planet/oberon
+			distance 369
+			period 22.2742
+	object
+		sprite planet/gas2
+		distance 2356.7
+		period 1105.06
+		object
+			sprite planet/dust0
+			distance 206
+			period 17.9149
+		object
+			sprite planet/dust7
+			distance 323
+			period 35.1737
+
+system Unobu
+	pos 4909.09 663.745
+	government Enclave
+	habitable 320
+	link Lyvven
+	link Clurth
+	asteroids "small rock" 15 2.8215
+	asteroids "medium rock" 8 1.5884
+	asteroids "large rock" 23 2.717
+	asteroids "small metal" 8 1.5466
+	asteroids "medium metal" 5 1.4003
+	asteroids "large metal" 14 2.2154
+	trade Clothing 360
+	trade Electronics 830
+	trade Equipment 400
+	trade Food 520
+	trade "Heavy Metals" 1030
+	trade Industrial 590
+	trade "Luxury Goods" 1220
+	trade Medical 610
+	trade Metal 310
+	trade Plastic 440
+	object
 		sprite star/m0
 		period 10
 	object Quaver
 		sprite planet/ocean2
-		distance 528.526
-		period 271.697
-		offset 166.074
+		distance 533.304
+		period 275.389
+		offset 192.697
 		object
 			sprite planet/rock3
 			distance 248.136
@@ -2896,17 +3657,17 @@ system Veil
 			distance 261
 			period 13.2502
 
-system Whuroxla
-	pos 4787.87 692.362
-	government Enclave
-	habitable 1715
-	link Muraganda
-	link Cymexes
-	asteroids "small rock" 2 3.375
-	asteroids "medium rock" 1 3.078
-	asteroids "large rock" 3 1.566
-	asteroids "small metal" 1 3.672
-	asteroids "large metal" 1 2.835
+system Vo'jaerun
+	pos 5223.41 835.128
+	government Kaltheim
+	habitable 3645
+	link Umba'draeuin
+	asteroids "small rock" 12 4.256
+	asteroids "medium rock" 23 4.37
+	asteroids "large rock" 3 2.318
+	asteroids "small metal" 19 3.496
+	asteroids "medium metal" 6 2.204
+	asteroids "large metal" 2 3.344
 	trade Clothing 290
 	trade Electronics 740
 	trade Equipment 530
@@ -2918,17 +3679,94 @@ system Whuroxla
 	trade Metal 390
 	trade Plastic 390
 	object
-		sprite star/f5
+		sprite star/a5
 		period 10
-	object Ortite
-		sprite planet/rock12
-		distance 1323.74
-		period 465.191
-		offset 105.897
+	object
+		sprite planet/luna
+		distance 134
+		period 10.277
+	object
+		sprite planet/rock18
+		distance 311.44
+		period 36.4144
+	object
+		sprite planet/desert4
+		distance 838.08
+		period 160.746
+	object
+		sprite planet/gas7
+		distance 1314.33
+		period 315.695
 		object
-			sprite planet/dust3
-			distance 149
-			period 18.9498
+			sprite planet/rhea
+			distance 260
+			period 14.9139
+	object
+		sprite planet/gas15
+		distance 3515.29
+		period 1380.87
+
+system Whuroxla
+	pos 4787.87 692.362
+	government Enclave
+	habitable 621.68
+	link Muraganda
+	link Cymexes
+	asteroids "small rock" 2 3.375
+	asteroids "medium rock" 1 3.078
+	asteroids "large rock" 3 1.566
+	asteroids "small metal" 1 3.672
+	asteroids "large metal" 1 2.835
+	trade Clothing 190
+	trade Electronics 850
+	trade Equipment 470
+	trade Food 160
+	trade "Heavy Metals" 870
+	trade Industrial 660
+	trade "Luxury Goods" 1230
+	trade Medical 750
+	trade Metal 520
+	trade Plastic 570
+	object
+		sprite star/k0
+		distance 23.4526
+		period 18.0058
+		offset 180
+	object
+		sprite star/m8
+		distance 84.5474
+		period 18.0058
+	object
+		sprite planet/lava5
+		distance 271.797
+		period 71.886
+	object
+		sprite planet/dust2
+		distance 519.797
+		period 190.12
+	object Emeria
+		sprite planet/forest1
+		distance 959.381
+		period 476.719
+		offset 94.48
+		object
+			sprite planet/rock3
+			distance 163
+			period 23.3082
+	object
+		sprite planet/gas10
+		distance 1735.42
+		period 1159.8
+		offset 322.119
+	object
+		sprite planet/gas8
+		distance 2849.66
+		period 2440.43
+		offset 348.666
+		object
+			sprite planet/miranda
+			distance 179
+			period 12.7484
 
 system Xenos
 	pos -848.78 -300.585
@@ -2955,6 +3793,24 @@ system Xenos
 		distance 4208.63
 		period 2158.5
 
+planet Affalan
+	attributes xsz
+	landscape land/water6
+	description `Affalan is deserted.	Enormous, bloated purple clouds roll across the landscape. Strange, mutated creatures roam the barren moors, and horrors lurk within the depths of Affalan's black seas.`
+	description `	This eerie atmosphere is the result of extreme amounts of nuclear and biological weapons testing. When XSZ first began developing its nuclear arsenal, they needed somewhere to test, somewhere with a relatively normal ecosystem which was fairly uninhabited. Affalan was chosen, and a century later, the environment is so irradiated that you dare not step outside your ship without an extremely heavy radiation suit.`
+
+planet Alleshafen
+	attributes enclave
+	landscape land/nasa1
+	description `This planet is the home of the Enclave's largest ship manufacturing centres, much like Geminus in the Republic. While it is a relatively old world, the crust is composed mostly of very heavy metals and rocks, and so handily, the lighter metals which are useful for shipbuilding are found very near to the surface.`
+	description `	Much of the land on Alleshafen, however, is relatively infertile, and as it seems that many types of life beyond basic plants have never developed, clothing, plastics and food are at a premium here.`
+	spaceport `The spaceport on Alleshafen is very heavily guarded; you and your crew were IDed when you landed, and there are enormous embankments in areas, presumably restricting access to the planet's shipyards. These embankments are watched all the time by groups of Enclave soldiers; they stand silhouetted against the evening sky, and while you are used to people holding weaponry by now, the sight of their very, very large guns still makes you a bit nervous.`
+	shipyard "Enclave Tier 1"
+	shipyard "Enclave Tier 2"
+	shipyard "Enclave Tier 3"
+	outfitter "Enclave Outfits"
+	outfitter "XSZ Basics"
+
 planet Arikv
 	attributes enclave
 	landscape land/hills4
@@ -2974,6 +3830,44 @@ planet Bantilium
 	spaceport SPACEPORT
 	outfitter "Delta V Basics"
 	security 0
+
+planet Bilbo
+	attributes enclave
+	landscape land/canyon5
+	description `As with the planet below, Bilbo was named after a character from The Lord of the Rings. This time, however, this moon was named "Bilbo" due to its odd similarity to the far eastern areas of Middle-Earth, to which the moon's namesake travelled during The Lord of the Rings' prequel. As a result, much of the terrain is tough and mountainous- perfectly suited to the dwarves of fantasy legend.`
+	spaceport `The spaceport is built into a lone mountain, a massive hive of tunnels extending throughout the edifice. Ships take off and land from landing pads suspended upon the sides of the mountain.`
+
+planet Carmine
+	attributes enclave
+	landscape land/city4
+	description `Carmine is a well-settled world, with thriving cities on every planet. It is also home to the galaxy's central bank.`
+	description `	Pollution is a growing problem on Carmine; while it was originally perfect for human habitation worldwide, five hundred years of human occupation and industrialisation are beginning to increase global temperatures. As a result, many equatorial areas are growing more arid every year, and bleaching event's on the planet's legendary coral reefs are becoming more and more common.`
+	spaceport `The spaceport is a very ordered affair; everything seems to be sweeping glass and steel, with suited businesspeople everywhere looking really grumpy with everything.`
+	spaceport `	The flow of spacecraft above the spaceport terminals is mesmerising, like a shoal of fish, turning and doubling back on themselves as one.`
+	shipyard "XSZ Tier 1"
+	shipyard "Enclave Tier 1"
+	shipyard "Enclave Tier 2"
+	outfitter "XSZ Basics"
+	outfitter "Enclave Outfits"
+
+planet "Cavalier Station"
+	attributes xsz
+	landscape land/space3
+	description `Cavalier Station is a small facility which is used by XSZ to prospect through the rings of Crackle, hunting for ore-rich bodies, before giving them a well-aimed push down into the planet's gravity well.`
+	description `	 As expected, the station is equipped with enormously strong shields; even the slightest hull breach could send the station tumbling off into the rings, knocking asteroids down onto the planet as it went.`
+	spaceport `As you stepped off of your ship, the guards forced you to wear a small metal band around your wrist. Apparently, this band is designed to give the wearer an electric shock hard enough to knock them out, in order to prevent anyone from messing with the station's guidance or control systems without permission.`
+	spaceport `	The rest of the spaceport is occupied by drones being serviced; presumably, these are what are used to shove asteroids around in the rings.`
+
+planet Crackle
+	attributes xsz
+	landscape land/nasa2
+	description `Crackle is one of XSZ's main manufacturing and mining worlds, thanks to the frequent impacts from objects falling out of the planetary rings above. While these impacts often throw up clouds of dust which may obscure the system's star for days or even weeks at a time, they both bring new material to the planet for mining, as well as digging out large craters, allowing XSZ to find elements usually found deep within the crust relatively easily.`
+	description `	Most of the factories are situated well away from where the rings currently orbit; as the ring orbit moves north or south, the industrial centres move with it. They are designed to be able to be disassembled in mere weeks.`
+	spaceport `The spaceport is filled with people; some poor and destitute, practically begging for a job here; some battle-hardened, the veterans of this mining world; and some families, seemingly carrying everything they own, waiting around to find a way of getting off this rock.`
+	shipyard "XSZ Tier 1"
+	shipyard "XSZ Tier 2"
+	outfitter "XSZ Basics"
+	outfitter "XSZ Advanced"
 
 planet Cromerium
 	attributes Ascendancy
@@ -3005,6 +3899,26 @@ planet Cynic
 	outfitter "XSZ Basics"
 	outfitter "XSZ Advanced"
 
+planet Emeria
+	attributes enclave
+	landscape land/fields1
+	description `Emeria is one of the most discontent worlds in the galaxy. Poor enough that its population has no hope of ever leaving, most education beyond the age of 11 is nonexistent here. What's more, despite this system's relative proximity to Lyfon, the Enclave's capital, it is in fact well over two weeks' hyperspace travel away, making this one of the most remote and under-represented systems in the galaxy.`
+	spaceport `The spaceport is a solid, unexciting structure built of blood-red bricks. The landing pads are packed earth, and although the refueling facilities are existent, only a few fuel hoses actually work.`
+
+planet "Euclid Station"
+	attributes xsz
+	landscape land/space1
+	description `Euclid Station is a small space station built by XSZ to monitor the condition of the irradiated planet below. As a result, there are very few facilities here for non-XSZ employees, even though there is a large team of over a hundred XSZ employees working here who, surprisingly, volunteered for this placement.`
+	spaceport `The spaceport is barely a spaceport; it consists only of a few small docking bays, reserved for ships carrying workers on and off the station.`
+
+planet Fluorine
+	attributes xsz
+	landscape land/canyon7
+	description `Fluorine is a planet on which sizable reserves of the eponymous element were found, albeit in liquid form due to the incredibly low temperatures.`
+	description `	While the surface temperature of Fluorine is very low, and it has little to no atmosphere, there are a number of XSZ mining operations here, extracting the fluorine and other ores for use in ship components.`
+	spaceport `The spaceport city is like something out of a dream; apparently a normal human city, the illusion disappears as soon as you spot the glass dome which contains the city in its entirety, allowing the residents to see the outsides.`
+	outfitter "XSZ Basics"
+
 planet Forefather
 	landscape land/nasa3
 	description `This planet is the home of the Ascendancy's revolutionary miniaturised outfits- but ironically, it appears to be the least efficient in Ascendancy space. Using strip mining and fossil fuels, Forefather stands out in stark contrast to other Ascendancy planets in its inefficiency, although results are results- it is here that most of the major Ascendancy technological breakthroughs have occured.`
@@ -3012,6 +3926,28 @@ planet Forefather
 	spaceport `The spaceport is full of old takeoff gantries, like the ones that were used in the very first years of the space age to launch humanity's primitive rockets. While Ascendancy technology has obviously advanced far past this, it is interesting to see them testing such ancient techniques to see how effective they are.`
 	outfitter "Ascendancy Miniaturised"
 	outfitter "Ascendancy Basics"
+
+planet Frodo
+	attributes enclave
+	landscape land/water2
+	description `When the first settlers landed on Frodo, they found the habitable zones of the planet to be remarkably similar to the Shire from The Lord of the Rings, an infamous book from the 20th century. As a result, they decided to name the planet Frodo, after the book's main character.`
+	description `	While most of the population here are farmers, taking care of and managing the countryside and living in rustic homes, a surprisingly large percentage of inhabitants find this world as dull as an old, musty sock, and are scraping together all the money they can possibly find to leave this planet far behind.`
+	spaceport `The spaceport is extremely flashy for a planet like this. Although it does not use sweeping, graceful curves like many other spaceports do, it still has an atmosphere of class and optimism about it, all through the white-stained granite blocks that make up most of the buildings.`
+	spaceport `	The air here smells very similar to your home planet of New Boston.`
+	shipyard "XSZ Tier 1"
+	outfitter "XSZ Basics"
+
+planet Helheim
+	attributes deep mining volcanic
+	landscape land/lava1
+	description `Helheim is not a pleasant place. Much of the surface is volcanic, pockmarked with crates and steam vents leading deep into the planet's crust. The air is slightly caustic, but breathable. However, it is also a world rich in easily accessible deposits of nickel, aluminum, and magnesium. The mining industry here has been booming for centuries, and in all of the Deep it is the one world where work is never hard to find - if you are willing to face the health risks and the lack of green and growing things.`
+	spaceport `The spaceport is also the main city in Helheim, and it is built around a series of glass domes of all different sizes. Each dome is a greenhouse housing a different sort of plant life, and in some cases animals as well: hermetically sealed parks, protected from the caustic air outside, where the locals can come when their hunger to be among living things becomes unbearable. The docking bays each have an airlock to protect the atmosphere inside the city.`
+	outfitter "Deep Sky Basics"
+	bribe 0.05
+	security 0.6
+	tribute 700
+		threshold 3000
+		fleet "Small Deep" 15
 
 planet Idivine
 	attributes enclave
@@ -3041,6 +3977,17 @@ planet Indefatigable
 	shipyard Ascendancy
 	outfitter "Ascendancy Basics"
 	outfitter "Ascendancy Advanced"
+
+planet Jumblar
+	attributes enclave
+	landscape land/nasa6
+	description `Jumblar is an average-sized manufacturing world. While it does not produce some of the Enclave's largest ships, the shipyards are still relatively extensive and as a result, this planet has some of the stablest jobs in the whole galaxy, barring XSZ worlds, of course.`
+	description `	The central Enclave government is currently moving to transfer its main shipbuilding facilities here from Alleshafen in the Svind system, so that the bulk of Enclave military construction can take place in the southern arm of the galaxy, deeper into the heart of Enclave space. You have heard that there are also plans to construct an artificial ring around the planet on which ships can be built in low gravity, although there are no signs of its construction.`
+	spaceport `There appear to be Enclave freight ships constantly landing and taking off from here, the materials for use in expanding the shipyards. A number of ships, almost as large as Republic Carriers, are circling the spaceport, although they are clearly not waiting to land, judging by the energy readings coming from their weapons.`
+	shipyard "Enclave Tier 1"
+	shipyard "Enclave Tier 2"
+	outfitter "Enclave Outfits"
+	outfitter "XSZ Basics"
 
 planet Korine
 	attributes enclave
@@ -3086,11 +4033,23 @@ planet Magna
 	shipyard "XSZ Tier 3"
 	outfitter "XSZ Basics"
 
+planet Mein
+	attributes enclave
+	landscape land/snow11-sfiera
+	description `Mein is an icy world of blizzards and fog, where very few organisms can thrive. Despite this, a surprisingly large number of enterprising colonists set up a few towns a number of centuries ago, and they are still struggling on through the endless snow.`
+	description `	Mein is in the process of being accelerated towards its star through a gravitational slingshot effect provided by one of its planetary neighbours. This is slowly beginning to warm the planet's climate, although it may still take hundreds of years for Mein to be truly habitable.`
+	spaceport `Your ship landed in the midst of a snowstorm, and you could hardly see where you were going as you ran inside with your crew. There appear to be very few people in this spaceport, little more than a skeleton staff, and while you know that you are safe inside from the ferocious winds, you cannot help but look around nervously whenever you hear the steel frame of the spaceport creak.`
+
 planet Memorandum
 	attributes enclave
 	landscape land/city2
-	description `this is a planet`
-	spaceport `there is a spaceport`
+	description `Memorandum is a very "normal" world. The climate is stable and fairly warm, days are similar to those on Earth, and many of the inhabitants work in simple, boring office jobs which pay decently but are ultimately unexciting. The population is relatively low, too, although oddly enough, most families are in a very similar wealth band; poverty is mostly unheard of, and yet wild amounts of wealth are too.`
+	description `	Very few people you meet have high aspirations for leaving the planet.`
+	spaceport `The port staff are surprisingly cheerful, unlike just about every other human port you have visited, in this galaxy or the next. These are clearly the few people who, like you once did, want to leave this planet far behind in their own ship to become a trader, or a bounty hunter, or a warship captain. Their enthusiasm inspires an odd sort of nostalgia inside you, of the innocence you left behind when you joined the Free Worlds and their war.`
+	shipyard "XSZ Tier 1"
+	shipyard "Enclave Tier 1"
+	outfitter "XSZ Basics"
+	outfitter "Enclave Outfits"
 
 planet Mirrodin
 	attributes xsz
@@ -3108,6 +4067,25 @@ planet Mirrodin
 	bribe 0
 	security 0
 
+planet "New Asgard"
+	attributes enclave
+	landscape land/desert2
+	description `New Asgard is a relatively small moon, although despite this it is still able to hold onto a thick, breathable atmosphere. Much of the moon is desert, although some areas near the highest mountains do receive enough rain to allow them to become well-forested. The oceans here have enormous tide differences due to the gas giant above, and as a result, most seaside settlements are practically built inside glass domes reinforced with titanium so that they can survive the inrush of water at high tide.`
+	description `	Despite the relative absence of natural resources, New Asgard is still fairly rich due to the tourism industry- many people come here simply to experience the awe of waking up to see the face of a gas giant staring down at them.`
+	spaceport `The spaceport is a slick, clean, modern affair, with hallways paved in dark granite and arching roofs overhead. Most of the terminal is taken up by small stores and off-licenses.`
+	spaceport `	The entire spaceport seems to be filled with people with cameras, hysterically barging their way through the crowds to find their ride off of this moon.`
+	outfitter "Enclave Outfits"
+	outfitter "XSZ Basics"
+
+planet "New Scotland"
+	attributes enclave
+	landscape land/desert8-sfiera
+	description `New Scotland is a world consistign of scrubland and low mountain ranges, for the most part; it is an old world, where tectonic activity is beginning to die down. As a result of the decrease in tectonic activity, the planet's magnetoshpere is also slowly weakening. This in turn increases the amount of radiation falling on the surface, making the inhabitants much more likely to get cancer.`
+	description `	Most families live on isolated farms in the foothills; it would be even harder to get supplies to them if they were in the mountains proper, and the deep wastes are rumoured to contain dreadful horrors of the sands.`
+	spaceport `As you stepped off your ship, the air already had a noticeably dry tang to it. The spaceport is situated in a large patch of desert, although the mountains nearby alter the weather enough to provide this area with some rain, at least. The architecture feels somewhat ramshackle, not unlike the frontier towns of the 17th century back on Earth; the roads are simply dusty trails, and the majority of buildings are constructed from wood.`
+	spaceport `	Despite this, the security guards near the trading areas have some very advanced-looking guns.`
+	outfitter "XSZ Basics"
+
 planet Ortite
 	attributes enclave
 	landscape land/sea4
@@ -3118,6 +4096,16 @@ planet Ortite
 	"required reputation" 0
 	bribe 0
 	security 0
+
+planet Perihelion
+	attributes "xsz enclave"
+	landscape land/sea10-sfiera
+	description `Perihelion is a surprisingly Earthlike world- although, of course, there are very few records remaining in the Tyridium galaxy of what actually constitutes Earthlike. This is a world hotly contested by XSZ- it has very little axial tilt, and almost perfect weather. `
+	description `	However, XSZ-funded surveys have found that there are enormous oil and gas fields beneath the oceans of Perihelion. Despite XSZ's numerous appeals to the Enclave government to allow them to mine the fuels here, the Enclave has refused, every time.`
+	spaceport `The spaceport is located right on one of the coasts, nearest to the equator. As you stepped off of your ship, a small gaggle of tourists walked past, evidently unaware of the state of relations currently between the Enclave and XSZ, or even the likelihood that this would be one of the first worlds XSZ might move to take in the event of war.`
+	spaceport `	The concrete landing pads are warm and sandy beneath your feet.`
+	outfitter "Enclave Outfits"
+	outfitter "XSZ Basics"
 
 planet Puggleshank
 	attributes pug
@@ -3130,25 +4118,64 @@ planet Puggleshank
 
 planet Quaver
 	attributes enclave
-	landscape land/forest5
-	description Planet
-	spaceport Spaceport
+	landscape land/city17-sfiera
+	description `Quaver has been heavily urbanised since its settlement a little more than five centuries ago. As a world with relatively low-lying land, the risk of flooding is always a possibility, although thankfully due to the absence of many mountains, the weather is usually predictable.`
+	description `	While it is one of the richest planets in the galaxy, Quaver is actually home to relatively few billion or even millionaires, as its massive wealth comes from its status as one of the primary trading planets away from the heart of Enclave space. As a result, there is a very well-funded welfare programme for inhabitants of the planet, which includes a universal basic income, something entirely unheard of in the Republic.`
+	spaceport `The spaceport here feels vibrant and alive, the flow of goods and traders constant. Nobody is standing still; everyone has somewhere to be, although it seems that in this rush their regard for other people has not diminished- as you watch, someone is knocked over in the crowd, and instead of trampling over them like people from the Paradise Worlds would, a good five people stop to help them to their feet.`
+	spaceport `	The number of water features here is ridiculous.`
+	shipyard "Enclave Tier 1"
+	shipyard "Enclave Tier 2"
+	shipyard "XSZ Tier 1"
 	outfitter "Delta V Basics"
+	outfitter "XSZ Basics"
+	outfitter "Enclave Outfits"
 	security 0
 	tribute 100
 		threshold 2500
 		fleet "Small Militia" 25
 
+planet Saal
+	attributes enclave
+	landscape land/hills2
+	description `Saal is an idyllic farming world, entirely at contrast with most of the other human residents of this galaxy, who seem to act very similarly to the humans of the Deep. Most power generation facilities, instead of using fusion or fission to generate electricity, are in fact wind-powered.`
+	description `	There are a number of surprisingly feral species here, including cows and horses.`
+	spaceport `The spaceport is surrounded by old, weather-stained limestone buildings in what was once Saal's largest city. Many of the streets here, while somewhat decrepit, and occassionally litter-riddled, carry a sense of some old, shining glory which time cannot tarnish.`
+	spaceport `	The architects who designed some of the spaceport buildings themselves were obviously very fond of 19th-century British architecture; the buildings, with their arching cast-iron beams and glass roofs are very reminiscent of large train stations in the United Kingdom during that period.`
+	outfitter "Enclave Outfits"
+	outfitter "XSZ Basics"
+
+planet Scalpel
+	attributes enclave
+	landscape land/sea1
+	description `Scalpel is home to a single isolated colony, a group of hardy people who are willing to live out here, three days' travel away from any other inhabited system. Much of this world is uncharted; the colonists have only mapped the areas within 500 miles of the settlement.`
+	description `	Some explorers who have ventured beyond the 500 mile radius which maps cover say that they have discovered ruins, artifacts of previous civilisations, and the remains of ships, although many that they tell are pretty sure they're just high.`
+	spaceport `The spaceport on Scalpel can barely be called that; it is little more than a large clearing with some landing pads of packed dirt a mile or two out from the main settlement.`
+
 planet Seminar
-	landscape land/forest5
-	description PLANET
-	spaceport SPACEPORT
+	attributes enclave
+	landscape land/nasa4
+	description `I think when they named this planet, the idea was to have it be home to some of the greatest educational and scientific institutes in the whole galaxy.`
+	description `	Yeah, that never happened. Instead, when some amazing narcotic plants were discovered here, the central galactic government didn't find out about them until it was social norm on Seminar to use substances derived from these plants every. Single. Day. As a result, this is one of the happiest planets in Enclave space.`
+	description `	There is no outfitter here, as it seems that everyone is too busy partying to help upgrade ships.`
+	spaceport `You woke up this morning with no idea how you got onto this planet- the last thing you remember is entering the system.`
+	spaceport `	Oh well, that memory loss is probably from that nightlong rave you went to last night. Fun.`
+	spaceport `	Most of the spaceport facilities appear to be automated, likely to prevent security guards who may or may not be in full control of their mental faculties from making bad decisions which could end in lots of people dying.`
 
 planet Tarkir
 	attributes enclave
 	landscape land/badlands2
 	description `Tarkir is a relatively flat, boring world. Covered in badlands and the occasional ocean or forest, not many people live here- and with good reason.`
-	description `	Somehow, Tarkir is populated by creatures very similar to the dragons of Skymoot, back in Free Worlds space. These "dragons", however, are far more aggressive than those found on Skymoot, and are known to attack settlements regularly.`
-	spaceport `The spaceport is well defended against the dragons.`
+	description `	Somehow, Tarkir is populated by creatures very similar to the dragons of Skymoot, back in Free Worlds space. These "dragons", however, are far more aggressive than those found on Skymoot, and are known to attack settlements regularly. Despite this, there is a strong cultural tradition among the locals who believe that any pilot aspiring to join the planetary militia must fight off a dragon attack on their own before they are deemed worthy of the title.`
+	spaceport `The spaceport is well defended against the dragons, with blaster turrets, missile silos and enormous electrified metal nets erected over the main buildings. The landing pads must be left to fend for themselves, however; the port authorities trust that pilots should be alert enough to be able to use the weapons on their ship to fend off the dragons.`
+	shipyard "Enclave Tier 1"
 	shipyard "Enclave Tier 2"
 	outfitter "Delta V Basics"
+	outfitter "Enclave Outfits"
+
+planet Termite
+	attributes xsz
+	landscape land/nasa7
+	description `Termite is almost uninhabitable, even by XSZ's standards for mining worlds. However, what does make it worthwhile for XSZ to attempt to build settlements here is the lightning.`
+	description `	Termite's lightning is far, far stronger than on any other planet known to humanity, and as a result, whenever a bolt strikes, the enormous temperatures can actually fuse together hydrogen molecules found in the atmosphere to form helium. As a result, XSZ uses this planet as a massive, planet-sized fusion reactor in order to both generate large amounts of energy which can be stored and then shipped offworld, and to synthesise some rare elements via fusion.`
+	spaceport `The spaceport is very low to the ground, and is covered in some sort of opaque, rubbery material; all measures to stop lightning from hitting any of the spaceport. The winds are immense on this planet, and the air practically crackles with ozone.`
+	outfitter "XSZ Basics"
