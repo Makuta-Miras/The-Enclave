@@ -659,6 +659,7 @@ mission "Enclave Defiance 3B"
 	on complete
 		dialog
 			`You've arrived on Helheim. Time to meet up with the Navy divisions here.`
+		event "enclave opens"
 		apply
 			set "on helheim"
 		
