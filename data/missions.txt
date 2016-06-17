@@ -441,7 +441,7 @@ mission "Enclave Co-Op 2B"
 				"Cruiser (Mark II)"
 				"Combat Drone" 4
 				
-	npc disable
+	npc kill
 		personality vindictive staying
 		system Xenos
 		government Pug
