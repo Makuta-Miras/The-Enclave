@@ -86,3 +86,14 @@ outfit "Gamma Core"
 	"required crew" 15
 	description "This is the largest of the power cores developed by the Ascendancy. Designed to harvest high-energy gamma rays and convert them into energy usable on ships, this technology is like nothing you have ever seen before- surpassing even the Korath's enormous Triple Cores in terms of energy generation."
 	description " Due to the volatility of the Ascendancy's power cores, a relatively large number of extra crew are required in order to maintain this core during flight."
+
+outfit "ARC Core"
+	category "Power"
+	cost 5000000
+	thumbnail "outfit/ARC Core"
+	"mass" 100
+	"outfit space" -100
+	"energy generation" 17.2
+	"heat generation" 30
+	description "The ARC Core is to traditional fusion reactors as ion engines are to plasmas; less efficient in terms of mass to useful output, but a good bit cooler. XSZ's ARC Core was developed as a safer alternative to fusion reactors, intended for captains running ships slightly hotter than usual."
+	description "	In a move to create more demand for this reactor, XSZ has stopped producing many large cooling systems, in an attempt to draw business away from smaller firms' hotter yet more powerful reactors, which often relied on XSZ-built cooling to function."
