@@ -1,7 +1,14 @@
 ------------------------------------------------------------------------  v0.0.6  -------------------------------------------------------------------------------
+19/06/16 [v0.0.6]
+
+-Changed some offering conditions for the Battle of Xenos.
+-Hopefully fixed missions so that now, alternate missions will be offered immediately instead of after taking off and relanding.
+
+
 18/06/16 [v0.0.6]
 
 -Added a new XSZ reactor, the ARC Core.
+-Moved Xenos north. (Thanks @Derpy for finding the conflict)
 
 
 ------------------------------------------------------------------------  v0.0.5b -------------------------------------------------------------------------------
