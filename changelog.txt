@@ -3,6 +3,7 @@
 
 -Changed some offering conditions for the Battle of Xenos.
 -Hopefully fixed missions so that now, alternate missions will be offered immediately instead of after taking off and relanding.
+-Added some new shield generators and redid some Enclave outfitters.
 
 
 18/06/16 [v0.0.6]
