@@ -1,4 +1,3 @@
-
 galaxy "Enclave Galaxy"
 	pos 5000 500
 	sprite ui/EnclaveGalaxy2
@@ -3769,7 +3768,7 @@ system Whuroxla
 			period 12.7484
 
 system Xenos
-	pos -848.78 -300.585
+	pos -848.78 -338
 	government Enclave
 	habitable 625
 	asteroids "large rock" 1 4.0608
@@ -3804,11 +3803,14 @@ planet Alleshafen
 	landscape land/nasa1
 	description `This planet is the home of the Enclave's largest ship manufacturing centres, much like Geminus in the Republic. While it is a relatively old world, the crust is composed mostly of very heavy metals and rocks, and so handily, the lighter metals which are useful for shipbuilding are found very near to the surface.`
 	description `	Much of the land on Alleshafen, however, is relatively infertile, and as it seems that many types of life beyond basic plants have never developed, clothing, plastics and food are at a premium here.`
-	spaceport `The spaceport on Alleshafen is very heavily guarded; you and your crew were ID'd when you landed, and there are enormous embankments in areas, presumably restricting access to the planet's shipyards. These embankments are watched all the time by groups of Enclave soldiers; they stand silhouetted against the evening sky, and while you are used to people holding weaponry by now, the sight of their very, very large guns still makes you a bit nervous.`
+	spaceport `The spaceport on Alleshafen is very heavily guarded; you and your crew were IDed when you landed, and there are enormous embankments in areas, presumably restricting access to the planet's shipyards. These embankments are watched all the time by groups of Enclave soldiers; they stand silhouetted against the evening sky, and while you are used to people holding weaponry by now, the sight of their very, very large guns still makes you a bit nervous.`
 	shipyard "Enclave Tier 1"
 	shipyard "Enclave Tier 2"
 	shipyard "Enclave Tier 3"
-	outfitter "Enclave Outfits"
+	outfitter "Enclave Basics"
+	outfitter "Enclave Advanced"
+	outfitter "Enclave Heavy Weaponry"
+	outfitter "Enclave Ammo"
 	outfitter "XSZ Basics"
 
 planet Arikv
@@ -3820,7 +3822,9 @@ planet Arikv
 	spaceport ` When you first arrived here, you noticed the spaceport staff- as well as members of the public- looking at your ship oddly. While some appear to be considering coming over to you and asking where you found it, the vast majority of them do not.`
 	shipyard "Enclave Tier 2"
 	outfitter "Delta V Basics"
-	outfitter "Enclave Outfits"
+	outfitter "Enclave Basics"
+	outfitter "Enclave Advanced"
+	outfitter "Enclave Ammo"
 	outfitter "XSZ Basics"
 
 planet Bantilium
@@ -3834,21 +3838,22 @@ planet Bantilium
 planet Bilbo
 	attributes enclave
 	landscape land/canyon5
-	description `As with the planet below, Bilbo was named after a character from 'The Lord of the Rings'. This time, however, this moon was named "Bilbo" due to its odd similarity to the far eastern areas of Middle-Earth, to which the moon's namesake travelled during The Lord of the Rings' prequel. As a result, much of the terrain is tough and mountainous- perfectly suited to the dwarves of fantasy legend.`
+	description `As with the planet below, Bilbo was named after a character from The Lord of the Rings. This time, however, this moon was named "Bilbo" due to its odd similarity to the far eastern areas of Middle-Earth, to which the moon's namesake travelled during The Lord of the Rings' prequel. As a result, much of the terrain is tough and mountainous- perfectly suited to the dwarves of fantasy legend.`
 	spaceport `The spaceport is built into a lone mountain, a massive hive of tunnels extending throughout the edifice. Ships take off and land from landing pads suspended upon the sides of the mountain.`
 
 planet Carmine
 	attributes enclave
 	landscape land/city4
 	description `Carmine is a well-settled world, with thriving cities on every planet. It is also home to the galaxy's central bank.`
-	description `	Pollution is a growing problem on Carmine; while it was originally perfect for human habitation worldwide, five hundred years of human occupation and industrialisation are beginning to increase global temperatures. As a result, many equatorial areas are growing more arid every year, and bleaching events on the planet's legendary coral reefs are becoming more and more common.`
+	description `	Pollution is a growing problem on Carmine; while it was originally perfect for human habitation worldwide, five hundred years of human occupation and industrialisation are beginning to increase global temperatures. As a result, many equatorial areas are growing more arid every year, and bleaching event's on the planet's legendary coral reefs are becoming more and more common.`
 	spaceport `The spaceport is a very ordered affair; everything seems to be sweeping glass and steel, with suited businesspeople everywhere looking really grumpy with everything.`
 	spaceport `	The flow of spacecraft above the spaceport terminals is mesmerising, like a shoal of fish, turning and doubling back on themselves as one.`
 	shipyard "XSZ Tier 1"
 	shipyard "Enclave Tier 1"
 	shipyard "Enclave Tier 2"
 	outfitter "XSZ Basics"
-	outfitter "Enclave Outfits"
+	outfitter "Enclave Basics"
+	outfitter "Enclave Advanced"
 
 planet "Cavalier Station"
 	attributes xsz
@@ -3861,7 +3866,7 @@ planet "Cavalier Station"
 planet Crackle
 	attributes xsz
 	landscape land/nasa2
-	description `Crackle is one of XSZ's main manufacturing and mining worlds, thanks to the frequent impacts from objects falling out of the planetary rings above. While these impacts often throw up clouds of dust which may obscure the system's star for days or even weeks at a time, they both bring new material to the planet for miningand dig out large craters, allowing XSZ to find elements usually found deep within the crust relatively easily.`
+	description `Crackle is one of XSZ's main manufacturing and mining worlds, thanks to the frequent impacts from objects falling out of the planetary rings above. While these impacts often throw up clouds of dust which may obscure the system's star for days or even weeks at a time, they both bring new material to the planet for mining, as well as digging out large craters, allowing XSZ to find elements usually found deep within the crust relatively easily.`
 	description `	Most of the factories are situated well away from where the rings currently orbit; as the ring orbit moves north or south, the industrial centres move with it. They are designed to be able to be disassembled in mere weeks.`
 	spaceport `The spaceport is filled with people; some poor and destitute, practically begging for a job here; some battle-hardened, the veterans of this mining world; and some families, seemingly carrying everything they own, waiting around to find a way of getting off this rock.`
 	shipyard "XSZ Tier 1"
@@ -3874,7 +3879,7 @@ planet Cromerium
 	landscape land/mfield1
 	description `Cromerium is the world which was first settled by the Ascendancy upon their banishment. It is situated right next to the event horizon of a black hole, yet some strange forces seem to be keeping it from tipping into the abyss.`
 	description `	Much of the surface is formed of ragged peaks and crags- presumably, this is as a result of the massive gravitational forces acting on the planet, yet which are unable to fully pull the planet into the black hole.`
-	spaceport `Cromerium's spaceport is a series of very tall buildings. They appear to be sculpted out of a single piece of metal, without impurities, although you know that that is impossible. Landing bays for ships are on the sides of the buildings, fully automated- a ship can land, be refueled, repaired, and recharged without a single spaceport worker needing to enter the hangar.`
+	spaceport `Cromerium's spaceport is a series of very tall buildings. They appear to be sculpted out of a single piece of metal, without impurities, although you know that that is impossible. Landing bays for ships are on the sides of the buildings, fully automated- a ship can land, be refueled, repaired and recharged without a single spaceport worker needing to enter the hangar.`
 	spaceport `	Oddly enough, there are no massive arrays of merchants here hawking their wares- it appears that all businesses are owned by the central Ascendancy government, and as a result, the trading areas are oddly calm.`
 	shipyard Ascendancy
 	outfitter "Ascendancy Miniaturised"
@@ -3892,8 +3897,8 @@ planet Cynic
 	attributes xsz
 	landscape land/snow2
 	description `The governing authorites on Cynic are notoriously stubborn and rebellious, landing it the title of "Largest Thorn in XSZ's Backside" year after year.`
-	description `	Despite this, XSZ still seems to pour large amounts of money into the power-source development industries here on Cynic, pushing reactors and batteries to ever greater heights.`
-	spaceport `The main spaceport complex on Cynic is a flat, stumpy set of buildings towards the coast of Cynic's largest ocean. The whole thing is surrounded by a barricade of concrete walls, razor wire, and presumably mines, and the walls are almost ten yards thick- doubtlessly to protect the spaceport against the frequent political protests that occur on this planet.`
+	description `	Despite this, XSZ still seems to pour large amounts of money into the energy development industries here on Cynic, pushing reactors and batteries to ever greater heights.`
+	spaceport `The main spaceport complex on Cynic is a flat, stumpy set of buildings towards the coast of Cynic's largest ocean. The whole thing is surrounded by a barricade of concrete walls, razor wire and presumably mines, almost ten yards thick- doubtlessly to protect the spaceport against the frequent political protests that occur on this planet.`
 	spaceport `	No matter what anyone does, the people of Cynic will always find something to complain about.`
 	shipyard "XSZ Tier 2"
 	outfitter "XSZ Basics"
@@ -3930,8 +3935,8 @@ planet Forefather
 planet Frodo
 	attributes enclave
 	landscape land/water2
-	description `When the first settlers landed on Frodo, they found the habitable zones of the planet to be remarkably similar to the "Shire" from 'The Lord of the Rings', an infamous book from the 20th century. As a result, they decided to name the planet Frodo, after the book's main character.`
-	description `	While most of the population here consists of farmers, taking care of and managing the countryside and living in rustic homes, a surprisingly large percentage of inhabitants find this world as dull as an old, musty sock, and are scraping together all the money they can possibly find to leave this planet far behind.`
+	description `When the first settlers landed on Frodo, they found the habitable zones of the planet to be remarkably similar to the Shire from The Lord of the Rings, an infamous book from the 20th century. As a result, they decided to name the planet Frodo, after the book's main character.`
+	description `	While most of the population here are farmers, taking care of and managing the countryside and living in rustic homes, a surprisingly large percentage of inhabitants find this world as dull as an old, musty sock, and are scraping together all the money they can possibly find to leave this planet far behind.`
 	spaceport `The spaceport is extremely flashy for a planet like this. Although it does not use sweeping, graceful curves like many other spaceports do, it still has an atmosphere of class and optimism about it, all through the white-stained granite blocks that make up most of the buildings.`
 	spaceport `	The air here smells very similar to your home planet of New Boston.`
 	shipyard "XSZ Tier 1"
@@ -3960,7 +3965,7 @@ planet Idivine
 
 planet Imperative
 	landscape land/desert9-sfiera
-	description `In case you couldn't guess, Imperative is the capital of the Ascendancy. It is here that their centres of government are located, among vast landscapes seemingly devoid of sentient life. Despite this, it is also home to the largest Ascendancy cities.`
+	description `In case you didn't guess, Imperative is the capital of the Ascendancy. It is here that their centres of government are located, among vast landscapes seemingly devoid of sentient life. Despite this, it is also home to the largest Ascendancy cities.`
 	description `	Despite the large population, pollution on Imperative is nearly nonexistent; this is a direct result of the Ascendancy being far more long-sighted than many other human governments, including both the Free Worlds and the Enclave.`
 	spaceport `Imperative has a number of spaceports dotted across the globe, although the main one is, obviously, located in the capital city. The main spaceport is built from a material which seems to defy explanation; the largest buildings bend and curve in an impossible fashion.`
 	spaceport `	As with all of the other Ascendancy spaceports which you have seen, there is very little disorder in the trading areas.`
@@ -3971,7 +3976,7 @@ planet Imperative
 
 planet Indefatigable
 	landscape land/dmottl5
-	description `Indefatigable is the Ascendancy's largest manufacturing world. It is here that their most advanced outfits, ships, and weapons are constructed.`
+	description `Indefatigable is the Ascendancy's largest manufacturing world. It is here that their most advanced outfits, ships and weapons are constructed.`
 	description `	Despite the large amounts of industry, Indefatigable is untouched by any major environmental destruction, and the skies are often clear enough that the stars can be seen every night, even in urban centres. The cold climate has not discouraged any settlers, either- thanks to the presence of the Ascendancy shipyards, work is always available.`
 	spaceport `The spaceport is at the bottom of a large valley, a few miles away from the first urban areas. As you were bringing your ship in to land, however, you noticed a large network of security drones patrolling the airspace above the valley. Evidently, the Ascendancy is very mindful of security here, doubtless due to the shipyards.`
 	shipyard Ascendancy
@@ -3986,7 +3991,10 @@ planet Jumblar
 	spaceport `There appear to be Enclave freight ships constantly landing and taking off from here, the materials for use in expanding the shipyards. A number of ships, almost as large as Republic Carriers, are circling the spaceport, although they are clearly not waiting to land, judging by the energy readings coming from their weapons.`
 	shipyard "Enclave Tier 1"
 	shipyard "Enclave Tier 2"
-	outfitter "Enclave Outfits"
+	outfitter "Enclave Basics"
+	outfitter "Enclave Advanced"
+	outfitter "Enclave Heavy Weaponry"
+	outfitter "Enclave Ammo"
 	outfitter "XSZ Basics"
 
 planet Korine
@@ -4001,7 +4009,7 @@ planet Latent
 	landscape land/city0
 	description `Latent is the capital of the XSZ Corporation, covered in gleaming office blocks and automated factories deep below ground.`
 	description `	Settled in the first years of the Enclave, Latent's population skyrocketed when an abundance of natural resources was discovered on the planet- eventually becoming the economic juggernaut that XSZ is today.`
-	spaceport `Latent's spaceport is a large, sprawling affair; landing pads and terminals stretch as far as the eye can see. A number of the landing pads within sight of the one where your ship is parked appear to be marked for use exclusively by XSZ, no doubt for the export of outfits constructed by them on Latent and the non-marketed import of basic necessities like food and clothing.`
+	spaceport `Latent's spaceport is a large, sprawling affair; landing pads and terminals stretch as far as the eye can see. A number of the landing pads within sight of the one where your ship is parked appear to be marked for use exclusively by XSZ, no doubt for the export of outfits constructed by on Latent and the import of basic necessities like food and clothing.`
 	shipyard "XSZ Tier 1"
 	shipyard "XSZ Tier 2"
 	shipyard "XSZ Tier 3"
@@ -4017,7 +4025,10 @@ planet Lyfon
 	shipyard "Enclave Tier 1"
 	shipyard "Enclave Tier 2"
 	shipyard "Enclave Tier 3"
-	outfitter "Enclave Outfits"
+	outfitter "Enclave Basics"
+	outfitter "Enclave Advanced"
+	outfitter "Enclave Heavy Weaponry"
+	outfitter "Enclave Ammo"
 	outfitter "XSZ Basics"
 	security 0
 
@@ -4025,8 +4036,8 @@ planet Magna
 	attributes xsz
 	landscape land/hills1
 	description `Magna is a desolate planet, having been continually strip mined by XSZ for the past two centuries. However, there are a reasonable number of settlements here. The reason why? XSZ's largest shipyards are located here, meaning thousands of people migrate here each year to fill the massive number of jobs required to work in the shipyards, as well as the mines.`
-	description `	Surprisingly enough, the relative background radiation levels here are abnormally low; despite XSZ's normal record of bad radiation safety, it appears that everything here is at least half lead, doubtless to prevent any possibility of workers being discouraged from coming to work here due to dangerous conditions.`
-	spaceport `The spaceport is a yet another large, sprawling affair, common to the Enclave's planets, taking advantage of the massive space afforded by being in an area that has already been exhausted of its raw materials.`
+	description `	Surprisingly enough, the relative background radiation levels here are abnormally low; despite XSZ's normal record of bad radiation safety, it appears that everything here is at least half lead, doubtlessly to prevent any possibility of workers being discouraged from coming to work here due to dangerous conditions.`
+	spaceport `The spaceport is a large, sprawling affair, taking advantage of the massive space afforded by being in an area that has already been exhausted of its raw materials.`
 	spaceport `	A good third of the spaceport is filled by recruiting offices for various divisions of XSZ- XSZ Shipyards, XSZ Steel, XSZ Systems- and more. As a result, there are equally long lines of people, many of whom look desperate, queuing out of these offices in an attempt to secure a job for themselves.`
 	shipyard "XSZ Tier 1"
 	shipyard "XSZ Tier 2"
@@ -4043,19 +4054,20 @@ planet Mein
 planet Memorandum
 	attributes enclave
 	landscape land/city2
-	description `Memorandum is a very "normal" world. The climate is stable and fairly warm, days are similar to those on Earth, and many of the inhabitants work in simple, boring office jobs which pay decently but are ultimately unexciting. The population is relatively low, too, although oddly enough, most families are in a very similar wealth band; poverty is mostly unheard of, and yet wild amounts of wealth is too.`
+	description `Memorandum is a very "normal" world. The climate is stable and fairly warm, days are similar to those on Earth, and many of the inhabitants work in simple, boring office jobs which pay decently but are ultimately unexciting. The population is relatively low, too, although oddly enough, most families are in a very similar wealth band; poverty is mostly unheard of, and yet wild amounts of wealth are too.`
 	description `	Very few people you meet have high aspirations for leaving the planet.`
-	spaceport `The port staff are surprisingly cheerful, unlike just about every other human port you have visited, in this galaxy or the next. These are clearly the few people who, like you once did, want to leave this planet far behind in their own ship to become a trader, or a bounty hunter, or a warfleet captain. Their enthusiasm inspires an odd sort of nostalgia inside you, of the innocence you left behind when you joined the Free Worlds and their war.`
+	spaceport `The port staff are surprisingly cheerful, unlike just about every other human port you have visited, in this galaxy or the next. These are clearly the few people who, like you once did, want to leave this planet far behind in their own ship to become a trader, or a bounty hunter, or a warship captain. Their enthusiasm inspires an odd sort of nostalgia inside you, of the innocence you left behind when you joined the Free Worlds and their war.`
 	shipyard "XSZ Tier 1"
 	shipyard "Enclave Tier 1"
 	outfitter "XSZ Basics"
-	outfitter "Enclave Outfits"
+	outfitter "Enclave Basics"
+	outfitter "Enclave Ammo"
 
 planet Mirrodin
 	attributes xsz
 	landscape land/station0
 	description `Mirrodin is an advanced space station designed by the XSZ Corporation. Encompassing much of the Skryydr system, Mirrodin is somewhat like a Quarg ringworld, albeit that it is constructed with proportions more suited to your human psyche. Mirrodin, like an onion, consists of layers; the spaceports are situated on the outer edge of the ring, followed by the outfitters and shipyards, then the commercial band, and then the residential sector, facing the star in the centre of the system.`
-	description ` Humourously enough, Mirrodin was built as a show of competition with the Enclave; building the most advanced station thus far constructed by humans is no mean feat, and placing it on the Enclave's doorstep, you suspect, was an intentional move in XSZ's cold war against the Enclave, not unlike that between the Deep and the Paradise Worlds in the Milky Way a few decades after the Alpha Wars.`
+	description ` Ironically enough, Mirrodin was built as a show of competition with the Enclave; building the most advanced station thus far constructed by humans is no mean feat, and placing it on the Enclave's doorstep, you suspect, was an intentional move in XSZ's cold war against the Enclave, not unlike that between the Deep and the Paradise Worlds in the Millky Way a few decades after the Alpha Wars.`
 	spaceport `As you disembark from your ship, a number of advertisments boom through the hangar- "Welcome to Mirrodin! Now the most advanced entertainment and leisure centre in the galaxy!" "Over 100 kilometres of non-stop laser tag action, all for the low price of just 500 credits per person! Terms and conditions apply!" `
 	spaceport ` The spaceport section of the space station is surprisingly clean and well-kept, unlike many you have seen in the Republic or the Free Worlds- most likely because this is the area receiving the station's residents, as well as those visiting simply for the enormous laser tag facilities.`
 	shipyard "XSZ Tier 2"
@@ -4074,13 +4086,14 @@ planet "New Asgard"
 	description `	Despite the relative absence of natural resources, New Asgard is still fairly rich due to the tourism industry- many people come here simply to experience the awe of waking up to see the face of a gas giant staring down at them.`
 	spaceport `The spaceport is a slick, clean, modern affair, with hallways paved in dark granite and arching roofs overhead. Most of the terminal is taken up by small stores and off-licenses.`
 	spaceport `	The entire spaceport seems to be filled with people with cameras, hysterically barging their way through the crowds to find their ride off of this moon.`
-	outfitter "Enclave Outfits"
+	outfitter "Enclave Basics"
+	outfitter "Enclave Ammo"
 	outfitter "XSZ Basics"
 
 planet "New Scotland"
 	attributes enclave
 	landscape land/desert8-sfiera
-	description `New Scotland is a world consisting of scrubland and low mountain ranges, for the most part; it is an old world, where tectonic activity is beginning to die down. As a result of the decrease in tectonic activity, the planet's magnetoshpere is also slowly weakening. This in turn increases the amount of radiation falling on the surface, making the inhabitants much more likely to get cancers.`
+	description `New Scotland is a world consistign of scrubland and low mountain ranges, for the most part; it is an old world, where tectonic activity is beginning to die down. As a result of the decrease in tectonic activity, the planet's magnetoshpere is also slowly weakening. This in turn increases the amount of radiation falling on the surface, making the inhabitants much more likely to get cancer.`
 	description `	Most families live on isolated farms in the foothills; it would be even harder to get supplies to them if they were in the mountains proper, and the deep wastes are rumoured to contain dreadful horrors of the sands.`
 	spaceport `As you stepped off your ship, the air already had a noticeably dry tang to it. The spaceport is situated in a large patch of desert, although the mountains nearby alter the weather enough to provide this area with some rain, at least. The architecture feels somewhat ramshackle, not unlike the frontier towns of the 17th century back on Earth; the roads are simply dusty trails, and the majority of buildings are constructed from wood.`
 	spaceport `	Despite this, the security guards near the trading areas have some very advanced-looking guns.`
@@ -4100,11 +4113,13 @@ planet Ortite
 planet Perihelion
 	attributes "xsz enclave"
 	landscape land/sea10-sfiera
-	description `Perihelion is a surprisingly Earth-like world- although, of course, there are very few records remaining in the Tyridium galaxy of what actually constitutes Earth-like. This is a world hotly contested by XSZ- it has very little axial tilt, and almost perfect weather. `
-	description `	XSZ-funded surveys have found that there are enormous oil and gas fields beneath the oceans of Perihelion. Despite XSZ's numerous appeals to the Enclave government to allow them to mine the fuels here, the Enclave has refused, every time.`
+	description `Perihelion is a surprisingly Earthlike world- although, of course, there are very few records remaining in the Tyridium galaxy of what actually constitutes Earthlike. This is a world hotly contested by XSZ- it has very little axial tilt, and almost perfect weather. `
+	description `	However, XSZ-funded surveys have found that there are enormous oil and gas fields beneath the oceans of Perihelion. Despite XSZ's numerous appeals to the Enclave government to allow them to mine the fuels here, the Enclave has refused, every time.`
 	spaceport `The spaceport is located right on one of the coasts, nearest to the equator. As you stepped off of your ship, a small gaggle of tourists walked past, evidently unaware of the state of relations currently between the Enclave and XSZ, or even the likelihood that this would be one of the first worlds XSZ might move to take in the event of war.`
 	spaceport `	The concrete landing pads are warm and sandy beneath your feet.`
-	outfitter "Enclave Outfits"
+	outfitter "Enclave Basics"
+	outfitter "Enclave Heavy Weaponry"
+	outfitter "Enclave Ammo"
 	outfitter "XSZ Basics"
 
 planet Puggleshank
@@ -4113,14 +4128,14 @@ planet Puggleshank
 	description `This world seems to be covered in dense forests, stretching as far as the eye can see. The only break in the canopy appears to be for a massive Pug city. Strange structures rise far above the treetops, their organic-looking architecture mirroring the design of the Pug ships that you have seen.`
 	description `	There is an unfathomable sense of calm permeating this planet and all of its Pug inhabitants.`
 	spaceport `The spaceport on Puggleshank lies in the centre of the city. Strangely enough, the landing pads are few and far between, nowhere near enough to accomodate the Pug ships flying through the system. You suspect that there are hangars far below the ground, although the density of buildings around the spaceport and their apparent weight would seem to suggest otherwise.`
-	spaceport `	As with most Pug-controlled planets, the Pug here ignore you for the most part.`
+	spaceport `	As with most Pug-controlled planets, the Pug here ignore you mostly.`
 	"required reputation" 50
 
 planet Quaver
 	attributes enclave
 	landscape land/city17-sfiera
 	description `Quaver has been heavily urbanised since its settlement a little more than five centuries ago. As a world with relatively low-lying land, the risk of flooding is always a possibility, although thankfully due to the absence of many mountains, the weather is usually predictable.`
-	description `	While it is one of the richest planets in the galaxy, Quaver is actually home to relatively few billion, or even millionaires, as its massive wealth comes from its status as one of the primary trading planets away from the heart of Enclave space. As a result, there is a very well-funded welfare programme for inhabitants of the planet, which includes a universal basic income, something entirely unheard of in the Republic.`
+	description `	While it is one of the richest planets in the galaxy, Quaver is actually home to relatively few billion or even millionaires, as its massive wealth comes from its status as one of the primary trading planets away from the heart of Enclave space. As a result, there is a very well-funded welfare programme for inhabitants of the planet, which includes a universal basic income, something entirely unheard of in the Republic.`
 	spaceport `The spaceport here feels vibrant and alive, the flow of goods and traders constant. Nobody is standing still; everyone has somewhere to be, although it seems that in this rush their regard for other people has not diminished- as you watch, someone is knocked over in the crowd, and instead of trampling over them like people from the Paradise Worlds would, a good five people stop to help them to their feet.`
 	spaceport `	The number of water features here is ridiculous.`
 	shipyard "Enclave Tier 1"
@@ -4128,7 +4143,8 @@ planet Quaver
 	shipyard "XSZ Tier 1"
 	outfitter "Delta V Basics"
 	outfitter "XSZ Basics"
-	outfitter "Enclave Outfits"
+	outfitter "Enclave Basics"
+	outfitter "Enclave Ammo"
 	security 0
 	tribute 100
 		threshold 2500
@@ -4138,18 +4154,18 @@ planet Saal
 	attributes enclave
 	landscape land/hills2
 	description `Saal is an idyllic farming world, entirely at contrast with most of the other human residents of this galaxy, who seem to act very similarly to the humans of the Deep. Most power generation facilities, instead of using fusion or fission to generate electricity, are in fact wind-powered.`
-	description `	There are a number of surprisingly feral species here, including subspecies of cows and horses.`
+	description `	There are a number of surprisingly feral species here, including cows and horses.`
 	spaceport `The spaceport is surrounded by old, weather-stained limestone buildings in what was once Saal's largest city. Many of the streets here, while somewhat decrepit, and occassionally litter-riddled, carry a sense of some old, shining glory which time cannot tarnish.`
 	spaceport `	The architects who designed some of the spaceport buildings themselves were obviously very fond of 19th-century British architecture; the buildings, with their arching cast-iron beams and glass roofs are very reminiscent of large train stations in the United Kingdom during that period.`
-	outfitter "Enclave Outfits"
+	outfitter "Enclave Basics"
+	outfitter "Enclave Ammo"
 	outfitter "XSZ Basics"
 
 planet Scalpel
 	attributes enclave
 	landscape land/sea1
 	description `Scalpel is home to a single isolated colony, a group of hardy people who are willing to live out here, three days' travel away from any other inhabited system. Much of this world is uncharted; the colonists have only mapped the areas within 500 miles of the settlement.`
-	description `	Some explorers who have ventured beyond the 500 mile radius which maps cover say that they have discovered ruins, artifacts of previous civilizations, and the remains of ships, although many that they tell are pretty sure they're just high.`
-#but they're hardy
+	description `	Some explorers who have ventured beyond the 500 mile radius which maps cover say that they have discovered ruins, artifacts of previous civilisations, and the remains of ships, although many that they tell are pretty sure they're just high.`
 	spaceport `The spaceport on Scalpel can barely be called that; it is little more than a large clearing with some landing pads of packed dirt a mile or two out from the main settlement.`
 
 planet Seminar
@@ -4166,17 +4182,20 @@ planet Tarkir
 	attributes enclave
 	landscape land/badlands2
 	description `Tarkir is a relatively flat, boring world. Covered in badlands and the occasional ocean or forest, not many people live here- and with good reason.`
-	description `	Somehow, Tarkir is populated by creatures very similar to the dragons of Skymoot, back in Free Worlds space. These "dragons", however, are far more aggressive than those found on Skymoot, and are known to attack settlements regularly. Despite this, there is a strong cultural tradition among the locals who believe that any pilot aspiring to join the planetary militia must fight off a dragon attack on their own, shipless, before they are deemed worthy of the title.`
-	spaceport `	The spaceport is well defended against the dragons, with blaster turrets, missile silos, and enormous electrified metal nets erected over the main buildings. The landing pads are left to fend for themselves, however; the port authorities trust that pilots should be alert enough to be able to use the weapons on their ships to fend off the dragons.`
+	description `	Somehow, Tarkir is populated by creatures very similar to the dragons of Skymoot, back in Free Worlds space. These "dragons", however, are far more aggressive than those found on Skymoot, and are known to attack settlements regularly. Despite this, there is a strong cultural tradition among the locals who believe that any pilot aspiring to join the planetary militia must fight off a dragon attack on their own before they are deemed worthy of the title.`
+	spaceport `The spaceport is well defended against the dragons, with blaster turrets, missile silos and enormous electrified metal nets erected over the main buildings. The landing pads must be left to fend for themselves, however; the port authorities trust that pilots should be alert enough to be able to use the weapons on their ship to fend off the dragons.`
 	shipyard "Enclave Tier 1"
 	shipyard "Enclave Tier 2"
 	outfitter "Delta V Basics"
-	outfitter "Enclave Outfits"
+	outfitter "Enclave Basics"
+	outfitter "Enclave Advanced"
+	outfitter "Enclave Heavy Weaponry"
+	outfitter "Enclave Ammo"	
 
 planet Termite
 	attributes xsz
 	landscape land/nasa7
 	description `Termite is almost uninhabitable, even by XSZ's standards for mining worlds. However, what does make it worthwhile for XSZ to attempt to build settlements here is the lightning.`
-	description `	Termite's lightning is far, far stronger than on any other planet known to humanity, and as a result, whenever a bolt strikes, the enormous temperatures can actually fuse together hydrogen molecules found in the atmosphere to form helium. As a result, XSZ uses this planet as a massive, planet-sized fusion reactor in order to both generate large amounts of energy which can be stored and then shipped off-world, and to synthesise some rare elements via controlled fusion.`
-	spaceport `The spaceport is very low to the ground, and is covered in some sort of opaque, rubbery material; any possible measures to stop lightning from hitting any part of the spaceport are in place. The winds are immense on this planet, and the air practically crackles with ozone.`
+	description `	Termite's lightning is far, far stronger than on any other planet known to humanity, and as a result, whenever a bolt strikes, the enormous temperatures can actually fuse together hydrogen molecules found in the atmosphere to form helium. As a result, XSZ uses this planet as a massive, planet-sized fusion reactor in order to both generate large amounts of energy which can be stored and then shipped offworld, and to synthesise some rare elements via fusion.`
+	spaceport `The spaceport is very low to the ground, and is covered in some sort of opaque, rubbery material; all measures to stop lightning from hitting any of the spaceport. The winds are immense on this planet, and the air practically crackles with ozone.`
 	outfitter "XSZ Basics"
