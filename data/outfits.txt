@@ -1,7 +1,7 @@
 outfit "SLD-42 Shield Generator"
 	category "Systems"
 	cost 65000
-	thumbnail "outfit/SLD-42"
+	thumbnail "outfit/SLD42"
 	"mass" 20
 	"outfit space" -20
 	"shield generation" .46
@@ -12,7 +12,7 @@ outfit "SLD-42 Shield Generator"
 outfit "SLD-68 Shield Generator"
 	category "Systems"
 	cost 120000
-	thumbnail "outfit/SLD-68"
+	thumbnail "outfit/SLD68"
 	"mass" 35
 	"outfit space" -35
 	"shield generation" .77
@@ -23,7 +23,7 @@ outfit "SLD-68 Shield Generator"
 outfit "SLD-95 Shield Generator"
 	category "Systems"
 	cost 200000
-	thumbnail "outfit/SLD-95"
+	thumbnail "outfit/SLD95"
 	"mass" 50
 	"outfit space" -50
 	"shield generation" 1.26
