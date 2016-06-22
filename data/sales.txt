@@ -84,6 +84,7 @@ outfitter "XSZ Basics"
 	"Kindle-Class Power Pack"
 	"Conflagration-Class Power Pack"
 	"Blaze-Class Power Pack"
+	"Repulsor Beam"
 
 outfitter "XSZ Advanced"
 	"HFS-8B1 Particle Cannon"
