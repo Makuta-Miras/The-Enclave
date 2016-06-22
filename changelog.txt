@@ -2,6 +2,7 @@
 22/06/16 [v0.0.6]
 
 -Added a new weapon, the Repulsor Beam.
+-Added an anti-missile turret, heheheh.
 
 
 20/06/16 [v0.0.6]
