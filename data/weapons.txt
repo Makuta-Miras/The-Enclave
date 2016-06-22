@@ -130,3 +130,36 @@ outfit "Nuclear Missile MK 5"
 		"hit force" 40000
 		"missile strength" 2000
 	description "XSZ has been making massive advancements recently in nuclear weaponry."
+
+
+outfit "Repulsor Beam"
+	category "Turrets"
+	cost 560000
+	thumbnail "outfit/Repulsor"
+	"mass" 20
+	"outfit space" -20
+	"weapon capacity" -20
+	"turret mounts" -1
+	"required crew" 1
+	weapon
+		sprite "projectile/repulsor"
+			"frame rate" 60
+		sound "banisher"
+		"hit effect" "repulsor impact"
+		"inaccuracy" .4
+		"velocity" 590
+		"lifetime" 1
+		"reload" 1
+		"firing energy" 3.3
+		"firing heat" 4.9
+		"shield damage" 0
+		"hull damage" 0
+		"hit force" 40
+	description "The Repulsor Beam is a weapon designed simply as a relatively small tool for merchant ships to use in order to easily push away enemy ships, without having to spend huge amounts of outfit space on true offensive weaponry or the systems required to power them."
+
+effect "repulsor impact"
+	sprite "effect/repulsor impact"
+		"random start frame"
+		"frame rate" 60
+	"lifetime" 2
+	"velocity scale" 0.
