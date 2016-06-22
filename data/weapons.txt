@@ -25,11 +25,10 @@ outfit "Railgun"
 		"acceleration" .7
 		"drag" .05
 		"turn" 1.2
-		"homing" 2
+		"homing" 0
 		"missile strength" 35
 	description "The railgun is one of the few weapons designed solely by the Enclave's government-owned labs without any input from XSZ."
-	description " Using principles first used in warfare in the early 21st century, the railgun accelerates a metal projectile along a track using a series of electromagnets, before shooting the projectile at a target. Railguns have been proven to have supreme shield-piercing capabilities, and are devastating against a target with no shields."
-	
+	description "	Using principles first used in warfare in the early 21st century, the railgun accelerates a metal projectile along a track using a series of electromagnets, before shooting the projectile at a target. Railguns have been proven to have supreme shield-piercing capabilities, and are devastating against a target with no shields."
 	
 outfit "HFS-8B1 Particle Cannon"
 	category "Guns"
@@ -45,7 +44,7 @@ outfit "HFS-8B1 Particle Cannon"
 		"hit effect" "particle impact"
 		"inaccuracy" 1
 		"velocity" 30
-		"lifetime" 250
+		"lifetime" 50
 		"reload" 5
 		"firing energy" 300
 		"firing force" 100
@@ -54,7 +53,6 @@ outfit "HFS-8B1 Particle Cannon"
 		"shield damage" 600
 		"hull damage" 60
 	description "As you can probably see, XSZ's weapons designers are bat-##### crazy."
-	
 	
 outfit "Heavy Electron Turret"
 	category "Turrets"
@@ -130,8 +128,8 @@ outfit "Nuclear Missile MK 5"
 		"hit force" 40000
 		"missile strength" 2000
 	description "XSZ has been making massive advancements recently in nuclear weaponry."
-
-
+	
+	
 outfit "Repulsor Beam"
 	category "Turrets"
 	cost 560000
@@ -163,3 +161,31 @@ effect "repulsor impact"
 		"frame rate" 60
 	"lifetime" 2
 	"velocity scale" 0.
+	
+
+outfit "Tritium Anti-Missile"
+	category "Turrets"
+	cost 55000
+	thumbnail "outfit/Tritium AM"
+	"mass" 12
+	"outfit space" -12
+	"weapon capacity" -12
+	"turret mounts" -1
+	weapon
+		"hit effect" "tritium AM"
+		"anti-missile" 4
+		"velocity" 150
+		"lifetime" 1
+		"reload" 8
+		"firing energy" 4
+		"firing heat" 3
+	description "The Tritium Anti-Missile is used on smaller ships. While it is far less powerful than other anti-missile systems you have seen, it is also somewhat smaller, allowing even the tiniest of ships to be able to use them."
+	description "	However, one of the perceived downsides for many in regards to this anti-missile turret is the amount of noise produced whenever it fires."
+	
+effect "tritium AM"
+	sprite "effect/small anti missile"
+		"no repeat"
+		"frame rate" 3
+	sound "hyperdrive in"
+	"lifetime" 21
+	"velocity scale" 1
