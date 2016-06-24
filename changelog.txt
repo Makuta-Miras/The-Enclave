@@ -1,13 +1,30 @@
 ------------------------------------------------------------------------  v0.0.6  -------------------------------------------------------------------------------
+24/06/16 [v0.0.6]
+
+-Switched up the map so that there's now a good array of engines and basic outfits like missile launchers, ammo and so on.
+-Swapped some shield generators on stock ships to the SLD equivalents.
+
+
+23/06/16 [v0.0.6]
+
+-Added some new Kaltheim systems and moved some stuff so that they're accessible via jump drive.
+-Removed the Clurth wormhole.
+-Added an outfitter which has all the outfits in the mod.
+-Added a few more labels.
+-Switched up some file names.
+-Messed with some of the wording on a few spaceports.
+
+
 22/06/16 [v0.0.6]
 
 -Added a new weapon, the Repulsor Beam.
 -Added an anti-missile turret, heheheh.
+-Shifted the "Enclave Opens" storyline into its own text file.
 
 
 20/06/16 [v0.0.6]
 
--Added a sprite for the SLD-95
+-Added a sprite for the SLD-95.
 
 
 19/06/16 [v0.0.6]
