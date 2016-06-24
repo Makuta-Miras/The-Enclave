@@ -1,11 +1,12 @@
 galaxy "Enclave Galaxy"
 	pos 5000 500
-	sprite ui/EnclaveGalaxy2
+	sprite ui/EnclaveGalaxy
 
-galaxy "The Nether Regions"
+galaxy "Labels"
 	pos 5000 500
-	sprite label/TheNetherRegions
+	sprite label/Labels
 
+	
 system Abomin
 	pos 4788.53 346.251
 	government Independent
@@ -385,7 +386,7 @@ system Anvyu
 		distance 1895.95
 		period 1600.06
 		offset 317.396
-	object "Wormhole Magic"
+	object "Enclave Wormhole"
 		sprite planet/wormhole
 		distance 4534.38
 		period 5917.98
@@ -617,9 +618,8 @@ system Banq'rujol'ifus
 	government Kaltheim
 	habitable 1566.68
 	link Umba'draeuin
-	link Kama'la'ez
 	link Ik'ari'aka
-	link Fo'gar'helien
+	link Jaaaar'aaaaa'l'u
 	asteroids "small rock" 5 6.0102
 	asteroids "medium rock" 7 3.2886
 	asteroids "large rock" 1 6.9741
@@ -902,17 +902,13 @@ system Clurth
 			sprite planet/callisto
 			distance 538
 			period 53.3147
-	object "Kaltheim Wormhole"
-		sprite planet/wormhole
-		distance 800
-		period 89
 
 system Crul'im'heim
 	pos 5453.41 783.128
 	government Kaltheim
 	habitable 625
-	link Fo'gar'helien
 	link Ik'ari'aka
+	link Syj'ngf'bnk
 	asteroids "small rock" 1 2.7531
 	asteroids "medium rock" 32 2.2344
 	asteroids "large rock" 8 5.5062
@@ -968,10 +964,6 @@ system Crul'im'heim
 			sprite planet/dust7
 			distance 310
 			period 17.1516
-	object "Kaltheim Wormhole"
-		sprite planet/wormhole
-		distance 800
-		period 89
 
 system Cymexes
 	pos 4801 651
@@ -1437,12 +1429,12 @@ system Five
 		offset 1.12596
 
 system Fo'gar'helien
-	pos 5409.41 760.128
+	pos 5403.41 765.128
 	government Kaltheim
 	habitable 233.28
-	link Banq'rujol'ifus
+	link Syj'ngf'bnk
+	link Ik'ari'aka
 	link Jaaaar'aaaaa'l'u
-	link Crul'im'heim
 	asteroids "medium rock" 1 4.752
 	asteroids "large rock" 2 5.256
 	asteroids "small metal" 3 1.944
@@ -1744,7 +1736,7 @@ system Glephum
 		distance 500.252
 		period 250.189
 		offset 139.409
-	object "Wormhole Overlay"
+	object "Ascendancy Wormhole"
 		sprite planet/wormhole
 		distance 3464.71
 		period 4560.22
@@ -1818,6 +1810,7 @@ system Ik'ari'aka
 	link Kama'la'ez
 	link Banq'rujol'ifus
 	link Crul'im'heim
+	link Fo'gar'helien
 	asteroids "small rock" 43 2.9463
 	asteroids "medium rock" 7 4.6851
 	asteroids "large rock" 2 6.5688
@@ -2100,6 +2093,8 @@ system Jaaaar'aaaaa'l'u
 	pos 5372.41 722.128
 	government Kaltheim
 	habitable 425.92
+	link Ytgfrv'hjusd'ikmuivra
+	link Banq'rujol'ifus
 	link Fo'gar'helien
 	asteroids "small rock" 7 3.5802
 	asteroids "medium rock" 41 5.1246
@@ -2224,12 +2219,11 @@ system Kaladesh
 			period 26.1438
 
 system Kama'la'ez
-	pos 5326.41 825.128
+	pos 5325.41 831.128
 	government Kaltheim
 	habitable 858.28
 	link Ik'ari'aka
 	link Umba'draeuin
-	link Banq'rujol'ifus
 	link Grundel'froae
 	asteroids "medium rock" 10 2.628
 	asteroids "large rock" 13 0.99
@@ -2278,6 +2272,44 @@ system Kama'la'ez
 			sprite planet/rock7
 			distance 373
 			period 35.8918
+
+system Lo'or'awaen
+	pos 5418.88 625.673
+	government Kaltheim
+	habitable 135
+	link Ytgfrv'hjusd'ikmuivra
+	asteroids "medium rock" 21 2.3184
+	asteroids "large rock" 3 1.7112
+	asteroids "small metal" 40 3.6156
+	asteroids "medium metal" 17 3.3672
+	asteroids "large metal" 70 4.0848
+	object
+		sprite star/m8
+		period 10
+	object
+		sprite planet/cloud4
+		distance 161.29
+		period 70.5187
+	object
+		sprite planet/cloud8
+		distance 451.54
+		period 330.322
+	object
+		sprite planet/gas7
+		distance 1150.38
+		period 1343.24
+		object
+			sprite planet/rock3
+			distance 269
+			period 15.6949
+		object
+			sprite planet/rock14
+			distance 362
+			period 24.5015
+	object
+		sprite planet/dust1
+		distance 2368.62
+		period 3968.59
 
 system Lyvven
 	pos 4949.09 698.128
@@ -3163,7 +3195,7 @@ system Smoline
 			sprite planet/callisto
 			distance 473
 			period 26.2758
-	object "Wormhole Overlay"
+	object "Ascendancy Wormhole"
 		sprite planet/wormhole
 		distance 4619.19
 		period 3032.33
@@ -3291,6 +3323,61 @@ system Svind
 			distance 720.302
 			period 60.7482
 			offset 188.745
+
+system Syj'ngf'bnk
+	pos 5446.88 739.673
+	government Kaltheim
+	habitable 2997.76
+	link Fo'gar'helien
+	link Crul'im'heim
+	link Ytgfrv'hjusd'ikmuivra
+	asteroids "small rock" 8 4.2891
+	asteroids "medium rock" 25 5.6202
+	asteroids "large rock" 4 4.4863
+	asteroids "small metal" 15 5.3244
+	asteroids "medium metal" 28 4.1412
+	asteroids "large metal" 5 4.93
+	object
+		sprite star/f0
+		distance 25.2272
+		period 9.72388
+	object
+		sprite star/g5
+		distance 95.7728
+		period 9.72388
+		offset 180
+	object
+		sprite planet/dust7
+		distance 211.013
+		period 22.3936
+	object
+		sprite planet/rock7
+		distance 552.023
+		period 94.7539
+	object
+		sprite planet/gas2
+		distance 1480.02
+		period 415.972
+		object
+			sprite planet/dust3
+			distance 206
+			period 17.9149
+		object
+			sprite planet/ice8
+			distance 306
+			period 32.4337
+		object
+			sprite planet/rock14
+			distance 439
+			period 55.7329
+	object
+		sprite planet/uranus
+		distance 2388.11
+		period 852.597
+		object
+			sprite planet/miranda
+			distance 234
+			period 15.2932
 
 system Thaen
 	pos 5168.86 643.628
@@ -3519,7 +3606,7 @@ system Three
 			period 40.077
 
 system Umba'draeuin
-	pos 5276.41 789.128
+	pos 5266.41 777.128
 	government Kaltheim
 	habitable 1715
 	link Vo'jaerun
@@ -3787,15 +3874,60 @@ system Xenos
 	object
 		sprite star/g5
 		period 10
-	object "Wormhole Magic"
+	object "Enclave Wormhole"
 		sprite planet/wormhole
 		distance 4208.63
 		period 2158.5
 
+system Ytgfrv'hjusd'ikmuivra
+	pos 5441.88 675.673
+	government Kaltheim
+	habitable 233.28
+	link Jaaaar'aaaaa'l'u
+	link Syj'ngf'bnk
+	link Lo'or'awaen
+	asteroids "small rock" 1 3.2448
+	asteroids "large rock" 8 4.3992
+	asteroids "small metal" 12 4.1808
+	asteroids "medium metal" 19 2.1216
+	asteroids "large metal" 31 2.5584
+	object
+		sprite star/m4
+		period 10
+	object
+		sprite planet/mars
+		distance 207.24
+		period 78.1325
+	object
+		sprite planet/ice2
+		distance 404.88
+		period 213.359
+	object
+		sprite planet/rock10
+		distance 862.84
+		period 663.769
+		object
+			sprite planet/rock17
+			distance 175
+			period 19.4837
+	object
+		sprite planet/gas14
+		distance 2243.4
+		period 2782.8
+		object
+			sprite planet/europa
+			distance 241
+			period 15.2365
+		object
+			sprite planet/dust5
+			distance 373
+			period 29.3374
+
+
 planet Affalan
 	attributes xsz
 	landscape land/water6
-	description `Affalan is deserted.	Enormous, bloated purple clouds roll across the landscape. Strange, mutated creatures roam the barren moors, and horrors lurk within the depths of Affalan's black seas.`
+	description `Affalan is deserted. Enormous, bloated purple clouds roll across the landscape. Strange, mutated creatures roam the barren moors, and horrors lurk within the depths of Affalan's black seas.`
 	description `	This eerie atmosphere is the result of extreme amounts of nuclear and biological weapons testing. When XSZ first began developing its nuclear arsenal, they needed somewhere to test, somewhere with a relatively normal ecosystem which was fairly uninhabited. Affalan was chosen, and a century later, the environment is so irradiated that you dare not step outside your ship without an extremely heavy radiation suit.`
 
 planet Alleshafen
@@ -3810,8 +3942,11 @@ planet Alleshafen
 	outfitter "Enclave Basics"
 	outfitter "Enclave Advanced"
 	outfitter "Enclave Heavy Weaponry"
-	outfitter "Enclave Ammo"
+	outfitter "Small Engines"
+	outfitter "Medium Engines"
+	outfitter "Huge Engines"
 	outfitter "XSZ Basics"
+	outfitter "Map"
 
 planet Arikv
 	attributes enclave
@@ -3821,18 +3956,22 @@ planet Arikv
 	spaceport `This spaceport is armed to the teeth- ground-to-orbit weaponry is stationed around the main hub and landing pads, and the area is covered in mountains which you suspect contain a number of secret hangars, judging by the number of Enclave ships wheeling above on the atmosphere's edge.`
 	spaceport ` When you first arrived here, you noticed the spaceport staff- as well as members of the public- looking at your ship oddly. While some appear to be considering coming over to you and asking where you found it, the vast majority of them do not.`
 	shipyard "Enclave Tier 2"
-	outfitter "Delta V Basics"
+	outfitter "Small Engines"
 	outfitter "Enclave Basics"
 	outfitter "Enclave Advanced"
-	outfitter "Enclave Ammo"
+	
 	outfitter "XSZ Basics"
+	outfitter "Map"
+	outfitter "Ammo"
 
 planet Bantilium
 	attributes enclave
 	landscape land/forest3
 	description Planet
 	spaceport SPACEPORT
-	outfitter "Delta V Basics"
+	outfitter "Small Engines"
+	outfitter "Map"
+	outfitter "Ammo"
 	security 0
 
 planet Bilbo
@@ -3844,9 +3983,9 @@ planet Bilbo
 planet Carmine
 	attributes enclave
 	landscape land/city4
-	description `Carmine is a well-settled world, with thriving cities on every planet. It is also home to the galaxy's central bank.`
+	description `Carmine is a well-settled world, with thriving cities on every continent. It is also home to the galaxy's central bank.`
 	description `	Pollution is a growing problem on Carmine; while it was originally perfect for human habitation worldwide, five hundred years of human occupation and industrialisation are beginning to increase global temperatures. As a result, many equatorial areas are growing more arid every year, and bleaching event's on the planet's legendary coral reefs are becoming more and more common.`
-	spaceport `The spaceport is a very ordered affair; everything seems to be sweeping glass and steel, with suited businesspeople everywhere looking really grumpy with everything.`
+	spaceport `The spaceport is remarkably ordered; everything seems to be sweeping glass and steel, with suited businesspeople everywhere looking really grumpy with everything.`
 	spaceport `	The flow of spacecraft above the spaceport terminals is mesmerising, like a shoal of fish, turning and doubling back on themselves as one.`
 	shipyard "XSZ Tier 1"
 	shipyard "Enclave Tier 1"
@@ -3854,7 +3993,9 @@ planet Carmine
 	outfitter "XSZ Basics"
 	outfitter "Enclave Basics"
 	outfitter "Enclave Advanced"
-
+	outfitter "Map"
+	outfitter "Ammo"
+	
 planet "Cavalier Station"
 	attributes xsz
 	landscape land/space3
@@ -3873,6 +4014,8 @@ planet Crackle
 	shipyard "XSZ Tier 2"
 	outfitter "XSZ Basics"
 	outfitter "XSZ Advanced"
+	outfitter "Map"
+	outfitter "Ammo"
 
 planet Cromerium
 	attributes Ascendancy
@@ -3885,6 +4028,8 @@ planet Cromerium
 	outfitter "Ascendancy Miniaturised"
 	outfitter "Ascendancy Basics"
 	outfitter "Ascendancy Advanced"
+	outfitter "Map"
+	outfitter "Ammo"
 
 planet Cygite
 	attributes enclave
@@ -3903,6 +4048,8 @@ planet Cynic
 	shipyard "XSZ Tier 2"
 	outfitter "XSZ Basics"
 	outfitter "XSZ Advanced"
+	outfitter "Map"
+	outfitter "Ammo"
 
 planet Emeria
 	attributes enclave
@@ -3923,6 +4070,8 @@ planet Fluorine
 	description `	While the surface temperature of Fluorine is very low, and it has little to no atmosphere, there are a number of XSZ mining operations here, extracting the fluorine and other ores for use in ship components.`
 	spaceport `The spaceport city is like something out of a dream; apparently a normal human city, the illusion disappears as soon as you spot the glass dome which contains the city in its entirety, allowing the residents to see the outsides.`
 	outfitter "XSZ Basics"
+	outfitter "Map"
+	outfitter "Ammo"
 
 planet Forefather
 	landscape land/nasa3
@@ -3931,6 +4080,8 @@ planet Forefather
 	spaceport `The spaceport is full of old takeoff gantries, like the ones that were used in the very first years of the space age to launch humanity's primitive rockets. While Ascendancy technology has obviously advanced far past this, it is interesting to see them testing such ancient techniques to see how effective they are.`
 	outfitter "Ascendancy Miniaturised"
 	outfitter "Ascendancy Basics"
+	outfitter "Map"
+	outfitter "Ammo"
 
 planet Frodo
 	attributes enclave
@@ -3941,7 +4092,9 @@ planet Frodo
 	spaceport `	The air here smells very similar to your home planet of New Boston.`
 	shipyard "XSZ Tier 1"
 	outfitter "XSZ Basics"
-
+	outfitter "Map"
+	outfitter "Ammo"
+	
 planet Helheim
 	attributes deep mining volcanic
 	landscape land/lava1
@@ -3959,7 +4112,8 @@ planet Idivine
 	landscape land/badlands3
 	description Planet
 	spaceport SPACEPORT
-	outfitter "Delta V Basics"
+	outfitter "Small Engines"
+	outfitter "Map"
 	security 0
 	shipyard
 
@@ -3973,7 +4127,9 @@ planet Imperative
 	outfitter "Ascendancy Miniaturised"
 	outfitter "Ascendancy Basics"
 	outfitter "Ascendancy Advanced"
-
+	outfitter "Map"
+	outfitter "Ammo"
+	
 planet Indefatigable
 	landscape land/dmottl5
 	description `Indefatigable is the Ascendancy's largest manufacturing world. It is here that their most advanced outfits, ships and weapons are constructed.`
@@ -3982,6 +4138,8 @@ planet Indefatigable
 	shipyard Ascendancy
 	outfitter "Ascendancy Basics"
 	outfitter "Ascendancy Advanced"
+	outfitter "Map"
+	outfitter "Ammo"
 
 planet Jumblar
 	attributes enclave
@@ -3994,9 +4152,13 @@ planet Jumblar
 	outfitter "Enclave Basics"
 	outfitter "Enclave Advanced"
 	outfitter "Enclave Heavy Weaponry"
-	outfitter "Enclave Ammo"
+	outfitter "Small Engines"
+	outfitter "Medium Engines"
+	outfitter "Huge Engines"	
 	outfitter "XSZ Basics"
-
+	outfitter "Map"
+	outfitter "Ammo"
+	
 planet Korine
 	attributes enclave
 	landscape land/nasa1
@@ -4015,6 +4177,11 @@ planet Latent
 	shipyard "XSZ Tier 3"
 	outfitter "XSZ Basics"
 	outfitter "XSZ Advanced"
+	outfitter "Small Engines"
+	outfitter "Medium Engines"
+	outfitter "Huge Engines"
+	outfitter "Map"
+	outfitter "Ammo"
 
 planet Lyfon
 	attributes enclave
@@ -4027,9 +4194,14 @@ planet Lyfon
 	shipyard "Enclave Tier 3"
 	outfitter "Enclave Basics"
 	outfitter "Enclave Advanced"
+	outfitter "Small Engines"
+	outfitter "Medium Engines"
+	outfitter "Huge Engines"
 	outfitter "Enclave Heavy Weaponry"
-	outfitter "Enclave Ammo"
+	
 	outfitter "XSZ Basics"
+	outfitter "Map"
+	outfitter "Ammo"
 	security 0
 
 planet Magna
@@ -4037,12 +4209,14 @@ planet Magna
 	landscape land/hills1
 	description `Magna is a desolate planet, having been continually strip mined by XSZ for the past two centuries. However, there are a reasonable number of settlements here. The reason why? XSZ's largest shipyards are located here, meaning thousands of people migrate here each year to fill the massive number of jobs required to work in the shipyards, as well as the mines.`
 	description `	Surprisingly enough, the relative background radiation levels here are abnormally low; despite XSZ's normal record of bad radiation safety, it appears that everything here is at least half lead, doubtlessly to prevent any possibility of workers being discouraged from coming to work here due to dangerous conditions.`
-	spaceport `The spaceport is a large, sprawling affair, taking advantage of the massive space afforded by being in an area that has already been exhausted of its raw materials.`
+	spaceport `The spaceport is an enormous complex, taking advantage of the massive space afforded by being in an area that has already been exhausted of its raw materials.`
 	spaceport `	A good third of the spaceport is filled by recruiting offices for various divisions of XSZ- XSZ Shipyards, XSZ Steel, XSZ Systems- and more. As a result, there are equally long lines of people, many of whom look desperate, queuing out of these offices in an attempt to secure a job for themselves.`
 	shipyard "XSZ Tier 1"
 	shipyard "XSZ Tier 2"
 	shipyard "XSZ Tier 3"
 	outfitter "XSZ Basics"
+	outfitter "Map"
+	outfitter "Ammo"
 
 planet Mein
 	attributes enclave
@@ -4061,7 +4235,9 @@ planet Memorandum
 	shipyard "Enclave Tier 1"
 	outfitter "XSZ Basics"
 	outfitter "Enclave Basics"
-	outfitter "Enclave Ammo"
+	
+	outfitter "Map"
+	outfitter "Ammo"
 
 planet Mirrodin
 	attributes xsz
@@ -4070,11 +4246,14 @@ planet Mirrodin
 	description ` Ironically enough, Mirrodin was built as a show of competition with the Enclave; building the most advanced station thus far constructed by humans is no mean feat, and placing it on the Enclave's doorstep, you suspect, was an intentional move in XSZ's cold war against the Enclave, not unlike that between the Deep and the Paradise Worlds in the Millky Way a few decades after the Alpha Wars.`
 	spaceport `As you disembark from your ship, a number of advertisments boom through the hangar- "Welcome to Mirrodin! Now the most advanced entertainment and leisure centre in the galaxy!" "Over 100 kilometres of non-stop laser tag action, all for the low price of just 500 credits per person! Terms and conditions apply!" `
 	spaceport ` The spaceport section of the space station is surprisingly clean and well-kept, unlike many you have seen in the Republic or the Free Worlds- most likely because this is the area receiving the station's residents, as well as those visiting simply for the enormous laser tag facilities.`
-	shipyard "XSZ Tier 2"
-	outfitter "Delta V Basics"
-	outfitter "Delta V Advanced"
+	shipyard "XSZ Tier 2"	
+	outfitter "Small Engines"
+	outfitter "Medium Engines"
+	outfitter "Huge Engines"
 	outfitter "XSZ Basics"
 	outfitter "XSZ Advanced"
+	outfitter "Map"
+	outfitter "Ammo"
 	"required reputation" 0
 	bribe 0
 	security 0
@@ -4084,11 +4263,13 @@ planet "New Asgard"
 	landscape land/desert2
 	description `New Asgard is a relatively small moon, although despite this it is still able to hold onto a thick, breathable atmosphere. Much of the moon is desert, although some areas near the highest mountains do receive enough rain to allow them to become well-forested. The oceans here have enormous tide differences due to the gas giant above, and as a result, most seaside settlements are practically built inside glass domes reinforced with titanium so that they can survive the inrush of water at high tide.`
 	description `	Despite the relative absence of natural resources, New Asgard is still fairly rich due to the tourism industry- many people come here simply to experience the awe of waking up to see the face of a gas giant staring down at them.`
-	spaceport `The spaceport is a slick, clean, modern affair, with hallways paved in dark granite and arching roofs overhead. Most of the terminal is taken up by small stores and off-licenses.`
+	spaceport `The spaceport is a slick, clean and modern, with hallways paved in dark granite and arching roofs overhead. Most of the terminal is taken up by small stores and off-licenses.`
 	spaceport `	The entire spaceport seems to be filled with people with cameras, hysterically barging their way through the crowds to find their ride off of this moon.`
 	outfitter "Enclave Basics"
-	outfitter "Enclave Ammo"
+	
 	outfitter "XSZ Basics"
+	outfitter "Map"
+	outfitter "Ammo"
 
 planet "New Scotland"
 	attributes enclave
@@ -4098,14 +4279,19 @@ planet "New Scotland"
 	spaceport `As you stepped off your ship, the air already had a noticeably dry tang to it. The spaceport is situated in a large patch of desert, although the mountains nearby alter the weather enough to provide this area with some rain, at least. The architecture feels somewhat ramshackle, not unlike the frontier towns of the 17th century back on Earth; the roads are simply dusty trails, and the majority of buildings are constructed from wood.`
 	spaceport `	Despite this, the security guards near the trading areas have some very advanced-looking guns.`
 	outfitter "XSZ Basics"
+	outfitter "Map"
+	outfitter "Ammo"
 
 planet Ortite
 	attributes enclave
 	landscape land/sea4
 	description `Ortite is a planet. #noice`
 	spaceport SPACEPORT
-	outfitter "Delta V Basics"
-	outfitter "Delta V Advanced"
+	outfitter "Small Engines"
+	outfitter "Medium Engines"
+	outfitter "Huge Engines"
+	outfitter "Map"
+	outfitter "Ammo"
 	"required reputation" 0
 	bribe 0
 	security 0
@@ -4119,8 +4305,10 @@ planet Perihelion
 	spaceport `	The concrete landing pads are warm and sandy beneath your feet.`
 	outfitter "Enclave Basics"
 	outfitter "Enclave Heavy Weaponry"
-	outfitter "Enclave Ammo"
+	
 	outfitter "XSZ Basics"
+	outfitter "Map"
+	outfitter "Ammo"
 
 planet Puggleshank
 	attributes pug
@@ -4128,7 +4316,7 @@ planet Puggleshank
 	description `This world seems to be covered in dense forests, stretching as far as the eye can see. The only break in the canopy appears to be for a massive Pug city. Strange structures rise far above the treetops, their organic-looking architecture mirroring the design of the Pug ships that you have seen.`
 	description `	There is an unfathomable sense of calm permeating this planet and all of its Pug inhabitants.`
 	spaceport `The spaceport on Puggleshank lies in the centre of the city. Strangely enough, the landing pads are few and far between, nowhere near enough to accomodate the Pug ships flying through the system. You suspect that there are hangars far below the ground, although the density of buildings around the spaceport and their apparent weight would seem to suggest otherwise.`
-	spaceport `	As with most Pug-controlled planets, the Pug here ignore you mostly.`
+	spaceport `	As with most Pug-controlled planets, you are being studiously ignored by the inhabitants.`
 	"required reputation" 50
 
 planet Quaver
@@ -4141,10 +4329,11 @@ planet Quaver
 	shipyard "Enclave Tier 1"
 	shipyard "Enclave Tier 2"
 	shipyard "XSZ Tier 1"
-	outfitter "Delta V Basics"
+	outfitter "Small Engines"
 	outfitter "XSZ Basics"
 	outfitter "Enclave Basics"
-	outfitter "Enclave Ammo"
+	outfitter "Map"
+	outfitter "Ammo"
 	security 0
 	tribute 100
 		threshold 2500
@@ -4158,8 +4347,9 @@ planet Saal
 	spaceport `The spaceport is surrounded by old, weather-stained limestone buildings in what was once Saal's largest city. Many of the streets here, while somewhat decrepit, and occassionally litter-riddled, carry a sense of some old, shining glory which time cannot tarnish.`
 	spaceport `	The architects who designed some of the spaceport buildings themselves were obviously very fond of 19th-century British architecture; the buildings, with their arching cast-iron beams and glass roofs are very reminiscent of large train stations in the United Kingdom during that period.`
 	outfitter "Enclave Basics"
-	outfitter "Enclave Ammo"
 	outfitter "XSZ Basics"
+	outfitter "Map"
+	outfitter "Ammo"
 
 planet Scalpel
 	attributes enclave
@@ -4186,11 +4376,14 @@ planet Tarkir
 	spaceport `The spaceport is well defended against the dragons, with blaster turrets, missile silos and enormous electrified metal nets erected over the main buildings. The landing pads must be left to fend for themselves, however; the port authorities trust that pilots should be alert enough to be able to use the weapons on their ship to fend off the dragons.`
 	shipyard "Enclave Tier 1"
 	shipyard "Enclave Tier 2"
-	outfitter "Delta V Basics"
 	outfitter "Enclave Basics"
 	outfitter "Enclave Advanced"
 	outfitter "Enclave Heavy Weaponry"
-	outfitter "Enclave Ammo"	
+	outfitter "Small Engines"
+	outfitter "Medium Engines"
+	outfitter "Huge Engines"
+	outfitter "Map"
+	outfitter "Ammo"
 
 planet Termite
 	attributes xsz
@@ -4199,3 +4392,5 @@ planet Termite
 	description `	Termite's lightning is far, far stronger than on any other planet known to humanity, and as a result, whenever a bolt strikes, the enormous temperatures can actually fuse together hydrogen molecules found in the atmosphere to form helium. As a result, XSZ uses this planet as a massive, planet-sized fusion reactor in order to both generate large amounts of energy which can be stored and then shipped offworld, and to synthesise some rare elements via fusion.`
 	spaceport `The spaceport is very low to the ground, and is covered in some sort of opaque, rubbery material; all measures to stop lightning from hitting any of the spaceport. The winds are immense on this planet, and the air practically crackles with ozone.`
 	outfitter "XSZ Basics"
+	outfitter "Map"
+	outfitter "Ammo"
