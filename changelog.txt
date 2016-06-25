@@ -1,11 +1,17 @@
 ------------------------------------------------------------------------  v0.0.6  -------------------------------------------------------------------------------
-24/06/16 [v0.0.6]
+25/06/16
+
+-Added an "on visit" trigger to the missions which give the player FW reinforcements so that the player will be notified if they've left their fleet behind.
+-Implemented the SLD-24 and SLD-15 Shield Generators.
+
+
+24/06/16
 
 -Switched up the map so that there's now a good array of engines and basic outfits like missile launchers, ammo and so on.
 -Swapped some shield generators on stock ships to the SLD equivalents.
 
 
-23/06/16 [v0.0.6]
+23/06/16
 
 -Added some new Kaltheim systems and moved some stuff so that they're accessible via jump drive.
 -Removed the Clurth wormhole.
@@ -15,53 +21,53 @@
 -Messed with some of the wording on a few spaceports.
 
 
-22/06/16 [v0.0.6]
+22/06/16
 
 -Added a new weapon, the Repulsor Beam.
 -Added an anti-missile turret, heheheh.
 -Shifted the "Enclave Opens" storyline into its own text file.
 
 
-20/06/16 [v0.0.6]
+20/06/16
 
 -Added a sprite for the SLD-95.
 
 
-19/06/16 [v0.0.6]
+19/06/16
 
 -Changed some offering conditions for the Battle of Xenos.
 -Hopefully fixed missions so that now, alternate missions will be offered immediately instead of after taking off and relanding.
 -Added some new shield generators and redid some Enclave outfitters.
 
 
-18/06/16 [v0.0.6]
+18/06/16
 
 -Added a new XSZ reactor, the ARC Core.
 -Moved Xenos north. (Thanks @Derpy for finding the conflict)
 
 
 ------------------------------------------------------------------------  v0.0.5b -------------------------------------------------------------------------------
-17/06/16 [v0.0.5b]
+17/06/16
 
 -Changed the "Co-Op 2B" mission (I think that was it) to use the "npc kill" thing instead of "npc disable"
 
 
 ------------------------------------------------------------------------  v0.0.5a -------------------------------------------------------------------------------
-16/06/16 [v0.0.5a]
+16/06/16
 
 -Spellchecks by Alkallid.
 -Fixed a bit of storyline that stopped the Xenos-Suhail link from opening.
 
 
 ------------------------------------------------------------------------  v0.0.5  -------------------------------------------------------------------------------
-12/06/16 [v0.0.5]
+12/06/16
 
 -ANOTHER new Apollo sprite. (Symmetry should be fixed now)
 -Moar planets.
 -FLEETS!
 
 
-11/06/16 [v0.0.5]
+11/06/16
 
 -More new planets.
 -New descriptions for Seminar.
@@ -69,30 +75,30 @@
 -New Apollo sprite.
 
 
-10/06/16 [v0.0.5]
+10/06/16
 
 -New descriptions for Tarkir, new planet in the Theurrhaeus system.
 -Group of alien systems in the south-west; they're they're in readiness for (probably) v0.0.6.
 
 
-09/06/16 [v0.0.5]
+09/06/16
 
 -Updated the map; there are now planets in pretty much all of XSZ space, plus Adke, Pipaeus, Abomin and Antithesis.
 
 
-08/06/16 [v0.0.5]
+08/06/16
 
 -STORY!!!!!!!
 	-Enclave opens; all four branches done.
 	
 
-06/06/16 [v0.0.5]
+06/06/16
 
 -Added a new ship, the Destroyer.
 -Lost my streak of working on this every day. ;_; Current record: 11 days
 
 
-04/06/16 [v0.0.5]
+04/06/16
 
 -Added a new ship, the Penguin.
 -Added an Enclave variant of the Scout.
@@ -100,7 +106,7 @@
 -Added an "Enclave Everything" shipyard so that I can keep track of all ships currently added.
 
 
-03/06/16 [v0.0.5]
+03/06/16
 
 -Added a new ship, the Turbulence.
 -Removed the Nuclear Missile MK 5 from outfitters.
@@ -110,12 +116,12 @@
 -Fixed a bug with Jacob, the Inexplicable's hails.
 
 
-02/06/16 [v0.0.5]
+02/06/16
 
 -Added some new persons.
 
 
-01/06/16 [v0.0.5]
+01/06/16
 
 -New Ravager sprite.
 -New Strike Drone sprite.
@@ -123,14 +129,14 @@
 -New Bloodhound sprite.
 
 
-31/05/16 [v0.0.5]
+31/05/16
 
 -Added a new shuttlecraft, the Cheetah.
 -New XSZ Tier 1 shipyard. Currently only implemented on Latent.
 -Added a new heavy freighter, the Leatherback.
 
 
-30/05/16 [v0.0.5]
+30/05/16
 
 -Messed around balancing the Apollo and the Bloodhound against each other.
 -Rebalanced the Heavy Electron Turret.
@@ -138,30 +144,30 @@
 -Added the "Nuclear Missile MK 5" outfit for the Scorched Earth.
 
 
-29/05/16 [v0.0.5]
+29/05/16
 
 -Added data for the Apollo.
 -Rebalanced the Power Packs.
 
 
-28/05/16 [v0.0.5]
+28/05/16
 
 -Tweaks to get the missions to work.
 -Added a sprite for the Apollo; no data yet.
 
 
-27/05/16 [v0.0.5]
+27/05/16
 
 -Continued work on the "co-operation" branch of the Enclave unlock plot.
 
 
-26/05/16 [v0.0.5]
+26/05/16
 
 -Finished the first mission to open the Enclave wormhole.
 -Added a story branch which involves the player going to Earth instead of going to Bourne to gather a FW fleet.
 
 
-25/05/16 [v0.0.5]
+25/05/16
 
 -New description for Puggleshank.
 -New description for Magna, a mining moon in the Orff system.
@@ -169,7 +175,7 @@
 -Begun reworking the mission to open access to the Enclave galaxy.
 
 
-21/05/16 [v0.0.5]
+21/05/16
 
 -Added a new XSZ light warship, the Buzzard. Available at XSZ Tier 2 shipyards.
 -Decreased energy/shot for HFS-8B1, increased shield damage, decreased hull damage.
@@ -177,7 +183,7 @@
 -Added the Enclave Tiers 1+2 shipyards to Lyfon.
 
 
-19/05/16 [v0.0.5]
+19/05/16
 
 -Added a new Enclave fighter, the Dart.
 -Renamed the Enclave and XSZ shipyards to reflect a "tiered" system.
@@ -187,20 +193,20 @@
 -Added a new landscape image for Puggleshank.
 
 
-17/05/16 [v0.0.5]
+17/05/16
 
 -The Igneous system has been renamed to Pug Morbosa.
 -Pug Morbosa has a planet in it which doesn't really have anything on it yet.
 
 
-15/05/16 [v0.0.5]
+15/05/16
 
 -New Ascendancy territory.
 -Added a variant of the Arfecta which doesn't have a cloaking device.
 -Put one of said Arfectas in the Igneous system.
 
 
-13/05/16 [v0.0.5]
+13/05/16
 
 -New ship, the Sea Drake. Available at the XSZ Shipyard.
 -Integrated the SuperDuperCarrier plugin- the renamed "Muesli Carrier" can now be found on Lyfon in the Five system.
@@ -208,8 +214,7 @@
 
 
 ------------------------------------------------------------------------  v0.0.4  -------------------------------------------------------------------------------
-
-08/05/16 [v0.0.4]
+08/05/16
 
 -New thumbnail for the Violet Core
 -Violet Core now appears in the "Ascendancy Advanced" outfitter
@@ -226,7 +231,7 @@
 -Bloodhound's description has been changed to fit current lore
 
 
-07/05/16 [v0.0.4]
+07/05/16
 
 -Title changed so that "The Enclave" is displayed beneath the main game title
 -New sprite for the XSZ MK I Freighter!
@@ -235,7 +240,7 @@
 -New thumbnail for the Gamma Core
 
 
-06/05/16 [v0.0.4]
+06/05/16
 
 -New Ascendancy interceptor- the Anteater
 -Cleaner sprite for the Ravager
@@ -249,7 +254,7 @@
 -The Ninth Sphere renamed to Cromerium
 
 
-27/04/16 [v0.0.4]
+27/04/16
 
 -New ship- the Strike Drone
 -Miniaturised outfits
@@ -262,19 +267,19 @@
 -New sprite for the Ball-bearing
 
 
-24/04/16 [v0.0.4]
+24/04/16
 
 -New ship added- the Ravager
 -New shipyard- the Metalweaver Shipyard
 -Heavy Electron Turret added; currently using stock electron turret sprite
 
 
-17/04/16 [v0.0.4]
+17/04/16
 
 -All references to Phyrexia have been changed to Metalweavers
 
 
-16/04/16 [v0.0.4]
+16/04/16
 
 -Added the HFS-8B1 Particle Cannon
 -New outfitter- "XSZ Advanced"
