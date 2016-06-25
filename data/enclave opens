@@ -164,6 +164,9 @@ mission "Enclave Co-Op 1A"
 			`	The Senate seems to be agreeable to this proposal; you spot a large number of nodding heads. "Very well," Arianna says. "You will travel to Helheim in order to rendezvous with the Navy, and from there you will assist in the Navy's investigation, Captain."`
 				decline	
 				
+	on visit
+		dialog "You have reached Helheim, but you left your fleet behind! Better depart and wait for them to arrive in this star system."
+					
 	on complete
 		dialog
 			`You've arrived on Helheim. Time to meet up with the Navy divisions here.`
@@ -626,6 +629,9 @@ mission "Enclave Defiance 3A"
 			event "Co-Op 1B"
 			`	The Senate seems to be agreeable to this proposal; you spot a large number of nodding heads. "Very well," Arianna says. "You will travel to Helheim in order to rendezvous with the Navy, and from there you will assist in the Navy's investigation, Captain."`
 				decline
+				
+	on visit
+		dialog "You have reached Helheim, but you left your fleet behind! Better depart and wait for them to arrive in this star system."			
 				
 	on complete
 		dialog
