@@ -3,6 +3,7 @@
 
 -Added an "on visit" trigger to the missions which give the player FW reinforcements so that the player will be notified if they've left their fleet behind.
 -Implemented the SLD-24 and SLD-15 Shield Generators.
+-Re-added Alkallid's spellchecking.
 
 
 24/06/16
