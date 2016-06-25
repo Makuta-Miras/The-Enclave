@@ -1,3 +1,25 @@
+outfit "SLD-15 Shield Generator"
+	category "Systems"
+		cost 20000
+		thumbnail "outfit/SLD15"
+		"mass" 5
+		"outfit space" -5
+		"shield generation" .15
+		"shield energy" .15
+		"hull" -5
+		description "This is the smallest shield generator you have yet encountered; with its tiny size, it is clearly intended for use in fighters and interceptors which don't mind not having very strong shields."
+		
+outfit "SLD-24 Shield Generator"
+	category "Systems"
+	cost 35000
+	thumbnail "outfit/SLD24"
+	"mass" 12
+	"outfit space" -12
+	"shield generation" .27
+	"shield energy" .27
+	"hull" -10
+	description "This is a slightly larger shield generator than the tiny SLD-15, of a size comparable to the D14-RN generator produced back in the Milky Way."
+
 outfit "SLD-42 Shield Generator"
 	category "Systems"
 	cost 65000
