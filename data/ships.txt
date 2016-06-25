@@ -29,7 +29,7 @@ ship "Apollo"
 		"Kindle-Class Power Pack"
 		"Conflagration-Class Power Pack"
 		"D23-QP Shield Generator"
-		"D94-YV Shield Generator"
+		"SLD-95 Shield Generator"
 		"Liquid Helium Cooler"
 		"Large Radar Jammer"
 		
@@ -88,7 +88,7 @@ ship Bloodhound
 		"Armageddon Core"
 		"Breeder Reactor"
 		"LP576a Battery Pack"
-		"D67-TM Shield Generator"
+		"SLD-68 Shield Generator"
 		"Liquid Helium Cooler"
 		"A370 Atomic Thruster"
 		"A525 Atomic Steering"
@@ -219,7 +219,7 @@ ship "Dart"
 		
 		"nGVF-BB Fuel Cell"
 		"Spark-Class Power Pack"
-		"D14-RN Shield Generator"
+		"SLD-24 Shield Generator"
 		
 		"Chipmunk Plasma Thruster"
 		"Chipmunk Plasma Steering"
@@ -232,7 +232,7 @@ ship "Dart"
 	description "The Dart is an efficient fighter, developed by the Enclave's government shipyards to replace the aging Lance as their primary fighter. Equipped with a slightly more comprehensive set of outfits than the Lance, a Dart piloted by a skilled captain has potential to survive many a battle." 
 	description "	The Dart was designed in tandem with the Apollo- this is where the resemblance between the two comes from."	
 
-
+	
 ship "Destroyer"
 	sprite "ship/Destroyer"
 	attributes
@@ -262,7 +262,7 @@ ship "Destroyer"
 		
 		"NT-200 Nucleovoltaic"
 		"LP144a Battery Pack"
-		"D41-HY Shield Generator"
+		"SLD-42 Shield Generator"
 		
 		"X4700 Ion Thruster"
 		"X3200 Ion Steering"
@@ -280,7 +280,7 @@ ship "Destroyer"
 	"final explode" "final explosion medium"
 	description "The Destroyer is a medium-sized warship produced by the Enclave's government shipyards as a fast-moving supplement for their capital ships."
 	description "	While somewhat less comprehensively equipped than the Republic's Frigate, the Destroyer makes up for this with larger capacity for engines, allowing it to attain a level of speed usually unseen in craft this size."
-
+	
 	
 ship "Flurry"
 	sprite "ship/Flurry"
@@ -309,7 +309,7 @@ ship "Flurry"
 		Afterburner
 		"X3200 Ion Steering"
 		"Impala Plasma Thruster"
-		"D94-YV Shield Generator"
+		"SLD-95 Shield Generator"
 		"Fuel Pod"
 		Ramscoop
 		"S3 Thermionic"
@@ -465,7 +465,7 @@ ship "Muesli Carrier"
 		
 		"Fusion Reactor"
 		"LP288a Battery Pack"
-		"D94-YV Shield Generator"
+		"SLD-95 Shield Generator"
 		"Water Coolant System"
 		
 		"X5700 Ion Thruster"
@@ -527,7 +527,7 @@ ship "Penguin"
 		
 		"nGVF-BB Fuel Cell"
 		"Spark-Class Power Pack"
-		"D14-RN Shield Generator"
+		"SLD-24 Shield Generator"
 		
 		"Chipmunk Plasma Thruster"
 		"Chipmunk Plasma Steering"
@@ -539,7 +539,7 @@ ship "Penguin"
 	explode "tiny explosion" 15
 	explode "small explosion" 5
 	description "The Penguin is a small, slightly dumpy interceptor which is clearly aimed at first-time ship captains who want to be flying a missile boat, not a shuttlecraft."
-	description "	While slightly slower and more expensive than Tarazed Corporation's Sparrow, the Penguin makes up for this with some extra outfit space and a heavier armament of Meteor Missiles."	
+	description "	While slightly slower and more expensive than Tarazed Corporation's Sparrow, the Penguin makes up for this with some extra outfit space and a heavier armament of Meteor Missiles."
 	
 	
 ship "Scorched Earth"
@@ -569,7 +569,7 @@ ship "Scorched Earth"
 	
 		"nGVF-BB Fuel Cell"
 		"LP036a Battery Pack"
-		"D14-RN Shield Generator"
+		"SLD-24 Shield Generator"
 		
 		"Chipmunk Plasma Thruster"
 		"Chipmunk Plasma Steering"
@@ -660,7 +660,7 @@ ship "Turbulence"
 		"RT-I Radiothermal"
 		"Small Radar Jammer" 2
 		"Water Coolant System"
-		"D67-TM Shield Generator"
+		"SLD-68 Shield Generator"
 		Railgun 4
 		Ball-bearing 800
 		"HFS-8B1 Particle Cannon" 2		
