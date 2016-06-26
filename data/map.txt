@@ -3958,8 +3958,7 @@ planet Arikv
 	shipyard "Enclave Tier 2"
 	outfitter "Small Engines"
 	outfitter "Enclave Basics"
-	outfitter "Enclave Advanced"
-	
+	outfitter "Enclave Advanced"	
 	outfitter "XSZ Basics"
 	outfitter "Map"
 	outfitter "Ammo"
@@ -3995,6 +3994,8 @@ planet Carmine
 	outfitter "Enclave Advanced"
 	outfitter "Map"
 	outfitter "Ammo"
+	outfitter "Small Engines"
+	outfitter "Medium Engines"
 	
 planet "Cavalier Station"
 	attributes xsz
@@ -4016,6 +4017,9 @@ planet Crackle
 	outfitter "XSZ Advanced"
 	outfitter "Map"
 	outfitter "Ammo"
+	outfitter "Small Engines"
+	outfitter "Medium Engines"
+	outfitter "Huge Engines"
 
 planet Cromerium
 	attributes Ascendancy
@@ -4050,6 +4054,8 @@ planet Cynic
 	outfitter "XSZ Advanced"
 	outfitter "Map"
 	outfitter "Ammo"
+	outfitter "Small Engines"
+	outfitter "Medium Engines"
 
 planet Emeria
 	attributes enclave
@@ -4072,6 +4078,7 @@ planet Fluorine
 	outfitter "XSZ Basics"
 	outfitter "Map"
 	outfitter "Ammo"
+	outfitter "Small Engines"
 
 planet Forefather
 	landscape land/nasa3
@@ -4094,6 +4101,7 @@ planet Frodo
 	outfitter "XSZ Basics"
 	outfitter "Map"
 	outfitter "Ammo"
+	outfitter "Small Engines"
 	
 planet Helheim
 	attributes deep mining volcanic
@@ -4217,6 +4225,8 @@ planet Magna
 	outfitter "XSZ Basics"
 	outfitter "Map"
 	outfitter "Ammo"
+	outfitter "Small Engines"
+	outfitter "Medium Engines"
 
 planet Mein
 	attributes enclave
@@ -4235,7 +4245,7 @@ planet Memorandum
 	shipyard "Enclave Tier 1"
 	outfitter "XSZ Basics"
 	outfitter "Enclave Basics"
-	
+	outfitter "Small Engines"
 	outfitter "Map"
 	outfitter "Ammo"
 
@@ -4266,7 +4276,7 @@ planet "New Asgard"
 	spaceport `The spaceport is a slick, clean and modern, with hallways paved in dark granite and arching roofs overhead. Most of the terminal is taken up by small stores and off-licenses.`
 	spaceport `	The entire spaceport seems to be filled with people with cameras, hysterically barging their way through the crowds to find their ride off of this moon.`
 	outfitter "Enclave Basics"
-	
+	outfitter "Small Engines"
 	outfitter "XSZ Basics"
 	outfitter "Map"
 	outfitter "Ammo"
@@ -4305,7 +4315,8 @@ planet Perihelion
 	spaceport `	The concrete landing pads are warm and sandy beneath your feet.`
 	outfitter "Enclave Basics"
 	outfitter "Enclave Heavy Weaponry"
-	
+	outfitter "Small Engines"
+	outfitter "Medium Engines"
 	outfitter "XSZ Basics"
 	outfitter "Map"
 	outfitter "Ammo"
