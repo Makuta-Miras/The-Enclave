@@ -1,4 +1,10 @@
 ------------------------------------------------------------------------  v0.0.6  -------------------------------------------------------------------------------
+27/06/16
+
+-Added a "First Contact: Enclave" mission which hopefully works.
+-Had a go at getting Enclave Opens to work with Derpy's events system, but it still doesn't work. Halp.
+
+
 26/06/16
 
 -Spread engines outfitters further through the galaxy.
