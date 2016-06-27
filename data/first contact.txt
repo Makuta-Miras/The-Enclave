@@ -1,0 +1,68 @@
+mission "First Contact: Enclave"
+	landing
+	autosave
+	source
+		attributes enclave
+	destination Arikv	
+	to offer
+		has "event: battle of xenos"
+		not "First Contact: Enclave" offered		
+	on offer
+		conversation
+			`The landing pad is deserted as your ship touches down, yet as you walk out into this world in a new galaxy, surprisingly, a group of humans exit the main spaceport building and begin walking towards you.`
+			choice
+				`	Shoot them.`
+				`	Stay where you are.`
+					goto 1
+			`	You draw your gun to fire, and while you do manage to kill a few of them, your ship is quickly swarmed by soldiers. You die from a laser bolt to the head.`
+				die
+			label 1
+			`	As they approach, it soon becomes clear to you that within the outer ring of soldiers, there are a number of men and women, all wearing crisp white military-looking uniforms.`
+			choice
+				`	"My name is <first> <last>. I come in peace."`
+				`	"Uh, what the hell is going on here?"`
+					goto 2
+			`	One of the women, middle-aged or so, with a large scar running down the side of her face steps forward. Judging by her commanding presence, she is the most senior official here. "You aren't from around here," she says.`
+			label 5
+			choice
+				`	"Correct."`
+				`	"Why are there humans here in a galaxy outside the Milky Way?"`
+					goto 3
+			`	"From the Milky Way?" she replies. You nod. "Well, that's unexpected," she says. "My name's Rosalva Barzetti, Captain <last>. Good to see that the Pug have finally reopened the wormhole back home."`
+			label 6
+			choice
+				`	"Indeed it is."`
+				`	"Wait, hold on, you know about the Pug?"`
+					goto 4
+			label end
+			`	"Well, feel free to ask around anywhere if you feel like finding out more about our history," Rosalva says. "As it is, I'm a bit pressed for time; since I assume you're no threat to our internal security, you have full authorisation to land on any Enclave planets."`
+				decline
+			label 2
+			`	Your only reply is from one of the women, middle-aged or so, with a large scar running down the side of her face. Judging by her commanding presence, she is the most senior official here. "You aren't from around here," she says.`
+				goto 5
+			label 3
+			`	"Our ancestors were brought here from, we believe, the Deep, during the Alpha Wars," Rosalva replies. "Apparently it was some way of spreading out humanity so that a conflict, potentially with any larger group of Alphas, couldn't completely wipe our species out. Anyway, it's good to see that the Pug have finally reopened the wormhole back home."`
+				goto 6
+			label 4
+			`	Rosalva, and some of the other officials with her look surprised. "They aren't common knowledge in the Milky Way?"`
+			choice
+				`	"They are, but we only just met them- they invaded human space and took over a group of systems south of Earth."`
+				`	"Well, they are, but we're completely opposed to them, considering that they just invaded human space without any provocation."`
+			`	Shock briefly passes over Rosalva's face, and she gives you an odd look. "They've never been anything but benevolent towards us," she replies, clearly skeptical.`
+			`	You shrug. "Not what we've seen," you say.`
+				goto end
+
+				
+mission "First Contact: XSZ"
+	landing
+	autosave
+	source
+		attributes "xsz"
+	
+	to offer
+		has "event: battle of xenos"
+		not "First Contact: XSZ" offered
+		
+	on offer
+		conversation
+				decline
