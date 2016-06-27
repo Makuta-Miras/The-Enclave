@@ -15,10 +15,6 @@ mission "Enclave Intro 1A"
 			`When you land, you recieve a message- from Edrick Flint, the governor of Valhalla who assisted the Free Worlds in arresting key members of the Syndicate during the war, asking you to meet him at his apartment this evening.`
 			choice
 				`	Accept the invitation and go to meet Edrick.`
-					goto 1
-				`	Ignore it.`
-					decline
-			label 1
 			`	As the sun meets the horizon, you are standing at the base of the block of apartments Edrick calls home, when he appears round the corner.`
 			`	"<first>!" he says warmly as he spots you. "How have you been since we last met?"`
 			choice
@@ -81,7 +77,6 @@ mission "Enclave Intro 1A"
 				`	"Of course."`
 					goto 12
 			label 10
-			event "protest to parliament"
 			`	Edrick laughs for a bit. "Go on then, I won't stop you, he says."`
 				decline
 				
@@ -90,11 +85,12 @@ mission "Enclave Intro 1A"
 			choice
 				`	"Why wouldn't I?"`
 					goto 9
-				`	"Not really, to be honest."`
-					decline
 			label 12
 			`	Edrick nods in reply. "Well, bon chance, as they say," he says, lifting his glass. "Good luck, Captain <last>." You raise your glass to meet Edrick's, and you continue the rest of the evening in a more casual fashion.`
 				accept
+	
+	on decline
+		event "protest to parliament"
 				
 	on complete	
 		dialog
@@ -155,14 +151,18 @@ mission "Enclave Co-Op 1A"
 				`	"'In the interests of galactic safety', Parliament wants a Free Worlds fleet to help the Navy investigate what's been going on."`
 					goto 1
 			label 3
-			event "Co-Op 1A"
 			`	The Senators consult amongst each other for a few minutes, before eventually falling silent.`
 			`	"Captain <first> <last>, of the Free Worlds, you have the Senate's official permission to take a fleet of Free Worlds warships to the Deep in order to deal with the potential Pug threat," Arianna says, albeit with a tangible distaste in her voice.`
 				accept
 			label 4
-			event "Co-Op 1B"
 			`	The Senate seems to be agreeable to this proposal; you spot a large number of nodding heads. "Very well," Arianna says. "You will travel to Helheim in order to rendezvous with the Navy, and from there you will assist in the Navy's investigation, Captain."`
 				decline	
+	
+	on accept
+		event "Co-Op 1A"
+	
+	on decline
+		event "Co-Op 1B"
 				
 	on visit
 		dialog "You have reached Helheim, but you left your fleet behind! Better depart and wait for them to arrive in this star system."
@@ -621,15 +621,19 @@ mission "Enclave Defiance 3A"
 				`	"'In the interests of galactic safety', Parliament wants a Free Worlds fleet to help the Navy investigate what's been going on."`
 					goto 1
 			label 3
-			event "Co-Op 1A"
 			`	The Senators consult amongst each other for a few minutes, before eventually falling silent.`
 			`	"Captain <first> <last>, of the Free Worlds, you have the Senate's official permission to take a fleet of Free Worlds warships to the Deep in order to deal with the potential Pug threat," Arianna says, albeit with a tangible distaste in her voice.`
 				accept
 			label 4
-			event "Co-Op 1B"
 			`	The Senate seems to be agreeable to this proposal; you spot a large number of nodding heads. "Very well," Arianna says. "You will travel to Helheim in order to rendezvous with the Navy, and from there you will assist in the Navy's investigation, Captain."`
 				decline
 				
+	on accept
+		event "Co-Op 1A"
+	
+	on decline
+		event "Co-Op 1B"
+	
 	on visit
 		dialog "You have reached Helheim, but you left your fleet behind! Better depart and wait for them to arrive in this star system."			
 				
