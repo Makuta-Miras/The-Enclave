@@ -1,4 +1,10 @@
 event "enclave opens"
 	link Xenos Suhail
-	unvisit Xenos
-	unvisit Suhail
+
+event "battle of xenos"
+
+event "protest to parliament"
+
+event "Co-Op 1A"
+
+event "Co-Op 1B"
