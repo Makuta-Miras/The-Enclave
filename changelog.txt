@@ -1,4 +1,10 @@
 ------------------------------------------------------------------------  v0.0.6  -------------------------------------------------------------------------------
+28/06/16
+
+-Messed some more with the missions in Enclave Opens.
+-First Contact: Enclave now works properly.
+
+
 27/06/16
 
 -Added a "First Contact: Enclave" mission which hopefully works.
