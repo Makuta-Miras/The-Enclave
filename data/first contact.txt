@@ -5,8 +5,9 @@ mission "First Contact: Enclave"
 		attributes enclave
 	destination Arikv	
 	to offer
-		has "event: battle of xenos"
-		not "First Contact: Enclave" offered		
+		or
+			has "Enclave Co-Op 2A: done"
+			has "Enclave Co-Op 2B: done"
 	on offer
 		conversation
 			`The landing pad is deserted as your ship touches down, yet as you walk out into this world in a new galaxy, surprisingly, a group of humans exit the main spaceport building and begin walking towards you.`
