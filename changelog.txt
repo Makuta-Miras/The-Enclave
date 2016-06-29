@@ -1,4 +1,12 @@
 ------------------------------------------------------------------------  v0.0.6  -------------------------------------------------------------------------------
+29/06/16
+
+-Added some generic/staple outfits to sales.txt.
+-Replaced the "Map" outfitter with a "Basicness" outfitter.
+-New sprites for the Power Packs.
+-New sprite for the Ball-bearing.
+
+
 28/06/16
 
 -Messed some more with the missions in Enclave Opens.
