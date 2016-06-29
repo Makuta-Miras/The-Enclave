@@ -3946,7 +3946,7 @@ planet Alleshafen
 	outfitter "Medium Engines"
 	outfitter "Huge Engines"
 	outfitter "XSZ Basics"
-	outfitter "Map"
+	outfitter "Basicness"
 
 planet Arikv
 	attributes enclave
@@ -3960,7 +3960,7 @@ planet Arikv
 	outfitter "Enclave Basics"
 	outfitter "Enclave Advanced"	
 	outfitter "XSZ Basics"
-	outfitter "Map"
+	outfitter "Basicness"
 	outfitter "Ammo"
 
 planet Bantilium
@@ -3969,7 +3969,7 @@ planet Bantilium
 	description Planet
 	spaceport SPACEPORT
 	outfitter "Small Engines"
-	outfitter "Map"
+	outfitter "Basicness"
 	outfitter "Ammo"
 	security 0
 
@@ -3992,7 +3992,7 @@ planet Carmine
 	outfitter "XSZ Basics"
 	outfitter "Enclave Basics"
 	outfitter "Enclave Advanced"
-	outfitter "Map"
+	outfitter "Basicness"
 	outfitter "Ammo"
 	outfitter "Small Engines"
 	outfitter "Medium Engines"
@@ -4015,7 +4015,7 @@ planet Crackle
 	shipyard "XSZ Tier 2"
 	outfitter "XSZ Basics"
 	outfitter "XSZ Advanced"
-	outfitter "Map"
+	outfitter "Basicness"
 	outfitter "Ammo"
 	outfitter "Small Engines"
 	outfitter "Medium Engines"
@@ -4032,7 +4032,7 @@ planet Cromerium
 	outfitter "Ascendancy Miniaturised"
 	outfitter "Ascendancy Basics"
 	outfitter "Ascendancy Advanced"
-	outfitter "Map"
+	outfitter "Basicness"
 	outfitter "Ammo"
 
 planet Cygite
@@ -4052,7 +4052,7 @@ planet Cynic
 	shipyard "XSZ Tier 2"
 	outfitter "XSZ Basics"
 	outfitter "XSZ Advanced"
-	outfitter "Map"
+	outfitter "Basicness"
 	outfitter "Ammo"
 	outfitter "Small Engines"
 	outfitter "Medium Engines"
@@ -4076,7 +4076,7 @@ planet Fluorine
 	description `	While the surface temperature of Fluorine is very low, and it has little to no atmosphere, there are a number of XSZ mining operations here, extracting the fluorine and other ores for use in ship components.`
 	spaceport `The spaceport city is like something out of a dream; apparently a normal human city, the illusion disappears as soon as you spot the glass dome which contains the city in its entirety, allowing the residents to see the outsides.`
 	outfitter "XSZ Basics"
-	outfitter "Map"
+	outfitter "Basicness"
 	outfitter "Ammo"
 	outfitter "Small Engines"
 
@@ -4087,7 +4087,7 @@ planet Forefather
 	spaceport `The spaceport is full of old takeoff gantries, like the ones that were used in the very first years of the space age to launch humanity's primitive rockets. While Ascendancy technology has obviously advanced far past this, it is interesting to see them testing such ancient techniques to see how effective they are.`
 	outfitter "Ascendancy Miniaturised"
 	outfitter "Ascendancy Basics"
-	outfitter "Map"
+	outfitter "Basicness"
 	outfitter "Ammo"
 
 planet Frodo
@@ -4099,7 +4099,7 @@ planet Frodo
 	spaceport `	The air here smells very similar to your home planet of New Boston.`
 	shipyard "XSZ Tier 1"
 	outfitter "XSZ Basics"
-	outfitter "Map"
+	outfitter "Basicness"
 	outfitter "Ammo"
 	outfitter "Small Engines"
 	
@@ -4121,7 +4121,7 @@ planet Idivine
 	description Planet
 	spaceport SPACEPORT
 	outfitter "Small Engines"
-	outfitter "Map"
+	outfitter "Basicness"
 	security 0
 	shipyard
 
@@ -4135,7 +4135,7 @@ planet Imperative
 	outfitter "Ascendancy Miniaturised"
 	outfitter "Ascendancy Basics"
 	outfitter "Ascendancy Advanced"
-	outfitter "Map"
+	outfitter "Basicness"
 	outfitter "Ammo"
 	
 planet Indefatigable
@@ -4146,7 +4146,7 @@ planet Indefatigable
 	shipyard Ascendancy
 	outfitter "Ascendancy Basics"
 	outfitter "Ascendancy Advanced"
-	outfitter "Map"
+	outfitter "Basicness"
 	outfitter "Ammo"
 
 planet Jumblar
@@ -4164,7 +4164,7 @@ planet Jumblar
 	outfitter "Medium Engines"
 	outfitter "Huge Engines"	
 	outfitter "XSZ Basics"
-	outfitter "Map"
+	outfitter "Basicness"
 	outfitter "Ammo"
 	
 planet Korine
@@ -4188,7 +4188,7 @@ planet Latent
 	outfitter "Small Engines"
 	outfitter "Medium Engines"
 	outfitter "Huge Engines"
-	outfitter "Map"
+	outfitter "Basicness"
 	outfitter "Ammo"
 
 planet Lyfon
@@ -4208,7 +4208,7 @@ planet Lyfon
 	outfitter "Enclave Heavy Weaponry"
 	
 	outfitter "XSZ Basics"
-	outfitter "Map"
+	outfitter "Basicness"
 	outfitter "Ammo"
 	security 0
 
@@ -4223,7 +4223,7 @@ planet Magna
 	shipyard "XSZ Tier 2"
 	shipyard "XSZ Tier 3"
 	outfitter "XSZ Basics"
-	outfitter "Map"
+	outfitter "Basicness"
 	outfitter "Ammo"
 	outfitter "Small Engines"
 	outfitter "Medium Engines"
@@ -4246,7 +4246,7 @@ planet Memorandum
 	outfitter "XSZ Basics"
 	outfitter "Enclave Basics"
 	outfitter "Small Engines"
-	outfitter "Map"
+	outfitter "Basicness"
 	outfitter "Ammo"
 
 planet Mirrodin
@@ -4262,7 +4262,7 @@ planet Mirrodin
 	outfitter "Huge Engines"
 	outfitter "XSZ Basics"
 	outfitter "XSZ Advanced"
-	outfitter "Map"
+	outfitter "Basicness"
 	outfitter "Ammo"
 	"required reputation" 0
 	bribe 0
@@ -4278,7 +4278,7 @@ planet "New Asgard"
 	outfitter "Enclave Basics"
 	outfitter "Small Engines"
 	outfitter "XSZ Basics"
-	outfitter "Map"
+	outfitter "Basicness"
 	outfitter "Ammo"
 
 planet "New Scotland"
@@ -4289,7 +4289,7 @@ planet "New Scotland"
 	spaceport `As you stepped off your ship, the air already had a noticeably dry tang to it. The spaceport is situated in a large patch of desert, although the mountains nearby alter the weather enough to provide this area with some rain, at least. The architecture feels somewhat ramshackle, not unlike the frontier towns of the 17th century back on Earth; the roads are simply dusty trails, and the majority of buildings are constructed from wood.`
 	spaceport `	Despite this, the security guards near the trading areas have some very advanced-looking guns.`
 	outfitter "XSZ Basics"
-	outfitter "Map"
+	outfitter "Basicness"
 	outfitter "Ammo"
 
 planet Ortite
@@ -4300,7 +4300,7 @@ planet Ortite
 	outfitter "Small Engines"
 	outfitter "Medium Engines"
 	outfitter "Huge Engines"
-	outfitter "Map"
+	outfitter "Basicness"
 	outfitter "Ammo"
 	"required reputation" 0
 	bribe 0
@@ -4318,7 +4318,7 @@ planet Perihelion
 	outfitter "Small Engines"
 	outfitter "Medium Engines"
 	outfitter "XSZ Basics"
-	outfitter "Map"
+	outfitter "Basicness"
 	outfitter "Ammo"
 
 planet Puggleshank
@@ -4343,7 +4343,7 @@ planet Quaver
 	outfitter "Small Engines"
 	outfitter "XSZ Basics"
 	outfitter "Enclave Basics"
-	outfitter "Map"
+	outfitter "Basicness"
 	outfitter "Ammo"
 	security 0
 	tribute 100
@@ -4359,7 +4359,7 @@ planet Saal
 	spaceport `	The architects who designed some of the spaceport buildings themselves were obviously very fond of 19th-century British architecture; the buildings, with their arching cast-iron beams and glass roofs are very reminiscent of large train stations in the United Kingdom during that period.`
 	outfitter "Enclave Basics"
 	outfitter "XSZ Basics"
-	outfitter "Map"
+	outfitter "Basicness"
 	outfitter "Ammo"
 
 planet Scalpel
@@ -4393,7 +4393,7 @@ planet Tarkir
 	outfitter "Small Engines"
 	outfitter "Medium Engines"
 	outfitter "Huge Engines"
-	outfitter "Map"
+	outfitter "Basicness"
 	outfitter "Ammo"
 
 planet Termite
@@ -4403,5 +4403,5 @@ planet Termite
 	description `	Termite's lightning is far, far stronger than on any other planet known to humanity, and as a result, whenever a bolt strikes, the enormous temperatures can actually fuse together hydrogen molecules found in the atmosphere to form helium. As a result, XSZ uses this planet as a massive, planet-sized fusion reactor in order to both generate large amounts of energy which can be stored and then shipped off-world, and to synthesise some rare elements via controlled fusion.`
 	spaceport `The spaceport is very low to the ground, and is covered in some sort of opaque, rubbery material; any possible measures to stop lightning from hitting any part of the spaceport are in place. The winds are immense on this planet, and the air practically hums with ozone.`
 	outfitter "XSZ Basics"
-	outfitter "Map"
+	outfitter "Basicness"
 	outfitter "Ammo"
