@@ -5,6 +5,8 @@
 -Replaced the "Map" outfitter with a "Basicness" outfitter.
 -New sprites for the Power Packs.
 -New sprite for the Ball-bearing.
+-Almost finished galaxy expansion; just need to work on Five now.
+-Started finishing off fleets.
 
 
 28/06/16
