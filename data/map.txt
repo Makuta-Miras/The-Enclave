@@ -2,11 +2,10 @@ galaxy "Enclave Galaxy"
 	pos 5000 500
 	sprite ui/EnclaveGalaxy
 
-galaxy "Labels"
+galaxy Labels
 	pos 5000 500
 	sprite label/Labels
 
-	
 system Abomin
 	pos 4788.53 346.251
 	government Independent
@@ -29,6 +28,8 @@ system Abomin
 	trade Medical 760
 	trade Metal 640
 	trade Plastic 460
+	fleet Trader 900
+	fleet Transporter 900
 	object
 		sprite star/k5
 		distance 42.5
@@ -358,6 +359,9 @@ system Anvyu
 	trade Medical 680
 	trade Metal 390
 	trade Plastic 390
+	fleet Trader 500
+	fleet Transporter 600
+	fleet "Enclave Patrol" 1600
 	object
 		sprite star/k5
 		period 10
@@ -1587,6 +1591,9 @@ system Frill
 	asteroids "small metal" 182 3.876
 	asteroids "medium metal" 1 7.089
 	asteroids "large metal" 41 6.426
+	fleet Trader 9000
+	fleet Transporter 9000
+	fleet "Enclave Capital" 20000
 	object
 		sprite star/g0
 		period 10
@@ -2607,6 +2614,9 @@ system Ninsug
 	asteroids "small metal" 10 2.8336
 	asteroids "medium metal" 21 2.0493
 	asteroids "large metal" 26 1.7963
+	fleet Trader 9000
+	fleet Transporter 9000
+	fleet "Enclave Capital" 20000
 	object
 		sprite star/f0
 		distance 5.49096
@@ -2698,6 +2708,16 @@ system Ortus
 	asteroids "small metal" 11 6.783
 	asteroids "medium metal" 4 5.61
 	asteroids "large metal" 24 6.987
+	trade Clothing 210
+	trade Electronics 790
+	trade Equipment 430
+	trade Food 510
+	trade "Heavy Metals" 910
+	trade Industrial 700
+	trade "Luxury Goods" 1410
+	trade Medical 750
+	trade Metal 370
+	trade Plastic 290
 	object
 		sprite star/g0
 		period 10
@@ -2705,14 +2725,16 @@ system Ortus
 		sprite planet/desert3
 		distance 174.61
 		period 28.0835
-	object
-		sprite planet/ice7
-		distance 379.65
-		period 90.0375
+	object Ortite
+		sprite planet/rock14
+		distance 446.733
+		period 114.927
+		offset 193.549
 	object
 		sprite planet/gas4
-		distance 939.41
-		period 350.454
+		distance 1005.49
+		period 388.076
+		offset 104.857
 		object
 			sprite planet/rock17
 			distance 229
@@ -2727,8 +2749,9 @@ system Ortus
 			period 29.0662
 	object
 		sprite planet/gas13
-		distance 2200.05
-		period 1256.02
+		distance 2266.13
+		period 1313.03
+		offset 13.1031
 		object
 			sprite planet/miranda
 			distance 289
@@ -2878,6 +2901,9 @@ system Pralmia
 	link Thornton
 	link Abomin
 	asteroids "large metal" 1 6.1776
+	fleet Trader 1000
+	fleet Transporter 1000
+	fleet "Enclave Patrol" 1500
 	object
 		sprite star/m0
 		period 10
@@ -3514,6 +3540,10 @@ system Thornton
 	asteroids "small metal" 49 2.376
 	asteroids "medium metal" 12 3.08
 	asteroids "large metal" 2 1.98
+	fleet Trader 1000
+	fleet Transporter 1000
+	fleet "Enclave Patrol" 1500
+	fleet "Enclave Capital" 2000
 	object
 		sprite star/a0
 		period 10
@@ -3923,7 +3953,6 @@ system Ytgfrv'hjusd'ikmuivra
 			distance 373
 			period 29.3374
 
-
 planet Affalan
 	attributes xsz
 	landscape land/water6
@@ -3946,7 +3975,7 @@ planet Alleshafen
 	outfitter "Medium Engines"
 	outfitter "Huge Engines"
 	outfitter "XSZ Basics"
-	outfitter "Basicness"
+	outfitter Basicness
 
 planet Arikv
 	attributes enclave
@@ -3958,10 +3987,10 @@ planet Arikv
 	shipyard "Enclave Tier 2"
 	outfitter "Small Engines"
 	outfitter "Enclave Basics"
-	outfitter "Enclave Advanced"	
+	outfitter "Enclave Advanced"
 	outfitter "XSZ Basics"
-	outfitter "Basicness"
-	outfitter "Ammo"
+	outfitter Basicness
+	outfitter Ammo
 
 planet Bantilium
 	attributes enclave
@@ -3969,8 +3998,8 @@ planet Bantilium
 	description Planet
 	spaceport SPACEPORT
 	outfitter "Small Engines"
-	outfitter "Basicness"
-	outfitter "Ammo"
+	outfitter Basicness
+	outfitter Ammo
 	security 0
 
 planet Bilbo
@@ -3992,11 +4021,11 @@ planet Carmine
 	outfitter "XSZ Basics"
 	outfitter "Enclave Basics"
 	outfitter "Enclave Advanced"
-	outfitter "Basicness"
-	outfitter "Ammo"
+	outfitter Basicness
+	outfitter Ammo
 	outfitter "Small Engines"
 	outfitter "Medium Engines"
-	
+
 planet "Cavalier Station"
 	attributes xsz
 	landscape land/space3
@@ -4015,8 +4044,8 @@ planet Crackle
 	shipyard "XSZ Tier 2"
 	outfitter "XSZ Basics"
 	outfitter "XSZ Advanced"
-	outfitter "Basicness"
-	outfitter "Ammo"
+	outfitter Basicness
+	outfitter Ammo
 	outfitter "Small Engines"
 	outfitter "Medium Engines"
 	outfitter "Huge Engines"
@@ -4032,8 +4061,8 @@ planet Cromerium
 	outfitter "Ascendancy Miniaturised"
 	outfitter "Ascendancy Basics"
 	outfitter "Ascendancy Advanced"
-	outfitter "Basicness"
-	outfitter "Ammo"
+	outfitter Basicness
+	outfitter Ammo
 
 planet Cygite
 	attributes enclave
@@ -4052,8 +4081,8 @@ planet Cynic
 	shipyard "XSZ Tier 2"
 	outfitter "XSZ Basics"
 	outfitter "XSZ Advanced"
-	outfitter "Basicness"
-	outfitter "Ammo"
+	outfitter Basicness
+	outfitter Ammo
 	outfitter "Small Engines"
 	outfitter "Medium Engines"
 
@@ -4076,8 +4105,8 @@ planet Fluorine
 	description `	While the surface temperature of Fluorine is very low, and it has little to no atmosphere, there are a number of XSZ mining operations here, extracting the fluorine and other ores for use in ship components.`
 	spaceport `The spaceport city is like something out of a dream; apparently a normal human city, the illusion disappears as soon as you spot the glass dome which contains the city in its entirety, allowing the residents to see the outsides.`
 	outfitter "XSZ Basics"
-	outfitter "Basicness"
-	outfitter "Ammo"
+	outfitter Basicness
+	outfitter Ammo
 	outfitter "Small Engines"
 
 planet Forefather
@@ -4087,8 +4116,8 @@ planet Forefather
 	spaceport `The spaceport is full of old takeoff gantries, like the ones that were used in the very first years of the space age to launch humanity's primitive rockets. While Ascendancy technology has obviously advanced far past this, it is interesting to see them testing such ancient techniques to see how effective they are.`
 	outfitter "Ascendancy Miniaturised"
 	outfitter "Ascendancy Basics"
-	outfitter "Basicness"
-	outfitter "Ammo"
+	outfitter Basicness
+	outfitter Ammo
 
 planet Frodo
 	attributes enclave
@@ -4099,10 +4128,10 @@ planet Frodo
 	spaceport `	The air here smells very similar to your home planet of New Boston.`
 	shipyard "XSZ Tier 1"
 	outfitter "XSZ Basics"
-	outfitter "Basicness"
-	outfitter "Ammo"
+	outfitter Basicness
+	outfitter Ammo
 	outfitter "Small Engines"
-	
+
 planet Helheim
 	attributes deep mining volcanic
 	landscape land/lava1
@@ -4121,7 +4150,7 @@ planet Idivine
 	description Planet
 	spaceport SPACEPORT
 	outfitter "Small Engines"
-	outfitter "Basicness"
+	outfitter Basicness
 	security 0
 	shipyard
 
@@ -4135,9 +4164,9 @@ planet Imperative
 	outfitter "Ascendancy Miniaturised"
 	outfitter "Ascendancy Basics"
 	outfitter "Ascendancy Advanced"
-	outfitter "Basicness"
-	outfitter "Ammo"
-	
+	outfitter Basicness
+	outfitter Ammo
+
 planet Indefatigable
 	landscape land/dmottl5
 	description `Indefatigable is the Ascendancy's largest manufacturing world. It is here that their most advanced outfits, ships, and weapons are constructed.`
@@ -4146,8 +4175,8 @@ planet Indefatigable
 	shipyard Ascendancy
 	outfitter "Ascendancy Basics"
 	outfitter "Ascendancy Advanced"
-	outfitter "Basicness"
-	outfitter "Ammo"
+	outfitter Basicness
+	outfitter Ammo
 
 planet Jumblar
 	attributes enclave
@@ -4162,11 +4191,11 @@ planet Jumblar
 	outfitter "Enclave Heavy Weaponry"
 	outfitter "Small Engines"
 	outfitter "Medium Engines"
-	outfitter "Huge Engines"	
+	outfitter "Huge Engines"
 	outfitter "XSZ Basics"
-	outfitter "Basicness"
-	outfitter "Ammo"
-	
+	outfitter Basicness
+	outfitter Ammo
+
 planet Korine
 	attributes enclave
 	landscape land/nasa1
@@ -4188,8 +4217,8 @@ planet Latent
 	outfitter "Small Engines"
 	outfitter "Medium Engines"
 	outfitter "Huge Engines"
-	outfitter "Basicness"
-	outfitter "Ammo"
+	outfitter Basicness
+	outfitter Ammo
 
 planet Lyfon
 	attributes enclave
@@ -4206,10 +4235,9 @@ planet Lyfon
 	outfitter "Medium Engines"
 	outfitter "Huge Engines"
 	outfitter "Enclave Heavy Weaponry"
-	
 	outfitter "XSZ Basics"
-	outfitter "Basicness"
-	outfitter "Ammo"
+	outfitter Basicness
+	outfitter Ammo
 	security 0
 
 planet Magna
@@ -4223,8 +4251,8 @@ planet Magna
 	shipyard "XSZ Tier 2"
 	shipyard "XSZ Tier 3"
 	outfitter "XSZ Basics"
-	outfitter "Basicness"
-	outfitter "Ammo"
+	outfitter Basicness
+	outfitter Ammo
 	outfitter "Small Engines"
 	outfitter "Medium Engines"
 
@@ -4246,8 +4274,8 @@ planet Memorandum
 	outfitter "XSZ Basics"
 	outfitter "Enclave Basics"
 	outfitter "Small Engines"
-	outfitter "Basicness"
-	outfitter "Ammo"
+	outfitter Basicness
+	outfitter Ammo
 
 planet Mirrodin
 	attributes xsz
@@ -4256,14 +4284,14 @@ planet Mirrodin
 	description `	This station was built as a show of competition with the Enclave; building the most advanced station thus far constructed by humans is no mean feat, and placing it on the Enclave's doorstep, you suspect, was an intentional move in XSZ's cold war against the Enclave, not unlike that between the Deep and the Paradise Worlds in the Milky Way a few decades after the Alpha Wars.`
 	spaceport `As you disembark from your ship, a number of advertisments boom through the hangar- "Welcome to Mirrodin! Now the most advanced entertainment and leisure centre in the galaxy!" "Over 100 kilometres of non-stop laser tag action, all for the low price of just 500 credits per person! Terms and conditions apply!" `
 	spaceport ` The spaceport section of the space station is surprisingly clean and well-kept, unlike many you have seen in the Republic or the Free Worlds- most likely because this is the area receiving the station's residents, as well as those visiting simply for the enormous laser tag facilities.`
-	shipyard "XSZ Tier 2"	
+	shipyard "XSZ Tier 2"
 	outfitter "Small Engines"
 	outfitter "Medium Engines"
 	outfitter "Huge Engines"
 	outfitter "XSZ Basics"
 	outfitter "XSZ Advanced"
-	outfitter "Basicness"
-	outfitter "Ammo"
+	outfitter Basicness
+	outfitter Ammo
 	"required reputation" 0
 	bribe 0
 	security 0
@@ -4278,8 +4306,8 @@ planet "New Asgard"
 	outfitter "Enclave Basics"
 	outfitter "Small Engines"
 	outfitter "XSZ Basics"
-	outfitter "Basicness"
-	outfitter "Ammo"
+	outfitter Basicness
+	outfitter Ammo
 
 planet "New Scotland"
 	attributes enclave
@@ -4289,19 +4317,20 @@ planet "New Scotland"
 	spaceport `As you stepped off your ship, the air already had a noticeably dry tang to it. The spaceport is situated in a large patch of desert, although the mountains nearby alter the weather enough to provide this area with some rain, at least. The architecture feels somewhat ramshackle, not unlike the frontier towns of the 17th century back on Earth; the roads are simply dusty trails, and the majority of buildings are constructed from wood.`
 	spaceport `	Despite this, the security guards near the trading areas have some very advanced-looking guns.`
 	outfitter "XSZ Basics"
-	outfitter "Basicness"
-	outfitter "Ammo"
+	outfitter Basicness
+	outfitter Ammo
 
 planet Ortite
 	attributes enclave
-	landscape land/sea4
-	description `Ortite is a planet. #noice`
-	spaceport SPACEPORT
+	landscape land/desert1
+	description `This is a somewhat deprived world, consisting of deserts for the most part, albeit with a few tropical regions around the poles. Most of the population is employed in hard labour, gathering sand from the deserts for extravagant artificial beaches on richer worlds or manufacturing basic farming equipment for other worlds. There is also a thriving petrochemicals industry here, based on extracting oil from beneath the expansive, more low-lying deserts.`
+	description `	As there is very little liquid water here, the few settlers who have not been forced into the industrialised drudgery that most have have been able to develop some intriguing technology designed to collect water vapour from areas miles wide and then condense it. This water is then sold to the local government to allow some standard of running water to exist in the cities.`
+	spaceport `Ortite's spaceport is a ghost town. While there are still a number of landing pads, it appears that many others have sunk into the sand and buried over time. The few people you see here are clearly off-worlders; their clothing is nothing like the dull, forgettable brown outfits that the inhabitants wear.`
 	outfitter "Small Engines"
 	outfitter "Medium Engines"
 	outfitter "Huge Engines"
-	outfitter "Basicness"
-	outfitter "Ammo"
+	outfitter Basicness
+	outfitter Ammo
 	"required reputation" 0
 	bribe 0
 	security 0
@@ -4318,8 +4347,8 @@ planet Perihelion
 	outfitter "Small Engines"
 	outfitter "Medium Engines"
 	outfitter "XSZ Basics"
-	outfitter "Basicness"
-	outfitter "Ammo"
+	outfitter Basicness
+	outfitter Ammo
 
 planet Puggleshank
 	attributes pug
@@ -4343,8 +4372,8 @@ planet Quaver
 	outfitter "Small Engines"
 	outfitter "XSZ Basics"
 	outfitter "Enclave Basics"
-	outfitter "Basicness"
-	outfitter "Ammo"
+	outfitter Basicness
+	outfitter Ammo
 	security 0
 	tribute 100
 		threshold 2500
@@ -4359,8 +4388,8 @@ planet Saal
 	spaceport `	The architects who designed some of the spaceport buildings themselves were obviously very fond of 19th-century British architecture; the buildings, with their arching cast-iron beams and glass roofs are very reminiscent of large train stations in the United Kingdom during that period.`
 	outfitter "Enclave Basics"
 	outfitter "XSZ Basics"
-	outfitter "Basicness"
-	outfitter "Ammo"
+	outfitter Basicness
+	outfitter Ammo
 
 planet Scalpel
 	attributes enclave
@@ -4393,8 +4422,8 @@ planet Tarkir
 	outfitter "Small Engines"
 	outfitter "Medium Engines"
 	outfitter "Huge Engines"
-	outfitter "Basicness"
-	outfitter "Ammo"
+	outfitter Basicness
+	outfitter Ammo
 
 planet Termite
 	attributes xsz
@@ -4403,5 +4432,5 @@ planet Termite
 	description `	Termite's lightning is far, far stronger than on any other planet known to humanity, and as a result, whenever a bolt strikes, the enormous temperatures can actually fuse together hydrogen molecules found in the atmosphere to form helium. As a result, XSZ uses this planet as a massive, planet-sized fusion reactor in order to both generate large amounts of energy which can be stored and then shipped off-world, and to synthesise some rare elements via controlled fusion.`
 	spaceport `The spaceport is very low to the ground, and is covered in some sort of opaque, rubbery material; any possible measures to stop lightning from hitting any part of the spaceport are in place. The winds are immense on this planet, and the air practically hums with ozone.`
 	outfitter "XSZ Basics"
-	outfitter "Basicness"
-	outfitter "Ammo"
+	outfitter Basicness
+	outfitter Ammo
