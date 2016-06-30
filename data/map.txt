@@ -142,6 +142,10 @@ system Aether
 	asteroids "small metal" 2 2.6656
 	asteroids "medium metal" 4 2.9792
 	asteroids "large metal" 5 5.4096
+	fleet Trader 700
+	fleet Transporter 700
+	fleet "Enclave Patrol" 1500
+	fleet "Enclave Capital" 3000
 	object
 		sprite star/k0
 		period 10
@@ -193,6 +197,10 @@ system Aetrus
 	asteroids "large rock" 120 1.54
 	asteroids "medium metal" 91 2.604
 	asteroids "large metal" 5 2.296
+	fleet Trader 700
+	fleet Transporter 700
+	fleet "Enclave Patrol" 1500
+	fleet "Enclave Capital" 3000
 	object
 		sprite star/m0
 		period 10
@@ -409,6 +417,10 @@ system Ares
 	asteroids "small metal" 1 4.3848
 	asteroids "medium metal" 2 5.292
 	asteroids "large metal" 8 5.8968
+	fleet Trader 700
+	fleet Transporter 700
+	fleet "Enclave Patrol" 1500
+	fleet "Enclave Capital" 3000
 	object
 		sprite star/k0
 		period 10
@@ -817,6 +829,9 @@ system Cispia
 	trade Medical 510
 	trade Metal 450
 	trade Plastic 370
+	fleet Trader 700
+	fleet "Enclave Patrol" 2400
+	fleet "Enclave Capital" 6000
 	object
 		sprite star/g5
 		distance 47.8234
@@ -867,6 +882,10 @@ system Clurth
 	asteroids "small metal" 2 5.8
 	asteroids "medium metal" 3 4.24
 	asteroids "large metal" 1 5.4
+	fleet Trader 700
+	fleet Transporter 700
+	fleet "Enclave Patrol" 1500
+	fleet "Enclave Capital" 3000
 	object
 		sprite star/k5
 		period 10
@@ -978,6 +997,10 @@ system Cymexes
 	asteroids "medium rock" 18 3.375
 	asteroids "large rock" 1 3.996
 	asteroids "large metal" 1 2.538
+	fleet Trader 700
+	fleet Transporter 700
+	fleet "Enclave Patrol" 1500
+	fleet "Enclave Capital" 3000
 	trade Clothing 290
 	trade Electronics 740
 	trade Equipment 530
@@ -1042,6 +1065,10 @@ system Daia
 	asteroids "small metal" 1 3.5712
 	asteroids "medium metal" 121 4.608
 	asteroids "large metal" 9 2.304
+	fleet Trader 700
+	fleet Transporter 700
+	fleet "Enclave Patrol" 1500
+	fleet "Enclave Capital" 3000
 	object
 		sprite star/k0
 		period 10
@@ -1085,6 +1112,10 @@ system "Deg Deg"
 	asteroids "small metal" 11 2.2932
 	asteroids "medium metal" 4 5.096
 	asteroids "large metal" 4 3.8584
+	fleet Trader 700
+	fleet Transporter 700
+	fleet "Enclave Patrol" 1500
+	fleet "Enclave Capital" 3000
 	object
 		sprite star/m0
 		period 10
@@ -1174,6 +1205,12 @@ system Dvorak
 	asteroids "small metal" 13 4.08
 	asteroids "medium metal" 60 2.3664
 	asteroids "large metal" 11 2.5296
+	fleet Trader 600
+	fleet Transporter 600
+	fleet "Enclave Patrol" 3000
+	fleet "Enclave Capital" 5000
+	fleet "XSZ Small" 3000
+	fleet "XSZ Large" 5000
 	object
 		sprite star/b5
 		distance 8.47867
@@ -1225,6 +1262,10 @@ system Eskidilium
 	link Cispia
 	link Ortus
 	asteroids "large metal" 1 2.0944
+	fleet Trader 700
+	fleet Transporter 700
+	fleet "Enclave Patrol" 1500
+	fleet "Enclave Capital" 3000
 	object
 		sprite star/g0
 		distance 39.4518
@@ -1275,6 +1316,12 @@ system Fallout
 	asteroids "large rock" 34 5.51
 	asteroids "medium metal" 1 5.51
 	asteroids "large metal" 1 4.0223
+	fleet Trader 600
+	fleet Transporter 600
+	fleet "Enclave Patrol" 3000
+	fleet "Enclave Capital" 5000
+	fleet "XSZ Small" 4000
+	fleet "XSZ Large" 6000
 	object
 		sprite star/k0
 		distance 50.5
@@ -1522,6 +1569,8 @@ system Four
 	trade Medical 850
 	trade Metal 300
 	trade Plastic 380
+	fleet Trader 1000
+	fleet Transporter 1000
 	object
 		sprite star/g0
 		distance 33.5496
@@ -1692,6 +1741,10 @@ system Gautus
 	asteroids "small metal" 3 4.06
 	asteroids "medium metal" 17 4.7908
 	asteroids "large metal" 8 2.7202
+	fleet Trader 700
+	fleet Transporter 700
+	fleet "Enclave Patrol" 1500
+	fleet "Enclave Capital" 3000
 	object
 		sprite star/k0
 		period 10
@@ -1965,6 +2018,10 @@ system Innenheim
 	trade Medical 840
 	trade Metal 260
 	trade Plastic 420
+	fleet Trader 500
+	fleet Transporter 500
+	fleet "Enclave Patrol" 3000
+	fleet "Enclave Capital" 5000
 	object
 		sprite star/m0
 		period 10
@@ -2332,6 +2389,10 @@ system Lyvven
 	asteroids "small metal" 2 1.92
 	asteroids "medium metal" 3 2.88
 	asteroids "large metal" 19 1.5
+	fleet Trader 700
+	fleet Transporter 700
+	fleet "Enclave Patrol" 1500
+	fleet "Enclave Capital" 3000
 	object
 		sprite star/g0
 		distance 31.677
@@ -2453,6 +2514,9 @@ system Memus
 	trade Medical 730
 	trade Metal 450
 	trade Plastic 490
+	fleet Trader 600
+	fleet Transporter 600
+	fleet "Enclave Patrol" 6000
 	object
 		sprite star/g0
 		distance 28.5659
@@ -2567,6 +2631,10 @@ system Muraganda
 	asteroids "small metal" 54 2.3088
 	asteroids "medium metal" 145 2.5584
 	asteroids "large metal" 1 3.432
+	fleet Trader 700
+	fleet Transporter 700
+	fleet "Enclave Patrol" 1500
+	fleet "Enclave Capital" 3000
 	object
 		sprite star/g0
 		period 10
@@ -2718,6 +2786,9 @@ system Ortus
 	trade Medical 750
 	trade Metal 370
 	trade Plastic 290
+	fleet Trader 600
+	fleet Transporter 600
+	fleet "Enclave Patrol" 4000
 	object
 		sprite star/g0
 		period 10
@@ -2779,6 +2850,10 @@ system Outenheim
 	trade Medical 750
 	trade Metal 400
 	trade Plastic 350
+	fleet Trader 800
+	fleet Transporter 800
+	fleet "Enclave Patrol" 3000
+	fleet "Enclave Capital" 5000
 	object
 		sprite star/g0
 		period 10
@@ -3301,6 +3376,11 @@ system Svind
 	trade Medical 750
 	trade Metal 380
 	trade Plastic 430
+	fleet Trader 1000
+	fleet Transporter 1000
+	fleet "Enclave Patrol" 1200
+	fleet "Enclave Capital" 4000
+	fleet "XSZ Small" 20000
 	object
 		sprite star/f0
 		distance 50.765
@@ -3427,6 +3507,9 @@ system Thaen
 	trade Medical 100
 	trade Metal 100
 	trade Plastic 100
+	fleet Trader 300
+	fleet Transporter 300
+	fleet "Enclave Patrol" 2000
 	object
 		sprite star/g5
 		period 10
@@ -3587,6 +3670,12 @@ system Three
 	asteroids "small metal" 4 2.9348
 	asteroids "medium metal" 2 4.2746
 	asteroids "large metal" 25 3.6366
+	fleet Trader 700
+	fleet Transporter 700
+	fleet "Enclave Patrol" 1500
+	fleet "Enclave Capital" 3000
+	fleet "XSZ Small" 1500
+	fleet "XSZ Large" 3000
 	object
 		sprite star/g5
 		period 10
@@ -3716,6 +3805,10 @@ system Unobu
 	trade Medical 610
 	trade Metal 310
 	trade Plastic 440
+	fleet Trader 500
+	fleet Transporter 500
+	fleet "Enclave Patrol" 5000
+	fleet "Enclave Capital" 7000
 	object
 		sprite star/m0
 		period 10
@@ -3843,6 +3936,9 @@ system Whuroxla
 	trade Medical 750
 	trade Metal 520
 	trade Plastic 570
+	fleet Trader 1000
+	fleet Transporter 1000
+	fleet "Enclave Patrol" 30000
 	object
 		sprite star/k0
 		distance 23.4526
@@ -3886,7 +3982,7 @@ system Whuroxla
 
 system Xenos
 	pos -848.78 -338
-	government Enclave
+	government Republic
 	habitable 625
 	asteroids "large rock" 1 4.0608
 	asteroids "small metal" 2 2.9088
@@ -4182,7 +4278,7 @@ planet Jumblar
 	attributes enclave
 	landscape land/nasa6
 	description `Jumblar is an average-sized manufacturing world. While it does not produce some of the Enclave's largest ships, the shipyards are still relatively extensive and as a result, this planet has some of the stablest jobs in the whole galaxy, barring XSZ worlds, of course.`
-	description `	The central Enclave government is currently moving to transfer its main shipbuilding facilities here from Alleshafen in the Svind system, so that the bulk of Enclave military construction can take place in the southern arm of the galaxy, deeper into the heart of Enclave space. You have heard that there are also plans to construct an artificial ring around the planet on which ships can be built in low gravity, although there are no signs of its construction.`
+	description `	The central Enclave government is currently moving to transfer its main shipbuilding facilities here from Alleshafen in the Adke system, so that the bulk of Enclave military construction can take place in the southern arm of the galaxy, deeper into the heart of Enclave space. You have heard that there are also plans to construct an artificial ring around the planet on which ships can be built in low gravity, although there are no signs of its construction.`
 	spaceport `There appear to be Enclave freight ships constantly landing and taking off from here, the materials for use in expanding the shipyards. A number of ships, almost as large as Republic Carriers, are circling the spaceport, although they are clearly not waiting to land, judging by the energy readings coming from their weapons.`
 	shipyard "Enclave Tier 1"
 	shipyard "Enclave Tier 2"
