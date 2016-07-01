@@ -1,6 +1,6 @@
 galaxy "Enclave Galaxy"
 	pos 5000 500
-	sprite ui/EnclaveGalaxy
+	sprite ui/EnclaveGalaxy2
 
 galaxy Labels
 	pos 5000 500
