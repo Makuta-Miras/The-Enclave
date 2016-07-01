@@ -4251,9 +4251,13 @@ planet Idivine
 	spaceport "There are a number of landing pads here reserved exclusively for the fleet of Flurries and Cheetahs used by the Enclave to move its personnel from here to Lyfon and back again."
 	spaceport "	As for the rest of the spaceport, most of the facilities here have been adapted to deal with regular rushes of workers moving both ways through the spaceport, including vast hallways, extensive food courts and a very bureaucratic departures system."
 	outfitter "Small Engines"
+	outfitter "Medium Engines"
+	outfitter Ammo
 	outfitter Basicness
+	outfitter "Enclave Basics"
+	outfitter "Enclave Advanced"
+	outfitter "Enclave Heavy Weaponry"
 	security 0
-	shipyard
 
 planet Imperative
 	landscape land/desert9-sfiera
