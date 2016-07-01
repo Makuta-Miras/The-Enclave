@@ -1,6 +1,6 @@
 galaxy "Enclave Galaxy"
 	pos 5000 500
-	sprite ui/EnclaveGalaxy2
+	sprite ui/EnclaveGalaxy
 
 galaxy Labels
 	pos 5000 500
@@ -1449,7 +1449,7 @@ system Five
 		period 410.774
 		offset 197.217
 	object Idivine
-		sprite planet/gas2
+		sprite planet/ice2
 		distance 1295.93
 		period 676.905
 		offset 304.678
@@ -1473,11 +1473,16 @@ system Five
 			distance 374
 			period 38.0719
 			offset 219.71
-	object Cygite
+	object
 		sprite planet/gas8
 		distance 2568.93
 		period 1889.22
 		offset 1.12596
+		object Cygite
+			sprite planet/desert9
+			distance 223
+			period 17.5289
+			offset 119.527
 
 system Fo'gar'helien
 	pos 5403.41 765.128
@@ -4090,9 +4095,9 @@ planet Arikv
 
 planet Bantilium
 	attributes enclave
-	landscape land/forest3
-	description Planet
-	spaceport SPACEPORT
+	landscape land/forest5
+	description "Bantilium is mainly covered by large areas of primeval woodland, gnarled trees that reach far too high into the sky. While little of the planet has been explored thus far, it appears to have a unique ecosystem whereby life has evolved from silicon-based compounds, instead of carbon-based compounds like humans. As a result, you and other non-scientists are restricted to the spaceport village."
+	spaceport "The spaceport and the surrounding town is enclosed by a glass dome, presumably to prevent waste gases from leaking out into the otherwise breathable atmosphere. While this is somewhat of an inconvenience, the inhabitants are nothing but hospitable, and despite this planet's status as a scientific outpost, it feels very much as though this is a true community."
 	outfitter "Small Engines"
 	outfitter Basicness
 	outfitter Ammo
@@ -4162,9 +4167,8 @@ planet Cromerium
 
 planet Cygite
 	attributes enclave
-	landscape land/myrabella3
-	description Planet
-	spaceport SPACEPORT
+	landscape land/mountain5
+	description "Cygite is a mostly barren moon, with little to its name but a number of useful elements within its crust. That's quite honestly it. It's a complete backwater, both technologically and socially, despite it being in the same system as Lyfon."
 	security 0
 
 planet Cynic
@@ -4242,9 +4246,10 @@ planet Helheim
 
 planet Idivine
 	attributes enclave
-	landscape land/badlands3
-	description Planet
-	spaceport SPACEPORT
+	landscape land/badlands5
+	description "Idivine is a major manufacturing world- as such, it happens to be the second most notable planet in the system, after Lyfon. It is here that most of the Enclave's military-grade weapons and other outfits are constructed. Due to the prominent absence of housing on this planet, the governing authorities run an extensive shuttle program, whereby every weekend workers from Idivine can be ferried back to their homes on Lyfon, free of charge."
+	spaceport "There are a number of landing pads here reserved exclusively for the fleet of Flurries and Cheetahs used by the Enclave to move its personnel from here to Lyfon and back again."
+	spaceport "	As for the rest of the spaceport, most of the facilities here have been adapted to deal with regular rushes of workers moving both ways through the spaceport, including vast hallways, extensive food courts and a very bureaucratic departures system."
 	outfitter "Small Engines"
 	outfitter Basicness
 	security 0
@@ -4294,9 +4299,10 @@ planet Jumblar
 
 planet Korine
 	attributes enclave
-	landscape land/nasa1
-	description planet
-	spaceport spaceport
+	landscape land/bwerner5
+	description "Korine is an idyllic, sparsely populated planet which is mostly covered by holiday homes belonging to rich individuals. While the climate is not amazingly tropical, average global temperatures lie slightly higher than average. The days on Korine are long, and while there are next to no major tides due to the absence of any moons, seaside retreats are still popular among the part-time residents."
+	description "	The self-indulgence which Korine symbolises is a source of much dissatisfaction among poorer worlds in Enclave space."
+	spaceport "The spaceport is quite clearly designed only to facilitate private individuals, with little to no thought given to infrastructure for military vessels or even traders like yourself; the bazaar is little more than a collection of brightly painted tents where clueless elites appear to be buying trinkets and other useless items."
 	security 0
 
 planet Latent
