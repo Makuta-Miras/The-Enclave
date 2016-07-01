@@ -2,6 +2,7 @@
 01/07/16
 
 -Corrected some errors that were present in the GitHub version.
+-Completed galaxy expansion.
 
 
 30/06/16
