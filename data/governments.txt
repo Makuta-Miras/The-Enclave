@@ -1,5 +1,5 @@
 government Enclave
-	swizzle 4
+	swizzle 0
 	color .99 .99 .99
 		
 	"player reputation" 1000
@@ -10,7 +10,7 @@ government Enclave
 	bribe 0
 	
 government "XSZ Corporation"
-	swizzle 3
+	swizzle 4
 	color 0 .41 .71
 		
 	"player reputation" 500
