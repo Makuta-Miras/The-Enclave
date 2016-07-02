@@ -77,7 +77,7 @@ outfit "Phase Missile Launcher"
 	
 outfit "Phase Missile"
 	category "Ammunition"
-	cost 8000
+	cost 80000
 	thumbnail "outfit/Phase"
 	"mass" .2
 	"phase capacity" -1
