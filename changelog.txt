@@ -4,6 +4,7 @@
 -New Repulsor sprite.
 -Added the Heat Redistribution Ray for the Kaltheim.
 -Added the Phase Missile Launcher for the Kaltheim.
+-Added shield generators for the Kaltheim.
 
 
 01/07/16
