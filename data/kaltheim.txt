@@ -1,4 +1,4 @@
-# Outfits here:
+# Weapons:
 
 outfit "Heat Redistribution Ray"
 	category "Turrets"
@@ -83,7 +83,9 @@ outfit "Phase Missile"
 	"phase capacity" -1
 	description "The Phase Missile is ammunition for the Phase Missile Launcher- without the launcher, you cannot install Phase Missiles. Each launcher can store up to 100 Phase Missiles."
 
-
+	
+# Shields:	
+	
 outfit "Tundra-Class Shield Generator"
 	category "Systems"
 	cost 520000
@@ -119,4 +121,28 @@ outfit "Boreal-Class Shield Generator"
 	description "This is the largest set of shields devised by the Kaltheim so far."
 	
 
-# Ships here:
+# Reactors:
+
+outfit "Floe Reactor"
+	category "Power"
+	cost
+	thumbnail "outfit/floe_core"
+	"mass" 35
+	"outfit space" -35
+	"energy generation" 5.3
+	"cooling" 6
+	description "The Floe reactor is the Kaltheim's primary power source for their smaller ships. As with almost all Kaltheim outfits, it cools the ship it is installed on in addition to generating power."
+	
+
+outfit "Iceberg Reactor"
+	category "Power"
+	cost 15000000
+	thumbnail "outfit/iceberg_core"
+	"mass" 120
+	"outfit space" -120
+	"energy generation" 22
+	"cooling" 25
+	description "The Iceberg reactor is a typical Kaltheim system- equipped to cool the ship it's installed upon whilst performing its primary function. This is the largest reactor designed by the Kaltheim so far, beating out the older Floe reactor by an enormous margin."
+	
+
+# Ships:
