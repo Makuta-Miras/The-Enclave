@@ -140,6 +140,7 @@ outfitter "Enclave.mod outfits"
 	"Boreal-Class Shield Generator"
 	"Iceberg Reactor"
 	"Floe Reactor"
+	"Polar Batteries"
 	
 	
 outfitter "Ascendancy Miniaturised"
