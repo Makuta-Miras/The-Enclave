@@ -62,6 +62,7 @@ outfit "Phase Missile Launcher"
 		"reload" 30
 		"firing energy" 1
 		"firing heat" 15
+		"firing force" 250
 		"acceleration" 1.2
 		"drag" .1
 		"turn" 3
@@ -121,11 +122,11 @@ outfit "Boreal-Class Shield Generator"
 	description "This is the largest set of shields devised by the Kaltheim so far."
 	
 
-# Reactors:
+# Power:
 
 outfit "Floe Reactor"
 	category "Power"
-	cost
+	cost 2000000
 	thumbnail "outfit/floe_core"
 	"mass" 35
 	"outfit space" -35
@@ -143,6 +144,16 @@ outfit "Iceberg Reactor"
 	"energy generation" 22
 	"cooling" 25
 	description "The Iceberg reactor is a typical Kaltheim system- equipped to cool the ship it's installed upon whilst performing its primary function. This is the largest reactor designed by the Kaltheim so far, beating out the older Floe reactor by an enormous margin."
-	
 
+
+outfit "Polar Batteries"
+	category "Power"
+	cost 750000
+	thumbnail "outfit/polar_battery"
+	"mass" 50
+	"outfit space" -50
+	"energy capacity" 10000
+	description "The Kaltheim's Polar batteries are a simple energy storage unit, albeit far more efficient than human technology."
+	
+	
 # Ships:
