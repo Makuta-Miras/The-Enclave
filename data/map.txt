@@ -684,7 +684,7 @@ system Banq'rujol'ifus
 		sprite planet/neptune
 		distance 1966.71
 		period 881.417
-		object
+		object Kri'eg'lyen
 			sprite planet/dust4
 			distance 212
 			period 15.3793
@@ -997,10 +997,6 @@ system Cymexes
 	asteroids "medium rock" 18 3.375
 	asteroids "large rock" 1 3.996
 	asteroids "large metal" 1 2.538
-	fleet Trader 700
-	fleet Transporter 700
-	fleet "Enclave Patrol" 1500
-	fleet "Enclave Capital" 3000
 	trade Clothing 290
 	trade Electronics 740
 	trade Equipment 530
@@ -1011,6 +1007,10 @@ system Cymexes
 	trade Medical 680
 	trade Metal 390
 	trade Plastic 390
+	fleet Trader 700
+	fleet Transporter 700
+	fleet "Enclave Patrol" 1500
+	fleet "Enclave Capital" 3000
 	object
 		sprite star/g5
 		distance 51.0657
@@ -1513,26 +1513,42 @@ system Fo'gar'helien
 		sprite planet/lava6
 		distance 199.69
 		period 73.9019
-	object
+		offset 0.0012931
+	object Era'lgin'bl
 		sprite planet/ocean8
-		distance 422.78
-		period 227.663
+		distance 573.78
+		period 359.948
+		offset 247.179
+		object
+			sprite planet/desert4
+			distance 147
+			period 15.7161
+			offset 339.06
+		object
+			sprite planet/tethys
+			distance 240.09
+			period 32.8042
+			offset 21.3133
 	object
 		sprite planet/rock6
-		distance 725.59
-		period 511.868
+		distance 1049.68
+		period 890.649
+		offset 312.446
 	object
 		sprite planet/ice2
-		distance 1282.8
-		period 1203.26
+		distance 1606.89
+		period 1686.94
+		offset 89.6655
 	object
 		sprite planet/desert9
-		distance 1477.41
-		period 1487.21
+		distance 1801.5
+		period 2002.5
+		offset 65.1154
 	object
 		sprite planet/gas2
-		distance 2256.7
-		period 2807.58
+		distance 2580.79
+		period 3433.6
+		offset 24.4462
 		object
 			sprite planet/ice8
 			distance 186
@@ -1551,7 +1567,7 @@ system Fo'gar'helien
 			period 92.4118
 
 system Four
-	pos 5239.86 669.628
+	pos 5254.86 676.628
 	government Enclave
 	habitable 1566.68
 	link Aether
@@ -1868,10 +1884,49 @@ system Grundel'froae
 			distance 494
 			period 41.17
 
+system Hrau'ngri'liadien
+	pos 5320.59 698.763
+	government Enclave
+	habitable 320
+	link Jaaaar'aaaaa'l'u
+	asteroids "small rock" 23 3.9962
+	asteroids "medium rock" 23 3.3553
+	asteroids "large rock" 15 5.655
+	asteroids "small metal" 9 4.7502
+	asteroids "medium metal" 56 2.8652
+	asteroids "large metal" 46 2.4505
+	object
+		sprite star/m0
+		period 10
+	object
+		sprite planet/cloud4
+		distance 366.49
+		period 156.884
+		object
+			sprite planet/ice0
+			distance 173
+			period 21.4023
+	object
+		sprite planet/neptune
+		distance 953.18
+		period 658.033
+	object
+		sprite planet/gas16
+		distance 1611.07
+		period 1445.96
+	object
+		sprite planet/desert10
+		distance 1881.56
+		period 1825
+	object
+		sprite planet/luna
+		distance 2412.77
+		period 2650.08
+
 system Ik'ari'aka
 	pos 5399.41 839.128
 	government Kaltheim
-	habitable 425.92
+	habitable 486.68
 	link Kama'la'ez
 	link Banq'rujol'ifus
 	link Crul'im'heim
@@ -1893,40 +1948,53 @@ system Ik'ari'aka
 	trade Metal 390
 	trade Plastic 390
 	object
-		sprite star/k5
+		sprite star/k0
 		period 10
 	object
-		sprite planet/ice4
-		distance 148.44
-		period 35.0528
+		sprite planet/luna
+		distance 242.106
+		period 68.3042
+		offset 143.923
+	object
+		sprite planet/gas2
+		distance 471.012
+		period 185.347
+		offset 107.795
+	object
+		sprite planet/oberon
+		distance 672.972
+		period 316.543
+		offset 180.934
+	object Brun'ily'rhasunx
+		sprite planet/cloud3
+		distance 954.542
+		period 534.725
+		offset 102.239
 	object
 		sprite planet/gas15
-		distance 740.2
-		period 390.319
+		distance 1767.1
+		period 1346.88
+		offset 20.627
 		object
-			sprite planet/rock7
-			distance 215
-			period 16.5941
+			sprite planet/callisto
+			distance 191
+			period 13.8946
+			offset 4.07595
 		object
-			sprite planet/luna
-			distance 336
-			period 32.4195
+			sprite planet/europa
+			distance 279
+			period 24.5303
+			offset 86.0248
 		object
-			sprite planet/dust3
-			distance 424
-			period 45.9564
-	object
-		sprite planet/lava0
-		distance 1299.45
-		period 907.894
-	object
-		sprite planet/gas16
-		distance 2693.21
-		period 2708.95
+			sprite planet/dust4
+			distance 362
+			period 36.2543
+			offset 311.268
 		object
-			sprite planet/ice0
-			distance 209
-			period 15.9044
+			sprite planet/rock17
+			distance 442
+			period 48.9137
+			offset 87.5654
 
 system Indigo
 	pos 5131.86 501.628
@@ -2161,10 +2229,11 @@ system Ithaos
 system Jaaaar'aaaaa'l'u
 	pos 5372.41 722.128
 	government Kaltheim
-	habitable 425.92
+	habitable 1313.28
 	link Ytgfrv'hjusd'ikmuivra
 	link Banq'rujol'ifus
 	link Fo'gar'helien
+	link Hrau'ngri'liadien
 	asteroids "small rock" 7 3.5802
 	asteroids "medium rock" 41 5.1246
 	asteroids "large rock" 2 5.4756
@@ -2182,44 +2251,57 @@ system Jaaaar'aaaaa'l'u
 	trade Metal 390
 	trade Plastic 390
 	object
-		sprite star/k5
-		period 10
+		sprite star/g0
+		distance 19.7171
+		period 12.9082
+		offset 180
 	object
-		sprite planet/desert0
-		distance 280.76
-		period 91.1798
+		sprite star/m4
+		distance 91.2829
+		period 12.9082
+	object Gahr'wregdl'iahr
+		sprite planet/desert10
+		distance 367.123
+		period 77.6423
 		object
-			sprite planet/dust1
-			distance 160
-			period 25.4415
+			sprite planet/europa
+			distance 169
+			period 22.4924
 	object
-		sprite planet/ice7
-		distance 700.76
-		period 359.542
+		sprite planet/dust0
+		distance 779.683
+		period 240.303
 	object
-		sprite planet/mars
-		distance 1021
-		period 632.317
-		object
-			sprite planet/dust5
-			distance 130
-			period 19.8094
+		sprite planet/rock8
+		distance 1288.02
+		period 510.228
+		offset 119.497
 	object
-		sprite planet/gas8
-		distance 2528.96
-		period 2464.95
+		sprite planet/gas10
+		distance 2803.27
+		period 1638.24
+		offset 53.9717
 		object
-			sprite planet/ice0
-			distance 194
-			period 14.384
+			sprite planet/rock17
+			distance 212
+			period 16.248
 		object
-			sprite planet/rock3
-			distance 340
-			period 33.373
+			sprite planet/rock14
+			distance 362
+			period 36.2543
+	object
+		sprite planet/jupiter
+		distance 20370.6
+		period 32091.3
+		offset 70.131
 		object
-			sprite planet/dust3
-			distance 426
-			period 46.8049
+			sprite planet/ice8
+			distance 242
+			period 11.83
+		object
+			sprite planet/rock7
+			distance 372
+			period 22.5463
 
 system Kaladesh
 	pos 5069 590
@@ -3020,6 +3102,49 @@ system Pralmia
 			distance 234
 			period 17.8343
 
+system "Pug Aerzyrnium"
+	pos 5480.22 572.929
+	government Pug
+	habitable 320
+	asteroids "small metal" 1 6.4064
+	asteroids "medium metal" 6 2.7328
+	asteroids "large metal" 2 3.0464
+	object
+		sprite star/m0
+		period 10
+	object Puggleswap
+		sprite planet/cloud4
+		distance 273.56
+		period 101.173
+		object
+			sprite planet/dust0
+			distance 173
+			period 21.4023
+	object
+		sprite planet/rock13
+		distance 783.05
+		period 489.97
+		object
+			sprite planet/rock3
+			distance 135
+			period 19.718
+	object
+		sprite planet/gas3
+		distance 1459.54
+		period 1246.84
+		object
+			sprite planet/luna
+			distance 266
+			period 11.0812
+		object
+			sprite planet/ice8
+			distance 399
+			period 20.3575
+	object
+		sprite planet/rock17
+		distance 2559.18
+		period 2894.92
+
 system "Pug Morbosa"
 	pos 4993.74 497.501
 	government Pug
@@ -3461,14 +3586,16 @@ system Syj'ngf'bnk
 		sprite planet/dust7
 		distance 211.013
 		period 22.3936
-	object
-		sprite planet/rock7
-		distance 552.023
-		period 94.7539
+	object Oro'alein'platrez
+		sprite planet/dust5
+		distance 567.023
+		period 98.6422
+		offset 154.763
 	object
 		sprite planet/gas2
-		distance 1480.02
-		period 415.972
+		distance 1510.02
+		period 428.682
+		offset 26.5173
 		object
 			sprite planet/dust3
 			distance 206
@@ -3483,8 +3610,9 @@ system Syj'ngf'bnk
 			period 55.7329
 	object
 		sprite planet/uranus
-		distance 2388.11
-		period 852.597
+		distance 2418.11
+		period 868.712
+		offset 8.09417
 		object
 			sprite planet/miranda
 			distance 234
@@ -3732,7 +3860,7 @@ system Three
 system Umba'draeuin
 	pos 5266.41 777.128
 	government Kaltheim
-	habitable 1715
+	habitable 912.6
 	link Vo'jaerun
 	link Kama'la'ez
 	link Banq'rujol'ifus
@@ -3753,40 +3881,42 @@ system Umba'draeuin
 	trade Metal 390
 	trade Plastic 390
 	object
-		sprite star/f5
-		period 10
+		sprite star/k0
+		distance 39.6704
+		period 10.3764
 	object
-		sprite planet/dust2
-		distance 138.25
-		period 15.7009
+		sprite star/k5
+		distance 45.3296
+		period 10.3764
+		offset 180
 	object
-		sprite planet/ganymede
-		distance 291.89
-		period 48.1678
+		sprite planet/desert1
+		distance 225.58
+		period 44.8611
+	object Ziv'rahk'ashgrir
+		sprite planet/cloud5
+		distance 526.02
+		period 159.743
 	object
-		sprite planet/jupiter
-		distance 873.7
-		period 249.443
+		sprite planet/gas13
+		distance 1289.66
+		period 613.243
 		object
-			sprite planet/callisto
-			distance 252
-			period 12.5708
+			sprite planet/tethys
+			distance 256
+			period 11.563
 		object
-			sprite planet/oberon
-			distance 369
-			period 22.2742
+			sprite planet/rock3
+			distance 359
+			period 19.2022
 	object
 		sprite planet/gas2
-		distance 2356.7
-		period 1105.06
+		distance 2759.62
+		period 1919.52
 		object
-			sprite planet/dust0
-			distance 206
-			period 17.9149
-		object
-			sprite planet/dust7
-			distance 323
-			period 35.1737
+			sprite planet/europa
+			distance 175
+			period 14.0272
 
 system Unobu
 	pos 4909.09 663.745
@@ -3872,7 +4002,7 @@ system Veil
 			period 13.2502
 
 system Vo'jaerun
-	pos 5223.41 835.128
+	pos 5196.41 787.128
 	government Kaltheim
 	habitable 3645
 	link Umba'draeuin
@@ -4096,8 +4226,8 @@ planet Arikv
 planet Bantilium
 	attributes enclave
 	landscape land/forest5
-	description "Bantilium is mainly covered by large areas of primeval woodland, gnarled trees that reach far too high into the sky. While little of the planet has been explored thus far, it appears to have a unique ecosystem whereby life has evolved from silicon-based compounds, instead of carbon-based compounds like humans. As a result, you and other non-scientists are restricted to the spaceport village."
-	spaceport "The spaceport and the surrounding town is enclosed by a glass dome, presumably to prevent waste gases from leaking out into the otherwise breathable atmosphere. While this is somewhat of an inconvenience, the inhabitants are nothing but hospitable, and despite this planet's status as a scientific outpost, it feels very much as though this is a true community."
+	description `Bantilium is mainly covered by large areas of primeval woodland, gnarled trees that reach far too high into the sky. While little of the planet has been explored thus far, it appears to have a unique ecosystem whereby life has evolved from silicon-based compounds, instead of carbon-based compounds like humans. As a result, you and other non-scientists are restricted to the spaceport village.`
+	spaceport `The spaceport and the surrounding town is enclosed by a glass dome, presumably to prevent waste gases from leaking out into the otherwise breathable atmosphere. While this is somewhat of an inconvenience, the inhabitants are nothing but hospitable, and despite this planet's status as a scientific outpost, it feels very much as though this is a true community.`
 	outfitter "Small Engines"
 	outfitter Basicness
 	outfitter Ammo
@@ -4108,6 +4238,15 @@ planet Bilbo
 	landscape land/canyon5
 	description `As with the planet below, Bilbo was named after a character from 'The Lord of the Rings'. This time, however, this moon was named "Bilbo" due to its odd similarity to the far eastern areas of Middle-Earth, to which the moon's namesake travelled during The Lord of the Rings' prequel. As a result, much of the terrain is tough and mountainous- perfectly suited to the dwarves of fantasy legend.`
 	spaceport `The spaceport is built into a lone mountain, a massive hive of tunnels extending throughout the edifice. Ships take off and land from landing pads suspended upon the sides of the mountain.`
+
+planet Brun'ily'rhasunx
+	attributes kaltheim
+	landscape land/forest2
+	description `This is another of the Kaltheim's few food-producing worlds, somewhat more suited to growing Earthlike crops than the other ones that you have seen. There are large areas of forest, but most of them seem to be artificial; you assume that true primeval woodland has long been cleared to make way for crops, in addition to the fact that you think you can see some significant ruins among the trees.`
+	description `	The few major cities here seem to be little more than enormous processing plants for the food produced here, with most of the population employed there.`
+	spaceport `The spaceport, instead of having been designed purely to facilitate the transportation of food, appears to have been simply converted from an enormously devoted military complex, to the transportation centre which it is now.`
+	spaceport `	As you scanned the spaceport area as you landed, you noticed that there are a number of deeply sunken walls below the surface, although they do not appear to have any structural significance.`
+	"required reputation" 500
 
 planet Carmine
 	attributes enclave
@@ -4168,7 +4307,7 @@ planet Cromerium
 planet Cygite
 	attributes enclave
 	landscape land/mountain5
-	description "Cygite is a mostly barren moon, with little to its name but a number of useful elements within its crust. That's quite honestly it. It's a complete backwater, both technologically and socially, despite it being in the same system as Lyfon."
+	description `Cygite is a mostly barren moon, with little to its name but a number of useful elements within its crust. That's quite honestly it. It's a complete backwater, both technologically and socially, despite it being in the same system as Lyfon.`
 	security 0
 
 planet Cynic
@@ -4191,6 +4330,15 @@ planet Emeria
 	landscape land/fields1
 	description `Emeria is one of the most discontent worlds in the galaxy. Poor enough that its population has no hope of ever leaving, most education beyond the age of eleven is nonexistent here. What's more, despite this system's relative proximity to Lyfon, the Enclave's capital, it is in fact well over two weeks' hyperspace travel away, making this one of the most remote and under-represented systems in the galaxy.`
 	spaceport `The spaceport is a solid, unexciting structure built of blood-red bricks. The landing pads are packed earth, and although the refueling facilities are existent, only a few fuel hoses actually work.`
+
+planet Era'lgin'bl
+	attributes kaltheim
+	landscape land/nasa4
+	description `This is the home world and capital of the Kaltheim. While it is in the habitable zone of its star, the temperatures are dangerously close to the boiling point of water, which is necessary for even the Kaltheim's survival. The atmosphere is dense and foggy, presumably the result of thousands of years of industrialisation and pollution.`
+	description `	The inhabitants regard you with more than interest- the look in their eyes is more akin to how a predator watches their prey.`
+	spaceport `The spaceport is sunk deep into a large crater, and, oddly enough, the fuel pumps align with your ship's relevant ports perfectly.`
+	spaceport `	The complex appears to be built out of some odd, glowing blue metal. While you suspect it may be reactive, it is impossible to tell.`
+	"required reputation" 500
 
 planet "Euclid Station"
 	attributes xsz
@@ -4232,6 +4380,15 @@ planet Frodo
 	outfitter Ammo
 	outfitter "Small Engines"
 
+planet Gahr'wregdl'iahr
+	attributes kaltheim
+	landscape land/nasa2
+	description `This is a world of near-unbearable heat. As day turns to night, oceans emerge in the sunlit deserts, and as night turns to day, billions of cubic metres of liquid evaporate into the grim, foreboding clouds above.`
+	description `	Gahr'wregdl'iahr is, seemingly, a heavily militarized world. Nearly every facility you see is in some way optimized to contribute to a galactic war effort, with either orbital defense systems in place, heavy-duty planetary shielding, or vast strips of abandoned tarmac landing pads designed for enormous armadas of ships.`
+	description `	You find this odd- the Kaltheim have not yet accessed the Jump Drive, and yet they are still preparing for war, with no obvious schisms in their society, nor opposing species in their region of space.`
+	spaceport `The spaceport is more of a garrison than a true spaceport; most of the areas within the complex are given over to weapons storage and barracks. The whole site is surrounded by a somewhat unnervingly large array of planet-to-space defence weaponry, in addition to the gargantuan shield generators nearby.`
+	"required reputation" 500
+
 planet Helheim
 	attributes deep mining volcanic
 	landscape land/lava1
@@ -4247,9 +4404,9 @@ planet Helheim
 planet Idivine
 	attributes enclave
 	landscape land/badlands5
-	description "Idivine is a major manufacturing world- as such, it happens to be the second most notable planet in the system, after Lyfon. It is here that most of the Enclave's military-grade weapons and other outfits are constructed. Due to the prominent absence of housing on this planet, the governing authorities run an extensive shuttle program, whereby every weekend workers from Idivine can be ferried back to their homes on Lyfon, free of charge."
-	spaceport "There are a number of landing pads here reserved exclusively for the fleet of Flurries and Cheetahs used by the Enclave to move its personnel from here to Lyfon and back again."
-	spaceport "	As for the rest of the spaceport, most of the facilities here have been adapted to deal with regular rushes of workers moving both ways through the spaceport, including vast hallways, extensive food courts and a very bureaucratic departures system."
+	description `Idivine is a major manufacturing world- as such, it happens to be the second most notable planet in the system, after Lyfon. It is here that most of the Enclave's military-grade weapons and other outfits are constructed. Due to the prominent absence of housing on this planet, the governing authorities run an extensive shuttle program, whereby every weekend workers from Idivine can be ferried back to their homes on Lyfon, free of charge.`
+	spaceport `There are a number of landing pads here reserved exclusively for the fleet of Flurries and Cheetahs used by the Enclave to move its personnel from here to Lyfon and back again.`
+	spaceport `	As for the rest of the spaceport, most of the facilities here have been adapted to deal with regular rushes of workers moving both ways through the spaceport, including vast hallways, extensive food courts and a very bureaucratic departures system.`
 	outfitter "Small Engines"
 	outfitter "Medium Engines"
 	outfitter Ammo
@@ -4304,10 +4461,18 @@ planet Jumblar
 planet Korine
 	attributes enclave
 	landscape land/bwerner5
-	description "Korine is an idyllic, sparsely populated planet which is mostly covered by holiday homes belonging to rich individuals. While the climate is not amazingly tropical, average global temperatures lie slightly higher than average. The days on Korine are long, and while there are next to no major tides due to the absence of any moons, seaside retreats are still popular among the part-time residents."
-	description "	The self-indulgence which Korine symbolises is a source of much dissatisfaction among poorer worlds in Enclave space."
-	spaceport "The spaceport is quite clearly designed only to facilitate private individuals, with little to no thought given to infrastructure for military vessels or even traders like yourself; the bazaar is little more than a collection of brightly painted tents where clueless elites appear to be buying trinkets and other useless items."
+	description `Korine is an idyllic, sparsely populated planet which is mostly covered by holiday homes belonging to rich individuals. While the climate is not amazingly tropical, average global temperatures lie slightly higher than average. The days on Korine are long, and while there are next to no major tides due to the absence of any moons, seaside retreats are still popular among the part-time residents.`
+	description `	The self-indulgence which Korine symbolises is a source of much dissatisfaction among poorer worlds in Enclave space.`
+	spaceport `The spaceport is quite clearly designed only to facilitate private individuals, with little to no thought given to infrastructure for military vessels or even traders like yourself; the bazaar is little more than a collection of brightly painted tents where clueless elites appear to be buying trinkets and other useless items.`
 	security 0
+
+planet Kri'eg'lyen
+	attributes kaltheim
+	landscape land/mountain7
+	description `This ice-ridden moon seems like an environment which the Kaltheim feel particularly comfortable in- even moreso than the climate of their native world. A surprisingly large amount of scruffy vegetation has survived here, riddling the foothills of the larger mountains.`
+	description `	Most Kaltheim settlements here appear to be decentralised pockets of warship building- each town may be working on a single heavy warhsip at a time, but when that is put together, the total ship output of this planet is formidable.`
+	spaceport `The spaceport seems to be the hub to which newly built ships are flown from all over the planet- from what you can see, a large section of the spaceport is off-limits to visitors, presumably to allow Kaltheim authorities to ensure that new battleships are ready for spaceflight.`
+	"required reputation" 500
 
 planet Latent
 	attributes xsz
@@ -4426,6 +4591,13 @@ planet "New Scotland"
 	outfitter Basicness
 	outfitter Ammo
 
+planet Oro'alein'platrez
+	attributes kaltheim
+	landscape land/sea0
+	description `Oro'alein'platrez is cold and gloomy, somewhat typical of Kaltheim worlds. Most of the land is flat and low-lying, and while the massive life readings coming from the oceans indicate that fishing here would be a successful commercial enterprise, there seem to be only a few seaborne vessels. A lot of the areas above sea level appear to have been given to farming; the fact that the vast majority of the planet's landscape is divided into perfectly square fields seems to indicate that this planet is the breadbasket of the Kaltheim's civilisation, despite the low levels of sunlight that reach the planet's surface.`
+	spaceport `The spaceport is a regimented mass of sullen, blocky buildings. It appears that most of the infrastructure here has been designed solely for the purpose of shifting food from the farms, to the spaceport, and off the planet in order to feed the rest of the Kaltheim race.`
+	"required reputation" 500
+
 planet Ortite
 	attributes enclave
 	landscape land/desert1
@@ -4464,6 +4636,23 @@ planet Puggleshank
 	spaceport `The spaceport on Puggleshank lies in the centre of the city. Strangely enough, the landing pads are few and far between, nowhere near enough to accomodate the Pug ships flying through the system. You suspect that there are hangars far below the ground, although the density of buildings around the spaceport and their apparent weight would seem to suggest otherwise.`
 	spaceport `	As with most Pug-controlled planets, you are being studiously ignored by the inhabitants.`
 	"required reputation" 50
+
+planet Puggleswap
+	landscape land/fog6
+	description `Puggleswap is a planet owned by the Pug.`
+	description `	They do Puggish things here.`
+	description `	They're probably dangerous Communists.`
+	description `	Better call McCarthy to put them down.`
+	description `	Amirite?`
+	spaceport S
+	spaceport `	P`
+	spaceport `		A`
+	spaceport `			C`
+	spaceport `				E`
+	spaceport `			P`
+	spaceport `		O`
+	spaceport `	R`
+	spaceport T
 
 planet Quaver
 	attributes enclave
@@ -4540,3 +4729,11 @@ planet Termite
 	outfitter "XSZ Basics"
 	outfitter Basicness
 	outfitter Ammo
+
+planet Ziv'rahk'ashgrir
+	landscape land/mfield4
+	description `Ziv'rahk'ashgrir is another major Kaltheim military base. Here, the climate is fairly temperate; the air temperature is only slightly above a typical human world. While there is a large civilian population here, they are, for the most part, the families of the Kaltheim soldiers stationed on the planet.`
+	description `	Unlike other major Kaltheim garrisons, Ziv'rahk'ashgrir has a fairly large shipbuilding industry in addition to the pure military features- presumably, the on-world shipbuilding is to allow the fleets stationed here to be replenished relatively quickly without needing to transfer forces from other parts of space.`
+	spaceport `The spaceport has a decent section of it devoted to the transfer of civilians to and from space; in fact, this area feels almost like a human spaceport, if it were not for the grey-skinned aliens walking around in place of humans.`
+	spaceport `	The rest of the spaceport is comprised of military buildings, planetary defences, and a few small ship construction lines.`
+	"required reputation" 500
