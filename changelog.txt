@@ -3,6 +3,7 @@
 
 -Added a few more systems for the Kaltheim; all that's left to do is to add a First Contact mission for them, I think. (And then ships)
 -Swapped some vanilla batteries for Enclave batteries in ships.
+-New Railgun image.
 
 
 05/07/16
