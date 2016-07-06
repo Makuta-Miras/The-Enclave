@@ -28,7 +28,7 @@ ship "Apollo"
 		"Fusion Reactor"
 		"Kindle-Class Power Pack"
 		"Conflagration-Class Power Pack"
-		"D23-QP Shield Generator"
+		"SLD-24 Shield Generator"
 		"SLD-95 Shield Generator"
 		"Liquid Helium Cooler"
 		"Large Radar Jammer"
@@ -73,7 +73,7 @@ ship Bloodhound
 		"heat dissipation" .7
 		"fuel capacity" 600
 		"cargo space" 20
-		"outfit space" 996
+		"outfit space" 800
 		"weapon capacity" 350
 		"engine capacity" 225
 		weapon
@@ -87,7 +87,7 @@ ship Bloodhound
 		"Heavy Anti-Missile Turret" 3
 		"Armageddon Core"
 		"Breeder Reactor"
-		"LP576a Battery Pack"
+		"Blaze-Class Power Pack"
 		"SLD-68 Shield Generator"
 		"Liquid Helium Cooler"
 		"A370 Atomic Thruster"
@@ -136,8 +136,8 @@ ship "Buzzard"
 		"HFS-8B1 Particle Cannon" 2
 		
 		"RT-I Radiothermal"
-		"LP036a Battery Pack"
-		"D23-QP Shield Generator"
+		"Spark-Class Power Pack"
+		"SLD-24 Shield Generator"
 		"Cooling Ducts"
 		
 		"Greyhound Plasma Thruster"
@@ -178,7 +178,7 @@ ship "Cheetah"
 	outfits
 		"nGVF-AA Fuel Cell"
 		"Spark-Class Power Pack"
-		"D23-QP Shield Generator"
+		"SLD-24 Shield Generator"
 		
 		"X2700 Ion Thruster"
 		"X2200 Ion Steering"
@@ -261,7 +261,7 @@ ship "Destroyer"
 		"Heavy Anti-Missile Turret" 1
 		
 		"NT-200 Nucleovoltaic"
-		"LP144a Battery Pack"
+		"Conflagration-Class Power Pack"
 		"SLD-42 Shield Generator"
 		
 		"X4700 Ion Thruster"
@@ -361,8 +361,8 @@ ship "Fregter"
 		"Quad Blaster Turret"
 		
 		"NT-200 Nucleovoltaic"
-		"LP072a Battery Pack"
-		"D23-QP Shield Generator"
+		"Kindle-Class Power Pack"
+		"SLD-24 Shield Generator"
 		
 		"Greyhound Plasma Steering"
 		"Greyhound Plasma Thruster"
@@ -408,12 +408,12 @@ ship "Leatherback"
 		"Laser Turret" 2
 		"Heavy Anti-Missile Turret" 2
 		
-		"LP144a Battery Pack"
+		"Conflagration-Class Power Pack"
 		Ramscoop 2
 		"Interference Plating" 2
 		"Large Radar Jammer"
 		"S3 Thermionic"	
-		"D23-QP Shield Generator"
+		"SLD-24 Shield Generator"
 		
 		"Scram Drive"
 		"X3700 Ion Thruster"
@@ -464,7 +464,7 @@ ship "Muesli Carrier"
 		"Heavy Anti-Missile Turret" 3
 		
 		"Fusion Reactor"
-		"LP288a Battery Pack"
+		"Blaze-Class Power Pack"
 		"SLD-95 Shield Generator"
 		"Water Coolant System"
 		
@@ -568,7 +568,7 @@ ship "Scorched Earth"
 		"Nuclear Missile MK 5"
 	
 		"nGVF-BB Fuel Cell"
-		"LP036a Battery Pack"
+		"Spark-Class Power Pack"
 		"SLD-24 Shield Generator"
 		
 		"Chipmunk Plasma Thruster"
@@ -611,7 +611,7 @@ ship "Sea Drake"
 				
 		"nGVF-DD Fuel Cell"
 		"Kindle-Class Power Pack"
-		"D23-QP Shield Generator"
+		"SLD-24 Shield Generator"
 		
 		"Greyhound Plasma Thruster"
 		"Greyhound Plasma Steering"
@@ -656,7 +656,7 @@ ship "Turbulence"
 		"X3700 Ion Thruster"
 		Hyperdrive
 		"X3200 Ion Steering"
-		"LP144a Battery Pack"
+		"Spark-Class Power Pack"
 		"RT-I Radiothermal"
 		"Small Radar Jammer" 2
 		"Water Coolant System"
