@@ -2,6 +2,7 @@
 06/07/16
 
 -Added a few more systems for the Kaltheim; all that's left to do is to add a First Contact mission for them, I think. (And then ships)
+-Swapped some vanilla batteries for Enclave batteries in ships.
 
 
 05/07/16
