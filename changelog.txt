@@ -1,4 +1,9 @@
 ------------------------------------------------------------------------  v0.0.6  -------------------------------------------------------------------------------
+06/07/16
+
+-Added a few more systems for the Kaltheim; all that's left to do is to add a First Contact mission for them, I think. (And then ships)
+
+
 05/07/16
 
 -Added the Polar Batteries.
