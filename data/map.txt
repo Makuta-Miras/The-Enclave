@@ -3109,6 +3109,8 @@ system "Pug Aerzyrnium"
 	asteroids "small metal" 1 6.4064
 	asteroids "medium metal" 6 2.7328
 	asteroids "large metal" 2 3.0464
+	fleet "Small Pug" 800
+	fleet "Large Pug" 2000
 	object
 		sprite star/m0
 		period 10
@@ -4731,6 +4733,7 @@ planet Termite
 	outfitter Ammo
 
 planet Ziv'rahk'ashgrir
+	attributes kaltheim
 	landscape land/mfield4
 	description `Ziv'rahk'ashgrir is another major Kaltheim military base. Here, the climate is fairly temperate; the air temperature is only slightly above a typical human world. While there is a large civilian population here, they are, for the most part, the families of the Kaltheim soldiers stationed on the planet.`
 	description `	Unlike other major Kaltheim garrisons, Ziv'rahk'ashgrir has a fairly large shipbuilding industry in addition to the pure military features- presumably, the on-world shipbuilding is to allow the fleets stationed here to be replenished relatively quickly without needing to transfer forces from other parts of space.`
