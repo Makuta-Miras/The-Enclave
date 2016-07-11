@@ -1,0 +1,174 @@
+mission "Enclave Small Escort"
+	name "Escort to <planet>"
+	description "The captain of the <npc> will pay you <payment> to escort their ship safely to <destination> by <date>."
+	repeat
+	job
+	deadline 8	
+	to offer
+		random < 70
+	source
+		government Enclave "XSZ Corporation"
+	destination
+		government Enclave "XSZ Corporation"
+		distance 2 3
+	npc
+		personality nemesis waiting
+		government Pirate
+		fleet
+			names "pirate"
+			variant
+				"Penguin"
+	npc accompany save
+		government Merchant
+		personality escort timid
+		fleet
+			names "civilian"
+			variant
+				"Cheetah"
+	on complete
+		payment 16000
+		dialog "The captain of the <npc> thanks you for escorting them safely, and pays you <payment>."
+		"reputation: Enclave" += 25
+	
+	on visit
+		dialog "You have reached <planet>, but you left the <npc> behind! Better depart and wait for them to arrive in this star system."
+		
+		
+mission "Enclave Med-Small Escort Fregter"
+	name "Escort to <planet>"
+	description "The captain of the <npc> will pay you <payment> to escort their ship safely to <destination> by <date>."
+	repeat
+	job
+	deadline 10
+	to offer
+		random < 60
+		"reputation: Enclave" >= 75
+	source
+		government Enclave "XSZ Corporation"
+	destination
+		government Enclave "XSZ Corporation"
+		distance 3 4
+	npc
+		personality nemesis waiting
+		government Pirate
+		fleet
+			names "pirate"
+			variant
+				"Penguin" 3
+	npc accompany save
+		government Merchant
+		personality escort timid
+		fleet
+			names "civilian"
+			variant
+				"Fregter"
+	on complete
+		payment 50000
+		dialog "The captain of the <npc> thanks you for escorting them safely, and pays you <payment>."
+		"reputation: Enclave" += 30
+			
+	on visit
+		dialog "You have reached <planet>, but you left the <npc> behind! Better depart and wait for them to arrive in this star system."
+		
+
+mission "Enclave Med-Small Escort Flurry"
+	name "Escort to <planet>"
+	description "The captain of the <npc> will pay you <payment> to escort their ship safely to <destination> by <date>."
+	repeat
+	job
+	deadline 10
+	to offer
+		random < 60
+		"reputation: Enclave" >= 75
+	source
+		government Enclave "XSZ Corporation"
+	destination
+		government Enclave "XSZ Corporation"
+		distance 3 4
+	npc
+		personality nemesis waiting
+		government Pirate
+		fleet
+			names "pirate"
+			variant
+				"Penguin" 3
+	npc accompany save
+		government Merchant
+		personality escort timid
+		fleet
+			names "civilian"
+			variant
+				"Flurry"
+	on complete
+		payment 50000
+		dialog "The captain of the <npc> thanks you for escorting them safely, and pays you <payment>."
+		"reputation: Enclave" += 30
+			
+	on visit
+		dialog "You have reached <planet>, but you left the <npc> behind! Better depart and wait for them to arrive in this star system."
+		
+		
+mission "Enclave Large Escort"
+	name "Escort to <planet>"
+	description "The captain of the <npc> will pay you <payment> to escort them safely to <destination> by <date>."
+	repeat
+	job
+	deadline 10
+	to offer
+		random < 50
+		"reputation: Enclave" >= 150
+	source
+		government Enclave "XSZ Corporation"
+	destination
+		government Enclave "XSZ Corporation"
+		distance 5 6
+	npc
+		personality nemesis waiting
+		government Pirate
+		fleet
+			names "pirate"
+			variant
+				"Turbulence"
+				"Buzzard" 2
+	npc
+		system destination
+		personality nemesis staying
+		government Pirate
+		fleet
+			names "pirate"
+			variant
+				"Bloodhound"
+	npc accompany save
+		government Merchant
+		personality escort timid
+		fleet
+			names "civilian"
+			variant
+				"Leatherback"
+	on complete
+		payment 150000
+		dialog "The captain of the <npc> thanks you for escorting them safely, and pays you <payment>."
+		"reputation: Enclave" += 40
+	
+	on visit
+		dialog "You have reached <planet>, but you left the <npc> behind! Better depart and wait for them to arrive in this star system."
+		
+		
+mission "Part 1 done"
+	landing
+	autosave
+	source
+		government Enclave
+	destination Lyfon
+	to offer
+		"reputation: Enclave" >= 500
+		has "First Contact: Enclave" done
+	on offer
+		conversation
+			`As you step off your ship, you receive what appears to be an official notification from the Enclave government-`
+			`	Captain <last>,
+			`	We have recently become aware of the services in aiding civilian ships which you have been providing, in a growing role to defeat interstellar piracy. As a reward for the voluntary aid which you have been dispensing, we have seen fit to award you a number of credits in order to compensate you for the money you have spent on your ships.`
+			`	Regards,`
+			`	The Enclave government`
+		payment 1000000
+		decline
