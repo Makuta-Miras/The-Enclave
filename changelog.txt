@@ -2,6 +2,7 @@
 14/07/16
 
 -Added the missions for stage 2 of Enclave Intro; the conversation for the final one still needs doing.
+-Fixed the First Contact missions to be congruous with the renamed missions from Enclave Opens.
 
 
 11/07/16
