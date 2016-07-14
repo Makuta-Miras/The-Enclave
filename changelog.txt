@@ -1,4 +1,9 @@
 ------------------------------------------------------------------------  v0.0.7  -------------------------------------------------------------------------------
+14/07/16
+
+-Added the missions for stage 2 of Enclave Intro; the conversation for the final one still needs doing.
+
+
 11/07/16
 
 -Added the first few missions for stage 1 of Enclave Intro.
