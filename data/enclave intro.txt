@@ -172,3 +172,155 @@ mission "Part 1 done"
 			`	The Enclave government`
 		payment 1000000
 		decline
+		
+		
+		
+mission "Enclave Freighter Escort [1]"
+	name "Escort to <planet>"
+	description "Escort the <npc> and their fleet to <destination> by <date>, where new shipbuilding facilities are being constructed."
+	repeat
+	job
+	deadline 10
+	to offer
+		random < 60
+		has "Part 1 done: offered"
+	source
+		government Enclave
+	destination Jumblar
+	npc
+		personality nemesis waiting
+		government Pirate
+		fleet
+			names "pirate"
+			variant
+				"Turbulence"
+				"Penguin" 3
+	npc
+		system 
+			distance 3 6
+		personality nemesis staying
+		government Pirate
+		fleet
+			names "pirate"
+			variant
+				"Bloodhound"
+				"Buzzard" 2
+	npc accompany save
+		government Enclave
+		personality escort timid
+		fleet	
+			names "republic capital"
+			variant
+				"Leatherback"
+				"Fregter" 3
+	
+	on complete
+		payment 500000
+		dialog "The captain of the <npc> thanks you for escorting them safely, and pays you <payment>."
+		"reputation: Enclave" += 50
+		
+		
+mission "Enclave Freighter Escort [0]"
+	name "Escort to <planet>"
+	description "Escort the <npc> and their fleet to <destination> by <date>, so that they can continue to ferry shipbuilding tools to <source>."
+	repeat
+	job
+	deadline 10
+	to offer
+		random < 60
+		has "Part 1 done: offered"
+	source Jumblar
+	destination Alleshafen
+	npc
+		personality nemesis waiting
+		government Pirate
+		fleet
+			names "pirate"
+			variant
+				"Turbulence"
+				"Penguin" 3
+	npc
+		system 
+			distance 3 6
+		personality nemesis staying
+		government Pirate
+		fleet
+			names "pirate"
+			variant
+				"Bloodhound"
+				"Buzzard" 2
+	npc accompany save
+		government Enclave
+		personality escort timid
+		fleet	
+			names "republic capital"
+			variant
+				"Leatherback"
+				"Fregter" 3
+	
+	on complete
+		payment 500000
+		dialog "The captain of the <npc> thanks you for escorting them safely, and pays you <payment>."
+		"reputation: Enclave" += 50
+	
+	on visit
+		dialog "You have reached <planet>, but you left the <npc> behind! Better depart and wait for them to arrive in this star system."
+		
+
+mission "Enclave Cargo [0]"
+	name "Delivery to <planet>"
+	job
+	repeat
+	description "Deliver <cargo> to <destination>. Payment is <payment>."
+	cargo "Metal" "Plastic" "Heavy Metals" "Electronics" "Industrial" 5 2 .1
+	to offer
+		random < 60
+	source
+		government Enclave
+	destination Jumblar
+	on complete
+		payment
+		payment 4000
+		dialog "You drop off your cargo of <commodity> and collect your payment of <payment>."
+		"reputation: Enclave" += 25
+		
+
+mission "Enclave Cargo [1]"
+	name "Delivery to <planet>"
+	job
+	repeat
+	description "Deliver <cargo> to <destination>. Payment is <payment>."
+	cargo "Garbage" "Equipment"   5 2 .1
+	to offer
+		random < 60
+	source Jumblar
+	destination
+		government Enclave
+	on complete
+		payment
+		payment 4000
+		dialog "You drop off your cargo of <commodity> and collect your payment of <payment>."
+		"reputation: Enclave" += 25
+		
+		
+mission "Part 2 done"
+	name "Go to <destination>"
+	landing
+	autosave
+	source
+		government Enclave
+	destination Lyfon
+	deadline 17
+	to offer
+		"reputation: Enclave" >= 1000
+		has "Part 1 done: done"
+	on offer
+		conversation
+			`As you step off your ship, you receive what appears to be another official notification from the Enclave government-`
+			`	Captain <last>,
+			`	Your recent work in helping to construct the new shipyards on Jumblar, in a far more proactive role than many other private captains who have been employed to do so, has brought you once again to the government's attention. As a result, you are hereby summoned to appear before Congress at any time before <date>.`
+			`	Regards,`
+			`	The Enclave government`
+	on complete
+		conversation
+			`conversationconversationconversationicantbebotheredyet`
