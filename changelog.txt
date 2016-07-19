@@ -1,4 +1,9 @@
 ------------------------------------------------------------------------  v0.0.7  -------------------------------------------------------------------------------
+19/07/16
+
+-Added the first mission for stage 3 of Enclave intro; give me a day or two and I'll have the next mission done, which will be the release for v0.0.7.
+
+
 14/07/16
 
 -Added the missions for stage 2 of Enclave Intro; the conversation for the final one still needs doing.
