@@ -185,7 +185,8 @@ mission "Enclave Freighter Escort [1]"
 		random < 60
 		has "Part 1 done: offered"
 	source
-		government Enclave
+		attributes enclave
+		attributes notjumblar
 	destination Jumblar
 	npc
 		personality nemesis waiting
@@ -222,7 +223,7 @@ mission "Enclave Freighter Escort [1]"
 		
 mission "Enclave Freighter Escort [0]"
 	name "Escort to <planet>"
-	description "Escort the <npc> and their fleet to <destination> by <date>, so that they can continue to ferry shipbuilding tools to <source>."
+	description "Escort the <npc> and their fleet to <destination> by <date>, so that they can continue to ferry shipbuilding tools to Jumblar."
 	repeat
 	job
 	deadline 10
@@ -275,8 +276,10 @@ mission "Enclave Cargo [0]"
 	cargo "Metal" "Plastic" "Heavy Metals" "Electronics" "Industrial" 5 2 .1
 	to offer
 		random < 60
+		has "Part 1 done: offered"
 	source
-		government Enclave
+		attributes enclave
+		attributes notjumblar
 	destination Jumblar
 	on complete
 		payment
@@ -293,6 +296,7 @@ mission "Enclave Cargo [1]"
 	cargo "Garbage" "Equipment"   5 2 .1
 	to offer
 		random < 60
+		has "Part 1 done: offered"
 	source Jumblar
 	destination
 		government Enclave
@@ -305,6 +309,7 @@ mission "Enclave Cargo [1]"
 		
 mission "Part 2 done"
 	name "Go to <destination>"
+	description "You have been summoned by the Enclave's government to appear before them before <date>."
 	landing
 	autosave
 	source
@@ -313,7 +318,7 @@ mission "Part 2 done"
 	deadline 17
 	to offer
 		"reputation: Enclave" >= 1000
-		has "Part 1 done: done"
+		has "Part 1 done: offered"
 	on offer
 		conversation
 			`As you step off your ship, you receive what appears to be another official notification from the Enclave government-`
@@ -321,6 +326,56 @@ mission "Part 2 done"
 			`	Your recent work in helping to construct the new shipyards on Jumblar, in a far more proactive role than many other private captains who have been employed to do so, has brought you once again to the government's attention. As a result, you are hereby summoned to appear before Congress at any time before <date>.`
 			`	Regards,`
 			`	The Enclave government`
-	on complete
+				accept
+	
+	
+mission "Part 3-1"
+	name "Enclave Espionage"
+	description "Fly through the Skryydr, Kaladesh, Ark and Maduras systems, then report to Alleshafen."
+	landing
+	autosave
+	source Lyfon
+	waypoint Skryydr
+	waypoint Kaladesh
+	waypoint Ark
+	waypoint Maduras
+	destination Alleshafen
+	to offer
+		has "Part 2 done: done"
+	on offer	
 		conversation
-			`conversationconversationconversationicantbebotheredyet`
+			`You make your way to the governmental buildings on Lyfon as soon as you land. You are thoroughly inspected by the security guards at the entrance- while, obviously, you do not carry any means of identification legal in this galaxy, they wave you past. Your laser pistol and any other weapons are confiscated for the duration of your visit, and after a short wait, you are shown into a cavernous, blank room.`
+			`	A group of ten or eleven Enclave officials are sitting before you, on the other side of a table. Rosalva is in the middle. "Captain <last>," she says, "please take a seat." You take the offered chair and listen as one of the others begins to talk.`
+			`	"Captain," he begins, in a high, reedy voice. "My name is Asmundur Olvirsson. Pleased to meet you." When you shake his hand, it is slightly clammy. Ew. You are greeted by the other officials on what appears to be the committee, each in turn, before Rosalva gets down to business.`
+			`	Stabbing her pen on the desk, Rosalva starts questioning you in a surprisingly interrogatorial manner- "Where do your allegiances lie back at home, Captain?"`
+			choice
+				`	"I am aligned with the Free Worlds, a group of systems in the south that recently broke away from the Republic in a regrettable civil war."`
+				`	"Technically I'm with the Free Worlds since there aren't story arcs for the others yet, but secretly I've always been loyal to the Republic."`
+				`	"Technically I'm with the Free Worlds since there aren't story arcs for the others yet, but secretly I've always been loyal to the Syndicate."`
+				`	"I'm a badass independent bounty hunter who 360 noscopes pirate scrubs all day long."`
+			`	Rosalva nods, scribbling something on her paper. This time, another of the officials asks you a question. "Captain, how comfortable would you be with carrying out a number of missions of dubious legality and no ability to disclose the fact that you had done them?"`
+			choice
+				`	"I'd tell someone straight away. No matter what, if something's illegal, it's my duty to the law not to go along with it."`
+				`	"I'd be fine with that because I'm a right-wing, elitist scumbag who doesn't believe in freedom of information."`
+			`	He replies only with a knowing smirk and a few curls of messy handwriting on a page of paper.`
+			`	Now, it's Olvirsson's turn- as he speaks, you notice a few beads of sweat crawling down the side of his forehead.`
+			`	"If given access to potentially planet-devastating weapons, Captain, would you use them in the name of defense, no matter how many lives would be lost in the process?"`
+			choice
+				`	"Yes, because I'm a psychopathic nationalist who couldn't care less about other people. Somewhat like Theresa May. Or Nigel Farage."`
+				`	"No. I don't believe weapons that powerful should ever be invented at any point; hell, even nukes are bad enough."`
+			`	Olvirsson nods, seemingly satisfied, and once again, Rosalva takes the reigns of the meeting. "Captain, as you have probably caught on to by now, we are currently in the midst of a cold war with the XSZ Corporation- they control the systems from Skryydr to Maduras. As, obviously, we cannot overtly spy on their major installations, such as the inner areas of Mirrodin, or their weapons testing areas on Crackle, we need someone disconnected from our intelligence services to do it."`
+			`	"And you're assuming that would be me?" you say in response.`
+			`	"Well, yes," Rosalva replies. "We are expressly trying to stop a war here- and one of the biggest reasons for that is because it will kill thousands, potentially even millions of people if we make a stupid decision. Since unlike the vast majority of merchants, you have military experience, in addition to being entirely unrelated to us, we thought you would be the best candidate to do this, <last>."`
+			choice
+				`	"Fine. But if I die, I'm blaming you."`
+					goto 1
+				`	"No. I don't care about your war, I never wanted to be part of it. Hell, I'm not even from this galaxy!"`
+			`	Rosalva shrugs. "I'm disappointed," she says. "I guess I expected more from the legendary <first> <last>." You are quickly shown out.`
+				event "MLGWAR"
+				decline
+			label 1
+			`	"Great!" Rosalva replies. "We need you to fly through Skryydr, Maduras, Kaladesh, and Ark. We'll install a tiny piece of hardware on your ship to allow us to read your sensor logs as you go. Once you're done, report to the planetary commander on Alleshafen. All good?"`
+			choice
+				`	"Yep!"`
+			`	"Fun times."`
+				accept
