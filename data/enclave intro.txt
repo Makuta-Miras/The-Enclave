@@ -331,7 +331,7 @@ mission "Part 2 done"
 	
 mission "Part 3-1"
 	name "Enclave Espionage"
-	description "Fly through the Skryydr, Kaladesh, Ark and Maduras systems, then report to Alleshafen."
+	description "Fly through the Skryydr, Kaladesh, Ark and Maduras systems, then report to Jumblar."
 	landing
 	autosave
 	source Lyfon
@@ -339,7 +339,7 @@ mission "Part 3-1"
 	waypoint Kaladesh
 	waypoint Ark
 	waypoint Maduras
-	destination Alleshafen
+	destination Jumblar
 	to offer
 		has "Part 2 done: done"
 	on offer	
@@ -374,8 +374,88 @@ mission "Part 3-1"
 				event "MLGWAR"
 				decline
 			label 1
-			`	"Great!" Rosalva replies. "We need you to fly through Skryydr, Maduras, Kaladesh, and Ark. We'll install a tiny piece of hardware on your ship to allow us to read your sensor logs as you go. Once you're done, report to the planetary commander on Alleshafen. All good?"`
+			`	"Great!" Rosalva replies. "We need you to fly through Skryydr, Maduras, Kaladesh, and Ark. We'll install a tiny piece of hardware on your ship to allow us to read your sensor logs as you go. Once you're done, report to the planetary commander on Jumblar. All good?"`
 			choice
 				`	"Yep!"`
 			`	"Fun times."`
 				accept
+	on complete
+		event "MLGWAR"
+
+
+mission "Part 3-2"
+	name "Defend Innenheim"
+	description "Destroy the XSZ fleets which have entered the system."
+	landing
+	autosave
+	source Jumblar
+	destination Jumblar
+	to offer
+		has "Part 3-1: done"
+	on offer
+		conversation
+			`As soon as you land on Jumblar, you report to the garrison. After a short wait, you are ushered into a small, cramped office with a flickering lightbulb and dubiously stable walls.`
+			`	You hand the data over to the commander, who tucks the data chip away in what you assume is a safe drawer. "Excellent work, Captain," he says, shaking your hand. "This will begin to give us an idea of how much XSZ have stepped up their weapons production- the reports we were receiving from our moles in XSZ were somewhat worrying, to say the least, until the information stopped flowing about a month ago." You nod in response. The commander appears to be about to say something else, but suddenly, he is interrupted by a blaring siren. The lights go red.`
+			`	The commander's face goes pale. "Come with me, quick," he says. After a short walk- well, more like a run- down the corridor, you step into what appears to be a large communications center; huge banks of computers line the walls, with military personnel sitting at them speaking rapidly into their headsets. Almost as soon as you enter, a presumably low-ranking serviceman runs up to you and the commander. "Sir," she begins, with a slight tremor in her voice. "XSZ ships have been detected entering the system. They've taken Perihelion and New Asgard, and they appear to have nuclear capabilities."`
+			`	He nods slightly. "Captain <last>?" the commander says.`
+			choice
+				`	"Yes?"`
+				`	"No, I'm not doing anything for you, I swear."`
+			`	"We need you for this," he begins. "I'm sure you've been hired for planetary defense missions before?"`
+			choice
+				`	"Of course, but I still don't want to help with this."`
+					goto 1
+				`	"Obviously. I'll help with the defense."`
+			label yay
+			`	"Great," the commander replies. "Get to your ship and prepare for takeoff. You-" he turns to another officer- "launch everything we have. Start raising the shields on the ground, too, although I doubt we'll have time for them to do much if XSZ decide to start orbital bombardment." The officer nods and scurries away, and you are left to prepare for the battle.`
+				launch
+			label 1
+			`	"You'll have to fight through them anyway," the commander says. "So again- will you at least fight alongside us? We'll pay you."`
+			choice
+				`	"Fine, I'll help."`
+					goto yay
+				`	"No. I'm not risking my life for you."
+					goto 1
+	on accept
+		"reputation: XSZ Corporation" = -100
+		
+	npc kill
+		personality vindictive
+		system Fallout
+		government "XSZ Corporation"
+		fleet
+			names "syndicate capital"
+			variant
+				"Bloodhound" 5
+				"Turbulence" 10
+				"Turbulence (Nuclear)" 2
+		fleet
+			names "syndicate small"
+			variant
+				"Buzzard" 20
+		fleet
+			names "kor sestor fighter"
+			variant
+				"Scorched Earth" 5
+	npc kill
+		personality heroic
+		system Innenheim
+		government "Enclave"
+		fleet
+			names "republic capital"
+			fighters "republic fighter"
+			variant
+				"Muesli Carrier" 3
+				"Apollo" 5
+				"Dart" 38
+				"Enclave Lance" 8
+		fleet
+			names "republic small"
+			variant
+				"Sea Drake" 15
+				"Penguin" 20
+				"Destroyer" 10
+	on complete
+		dialog
+			`The XSZ ships have been defeated. But now, in this once-peaceful area of human civilisation, war has broken out- just like in your own galaxy. What does the future hold? Only time will tell... (Next part of the story is coming in v0.0.8)`
+		payment 500000
