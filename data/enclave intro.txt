@@ -437,8 +437,8 @@ mission "Part 3-2"
 			names "kor sestor fighter"
 			variant
 				"Scorched Earth" 5
-	npc kill
-		personality heroic
+	npc
+		personality heroic vindictive
 		system Innenheim
 		government "Enclave"
 		fleet
