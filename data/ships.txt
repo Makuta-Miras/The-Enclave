@@ -565,7 +565,7 @@ ship "Scorched Earth"
 			"hull damage" 60
 			"hit force" 180
 	outfits		
-		"Nuclear Missile MK 5"
+		"Nuclear Missile"
 	
 		"nGVF-BB Fuel Cell"
 		"Spark-Class Power Pack"
