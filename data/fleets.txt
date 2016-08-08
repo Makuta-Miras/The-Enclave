@@ -138,3 +138,19 @@ fleet "XSZ Large"
 		"Bloodhound" 5
 		"Turbulence" 10
 		"Buzzard" 15
+		
+fleet "Scorched Earth"
+	government "XSZ Corporation"
+	names "kor sestor fighter"
+	personality
+		vindictive
+	variant 100
+		"Scorched Earth" 3
+
+fleet "XSZ Nuclear"
+	government "XSZ Corporation"
+	names "syndicate capital"
+	personality
+		vindictive
+	variant 100
+		"Turbulence (Nuclear)"
