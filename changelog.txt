@@ -1,4 +1,17 @@
 ------------------------------------------------------------------------  v0.0.7  -------------------------------------------------------------------------------
+07/08/16
+
+-Moved the XSZ reputation line from events.txt to enclave intro.txt.
+-Finished off the Jumblar defence mission.
+-Removed the "Nuclear Missile MK 5" outfit from ships; I'll leave it in the file to avoid bugs with anyone who's managed to get their hands on one.
+
+
+06/08/16
+
+-Added a few more lines of text to the last mission for v0.0.7.
+-Expanded the MLGWAR event to implement nuclear XSZ fleets and to make sure the player's reputation with XSZ becomes negative upon commencement of the war.
+
+
 19/07/16
 
 -Added the first mission for stage 3 of Enclave intro; give me a day or two and I'll have the next mission done, which will be the release for v0.0.7.
