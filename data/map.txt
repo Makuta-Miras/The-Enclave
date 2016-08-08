@@ -4193,7 +4193,7 @@ planet Affalan
 	description `	This eerie atmosphere is the result of extreme amounts of nuclear and biological weapons testing. When XSZ first began developing its nuclear arsenal, they needed somewhere to test, somewhere with a relatively normal ecosystem which was fairly uninhabited. Affalan was chosen, and a century later, the environment is so irradiated that you dare not step outside your ship without an extremely heavy radiation suit.`
 
 planet Alleshafen
-	attributes enclave
+	attirbutes enclave notjumblar
 	landscape land/nasa1
 	description `This planet is the home of the Enclave's largest ship manufacturing centres, much like Geminus in the Republic. While it is a relatively old world, the crust is composed mostly of very heavy metals and rocks, and so handily, the lighter metals which are useful for shipbuilding are found very near to the surface.`
 	description `	Much of the land on Alleshafen, however, is relatively infertile, and as it seems that many types of life beyond basic plants have never developed, clothing, plastics and food are at a premium here.`
@@ -4211,7 +4211,7 @@ planet Alleshafen
 	outfitter Basicness
 
 planet Arikv
-	attributes enclave
+	attirbutes enclave notjumblar
 	landscape land/hills4
 	description `Arikv was settled only fairly recently, according to the locals- the terraforming process is still continuing, which explains the humid conditions, and a decent part of the planet is still uncharted.`
 	description ` However, this planet still boasts a shipyard and a comprehensive outfitter- doubtless due to its strategic position between XSZ and Enclave territory.`
@@ -4226,7 +4226,7 @@ planet Arikv
 	outfitter Ammo
 
 planet Bantilium
-	attributes enclave
+	attirbutes enclave notjumblar
 	landscape land/forest5
 	description `Bantilium is mainly covered by large areas of primeval woodland, gnarled trees that reach far too high into the sky. While little of the planet has been explored thus far, it appears to have a unique ecosystem whereby life has evolved from silicon-based compounds, instead of carbon-based compounds like humans. As a result, you and other non-scientists are restricted to the spaceport village.`
 	spaceport `The spaceport and the surrounding town is enclosed by a glass dome, presumably to prevent waste gases from leaking out into the otherwise breathable atmosphere. While this is somewhat of an inconvenience, the inhabitants are nothing but hospitable, and despite this planet's status as a scientific outpost, it feels very much as though this is a true community.`
@@ -4236,7 +4236,7 @@ planet Bantilium
 	security 0
 
 planet Bilbo
-	attributes enclave
+	attirbutes enclave notjumblar
 	landscape land/canyon5
 	description `As with the planet below, Bilbo was named after a character from 'The Lord of the Rings'. This time, however, this moon was named "Bilbo" due to its odd similarity to the far eastern areas of Middle-Earth, to which the moon's namesake travelled during The Lord of the Rings' prequel. As a result, much of the terrain is tough and mountainous- perfectly suited to the dwarves of fantasy legend.`
 	spaceport `The spaceport is built into a lone mountain, a massive hive of tunnels extending throughout the edifice. Ships take off and land from landing pads suspended upon the sides of the mountain.`
@@ -4251,7 +4251,7 @@ planet Brun'ily'rhasunx
 	"required reputation" 500
 
 planet Carmine
-	attributes enclave
+	attirbutes enclave notjumblar
 	landscape land/city4
 	description `Carmine is a well-settled world, with thriving cities on every continent. It is also home to the galaxy's central bank.`
 	description `	Pollution is a growing problem on Carmine; while it was originally perfect for human habitation worldwide, five hundred years of human occupation and industrialisation are beginning to increase global temperatures. As a result, many equatorial areas are growing more arid every year, and bleaching events on the planet's legendary coral reefs are becoming more and more common.`
@@ -4307,7 +4307,7 @@ planet Cromerium
 	outfitter Ammo
 
 planet Cygite
-	attributes enclave
+	attirbutes enclave notjumblar
 	landscape land/mountain5
 	description `Cygite is a mostly barren moon, with little to its name but a number of useful elements within its crust. That's quite honestly it. It's a complete backwater, both technologically and socially, despite it being in the same system as Lyfon.`
 	security 0
@@ -4328,7 +4328,7 @@ planet Cynic
 	outfitter "Medium Engines"
 
 planet Emeria
-	attributes enclave
+	attirbutes enclave notjumblar
 	landscape land/fields1
 	description `Emeria is one of the most discontent worlds in the galaxy. Poor enough that its population has no hope of ever leaving, most education beyond the age of eleven is nonexistent here. What's more, despite this system's relative proximity to Lyfon, the Enclave's capital, it is in fact well over two weeks' hyperspace travel away, making this one of the most remote and under-represented systems in the galaxy.`
 	spaceport `The spaceport is a solid, unexciting structure built of blood-red bricks. The landing pads are packed earth, and although the refueling facilities are existent, only a few fuel hoses actually work.`
@@ -4370,7 +4370,7 @@ planet Forefather
 	outfitter Ammo
 
 planet Frodo
-	attributes enclave
+	attirbutes enclave notjumblar
 	landscape land/water2
 	description `When the first settlers landed on Frodo, they found the habitable zones of the planet to be remarkably similar to the "Shire" from 'The Lord of the Rings', an infamous book from the 20th century. As a result, they decided to name the planet Frodo, after the book's main character.`
 	description `	While most of the population here consists of farmers, taking care of and managing the countryside and living in rustic homes, a surprisingly large percentage of inhabitants find this world as dull as an old, musty sock, and are scraping together all the money they can possibly find to leave this planet far behind.`
@@ -4404,7 +4404,7 @@ planet Helheim
 		fleet "Small Deep" 15
 
 planet Idivine
-	attributes enclave
+	attirbutes enclave notjumblar
 	landscape land/badlands5
 	description `Idivine is a major manufacturing world- as such, it happens to be the second most notable planet in the system, after Lyfon. It is here that most of the Enclave's military-grade weapons and other outfits are constructed. Due to the prominent absence of housing on this planet, the governing authorities run an extensive shuttle program, whereby every weekend workers from Idivine can be ferried back to their homes on Lyfon, free of charge.`
 	spaceport `There are a number of landing pads here reserved exclusively for the fleet of Flurries and Cheetahs used by the Enclave to move its personnel from here to Lyfon and back again.`
@@ -4461,7 +4461,7 @@ planet Jumblar
 	outfitter Ammo
 
 planet Korine
-	attributes enclave
+	attirbutes enclave notjumblar
 	landscape land/bwerner5
 	description `Korine is an idyllic, sparsely populated planet which is mostly covered by holiday homes belonging to rich individuals. While the climate is not amazingly tropical, average global temperatures lie slightly higher than average. The days on Korine are long, and while there are next to no major tides due to the absence of any moons, seaside retreats are still popular among the part-time residents.`
 	description `	The self-indulgence which Korine symbolises is a source of much dissatisfaction among poorer worlds in Enclave space.`
@@ -4494,7 +4494,7 @@ planet Latent
 	outfitter Ammo
 
 planet Lyfon
-	attributes enclave
+	attirbutes enclave notjumblar
 	landscape land/mountain9
 	description `Lyfon is the capital of the Enclave, named after the Enclave's first leader. While Lyfon is, admittedly, not the most hospitable of planets, the habitable regions around the equator as well as the apparently vast amounts of natural resources contained within the planet allowed it to quickly develop into the safest planet in Enclave space.`
 	description ` Lyfon's system, Five, is named as such due to its astonishing five hospitable planets.`
@@ -4530,14 +4530,14 @@ planet Magna
 	outfitter "Medium Engines"
 
 planet Mein
-	attributes enclave
+	attirbutes enclave notjumblar
 	landscape land/snow11-sfiera
 	description `Mein is an icy world of blizzards and fog, where very few organisms can thrive. Despite this, a surprisingly large number of enterprising colonists set up a few towns a number of centuries ago, and they are still struggling on through the endless snow.`
 	description `	Mein is in the process of being accelerated towards its star through a gravitational slingshot effect provided by one of its planetary neighbours. This is slowly beginning to warm the planet's climate, although it may still take hundreds of years for Mein to be truly habitable.`
 	spaceport `Your ship landed in the midst of a snowstorm, and you could hardly see where you were going as you ran inside with your crew. There appear to be very few people in this spaceport, little more than a skeleton staff, and while you know that you are safe inside from the ferocious winds, you cannot help but look around nervously whenever you hear the steel frame of the spaceport creak.`
 
 planet Memorandum
-	attributes enclave
+	attirbutes enclave notjumblar
 	landscape land/city2
 	description `Memorandum is a very "normal" world. The climate is stable and fairly warm, days are similar to those on Earth, and many of the inhabitants work in simple, boring office jobs which pay decently but are ultimately unexciting. The population is relatively low, too, although oddly enough, most families are in a very similar wealth band; poverty is mostly unheard of, and yet wild amounts of wealth is too.`
 	description `	Very few people you meet have high aspirations for leaving the planet.`
@@ -4570,7 +4570,7 @@ planet Mirrodin
 	security 0
 
 planet "New Asgard"
-	attributes enclave
+	attirbutes enclave notjumblar
 	landscape land/desert2
 	description `New Asgard is a relatively small moon, although despite this it is still able to hold onto a thick, breathable atmosphere. Much of the moon is desert, although some areas near the highest mountains do receive enough rain to allow them to become well-forested. The oceans here have enormous tide differences due to the gas giant above, and as a result, most seaside settlements are practically built inside glass domes reinforced with titanium so that they can survive the inrush of water at high tide.`
 	description `	Despite the relative absence of natural resources, New Asgard is still fairly rich due to the tourism industry- many people come here simply to experience the awe of waking up to see the face of a gas giant staring down at them.`
@@ -4583,7 +4583,7 @@ planet "New Asgard"
 	outfitter Ammo
 
 planet "New Scotland"
-	attributes enclave
+	attirbutes enclave notjumblar
 	landscape land/desert8-sfiera
 	description `New Scotland is a world consisting of scrubland and low mountain ranges, for the most part; it is an old world, where tectonic activity is beginning to die down. As a result of the decrease in tectonic activity, the planet's magnetoshpere is also slowly weakening. This in turn increases the amount of radiation falling on the surface, making the inhabitants much more likely to develop cancerous growths as they age.`
 	description `	Most families live on isolated farms in the foothills; it would be even harder to get supplies to them if they were in the mountains proper, and the deep wastes are rumoured to contain dreadful horrors of the sands.`
@@ -4601,7 +4601,7 @@ planet Oro'alein'platrez
 	"required reputation" 500
 
 planet Ortite
-	attributes enclave
+	attirbutes enclave notjumblar
 	landscape land/desert1
 	description `This is a somewhat deprived world, consisting of deserts for the most part, albeit with a few tropical regions around the poles. Most of the population is employed in hard labour, gathering sand from the deserts for extravagant artificial beaches on richer worlds or manufacturing basic farming equipment for other worlds. There is also a thriving petrochemicals industry here, based on extracting oil from beneath the expansive, more low-lying deserts.`
 	description `	As there is very little liquid water here, the few settlers who have not been forced into the industrialised drudgery that most have have been able to develop some intriguing technology designed to collect water vapour from areas miles wide and then condense it. This water is then sold to the local government to allow some standard of running water to exist in the cities.`
@@ -4616,7 +4616,7 @@ planet Ortite
 	security 0
 
 planet Perihelion
-	attributes "xsz enclave"
+	attributes enclave"
 	landscape land/sea10-sfiera
 	description `Perihelion is a surprisingly Earth-like world- although, of course, there are very few records remaining in the Tyridium galaxy of what actually constitutes Earth-like. This is a world hotly contested by XSZ- it has very little axial tilt, and almost perfect weather. `
 	description `	XSZ-funded surveys have found that there are enormous oil and gas fields beneath the oceans of Perihelion. Despite XSZ's numerous appeals to the Enclave government to allow them to mine the fuels here, the Enclave has refused, every time.`
@@ -4657,7 +4657,7 @@ planet Puggleswap
 	spaceport T
 
 planet Quaver
-	attributes enclave
+	attirbutes enclave notjumblar
 	landscape land/city17-sfiera
 	description `Quaver has been heavily urbanised since its settlement a little more than five centuries ago. As a world with relatively low-lying land, the risk of flooding is always a possibility, although thankfully due to the absence of many mountains, the weather is usually predictable.`
 	description `	While it is one of the richest planets in the galaxy, Quaver is actually home to relatively few billion, or even millionaires, as its massive wealth comes from its status as one of the primary trading planets away from the heart of Enclave space. As a result, there is a very well-funded welfare programme for inhabitants of the planet, which includes a universal basic income, something entirely unheard of in the Republic.`
@@ -4677,7 +4677,7 @@ planet Quaver
 		fleet "Small Militia" 25
 
 planet Saal
-	attributes enclave
+	attirbutes enclave notjumblar
 	landscape land/hills2
 	description `Saal is an idyllic farming world, entirely at contrast with most of the other human residents of this galaxy, who seem to act very similarly to the humans of the Deep. Most power generation facilities, instead of using fusion or fission to generate electricity, are in fact wind-powered.`
 	description `	There are a number of surprisingly feral species here, including subspecies of cows and horses.`
@@ -4689,14 +4689,14 @@ planet Saal
 	outfitter Ammo
 
 planet Scalpel
-	attributes enclave
+	attributes indienclave
 	landscape land/sea1
 	description `Scalpel is home to a single isolated colony, a group of hardy people who are willing to live out here, three days' travel away from any other inhabited system. Much of this world is uncharted; the colonists have only mapped the areas within 500 miles of the settlement.`
 	description `	Some explorers who have ventured beyond the 500 mile radius which maps cover say that they have discovered ruins, artifacts of previous civilisations, and the remains of ships, although many that they tell are pretty sure they're just high.`
 	spaceport `The spaceport on Scalpel can barely be called that; it is little more than a large clearing with some landing pads of packed dirt a mile or two out from the main settlement.`
 
 planet Seminar
-	attributes enclave
+	attirbutes enclave notjumblar
 	landscape land/nasa4
 	description `I think when they named this planet, the idea was to have it be home to some of the greatest educational and scientific institutes in the whole galaxy.`
 	description `	Yeah, that never happened. Instead, when some amazing narcotic plants were discovered here, the central galactic government didn't find out about them until it was social norm on Seminar to use substances derived from these plants every. Single. Day. As a result, this is one of the happiest planets in Enclave space.`
@@ -4706,7 +4706,7 @@ planet Seminar
 	spaceport `	Most of the spaceport facilities appear to be automated, likely to prevent security guards who may or may not be in full control of their mental faculties from making bad decisions which could end in lots of people dying.`
 
 planet Tarkir
-	attributes enclave
+	attirbutes enclave notjumblar
 	landscape land/badlands2
 	description `Tarkir is a relatively flat, boring world. Covered in badlands and the occasional ocean or forest, not many people live here- and with good reason.`
 	description `	Somehow, Tarkir is populated by creatures very similar to the dragons of Skymoot, back in Free Worlds space. These "dragons", however, are far more aggressive than those found on Skymoot, and are known to attack settlements regularly. Despite this, there is a strong cultural tradition among the locals who believe that any pilot aspiring to join the planetary militia must fight off a dragon attack on their own, shipless, before they are deemed worthy of the title.`

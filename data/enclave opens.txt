@@ -1,4 +1,4 @@
-mission "Enclave Intro 1A"
+mission "Enclave Opens 1A"
 	name "Muster the Fleet"
 	description "Travel to Bourne in the Gamma Corvi system to inform the Free Worlds Senate of Parliament's decision to request a Free Worlds fleet accompany the Navy into the system just off of Suhail."
 	landing
@@ -94,7 +94,7 @@ mission "Enclave Intro 1A"
 			`You have arrived on Bourne. Time to go and see the Senate.`
 			
 			
-mission "Enclave Intro 1B"
+mission "Enclave Opens 1B"
 	name "Protest against Parliament"
 	description "Travel to Earth in order to protest against Parliament's decision to request that a Free Worlds fleet accompanies the Navy."
 	landing
@@ -103,9 +103,9 @@ mission "Enclave Intro 1B"
 	destination Earth
 	
 	to offer
-		has "Enclave Intro 1A: offered"
-		not "Enclave Intro 1A: active"
-		not "Enclave Intro 1A: done"
+		has "Enclave Opens 1A: offered"
+		not "Enclave Opens 1A: active"
+		not "Enclave Opens 1A: done"
 		
 	on complete
 		conversation
@@ -113,7 +113,7 @@ mission "Enclave Intro 1B"
 			`	You are told to wait a few days for your request to be processed, then you will be notified when Parliament is willing to hear from you.`
 			
 
-mission "Enclave Co-Op 1A"
+mission "Enclave Opens 2Aa"
 	name "Travel to the Suhail system"
 	description "Travel to Helheim in the Suhail system, where you can meet up with the Navy divisions that your fleet is to accompany."
 	autosave
@@ -122,9 +122,8 @@ mission "Enclave Co-Op 1A"
 	
 	to offer
 		or
-			has "Enclave Intro 1A: done"
-			has "Enclave Defiance 3A: done"
-		not "event: Co-Op 1B"
+			has "Enclave Opens 1A: done"
+			has "Enclave Opens 4Ba: done"
 		
 	on offer
 		conversation
@@ -188,7 +187,7 @@ mission "Enclave Co-Op 1A"
 				"Dreadnought"
 
 				
-mission "Enclave Co-Op 1B"
+mission "Enclave Opens 2Ab"
 	name "Travel to the Suhail system"
 	description "Travel to Helheim in the Suhail system, where you can meet up with the Navy divisions that you and your fleet are to accompany."
 	autosave
@@ -196,9 +195,9 @@ mission "Enclave Co-Op 1B"
 	destination Helheim
 	
 	to offer
-		has "Enclave Co-Op 1A: offered"
-		not "Enclave Co-Op 1A: active"
-		not "Enclave Co-Op 1A: done"
+		has "Enclave Opens 2Aa: offered"
+		not "Enclave Opens 2Aa: active"
+		not "Enclave Opens 2Aa: done"
 		
 	on complete
 		dialog
@@ -206,7 +205,7 @@ mission "Enclave Co-Op 1B"
 		event "enclave opens"
 
 
-mission "Enclave Co-Op 2A"
+mission "Enclave Opens A"
 	name "Investigate the Xenos system"
 	description "Upgrade your ships, then, along with the Navy fleets, investigate the system to which a hyperspace link has recently opened. Once you're done, report back to Helheim."
 	autosave
@@ -216,8 +215,8 @@ mission "Enclave Co-Op 2A"
 	
 	to offer
 		or
-			has "Enclave Co-Op 1A: done"
-			has "Enclave Defiance 3A: done"
+			has "Enclave Opens 2Aa: done"
+			has "Enclave Opens 4Ba: done"
 		
 	on offer
 		conversation
@@ -363,7 +362,7 @@ mission "Enclave Co-Op 2A"
 		payment 100000
 			
 			
-mission "Enclave Co-Op 2B"
+mission "Enclave Opens B"
 	name "Investigate the Xenos system"
 	description "Upgrade your ships, then, along with the Navy fleets, investigate the system to which a hyperspace link has recently opened. Once you're done, report back to Helheim."
 	autosave
@@ -372,7 +371,7 @@ mission "Enclave Co-Op 2B"
 	
 	to offer
 		or
-			has "Enclave Co-Op 1B: done"
+			has "Enclave Opens 2Ab: done"
 			has "Enclave Defiance 3B: done"
 		
 	on offer
@@ -496,9 +495,9 @@ mission "Enclave Co-Op 2B"
 		payment 100000
 		
 		
-mission "Enclave Defiance 1"
+mission "Enclave Opens 2B"
 	name "Return to Earth"
-	description "Return to Earth in the Sol system, where Parliament is willing to listen to your objections "
+	description "Return to Earth in the Sol system, where Parliament is willing to listen to your objections."
 	landing
 	autosave
 	source 
@@ -506,7 +505,7 @@ mission "Enclave Defiance 1"
 	destination "Earth"
 	
 	to offer
-		has "Enclave Intro 1B: done"
+		has "Enclave Opens 1B: done"
 		not "Enclave Co-Op 1A: active"
 		not "Enclave Co-Op 1B: active"
 		not "Enclave Co-Op 1A: done"
@@ -518,7 +517,7 @@ mission "Enclave Defiance 1"
 			`You receive an official message, apparently from Parliament. "Captain <last>, your request for a hearing before Parliament has been accepted. Please report to the Houses of Parliament on Earth."`
 
 
-mission "Enclave Defiance 2"
+mission "Enclave Opens 3B"
 	name "Muster the Fleet"
 	description "Travel to Bourne in the Gamma Corvi system to inform the Free Worlds Senate of Parliament's decision to request a Free Worlds fleet accompany the Navy into the system just off of Suhail."
 	autosave
@@ -526,7 +525,7 @@ mission "Enclave Defiance 2"
 	destination Bourne
 	
 	to offer
-		has "Enclave Defiance 1: done"
+		has "Enclave Opens 2B: done"
 		
 	on offer
 		conversation
@@ -577,7 +576,7 @@ mission "Enclave Defiance 2"
 		dialog `You have arrived on Bourne. Time to go and see the Senate.`
 
 			
-mission "Enclave Defiance 3A"
+mission "Enclave Opens 4Ba"
 	name "Travel to the Suhail system"
 	description "Travel to Helheim in the Suhail system, where you can meet up with the Navy divisions that your fleet is to accompany."
 	landing
@@ -586,7 +585,7 @@ mission "Enclave Defiance 3A"
 	destination Helheim
 	
 	to offer
-		has "Enclave Defiance 2: done"		
+		has "Enclave Opens 3B: done"		
 		
 	on offer
 		conversation
@@ -650,7 +649,7 @@ mission "Enclave Defiance 3A"
 				"Dreadnought"
 
 				
-mission "Enclave Defiance 3B"
+mission "Enclave Opens 4Bb"
 	name "Travel to the Suhail system"
 	description "Travel to Helheim in the Suhail system, where you can meet up with the Navy divisions that you and your fleet are to accompany."
 	landing
@@ -659,9 +658,9 @@ mission "Enclave Defiance 3B"
 	destination Helheim
 	
 	to offer
-		has "Enclave Defiance 3A: offered"
-		not "Enclave Defiance 3A: done"
-		not "Enclave Defiance 3A: active"	
+		has "Enclave Opens 4Ba: offered"
+		not "Enclave Opens 4Ba: done"
+		not "Enclave Opens 4Ba: active"	
 			
 	on complete
 		dialog

@@ -9,11 +9,11 @@ ship "Pug Arfecta" "Arfecta (De-Cloaked)"
 		"Pug Lohmar Steering"
 		"Pug Lohmar Steering"
 		"Jump Drive"
-		
+
 		
 ship "Lance" "Enclave Lance"
 	description "The Enclave's variant on the Lance was initially developed during the war against the Ascendancy, strangely mirroring the one used by the Republic Navy. However, the Enclave is now beginning to phase the Lance out, in favour of the more agile Dart."
-	
+
 	
 ship "Scout" "Enclave Scout"
 	description "The original Scouts were first brought to the Tyridium galaxy along with the first settlers, and the design has changed very little since."
@@ -32,14 +32,14 @@ ship "Turbulence" "Turbulence (Nuclear)"
 		"Small Radar Jammer" 2
 		"Water Coolant System"
 		"D67-TM Shield Generator"
-		"Nuclear Missile MK 5" 8
-	gun 8.75 -100 "Nuclear Missile MK 5"
-	gun -10.25 -100 "Nuclear Missile MK 5"
-	gun -15.25 -93 "Nuclear Missile MK 5"
-	gun 13.75 -93 "Nuclear Missile MK 5"
-	gun -33.25 -12.5 "Nuclear Missile MK 5"
-	gun 31.75 -12.5 "Nuclear Missile MK 5"
-	gun 37.75 16 "Nuclear Missile MK 5"
-	gun -39.25 16 "Nuclear Missile MK 5"
+		"Nuclear Missile" 8
+	gun 8.75 -100 "Nuclear Missile"
+	gun -10.25 -100 "Nuclear Missile"
+	gun -15.25 -93 "Nuclear Missile"
+	gun 13.75 -93 "Nuclear Missile"
+	gun -33.25 -12.5 "Nuclear Missile"
+	gun 31.75 -12.5 "Nuclear Missile"
+	gun 37.75 16 "Nuclear Missile"
+	gun -39.25 16 "Nuclear Missile"
 	description "This is XSZ Corporation's most dangerous ship- the nuclear-armed Turbulence."
 	description "	Eschewing traditional weaponry in favour of nukes, this variation on the Turbulence is, to be honest, pretty bloody terrifying to be facing."

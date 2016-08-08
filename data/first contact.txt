@@ -6,8 +6,8 @@ mission "First Contact: Enclave"
 	destination Arikv	
 	to offer
 		or
-			has "Enclave Co-Op 2A: done"
-			has "Enclave Co-Op 2B: done"
+			has "Enclave Opens A: done"
+			has "Enclave Opens B: done"
 	on offer
 		conversation
 			`The landing pad is deserted as your ship touches down, yet as you walk out into this world in a new galaxy, surprisingly, a group of humans exit the main spaceport building and begin walking towards you.`
@@ -62,8 +62,8 @@ mission "First Contact: Kaltheim"
 	destination Arikv	
 	to offer
 		or
-			has "Enclave Co-Op 2A: done"
-			has "Enclave Co-Op 2B: done"
+			has "Enclave Opens A: done"
+			has "Enclave Opens B: done"
 	on offer
 		"reputation: Kaltheim" = 500
 		conversation
@@ -115,4 +115,4 @@ mission "First Contact: Kaltheim"
 				`	"Can I leave now?"`
 			label end
 			`	"Of course," the Kaltheim replies, standing and opening the door for you. As you get up, the alien removes the restraints holding your hands in place. "Feel free to visit our other worlds, although we will not allow you access to our technology or ships."`		
-				decline
+				decline		
