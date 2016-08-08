@@ -42,3 +42,56 @@ event "MLGWAR"
 		description `Everything here is restricted now. It seems that mercenaries employed by XSZ are now guarding everything, enforcing peace.`
 		description `	There are already drilling machines being assembled out at sea.`
 		spaceport `The spaceport appears to have been closed; clearly XSZ do not want anyone interfering.`
+	system Skryydr
+		fleet Trader 600
+		fleet Transporter 600
+		fleet "XSZ Small" 300
+		fleet "XSZ Large" 400
+		fleet "Scorched Earth" 475
+		fleet "XSZ Nuclear" 950
+	system Orff
+		fleet Trader 700
+		fleet Transporter 700
+		fleet "XSZ Small" 800
+		fleet "Scorched Earth" 475
+		fleet "XSZ Nuclear" 950
+	system Ark
+		fleet Trader 700
+		fleet Transporter 700
+		fleet "XSZ Small" 1400
+		fleet "Scorched Earth" 475
+		fleet "XSZ Nuclear" 950		
+	system Kaladesh
+		fleet Trader 600
+		fleet Transporter 600
+		fleet "XSZ Small" 800
+		fleet "XSZ Large" 600
+		fleet "Scorched Earth" 475
+		fleet "XSZ Nuclear" 950
+	system Finitum
+		fleet Trader 1200
+		fleet Transporter 1200
+		fleet "XSZ Small" 2800
+		fleet "XSZ Large" 4800
+		fleet "Scorched Earth" 475
+		fleet "XSZ Nuclear" 950
+	system Mezzanine
+		fleet "XSZ Small" 2800
+		fleet "XSZ Large" 3800
+		fleet Trader 1200
+		fleet Transporter 1200
+		fleet "Scorched Earth" 475
+		fleet "XSZ Nuclear" 950
+	system Maduras		
+		fleet Trader 700
+		fleet Transporter 700
+		fleet "XSZ Small" 400
+		fleet "XSZ Large" 600
+		fleet "Scorched Earth" 475
+		fleet "XSZ Nuclear" 950
+	system Indigo
+		fleet Trader 900
+		fleet Transporter 900
+		fleet "XSZ Small" 1800
+		fleet "Scorched Earth" 475
+		fleet "XSZ Nuclear" 950
