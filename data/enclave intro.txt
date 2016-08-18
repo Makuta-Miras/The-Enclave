@@ -162,11 +162,11 @@ mission "Part 1 done"
 	destination Lyfon
 	to offer
 		"reputation: Enclave" >= 500
-		has "First Contact: Enclave" done
+		has "First Contact: Enclave: offered"
 	on offer
 		conversation
 			`As you step off your ship, you receive what appears to be an official notification from the Enclave government-`
-			`	Captain <last>,
+			`	Captain <last>,`
 			`	We have recently become aware of the services in aiding civilian ships which you have been providing, in a growing role to defeat interstellar piracy. As a reward for the voluntary aid which you have been dispensing, we have seen fit to award you a number of credits in order to compensate you for the money you have spent on your ships.`
 			`	Regards,`
 			`	The Enclave government`
@@ -273,7 +273,7 @@ mission "Enclave Cargo [0]"
 	job
 	repeat
 	description "Deliver <cargo> to <destination>. Payment is <payment>."
-	cargo "Metal" "Plastic" "Heavy Metals" "Electronics" "Industrial" 5 2 .1
+	cargo random 5 2 .1
 	to offer
 		random < 60
 		has "Part 1 done: offered"
@@ -293,7 +293,7 @@ mission "Enclave Cargo [1]"
 	job
 	repeat
 	description "Deliver <cargo> to <destination>. Payment is <payment>."
-	cargo "Garbage" "Equipment"   5 2 .1
+	cargo "Garbage" 5 2 .1
 	to offer
 		random < 60
 		has "Part 1 done: offered"
@@ -322,7 +322,7 @@ mission "Part 2 done"
 	on offer
 		conversation
 			`As you step off your ship, you receive what appears to be another official notification from the Enclave government-`
-			`	Captain <last>,
+			`	Captain <last>,`
 			`	Your recent work in helping to construct the new shipyards on Jumblar, in a far more proactive role than many other private captains who have been employed to do so, has brought you once again to the government's attention. As a result, you are hereby summoned to appear before Congress at any time before <date>.`
 			`	Regards,`
 			`	The Enclave government`
@@ -414,7 +414,7 @@ mission "Part 3-2"
 			choice
 				`	"Fine, I'll help."`
 					goto yay
-				`	"No. I'm not risking my life for you."
+				`	"No. I'm not risking my life for you."`
 					goto 1
 	on accept
 		"reputation: XSZ Corporation" = -100
