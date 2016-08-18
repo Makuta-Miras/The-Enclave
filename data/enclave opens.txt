@@ -372,7 +372,7 @@ mission "Enclave Opens B"
 	to offer
 		or
 			has "Enclave Opens 2Ab: done"
-			has "Enclave Defiance 3B: done"
+			has "Enclave Opens 4Bb: done"
 		
 	on offer
 		conversation
