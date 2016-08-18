@@ -109,7 +109,7 @@ fleet "XSZ Small"
 	variant 20
 		"Buzzard" 5
 	variant 5
-		"Nuclear Turbulence"
+		"Turbulence (Nuclear)"
 		"Buzzard" 2
 		
 fleet "XSZ Large"
