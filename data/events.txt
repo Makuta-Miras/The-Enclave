@@ -25,7 +25,7 @@ event "invasionK"
 	unvisit Gautus
 	unvisit Umba'draeuin
 	unvisit Four
-	unvist Hrau'ngri'liadien
+	unvisit Hrau'ngri'liadien
 	unvisit Aetrus
 	
 event "MLGWAR"
