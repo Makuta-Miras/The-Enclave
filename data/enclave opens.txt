@@ -32,7 +32,7 @@ mission "Enclave Opens 1A"
 			label 3
 			`	Edrick raises his eyebrows and lets out a short sigh. "I was hoping you'd be more interested in this, considering your involvment in defeating the Pug, <first>." "Oh, don't worry, I am!" you say. Edrick shakes his head slightly. "Come on, I'll tell you more when we get up to my flat," he says.`
 			label 15
-			`When you both sit down to eat, Edrick continues what he was saying, some classy music playing quietly in the background. "There's a system just west of Suhail, which we can't jump to using human hyperdrives. I'm presuming you've noticed that?"
+			`When you both sit down to eat, Edrick continues what he was saying, some classy music playing quietly in the background. "There's a system just west of Suhail, which we can't jump to using human hyperdrives. I'm presuming you've noticed that?"`
 			choice
 				`	"Of course."`
 				`	"Okay, then."`
@@ -69,7 +69,7 @@ mission "Enclave Opens 1A"
 			choice
 				`	"Good idea, I'll go do that."`
 					goto 10
-				`	"No, I'm just saying, that isn't particularly democratic of them."
+				`	"No, I'm just saying, that isn't particularly democratic of them."`
 					goto 11
 			label 9
 			`	"Great," Edrick replies. "You'll need to inform the Free Worlds Senate, then?"`
@@ -132,14 +132,14 @@ mission "Enclave Opens 2Aa"
 			choice
 				`	"A new hyperspace link has opened between the Suhail system in the Deep and another, previously unidentified system. The Republic believes that the Pug are involved, and so they want a Free Worlds fleet to accompany a Navy division into the system in order to investigate it."`
 					goto 1
-				`	"The Pug are back. They've been meddling in the Deep."
+				`	"The Pug are back. They've been meddling in the Deep."`
 					goto 2
 			label 1
 			`	There are a few scattered instances of murmuring between the Senators, and Arianna slams her fist down. "We are not the Republic's attack dogs!" she yells. Judging by the cheers she gets from the rest of the Senate, this is a popular sentiment.`
 			choice
 				`	"In their defence, the Pug are a galaxywide threat and so it's our responsibility as much as theirs to defend human space."`
 					goto 3
-				`	"I'd be willing to take the mission on with my personal fleet."
+				`	"I'd be willing to take the mission on with my personal fleet."`
 					goto 4
 			label 2
 			`	The Senator from Zug clears his throat loudly. "Why is this at all relevant to the Free Worlds? We're a good two weeks travel away from there, anyway."`
@@ -566,12 +566,14 @@ mission "Enclave Opens 3B"
 			label 6
 			`	"Very well, then," the Speaker says, his face hardened. "The Navy will investigate on their own. Please note that this also marks a severe degradation in relations between the Republic and the Free Worlds. Leave."`
 			`	You are rushed out of the building by a squadron of guards, their faces hidden behind mirrored visors. From there, you are escorted to your ship.`
-				event "enclave opens"
 				flee
 			label accepted
 			`	"Excellent," the Speaker says. "Please inform the Free Worlds Senate of the verdict here."`
 				accept
-				
+	
+	on decline
+		event "enclave opens"
+		
 	on complete
 		dialog `You have arrived on Bourne. Time to go and see the Senate.`
 
@@ -594,14 +596,14 @@ mission "Enclave Opens 4Ba"
 			choice
 				`	"A new hyperspace link has opened between the Suhail system in the Deep and another, previously unidentified system. The Republic believes that the Pug are involved, and so they want a Free Worlds fleet to accompany a Navy division into the system in order to investigate it."`
 					goto 1
-				`	"The Pug are back. They've been meddling in the Deep."
+				`	"The Pug are back. They've been meddling in the Deep."`
 					goto 2
 			label 1
 			`	There are a few scattered instances of murmuring between the Senators, and Arianna slams her fist down. "We are not the Republic's attack dogs!" she yells. Judging by the cheers she gets from the rest of the Senate, this is a popular sentiment.`
 			choice
 				`	"In their defence, the Pug are a galaxywide threat and so it's our responsibility as much as theirs to defend human space."`
 					goto 3
-				`	"I'd be willing to take the mission on with my personal fleet."
+				`	"I'd be willing to take the mission on with my personal fleet."`
 					goto 4
 			label 2
 			`	The Senator from Zug clears his throat loudly. "Why is this at all relevant to the Free Worlds? We're a good two weeks travel away from there, anyway."`
