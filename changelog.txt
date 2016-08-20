@@ -1,4 +1,21 @@
 ------------------------------------------------------------------------  v0.0.8  -------------------------------------------------------------------------------
+20/08/16
+
+-Added a random factor to the offering of Enclave Opens 1A.
+-Made Enclave Opens 2B less likely to offer.
+-Fixed a government in Enclave Opens.
+-Added the first two missions in Enclave Middle. Coming for you, v0.0.8...
+-Took out persons.txt.
+
+
+19/08/16
+
+-Expanded the war event.
+-Removed the Ascendancy wormhole from the Smoline system.
+-Added some more systems west of Abomin.
+-Made the Battle of Innenheim somewhat easier by taking eleven nukes out of the equation.
+
+
 18/08/16
 
 -Fixed even more errors.
