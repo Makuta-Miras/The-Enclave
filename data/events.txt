@@ -28,7 +28,7 @@ event "invasionK"
 	unvisit Hrau'ngri'liadien
 	unvisit Aetrus
 	
-event "MLGWAR"
+event "civil war"
 	government "Enclave"
 		"attitude toward"
 			"XSZ Corporation" -500000
@@ -37,11 +37,62 @@ event "MLGWAR"
 			"Enclave" -500000
 	system Antithesis
 		government "XSZ Corporation"
+		fleet Trader 900
+		fleet Transporter 900
+		fleet "XSZ Small" 500
+		fleet "XSZ Large" 900
+		fleet "Scorched Earth" 475
+		fleet "XSZ Nuclear" 950
+	system Svind
+		government "XSZ Corporation"
+		fleet Trader 1200
+		fleet Transporter 1200
+		fleet "Enclave Patrol" 4000
+		fleet "XSZ Small" 500
+		fleet "XSZ Large" 900
+		fleet "Scorched Earth" 475
+		fleet "XSZ Nuclear" 950
+	system Fallout
+		government "XSZ Corporation"
+		fleet Trader 800
+		fleet Transporter 800
+		fleet "Enclave Patrol" 4000
+		fleet "XSZ Small" 500
+		fleet "XSZ Large" 900
+		fleet "Scorched Earth" 475
+		fleet "XSZ Nuclear" 950
+	system Dvorak
+		government "XSZ Corporation"
+		fleet Trader 800
+		fleet Transporter 800
+		fleet "Enclave Patrol" 3000
+		fleet "XSZ Small" 500
+		fleet "XSZ Large" 900
+		fleet "Scorched Earth" 475
+		fleet "XSZ Nuclear" 950
+	system Ares
+		government "XSZ Corporation"		
+		fleet Trader 900
+		fleet Transporter 900
+		fleet "Enclave Patrol" 2000
+		fleet "XSZ Small" 500
+		fleet "XSZ Large" 900
+		fleet "Scorched Earth" 475
+		fleet "XSZ Nuclear" 950
+	system Three
+		government "XSZ Corporation"
+		fleet Trader 900
+		fleet Transporter 900
+		fleet "XSZ Small" 1500
+		fleet "XSZ Large" 3000
 	planet Perihelion
 		landscape land/beach10-sfiera
 		description `Everything here is restricted now. It seems that mercenaries employed by XSZ are now guarding everything, enforcing peace.`
 		description `	There are already drilling machines being assembled out at sea.`
 		spaceport `The spaceport appears to have been closed; clearly XSZ do not want anyone interfering.`
+	planet "New Asgard"		
+		description `It seems that XSZ didn't quite know what to do with this moon once they had captured it; from what you have seen, the cities are under martial law at the moment, with security guards mostly standing around looking a bit confused.`
+		spaceport `The spaceport is deathly quiet; all civilians have been cleared out of it.`
 	system Skryydr
 		fleet Trader 600
 		fleet Transporter 600
@@ -94,4 +145,8 @@ event "MLGWAR"
 		fleet Transporter 900
 		fleet "XSZ Small" 1800
 		fleet "Scorched Earth" 475
-		fleet "XSZ Nuclear" 950
+		fleet "XSZ Nuclear" 950	
+		
+event "joined the enclave"
+	government "Escort"
+		swizzle 0
