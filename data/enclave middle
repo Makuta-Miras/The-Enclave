@@ -1,0 +1,155 @@
+mission "Joining the Enclave"
+	invisible
+	landing
+	autosave
+	source Jumblar
+	to offer
+		has "Part 3-2: done"
+	on offer
+		conversation
+			`Smoke is rising from many of the Enclave ships parked here- clearly survivors of the battle. One of the officers overseeing the repairs spots you.`
+			`	"Captain <last>," he says. "The commander wanted to see you."`
+			choice
+				`	"Thanks for telling me; I'll head straight there."`
+					goto 1
+				`	"Nah mate. I'm done with this whole thing, I'm off."`
+					decline
+			label 1
+			`	The officer nods, and you begin to make your way through the warren of corridors that makes up the Navy base on Jumblar.`
+			`	Eventually, after making an ungodly number of wrong turns, you arrive at the commander's office.`
+			choice
+				`	Knock on the door.`
+					goto 4
+				`	Kick down the door.`
+					goto 2
+				`	Shoot the lock and then run into the door.`
+					goto 3
+			label 4
+			`	You hear a muffled "Come in," from the other side of the door and proceed to open it.`
+				goto 5
+			label 2
+			`	Turns out, the door has stronger hinges than you expected. All that you receive in return for your efforts is a very jarred leg and a slight dent in the door.`
+				goto 4
+			label 3
+			`	The shot from your laser pistol bounces off the armoured door and ricochets all around the corridor, narrowly missing your face. As you charge the door, it turns out that it has stronger hinges than you expected; it doesn't budge.`
+				goto 4
+			label 5
+			`	You sit down at the commander's desk.`
+			`	"Despite that almighty mess of a battle," he begins, "Well done on winning it."`
+			choice
+				`	"Well, of course I'd win it. I'm a badass bounty hunter who 360 noscopes pirate scrubs all day long."`
+				`	"Cheers."`
+			`	"One thing, though," the commander says. "Since we now have a war on our hands, if you want to fight with us, we actually need you to legally join our Navy. As in, the full-on, orange painted ships, rank, and so on. You up for that?"`
+			choice
+				`	"Of course."`
+				`	"Well, I have reservations about it, since I like my green Free Worlds paint, but okay."`
+				`	"Absolutely not. I want no part in your war."`
+					goto 6
+			`	The commander nods. "Great!" he replies. The bureaucracy of joining the military then follows- insurance, confirmation of identity, planet and system of birth, age, and so on. When you finally reach the end of the legal documents, the commander passes you a brand new Enclave uniform. "Good to be serving with you, Lieutenant <last>. Once you've got that uniform on, report to Commodore Druff at the spaceport- he's putting together a strike force to retake New Asgard."`
+				accept
+			label 6
+			`	"I'm disappointed," the commander says.`
+				decline
+	on accept
+		event "joined the enclave"
+		"salary: Enclave" = 300
+		
+mission "Enclave Middle 1A"
+	name "Retake New Asgard"
+	source Jumblar
+	destination "New Asgard"
+	to offer
+		has "Part 3-2: done"
+	on offer
+		conversation
+			`When you reach the spaceport, you quickly locate the Commodore's ship- a heavily scarred Apollo. As you approach, feeling somewhat uncomfortable in your new uniform, one of the soldiers- now, you realize, one of your comrades- stops you, before noticing the insignia on your uniform identifying your rank. "Sorry, sir," she says. "Go ahead; the Commodore is waiting for you on the bridge."`
+			`	You thank her and step on board the warship. While the interior is somewhat different to that of warships from the Republic, you are still able to navigate to the bridge, where you find Commodore Druff.`
+			`	"Sir," you say, with a slightly awkward salute. "I was told to report to you."`
+			`	He looks over you for a second. "<first> <last>?" You nod. "Since I hear this isn't your first time in a military, I'm assuming you're fine with taking orders. We're going to retake New Asgard from XSZ, the greedy bastards," he says with a slight grin. "Our reconaissance says that their forces there are pretty disorganised after trying to push through and take Jumblar; should be an easy battle. Any questions?"`
+			label questions
+			choice
+				`	"No questions."`
+					goto end
+				`	"Do I get to stay in command of my own ships?"`
+					goto ships
+				`	"How big will the fleet be?"`
+					goto fleet
+			label ships
+			`	"Yes," Druff says. "We aren't that mean, even if it's nice having fleets made entirely of the same ships. Any other questions?"`
+				goto questions
+			label fleet
+			`	"We've got a good few carriers, this Apollo and another, a few Destroyers and I don't know how many Penguins. Probably a lot. Any other questions?"`
+				goto questions
+			label end
+			`	"Excellent," the Commodore replies. "We're setting off in a few hours; see me after the battle."`
+				accept
+	npc kill
+		personality staying vindictive
+		government "XSZ Corporation"
+		system Svind
+		fleet
+			names "syndicate capital"
+			variant
+				"Turbulence" 4
+				"Bloodhound" 2
+		fleet
+			names "syndicate small"
+			variant
+				"Buzzard" 10
+		fleet
+			names "kor sestor fighter"
+			variant
+				"Scorched Earth" 3
+	npc accompany
+		personality heroic vindictive
+		system Innenheim
+		government "Enclave"
+		fleet
+			names "republic capital"
+			fighters "republic fighter"
+			variant
+				"Muesli Carrier" 3
+				"Apollo" 2
+				"Dart" 40
+		fleet
+			names "republic small"
+			variant
+				"Penguin" 10
+				"Destroyer" 5
+	
+	on enter Svind
+		dialog
+			`As you enter the system, your comms unit bursts to life with a crackle of static. It's the Commodore, shouting something- "They're nuclear!" as the first of the XSZ ships move into the range of the forward ships' scanners.`
+
+	on complete
+		conversation
+			`You bring your ship in for a smooth landing, touching down just outside the biggest city on New Asgard. As it turns out, a number of troop transports landed here before you, and the commanding officers of the XSZ forces have been rounded up and are lined up against the outside of the glass dome, somewhat ominously. A small contingent of soldiers, led by an officer in a uniform almost identical to yours, breaks off to meet you as you step off your ship.`
+			`	"Commander <last>," the officer says, shaking your hand. "I'm Anabelle Bradford. Commander, like yourself."`
+			choice
+				`	"Why are those prisoners out in the open? Shouldn't they have been loaded onto a ship by now?"`
+					goto why
+				`	"Pleased to meet you."`
+			label yay
+			`	She smiles slightly. "That's some crazy stuff I heard you did in that war back in the Milky Way- negotiating with pirate worlds seems like a dangerous path to peace."`
+			choice
+				`	"It was the only option, really. If we'd tried occupying them, all that would have happened would be a rebellion followed by more occupation by the Free Worlds.`
+				`	"Well, obviously I did some crazy stuff, it's because I'm secretly a badass independent bounty hunter who 360 noscopes pirate scrubs all day long."`
+				`	"It'd be nice to stay and chat, but I kinda need to go; I need to report to Commodore Druff."`
+			`	"Of course," Annabelle replies. "Anyway, I have other stuff to do here- see you around, <first>."`
+				accept
+			label why
+			`	"Firing squad, obviously," Annabelle says, seeming somewhat annoyed with your disbelief.`
+			choice
+				`	"What?! You can't just straight-up execute prisoners!"`
+				`	"Ah, that makes sense. Sorry, it's just we don't use capital punishment back home."`
+					goto yay
+			`	She frowns slightly. "Um, yes, we can. Standard procedure for any individual who indulges in treason. Do you have a problem with that?"`
+			choice
+				`	"Yes, I do. They deserve at least a trial, or... something!"`
+					goto trial
+				`	"...no."`
+			`	"Good," Annabelle says before turning and striding back off towards the prisoners.`
+				accept
+			label trial
+			`	"You're in the navy now," Annabelle replies, fixing you with a piercing stare. "Remember that next time you object to orders from your superiors." She storms off without another word as the soldiers begin lining up, ready to execute the XSZ officials.`
+				accept
