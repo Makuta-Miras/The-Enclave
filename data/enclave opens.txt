@@ -9,6 +9,7 @@ mission "Enclave Opens 1A"
 	to offer
 		has "main plot completed"
 		has "event: battle of algenib"
+		random < 30
 		
 	on offer
 		conversation
@@ -258,8 +259,10 @@ mission "Enclave Opens A"
 				die
 			label 8
 			`"Thanks, sir," you reply as Hofmann leaves.`
-			"reputation: Pug" = -100
 				accept	
+	
+	on accept
+		"reputation: Pug" = -100
 	
 	npc accompany
 		personality heroic
@@ -284,7 +287,7 @@ mission "Enclave Opens A"
 				"Dreadnought"
 				
 	npc accompany
-		government "Navy (Oathkeeper)"
+		government "Republic"
 		personality heroic escort
 		fleet
 			names "republic capital"
@@ -356,7 +359,6 @@ mission "Enclave Opens A"
 					goto 4
 				`	"Nice working with you."`
 			`	"Don't worry about it," he says. "Oh, by the way, when Parliament came up with this idea, they figured you'd want some payment if you actually did this. So they've approved it; <payment>, straight to <first> <last>'s bank account. You're welcome."`
-				accept
 			label 4
 			`	He shakes his head. "I'm fine," the admiral replies. "I'll be heading home for a few months, until I've got a proper cybernetic replacement hand. Oh, and by the way, Parliament's paying you for this. <payment>. Congratulations."`
 		payment 100000
@@ -418,7 +420,7 @@ mission "Enclave Opens B"
 					
 	npc accompany
 		personality heroic escort
-		government "Navy (Oathkeeper)"
+		government "Republic"
 		fleet
 			names "republic capital"
 			fighters "republic fighter"
@@ -510,7 +512,7 @@ mission "Enclave Opens 2B"
 		not "Enclave Co-Op 1B: active"
 		not "Enclave Co-Op 1A: done"
 		not "Enclave Co-Op 1B: done"
-		random < 55
+		random < 45
 		
 	on offer
 		dialog
