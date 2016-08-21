@@ -105,7 +105,7 @@ mission "Enclave Middle 1A"
 			names "kor sestor fighter"
 			variant
 				"Scorched Earth" 3
-	npc accompany
+	npc
 		personality heroic vindictive escort
 		system Innenheim
 		government Enclave
@@ -134,7 +134,7 @@ mission "Enclave Middle 1A"
 	on complete
 		conversation
 			`You bring your ship in for a smooth landing, touching down just outside the biggest city on New Asgard. As it turns out, a number of troop transports landed here before you, and the commanding officers of the XSZ forces have been rounded up and are lined up against the outside of the glass dome, somewhat ominously. A small contingent of soldiers, led by an officer in a uniform almost identical to yours, breaks off to meet you as you step off your ship.`
-			`	"Commander <last>," the officer says, shaking your hand. "I'm Anabelle Bradford. Commander, like yourself."`
+			`	"Lieutenant <last>," the officer says, shaking your hand. "I'm Anabelle Bradford. Lieutenant, like yourself."`
 			choice
 				`	"Why are those prisoners out in the open? Shouldn't they have been loaded onto a ship by now?"`
 					goto why
@@ -194,7 +194,7 @@ mission "Enclave Middle 1B"
 				
 				
 mission "Enclave Middle 1C"
-	name "Reinforcements from <destination>"
+	name "Reinforcements from Quaver"
 	description "Travel to <destination>, where you can pick up reinforcements for the Enclave ships on New Asgard."
 	source "New Asgard"
 	destination Quaver
@@ -219,7 +219,7 @@ mission "Enclave Middle 1C"
 	
 	
 mission "Enclave Middle 1D"
-	name "Reinforcements to <destination>"
+	name "Reinforcements to New Asgard"
 	description "Escort the <npc> and their fleet to <destination>"
 	landing
 	source Quaver
@@ -240,7 +240,7 @@ mission "Enclave Middle 1D"
 			label done
 			`	You introduce yourself to the crews, and begin making preparations for takeoff.`
 				accept
-	npc accompany
+	npc accompany save
 		government Enclave
 		personality heroic vindictive escort
 		system Unobu
@@ -249,7 +249,7 @@ mission "Enclave Middle 1D"
 			variant
 				"Enclave Lance" 24
 				"Dart" 12
-	npc accompany
+	npc accompany save
 		government Enclave
 		personality timid vindictive escort
 		system Unobu
@@ -260,3 +260,43 @@ mission "Enclave Middle 1D"
 	on visit
 		dialog
 			`You have left the <npc> behind. Better take off and wait for them to arrive in the system.`
+			
+
+mission "Enclave Middle 1E"
+	name "Ceasefire negotiations"
+	description "Travel to <destination> to pick up a group of Enclave diplomats."
+	landing
+	source "New Asgard"
+	destination "Memorandum"
+	to offer
+		has "Enclave Middle 1D: done"
+	on offer
+		conversation
+			`You make sure the Muesli Carriers are landed and accounted for with the rest of the forces stationed on New Asgard, then you go straight to find Commodore Druff.`
+			`	When you cannot find him, you report to the newly-built garrison and are told that he left orders for you-`
+			`Lieutenant,`
+			`	We're going to try and negotiate a temporary ceasefire with XSZ so that we can get into the group of systems by Five, pick up the major people in the government, and get them out; they're completely bottled up in there. We've got a group of diplomats waiting on <destination>; I want you to go there, pick them up and take them to Latent. Take Lieutenant Bradford with you, too; she could always do with some more experience of diplomacy.`
+			`	-Commodore Konrad Druff`
+			choice
+				`	Throw away the orders and pretend like you never got them.`
+					decline
+				`	Get ready to leave.`
+			`	You notify Annabelle of yor orders; she seems somewhat disgusted by being forced to experience diplomacy. "Fine," she says. "When are we leaving?"`
+			choice
+				`	"NOW!!!!!"`
+					launch
+				`	"In an hour or two."`
+					accept
+					
+	npc accompany save
+		personality heroic vindictive escort
+		system Svind
+		government "Enclave"
+		ship "Destroyer" "R.N.S. Severn"
+	
+	on visit
+		dialog
+			`You left Annabelle's ship, the <npc> behind. Better take off and wait for her to arrive in the system.`
+	on fail
+		dialog
+			`Annabelle's ship has been destroyed and she is now dead. Screw you mate, you should probably reload your save.`
