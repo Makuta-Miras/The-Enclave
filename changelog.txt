@@ -3,6 +3,7 @@
 
 -Added the next four missions to Enclave Middle.
 -Made the Battle for Svind a tad easier.
+-Typo fixes in Enclave Opens. Thanks @bladewood!
 
 
 20/08/16
