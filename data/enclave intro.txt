@@ -371,7 +371,6 @@ mission "Part 3-1"
 					goto 1
 				`	"No. I don't care about your war, I never wanted to be part of it. Hell, I'm not even from this galaxy!"`
 			`	Rosalva shrugs. "I'm disappointed," she says. "I guess I expected more from the legendary <first> <last>." You are quickly shown out.`
-				event "MLGWAR"
 				decline
 			label 1
 			`	"Great!" Rosalva replies. "We need you to fly through Skryydr, Maduras, Kaladesh, and Ark. We'll install a tiny piece of hardware on your ship to allow us to read your sensor logs as you go. Once you're done, report to the planetary commander on Jumblar. All good?"`
@@ -379,8 +378,11 @@ mission "Part 3-1"
 				`	"Yep!"`
 			`	"Fun times."`
 				accept
+	on decline
+		event "civil war"
+		
 	on complete
-		event "MLGWAR"
+		event "civil war"
 
 
 mission "Part 3-2"
@@ -428,7 +430,7 @@ mission "Part 3-2"
 			variant
 				"Bloodhound" 5
 				"Turbulence" 10
-				"Turbulence (Nuclear)" 2
+				"Turbulence (Nuclear)"
 		fleet
 			names "syndicate small"
 			variant
@@ -436,7 +438,7 @@ mission "Part 3-2"
 		fleet
 			names "kor sestor fighter"
 			variant
-				"Scorched Earth" 5
+				"Scorched Earth" 2
 	npc
 		personality heroic vindictive
 		system Innenheim
@@ -456,6 +458,4 @@ mission "Part 3-2"
 				"Penguin" 20
 				"Destroyer" 10
 	on complete
-		dialog
-			`The XSZ ships have been defeated. But now, in this once-peaceful area of human civilisation, war has broken out- just like in your own galaxy. What does the future hold? Only time will tell... (Next part of the story is coming in v0.0.8)`
 		payment 500000
