@@ -170,8 +170,8 @@ mission "Part 1 done"
 			`	We have recently become aware of the services in aiding civilian ships which you have been providing, in a growing role to defeat interstellar piracy. As a reward for the voluntary aid which you have been dispensing, we have seen fit to award you a number of credits in order to compensate you for the money you have spent on your ships.`
 			`	Regards,`
 			`	The Enclave government`
+			decline
 		payment 1000000
-		decline
 		
 		
 		
