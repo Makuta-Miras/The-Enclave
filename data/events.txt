@@ -150,3 +150,58 @@ event "civil war"
 event "joined the enclave"
 	government "Escort"
 		swizzle 0
+		
+event "middle 1a ready"
+	system Fallout
+		fleet Trader 800
+		fleet Transporter 800
+		fleet "Enclave Patrol" 3800
+		fleet "XSZ Small" 700
+		fleet "XSZ Large" 1100
+		fleet "Scorched Earth" 775
+		fleet "XSZ Nuclear" 1250
+	system Ares
+		fleet Trader 900
+		fleet Transporter 900
+		fleet "Enclave Patrol" 1800
+		fleet "XSZ Small" 700
+		fleet "XSZ Large" 1100
+		fleet "Scorched Earth" 775
+		fleet "XSZ Nuclear" 1250
+	system Svind
+		fleet Trader 1200
+		fleet Transporter 1200
+		fleet "Enclave Patrol" 1200
+		fleet "Enclave Capital" 1500
+		fleet "Scorched Earth" 1675
+		
+event "battle for svind"
+	system Fallout
+		government "Enclave"
+		fleet Trader 700
+		fleet Transporter 700
+		fleet "Enclave Patrol" 900
+		fleet "Enclave Capital" 1100
+		fleet "XSZ Small" 1700
+		fleet "XSZ Large" 1900
+	system Ares
+		government "Enclave"
+		fleet Trader 800
+		fleet Transporter 800
+		fleet "Enclave Patrol" 900
+		fleet "Enclave Capital" 1100
+		fleet "XSZ Small" 1700
+		fleet "XSZ Large" 1900
+	system Svind
+		government "Enclave"
+		fleet Trader 1100
+		fleet Transporter 1100
+		fleet "Enclave Patrol" 700
+		fleet "Enclave Capital" 1000
+	planet "New Asgard"		
+		description `New Asgard is a relatively small moon, although despite this it is still able to hold onto a thick, breathable atmosphere. Much of the moon is desert, although some areas near the highest mountains do receive enough rain to allow them to become well-forested. The oceans here have enormous tide differences due to the gas giant above, and as a result, most seaside settlements are practically built inside glass domes reinforced with titanium so that they can survive the inrush of water at high tide.`
+		description `	Despite the relative absence of natural resources, New Asgard is still fairly rich due to the tourism industry- many people come here simply to experience the awe of waking up to see the face of a gas giant staring down at them.`
+		spaceport `The spaceport is a slick, clean and modern, with hallways paved in dark granite and arching roofs overhead. Most of the terminal is taken up by small stores and off-licenses.`
+		spaceport `	The entire spaceport seems to be filled with people with cameras, hysterically barging their way through the crowds to find their ride off of this moon.`
+	planet Jumblar
+		description `Now that war has truly begun, the production of warships on this planet appears to have been increased tenfold; every few minutes, a gleaming, new ship flies overhead, arriving at the spaceport to join up with the main fleets.`
