@@ -1,4 +1,10 @@
 ------------------------------------------------------------------------  v0.0.8  -------------------------------------------------------------------------------
+21/08/16
+
+-Added some more missions to Enclave Middle.
+-Made the Battle for Svind a tad easier.
+
+
 20/08/16
 
 -Added a random factor to the offering of Enclave Opens 1A.
