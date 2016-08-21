@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------  v0.0.8  -------------------------------------------------------------------------------
 21/08/16
 
--Added some more missions to Enclave Middle.
+-Added the next four missions to Enclave Middle.
 -Made the Battle for Svind a tad easier.
 
 
