@@ -54,8 +54,11 @@ mission "Joining the Enclave"
 		event "joined the enclave"
 		"salary: Enclave" = 300
 		
+		
 mission "Enclave Middle 1A"
 	name "Retake New Asgard"
+	description "With the rest of the Enclave fleet, destroy all XSZ ships in the Svind system, then land on New Asgard."
+	autosave
 	source Jumblar
 	destination "New Asgard"
 	to offer
@@ -83,6 +86,8 @@ mission "Enclave Middle 1A"
 			label end
 			`	"Excellent," the Commodore replies. "We're setting off in a few hours; see me after the battle."`
 				accept
+		event "middle 1a ready"
+		
 	npc kill
 		personality staying vindictive
 		government "XSZ Corporation"
@@ -95,15 +100,15 @@ mission "Enclave Middle 1A"
 		fleet
 			names "syndicate small"
 			variant
-				"Buzzard" 10
+				"Buzzard" 7
 		fleet
 			names "kor sestor fighter"
 			variant
 				"Scorched Earth" 3
 	npc accompany
-		personality heroic vindictive
+		personality heroic vindictive escort
 		system Innenheim
-		government "Enclave"
+		government Enclave
 		fleet
 			names "republic capital"
 			fighters "republic fighter"
@@ -115,7 +120,12 @@ mission "Enclave Middle 1A"
 			names "republic small"
 			variant
 				"Penguin" 10
-				"Destroyer" 5
+				"Destroyer" 4
+	npc accompany
+		personality heroic vindictive escort
+		system Innenheim
+		government "Enclave"
+		ship "Destroyer" "R.N.S. Severn"
 	
 	on enter Svind
 		dialog
@@ -153,3 +163,100 @@ mission "Enclave Middle 1A"
 			label trial
 			`	"You're in the navy now," Annabelle replies, fixing you with a piercing stare. "Remember that next time you object to orders from your superiors." She storms off without another word as the soldiers begin lining up, ready to execute the XSZ officials.`
 				accept
+		event "battle for svind"
+				
+				
+mission "Enclave Middle 1B"
+	name "Escort prisoners"
+	description "Escort the <npc> and their fleet to <destination>, where the prisoners will be held."
+	autosave
+	source "New Asgard"
+	destination Ortite
+	to offer
+		has "Enclave Middle 1A: done"
+	on visit
+		dialog
+			`You have left the <npc> behind. Better take off and wait for them to arrive in the system.`
+	on fail
+		dialog
+			`One of the transports has been destroyed. Reload your save if you wish to continue with the story.`
+	npc accompany save
+		government Enclave
+		personality timid vindictive escort
+		system Svind
+		fleet
+			names "civilian"
+			variant
+				"Flurry" 5	
+	on complete
+		dialog
+			`The transports land and quickly offload their prisoners. Time to head for Quaver.`
+				
+				
+mission "Enclave Middle 1C"
+	name "Reinforcements from <destination>"
+	description "Travel to <destination>, where you can pick up reinforcements for the Enclave ships on New Asgard."
+	source "New Asgard"
+	destination Quaver
+	to offer
+		has "Enclave Middle 1A: done"
+	on offer
+		conversation
+			`You arrive in the spaceport to find Druff co-ordinating the transfer of seemingly less important prisoners onto a squadron of Flurries. As the last of them are loaded on board, the Commodore turns to you. "Lieutenant," he says. "Good to see you alive after that last battle."`
+			choice
+				`	"You too, sir."`
+				`	:^)`
+			`"We've got some more ships on <destination> ready to be transferred up to the front," Druff continues. "Whilst we've hopefully got a break in the fighting for a bit- seems like XSZ doesn't want this moon- I need you to go and pick them up and bring them back here to bolster the defence."`
+			choice
+				`	"Understood."`
+			`	Gesturing at the transports behind him, Druff continues- "We also need these prisoners taken to Ortite, in the Ortus system. Do that, then head to <destination>."`
+				accept
+	on visit
+		dialog
+			`You haven't dropped off the prisoners yet. Go to Ortite in the Ortus system, then return here.`
+	to complete
+		has "Enclave Middle 1B: done"
+	
+	
+mission "Enclave Middle 1D"
+	name "Reinforcements to <destination>"
+	description "Escort the <npc> and their fleet to <destination>"
+	landing
+	source Quaver
+	destination "New Asgard"
+	to offer
+		has "Enclave Middle 1C: done"
+	on offer
+		conversation
+			`After giving your credentials to the officer on duty at the garrison, you are shown to the hangars where the reinforcements are being kept- three Muesli Carriers.`
+			choice
+				`	"That's a lot of fighters."`
+					goto fighters
+				`	"Only this? I'd have thought there'd be more dedicated warships."`
+			`	One of the engineers nearby shakes his head. "Trust me. Twelve fighters on a single carrier is better than you might think. And either way, the biggest warships we have here are just a few Destroyers- so it's unlikely they'd help, anyway."`
+				goto done
+			label fighters
+			`	One of the engineers nearby grins. "Awesome, right?"`
+			label done
+			`	You introduce yourself to the crews, and begin making preparations for takeoff.`
+				accept
+	npc accompany
+		government Enclave
+		personality heroic vindictive escort
+		system Unobu
+		fleet
+			fighters "republic fighter"
+			variant
+				"Enclave Lance" 24
+				"Dart" 12
+	npc accompany
+		government Enclave
+		personality timid vindictive escort
+		system Unobu
+		fleet
+			names "republic capital"
+			variant
+				"Muesli Carrier" 3
+	on visit
+		dialog
+			`You have left the <npc> behind. Better take off and wait for them to arrive in the system.`
