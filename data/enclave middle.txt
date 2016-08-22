@@ -1,4 +1,4 @@
-missionmission "Joining the Enclave"
+mission "Joining the Enclave"
 	invisible
 	landing
 	autosave
