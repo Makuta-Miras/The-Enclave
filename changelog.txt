@@ -1,4 +1,10 @@
 ------------------------------------------------------------------------  v0.0.8  -------------------------------------------------------------------------------
+22/08/16
+
+-Added Enclave Middle 2B and begun work on Enclave Middle 2C.
+-Renamed Enclave Middle 1E to Enclave Middle 2A.
+
+
 21/08/16
 
 -Added the next four missions to Enclave Middle.
