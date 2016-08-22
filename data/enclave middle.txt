@@ -1,4 +1,4 @@
-mission "Joining the Enclave"
+missionmission "Joining the Enclave"
 	invisible
 	landing
 	autosave
@@ -262,7 +262,7 @@ mission "Enclave Middle 1D"
 			`You have left the <npc> behind. Better take off and wait for them to arrive in the system.`
 			
 
-mission "Enclave Middle 1E"
+mission "Enclave Middle 2A"
 	name "Ceasefire negotiations"
 	description "Travel to <destination> to pick up a group of Enclave diplomats."
 	landing
@@ -300,3 +300,54 @@ mission "Enclave Middle 1E"
 	on fail
 		dialog
 			`Annabelle's ship has been destroyed and she is now dead. Screw you mate, you should probably reload your save.`
+	on complete
+			conversation
+				`When you touch down at the spaceport on Memorandum, Annabelle's ship not far behind, you find that the diplomats you are meant to be picking up aren't even ready to leave yet. Looks like you've got some time to kill.`
+					accept
+					
+mission "Enclave Middle 2B"
+	name "Ceasefire negotiations"
+	description "Travel to <destination>, where the Enclave diplomats you are carrying will attempt to negotiate a ceasefire with XSZ."
+	autosave
+	source "Memorandum"
+	destination "Latent"
+	to offer
+		has "Enclave Middle 2A: done"
+	clearance "One of the diplomats smoothly manages to get you permission to land, albeit under heavy guard."
+		planet Latent
+	passengers 5
+	blocked `You do not have enough space for all the diplomats. You should complete or abort another mission to make room for them, then return here.`
+	on offer
+		conversation
+			`Finally, after a few hours waiting, your five passengers are ready to leave. Annabelle introduces you to them one by one- Maui Nalani, from Carmine; Lilija Ozolinsh, from Saal; Vinh Ngo, from Seminar; Thelma Harland, from Korine; and Andreas Floros, from Frodo. You shake their hands and greet them in what you assume is the norm for ambassadors; or at least, what you learned from Alondo during the war. You show them to their rooms on your ship and begin making preparations for takeoff.`
+				accept
+	
+	npc accompany save
+		personality heroic vindictive escort
+		system Cispia
+		government "Enclave"
+		ship "Destroyer" "R.N.S. Severn"
+		
+	on visit
+		dialog
+			`You left Annabelle's ship, the <npc> behind. Better take off and wait for her to arrive in the system.`
+			
+	on fail
+		dialog
+			`Annabelle's ship has been destroyed and she is now dead. Screw you mate, you should probably reload your save.`
+			
+mission "Enclave Middle 2C"
+	name "Government evacuation"
+	description "Whilst the ceasefire lasts, travel to <destination> in order to pick up the major people in the Enclave's government and move them to safety."
+	landing
+	autosave
+	source "Latent"
+	to offer
+		has "Enclave Middle 2B: done"
+	passengers 5
+	blocked `You do not have enough space for all the diplomats. You should complete or abort another mission to make room for them, then return here.`
+	on offer
+		conversation
+			`You drop the diplomats off `
+			
+# TO BE CONTINUED TOMORROW
