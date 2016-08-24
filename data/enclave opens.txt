@@ -9,7 +9,6 @@ mission "Enclave Opens 1A"
 	to offer
 		has "main plot completed"
 		has "event: battle of algenib"
-		random < 30
 		
 	on offer
 		conversation
@@ -104,9 +103,11 @@ mission "Enclave Opens 1B"
 	destination Earth
 	
 	to offer
-		has "Enclave Opens 1A: offered"
-		not "Enclave Opens 1A: active"
-		not "Enclave Opens 1A: done"
+		has "main plot completed"
+		has "event: battle of algenib"
+	
+	to fail
+		has "Enclave Opens 1A: active"
 		
 	on complete
 		conversation
@@ -196,9 +197,12 @@ mission "Enclave Opens 2Ab"
 	destination Helheim
 	
 	to offer
-		has "Enclave Opens 2Aa: offered"
-		not "Enclave Opens 2Aa: active"
-		not "Enclave Opens 2Aa: done"
+		or
+			has "Enclave Opens 1A: done"
+			has "Enclave Opens 4Ba: done"
+		
+	to fail
+		has "Enclave Opens 2Aa: active"
 		
 	on complete
 		dialog
@@ -508,11 +512,7 @@ mission "Enclave Opens 2B"
 	
 	to offer
 		has "Enclave Opens 1B: done"
-		not "Enclave Co-Op 1A: active"
-		not "Enclave Co-Op 1B: active"
-		not "Enclave Co-Op 1A: done"
-		not "Enclave Co-Op 1B: done"
-		random < 45
+		random < 30
 		
 	on offer
 		dialog
@@ -662,9 +662,10 @@ mission "Enclave Opens 4Bb"
 	destination Helheim
 	
 	to offer
-		has "Enclave Opens 4Ba: offered"
-		not "Enclave Opens 4Ba: done"
-		not "Enclave Opens 4Ba: active"	
+		has "Enclave Opens 3B: done"
+		
+	to fail
+		has "Enclave Opens 4Bb: active"
 			
 	on complete
 		dialog
