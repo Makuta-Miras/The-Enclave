@@ -134,7 +134,7 @@ mission "Enclave Middle 1A"
 	on complete
 		conversation
 			`You bring your ship in for a smooth landing, touching down just outside the biggest city on New Asgard. As it turns out, a number of troop transports landed here before you, and the commanding officers of the XSZ forces have been rounded up and are lined up against the outside of the glass dome, somewhat ominously. A small contingent of soldiers, led by an officer in a uniform almost identical to yours, breaks off to meet you as you step off your ship.`
-			`	"Lieutenant <last>," the officer says, shaking your hand. "I'm Anabelle Bradford. Lieutenant, like yourself."`
+			`	"Lieutenant <last>," the officer says, shaking your hand. "I'm Cathy Bradford. Lieutenant, like yourself."`
 			choice
 				`	"Why are those prisoners out in the open? Shouldn't they have been loaded onto a ship by now?"`
 					goto why
@@ -145,10 +145,10 @@ mission "Enclave Middle 1A"
 				`	"It was the only option, really. If we'd tried occupying them, all that would have happened would be a rebellion followed by more occupation by the Free Worlds.`
 				`	"Well, obviously I did some crazy stuff, it's because I'm secretly a badass independent bounty hunter who 360 noscopes pirate scrubs all day long."`
 				`	"It'd be nice to stay and chat, but I kinda need to go; I need to report to Commodore Druff."`
-			`	"Of course," Annabelle replies. "Anyway, I have other stuff to do here- see you around, <first>."`
+			`	"Of course," Cathy replies. "Anyway, I have other stuff to do here- see you around, <first>."`
 				accept
 			label why
-			`	"Firing squad, obviously," Annabelle says, seeming somewhat annoyed with your disbelief.`
+			`	"Firing squad, obviously," Cathy says, seeming somewhat annoyed with your disbelief.`
 			choice
 				`	"What?! You can't just straight-up execute prisoners!"`
 				`	"Ah, that makes sense. Sorry, it's just we don't use capital punishment back home."`
@@ -158,10 +158,10 @@ mission "Enclave Middle 1A"
 				`	"Yes, I do. They deserve at least a trial, or... something!"`
 					goto trial
 				`	"...no."`
-			`	"Good," Annabelle says before turning and striding back off towards the prisoners.`
+			`	"Good," Cathy says before turning and striding back off towards the prisoners.`
 				accept
 			label trial
-			`	"You're in the navy now," Annabelle replies, fixing you with a piercing stare. "Remember that next time you object to orders from your superiors." She storms off without another word as the soldiers begin lining up, ready to execute the XSZ officials.`
+			`	"You're in the navy now," Cathy replies, fixing you with a piercing stare. "Remember that next time you object to orders from your superiors." She storms off without another word as the soldiers begin lining up, ready to execute the XSZ officials.`
 				accept
 		event "battle for svind"
 				
@@ -281,7 +281,7 @@ mission "Enclave Middle 2A"
 				`	Throw away the orders and pretend like you never got them.`
 					decline
 				`	Get ready to leave.`
-			`	You notify Annabelle of yor orders; she seems somewhat disgusted by being forced to experience diplomacy. "Fine," she says. "When are we leaving?"`
+			`	You notify Cathy of yor orders; she seems somewhat disgusted by being forced to experience diplomacy. "Fine," she says. "When are we leaving?"`
 			choice
 				`	"NOW!!!!!"`
 					launch
@@ -296,13 +296,13 @@ mission "Enclave Middle 2A"
 	
 	on visit
 		dialog
-			`You left Annabelle's ship, the <npc> behind. Better take off and wait for her to arrive in the system.`
+			`You left Cathy's ship, the <npc> behind. Better take off and wait for her to arrive in the system.`
 	on fail
 		dialog
-			`Annabelle's ship has been destroyed and she is now dead. Screw you mate, you should probably reload your save.`
+			`Cathy's ship has been destroyed and she is now dead. Screw you mate, you should probably reload your save.`
 	on complete
 			conversation
-				`When you touch down at the spaceport on Memorandum, Annabelle's ship not far behind, you find that the diplomats you are meant to be picking up aren't even ready to leave yet. Looks like you've got some time to kill.`
+				`When you touch down at the spaceport on Memorandum, Cathy's ship not far behind, you find that the diplomats you are meant to be picking up aren't even ready to leave yet. Looks like you've got some time to kill.`
 					accept
 
 					
@@ -320,7 +320,7 @@ mission "Enclave Middle 2B"
 	blocked `You do not have enough space for all the diplomats. You should complete or abort another mission to make room for them, then return here.`
 	on offer
 		conversation
-			`Finally, after a few hours waiting, your five passengers are ready to leave. Annabelle introduces you to them one by one- Maui Nalani, from Carmine; Lilija Ozolinsh, from Saal; Vinh Ngo, from Seminar; Thelma Harland, from Korine; and Andreas Floros, from Frodo. You shake their hands and greet them in what you assume is the norm for ambassadors; or at least, what you learned from Alondo during the war. You show them to their rooms on your ship and begin making preparations for takeoff.`
+			`Finally, after a few hours waiting, your five passengers are ready to leave. Cathy introduces you to them one by one- Maui Nalani, from Carmine; Lilija Ozolinsh, from Saal; Vinh Ngo, from Seminar; Thelma Harland, from Korine; and Andreas Floros, from Frodo. You shake their hands and greet them in what you assume is the norm for ambassadors; or at least, what you learned from Alondo during the war. You show them to their rooms on your ship and begin making preparations for takeoff.`
 				accept
 	
 	npc accompany save
@@ -331,11 +331,11 @@ mission "Enclave Middle 2B"
 		
 	on visit
 		dialog
-			`You left Annabelle's ship, the <npc> behind. Better take off and wait for her to arrive in the system.`
+			`You left Cathy's ship, the <npc> behind. Better take off and wait for her to arrive in the system.`
 			
 	on fail
 		dialog
-			`Annabelle's ship has been destroyed and she is now dead. Screw you mate, you should probably reload your save.`
+			`Cathy's ship has been destroyed and she is now dead. Screw you mate, you should probably reload your save.`
 			
 			
 mission "Enclave Middle 2C-A"
@@ -354,16 +354,16 @@ mission "Enclave Middle 2C-A"
 		event "enclave ceasefire"
 		event "end of ceasefire" 14
 		conversation
-			`Under cover of darkness, you land your ship at a private spaceport owned by one of your sympathisers, and you drop the diplomats- and a substantial contingent of soldiers- off. The R.N.S. Severn- Annabelle's ship- soon lands near yours.`
+			`Under cover of darkness, you land your ship at a private spaceport owned by one of your sympathisers, and you drop the diplomats- and a substantial contingent of soldiers- off. The R.N.S. Severn- Cathy's ship- soon lands near yours.`
 			choice
-				`	Go over to Annabelle's ship and wait for her to get off.`
+				`	Go over to Cathy's ship and wait for her to get off.`
 					goto talk
 				`	Get into your ship and start blowing stuff up.`
 			label attack
 			`	You take off and set your sights on the largest city on the planet, and the one where XSZ is headquartered. Unfortunately for you, there are some rather effective ground-to-air defence mechanisms here. You die quickly.`
 				die
 			label talk
-			`	Annabelle steps off her ship, looking disgusted at democracy. "You know, I'm very tempted to just go 'screw this, let's kill some corporate muthatruckas,'" she says.`
+			`	Cathy steps off her ship, looking disgusted at democracy. "You know, I'm very tempted to just go 'screw this, let's kill some corporate muthatruckas,'" she says.`
 			choice
 				`	"Good idea, let's go do that."`
 					goto attack
@@ -379,10 +379,10 @@ mission "Enclave Middle 2C-A"
 				`	"Yup."`
 					goto yes
 				`	"Nope."`
-			`	"There goes that idea, then," Annabelle says. When you try asking her what idea, she waves off the question. "It doesn't matter."`
+			`	"There goes that idea, then," Cathy says. When you try asking her what idea, she waves off the question. "It doesn't matter."`
 				goto diplomaticness
 			label yes
-			`	"Really?" Annabelle says, with a light in her eyes. "Because I was thinking, it might be quicker if you left now, went to Five, picked up whoever we're meant to get, and then jumped from there straight over to Muraganda or somewhere."`
+			`	"Really?" Cathy says, with a light in her eyes. "Because I was thinking, it might be quicker if you left now, went to Five, picked up whoever we're meant to get, and then jumped from there straight over to Muraganda or somewhere."`
 			choice
 				`	"Great idea!"`
 					goto idea
@@ -395,13 +395,13 @@ mission "Enclave Middle 2C-A"
 			`	"Fine, then," Annabele says. "It was just an idea, anyway."`
 				goto diplomaticness
 			label idea
-			`	"Guess I'll see you in a week or so, then," Annabelle says. You make preparations for takeoff.`
+			`	"Guess I'll see you in a week or so, then," Cathy says. You make preparations for takeoff.`
 				decline
 			label quarg
 			`	"That's them. Anyway, is true that you have one of their hyperdrives?"`
 				goto choice
 			label diplomaticness
-			`	Early the next morning, you and the Enclave diplomats are escorted to the capital city, an almost post-apocalyptic vision of pollution-filled industry and what appear to be slaves walking between factories. The sense of despair is palpable, severely contrasting the bright, carefree glass towers rising far above you. "Disgusting," you hear Annabelle whisper under her breath, followed by a slew of other profanities. After a long walk, which was obviously designed specifically to disorient you, you arrive at the most opulent of the towers, where you are greeted by a somewhat snooty-looking XSZ employee, wearing a slick suit. He is carrying a laser rifle. "This way, please," he says somewhat condescendingly as the doors swing open silently.`
+			`	Early the next morning, you and the Enclave diplomats are escorted to the capital city, an almost post-apocalyptic vision of pollution-filled industry and what appear to be slaves walking between factories. The sense of despair is palpable, severely contrasting the bright, carefree glass towers rising far above you. "Disgusting," you hear Cathy whisper under her breath, followed by a slew of other profanities. After a long walk, which was obviously designed specifically to disorient you, you arrive at the most opulent of the towers, where you are greeted by a somewhat snooty-looking XSZ employee, wearing a slick suit. He is carrying a laser rifle. "This way, please," he says somewhat condescendingly as the doors swing open silently.`
 			choice
 				`	Go in.`
 					goto in
@@ -423,10 +423,10 @@ mission "Enclave Middle 2C-A"
 			
 	on visit
 		dialog
-			`You left Annabelle's ship, the <npc> behind. Better take off and wait for her to arrive in the system.`
+			`You left Cathy's ship, the <npc> behind. Better take off and wait for her to arrive in the system.`
 	on fail
 		dialog
-			`Annabelle's ship has been destroyed and she is now dead. Screw you mate, you should probably reload your save.`
+			`Cathy's ship has been destroyed and she is now dead. Screw you mate, you should probably reload your save.`
 			
 mission "Enclave Middle 2C-B"
 	name "Government Evacuation"
@@ -456,19 +456,10 @@ mission "Enclave Middle 2D-A"
 		conversation
 			`The atmosphere on Lyfon is one of fear; the whole populace knows that this system and the others nearby are very much in danger of being attacked by XSZ thanks to their isolated position relative to the rest of Enclave space. As you were coming in to land, you notified the spaceport controllers of your assignment; thankfully, unlike the group of diplomats you met on Quaver, the officials you are to transport have actually arrived at the spaceport on time. You load them on to your ship as fast as you can, aware that the time on the ceasefire is ticking, and take off as soon as possible.`
 				launch
-				
-	npc accompany save
-		personality heroic vindictive escort
-		system Maduras
-		government "Enclave"
-		ship "Destroyer" "R.N.S. Severn"
-			
-	on visit
-		dialog
-			`You left Annabelle's ship, the <npc> behind. Better take off and wait for her to arrive in the system.`
-	on fail
-		dialog
-			`Annabelle's ship has been destroyed and she is now dead. Screw you mate, you should probably reload your save.`
+	on complete
+		conversation
+			`When you land, the Cabinet members are escorted speedily off your ship and to the safety of a large compound on the outskirts of the spaceport city.`
+		
 				
 mission "Enclave Middle 2D-B"
 	name "Government Evacuation"
@@ -485,18 +476,139 @@ mission "Enclave Middle 2D-B"
 		conversation
 			`The atmosphere on Lyfon is one of fear; the whole populace knows that this system and the others nearby are very much in danger of being attacked by XSZ thanks to their isolated position relative to the rest of Enclave space. As you were coming in to land, you notified the spaceport controllers of your assignment; thankfully, unlike the group of diplomats you met on Quaver, the officials you are to transport have actually arrived at the spaceport on time. You load them on to your ship as fast as you can, aware that the time on the ceasefire is ticking, and take off as soon as possible.`
 				launch
+	on complete
+		conversation
+			`When you land, the Cabinet members are escorted speedily off your ship and to the safety of a large compound on the outskirts of the spaceport city.`
 				
-mission "Enclave Middle 2E"
+				
+mission "Enclave Middle 2E-A"
 	name "Return to Jumblar"
 	description "Return to <destination> for your next assignment."
 	landing
 	source Lyfon
 	destination Jumblar
 	to offer
-		or
 			has "Enclave Middle 2C-A: done"
+	to complete
+			has "Enclave Middle 2D-A: done"
+			
+	npc accompany save
+		personality heroic vindictive escort
+		system Maduras
+		government "Enclave"
+		ship "Destroyer" "R.N.S. Severn"
+			
+	on visit
+		dialog
+			`You left Cathy's ship, the <npc> behind. Better take off and wait for her to arrive in the system.`
+	on fail
+		dialog
+			`Cathy's ship has been destroyed and she is now dead. Screw you mate, you should probably reload your save.`
+	
+	on complete
+		conversation
+			`You touch down on Jumblar to find that Cathy has already landed and is waiting for you near the landing pads.`
+			choice
+				`	Shoot her in the head.`
+				`	Go over to her.`
+					goto good
+			label shoot
+			`	Well that was a bad idea. As should be expected, you die very quickly.`
+				die
+			label good
+			`	You walk over to your fellow Lieutenant. "No new orders for you," Cathy says. "I already checked. I'm nice like that."`
+			choice
+				`	"What now, then?"`
+				`	"Any for you?"`
+					goto you
+			`	"Guess you're free for a while," she replies. "Make the most of it- the ceasefire'll be ending soon."`
+			choice
+				`	"Any for you?"`
+			label you
+			`	"I'm stationed here still," Cathy replies. "But in general, yeah, pretty much means I don't have anything to do. Yay."`
+			choice
+				`	"Guess I'll see you around, then."`
+				`	Shoot her in the head.`
+					goto shoot
+			`	"Bye," Cathy says with a slight smile.`
+			
+			
+mission "Enclave Middle 2E-B"
+	name "Return to Jumblar"
+	description "Return to <destination> for your next assignment."
+	landing
+	source Lyfon
+	destination Jumblar
+	to offer
 			has "Enclave Middle 2C-B: done"
 	to complete
-		or
-			has "Enclave Middle 2D-A: done"
 			has "Enclave Middle 2D-B: done"
+	on complete
+		conversation
+			`You touch down on Jumblar to find that Cathy arrived a few days ago and is waiting for you near the landing pads.`
+			choice
+				`	Shoot her in the head.`
+				`	Go over to her.`
+					goto good
+			label shoot
+			`	Well that was a bad idea. As should be expected, you die very quickly.`
+				die
+			label good
+			`	You walk over to your fellow Lieutenant. "No new orders for you," Cathy says. "I already checked. I'm nice like that."`
+			choice
+				`	"What now, then?"`
+				`	"Any for you?"`
+					goto you
+			`	"Guess you're free for a while," she replies. "Make the most of it- the ceasefire'll be ending soon."`
+			choice
+				`	"Any for you?"`
+			label you
+			`	"I'm stationed here still," Cathy replies. "But in general, yeah, pretty much means I don't have anything to do. Yay."`
+			choice
+				`	"Guess I'll see you around, then."`
+				`	Shoot her in the head.`
+					goto shoot
+			`	"Bye," Cathy says with a slight smile.`
+				accept
+		"reputation: XSZ Corporation" = -500000
+				
+				
+mission "Enclave Middle 3A"
+	name "Report to Jumblar"
+	description "Head straight to <destination> for orders regarding XSZ's latest attack."
+	landing
+	source
+		attributes enclave
+	destination Jumblar
+	to offer
+		or
+			has "Enclave Middle 2E-A: done"
+			has "Enclave Middle 2E-A: done"
+		random < 35
+	on offer
+		conversation
+			`The spaceport is deathly silent.`
+			`	All eyes are on a holoscreen mounted on the wall, clearly set to a news channel.`
+			`	The footage showing is of one of the major cities on Carmine, in the Pipaeus system- or at least, what used to be a city. Now all that remains is a desolate wasteland of flattened buildings and millions of dead people- or not even that. In what appears to have been a nuclear blast, the majority of the city's population has been vaporized.`
+			`	"After launching this first atrocious nuclear assault on a civilian population, we are getting reports that the perpetrators are the XSZ Corporation," the newsreader says with a slight toen of hysteria in his voice. "And that this atrocity has been repeated on a number of other large settlements across Carmine. We were unable to contact the President, nor any military leaders for their take on this attack."`
+			choice
+				`	Set off immediately and head for <destination> for orders.`
+			`	You turn and run out of the spaceport towards your ship, followed by a number of other Enclave officers heading towards theirs. As you are readying your ship for takeoff, one of them contacts you-`
+			`	"Sir," they begin. "What do we do?"`
+			choice
+				`	"No idea. I'm heading to <destination> for orders."`
+				`	"We need to be ready to launch an assault against XSZ in retaliation. Head for <destination> for orders."`
+			`	"Understood," they reply. The channel cuts off.`
+				launch
+		event "attack on carmine"
+		event "attack on alleshafen" 3
+		event "attack on arikv" 3
+	npc accompany
+		personality heroic vindictive escort
+		system <source>
+		government Enclave
+		fleet
+			names "republic small"
+			variant
+				"Destroyer" 2
+				"Sea Drake" 4
