@@ -205,3 +205,50 @@ event "battle for svind"
 		spaceport `	The entire spaceport seems to be filled with people with cameras, hysterically barging their way through the crowds to find their ride off of this moon.`
 	planet Jumblar
 		description `Now that war has truly begun, the production of warships on this planet appears to have been increased tenfold; every few minutes, a gleaming, new ship flies overhead, arriving at the spaceport to join up with the main fleets.`
+
+event "enclave ceasefire"
+	government "Enclave"
+		"attitude toward"
+			"XSZ Corporation" 0
+	government "XSZ Corporation"
+		"attitude toward"
+			"Enclave" 0
+			
+event "end of ceasefire"
+	government "Enclave"
+		"attitude toward"
+			"XSZ Corporation" -500000
+	government "XSZ Corporation"
+		"attitude toward"
+			"Enclave" -500000
+			
+event "attack on carmine"
+	system Pipaeus
+		government "XSZ Corporation"
+		fleet "XSZ Small" 500
+		fleet "XSZ Large" 1000
+		fleet "XSZ Nuclear" 1500
+	planet Carmine
+		description `Many of Carmine's largest cities have been nuked to oblivion by XSZ's forces. While there is still some of the old infrastructure around, the planet is, for the most part, now devoid of a lot of the basic necessities to allow humans to live comfortably.`
+		spaceport `The spaceport is no longer in existence. It was one of XSZ's first targets in the nuclear attack, and as a result the area has been entirely flattened. It seems that a number of tanks of deuterium hyperspace fuel that were housed at the spaceport were ruptured during the blast; fires now rage constantly in the spaceport's remains.`
+		
+event "attack on alleshafen"
+	system Adke
+		government "XSZ Corporation"
+		fleet "XSZ Small" 500
+		fleet "XSZ Large" 1000
+		fleet "XSZ Nuclear" 1500
+	planet Alleshafen
+		description `Like Carmine, Alleshafen bore the brunt of a large number of nuclear attacks. As a result, while it has not been decimated as completely as Carmine was- especially in the shipbuilding areas- the environment on Alleshafen will continue to be in a dire state thanks to the radiation from the nuclear blasts until well after you are dead.`
+		spaceport `The spaceport is relatively unscathed; the only marks of battle on it are frequent burns on the walls, clearly from lasers, and the absence of one of the main terminals; you suspect it was destroyed by sustained particle fire.`
+		
+event "attack on arikv"
+	system Anvyu
+		fleet Trader 1500
+		fleet Transporter 1600
+		fleet "Enclave Patrol" 600
+		fleet "Enclave Capital" 900
+		fleet "XSZ Small" 1800
+	planet Arikv
+		description `Arikv was settled only fairly recently, according to the locals- the terraforming process is still continuing, which explains the humid conditions, and a decent part of the planet is still uncharted.`
+		description ` However, this planet still boasts a shipyard and a comprehensive outfitter- doubtless due to its strategic position between XSZ and Enclave territory. It appears that the recent XSZ attack against Arikv was, in fact, repulsed successfully; the same cannot be said for the neighbouring systems.`
