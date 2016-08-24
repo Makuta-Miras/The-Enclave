@@ -1,3 +1,4 @@
+
 galaxy "Enclave Galaxy"
 	pos 5000 500
 	sprite ui/EnclaveGalaxy
@@ -7,11 +8,11 @@ galaxy Labels
 	sprite label/Labels
 
 system Abomin
-	pos 4788.53 346.251
+	pos 4806.53 362.251
 	government Independent
 	habitable 851.84
-	link Thornton
 	link Pralmia
+	link Cheons
 	asteroids "small rock" 6 3.4804
 	asteroids "medium rock" 46 4.2504
 	asteroids "large rock" 12 3.8808
@@ -73,8 +74,8 @@ system Adke
 	government Enclave
 	habitable 1715
 	link Ithaos
-	link Ninsug
 	link Frill
+	link Arkhos
 	asteroids "small rock" 1 2.6838
 	asteroids "medium rock" 11 2.0412
 	asteroids "large rock" 22 4.0446
@@ -233,6 +234,59 @@ system Aetrus
 			distance 628
 			period 40.198
 
+system Akildocs
+	pos 4722.05 435.649
+	habitable 1080
+	link Taarsten
+	link Gaenealf
+	link Thornton
+	link Ibained
+	asteroids "small rock" 8 5.9976
+	asteroids "medium rock" 16 5.5216
+	asteroids "large rock" 6 4.284
+	asteroids "small metal" 5 3.6652
+	asteroids "medium metal" 20 4.522
+	asteroids "large metal" 11 3.9508
+	object
+		sprite star/g0
+		period 10
+	object
+		sprite planet/cloud5
+		distance 196.36
+		period 33.491
+	object
+		sprite planet/rock19
+		distance 452
+		period 116.965
+	object
+		sprite planet/cloud6
+		distance 853.81
+		period 303.662
+		object
+			sprite planet/rock7
+			distance 129
+			period 15
+	object
+		sprite planet/rock12
+		distance 1245.85
+		period 535.238
+	object
+		sprite planet/gas16
+		distance 2517.06
+		period 1537.05
+		object
+			sprite planet/rhea
+			distance 225
+			period 17.7652
+		object
+			sprite planet/luna
+			distance 371
+			period 37.6147
+		object
+			sprite planet/ice8
+			distance 528
+			period 63.8628
+
 system Alcove
 	pos 4987.74 446.501
 	habitable 2795
@@ -347,10 +401,8 @@ system Anvyu
 	pos 4898 608
 	government Enclave
 	habitable 425.92
-	link Skryydr
 	link Five
 	link Ithaos
-	link Smoline
 	asteroids "small rock" 52 5.0058
 	asteroids "medium rock" 42 6.2694
 	asteroids "large rock" 70 5.7834
@@ -524,6 +576,8 @@ system Arkhos
 	habitable 135
 	link Theurrhaeus
 	link Five
+	link Gaenealf
+	link Adke
 	asteroids "medium rock" 4 2.97
 	asteroids "large rock" 1 8.3754
 	asteroids "medium metal" 30 3.9798
@@ -810,6 +864,58 @@ system Breijkip
 			distance 442
 			period 48.9137
 
+system Cheons
+	pos 4749.31 323.306
+	government Enclave
+	habitable 858.28
+	link Rumebali
+	link Thornton
+	link Schnael
+	link Ibained
+	link Abomin
+	link Opheuldod
+	asteroids "medium rock" 86 1.17
+	asteroids "large rock" 1 2.412
+	asteroids "medium metal" 5 1.62
+	asteroids "large metal" 4 1.026
+	object
+		sprite star/g5
+		distance 30.1697
+		period 15.9672
+	object
+		sprite star/m4
+		distance 80.8303
+		period 15.9672
+		offset 180
+	object
+		sprite planet/cloud4
+		distance 266.87
+		period 59.5245
+	object
+		sprite planet/rock6
+		distance 509.91
+		period 157.212
+	object
+		sprite planet/gas7
+		distance 1081.67
+		period 485.722
+		object
+			sprite planet/rock14
+			distance 230
+			period 12.4086
+		object
+			sprite planet/rhea
+			distance 346
+			period 22.8952
+	object
+		sprite planet/gas9
+		distance 2218.83
+		period 1427.03
+		object
+			sprite planet/luna
+			distance 244
+			period 14.2914
+
 system Cispia
 	pos 5043.61 738.365
 	government Enclave
@@ -925,6 +1031,69 @@ system Clurth
 			sprite planet/callisto
 			distance 538
 			period 53.3147
+
+system Crourp
+	pos 4667.21 304.486
+	habitable 233.28
+	link Schnael
+	link Floop
+	link Rumebali
+	asteroids "small rock" 1 3.0264
+	asteroids "large rock" 1 3.9312
+	asteroids "large metal" 1 1.9656
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 530
+	trade Food 350
+	trade "Heavy Metals" 960
+	trade Industrial 720
+	trade "Luxury Goods" 1220
+	trade Medical 680
+	trade Metal 390
+	trade Plastic 390
+	object
+		sprite star/m4
+		period 10
+	object
+		sprite planet/gas13
+		distance 403.29
+		period 212.103
+		object
+			sprite planet/lava0
+			distance 282
+			period 13.3685
+	object
+		sprite planet/rock13
+		distance 1027.05
+		period 862.003
+		object
+			sprite planet/rhea
+			distance 146
+			period 22.1764
+	object
+		sprite planet/gas7
+		distance 1548.06
+		period 1595.16
+		object
+			sprite planet/europa
+			distance 251
+			period 14.1462
+	object
+		sprite planet/gas8
+		distance 2388.42
+		period 3056.94
+		object
+			sprite planet/dust4
+			distance 206
+			period 15.739
+		object
+			sprite planet/callisto
+			distance 311
+			period 29.1956
+		object
+			sprite planet/dust5
+			distance 461
+			period 52.69
 
 system Crul'im'heim
 	pos 5453.41 783.128
@@ -1191,6 +1360,60 @@ system Descent
 		sprite planet/gas17
 		distance 1883.96
 		period 1390.57
+
+system Driaca
+	pos 4654.21 458.486
+	habitable 486.68
+	link Taarsten
+	link Lardiam
+	link Gaenealf
+	asteroids "small rock" 9 3.0324
+	asteroids "medium rock" 30 3.2452
+	asteroids "large rock" 48 2.0216
+	asteroids "small metal" 7 2.394
+	asteroids "medium metal" 191 3.4048
+	asteroids "large metal" 1 3.059
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 530
+	trade Food 350
+	trade "Heavy Metals" 960
+	trade Industrial 720
+	trade "Luxury Goods" 1220
+	trade Medical 680
+	trade Metal 390
+	trade Plastic 390
+	object
+		sprite star/k0
+		period 10
+	object
+		sprite planet/rock19
+		distance 178.64
+		period 43.2919
+	object
+		sprite planet/gas15
+		distance 926.45
+		period 511.295
+		object
+			sprite planet/miranda
+			distance 225
+			period 17.7652
+		object
+			sprite planet/lava0
+			distance 379
+			period 38.8379
+	object
+		sprite planet/gas16
+		distance 2145.54
+		period 1801.95
+		object
+			sprite planet/dust5
+			distance 211
+			period 16.1332
+		object
+			sprite planet/rock3
+			distance 317
+			period 29.7089
 
 system Dvorak
 	pos 5174.86 474.628
@@ -1484,6 +1707,70 @@ system Five
 			period 17.5289
 			offset 119.527
 
+system Floop
+	pos 4632.21 339.486
+	habitable 425.92
+	link Lardiam
+	link Crourp
+	asteroids "small rock" 9 2.67
+	asteroids "medium rock" 95 2.67
+	asteroids "large rock" 7 2.1
+	asteroids "medium metal" 8 3.12
+	asteroids "large metal" 12 3.48
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 530
+	trade Food 350
+	trade "Heavy Metals" 960
+	trade Industrial 720
+	trade "Luxury Goods" 1220
+	trade Medical 680
+	trade Metal 390
+	trade Plastic 390
+	object
+		sprite star/k5
+		period 10
+	object
+		sprite planet/ice2
+		distance 157.89
+		period 38.4528
+	object
+		sprite planet/ice6
+		distance 426.78
+		period 170.884
+	object
+		sprite planet/rock12
+		distance 899.22
+		period 522.631
+	object
+		sprite planet/gas1
+		distance 1560.26
+		period 1194.51
+		object
+			sprite planet/dust0
+			distance 199
+			period 11.2201
+		object
+			sprite planet/dust4
+			distance 279
+			period 18.6261
+		object
+			sprite planet/dust7
+			distance 385
+			period 30.193
+	object
+		sprite planet/gas7
+		distance 2499.87
+		period 2422.55
+		object
+			sprite planet/oberon
+			distance 227
+			period 12.1666
+		object
+			sprite planet/dust1
+			distance 360
+			period 24.2988
+
 system Fo'gar'helien
 	pos 5403.41 765.128
 	government Kaltheim
@@ -1653,7 +1940,7 @@ system Frill
 	government Enclave
 	habitable 1080
 	link Adke
-	link Thornton
+	link Gaenealf
 	link Ninsug
 	asteroids "small rock" 1 5.661
 	asteroids "medium rock" 6 6.324
@@ -1749,6 +2036,66 @@ system Frontier
 			distance 653.142
 			period 67.9783
 			offset 18.0661
+
+system Gaenealf
+	pos 4743.21 489.486
+	habitable 486.68
+	link Frill
+	link Akildocs
+	link Thornton
+	link Driaca
+	link Arkhos
+	link Theurrhaeus
+	asteroids "medium rock" 3 5.3676
+	asteroids "large rock" 1 2.9484
+	asteroids "small metal" 31 2.6082
+	asteroids "medium metal" 51 5.6322
+	asteroids "large metal" 41 4.6116
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 530
+	trade Food 350
+	trade "Heavy Metals" 960
+	trade Industrial 720
+	trade "Luxury Goods" 1220
+	trade Medical 680
+	trade Metal 390
+	trade Plastic 390
+	object
+		sprite star/k0
+		period 10
+	object
+		sprite planet/ice5
+		distance 226.61
+		period 61.8524
+	object
+		sprite planet/rock5
+		distance 469.5
+		period 184.456
+	object
+		sprite planet/gas2
+		distance 1159.46
+		period 715.85
+	object
+		sprite planet/rock9
+		distance 1406.27
+		period 956.184
+	object
+		sprite planet/rhea
+		distance 1915.52
+		period 1520.09
+	object
+		sprite planet/gas16
+		distance 3225.33
+		period 3321.23
+		object
+			sprite planet/rock14
+			distance 210
+			period 16.0187
+		object
+			sprite planet/oberon
+			distance 342
+			period 33.2917
 
 system Gautus
 	pos 5203.61 712.365
@@ -1922,6 +2269,45 @@ system Hrau'ngri'liadien
 		sprite planet/luna
 		distance 2412.77
 		period 2650.08
+
+system Ibained
+	pos 4728.99 380.102
+	government Enclave
+	habitable 486.68
+	link Rumebali
+	link Akildocs
+	link Cheons
+	asteroids "medium rock" 18 5.7024
+	asteroids "large rock" 7 3.1482
+	asteroids "medium metal" 5 4.158
+	asteroids "large metal" 1 6.7716
+	object
+		sprite star/k0
+		period 10
+	object
+		sprite planet/venus
+		distance 160.84
+		period 36.9853
+	object
+		sprite planet/gas17
+		distance 547.48
+		period 232.269
+		object
+			sprite planet/oberon
+			distance 211
+			period 13.0947
+	object
+		sprite planet/desert10
+		distance 1283.48
+		period 833.723
+	object
+		sprite planet/lava1
+		distance 1472.52
+		period 1024.54
+	object
+		sprite planet/gas6
+		distance 1856.52
+		period 1450.4
 
 system Ik'ari'aka
 	pos 5399.41 839.128
@@ -2424,6 +2810,56 @@ system Kama'la'ez
 			distance 373
 			period 35.8918
 
+system Lardiam
+	pos 4627.21 376.486
+	habitable 320
+	link Floop
+	link Taarsten
+	link Driaca
+	asteroids "small rock" 26 4.2601
+	asteroids "medium rock" 1 4.901
+	asteroids "large rock" 5 5.3157
+	asteroids "small metal" 9 4.9764
+	asteroids "medium metal" 3 3.393
+	asteroids "large metal" 5 2.3374
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 530
+	trade Food 350
+	trade "Heavy Metals" 960
+	trade Industrial 720
+	trade "Luxury Goods" 1220
+	trade Medical 680
+	trade Metal 390
+	trade Plastic 390
+	object
+		sprite star/m0
+		period 10
+	object
+		sprite planet/rock12
+		distance 159
+		period 44.8312
+	object
+		sprite planet/rock8
+		distance 512.76
+		period 259.631
+	object
+		sprite planet/rock19
+		distance 930.8
+		period 634.994
+	object
+		sprite planet/gas8
+		distance 2409.05
+		period 2643.95
+		object
+			sprite planet/ice8
+			distance 183
+			period 13.1781
+		object
+			sprite planet/desert4
+			distance 331
+			period 32.0567
+
 system Lo'or'awaen
 	pos 5418.88 625.673
 	government Kaltheim
@@ -2755,10 +3191,9 @@ system Muraganda
 			period 22.7695
 
 system Ninsug
-	pos 4823.61 492.955
+	pos 4824.61 497.955
 	government Enclave
 	habitable 2507.76
-	link Adke
 	link Pipaeus
 	link Pralmia
 	link Thornton
@@ -2805,6 +3240,55 @@ system Ninsug
 			sprite planet/oberon
 			distance 352
 			period 32.9038
+
+system Opheuldod
+	pos 4748.21 244.486
+	habitable 486.68
+	link Schnael
+	link Cheons
+	asteroids "small rock" 1 3.3033
+	asteroids "medium rock" 3 2.8392
+	asteroids "large rock" 7 3.8493
+	asteroids "small metal" 1 2.5116
+	asteroids "medium metal" 1 3.1668
+	asteroids "large metal" 2 2.4297
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 530
+	trade Food 350
+	trade "Heavy Metals" 960
+	trade Industrial 720
+	trade "Luxury Goods" 1220
+	trade Medical 680
+	trade Metal 390
+	trade Plastic 390
+	object
+		sprite star/k0
+		period 10
+	object
+		sprite planet/rock8
+		distance 224.49
+		period 60.9865
+	object
+		sprite planet/ocean3
+		distance 468.1
+		period 183.631
+	object
+		sprite planet/ice5
+		distance 956.06
+		period 536.001
+	object
+		sprite planet/tethys
+		distance 1747.06
+		period 1324.04
+	object
+		sprite planet/gas13
+		distance 2591.42
+		period 2391.91
+		object
+			sprite planet/rhea
+			distance 299
+			period 14.5954
 
 system Orff
 	pos 4994 608
@@ -3199,12 +3683,80 @@ system "Pug Morbosa"
 			distance 254
 			period 11.8633
 
+system Rumebali
+	pos 4684.21 349.486
+	habitable 1948.28
+	link Taarsten
+	link Crourp
+	link Cheons
+	link Ibained
+	asteroids "small rock" 5 2.1714
+	asteroids "medium rock" 21 3.234
+	asteroids "large rock" 2 2.1714
+	asteroids "small metal" 4 2.0328
+	asteroids "medium metal" 24 1.2243
+	asteroids "large metal" 5 2.1021
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 530
+	trade Food 350
+	trade "Heavy Metals" 960
+	trade Industrial 720
+	trade "Luxury Goods" 1220
+	trade Medical 680
+	trade Metal 390
+	trade Plastic 390
+	object
+		sprite star/f5
+		distance 15.5657
+		period 13.4323
+	object
+		sprite star/m4
+		distance 114.434
+		period 13.4323
+		offset 180
+	object
+		sprite planet/cloud2
+		distance 402.444
+		period 73.1632
+		object
+			sprite planet/oberon
+			distance 168
+			period 17.5161
+	object
+		sprite planet/gas16
+		distance 1160.13
+		period 358.094
+		object
+			sprite planet/callisto
+			distance 204
+			period 15.3371
+		object
+			sprite planet/miranda
+			distance 295
+			period 26.6704
+		object
+			sprite planet/dust3
+			distance 435
+			period 47.7563
+	object
+		sprite planet/gas4
+		distance 2244.42
+		period 963.589
+		object
+			sprite planet/io
+			distance 258
+			period 14.6159
+		object
+			sprite planet/dust4
+			distance 359
+			period 23.9905
+
 system Saeus
-	pos 4787 606
+	pos 4786 596
 	government Enclave
 	habitable 425.92
 	link Five
-	link Theurrhaeus
 	asteroids "small rock" 5 1.785
 	asteroids "medium rock" 8 2.604
 	asteroids "large rock" 2 2.877
@@ -3253,11 +3805,63 @@ system Saeus
 			distance 199
 			period 13.9866
 
+system Schnael
+	pos 4708.21 283.486
+	habitable 425.92
+	link Crourp
+	link Opheuldod
+	link Cheons
+	asteroids "small rock" 7 3.2844
+	asteroids "medium rock" 10 4.0572
+	asteroids "large rock" 8 6.9552
+	asteroids "medium metal" 8 3.542
+	asteroids "large metal" 1 4.7656
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 530
+	trade Food 350
+	trade "Heavy Metals" 960
+	trade Industrial 720
+	trade "Luxury Goods" 1220
+	trade Medical 680
+	trade Metal 390
+	trade Plastic 390
+	object
+		sprite star/k5
+		period 10
+	object
+		sprite planet/cloud6
+		distance 261.29
+		period 81.8616
+		object
+			sprite planet/dust3
+			distance 147
+			period 18.2466
+	object
+		sprite planet/cloud1
+		distance 717.33
+		period 372.37
+		object
+			sprite planet/ice8
+			distance 158
+			period 16.2159
+	object
+		sprite planet/dust5
+		distance 1009.42
+		period 621.59
+	object
+		sprite planet/rock14
+		distance 1532.67
+		period 1162.97
+	object
+		sprite planet/gas1
+		distance 1879.92
+		period 1579.81
+
 system Skryydr
-	pos 4951.87 633.597
+	pos 4955.87 630.597
 	government "XSZ Corporation"
 	habitable 625
-	link Anvyu
 	link Orff
 	link Ark
 	link Smoline
@@ -3381,14 +3985,13 @@ system Skryydr
 		offset 23.3058
 
 system Smoline
-	pos 4927 586
+	pos 4932 583
 	government Enclave
 	habitable 1715
+	link Ithaos
 	link Pipaeus
 	link Orff
 	link Skryydr
-	link Ithaos
-	link Anvyu
 	asteroids "large rock" 1 1.904
 	asteroids "medium metal" 4 3.556
 	asteroids "large metal" 2 1.988
@@ -3428,11 +4031,6 @@ system Smoline
 			sprite planet/callisto
 			distance 473
 			period 26.2758
-	object "Ascendancy Wormhole"
-		sprite planet/wormhole
-		distance 4619.19
-		period 3032.33
-		offset 56.432
 
 system Staircase
 	pos 4921.74 439.501
@@ -3620,6 +4218,67 @@ system Syj'ngf'bnk
 			distance 234
 			period 15.2932
 
+system Taarsten
+	pos 4682.21 403.486
+	habitable 1505.92
+	link Driaca
+	link Akildocs
+	link Lardiam
+	link Rumebali
+	asteroids "small rock" 41 1.624
+	asteroids "medium rock" 54 3.596
+	asteroids "large rock" 26 3.335
+	asteroids "small metal" 1 4.031
+	asteroids "medium metal" 42 1.682
+	asteroids "large metal" 17 3.422
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 530
+	trade Food 350
+	trade "Heavy Metals" 960
+	trade Industrial 720
+	trade "Luxury Goods" 1220
+	trade Medical 680
+	trade Metal 390
+	trade Plastic 390
+	object
+		sprite star/g0
+		distance 26.3032
+		period 9.2445
+	object
+		sprite star/k5
+		distance 66.6968
+		period 9.2445
+		offset 180
+	object
+		sprite planet/mercury
+		distance 265.657
+		period 44.6314
+	object
+		sprite planet/gas7
+		distance 736.547
+		period 206.044
+		object
+			sprite planet/ice8
+			distance 252
+			period 14.2309
+		object
+			sprite planet/rock17
+			distance 337
+			period 22.0077
+	object
+		sprite planet/gas11
+		distance 1662.16
+		period 698.501
+	object
+		sprite planet/gas16
+		distance 2132.32
+		period 1014.93
+		object
+			sprite planet/miranda
+			distance 204
+			period 15.3371
+
 system Thaen
 	pos 5168.86 643.628
 	government Enclave
@@ -3678,11 +4337,11 @@ system Thaen
 			period 16.2672
 
 system Theurrhaeus
-	pos 4733 557
+	pos 4733 541
 	government Enclave
 	habitable 455
 	link Arkhos
-	link Saeus
+	link Gaenealf
 	asteroids "small rock" 13 2.376
 	asteroids "medium rock" 7 2.268
 	asteroids "large rock" 14 2.268
@@ -3745,13 +4404,14 @@ system Theurrhaeus
 		offset 350.137
 
 system Thornton
-	pos 4758.61 400.955
+	pos 4765.61 407.955
 	government Enclave
 	habitable 5000
 	link Ninsug
-	link Frill
 	link Pralmia
-	link Abomin
+	link Akildocs
+	link Gaenealf
+	link Cheons
 	asteroids "small rock" 51 3.168
 	asteroids "medium rock" 143 3.234
 	asteroids "large rock" 50 1.452
@@ -4654,7 +5314,7 @@ planet Puggleswap
 	spaceport `			P`
 	spaceport `		O`
 	spaceport `	R`
-	spaceport T
+	spaceport `	T`
 
 planet Quaver
 	attributes enclave notjumblar
@@ -4740,3 +5400,4 @@ planet Ziv'rahk'ashgrir
 	spaceport `The spaceport has a decent section of it devoted to the transfer of civilians to and from space; in fact, this area feels almost like a human spaceport, if it were not for the grey-skinned aliens walking around in place of humans.`
 	spaceport `	The rest of the spaceport is comprised of military buildings, planetary defences, and a few small ship construction lines.`
 	"required reputation" 500
+
