@@ -275,7 +275,7 @@ mission "Enclave Middle 2A"
 			`You make sure the Muesli Carriers are landed and accounted for with the rest of the forces stationed on New Asgard, then you go straight to find Commodore Druff.`
 			`	When you cannot find him, you report to the newly-built garrison and are told that he left orders for you-`
 			`Lieutenant,`
-			`	We're going to try and negotiate a temporary ceasefire with XSZ so that we can get into the group of systems by Five, pick up the major people in the government, and get them out; they're completely bottled up in there. We've got a group of diplomats waiting on <destination>; I want you to go there, pick them up and take them to Latent. Take Lieutenant Bradford with you, too; she could always do with some more experience of diplomacy.`
+			`	We've been contacted by some supposed XSZ rebels who reckon they can get us an audience with XSZ- while it's probably a trap, we're going to use it to try and negotiate a temporary ceasefire with XSZ so that we can get into the group of systems by Five, pick up the major people in the government, and get them out; they're completely bottled up in there. We've got a group of diplomats waiting on <destination>; I want you to go there, pick them up and take them to Latent. Take Lieutenant Bradford with you, too; she could always do with some more experience of diplomacy, and I suspect that if you're greeted less than kindly, you'll need her extra firepower.`
 			`	-Commodore Konrad Druff`
 			choice
 				`	Throw away the orders and pretend like you never got them.`
@@ -304,6 +304,7 @@ mission "Enclave Middle 2A"
 			conversation
 				`When you touch down at the spaceport on Memorandum, Annabelle's ship not far behind, you find that the diplomats you are meant to be picking up aren't even ready to leave yet. Looks like you've got some time to kill.`
 					accept
+
 					
 mission "Enclave Middle 2B"
 	name "Ceasefire negotiations"
@@ -313,7 +314,7 @@ mission "Enclave Middle 2B"
 	destination "Latent"
 	to offer
 		has "Enclave Middle 2A: done"
-	clearance "One of the diplomats smoothly manages to get you permission to land, albeit under heavy guard."
+	clearance
 		planet Latent
 	passengers 5
 	blocked `You do not have enough space for all the diplomats. You should complete or abort another mission to make room for them, then return here.`
@@ -336,18 +337,166 @@ mission "Enclave Middle 2B"
 		dialog
 			`Annabelle's ship has been destroyed and she is now dead. Screw you mate, you should probably reload your save.`
 			
-mission "Enclave Middle 2C"
-	name "Government evacuation"
+			
+mission "Enclave Middle 2C-A"
+	name "Government Evacuation"
 	description "Whilst the ceasefire lasts, travel to <destination> in order to pick up the major people in the Enclave's government and move them to safety."
 	landing
 	autosave
-	source "Latent"
+	source Latent
+	destination Lyfon
 	to offer
 		has "Enclave Middle 2B: done"
 	passengers 5
 	blocked `You do not have enough space for all the diplomats. You should complete or abort another mission to make room for them, then return here.`
 	on offer
+		"reputation: XSZ Corporation" = 1
+		event "enclave ceasefire"
+		event "end of ceasefire" 14
 		conversation
-			`You drop the diplomats off `
+			`Under cover of darkness, you land your ship at a private spaceport owned by one of your sympathisers, and you drop the diplomats- and a substantial contingent of soldiers- off. The R.N.S. Severn- Annabelle's ship- soon lands near yours.`
+			choice
+				`	Go over to Annabelle's ship and wait for her to get off.`
+					goto talk
+				`	Get into your ship and start blowing stuff up.`
+			label attack
+			`	You take off and set your sights on the largest city on the planet, and the one where XSZ is headquartered. Unfortunately for you, there are some rather effective ground-to-air defence mechanisms here. You die quickly.`
+				die
+			label talk
+			`	Annabelle steps off her ship, looking disgusted at democracy. "You know, I'm very tempted to just go 'screw this, let's kill some corporate muthatruckas,'" she says.`
+			choice
+				`	"Good idea, let's go do that."`
+					goto attack
+				`	"You know, I have this funny feeling that that's exactly why the Commodore sent you on this mission."`
+			`	"Doesn't mean I have to enjoy it," she replies somewhat grumpily. "By the way, is it true that you've got one of those drives that those aliens, what are they called, the... Quarck? Quorp?"`
+			choice
+				`	"The Quarg."`
+					goto quarg
+				`	"No idea what aliens you're talking about."
+			`	"Well, is it true that you've got an alien hyperdrive that doesn't need hyperlinks to travel?"`
+			label choice
+			choice
+				`	"Yup."`
+					goto yes
+				`	"Nope."`
+			`	"There goes that idea, then," Annabelle says. When you try asking her what idea, she waves off the question. "It doesn't matter."`
+				goto diplomaticness
+			label yes
+			`	"Really?" Annabelle says, with a light in her eyes. "Because I was thinking, it might be quicker if you left now, went to Five, picked up whoever we're meant to get, and then jumped from there straight over to Muraganda or somewhere."`
+			choice
+				`	"Great idea!"`
+					goto idea
+				`	"What about you?"`
+			`	She shrugs dismissively. "I'll stay here with the diplomats; if they get a ceasefire we're good, otherwise we're kinda screwed no matter what, so this is quite obviously a good idea."`
+			choice
+				`	"Still don't think it's a good idea."`
+				`	"Okay, then. Sounds good!"`
+					goto idea
+			`	"Fine, then," Annabele says. "It was just an idea, anyway."`
+				goto diplomaticness
+			label idea
+			`	"Guess I'll see you in a week or so, then," Annabelle says. You make preparations for takeoff.`
+				decline
+			label quarg
+			`	"That's them. Anyway, is true that you have one of their hyperdrives?"`
+				goto choice
+			label diplomaticness
+			`	Early the next morning, you and the Enclave diplomats are escorted to the capital city, an almost post-apocalyptic vision of pollution-filled industry and what appear to be slaves walking between factories. The sense of despair is palpable, severely contrasting the bright, carefree glass towers rising far above you. "Disgusting," you hear Annabelle whisper under her breath, followed by a slew of other profanities. After a long walk, which was obviously designed specifically to disorient you, you arrive at the most opulent of the towers, where you are greeted by a somewhat snooty-looking XSZ employee, wearing a slick suit. He is carrying a laser rifle. "This way, please," he says somewhat condescendingly as the doors swing open silently.`
+			choice
+				`	Go in.`
+					goto in
+				`	Pull your gun out and start shooting people.`
+			`	While you are successful in murdering a few employees of XSZ, you are quickly overwhelmed and shot in the head.`
+				die
+			label in
+			`	The lobby is air conditioned and covered with marble. You are quickly ushered into a lift, which rises smoothly. A few floors up, the lift shaft is replaced by glass, allowing you to look out over the city, in all its wonderful grime.`
+			`	When you eventually reach the top of the tower, you step out of the lift into what appears to be an XSZ boardroom. While unlike the Syndicate, XSZ appears to feature a wide range of ethnicities, the same capitalistic greed is evident.`
+			`	"Now then," the executive sitting at the head of the table begins. "How shall we begin?"`
+			`	The process of a ceasefire being negotiated continues for an agonisingly long time, until eventually, the diplomats seem to have arrived at a deal: a two-week ceasefire to allow both sides to move their civilians out of harm's way. While you suspect that XSZ did not agree to this out of regard for human life- more in order to conserve their workforce- it is undoubtedly good.`
+				accept
 			
-# TO BE CONTINUED TOMORROW
+	npc accompany save
+		personality heroic vindictive escort
+		system Maduras
+		government "Enclave"
+		ship "Destroyer" "R.N.S. Severn"
+			
+	on visit
+		dialog
+			`You left Annabelle's ship, the <npc> behind. Better take off and wait for her to arrive in the system.`
+	on fail
+		dialog
+			`Annabelle's ship has been destroyed and she is now dead. Screw you mate, you should probably reload your save.`
+			
+mission "Enclave Middle 2C-B"
+	name "Government Evacuation"
+	description "Travel to <destination> in order to pick up the major people in the Enclave's government and move them to safety."
+	landing
+	autosave
+	source Latent
+	destination Lyfon
+	to offer
+		has "Enclave Middle 2B: done"
+	to fail
+		has "Enclave Middle 2C-A: active"
+		
+		
+mission "Enclave Middle 2D-A"
+	name "Government Evacuation"
+	description "Transport the Cabinet to <destination>, then return to Jumblar for orders."
+	landing
+	autosave
+	source Lyfon
+	destination Quaver
+	to offer
+		has "Enclave Middle 2C-A: done"
+	passengers 25
+	blocked `You do not have enough space for both the diplomats and the Cabinet. You should complete or abort another mission to make room for them, then return here.`
+	on offer
+		conversation
+			`The atmosphere on Lyfon is one of fear; the whole populace knows that this system and the others nearby are very much in danger of being attacked by XSZ thanks to their isolated position relative to the rest of Enclave space. As you were coming in to land, you notified the spaceport controllers of your assignment; thankfully, unlike the group of diplomats you met on Quaver, the officials you are to transport have actually arrived at the spaceport on time. You load them on to your ship as fast as you can, aware that the time on the ceasefire is ticking, and take off as soon as possible.`
+				launch
+				
+	npc accompany save
+		personality heroic vindictive escort
+		system Maduras
+		government "Enclave"
+		ship "Destroyer" "R.N.S. Severn"
+			
+	on visit
+		dialog
+			`You left Annabelle's ship, the <npc> behind. Better take off and wait for her to arrive in the system.`
+	on fail
+		dialog
+			`Annabelle's ship has been destroyed and she is now dead. Screw you mate, you should probably reload your save.`
+				
+mission "Enclave Middle 2D-B"
+	name "Government Evacuation"
+	description "Transport the Cabinet to <destination>, then return to Jumblar for orders."
+	landing
+	autosave
+	source Lyfon
+	destination Quaver
+	to offer
+		has "Enclave Middle 2C-B: done"
+	passengers 20
+	blocked `You do not have enough space for all the members of the Cabinet. You should complete or abort another mission to make room for them, then return here.`
+	on offer
+		conversation
+			`The atmosphere on Lyfon is one of fear; the whole populace knows that this system and the others nearby are very much in danger of being attacked by XSZ thanks to their isolated position relative to the rest of Enclave space. As you were coming in to land, you notified the spaceport controllers of your assignment; thankfully, unlike the group of diplomats you met on Quaver, the officials you are to transport have actually arrived at the spaceport on time. You load them on to your ship as fast as you can, aware that the time on the ceasefire is ticking, and take off as soon as possible.`
+				launch
+				
+mission "Enclave Middle 2E"
+	name "Return to Jumblar"
+	description "Return to <destination> for your next assignment."
+	landing
+	source Lyfon
+	destination Jumblar
+	to offer
+		or
+			has "Enclave Middle 2C-A: done"
+			has "Enclave Middle 2C-B: done"
+	to complete
+		or
+			has "Enclave Middle 2D-A: done"
+			has "Enclave Middle 2D-B: done"
