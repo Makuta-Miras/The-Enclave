@@ -1,4 +1,10 @@
 ------------------------------------------------------------------------  v0.0.8  -------------------------------------------------------------------------------
+25/08/16
+
+-Added Enclave Middle 3B and 3C.
+-Finished Enclave Middle.
+
+
 24/08/16
 
 -Implemented a fix for the buggy missions in Enclave Opens.
