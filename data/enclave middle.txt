@@ -531,7 +531,8 @@ mission "Enclave Middle 2E-A"
 				`	Shoot her in the head.`
 					goto shoot
 			`	"Bye," Cathy says with a slight smile.`
-			
+		"reputation: XSZ Corporation" = -500000
+		
 			
 mission "Enclave Middle 2E-B"
 	name "Return to Jumblar"
@@ -603,7 +604,7 @@ mission "Enclave Middle 3A"
 		event "attack on carmine"
 		event "attack on alleshafen" 3
 		event "attack on arikv" 3
-	npc accompany
+	npc
 		personality heroic vindictive escort
 		system <source>
 		government Enclave
@@ -612,3 +613,67 @@ mission "Enclave Middle 3A"
 			variant
 				"Destroyer" 2
 				"Sea Drake" 4
+				
+	
+mission "Enclave Middle 3B"
+	name "Invade Indigo"
+	description "Accompany the Enclave fleets to <destination> as the first stage in the counterattack against XSZ."
+	landing
+	source Jumblar
+	destination Perihelion
+	to offer
+		has "Enclave Middle 3A: done"
+	on offer
+		conversation
+			`Upon landing, you head immediately for the garrison on <source>.`
+			choice
+				`	"Lieutenant <first> <last>, reporting for duty."`
+					goto me
+				`	"Give me the money or I'll shoot you in the head."`
+			`	The officer at the main desk looks up at you, entirely bemused.`
+			label me
+			`	"Report to Commodore Druff," he says. You nod and leave.`
+			`	A few minutes later you are in Druff's office. Before you even sit down, he says, "Don't sit down; no time. I'm sure you've heard about the attacks on Carmine, Alleshafen and Arikv?"`
+			choice
+				`	"Yes, absolutely, that's why I came here."`
+					goto yes
+				`	"WHAT?!?!"`
+			`	The commodore grunts slightly in frustration. "A few days ago XSZ nuked most of Carmine," he begins. "Then, a few days later they invaded Alleshafen and tried to take Arikv at the same time, although we pushed them back."`
+			choice
+				`	"Alright, I'm up to date now."`
+			label yes
+			`	"Since the vast majority of our forces are on this side of XSZ," Druff continues, "We likely won't be able to launch an attack to retake Carmine and Alleshafen, so our current plan is to launch an assault up through Perihelion and Fluorine, then south to Latent. If we can take out their leaders, the mercs XSZ is employing will probably fall apart within a few days. Understood?"`
+			choice
+				`	"Understood."`
+					accept
+				`	"Will Lieutenant Bradford be part of the strike force?"`
+					goto cathy
+				`	Shoot Druff in the head.`
+			`	You pull your gun out and headshot the Commodore. His corpse falls to the ground, looking somewhat surprised. Unfortunately for you, however, the security cameras picked up the murder. As a result, as you attempt to flee the base, you are apprehended by a large group of soldiers and thrown in a basement cell to rot. In the middle of the night, someone comes in and shanks you. Well done, you idiot.`
+				die
+			label cathy
+			`	Druff eyes you somewhat suspiciously. "Yes, she will."`
+				accept
+	npc
+		personality heroic vindictive escort
+		system Innenheim
+		government Enclave
+		fleet
+			names "republic capital"
+			fighters "republic fighter"
+			variant
+				"Muesli Carrier" 5
+				"Apollo" 5
+				"Dart" 40
+				"Enclave Lance" 30
+		fleet
+			names "republic small"
+			variant
+				"Penguin" 10
+				"Destroyer" 4
+				"Sea Drake" 7
+	npc
+		personality heroic vindictive escort
+		system Innenheim
+		government "Enclave"
+		ship "Destroyer" "R.N.S. Severn"
