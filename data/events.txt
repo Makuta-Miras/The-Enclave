@@ -229,8 +229,8 @@ event "attack on carmine"
 		fleet "XSZ Large" 1000
 		fleet "XSZ Nuclear" 1500
 	planet Carmine
-		description `Many of Carmine's largest cities have been nuked to oblivion by XSZ's forces. While there is still some of the old infrastructure around, the planet is, for the most part, now devoid of a lot of the basic necessities to allow humans to live comfortably.`
-		spaceport `The spaceport is no longer in existence. It was one of XSZ's first targets in the nuclear attack, and as a result the area has been entirely flattened. It seems that a number of tanks of deuterium hyperspace fuel that were housed at the spaceport were ruptured during the blast; fires now rage constantly in the spaceport's remains.`
+		clear
+		description `Many of Carmine's largest cities have been nuked to oblivion by XSZ's forces. As a result, Carmine is now almost entirely uninhabited, thanks to the rising radiation levels in the atmosphere that will eventually destroy the ecosystems of the planet entirely.`
 		
 event "attack on alleshafen"
 	system Adke
@@ -252,3 +252,28 @@ event "attack on arikv"
 	planet Arikv
 		description `Arikv was settled only fairly recently, according to the locals- the terraforming process is still continuing, which explains the humid conditions, and a decent part of the planet is still uncharted.`
 		description ` However, this planet still boasts a shipyard and a comprehensive outfitter- doubtless due to its strategic position between XSZ and Enclave territory. It appears that the recent XSZ attack against Arikv was, in fact, repulsed successfully; the same cannot be said for the neighbouring systems.`
+
+event "middle 3b ready"
+	system Dvorak
+		fleet Trader 800
+		fleet Transporter 800
+		
+event "battle of perihelion"
+	system Dvorak
+		government Enclave
+		fleet Trader 800
+		fleet Transporter 800
+		fleet "Enclave Patrol" 600
+		fleet "Enclave Capital" 1000
+	system Antithesis
+		government Enclave
+		fleet Trader 900
+		fleet Transporter 900
+		fleet "XSZ Small" 20000
+		fleet "Enclave Patrol" 400
+		fleet "Enclave Capital" 800
+	planet Perihelion
+		description `Perihelion is a surprisingly Earth-like world- although, of course, there are very few records remaining in the Tyridium galaxy of what actually constitutes Earth-like. This is a world hotly contested by XSZ- it has very little axial tilt, and almost perfect weather. `
+		description `	XSZ-funded surveys have found that there are enormous oil and gas fields beneath the oceans of Perihelion. Despite XSZ's numerous appeals to the Enclave government to allow them to mine the fuels here, the Enclave has refused, every time.`
+		spaceport `The spaceport is located right on one of the coasts, nearest to the equator. As you stepped off of your ship, a small gaggle of tourists walked past, evidently unaware of the state of relations currently between the Enclave and XSZ, or even the likelihood that this would be one of the first worlds XSZ might move to take in the event of war.`
+		spaceport `	The concrete landing pads are warm and sandy beneath your feet.`

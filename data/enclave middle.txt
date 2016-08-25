@@ -372,7 +372,7 @@ mission "Enclave Middle 2C-A"
 			choice
 				`	"The Quarg."`
 					goto quarg
-				`	"No idea what aliens you're talking about."
+				`	"No idea what aliens you're talking about."`
 			`	"Well, is it true that you've got an alien hyperdrive that doesn't need hyperlinks to travel?"`
 			label choice
 			choice
@@ -616,11 +616,13 @@ mission "Enclave Middle 3A"
 				
 	
 mission "Enclave Middle 3B"
-	name "Invade Indigo"
+	name "Retake Perihelion"
 	description "Accompany the Enclave fleets to <destination> as the first stage in the counterattack against XSZ."
 	landing
 	source Jumblar
 	destination Perihelion
+	clearance
+		planet Perihelion
 	to offer
 		has "Enclave Middle 3A: done"
 	on offer
@@ -654,6 +656,9 @@ mission "Enclave Middle 3B"
 			label cathy
 			`	Druff eyes you somewhat suspiciously. "Yes, she will."`
 				accept
+	on accept
+		event "middle 3b ready"
+	
 	npc
 		personality heroic vindictive escort
 		system Innenheim
@@ -677,3 +682,71 @@ mission "Enclave Middle 3B"
 		system Innenheim
 		government "Enclave"
 		ship "Destroyer" "R.N.S. Severn"
+	npc kill
+		personality staying vindictive
+		government "XSZ Corporation"
+		system Antithesis
+		fleet
+			names "syndicate capital"
+			variant
+				"Turbulence" 5
+				"Bloodhound" 3
+		fleet
+			names "syndicate small"
+			variant
+				"Buzzard" 8
+		fleet
+			names "kor sestor fighter"
+			variant
+				"Scorched Earth" 3
+	
+	on complete
+		event "battle of perihelion"
+		conversation
+			`As you step into the spaceport, you find everyone rushing about- no relaxation after a hard battle, no mourning for the dead. If anything, you think, the mood is similar to what it was like immediately before the Battle of Innenheim, months ago.`
+			choice
+				`	Stop someone and ask what's going on.`
+			`	"What's happened?" you ask a junior officer rushing past you. "Invasion," they say, before noticing your rank. "Admiral Kuznetsov wants you. In the main departures hall." The officer then leaves, leaving you no more enlightened than you previously were.`
+			choice
+				`	Head to the departures hall.`
+			`	"Lieutenant <last>," you hear as you step into the departures hall. Ahead of you is a small knot of officers around your own rank and above, including Cathy Bradford. The speaker appears to be a tall, grizzled Admiral- this, you presume, is Admiral Kuznetsov. "Where have you been?"`
+			choice
+				`	"I got distracted by all the ice cream stands."`
+				`	"I stayed in orbit for a bit longer to blow up some disabled ships."`
+				`	"Sorry I'm late, sir."`
+			`	As Kuznetsov begins speaking again to the group of officers as a whole, you manage to stand next to Cathy, although she ignores you for a bit. "We have received intelligence that the Daia, Four, Aetrus and Gautus systems have developed new hyperspace links to an area south of our space," Kuznetsov continues. "Our few vessels which were in the systems at the time reported a large force, clearly alien, and clearly heavily armed, jumping in. As of now, we have lost contact with all systems beyond Innenheim. From what little we know of their vessels, this attack force was not Pug."`
+			branch kaltheim
+				has "First Contact: Kaltheim: offered"
+			choice
+				`	"Even if those ships aren't Pug, I'd bet my hat that they're involved somehow."`
+					goto hat
+				`	"Well, how are we going to fight back, then? We can't just let a hostile alien force come in and take over our systems!"`
+					goto hostile
+			label kaltheim
+			choice
+				`	"Even if those ships aren't Pug, I'd bet my hat that they're involved somehow."`
+					goto hat
+				`	"Well, how are we going to fight back, then? We can't just let a hostile alien force come in and take over our systems!"`
+					goto hostile
+				`	"It must be the Kaltheim."`
+			`	"The what?" Cathy says, looking at you somewhat cynically, clearly echoing the responses of the other officers present. "They're a species to the south," you say. "I've been there, thanks to my Jump Drive- I just never told anyone because they didn't seem like a threat."`
+			
+			label hat
+			`	"That may be so, Lieutenant," Kuznetsov replies, "But we need to mobilise again. We're trapped between XSZ and these aliens, so unless we want to be squashed like so many insects, we need to move back to Jumblar. XSZ is no longer a priority; we need to defend our space against these interlopers. Any questions?"`
+				goto questions
+			label hostile
+			`	"Exactly," Kuznetsov replies. "XSZ is no longer a priority; we need to pull back to Jumblar. From there we can co-ordinate a counterstrike against these aliens. Any questions?"`
+			label questions
+			choice
+				`	"No questions."`
+			`	"Dismissed," Kuznetsov says. "Lieutenants <last> and Bradford, I need to speak to you for a minute." He waits for the others to leave, then turns to the pair of you. "For your exceptional courage and continuous devotion to our cause, you have each been promoted to the rank of Commander, along with a pay raise to a salary of 900 credits per day. Congratulations."`
+			choice
+				`	"Is this because some other commanders got killed in the battle, by any chance?"`
+					goto kill
+				`	"Thank you, sir."`
+					accept
+			label kill
+			`	"Of course not," the Admiral replies. "Now get to your ships."`
+		"salary: Enclave" = 900
+		dialog
+			`v0.0.8 is now done, m80s. Next chapter coming in v0.0.9.`
