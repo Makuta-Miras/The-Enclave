@@ -1,7 +1,7 @@
 mission "Pug in Enclave galaxy"
 	invisible
 	landing
-	npc
+	npc kill
 		government Pug
 		personality heroic vindictive staying
 		system "Pug Morbosa"

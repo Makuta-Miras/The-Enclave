@@ -1,6 +1,6 @@
 mission "Enclave Opens 1A"
 	name "Muster the Fleet"
-	description "Travel to Bourne in the Gamma Corvi system to inform the Free Worlds Senate of Parliament's decision to request a Free Worlds fleet accompany the Navy into the system just off of Suhail."
+	description "Travel to <destination> to inform the Free Worlds Senate of Parliament's decision to request a Free Worlds fleet accompany the Navy into the system just off of Suhail."
 	landing
 	autosave
 	source Valhalla	
@@ -12,7 +12,7 @@ mission "Enclave Opens 1A"
 		
 	on offer
 		conversation
-			`When you land, you recieve a message- from Edrick Flint, the governor of Valhalla who assisted the Free Worlds in arresting key members of the Syndicate during the war, asking you to meet him at his apartment this evening.`
+			`When you land, you receive a message- from Edrick Flint, the governor of Valhalla who assisted the Free Worlds in arresting key members of the Syndicate during the war, asking you to meet him at his apartment this evening.`
 			choice
 				`	Accept the invitation and go to meet Edrick.`
 			`	As the sun meets the horizon, you are standing at the base of the block of apartments Edrick calls home, when he appears round the corner.`
@@ -30,9 +30,9 @@ mission "Enclave Opens 1A"
 			`	Edrick opens the main door of the building, flashing his ID at the security guard on duty as you pass him. He presses the button to call the elevator, and as the doors open with a slight "DING", the governor of Valhalla begins to speak. "Alien, yes. The reason I asked you to come here? Also yes." The doors reopen on the twenty-third floor, and you both step out.`
 				goto 15
 			label 3
-			`	Edrick raises his eyebrows and lets out a short sigh. "I was hoping you'd be more interested in this, considering your involvment in defeating the Pug, <first>." "Oh, don't worry, I am!" you say. Edrick shakes his head slightly. "Come on, I'll tell you more when we get up to my flat," he says.`
+			`	Edrick raises his eyebrows and lets out a short sigh. "I was hoping you'd be more interested in this, considering your involvement in defeating the Pug, <first>." "Oh, don't worry, I am!" you say. Edrick shakes his head slightly. "Come on, I'll tell you more when we get up to my flat," he says.`
 			label 15
-			`When you both sit down to eat, Edrick continues what he was saying, some classy music playing quietly in the background. "There's a system just west of Suhail, which we can't jump to using human hyperdrives. I'm presuming you've noticed that?"
+			`When you both sit down to eat, Edrick continues what he was saying, some classy music playing quietly in the background. "There's a system just west of Suhail, which we can't jump to using human hyperdrives. I'm presuming you've noticed that?"`
 			choice
 				`	"Of course."`
 				`	"Okay, then."`
@@ -69,7 +69,7 @@ mission "Enclave Opens 1A"
 			choice
 				`	"Good idea, I'll go do that."`
 					goto 10
-				`	"No, I'm just saying, that isn't particularly democratic of them."
+				`	"No, I'm just saying, that isn't particularly democratic of them."`
 					goto 11
 			label 9
 			`	"Great," Edrick replies. "You'll need to inform the Free Worlds Senate, then?"`
@@ -103,9 +103,11 @@ mission "Enclave Opens 1B"
 	destination Earth
 	
 	to offer
-		has "Enclave Opens 1A: offered"
-		not "Enclave Opens 1A: active"
-		not "Enclave Opens 1A: done"
+		has "main plot completed"
+		has "event: battle of algenib"
+	
+	to fail
+		has "Enclave Opens 1A: active"
 		
 	on complete
 		conversation
@@ -132,14 +134,14 @@ mission "Enclave Opens 2Aa"
 			choice
 				`	"A new hyperspace link has opened between the Suhail system in the Deep and another, previously unidentified system. The Republic believes that the Pug are involved, and so they want a Free Worlds fleet to accompany a Navy division into the system in order to investigate it."`
 					goto 1
-				`	"The Pug are back. They've been meddling in the Deep."
+				`	"The Pug are back. They've been meddling in the Deep."`
 					goto 2
 			label 1
 			`	There are a few scattered instances of murmuring between the Senators, and Arianna slams her fist down. "We are not the Republic's attack dogs!" she yells. Judging by the cheers she gets from the rest of the Senate, this is a popular sentiment.`
 			choice
 				`	"In their defence, the Pug are a galaxywide threat and so it's our responsibility as much as theirs to defend human space."`
 					goto 3
-				`	"I'd be willing to take the mission on with my personal fleet."
+				`	"I'd be willing to take the mission on with my personal fleet."`
 					goto 4
 			label 2
 			`	The Senator from Zug clears his throat loudly. "Why is this at all relevant to the Free Worlds? We're a good two weeks travel away from there, anyway."`
@@ -195,9 +197,12 @@ mission "Enclave Opens 2Ab"
 	destination Helheim
 	
 	to offer
-		has "Enclave Opens 2Aa: offered"
-		not "Enclave Opens 2Aa: active"
-		not "Enclave Opens 2Aa: done"
+		or
+			has "Enclave Opens 1A: done"
+			has "Enclave Opens 4Ba: done"
+		
+	to fail
+		has "Enclave Opens 2Aa: active"
 		
 	on complete
 		dialog
@@ -236,7 +241,7 @@ mission "Enclave Opens A"
 			`	A few more bottles smash against the shields, but luckily for you, a clipped shout- presumably from a Navy officer- brings the soldiers in line, before sending them off, presumably back to their assigned tasks.`
 				goto 4
 			label 3
-			`	Turns out, some of the Navy personnel do, in fact, have a pretty good aim. After dodging a few bottles, one cracks you in the head, instantly killing you. As your body lies on the ground, blood pooling all over the concrete landing pad, someone fro back in the suddenly silent crowd says "Well, ####."`
+			`	Turns out, some of the Navy personnel do, in fact, have a pretty good aim. After dodging a few bottles, one cracks you in the head, instantly killing you. As your body lies on the ground, blood pooling all over the concrete landing pad, someone from back in the suddenly silent crowd says "Well, ####."`
 				die
 			label 4
 			`	The crowd eventually disperses, to reveal the figure of a short, stout man with a most amazing moustache, clad in the uniform of a Navy admiral. He looks you up and down a few times, before gruffly saying, "Greetings, Captain <last>. I'm Admiral Hofmann- I'll be leading the Navy fleet tomorrow." He offers his hand for a handshake.`
@@ -251,15 +256,17 @@ mission "Enclave Opens A"
 			`	You shake Hofmann's hand and he nods. "I'll see you tomorrow morning then," he says. "Feel free to use the outfitters here to upgrade your fleet; if this is the Pug, I expect you'll be wanting some tougher ships."`
 				goto 8
 			label 6
-			`	Hofmann shrugs. "Same to me," he says. "I joined the Navy when I was eighteen years old. Been taking orders my whole life- I'm used to it now. Feel free to use the outfitters  here to upgrade your fleet; if this is the Pug, I expect you'll be wanting some tougher ships."`
+			`	Hofmann shrugs. "Same to me," he says. "I joined the Navy when I was eighteen years old. Been taking orders my whole life- I'm used to it now. Feel free to use the outfitters here to upgrade your fleet; if this is the Pug, I expect you'll be wanting some tougher ships."`
 				goto 8
 			label 7
 			`	The admiral eyes you sharply. "Watch your mouth, Captain, lest my men feel that you should pay for the lives you took during the war." Unseen, someone has opened one of the spaceport windows overlooking your landing pad and have set up a sniper rifle, trained on your head. They heard what you just said. They take the shot. As you're lying on the ground, Hofmann says "####, this happened again? I thought last time was a one-off, guys."`
 				die
 			label 8
 			`"Thanks, sir," you reply as Hofmann leaves.`
-			"reputation: Pug" = -100
 				accept	
+	
+	on accept
+		"reputation: Pug" = -100
 	
 	npc accompany
 		personality heroic
@@ -284,7 +291,7 @@ mission "Enclave Opens A"
 				"Dreadnought"
 				
 	npc accompany
-		government "Navy (Oathkeeper)"
+		government "Republic"
 		personality heroic escort
 		fleet
 			names "republic capital"
@@ -356,7 +363,6 @@ mission "Enclave Opens A"
 					goto 4
 				`	"Nice working with you."`
 			`	"Don't worry about it," he says. "Oh, by the way, when Parliament came up with this idea, they figured you'd want some payment if you actually did this. So they've approved it; <payment>, straight to <first> <last>'s bank account. You're welcome."`
-				accept
 			label 4
 			`	He shakes his head. "I'm fine," the admiral replies. "I'll be heading home for a few months, until I've got a proper cybernetic replacement hand. Oh, and by the way, Parliament's paying you for this. <payment>. Congratulations."`
 		payment 100000
@@ -372,7 +378,7 @@ mission "Enclave Opens B"
 	to offer
 		or
 			has "Enclave Opens 2Ab: done"
-			has "Enclave Defiance 3B: done"
+			has "Enclave Opens 4Bb: done"
 		
 	on offer
 		conversation
@@ -392,7 +398,7 @@ mission "Enclave Opens B"
 			`	A few more bottles smash against the shields, but luckily for you, a clipped shout- presumably from a Navy officer- brings the soldiers in line, before sending them off, presumably back to their assigned tasks.`
 				goto 4
 			label 3
-			`	Turns out, some of the Navy personnel do, in fact, have a pretty good aim. After dodging a few bottles, one cracks you in the head, instantly killing you. As your body lies on the ground, blood pooling all over the concrete landing pad, someone fro back in the suddenly silent crowd says "Well, ####."`
+			`	Turns out, some of the Navy personnel do, in fact, have a pretty good aim. After dodging a few bottles, one cracks you in the head, instantly killing you. As your body lies on the ground, blood pooling all over the concrete landing pad, someone from back in the suddenly silent crowd says "Well, ####."`
 				die
 			label 4
 			`	The crowd eventually disperses, to reveal the figure of a short, stout man with a most amazing moustache, clad in the uniform of a Navy admiral. He looks you up and down a few times, before gruffly saying, "Greetings, Captain <last>. I'm Admiral Hofmann- I'll be leading the Navy fleet tomorrow." He offers his hand for a handshake.`
@@ -418,7 +424,7 @@ mission "Enclave Opens B"
 					
 	npc accompany
 		personality heroic escort
-		government "Navy (Oathkeeper)"
+		government "Republic"
 		fleet
 			names "republic capital"
 			fighters "republic fighter"
@@ -506,11 +512,7 @@ mission "Enclave Opens 2B"
 	
 	to offer
 		has "Enclave Opens 1B: done"
-		not "Enclave Co-Op 1A: active"
-		not "Enclave Co-Op 1B: active"
-		not "Enclave Co-Op 1A: done"
-		not "Enclave Co-Op 1B: done"
-		random < 55
+		random < 30
 		
 	on offer
 		dialog
@@ -566,12 +568,14 @@ mission "Enclave Opens 3B"
 			label 6
 			`	"Very well, then," the Speaker says, his face hardened. "The Navy will investigate on their own. Please note that this also marks a severe degradation in relations between the Republic and the Free Worlds. Leave."`
 			`	You are rushed out of the building by a squadron of guards, their faces hidden behind mirrored visors. From there, you are escorted to your ship.`
-				event "enclave opens"
 				flee
 			label accepted
 			`	"Excellent," the Speaker says. "Please inform the Free Worlds Senate of the verdict here."`
 				accept
-				
+	
+	on decline
+		event "enclave opens"
+		
 	on complete
 		dialog `You have arrived on Bourne. Time to go and see the Senate.`
 
@@ -594,14 +598,14 @@ mission "Enclave Opens 4Ba"
 			choice
 				`	"A new hyperspace link has opened between the Suhail system in the Deep and another, previously unidentified system. The Republic believes that the Pug are involved, and so they want a Free Worlds fleet to accompany a Navy division into the system in order to investigate it."`
 					goto 1
-				`	"The Pug are back. They've been meddling in the Deep."
+				`	"The Pug are back. They've been meddling in the Deep."`
 					goto 2
 			label 1
 			`	There are a few scattered instances of murmuring between the Senators, and Arianna slams her fist down. "We are not the Republic's attack dogs!" she yells. Judging by the cheers she gets from the rest of the Senate, this is a popular sentiment.`
 			choice
 				`	"In their defence, the Pug are a galaxywide threat and so it's our responsibility as much as theirs to defend human space."`
 					goto 3
-				`	"I'd be willing to take the mission on with my personal fleet."
+				`	"I'd be willing to take the mission on with my personal fleet."`
 					goto 4
 			label 2
 			`	The Senator from Zug clears his throat loudly. "Why is this at all relevant to the Free Worlds? We're a good two weeks travel away from there, anyway."`
@@ -658,9 +662,10 @@ mission "Enclave Opens 4Bb"
 	destination Helheim
 	
 	to offer
-		has "Enclave Opens 4Ba: offered"
-		not "Enclave Opens 4Ba: done"
-		not "Enclave Opens 4Ba: active"	
+		has "Enclave Opens 3B: done"
+		
+	to fail
+		has "Enclave Opens 4Bb: active"
 			
 	on complete
 		dialog

@@ -162,16 +162,16 @@ mission "Part 1 done"
 	destination Lyfon
 	to offer
 		"reputation: Enclave" >= 500
-		has "First Contact: Enclave" done
+		has "First Contact: Enclave: offered"
 	on offer
 		conversation
 			`As you step off your ship, you receive what appears to be an official notification from the Enclave government-`
-			`	Captain <last>,
+			`	Captain <last>,`
 			`	We have recently become aware of the services in aiding civilian ships which you have been providing, in a growing role to defeat interstellar piracy. As a reward for the voluntary aid which you have been dispensing, we have seen fit to award you a number of credits in order to compensate you for the money you have spent on your ships.`
 			`	Regards,`
 			`	The Enclave government`
+				decline
 		payment 1000000
-		decline
 		
 		
 		
@@ -273,7 +273,7 @@ mission "Enclave Cargo [0]"
 	job
 	repeat
 	description "Deliver <cargo> to <destination>. Payment is <payment>."
-	cargo "Metal" "Plastic" "Heavy Metals" "Electronics" "Industrial" 5 2 .1
+	cargo random 5 2 .1
 	to offer
 		random < 60
 		has "Part 1 done: offered"
@@ -293,7 +293,7 @@ mission "Enclave Cargo [1]"
 	job
 	repeat
 	description "Deliver <cargo> to <destination>. Payment is <payment>."
-	cargo "Garbage" "Equipment"   5 2 .1
+	cargo "Garbage" 5 2 .1
 	to offer
 		random < 60
 		has "Part 1 done: offered"
@@ -322,7 +322,7 @@ mission "Part 2 done"
 	on offer
 		conversation
 			`As you step off your ship, you receive what appears to be another official notification from the Enclave government-`
-			`	Captain <last>,
+			`	Captain <last>,`
 			`	Your recent work in helping to construct the new shipyards on Jumblar, in a far more proactive role than many other private captains who have been employed to do so, has brought you once again to the government's attention. As a result, you are hereby summoned to appear before Congress at any time before <date>.`
 			`	Regards,`
 			`	The Enclave government`
@@ -371,7 +371,6 @@ mission "Part 3-1"
 					goto 1
 				`	"No. I don't care about your war, I never wanted to be part of it. Hell, I'm not even from this galaxy!"`
 			`	Rosalva shrugs. "I'm disappointed," she says. "I guess I expected more from the legendary <first> <last>." You are quickly shown out.`
-				event "MLGWAR"
 				decline
 			label 1
 			`	"Great!" Rosalva replies. "We need you to fly through Skryydr, Maduras, Kaladesh, and Ark. We'll install a tiny piece of hardware on your ship to allow us to read your sensor logs as you go. Once you're done, report to the planetary commander on Jumblar. All good?"`
@@ -379,8 +378,11 @@ mission "Part 3-1"
 				`	"Yep!"`
 			`	"Fun times."`
 				accept
+	on decline
+		event "civil war"
+		
 	on complete
-		event "MLGWAR"
+		event "civil war"
 
 
 mission "Part 3-2"
@@ -414,7 +416,7 @@ mission "Part 3-2"
 			choice
 				`	"Fine, I'll help."`
 					goto yay
-				`	"No. I'm not risking my life for you."
+				`	"No. I'm not risking my life for you."`
 					goto 1
 	on accept
 		"reputation: XSZ Corporation" = -100
@@ -428,7 +430,7 @@ mission "Part 3-2"
 			variant
 				"Bloodhound" 5
 				"Turbulence" 10
-				"Turbulence (Nuclear)" 2
+				"Turbulence (Nuclear)"
 		fleet
 			names "syndicate small"
 			variant
@@ -436,7 +438,7 @@ mission "Part 3-2"
 		fleet
 			names "kor sestor fighter"
 			variant
-				"Scorched Earth" 5
+				"Scorched Earth" 2
 	npc
 		personality heroic vindictive
 		system Innenheim
@@ -456,6 +458,4 @@ mission "Part 3-2"
 				"Penguin" 20
 				"Destroyer" 10
 	on complete
-		dialog
-			`The XSZ ships have been defeated. But now, in this once-peaceful area of human civilisation, war has broken out- just like in your own galaxy. What does the future hold? Only time will tell... (Next part of the story is coming in v0.0.8)`
 		payment 500000

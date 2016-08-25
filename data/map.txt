@@ -1,3 +1,4 @@
+
 galaxy "Enclave Galaxy"
 	pos 5000 500
 	sprite ui/EnclaveGalaxy
@@ -7,11 +8,11 @@ galaxy Labels
 	sprite label/Labels
 
 system Abomin
-	pos 4788.53 346.251
+	pos 4806.53 362.251
 	government Independent
 	habitable 851.84
-	link Thornton
 	link Pralmia
+	link Cheons
 	asteroids "small rock" 6 3.4804
 	asteroids "medium rock" 46 4.2504
 	asteroids "large rock" 12 3.8808
@@ -73,8 +74,8 @@ system Adke
 	government Enclave
 	habitable 1715
 	link Ithaos
-	link Ninsug
 	link Frill
+	link Arkhos
 	asteroids "small rock" 1 2.6838
 	asteroids "medium rock" 11 2.0412
 	asteroids "large rock" 22 4.0446
@@ -233,6 +234,59 @@ system Aetrus
 			distance 628
 			period 40.198
 
+system Akildocs
+	pos 4722.05 435.649
+	habitable 1080
+	link Taarsten
+	link Gaenealf
+	link Thornton
+	link Ibained
+	asteroids "small rock" 8 5.9976
+	asteroids "medium rock" 16 5.5216
+	asteroids "large rock" 6 4.284
+	asteroids "small metal" 5 3.6652
+	asteroids "medium metal" 20 4.522
+	asteroids "large metal" 11 3.9508
+	object
+		sprite star/g0
+		period 10
+	object
+		sprite planet/cloud5
+		distance 196.36
+		period 33.491
+	object
+		sprite planet/rock19
+		distance 452
+		period 116.965
+	object
+		sprite planet/cloud6
+		distance 853.81
+		period 303.662
+		object
+			sprite planet/rock7
+			distance 129
+			period 15
+	object
+		sprite planet/rock12
+		distance 1245.85
+		period 535.238
+	object
+		sprite planet/gas16
+		distance 2517.06
+		period 1537.05
+		object
+			sprite planet/rhea
+			distance 225
+			period 17.7652
+		object
+			sprite planet/luna
+			distance 371
+			period 37.6147
+		object
+			sprite planet/ice8
+			distance 528
+			period 63.8628
+
 system Alcove
 	pos 4987.74 446.501
 	habitable 2795
@@ -347,10 +401,8 @@ system Anvyu
 	pos 4898 608
 	government Enclave
 	habitable 425.92
-	link Skryydr
 	link Five
 	link Ithaos
-	link Smoline
 	asteroids "small rock" 52 5.0058
 	asteroids "medium rock" 42 6.2694
 	asteroids "large rock" 70 5.7834
@@ -524,6 +576,8 @@ system Arkhos
 	habitable 135
 	link Theurrhaeus
 	link Five
+	link Gaenealf
+	link Adke
 	asteroids "medium rock" 4 2.97
 	asteroids "large rock" 1 8.3754
 	asteroids "medium metal" 30 3.9798
@@ -810,6 +864,58 @@ system Breijkip
 			distance 442
 			period 48.9137
 
+system Cheons
+	pos 4749.31 323.306
+	government Enclave
+	habitable 858.28
+	link Rumebali
+	link Thornton
+	link Schnael
+	link Ibained
+	link Abomin
+	link Opheuldod
+	asteroids "medium rock" 86 1.17
+	asteroids "large rock" 1 2.412
+	asteroids "medium metal" 5 1.62
+	asteroids "large metal" 4 1.026
+	object
+		sprite star/g5
+		distance 30.1697
+		period 15.9672
+	object
+		sprite star/m4
+		distance 80.8303
+		period 15.9672
+		offset 180
+	object
+		sprite planet/cloud4
+		distance 266.87
+		period 59.5245
+	object
+		sprite planet/rock6
+		distance 509.91
+		period 157.212
+	object
+		sprite planet/gas7
+		distance 1081.67
+		period 485.722
+		object
+			sprite planet/rock14
+			distance 230
+			period 12.4086
+		object
+			sprite planet/rhea
+			distance 346
+			period 22.8952
+	object
+		sprite planet/gas9
+		distance 2218.83
+		period 1427.03
+		object
+			sprite planet/luna
+			distance 244
+			period 14.2914
+
 system Cispia
 	pos 5043.61 738.365
 	government Enclave
@@ -925,6 +1031,69 @@ system Clurth
 			sprite planet/callisto
 			distance 538
 			period 53.3147
+
+system Crourp
+	pos 4667.21 304.486
+	habitable 233.28
+	link Schnael
+	link Floop
+	link Rumebali
+	asteroids "small rock" 1 3.0264
+	asteroids "large rock" 1 3.9312
+	asteroids "large metal" 1 1.9656
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 530
+	trade Food 350
+	trade "Heavy Metals" 960
+	trade Industrial 720
+	trade "Luxury Goods" 1220
+	trade Medical 680
+	trade Metal 390
+	trade Plastic 390
+	object
+		sprite star/m4
+		period 10
+	object
+		sprite planet/gas13
+		distance 403.29
+		period 212.103
+		object
+			sprite planet/lava0
+			distance 282
+			period 13.3685
+	object
+		sprite planet/rock13
+		distance 1027.05
+		period 862.003
+		object
+			sprite planet/rhea
+			distance 146
+			period 22.1764
+	object
+		sprite planet/gas7
+		distance 1548.06
+		period 1595.16
+		object
+			sprite planet/europa
+			distance 251
+			period 14.1462
+	object
+		sprite planet/gas8
+		distance 2388.42
+		period 3056.94
+		object
+			sprite planet/dust4
+			distance 206
+			period 15.739
+		object
+			sprite planet/callisto
+			distance 311
+			period 29.1956
+		object
+			sprite planet/dust5
+			distance 461
+			period 52.69
 
 system Crul'im'heim
 	pos 5453.41 783.128
@@ -1191,6 +1360,60 @@ system Descent
 		sprite planet/gas17
 		distance 1883.96
 		period 1390.57
+
+system Driaca
+	pos 4654.21 458.486
+	habitable 486.68
+	link Taarsten
+	link Lardiam
+	link Gaenealf
+	asteroids "small rock" 9 3.0324
+	asteroids "medium rock" 30 3.2452
+	asteroids "large rock" 48 2.0216
+	asteroids "small metal" 7 2.394
+	asteroids "medium metal" 191 3.4048
+	asteroids "large metal" 1 3.059
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 530
+	trade Food 350
+	trade "Heavy Metals" 960
+	trade Industrial 720
+	trade "Luxury Goods" 1220
+	trade Medical 680
+	trade Metal 390
+	trade Plastic 390
+	object
+		sprite star/k0
+		period 10
+	object
+		sprite planet/rock19
+		distance 178.64
+		period 43.2919
+	object
+		sprite planet/gas15
+		distance 926.45
+		period 511.295
+		object
+			sprite planet/miranda
+			distance 225
+			period 17.7652
+		object
+			sprite planet/lava0
+			distance 379
+			period 38.8379
+	object
+		sprite planet/gas16
+		distance 2145.54
+		period 1801.95
+		object
+			sprite planet/dust5
+			distance 211
+			period 16.1332
+		object
+			sprite planet/rock3
+			distance 317
+			period 29.7089
 
 system Dvorak
 	pos 5174.86 474.628
@@ -1484,6 +1707,70 @@ system Five
 			period 17.5289
 			offset 119.527
 
+system Floop
+	pos 4632.21 339.486
+	habitable 425.92
+	link Lardiam
+	link Crourp
+	asteroids "small rock" 9 2.67
+	asteroids "medium rock" 95 2.67
+	asteroids "large rock" 7 2.1
+	asteroids "medium metal" 8 3.12
+	asteroids "large metal" 12 3.48
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 530
+	trade Food 350
+	trade "Heavy Metals" 960
+	trade Industrial 720
+	trade "Luxury Goods" 1220
+	trade Medical 680
+	trade Metal 390
+	trade Plastic 390
+	object
+		sprite star/k5
+		period 10
+	object
+		sprite planet/ice2
+		distance 157.89
+		period 38.4528
+	object
+		sprite planet/ice6
+		distance 426.78
+		period 170.884
+	object
+		sprite planet/rock12
+		distance 899.22
+		period 522.631
+	object
+		sprite planet/gas1
+		distance 1560.26
+		period 1194.51
+		object
+			sprite planet/dust0
+			distance 199
+			period 11.2201
+		object
+			sprite planet/dust4
+			distance 279
+			period 18.6261
+		object
+			sprite planet/dust7
+			distance 385
+			period 30.193
+	object
+		sprite planet/gas7
+		distance 2499.87
+		period 2422.55
+		object
+			sprite planet/oberon
+			distance 227
+			period 12.1666
+		object
+			sprite planet/dust1
+			distance 360
+			period 24.2988
+
 system Fo'gar'helien
 	pos 5403.41 765.128
 	government Kaltheim
@@ -1653,7 +1940,7 @@ system Frill
 	government Enclave
 	habitable 1080
 	link Adke
-	link Thornton
+	link Gaenealf
 	link Ninsug
 	asteroids "small rock" 1 5.661
 	asteroids "medium rock" 6 6.324
@@ -1749,6 +2036,66 @@ system Frontier
 			distance 653.142
 			period 67.9783
 			offset 18.0661
+
+system Gaenealf
+	pos 4743.21 489.486
+	habitable 486.68
+	link Frill
+	link Akildocs
+	link Thornton
+	link Driaca
+	link Arkhos
+	link Theurrhaeus
+	asteroids "medium rock" 3 5.3676
+	asteroids "large rock" 1 2.9484
+	asteroids "small metal" 31 2.6082
+	asteroids "medium metal" 51 5.6322
+	asteroids "large metal" 41 4.6116
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 530
+	trade Food 350
+	trade "Heavy Metals" 960
+	trade Industrial 720
+	trade "Luxury Goods" 1220
+	trade Medical 680
+	trade Metal 390
+	trade Plastic 390
+	object
+		sprite star/k0
+		period 10
+	object
+		sprite planet/ice5
+		distance 226.61
+		period 61.8524
+	object
+		sprite planet/rock5
+		distance 469.5
+		period 184.456
+	object
+		sprite planet/gas2
+		distance 1159.46
+		period 715.85
+	object
+		sprite planet/rock9
+		distance 1406.27
+		period 956.184
+	object
+		sprite planet/rhea
+		distance 1915.52
+		period 1520.09
+	object
+		sprite planet/gas16
+		distance 3225.33
+		period 3321.23
+		object
+			sprite planet/rock14
+			distance 210
+			period 16.0187
+		object
+			sprite planet/oberon
+			distance 342
+			period 33.2917
 
 system Gautus
 	pos 5203.61 712.365
@@ -1922,6 +2269,45 @@ system Hrau'ngri'liadien
 		sprite planet/luna
 		distance 2412.77
 		period 2650.08
+
+system Ibained
+	pos 4728.99 380.102
+	government Enclave
+	habitable 486.68
+	link Rumebali
+	link Akildocs
+	link Cheons
+	asteroids "medium rock" 18 5.7024
+	asteroids "large rock" 7 3.1482
+	asteroids "medium metal" 5 4.158
+	asteroids "large metal" 1 6.7716
+	object
+		sprite star/k0
+		period 10
+	object
+		sprite planet/venus
+		distance 160.84
+		period 36.9853
+	object
+		sprite planet/gas17
+		distance 547.48
+		period 232.269
+		object
+			sprite planet/oberon
+			distance 211
+			period 13.0947
+	object
+		sprite planet/desert10
+		distance 1283.48
+		period 833.723
+	object
+		sprite planet/lava1
+		distance 1472.52
+		period 1024.54
+	object
+		sprite planet/gas6
+		distance 1856.52
+		period 1450.4
 
 system Ik'ari'aka
 	pos 5399.41 839.128
@@ -2424,6 +2810,56 @@ system Kama'la'ez
 			distance 373
 			period 35.8918
 
+system Lardiam
+	pos 4627.21 376.486
+	habitable 320
+	link Floop
+	link Taarsten
+	link Driaca
+	asteroids "small rock" 26 4.2601
+	asteroids "medium rock" 1 4.901
+	asteroids "large rock" 5 5.3157
+	asteroids "small metal" 9 4.9764
+	asteroids "medium metal" 3 3.393
+	asteroids "large metal" 5 2.3374
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 530
+	trade Food 350
+	trade "Heavy Metals" 960
+	trade Industrial 720
+	trade "Luxury Goods" 1220
+	trade Medical 680
+	trade Metal 390
+	trade Plastic 390
+	object
+		sprite star/m0
+		period 10
+	object
+		sprite planet/rock12
+		distance 159
+		period 44.8312
+	object
+		sprite planet/rock8
+		distance 512.76
+		period 259.631
+	object
+		sprite planet/rock19
+		distance 930.8
+		period 634.994
+	object
+		sprite planet/gas8
+		distance 2409.05
+		period 2643.95
+		object
+			sprite planet/ice8
+			distance 183
+			period 13.1781
+		object
+			sprite planet/desert4
+			distance 331
+			period 32.0567
+
 system Lo'or'awaen
 	pos 5418.88 625.673
 	government Kaltheim
@@ -2755,10 +3191,9 @@ system Muraganda
 			period 22.7695
 
 system Ninsug
-	pos 4823.61 492.955
+	pos 4824.61 497.955
 	government Enclave
 	habitable 2507.76
-	link Adke
 	link Pipaeus
 	link Pralmia
 	link Thornton
@@ -2805,6 +3240,55 @@ system Ninsug
 			sprite planet/oberon
 			distance 352
 			period 32.9038
+
+system Opheuldod
+	pos 4748.21 244.486
+	habitable 486.68
+	link Schnael
+	link Cheons
+	asteroids "small rock" 1 3.3033
+	asteroids "medium rock" 3 2.8392
+	asteroids "large rock" 7 3.8493
+	asteroids "small metal" 1 2.5116
+	asteroids "medium metal" 1 3.1668
+	asteroids "large metal" 2 2.4297
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 530
+	trade Food 350
+	trade "Heavy Metals" 960
+	trade Industrial 720
+	trade "Luxury Goods" 1220
+	trade Medical 680
+	trade Metal 390
+	trade Plastic 390
+	object
+		sprite star/k0
+		period 10
+	object
+		sprite planet/rock8
+		distance 224.49
+		period 60.9865
+	object
+		sprite planet/ocean3
+		distance 468.1
+		period 183.631
+	object
+		sprite planet/ice5
+		distance 956.06
+		period 536.001
+	object
+		sprite planet/tethys
+		distance 1747.06
+		period 1324.04
+	object
+		sprite planet/gas13
+		distance 2591.42
+		period 2391.91
+		object
+			sprite planet/rhea
+			distance 299
+			period 14.5954
 
 system Orff
 	pos 4994 608
@@ -3199,12 +3683,80 @@ system "Pug Morbosa"
 			distance 254
 			period 11.8633
 
+system Rumebali
+	pos 4684.21 349.486
+	habitable 1948.28
+	link Taarsten
+	link Crourp
+	link Cheons
+	link Ibained
+	asteroids "small rock" 5 2.1714
+	asteroids "medium rock" 21 3.234
+	asteroids "large rock" 2 2.1714
+	asteroids "small metal" 4 2.0328
+	asteroids "medium metal" 24 1.2243
+	asteroids "large metal" 5 2.1021
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 530
+	trade Food 350
+	trade "Heavy Metals" 960
+	trade Industrial 720
+	trade "Luxury Goods" 1220
+	trade Medical 680
+	trade Metal 390
+	trade Plastic 390
+	object
+		sprite star/f5
+		distance 15.5657
+		period 13.4323
+	object
+		sprite star/m4
+		distance 114.434
+		period 13.4323
+		offset 180
+	object
+		sprite planet/cloud2
+		distance 402.444
+		period 73.1632
+		object
+			sprite planet/oberon
+			distance 168
+			period 17.5161
+	object
+		sprite planet/gas16
+		distance 1160.13
+		period 358.094
+		object
+			sprite planet/callisto
+			distance 204
+			period 15.3371
+		object
+			sprite planet/miranda
+			distance 295
+			period 26.6704
+		object
+			sprite planet/dust3
+			distance 435
+			period 47.7563
+	object
+		sprite planet/gas4
+		distance 2244.42
+		period 963.589
+		object
+			sprite planet/io
+			distance 258
+			period 14.6159
+		object
+			sprite planet/dust4
+			distance 359
+			period 23.9905
+
 system Saeus
-	pos 4787 606
+	pos 4786 596
 	government Enclave
 	habitable 425.92
 	link Five
-	link Theurrhaeus
 	asteroids "small rock" 5 1.785
 	asteroids "medium rock" 8 2.604
 	asteroids "large rock" 2 2.877
@@ -3253,11 +3805,63 @@ system Saeus
 			distance 199
 			period 13.9866
 
+system Schnael
+	pos 4708.21 283.486
+	habitable 425.92
+	link Crourp
+	link Opheuldod
+	link Cheons
+	asteroids "small rock" 7 3.2844
+	asteroids "medium rock" 10 4.0572
+	asteroids "large rock" 8 6.9552
+	asteroids "medium metal" 8 3.542
+	asteroids "large metal" 1 4.7656
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 530
+	trade Food 350
+	trade "Heavy Metals" 960
+	trade Industrial 720
+	trade "Luxury Goods" 1220
+	trade Medical 680
+	trade Metal 390
+	trade Plastic 390
+	object
+		sprite star/k5
+		period 10
+	object
+		sprite planet/cloud6
+		distance 261.29
+		period 81.8616
+		object
+			sprite planet/dust3
+			distance 147
+			period 18.2466
+	object
+		sprite planet/cloud1
+		distance 717.33
+		period 372.37
+		object
+			sprite planet/ice8
+			distance 158
+			period 16.2159
+	object
+		sprite planet/dust5
+		distance 1009.42
+		period 621.59
+	object
+		sprite planet/rock14
+		distance 1532.67
+		period 1162.97
+	object
+		sprite planet/gas1
+		distance 1879.92
+		period 1579.81
+
 system Skryydr
-	pos 4951.87 633.597
+	pos 4955.87 630.597
 	government "XSZ Corporation"
 	habitable 625
-	link Anvyu
 	link Orff
 	link Ark
 	link Smoline
@@ -3381,14 +3985,13 @@ system Skryydr
 		offset 23.3058
 
 system Smoline
-	pos 4927 586
+	pos 4932 583
 	government Enclave
 	habitable 1715
+	link Ithaos
 	link Pipaeus
 	link Orff
 	link Skryydr
-	link Ithaos
-	link Anvyu
 	asteroids "large rock" 1 1.904
 	asteroids "medium metal" 4 3.556
 	asteroids "large metal" 2 1.988
@@ -3428,11 +4031,6 @@ system Smoline
 			sprite planet/callisto
 			distance 473
 			period 26.2758
-	object "Ascendancy Wormhole"
-		sprite planet/wormhole
-		distance 4619.19
-		period 3032.33
-		offset 56.432
 
 system Staircase
 	pos 4921.74 439.501
@@ -3620,6 +4218,67 @@ system Syj'ngf'bnk
 			distance 234
 			period 15.2932
 
+system Taarsten
+	pos 4682.21 403.486
+	habitable 1505.92
+	link Driaca
+	link Akildocs
+	link Lardiam
+	link Rumebali
+	asteroids "small rock" 41 1.624
+	asteroids "medium rock" 54 3.596
+	asteroids "large rock" 26 3.335
+	asteroids "small metal" 1 4.031
+	asteroids "medium metal" 42 1.682
+	asteroids "large metal" 17 3.422
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 530
+	trade Food 350
+	trade "Heavy Metals" 960
+	trade Industrial 720
+	trade "Luxury Goods" 1220
+	trade Medical 680
+	trade Metal 390
+	trade Plastic 390
+	object
+		sprite star/g0
+		distance 26.3032
+		period 9.2445
+	object
+		sprite star/k5
+		distance 66.6968
+		period 9.2445
+		offset 180
+	object
+		sprite planet/mercury
+		distance 265.657
+		period 44.6314
+	object
+		sprite planet/gas7
+		distance 736.547
+		period 206.044
+		object
+			sprite planet/ice8
+			distance 252
+			period 14.2309
+		object
+			sprite planet/rock17
+			distance 337
+			period 22.0077
+	object
+		sprite planet/gas11
+		distance 1662.16
+		period 698.501
+	object
+		sprite planet/gas16
+		distance 2132.32
+		period 1014.93
+		object
+			sprite planet/miranda
+			distance 204
+			period 15.3371
+
 system Thaen
 	pos 5168.86 643.628
 	government Enclave
@@ -3678,11 +4337,11 @@ system Thaen
 			period 16.2672
 
 system Theurrhaeus
-	pos 4733 557
+	pos 4733 541
 	government Enclave
 	habitable 455
 	link Arkhos
-	link Saeus
+	link Gaenealf
 	asteroids "small rock" 13 2.376
 	asteroids "medium rock" 7 2.268
 	asteroids "large rock" 14 2.268
@@ -3745,13 +4404,14 @@ system Theurrhaeus
 		offset 350.137
 
 system Thornton
-	pos 4758.61 400.955
+	pos 4765.61 407.955
 	government Enclave
 	habitable 5000
 	link Ninsug
-	link Frill
 	link Pralmia
-	link Abomin
+	link Akildocs
+	link Gaenealf
+	link Cheons
 	asteroids "small rock" 51 3.168
 	asteroids "medium rock" 143 3.234
 	asteroids "large rock" 50 1.452
@@ -4193,7 +4853,7 @@ planet Affalan
 	description `	This eerie atmosphere is the result of extreme amounts of nuclear and biological weapons testing. When XSZ first began developing its nuclear arsenal, they needed somewhere to test, somewhere with a relatively normal ecosystem which was fairly uninhabited. Affalan was chosen, and a century later, the environment is so irradiated that you dare not step outside your ship without an extremely heavy radiation suit.`
 
 planet Alleshafen
-	attirbutes enclave notjumblar
+	attributes enclave notjumblar
 	landscape land/nasa1
 	description `This planet is the home of the Enclave's largest ship manufacturing centres, much like Geminus in the Republic. While it is a relatively old world, the crust is composed mostly of very heavy metals and rocks, and so handily, the lighter metals which are useful for shipbuilding are found very near to the surface.`
 	description `	Much of the land on Alleshafen, however, is relatively infertile, and as it seems that many types of life beyond basic plants have never developed, clothing, plastics and food are at a premium here.`
@@ -4211,7 +4871,7 @@ planet Alleshafen
 	outfitter Basicness
 
 planet Arikv
-	attirbutes enclave notjumblar
+	attributes enclave notjumblar
 	landscape land/hills4
 	description `Arikv was settled only fairly recently, according to the locals- the terraforming process is still continuing, which explains the humid conditions, and a decent part of the planet is still uncharted.`
 	description ` However, this planet still boasts a shipyard and a comprehensive outfitter- doubtless due to its strategic position between XSZ and Enclave territory.`
@@ -4226,7 +4886,7 @@ planet Arikv
 	outfitter Ammo
 
 planet Bantilium
-	attirbutes enclave notjumblar
+	attributes enclave notjumblar
 	landscape land/forest5
 	description `Bantilium is mainly covered by large areas of primeval woodland, gnarled trees that reach far too high into the sky. While little of the planet has been explored thus far, it appears to have a unique ecosystem whereby life has evolved from silicon-based compounds, instead of carbon-based compounds like humans. As a result, you and other non-scientists are restricted to the spaceport village.`
 	spaceport `The spaceport and the surrounding town is enclosed by a glass dome, presumably to prevent waste gases from leaking out into the otherwise breathable atmosphere. While this is somewhat of an inconvenience, the inhabitants are nothing but hospitable, and despite this planet's status as a scientific outpost, it feels very much as though this is a true community.`
@@ -4236,7 +4896,7 @@ planet Bantilium
 	security 0
 
 planet Bilbo
-	attirbutes enclave notjumblar
+	attributes enclave notjumblar
 	landscape land/canyon5
 	description `As with the planet below, Bilbo was named after a character from 'The Lord of the Rings'. This time, however, this moon was named "Bilbo" due to its odd similarity to the far eastern areas of Middle-Earth, to which the moon's namesake travelled during The Lord of the Rings' prequel. As a result, much of the terrain is tough and mountainous- perfectly suited to the dwarves of fantasy legend.`
 	spaceport `The spaceport is built into a lone mountain, a massive hive of tunnels extending throughout the edifice. Ships take off and land from landing pads suspended upon the sides of the mountain.`
@@ -4251,7 +4911,7 @@ planet Brun'ily'rhasunx
 	"required reputation" 500
 
 planet Carmine
-	attirbutes enclave notjumblar
+	attributes enclave notjumblar
 	landscape land/city4
 	description `Carmine is a well-settled world, with thriving cities on every continent. It is also home to the galaxy's central bank.`
 	description `	Pollution is a growing problem on Carmine; while it was originally perfect for human habitation worldwide, five hundred years of human occupation and industrialisation are beginning to increase global temperatures. As a result, many equatorial areas are growing more arid every year, and bleaching events on the planet's legendary coral reefs are becoming more and more common.`
@@ -4307,7 +4967,7 @@ planet Cromerium
 	outfitter Ammo
 
 planet Cygite
-	attirbutes enclave notjumblar
+	attributes enclave notjumblar
 	landscape land/mountain5
 	description `Cygite is a mostly barren moon, with little to its name but a number of useful elements within its crust. That's quite honestly it. It's a complete backwater, both technologically and socially, despite it being in the same system as Lyfon.`
 	security 0
@@ -4328,7 +4988,7 @@ planet Cynic
 	outfitter "Medium Engines"
 
 planet Emeria
-	attirbutes enclave notjumblar
+	attributes enclave notjumblar
 	landscape land/fields1
 	description `Emeria is one of the most discontent worlds in the galaxy. Poor enough that its population has no hope of ever leaving, most education beyond the age of eleven is nonexistent here. What's more, despite this system's relative proximity to Lyfon, the Enclave's capital, it is in fact well over two weeks' hyperspace travel away, making this one of the most remote and under-represented systems in the galaxy.`
 	spaceport `The spaceport is a solid, unexciting structure built of blood-red bricks. The landing pads are packed earth, and although the refueling facilities are existent, only a few fuel hoses actually work.`
@@ -4370,7 +5030,7 @@ planet Forefather
 	outfitter Ammo
 
 planet Frodo
-	attirbutes enclave notjumblar
+	attributes enclave notjumblar
 	landscape land/water2
 	description `When the first settlers landed on Frodo, they found the habitable zones of the planet to be remarkably similar to the "Shire" from 'The Lord of the Rings', an infamous book from the 20th century. As a result, they decided to name the planet Frodo, after the book's main character.`
 	description `	While most of the population here consists of farmers, taking care of and managing the countryside and living in rustic homes, a surprisingly large percentage of inhabitants find this world as dull as an old, musty sock, and are scraping together all the money they can possibly find to leave this planet far behind.`
@@ -4404,7 +5064,7 @@ planet Helheim
 		fleet "Small Deep" 15
 
 planet Idivine
-	attirbutes enclave notjumblar
+	attributes enclave notjumblar
 	landscape land/badlands5
 	description `Idivine is a major manufacturing world- as such, it happens to be the second most notable planet in the system, after Lyfon. It is here that most of the Enclave's military-grade weapons and other outfits are constructed. Due to the prominent absence of housing on this planet, the governing authorities run an extensive shuttle program, whereby every weekend workers from Idivine can be ferried back to their homes on Lyfon, free of charge.`
 	spaceport `There are a number of landing pads here reserved exclusively for the fleet of Flurries and Cheetahs used by the Enclave to move its personnel from here to Lyfon and back again.`
@@ -4461,7 +5121,7 @@ planet Jumblar
 	outfitter Ammo
 
 planet Korine
-	attirbutes enclave notjumblar
+	attributes enclave notjumblar
 	landscape land/bwerner5
 	description `Korine is an idyllic, sparsely populated planet which is mostly covered by holiday homes belonging to rich individuals. While the climate is not amazingly tropical, average global temperatures lie slightly higher than average. The days on Korine are long, and while there are next to no major tides due to the absence of any moons, seaside retreats are still popular among the part-time residents.`
 	description `	The self-indulgence which Korine symbolises is a source of much dissatisfaction among poorer worlds in Enclave space.`
@@ -4494,7 +5154,7 @@ planet Latent
 	outfitter Ammo
 
 planet Lyfon
-	attirbutes enclave notjumblar
+	attributes enclave notjumblar
 	landscape land/mountain9
 	description `Lyfon is the capital of the Enclave, named after the Enclave's first leader. While Lyfon is, admittedly, not the most hospitable of planets, the habitable regions around the equator as well as the apparently vast amounts of natural resources contained within the planet allowed it to quickly develop into the safest planet in Enclave space.`
 	description ` Lyfon's system, Five, is named as such due to its astonishing five hospitable planets.`
@@ -4530,14 +5190,14 @@ planet Magna
 	outfitter "Medium Engines"
 
 planet Mein
-	attirbutes enclave notjumblar
+	attributes enclave notjumblar
 	landscape land/snow11-sfiera
 	description `Mein is an icy world of blizzards and fog, where very few organisms can thrive. Despite this, a surprisingly large number of enterprising colonists set up a few towns a number of centuries ago, and they are still struggling on through the endless snow.`
 	description `	Mein is in the process of being accelerated towards its star through a gravitational slingshot effect provided by one of its planetary neighbours. This is slowly beginning to warm the planet's climate, although it may still take hundreds of years for Mein to be truly habitable.`
 	spaceport `Your ship landed in the midst of a snowstorm, and you could hardly see where you were going as you ran inside with your crew. There appear to be very few people in this spaceport, little more than a skeleton staff, and while you know that you are safe inside from the ferocious winds, you cannot help but look around nervously whenever you hear the steel frame of the spaceport creak.`
 
 planet Memorandum
-	attirbutes enclave notjumblar
+	attributes enclave notjumblar
 	landscape land/city2
 	description `Memorandum is a very "normal" world. The climate is stable and fairly warm, days are similar to those on Earth, and many of the inhabitants work in simple, boring office jobs which pay decently but are ultimately unexciting. The population is relatively low, too, although oddly enough, most families are in a very similar wealth band; poverty is mostly unheard of, and yet wild amounts of wealth is too.`
 	description `	Very few people you meet have high aspirations for leaving the planet.`
@@ -4570,7 +5230,7 @@ planet Mirrodin
 	security 0
 
 planet "New Asgard"
-	attirbutes enclave notjumblar
+	attributes enclave notjumblar
 	landscape land/desert2
 	description `New Asgard is a relatively small moon, although despite this it is still able to hold onto a thick, breathable atmosphere. Much of the moon is desert, although some areas near the highest mountains do receive enough rain to allow them to become well-forested. The oceans here have enormous tide differences due to the gas giant above, and as a result, most seaside settlements are practically built inside glass domes reinforced with titanium so that they can survive the inrush of water at high tide.`
 	description `	Despite the relative absence of natural resources, New Asgard is still fairly rich due to the tourism industry- many people come here simply to experience the awe of waking up to see the face of a gas giant staring down at them.`
@@ -4583,7 +5243,7 @@ planet "New Asgard"
 	outfitter Ammo
 
 planet "New Scotland"
-	attirbutes enclave notjumblar
+	attributes enclave notjumblar
 	landscape land/desert8-sfiera
 	description `New Scotland is a world consisting of scrubland and low mountain ranges, for the most part; it is an old world, where tectonic activity is beginning to die down. As a result of the decrease in tectonic activity, the planet's magnetoshpere is also slowly weakening. This in turn increases the amount of radiation falling on the surface, making the inhabitants much more likely to develop cancerous growths as they age.`
 	description `	Most families live on isolated farms in the foothills; it would be even harder to get supplies to them if they were in the mountains proper, and the deep wastes are rumoured to contain dreadful horrors of the sands.`
@@ -4601,7 +5261,7 @@ planet Oro'alein'platrez
 	"required reputation" 500
 
 planet Ortite
-	attirbutes enclave notjumblar
+	attributes enclave notjumblar
 	landscape land/desert1
 	description `This is a somewhat deprived world, consisting of deserts for the most part, albeit with a few tropical regions around the poles. Most of the population is employed in hard labour, gathering sand from the deserts for extravagant artificial beaches on richer worlds or manufacturing basic farming equipment for other worlds. There is also a thriving petrochemicals industry here, based on extracting oil from beneath the expansive, more low-lying deserts.`
 	description `	As there is very little liquid water here, the few settlers who have not been forced into the industrialised drudgery that most have have been able to develop some intriguing technology designed to collect water vapour from areas miles wide and then condense it. This water is then sold to the local government to allow some standard of running water to exist in the cities.`
@@ -4654,10 +5314,10 @@ planet Puggleswap
 	spaceport `			P`
 	spaceport `		O`
 	spaceport `	R`
-	spaceport T
+	spaceport `	T`
 
 planet Quaver
-	attirbutes enclave notjumblar
+	attributes enclave notjumblar
 	landscape land/city17-sfiera
 	description `Quaver has been heavily urbanised since its settlement a little more than five centuries ago. As a world with relatively low-lying land, the risk of flooding is always a possibility, although thankfully due to the absence of many mountains, the weather is usually predictable.`
 	description `	While it is one of the richest planets in the galaxy, Quaver is actually home to relatively few billion, or even millionaires, as its massive wealth comes from its status as one of the primary trading planets away from the heart of Enclave space. As a result, there is a very well-funded welfare programme for inhabitants of the planet, which includes a universal basic income, something entirely unheard of in the Republic.`
@@ -4677,7 +5337,7 @@ planet Quaver
 		fleet "Small Militia" 25
 
 planet Saal
-	attirbutes enclave notjumblar
+	attributes enclave notjumblar
 	landscape land/hills2
 	description `Saal is an idyllic farming world, entirely at contrast with most of the other human residents of this galaxy, who seem to act very similarly to the humans of the Deep. Most power generation facilities, instead of using fusion or fission to generate electricity, are in fact wind-powered.`
 	description `	There are a number of surprisingly feral species here, including subspecies of cows and horses.`
@@ -4696,7 +5356,7 @@ planet Scalpel
 	spaceport `The spaceport on Scalpel can barely be called that; it is little more than a large clearing with some landing pads of packed dirt a mile or two out from the main settlement.`
 
 planet Seminar
-	attirbutes enclave notjumblar
+	attributes enclave notjumblar
 	landscape land/nasa4
 	description `I think when they named this planet, the idea was to have it be home to some of the greatest educational and scientific institutes in the whole galaxy.`
 	description `	Yeah, that never happened. Instead, when some amazing narcotic plants were discovered here, the central galactic government didn't find out about them until it was social norm on Seminar to use substances derived from these plants every. Single. Day. As a result, this is one of the happiest planets in Enclave space.`
@@ -4706,7 +5366,7 @@ planet Seminar
 	spaceport `	Most of the spaceport facilities appear to be automated, likely to prevent security guards who may or may not be in full control of their mental faculties from making bad decisions which could end in lots of people dying.`
 
 planet Tarkir
-	attirbutes enclave notjumblar
+	attributes enclave notjumblar
 	landscape land/badlands2
 	description `Tarkir is a relatively flat, boring world. Covered in badlands and the occasional ocean or forest, not many people live here- and with good reason.`
 	description `	Somehow, Tarkir is populated by creatures very similar to the dragons of Skymoot, back in Free Worlds space. These "dragons", however, are far more aggressive than those found on Skymoot, and are known to attack settlements regularly. Despite this, there is a strong cultural tradition among the locals who believe that any pilot aspiring to join the planetary militia must fight off a dragon attack on their own, shipless, before they are deemed worthy of the title.`
@@ -4740,3 +5400,4 @@ planet Ziv'rahk'ashgrir
 	spaceport `The spaceport has a decent section of it devoted to the transfer of civilians to and from space; in fact, this area feels almost like a human spaceport, if it were not for the grey-skinned aliens walking around in place of humans.`
 	spaceport `	The rest of the spaceport is comprised of military buildings, planetary defences, and a few small ship construction lines.`
 	"required reputation" 500
+

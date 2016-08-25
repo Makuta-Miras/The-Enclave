@@ -661,15 +661,15 @@ ship "Turbulence"
 		"Small Radar Jammer" 2
 		"Water Coolant System"
 		"SLD-68 Shield Generator"
-		XLR-93 Railgun 4
+		"XLR-93 Railgun" 4
 		Ball-bearing 800
 		"HFS-8B1 Particle Cannon" 2		
 	engine -13.25 119
 	engine 11.75 119.5	
-	gun 8.75 -100 XLR-93 Railgun
-	gun -10.25 -100 XLR-93 Railgun
-	gun -15.25 -93 XLR-93 Railgun
-	gun 13.75 -93 XLR-93 Railgun
+	gun 8.75 -100 "XLR-93 Railgun"
+	gun -10.25 -100 "XLR-93 Railgun"
+	gun -15.25 -93 "XLR-93 Railgun"
+	gun 13.75 -93 "XLR-93 Railgun"
 	gun -33.25 -12.5
 	gun 31.75 -12.5
 	gun 37.75 16 "HFS-8B1 Particle Cannon"
