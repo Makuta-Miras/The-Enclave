@@ -6,15 +6,12 @@ event "invasionK"
 		"attitude toward"
 			"Enclave" -500000
 			"XSZ Corporation" -500000
-			"Pug" 500000
 	government "Enclave"
 		"attitude toward"
 			"Kaltheim" -500000
-			"XSZ Corporation" 0
 	government "XSZ Corporation"
 		"attitude toward"
 			"Kaltheim" -500000
-			"Enclave" 0
 	link Daia Vo'jaerun
 	link Gautus Vo'jaerun
 	link Gautus Umba'draeuin
@@ -257,7 +254,10 @@ event "middle 3b ready"
 	system Dvorak
 		fleet Trader 800
 		fleet Transporter 800
-		
+	system Antithesis
+		fleet Trader 900
+		fleet Transporter 900
+
 event "battle of perihelion"
 	system Dvorak
 		government Enclave
@@ -277,3 +277,5 @@ event "battle of perihelion"
 		description `	XSZ-funded surveys have found that there are enormous oil and gas fields beneath the oceans of Perihelion. Despite XSZ's numerous appeals to the Enclave government to allow them to mine the fuels here, the Enclave has refused, every time.`
 		spaceport `The spaceport is located right on one of the coasts, nearest to the equator. As you stepped off of your ship, a small gaggle of tourists walked past, evidently unaware of the state of relations currently between the Enclave and XSZ, or even the likelihood that this would be one of the first worlds XSZ might move to take in the event of war.`
 		spaceport `	The concrete landing pads are warm and sandy beneath your feet.`
+	system Three
+		government Enclave

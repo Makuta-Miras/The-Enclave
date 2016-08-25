@@ -584,14 +584,14 @@ mission "Enclave Middle 3A"
 	to offer
 		or
 			has "Enclave Middle 2E-A: done"
-			has "Enclave Middle 2E-A: done"
+			has "Enclave Middle 2E-B: done"
 		random < 35
 	on offer
 		conversation
 			`The spaceport is deathly silent.`
 			`	All eyes are on a holoscreen mounted on the wall, clearly set to a news channel.`
 			`	The footage showing is of one of the major cities on Carmine, in the Pipaeus system- or at least, what used to be a city. Now all that remains is a desolate wasteland of flattened buildings and millions of dead people- or not even that. In what appears to have been a nuclear blast, the majority of the city's population has been vaporized.`
-			`	"After launching this first atrocious nuclear assault on a civilian population, we are getting reports that the perpetrators are the XSZ Corporation," the newsreader says with a slight toen of hysteria in his voice. "And that this atrocity has been repeated on a number of other large settlements across Carmine. We were unable to contact the President, nor any military leaders for their take on this attack."`
+			`	"After launching this first atrocious nuclear assault on a civilian population, we are getting reports that the perpetrators are the XSZ Corporation," the newsreader says with a slight tone of hysteria in his voice. "And that this atrocity has been repeated on a number of other large settlements across Carmine. We were unable to contact the President, nor any military leaders for their take on this attack."`
 			choice
 				`	Set off immediately and head for <destination> for orders.`
 			`	You turn and run out of the spaceport towards your ship, followed by a number of other Enclave officers heading towards theirs. As you are readying your ship for takeoff, one of them contacts you-`
@@ -606,7 +606,6 @@ mission "Enclave Middle 3A"
 		event "attack on arikv" 3
 	npc
 		personality heroic vindictive escort
-		system <source>
 		government Enclave
 		fleet
 			names "republic small"
@@ -702,6 +701,8 @@ mission "Enclave Middle 3B"
 	
 	on complete
 		event "battle of perihelion"
+		event "invasionK"
+		"reputation: Kaltheim" = -500000
 		conversation
 			`As you step into the spaceport, you find everyone rushing about- no relaxation after a hard battle, no mourning for the dead. If anything, you think, the mood is similar to what it was like immediately before the Battle of Innenheim, months ago.`
 			choice
@@ -739,7 +740,7 @@ mission "Enclave Middle 3B"
 			label questions
 			choice
 				`	"No questions."`
-			`	"Dismissed," Kuznetsov says. "Lieutenants <last> and Bradford, I need to speak to you for a minute." He waits for the others to leave, then turns to the pair of you. "For your exceptional courage and continuous devotion to our cause, you have each been promoted to the rank of Commander, along with a pay raise to a salary of 900 credits per day. Congratulations."`
+			`	"Dismissed," Kuznetsov says. "Lieutenants <last> and Bradford, I need to speak to you for a minute." He waits for the others to leave, then turns to the pair of you. "For your exceptional courage and continuous devotion to our cause, you have each been promoted to the rank of Commander, along with a pay raise to a salary of 900 credits per day. Congratulations. v0.0.8 is done now, by the way."`
 			choice
 				`	"Is this because some other commanders got killed in the battle, by any chance?"`
 					goto kill
@@ -748,5 +749,3 @@ mission "Enclave Middle 3B"
 			label kill
 			`	"Of course not," the Admiral replies. "Now get to your ships."`
 		"salary: Enclave" = 900
-		dialog
-			`v0.0.8 is now done, m80s. Next chapter coming in v0.0.9.`
