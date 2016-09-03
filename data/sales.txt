@@ -52,6 +52,7 @@ shipyard "All ships"
 	"Strike Drone"
 	"Anteater"
 	"Destroyer"
+	"Tyar'linhalf 67-G"
 
 	
 	

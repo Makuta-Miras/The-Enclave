@@ -94,7 +94,7 @@ outfit "Tundra-Class Shield Generator"
 	"mass" 25
 	"outfit space" -25
 	"shield generation" 1.3
-	"shield energy" -3
+	"shield energy" 1.3
 	"shield heat" -3
 	description "The Tundra-Class Shield Generator is the smallest Kaltheim shield system. Designed to absorb energy from the projectiles which it deflects, this allows smaller Kaltheim ships to operate only on relatively small generators. The dissipation effects used by Kaltheim shields also allow them to cool their ships when being fired on."
 	
@@ -106,7 +106,7 @@ outfit "Glacial-Class Shield Generator"
 	"mass" 50
 	"outfit space" -50
 	"shield generation" 2.8
-	"shield energy" -7
+	"shield energy" 2.8
 	"shield heat" -7
 	description "The Glacial-Class Shield Generator is the next step up in Kaltheim shielding technology. It employs better cooling, energy absorption and shield generation than Tundra shields in order to provide a more efficient shielding system for larger Kaltheim ships."
 
@@ -118,6 +118,7 @@ outfit "Boreal-Class Shield Generator"
 	"mass" 75
 	"outfit space" -75
 	"shield generation" 4.4
+	"shield energy" 4.4
 	"shield heat" -11.5
 	description "This is the largest set of shields devised by the Kaltheim so far."
 	
@@ -157,3 +158,62 @@ outfit "Polar Batteries"
 	
 	
 # Ships:
+
+ship "Tyar'linhalf 67-G"
+	sprite "ship/Tyar'linhalf 67-G"
+	attributes
+		category "Heavy Warship"
+		"cost" 
+		"shields" 40600
+		"hull" 18300
+		"required crew" 112
+		"bunks" 169
+		"mass" 1150
+		"drag" 18.7
+		"heat dissipation" .2
+		"fuel capacity" 600
+		"cargo space" 65
+		"outfit space" 884
+		"weapon capacity" 340
+		"engine capacity" 200
+		"ramscoop" 3
+		weapon
+			"blast radius" 350
+			"shield damage" 5400
+			"hull damage" 1200
+			"hit force" 6600
+	outfits
+		"Heat Redistribution Ray" 2
+		"Heavy Electron Turret" 2
+		"Phase Missile Launcher" 5
+		"Phase Missile" 500
+		
+		"Iceberg Reactor"
+		"Polar Batteries"
+		"Glacial-Class Shield Generator"
+		"Boreal-Class Shield Generator"
+		
+		Hyperdrive
+		"A525 Atomic Steering"
+		"A860 Atomic Thruster"
+		
+	engine -15 187
+	engine 15 187
+	engine -60 202.5
+	engine 60 202.5
+	gun -24 -132.5 "Phase Missile Launcher"
+	gun -18 -126 "Phase Missile Launcher"
+	gun 18 -126 "Phase Missile Launcher"
+	gun 24 -132.5 "Phase Missile Launcher"
+	gun 0 -202 "Phase Missile Launcher"
+	turret 17.5 30 "Heat Redistribution Ray"
+	turret -17.5 30 "Heat Redistribution Ray"
+	turret 20 153 "Heavy Electron Turret"
+	turret -20 153 "Heavy Electron Turret"
+	explode "tiny explosion" 20
+	explode "small explosion" 45
+	explode "medium explosion" 50
+	explode "big explosion" 40
+	explode "huge explosion" 10
+	"final explode" "final explosion large"
+	description "This is the Kaltheim's largest warship. Devised only relatively recently, it is designed for just one thing: the invasion of human space."
