@@ -102,7 +102,7 @@ outfit "Repulsor Beam"
 	weapon
 		sprite "projectile/repulsor"
 			"frame rate" 60
-		sound "banisher"
+		sound "repulsor"
 		"hit effect" "repulsor impact"
 		"inaccuracy" .4
 		"velocity" 590
