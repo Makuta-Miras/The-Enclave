@@ -85,6 +85,53 @@ outfit "Phase Missile"
 	description "The Phase Missile is ammunition for the Phase Missile Launcher- without the launcher, you cannot install Phase Missiles. Each launcher can store up to 100 Phase Missiles."
 
 	
+outfit "Kelvin Beam"
+	category "Guns"
+	cost 2100000
+	thumbnail "outfit/Kelvin Beam"
+	"mass" 30
+	"outfit space" -30
+	"weapon capacity" -30
+	"gun ports" -1
+	weapon
+		sprite "projectile/kelvin"
+			"frame rate" 30
+		sound "disruptor"
+		"hit effect" "electron impact"
+		"inaccuracy" .4
+		"velocity" 500
+		"lifetime" 1
+		"reload" 1
+		"firing energy" 6.8
+		"firing heat" 2.1
+		"shield damage" 5
+		"hull damage" 4.7
+	description "The Kelvin Beam is the Kaltheim's primary weapon. While it is only a simple beam weapon, it can deal out huge chunks of damage."
+	
+outfit "Kelvin Turret"
+	category "Turrets"
+	cost 4500000
+	thumbnail "outfit/Kelvin Turret"
+	mass "69"
+	"outfit space" -69
+	"weapon capacity" -69
+	"turret mounts" -1
+	"required crew" 1
+	weapon
+		sprite "projectile/kelvin"
+			"frame rate" 30
+		sound "disruptor"
+		"hit effect" "electron impact"
+		"inaccuracy" .4
+		"velocity" 500
+		"lifetime" 1
+		"reload" 1
+		"firing energy" 8.3
+		"firing heat" 4.7
+		"shield damage" 7.9
+		"hull damage" 8.6
+
+
 # Shields:	
 	
 outfit "Tundra-Class Shield Generator"
@@ -174,7 +221,7 @@ ship "Tyar'linhalf 67-G"
 		"fuel capacity" 600
 		"cargo space" 65
 		"outfit space" 884
-		"weapon capacity" 340
+		"weapon capacity" 364
 		"engine capacity" 200
 		"ramscoop" 3
 		weapon
@@ -184,7 +231,7 @@ ship "Tyar'linhalf 67-G"
 			"hit force" 6600
 	outfits
 		"Heat Redistribution Ray" 2
-		"Heavy Electron Turret" 2
+		"Kelvin Turret" 2
 		"Phase Missile Launcher" 5
 		"Phase Missile" 500
 		
@@ -208,8 +255,8 @@ ship "Tyar'linhalf 67-G"
 	gun 0 -202 "Phase Missile Launcher"
 	turret 17.5 30 "Heat Redistribution Ray"
 	turret -17.5 30 "Heat Redistribution Ray"
-	turret 20 153 "Heavy Electron Turret"
-	turret -20 153 "Heavy Electron Turret"
+	turret 20 153 "Kelvin Turret"
+	turret -20 153 "Kelvin Turret"
 	explode "tiny explosion" 20
 	explode "small explosion" 45
 	explode "medium explosion" 50
@@ -233,7 +280,7 @@ ship "Kru'urlin 89-B"
 		"heat dissipation" .2
 		"fuel capacity" 400
 		"cargo space" 20
-		"outfit space" 351
+		"outfit space" 421
 		"weapon capacity" 182
 		"engine capacity" 91
 		"ramscoop" 3
@@ -244,7 +291,7 @@ ship "Kru'urlin 89-B"
 			"hit force" 1200
 	outfits
 		"Phase Missile Launcher" 2
-		"Heavy Electron Beam" 2
+		"Kelvin Beam" 2
 		"Heat Redistribution Ray"
 		"Phase Missile" 200
 		
@@ -258,9 +305,9 @@ ship "Kru'urlin 89-B"
 		
 	engine 0 72.5
 	gun 35 0 "Phase Missile Launcher"
-	gun 30.5 -10 "Heavy Electron Beam"
+	gun 30.5 -10 "Kelvin Beam"
 	gun -35 0 "Phase Missile Launcher"
-	gun -30.5 -10 "Heavy Electron Beam"
+	gun -30.5 -10 "Kelvin Beam"
 	turret 0 2 "Heat Redistribution Ray"
 	explode "tiny explosion" 50
 	explode "small explosion" 30

@@ -4,6 +4,7 @@
 -Removed the Repulsor sound effect since it wasn't working and I can't be bothered to fix it.
 -Added the Kru'urlin 89-B.
 -Added the Heavy Electron Beam (Finally!)
+-Added the Kelvin Beam and Kelvin Turret for the Kaltheim.
 
 
 05/09/16

@@ -92,7 +92,7 @@ outfit "Heavy Electron Turret"
 	
 outfit "Heavy Electron Beam"
 	category "Guns"
-	cost
+	cost 750000
 	thumbnail "outfit/heavy electron beam"
 	"mass" 27
 	"weapon capacity" -27

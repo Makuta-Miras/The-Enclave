@@ -144,6 +144,8 @@ outfitter "Enclave.mod outfits"
 	"Floe Reactor"
 	"Polar Batteries"
 	"Heavy Electron Beam"
+	"Kelvin Turret"
+	"Kelvin Beam"
 	
 	
 outfitter "Ascendancy Miniaturised"
