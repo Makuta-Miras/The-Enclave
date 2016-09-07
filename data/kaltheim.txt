@@ -163,7 +163,7 @@ ship "Tyar'linhalf 67-G"
 	sprite "ship/Tyar'linhalf 67-G"
 	attributes
 		category "Heavy Warship"
-		"cost" 
+		"cost" 40000000
 		"shields" 40600
 		"hull" 18300
 		"required crew" 112
@@ -217,3 +217,53 @@ ship "Tyar'linhalf 67-G"
 	explode "huge explosion" 10
 	"final explode" "final explosion large"
 	description "This is the Kaltheim's largest warship. Devised only relatively recently, it is designed for just one thing: the invasion of human space."
+	
+	
+ship "Kru'urlin 89-B"
+	sprite "ship/Kru'urlin 89-B"
+	attributes
+		category "Light Warship"
+		"cost" 2000000
+		"shields" 19000
+		"hull" 7500
+		"required crew" 12
+		"bunks" 12
+		"mass" 145
+		"drag" 3.0
+		"heat dissipation" .2
+		"fuel capacity" 400
+		"cargo space" 20
+		"outfit space" 351
+		"weapon capacity" 182
+		"engine capacity" 91
+		"ramscoop" 3
+		weapon
+			"blast radius" 80
+			"shield damage" 800
+			"hull damage" 400
+			"hit force" 1200
+	outfits
+		"Phase Missile Launcher" 2
+		"Heavy Electron Beam" 2
+		"Heat Redistribution Ray"
+		"Phase Missile" 200
+		
+		"Floe Reactor"
+		"Glacial-Class Shield Generator"
+		"Polar Batteries"
+		
+		Hyperdrive
+		"A375 Atomic Steering"
+		"A370 Atomic Thruster"
+		
+	engine 0 72.5
+	gun 35 0 "Phase Missile Launcher"
+	gun 30.5 -10 "Heavy Electron Beam"
+	gun -35 0 "Phase Missile Launcher"
+	gun -30.5 -10 "Heavy Electron Beam"
+	turret 0 2 "Heat Redistribution Ray"
+	explode "tiny explosion" 50
+	explode "small explosion" 30
+	explode "medium explosion" 20
+	"final explode" "final explosion small"
+	description "The Kru'urlin 89-B is a small Kaltheim warship, designed to be able to hop in and out of systems quickly in order to somewhat shred defences before the larger warships arrive."

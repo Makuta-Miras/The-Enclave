@@ -1,12 +1,19 @@
 ------------------------------------------------------------------------  v0.0.8b -------------------------------------------------------------------------------
-03/09/16
+07/09/16
 
--Added the Tyar'linhalf 67-G.
+-Removed the Repulsor sound effect since it wasn't working and I can't be bothered to fix it.
+-Added the Kru'urlin 89-B.
+-Added the Heavy Electron Beam (Finally!)
 
 
 05/09/16
 
 -Added a sound effect for the Repulsor.
+
+
+03/09/16
+
+-Added the Tyar'linhalf 67-G.
 
 
 ------------------------------------------------------------------------  v0.0.8a -------------------------------------------------------------------------------

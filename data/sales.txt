@@ -53,6 +53,7 @@ shipyard "All ships"
 	"Anteater"
 	"Destroyer"
 	"Tyar'linhalf 67-G"
+	"Kru'urlin 89-B"
 
 	
 	
@@ -142,6 +143,7 @@ outfitter "Enclave.mod outfits"
 	"Iceberg Reactor"
 	"Floe Reactor"
 	"Polar Batteries"
+	"Heavy Electron Beam"
 	
 	
 outfitter "Ascendancy Miniaturised"
@@ -158,6 +160,7 @@ outfitter "Ascendancy Advanced"
 
 outfitter "Enclave Heavy Weaponry"
 	"XLR-93 Railgun"
+	"Heavy Electron Beam"
 	"Heavy Electron Turret"
 	"Torpedo Launcher"
 	"Heavy Rocket Launcher"

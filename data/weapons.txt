@@ -90,6 +90,29 @@ outfit "Heavy Electron Turret"
 	description "	This is a variation on the heavy electron beam design, featuring the beam mounted on a turret, allowing it to track and aim at moving targets without the entire ship being forced to turn. If it were not for this turret's high outfit space requirements, it could have rendered fighters and drones practically worthless in combat."
 
 	
+outfit "Heavy Electron Beam"
+	category "Guns"
+	cost
+	thumbnail "outfit/heavy electron beam"
+	"mass" 27
+	"weapon capacity" -27
+	"gun ports" -1
+	weapon
+		sprite "projectile/electron"
+			"frame rate" 60
+		sound "electron beam"
+		"hit effect" "electron impact"
+		"inaccuracy" .4
+		"velocity" 450
+		"lifetime" 1
+		"reload" 1
+		"firing energy" 1.8
+		"firing heat" 3.1
+		"shield damage" 3.5
+		"hull damage" 4.7
+	description "Having escaped the dark ages of human space exploration in the Milky Way, the Enclave has developed and refined electron beam technology further than the Deep's researchers have done thus far."
+
+	
 outfit "Repulsor Beam"
 	category "Turrets"
 	cost 560000
@@ -102,7 +125,7 @@ outfit "Repulsor Beam"
 	weapon
 		sprite "projectile/repulsor"
 			"frame rate" 60
-		sound "repulsor"
+		sound "banisher"
 		"hit effect" "repulsor impact"
 		"inaccuracy" .4
 		"velocity" 590
