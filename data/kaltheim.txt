@@ -314,3 +314,21 @@ ship "Kru'urlin 89-B"
 	explode "medium explosion" 20
 	"final explode" "final explosion small"
 	description "The Kru'urlin 89-B is a small Kaltheim warship, designed to be able to hop in and out of systems quickly in order to somewhat shred defences before the larger warships arrive."
+	
+	
+ship "Lenmig'sraor 52-T"
+	sprite "ship/Lenmig'sraor 52-T"
+	attributes
+		category "Medium Warship"
+		"cost" 
+		"shields" 
+		"hull"
+		"mass" 
+		"drag" 10.1
+		"heat dissipation" .6
+		"fuel capacity" 700
+		"cargo space" 36
+		"outfit space" 752
+		"weapon capacity" 325
+		"engine capacity" 156
+		"ramscoop" 3

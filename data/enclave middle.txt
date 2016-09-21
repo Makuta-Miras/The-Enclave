@@ -121,7 +121,7 @@ mission "Enclave Middle 1A"
 			variant
 				"Penguin" 10
 				"Destroyer" 4
-	npc accompany
+	npc
 		personality heroic vindictive escort
 		system Innenheim
 		government "Enclave"
@@ -240,15 +240,6 @@ mission "Enclave Middle 1D"
 			label done
 			`	You introduce yourself to the crews, and begin making preparations for takeoff.`
 				accept
-	npc accompany save
-		government Enclave
-		personality heroic vindictive escort
-		system Unobu
-		fleet
-			fighters "republic fighter"
-			variant
-				"Enclave Lance" 24
-				"Dart" 12
 	npc accompany save
 		government Enclave
 		personality timid vindictive escort
@@ -455,7 +446,7 @@ mission "Enclave Middle 2D-A"
 	on offer
 		conversation
 			`The atmosphere on Lyfon is one of fear; the whole populace knows that this system and the others nearby are very much in danger of being attacked by XSZ thanks to their isolated position relative to the rest of Enclave space. As you were coming in to land, you notified the spaceport controllers of your assignment; thankfully, unlike the group of diplomats you met on Quaver, the officials you are to transport have actually arrived at the spaceport on time. You load them on to your ship as fast as you can, aware that the time on the ceasefire is ticking, and take off as soon as possible.`
-				launch
+				accept
 	on complete
 		conversation
 			`When you land, the Cabinet members are escorted speedily off your ship and to the safety of a large compound on the outskirts of the spaceport city.`
@@ -475,7 +466,7 @@ mission "Enclave Middle 2D-B"
 	on offer
 		conversation
 			`The atmosphere on Lyfon is one of fear; the whole populace knows that this system and the others nearby are very much in danger of being attacked by XSZ thanks to their isolated position relative to the rest of Enclave space. As you were coming in to land, you notified the spaceport controllers of your assignment; thankfully, unlike the group of diplomats you met on Quaver, the officials you are to transport have actually arrived at the spaceport on time. You load them on to your ship as fast as you can, aware that the time on the ceasefire is ticking, and take off as soon as possible.`
-				launch
+				accept
 	on complete
 		conversation
 			`When you land, the Cabinet members are escorted speedily off your ship and to the safety of a large compound on the outskirts of the spaceport city.`

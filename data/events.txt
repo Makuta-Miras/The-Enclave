@@ -153,24 +153,15 @@ event "middle 1a ready"
 		fleet Trader 800
 		fleet Transporter 800
 		fleet "Enclave Patrol" 3800
-		fleet "XSZ Small" 700
-		fleet "XSZ Large" 1100
-		fleet "Scorched Earth" 775
-		fleet "XSZ Nuclear" 1250
 	system Ares
 		fleet Trader 900
 		fleet Transporter 900
 		fleet "Enclave Patrol" 1800
-		fleet "XSZ Small" 700
-		fleet "XSZ Large" 1100
-		fleet "Scorched Earth" 775
-		fleet "XSZ Nuclear" 1250
 	system Svind
 		fleet Trader 1200
 		fleet Transporter 1200
 		fleet "Enclave Patrol" 1200
 		fleet "Enclave Capital" 1500
-		fleet "Scorched Earth" 1675
 		
 event "battle for svind"
 	system Fallout
@@ -179,16 +170,12 @@ event "battle for svind"
 		fleet Transporter 700
 		fleet "Enclave Patrol" 900
 		fleet "Enclave Capital" 1100
-		fleet "XSZ Small" 1700
-		fleet "XSZ Large" 1900
 	system Ares
 		government "Enclave"
 		fleet Trader 800
 		fleet Transporter 800
 		fleet "Enclave Patrol" 900
 		fleet "Enclave Capital" 1100
-		fleet "XSZ Small" 1700
-		fleet "XSZ Large" 1900
 	system Svind
 		government "Enclave"
 		fleet Trader 1100
