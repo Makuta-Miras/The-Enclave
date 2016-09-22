@@ -54,6 +54,7 @@ shipyard "All ships"
 	"Destroyer"
 	"Tyar'linhalf 67-G"
 	"Kru'urlin 89-B"
+	"Lenmig'sraor 52-T"
 
 	
 	

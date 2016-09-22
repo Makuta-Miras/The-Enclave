@@ -296,7 +296,7 @@ ship "Kru'urlin 89-B"
 		"Phase Missile" 200
 		
 		"Floe Reactor"
-		"Glacial-Class Shield Generator"
+		"Tundra-Class Shield Generator" 2
 		"Polar Batteries"
 		
 		Hyperdrive
@@ -320,10 +320,12 @@ ship "Lenmig'sraor 52-T"
 	sprite "ship/Lenmig'sraor 52-T"
 	attributes
 		category "Medium Warship"
-		"cost" 
-		"shields" 
-		"hull"
-		"mass" 
+		"cost" 20000000
+		"shields" 18030
+		"hull" 8255
+		"required crew" 42
+		"bunks" 93
+		"mass" 755
 		"drag" 10.1
 		"heat dissipation" .6
 		"fuel capacity" 700
@@ -332,3 +334,46 @@ ship "Lenmig'sraor 52-T"
 		"weapon capacity" 325
 		"engine capacity" 156
 		"ramscoop" 3
+		weapon
+			"blast radius" 320
+			"shield damage" 4000
+			"hull damage" 2000
+			"hit force" 6000
+	outfits
+		"Phase Missile Launcher" 2
+		"Kelvin Beam" 4
+		"Heat Redistribution Ray" 3
+		"Phase Missile" 200
+		
+		"Iceberg Reactor"
+		"Glacial-Class Shield Generator" 2
+		"Polar Batteries"
+		
+		Hyperdrive
+		"A520 Atomic Thruster"
+		"A525 Atomic Steering"
+		
+	engine -52.25 117.5
+	engine -37.75 117
+	engine -15.75 94.5
+	engine 0.75 127.5
+	engine 16.25 95
+	engine 40.25 117
+	engine 54.75 117.5
+	gun -51.75 -66 "Kelvin Beam"
+	gun -37.25 -66 "Kelvin Beam"
+	gun -11.75 -89.5 "Phase Missile Launcher"
+	gun 15.75 -89.5 "Phase Missile Launcher"
+	gun 40.75 -66 "Kelvin Beam"
+	gun 55.25 -66 "Kelvin Beam"
+	turret -45.75 74 "Heat Redistribution Ray"
+	turret 14.25 69 "Heat Redistribution Ray"
+	turret 68.25 74 "Heat Redistribution Ray"
+	explode "tiny explosion" 80
+	explode "small explosion" 45
+	explode "medium explosion" 50
+	explode "large explosion" 40
+	explode "huge explosion" 10
+	"final explode" "final explosion large"
+	description "The Lenmig'sraor 52-T is a somewhat antiquated Kaltheim design, from the days before they began ramping up for the invasion. The original versions were equipped with a number of fighter bays, but in the run-up to war many were heavily modified to become hunter-killers, sacrificing the fighters in favour of more maneuverability as well as more gun slots and turrets."
+	description "	While the old versions of the ship are rarely seen nowadays, when they are deemed suitable for a battle they are a major force on the battlefield."
