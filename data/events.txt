@@ -1,30 +1,10 @@
+event "helheim outfitter"
+	planet Helheim
+		outfitter "Deep Sky Basics"
+
 event "enclave opens"
 	link Xenos Suhail
-	
-event "invasionK"
-	government "Kaltheim"
-		"attitude toward"
-			"Enclave" -500000
-			"XSZ Corporation" -500000
-	government "Enclave"
-		"attitude toward"
-			"Kaltheim" -500000
-	government "XSZ Corporation"
-		"attitude toward"
-			"Kaltheim" -500000
-	link Daia Vo'jaerun
-	link Gautus Vo'jaerun
-	link Gautus Umba'draeuin
-	link Four Hrau'ngri'liadien
-	link Aetrus Hrau'ngri'liadien
-	unvisit Daia
-	unvisit Vo'jaerun
-	unvisit Gautus
-	unvisit Umba'draeuin
-	unvisit Four
-	unvisit Hrau'ngri'liadien
-	unvisit Aetrus
-	
+		
 event "civil war"
 	government "Enclave"
 		"attitude toward"
@@ -268,3 +248,58 @@ event "battle of perihelion"
 		spaceport `	The concrete landing pads are warm and sandy beneath your feet.`
 	system Three
 		government Enclave
+	
+	
+event "kaltheim invasion"
+	government "Kaltheim"
+		"attitude toward"
+			"Enclave" -500000
+			"XSZ Corporation" -500000
+	government "Enclave"
+		"attitude toward"
+			"Kaltheim" -500000
+	government "XSZ Corporation"
+		"attitude toward"
+			"Kaltheim" -500000
+	link Daia Vo'jaerun
+	link Gautus Vo'jaerun
+	link Gautus Umba'draeuin
+	link Four Hrau'ngri'liadien
+	link Aetrus Hrau'ngri'liadien
+	unvisit Daia
+	unvisit Vo'jaerun
+	unvisit Gautus
+	unvisit Umba'draeuin
+	unvisit Four
+	unvisit Hrau'ngri'liadien
+	unvisit Aetrus
+	system Daia
+		government Kaltheim
+		fleet Trader 700
+		fleet Transporter 700
+		fleet "Enclave Patrol" 2000
+		fleet "Enclave Capital" 3500
+		fleet "Kaltheim Small" 600
+		fleet "Kaltheim Large" 800
+	system Gautus
+		government Kaltheim
+		fleet Trader 700
+		fleet Transporter 700
+		fleet "Enclave Patrol" 2000
+		fleet "Enclave Capital" 3500
+		fleet "Kaltheim Small" 300
+		fleet "Kaltheim Large" 400
+	system Four
+		government Kaltheim
+		fleet Trader 1000
+		fleet Transporter 1000
+		fleet "Kaltheim Small" 600
+		fleet "Kaltheim Large" 800
+	system Aetrus
+		government Kaltheim
+		fleet Trader 700
+		fleet Transporter 700
+		fleet "Enclave Patrol" 2000
+		fleet "Enclave Capital" 3500
+		fleet "Kaltheim Small" 600
+		fleet "Kaltheim Large" 800

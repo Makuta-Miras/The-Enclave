@@ -692,7 +692,7 @@ mission "Enclave Middle 3B"
 	
 	on complete
 		event "battle of perihelion"
-		event "invasionK"
+		event "kaltheim invasion"
 		"reputation: Kaltheim" = -500000
 		conversation
 			`As you step into the spaceport, you find everyone rushing about- no relaxation after a hard battle, no mourning for the dead. If anything, you think, the mood is similar to what it was like immediately before the Battle of Innenheim, months ago.`
@@ -731,7 +731,7 @@ mission "Enclave Middle 3B"
 			label questions
 			choice
 				`	"No questions."`
-			`	"Dismissed," Kuznetsov says. "Lieutenants <last> and Bradford, I need to speak to you for a minute." He waits for the others to leave, then turns to the pair of you. "For your exceptional courage and continuous devotion to our cause, you have each been promoted to the rank of Commander, along with a pay raise to a salary of 900 credits per day. Congratulations. v0.0.8 is done now, by the way."`
+			`	"Dismissed," Kuznetsov says. "Lieutenants <last> and Bradford, I need to speak to you for a minute." He waits for the others to leave, then turns to the pair of you. "For your exceptional courage and continuous devotion to our cause, you have each been promoted to the rank of Commander, along with a pay raise to a salary of 900 credits per day. Congratulations."`
 			choice
 				`	"Is this because some other commanders got killed in the battle, by any chance?"`
 					goto kill

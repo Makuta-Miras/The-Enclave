@@ -1,4 +1,24 @@
 ------------------------------------------------------------------------  v0.0.8b -------------------------------------------------------------------------------
+26/09/16
+
+-Finished off the hails needed for now (Friendly Enclave, Friendly XSZ, Hostile XSZ).
+-Added fleets to the invasion
+-Added a quick mission to provide backwards compatibility between invasion events for people who played v0.0.8x.
+-Added the new invasion event to Enclave Middle.
+
+
+25/09/16
+
+-Did a bit of bugfixing in Enclave Opens- thanks @ov2k!
+-Changed the code to put an outfitter on Helheim to make it so it'll be offered as a mission and event so as to prevent conflicts with other mods.
+-Added hails.
+
+
+23/09/16
+
+-Began adding Kaltheim fleets in preparation for v0.0.8b's release.
+
+
 22/09/16
 
 -Finished the Lenmig'sraor 52-T.

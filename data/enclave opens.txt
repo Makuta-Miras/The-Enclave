@@ -107,8 +107,10 @@ mission "Enclave Opens 1B"
 		has "event: battle of algenib"
 	
 	to fail
-		has "Enclave Opens 1A: active"
-		
+		or
+			has "Enclave Opens 1A: active"
+			has "Enclave Opens 1B: done"
+			
 	on complete
 		conversation
 			`When you request to be allowed a hearing in front of Parliament, the civil servants who register your request don't seem to be surprised; presumably, they had guessed you wouldn't react well to the news.`
@@ -268,7 +270,7 @@ mission "Enclave Opens A"
 	on accept
 		"reputation: Pug" = -100
 	
-	npc accompany
+	npc
 		personality heroic
 		fleet
 			names "free worlds capital"
@@ -290,7 +292,7 @@ mission "Enclave Opens A"
 			variant
 				"Dreadnought"
 				
-	npc accompany
+	npc
 		government "Republic"
 		personality heroic escort
 		fleet
@@ -421,8 +423,11 @@ mission "Enclave Opens B"
 			label 8
 			`"Thanks, sir," you reply as Hofmann leaves.`
 				accept
-					
-	npc accompany
+	
+	on accept
+		"reputation: Pug" = -100
+	
+	npc
 		personality heroic escort
 		government "Republic"
 		fleet

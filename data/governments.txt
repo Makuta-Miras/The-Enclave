@@ -4,9 +4,10 @@ government Enclave
 		
 	"player reputation" 1000
 	"attitude toward"
-		"Ascendancy" -50000
 		"Merchant" 100
 	bribe 0
+	"friendly hail" "friendly enclave"
+	"hostile hail" "hostile enclave"
 	
 government "XSZ Corporation"
 	swizzle 4
@@ -14,9 +15,10 @@ government "XSZ Corporation"
 		
 	"player reputation" 500
 	"attitude toward"
-		"Enclave" 5
 		"Merchant" 150
 	bribe 0
+	"friendly hail" "friendly xsz"
+	"hostile hail" "hostile xsz"
 	
 government Ascendancy
 	swizzle 6
@@ -24,16 +26,18 @@ government Ascendancy
 	
 	"player reputation" 0
 	"attitude toward"
-		"Enclave" -50000
+		"Enclave" 0
 	bribe 0
 	
 government Kaltheim
 	swizzle 0
-	color 1 0 1
+	color 0 0.5 1
+	language "Kaltheim"
 	
-	"player reputation" 10
+	"player reputation" 0
 	"attitude toward"
-		"Pug" 0
+		"Pug" 5
 		"Enclave" 0
 		"XSZ Corporation" 0
 	bribe 0
+	
