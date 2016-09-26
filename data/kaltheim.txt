@@ -22,7 +22,7 @@ outfit "Heat Redistribution Ray"
 		"shield damage" 0
 		"hull damage" .52
 		"heat damage" 100
-		"piercing" 1
+		"piercing" 0.7
 	description "The Heat Redistribution Ray is the Kaltheim's primary cooling method; by using some very complicated physics, they are able to trap superhot particles within a beam, which can then be fired at an enemy ship. The excess heat required for this weapon is sourced from the other outfits installed on a ship, providing the cooling effect."
 	description "	This weapon is entirely unhindered by shields, instead piercing through to transmit heat directly to the enemy ship's hull. As a result of the increased heat upon it, this often causes the hull to begin to warp, causing a small amount of damage."
 	
@@ -69,10 +69,10 @@ outfit "Phase Missile Launcher"
 		"homing" 4
 		"radar tracking" .9
 		"shield damage" 100
-		"ion damage" 15
+		"ion damage" 8
 		"hull damage" 70
 		"hit force" 25
-		"missile strength" 0
+		"missile strength" 24
 		"piercing" 1
 	description "The Phase Missile is a terrifying weapon designed by the Kaltheim to warp in and out of this plane of existence as it flies, allowing it to dodge anti-missile systems entirely. However, this universe-swap technology severely limits the projectile's range."
 	

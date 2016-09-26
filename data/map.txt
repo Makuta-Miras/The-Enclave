@@ -705,6 +705,8 @@ system Banq'rujol'ifus
 	trade Medical 680
 	trade Metal 390
 	trade Plastic 390
+	fleet "Kaltheim Small" 700
+	fleet "Kaltheim Large" 1100
 	object
 		sprite star/g0
 		distance 31.9963
@@ -1117,6 +1119,8 @@ system Crul'im'heim
 	trade Medical 680
 	trade Metal 390
 	trade Plastic 390
+	fleet "Kaltheim Small" 700
+	fleet "Kaltheim Large" 1100
 	object
 		sprite star/g5
 		period 10
@@ -1793,6 +1797,8 @@ system Fo'gar'helien
 	trade Medical 680
 	trade Metal 390
 	trade Plastic 390
+	fleet "Kaltheim Small" 700
+	fleet "Kaltheim Large" 1100
 	object
 		sprite star/m4
 		period 10
@@ -2191,6 +2197,8 @@ system Grundel'froae
 	trade Medical 680
 	trade Metal 390
 	trade Plastic 390
+	fleet "Kaltheim Small" 700
+	fleet "Kaltheim Large" 1100
 	object
 		sprite star/k0
 		period 10
@@ -2333,6 +2341,8 @@ system Ik'ari'aka
 	trade Medical 680
 	trade Metal 390
 	trade Plastic 390
+	fleet "Kaltheim Small" 700
+	fleet "Kaltheim Large" 1100
 	object
 		sprite star/k0
 		period 10
@@ -2636,6 +2646,8 @@ system Jaaaar'aaaaa'l'u
 	trade Medical 680
 	trade Metal 390
 	trade Plastic 390
+	fleet "Kaltheim Small" 700
+	fleet "Kaltheim Large" 1100
 	object
 		sprite star/g0
 		distance 19.7171
@@ -2776,6 +2788,8 @@ system Kama'la'ez
 	trade Medical 680
 	trade Metal 390
 	trade Plastic 390
+	fleet "Kaltheim Small" 700
+	fleet "Kaltheim Large" 1100
 	object
 		sprite star/g5
 		distance 25.8209
@@ -2870,6 +2884,8 @@ system Lo'or'awaen
 	asteroids "small metal" 40 3.6156
 	asteroids "medium metal" 17 3.3672
 	asteroids "large metal" 70 4.0848
+	fleet "Kaltheim Small" 700
+	fleet "Kaltheim Large" 1100
 	object
 		sprite star/m8
 		period 10
@@ -4173,6 +4189,8 @@ system Syj'ngf'bnk
 	asteroids "small metal" 15 5.3244
 	asteroids "medium metal" 28 4.1412
 	asteroids "large metal" 5 4.93
+	fleet "Kaltheim Small" 700
+	fleet "Kaltheim Large" 1100
 	object
 		sprite star/f0
 		distance 25.2272
@@ -4532,6 +4550,8 @@ system Umba'draeuin
 	asteroids "small metal" 2 3.36
 	asteroids "medium metal" 6 6.144
 	asteroids "large metal" 5 2.496
+	fleet "Kaltheim Small" 700
+	fleet "Kaltheim Large" 1100
 	trade Clothing 290
 	trade Electronics 740
 	trade Equipment 530
@@ -4684,6 +4704,8 @@ system Vo'jaerun
 	trade Medical 680
 	trade Metal 390
 	trade Plastic 390
+	fleet "Kaltheim Small" 700
+	fleet "Kaltheim Large" 1100
 	object
 		sprite star/a5
 		period 10
@@ -4814,6 +4836,8 @@ system Ytgfrv'hjusd'ikmuivra
 	asteroids "small metal" 12 4.1808
 	asteroids "medium metal" 19 2.1216
 	asteroids "large metal" 31 2.5584
+	fleet "Kaltheim Small" 700
+	fleet "Kaltheim Large" 1100
 	object
 		sprite star/m4
 		period 10

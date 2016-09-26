@@ -2,9 +2,13 @@
 26/09/16
 
 -Finished off the hails needed for now (Friendly Enclave, Friendly XSZ, Hostile XSZ).
--Added fleets to the invasion
--Added a quick mission to provide backwards compatibility between invasion events for people who played v0.0.8x.
+-Added fleets to the invasion.
+-Added a quick mission to provide backwards compatibility between invasion events for people who played v0.0.8 and v0.0.8a.
 -Added the new invasion event to Enclave Middle.
+-Added names for Kaltheim ships.
+-Rebalanced the Phase Missile since it's so incredibly overpowered. (Made it possible to be hit by AMs and decreased amount of ion damage taken)
+-Changed the Heat Redistribution Ray to only have piercing of 0.7.
+-Added Kaltheim fleets to Kaltheim systems.
 
 
 25/09/16
@@ -33,7 +37,7 @@
 
 -Removed the Repulsor sound effect since it wasn't working and I can't be bothered to fix it.
 -Added the Kru'urlin 89-B.
--Added the Heavy Electron Beam (Finally!)
+-Added the Heavy Electron Beam. (Finally!)
 -Added the Kelvin Beam and Kelvin Turret for the Kaltheim.
 
 
