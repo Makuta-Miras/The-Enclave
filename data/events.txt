@@ -192,6 +192,8 @@ event "attack on carmine"
 		fleet "XSZ Small" 500
 		fleet "XSZ Large" 1000
 		fleet "XSZ Nuclear" 1500
+	system Smoline
+		government "XSZ Corporation"
 	planet Carmine
 		description `Many of Carmine's largest cities have been nuked to oblivion by XSZ's forces. As a result, Carmine is now almost entirely uninhabited, thanks to the rising radiation levels in the atmosphere that will eventually destroy the ecosystems of the planet entirely.`
 		spaceport clear
