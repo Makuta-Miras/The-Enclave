@@ -1,4 +1,11 @@
 ------------------------------------------------------------------------  v0.0.9  ------------------------------------------------------------------------------- 
+17/10/16
+
+-Added the first two missions in Enclave Endgame.
+-Added some events.
+-Altered the Kaltheim Invasion event to change the planet description for New Scotland.
+
+
 06/10/16
 
 -Fixed a government in the series of XSZ nuking events.

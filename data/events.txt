@@ -305,3 +305,35 @@ event "kaltheim invasion"
 		fleet "Enclave Capital" 3500
 		fleet "Kaltheim Small" 600
 		fleet "Kaltheim Large" 800
+	planet "New Scotland"
+		description `New Scotland is a world consisting of scrubland and low mountain ranges, for the most part; it is an old world, where tectonic activity is beginning to die down. As a result of the decrease in tectonic activity, the planet's magnetoshpere is also slowly weakening. This in turn increases the amount of radiation falling on the surface, making the inhabitants much more likely to develop cancerous growths as they age.`
+		description `	Although this world is currently being occupied by the Kaltheim, you cannot actually see any signs of them in person; the only signs of their activities are the smoking remains of ships crashed into the deserts, and the frequent patrols that fly overhead.`
+		
+event "kaltheim take seminar"
+	system Thaen
+		government Kaltheim
+		fleet Trader 700
+		fleet Transporter 700
+		fleet "Enclave Patrol" 2000
+		fleet "Enclave Capital" 3500
+		fleet "Kaltheim Small" 600
+		fleet "Kaltheim Large" 800
+	planet Seminar
+		description `I think when they named this planet, the idea was to have it be home to some of the greatest educational and scientific institutes in the whole galaxy.`
+		description `	Yeah, that never happened. Instead, when some amazing narcotic plants were discovered here, the central galactic government didn't find out about them until it was social norm on Seminar to use substances derived from these plants every. Single. Day. As a result, this is one of the happiest planets in Enclave space.`
+		description `	There is no outfitter here, as it seems that everyone is too busy partying to help upgrade ships.`
+		description `It appears that the Kaltheim didn't really know what to do with this world when they captured it; they have left it entirely untouched, apart from the scars of some superficial orbital bombardment.`
+		
+event "seminar retaken"
+	system Thaen
+		government Enclave
+		fleet Trader 300
+		fleet Transporter 300
+		fleet "Enclave Patrol" 800
+		fleet "Enclave Capital" 1500
+		fleet "Kaltheim Small" 2500
+	planet Seminar
+		description `I think when they named this planet, the idea was to have it be home to some of the greatest educational and scientific institutes in the whole galaxy.`
+		description `	Yeah, that never happened. Instead, when some amazing narcotic plants were discovered here, the central galactic government didn't find out about them until it was social norm on Seminar to use substances derived from these plants every. Single. Day. As a result, this is one of the happiest planets in Enclave space.`
+		description `	There is no outfitter here, as it seems that everyone is too busy partying to help upgrade ships.`
+		description `It appears that the Kaltheim didn't really know what to do with this world when they captured it; the planet was left entirely untouched during their occupation, apart from the scars of some superficial orbital bombardment.`

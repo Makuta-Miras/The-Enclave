@@ -1,3 +1,5 @@
+# Chapter three...
+
 mission "Joining the Enclave"
 	invisible
 	landing

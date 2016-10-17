@@ -1,3 +1,5 @@
+# Chapter two...
+
 mission "Enclave Small Escort"
 	name "Escort to <planet>"
 	description "The captain of the <npc> will pay you <payment> to escort their ship safely to <destination> by <date>."

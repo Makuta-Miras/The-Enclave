@@ -1,0 +1,139 @@
+# Chapter four...
+
+mission "Enclave Endgame 1A"
+	name "Retreat to Jumblar"
+	description "Fall back to <destination>, where you will regroup with the bulk of Enclave forces."
+	landing
+	source Perihelion
+	destination Jumblar
+	to offer
+		has "Enclave Middle 3B: done"
+	on offer
+		event "kaltheim take seminar"
+	npc
+		personality heroic vindictive escort
+		system Antithesis
+		government Enclave
+		fleet
+			names "republic capital"
+			fighters "republic fighter"
+			variant
+				"Apollo" 2
+				"Dart" 4
+		fleet
+			names "republic small"
+			variant
+				"Penguin" 5
+				"Destroyer" 3
+				"Sea Drake" 2
+	npc kill
+		personality plunders vindictive entering staying
+		system Innenheim
+		government Kaltheim
+		fleet
+			names "kaltheim small"
+			variant
+				"Kru'urlin 89-B" 3
+		fleet
+			names "kaltheim large"
+			variant
+				"Lenmig'sraor 52-T" 2
+				"Tyar'linhalf 67-G"
+	on enter Innenheim
+		dialog
+			`As you enter the system, there are a number of Kaltheim ships firing at the planet below. When they spot you, they break off their orbital bombardment and head straight for your fleet. Prepare for a battle...`
+	on visit
+		conversation
+			`You land, but before you can get out of your ship, it is struck by a weapon discharge from one of the Kaltheim ships above. You die in the fire.`
+				die
+	on complete
+		dialog
+			`The ships you were accompanying land at the spaceport; you should probably go over and meet up with the pilots.`
+	
+	
+mission "Enclave Endgame 1B"
+	name "Retake Seminar"
+	description "Travel to <destination> in order to retake it from the Kaltheim."
+	source Jumblar
+	destination Seminar
+	clearance Seminar
+	to offer
+		has "Enclave Endgame 1A: done"
+	on offer
+		conversation
+			`You find a good few thousand soldiers, captains, officers and engineers gathered at the spaceport, looking industrious as they work on ships of all sizes, from Penguins, to Apollos, to Destroyer-sized warships that you haven't seen before.`
+			choice
+				`	Go and find someone for orders.`
+			`	After some searching, you discover Admiral Kuznetsov overseeing repairs to an extremely heavily modified Destroyer- presumably his flagship.`
+			`	"Go get your ship repaired," Kuznetsov snaps without looking at you. "We're off to retake Seminar in the morning, the aliens took it whilst we were in transit from Perihelion. You're in charge of four Destroyers." He waves over his shoulder to a group of bashed-up looking ships.`
+			choice
+				`	Go meet the crew of your squadron.`
+					goto 1
+				`	"What about XSZ? Shouldn't we be fighting them too?"`
+					goto 4
+				`	"Why not head for New Scotland instead?"`				
+			`	The Admiral turns to look at you. "Tell me, why should we head for New Scotland?"`
+			choice
+				`	"Its people deserve to be liberated!"`
+					goto 3
+				`	"It makes more sense; it gives us a clear path to Seminar."`
+					goto 2
+				`	"I want more fights."`
+			`	Kuznetsov spits on the ground. "Idiots like you are who'll lose us this war," he says angrily, glaring at you from under his 18th-century admiral's hat. "We need to pick our battles, minimise our losses. New Scotland isn't worth that much to us yet."`
+				goto 1
+			label 2
+			`	"Good point," Kuznetsov replies. "But it's immediately next to one of the alien systems, so as soon as we took it they'd launch an assault to retake it. But retaking Seminar puts them in a weaker position, and from there we can strike back at New Scotland with the rest of the southern arm behind us."`
+				goto 1
+			label 3
+			`	Kuznetsov looks at you with a dirty look in his eyes. "They're only farmers," he says disdainfully. "Not worth liberating them except if we wanted to make a political point. Which we don't."`
+				goto 1
+			label 1
+			`	You thank the Admiral and head over to your squadron to learn their names. It's going to be a tough battle...`
+				accept
+			label 4
+			`	"They aren't a priority now," Kuznetsov replies. "We can deal with them later."`
+				goto 1		
+	npc
+		personality heroic vindictive
+		system Innenheim
+		government Enclave
+		fleet
+			names "republic capital"
+			fighters "republic fighter"
+			variant
+				"Muesli Carrier" 6
+				"Apollo" 4
+				"Dart" 40
+				"Enclave Lance" 40
+		fleet
+			names "republic small"
+			variant
+				"Penguin" 12
+				"Destroyer" 3
+				"Sea Drake" 9
+	npc
+		personality heroic vindictive escort
+		system Innenheim
+		government Enclave
+		fleet names "republic small"
+		variant
+			"Destroyer" 4
+	npc kill
+		personality vindictive staying
+		system Thaen
+		government Kaltheim
+		fleet 
+			names "kaltheim small"
+			variant
+				"Kru'urlin 89-B" 6
+		fleet 
+			names "kaltheim large"
+			variant
+				"Lenmig'sraor 52-T" 3
+				"Tyar'linhalf 67-G" 2		
+	on visit
+		dialog
+			`The battle isn't over yet. It would be immoral to stay here whilst the rest of your forces are dying up in orbit...`
+				launch
+	on complete
+		event "seminar retaken"
