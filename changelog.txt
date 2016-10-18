@@ -1,4 +1,11 @@
 ------------------------------------------------------------------------  v0.0.9  ------------------------------------------------------------------------------- 
+18/10/16
+
+-Added the next mission in Enclave Endgame.
+-Added an extra event that triggers upon Enclave Endgame 1B being offered so that Memus and Cispia get captured by the Kaltheim.
+-Changed Carmine's landscape during the nuke attack.
+
+
 17/10/16
 
 -Added the first two missions in Enclave Endgame.

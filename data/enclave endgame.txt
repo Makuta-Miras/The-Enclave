@@ -60,6 +60,7 @@ mission "Enclave Endgame 1B"
 	to offer
 		has "Enclave Endgame 1A: done"
 	on offer
+		event "memus and cispia captured"
 		conversation
 			`You find a good few thousand soldiers, captains, officers and engineers gathered at the spaceport, looking industrious as they work on ships of all sizes, from Penguins, to Apollos, to Destroyer-sized warships that you haven't seen before.`
 			choice
@@ -67,7 +68,7 @@ mission "Enclave Endgame 1B"
 			`	After some searching, you discover Admiral Kuznetsov overseeing repairs to an extremely heavily modified Destroyer- presumably his flagship.`
 			`	"Go get your ship repaired," Kuznetsov snaps without looking at you. "We're off to retake Seminar in the morning, the aliens took it whilst we were in transit from Perihelion. You're in charge of four Destroyers." He waves over his shoulder to a group of bashed-up looking ships.`
 			choice
-				`	Go meet the crew of your squadron.`
+				`	(Go meet the crew of your squadron.)`
 					goto 1
 				`	"What about XSZ? Shouldn't we be fighting them too?"`
 					goto 4
@@ -86,7 +87,6 @@ mission "Enclave Endgame 1B"
 				goto 1
 			label 3
 			`	Kuznetsov looks at you with a dirty look in his eyes. "They're only farmers," he says disdainfully. "Not worth liberating them except if we wanted to make a political point. Which we don't."`
-				goto 1
 			label 1
 			`	You thank the Admiral and head over to your squadron to learn their names. It's going to be a tough battle...`
 				accept
@@ -137,3 +137,66 @@ mission "Enclave Endgame 1B"
 				launch
 	on complete
 		event "seminar retaken"
+		
+		
+mission "Enclave Endgame 1C"
+	name "Reinforcements to Seminar"
+	description "Pick up reinforcements from <destination>, then return with them to <origin>."
+	landing
+	autosave
+	source Seminar
+	destination Jumblar
+		conversation
+			`When your ship touches down, it is almost immediately swarmed by a large number of what appear to be cadets in the Enclave's Navy, gasping and gawking at your ship, which, you think, must look incredibly alien to them in comparison to those built my Storm Crow Shipyards. Steeling yourself for the ordeal, you head to step off your ship.`
+			choice
+				`	(Shoot them all.)`
+				`	(Wave.)`
+					goto 1
+			`	You pull out your gun and murder as many of the cadets as you can. Unfortunately, one of them also has a gun and a very steady hand. They shoot you in between the eyes.`
+				die
+			label 1
+			`	You step off the gangplank and onto the landing pad, smiling and waving as if you were a rock star from the Paradise Worlds, like the members of There Might Be Riots. As you try to move through the crowd, attempting to not knock anyone over, a kid shoves past the others and tugs on your sleeve. "Hey, Commander <first>," he says excitedly. "Are we allowed to go on your ship whilst you're away?"`
+			choice
+				`	"Sure!"`
+					goto 2
+				`	"Don't break anything."`
+					goto 2
+				`	"Absolutely not."`
+					goto 3
+				`	(Smash him in the face with your elbow.)`
+			`	Without thinking, you strike him, hard, in the face, and he collapses, nose bleeding. "B-but all I wanted to do was go on your ship!" he shouts after you, tears streaming down from his eyes as you walk off.`
+				goto 4
+			label 2
+			`	"Yay!" he shouts, having almost immediately forgotten you in his excitement. Gesturing to what you assume must be some of his friends, he dashes off, heading up the gangway into the bowels of your ship.`
+				goto 4
+			label 3
+			`	Face suddenly going stony, the cadet stalks off, clearly angry with you.`
+			label 4
+			`	A few minutes later, you arrive in the main area of the planet's garrison, the only area on Seminar where narcotics are actually banned. The planetary commander's office- which Admiral Kuznetsov has clearly requisitioned- is a large, airy room, with windows opening onto a small garden behind the garrison. You suspect that some or all of the flowers growing there are used in some way or another for recreational substances.`
+			`	As you enter, the Admiral looks up from what he appears to be doing on the holoscreen. "Hello, Commander," he says, with an uncharacteristic tone of excitement in his voice. "Good job on the battle."`
+			choice
+				`	"Thank you, sir."`
+				`	"It wasn't, I lost all of the Destroyers you assigned to me."`
+					goto 5
+				`	"Where do we go from here?"`
+					goto 6
+			label jugjug
+			`	"I've actually got a new prototype warship here that the shipyards on Alleshafen sent us a few days ago," Kuznetsov says, swinging the holoscreen around so you can see it.`
+			scene "scene/juggernaut"
+			`	"They sent the plans during those massive nuclear strikes a few weeks ago, presumably as a last resort- it's got all of the data we need to start producing them on Jumblar," the Admiral continues, clearly excited about adding what appears to be such a tank-like ship to his forces.`
+			choice
+				`	"Looks like an impressive ship."`
+					goto impressive
+				`	"How are we going to get our hands on enough resources to build these, what with how we're kind of currently at war with XSZ?"`
+			`	Kuznetsov sighs. "No idea," he says halfheartedly. "There were some plans to start a mining operation on Mein though since there were some very promising signs coming from some prospecting a pair of entrepreneurs were doing before the war began." He shakes his head, clearly bringing himself back into the moment. "Anyway, once the fleet's repaired and and you've brought some reinforcements here from Jumblar, we're going to aim to retake the Memus and Cispia systems; they were taken whilst we were flying here. Understood?"`
+			choice
+				`	"Understood."`
+					accept
+			label 5
+			`	Kuznetsov dismisses it with a slight snort. "Just some Destroyers." Returning to his holoscreen, he continues talking to you;`
+				goto jugjug
+			label 6
+			`	"Once the fleet's repaired and you've brought some reinforcements here from Jumblar, we're going to aim to retake the Memus and Cispia systems; they were taken whilst we were flying here. Understood?"`
+			choice
+				`	"Understood."`
+					accept

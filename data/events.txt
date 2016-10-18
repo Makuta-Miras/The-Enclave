@@ -195,6 +195,7 @@ event "attack on carmine"
 	system Smoline
 		government "XSZ Corporation"
 	planet Carmine
+		landscape land/water4
 		description `Many of Carmine's largest cities have been nuked to oblivion by XSZ's forces. As a result, Carmine is now almost entirely uninhabited, thanks to the rising radiation levels in the atmosphere that will eventually destroy the ecosystems of the planet entirely.`
 		spaceport clear
 		outfitter clear
@@ -323,6 +324,46 @@ event "kaltheim take seminar"
 		description `	Yeah, that never happened. Instead, when some amazing narcotic plants were discovered here, the central galactic government didn't find out about them until it was social norm on Seminar to use substances derived from these plants every. Single. Day. As a result, this is one of the happiest planets in Enclave space.`
 		description `	There is no outfitter here, as it seems that everyone is too busy partying to help upgrade ships.`
 		description `It appears that the Kaltheim didn't really know what to do with this world when they captured it; they have left it entirely untouched, apart from the scars of some superficial orbital bombardment.`
+
+event "memus and cispia captured"
+	system Memus
+		government Kaltheim
+		fleet Trader 600
+		fleet Transporter 600
+		fleet "Enclave Patrol" 6000
+		fleet "Kaltheim Small" 600
+		fleet "Kaltheim Large" 800
+	system Cispia
+		government Kaltheim
+		fleet Trader 700
+		fleet "Enclave Patrol" 2400
+		fleet "Enclave Capital" 6000
+		fleet "Kaltheim Small" 600
+		fleet "Kaltheim Large" 800
+	system Daia
+		government Kaltheim
+		fleet Trader 700
+		fleet Transporter 700
+		fleet "Enclave Patrol" 1500
+		fleet "Enclave Capital" 3000
+		fleet "Kaltheim Small" 800
+		fleet "Kaltheim Large" 1200
+	system "Deg Deg"
+		government Kaltheim
+		fleet Trader 700
+		fleet Transporter 700
+		fleet "Enclave Patrol" 1500
+		fleet "Enclave Capital" 3000
+		fleet "Kaltheim Small" 800
+		fleet "Kaltheim Large" 1200
+	planet "Frodo"
+		landscape land/bwerner3
+		description `When the first settlers landed on Frodo, they found the habitable zones of the planet to be remarkably similar to the "Shire" from 'The Lord of the Rings', an infamous book from the 20th century. As a result, they decided to name the planet Frodo, after the book's main character.`
+		description `	However, since the Kaltheim attack, much of this planet's previously beautiful landscape has been turned to ash. Fields lie fallow and strewn with dead bodies, while enormous scars mar the hills.`
+		spaceport `The spaceport lies in ruins, although you were able to find some intact fuel tanks from which to refuel your ships.`
+	planet "Bilbo"
+		description `As with the planet below, Bilbo was named after a character from 'The Lord of the Rings'. This time, however, this moon was named "Bilbo" due to its odd similarity to the far eastern areas of Middle-Earth, to which the moon's namesake travelled during The Lord of the Rings' prequel. As a result, much of the terrain is tough and mountainous- perfectly suited to the dwarves of fantasy legend.`
+		description `	While Bilbo was not hit as hard as its mother planet by the Kaltheim attack, it will still take a long while for the ecosystems to recover.`
 		
 event "seminar retaken"
 	system Thaen
@@ -336,4 +377,4 @@ event "seminar retaken"
 		description `I think when they named this planet, the idea was to have it be home to some of the greatest educational and scientific institutes in the whole galaxy.`
 		description `	Yeah, that never happened. Instead, when some amazing narcotic plants were discovered here, the central galactic government didn't find out about them until it was social norm on Seminar to use substances derived from these plants every. Single. Day. As a result, this is one of the happiest planets in Enclave space.`
 		description `	There is no outfitter here, as it seems that everyone is too busy partying to help upgrade ships.`
-		description `It appears that the Kaltheim didn't really know what to do with this world when they captured it; the planet was left entirely untouched during their occupation, apart from the scars of some superficial orbital bombardment.`
+		description `	It appears that the Kaltheim didn't really know what to do with this world when they captured it; the planet was left entirely untouched during their occupation, apart from the scars of some superficial orbital bombardment.`
