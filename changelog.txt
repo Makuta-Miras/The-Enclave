@@ -1,4 +1,10 @@
 ------------------------------------------------------------------------  v0.0.9  ------------------------------------------------------------------------------- 
+20/09/16
+
+-Added Enclave Endgame 1D.
+-Put some "to offer" lines in on some of the Endgame missions which I'd forgotten.
+
+
 18/10/16
 
 -Added the next mission in Enclave Endgame.

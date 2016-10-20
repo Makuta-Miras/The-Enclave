@@ -146,6 +146,9 @@ mission "Enclave Endgame 1C"
 	autosave
 	source Seminar
 	destination Jumblar
+	to offer
+		has "Enclave Endgame 1B: done"
+	on offer
 		conversation
 			`When your ship touches down, it is almost immediately swarmed by a large number of what appear to be cadets in the Enclave's Navy, gasping and gawking at your ship, which, you think, must look incredibly alien to them in comparison to those built my Storm Crow Shipyards. Steeling yourself for the ordeal, you head to step off your ship.`
 			choice
@@ -182,7 +185,7 @@ mission "Enclave Endgame 1C"
 					goto 6
 			label jugjug
 			`	"I've actually got a new prototype warship here that the shipyards on Alleshafen sent us a few days ago," Kuznetsov says, swinging the holoscreen around so you can see it.`
-			scene "scene/juggernaut"
+			scene "scene/juno"
 			`	"They sent the plans during those massive nuclear strikes a few weeks ago, presumably as a last resort- it's got all of the data we need to start producing them on Jumblar," the Admiral continues, clearly excited about adding what appears to be such a tank-like ship to his forces.`
 			choice
 				`	"Looks like an impressive ship."`
@@ -200,3 +203,36 @@ mission "Enclave Endgame 1C"
 			choice
 				`	"Understood."`
 					accept
+	
+	
+mission	"Enclave Endgame 1D"
+	name "Reinforcements to Seminar"
+	description "Return with your reinforcements to <destination>."
+	landing
+	autosave
+	source Jumblar
+	destination Seminar
+	to offer
+		has "Enclave Endgame 1C: done"
+	on offer
+		conversation
+			`When you touch down on Jumblar, you find that whilst you were travelling here, the Kaltheim took Emeria, in the Whuroxla system, and Ortite, in the Ortus system. You collect your reinforcements- noticing the first skeletons of the new ships that Kuznetsov showed you back on Seminar taking form- and launch straight away. After all, there is no time to waste.`
+				launch
+	npc accompany
+		personality frugal timid
+		system Innenheim
+		government Enclave
+		fleet
+			names "republic capital"
+			fighters "republic fighter"
+			variant
+				"Apollo" 3
+				"Muesli Carrier" 5
+				"Dart" 66
+	on fail
+		dialog `One of the ships you are meant to be accompanying has been destroyed. Might be an idea to reload your save so you can complete this mission.`
+	on visit
+		dialog `You have left the <npc> behind. Better take off and wait for them to arrive in the system.`
+	on complete
+		dialog `You drop the ships you were escorting off at one of the various staging points across the planet. Better head to the spaceport now to get ready for the upcoming series of battles.`
+					
