@@ -236,3 +236,55 @@ mission	"Enclave Endgame 1D"
 	on complete
 		dialog `You drop the ships you were escorting off at one of the various staging points across the planet. Better head to the spaceport now to get ready for the upcoming series of battles.`
 					
+
+mission "Enclave Endgame 1E"
+	name "Defend Seminar"
+	description "Fight off the Kaltheim ships attacking the Thaen system."
+	autosave
+	source Seminar
+	destination Seminar
+	to offer
+		has "Enclave Endgame 1D: done"
+	on offer
+		conversation
+			`You arrive at the spaceport to see an enormous fleet of Enclave ships flying in a stack formation a few miles into the sky; as more and more of the few ships left on the planet take off, you receive a message on your communicator;`
+			`"Commander <last>,`
+			`	We're getting reports of a large alien force heading for this system. Take off with the rest of the fleet immediately.`
+			`	-Admiral J. Kuznetsov"`
+			`	You shrug at the abruptness of the message, but you make your way back to your ship and take off immediately, as ordered.`
+				launch
+	npc
+		personality heroic vindictive
+		system Thaen
+		government Enclave
+		fleet
+			names "republic capital"
+			fighters "republic fighter"
+			variant
+				"Muesli Carrier" 11
+				"Apollo" 7
+				"Dart" 73
+				"Enclave Lance" 73
+		fleet
+			names "republic small"
+			variant
+				"Penguin" 12
+				"Destroyer" 7
+				"Sea Drake" 10
+	npc kill
+		personality vindictive entering
+		system Thaen
+		government Kaltheim
+		fleet 
+			names "kaltheim small"
+			variant
+				"Kru'urlin 89-B" 10
+		fleet 
+			names "kaltheim large"
+			variant
+				"Lenmig'sraor 52-T" 8
+				"Tyar'linhalf 67-G" 6
+	on visit
+		dialog
+			`The battle isn't over yet. It would be immoral to stay here whilst the rest of your forces are dying up in orbit...`
+				launch

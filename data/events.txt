@@ -364,6 +364,9 @@ event "memus and cispia captured"
 	planet "Bilbo"
 		description `As with the planet below, Bilbo was named after a character from 'The Lord of the Rings'. This time, however, this moon was named "Bilbo" due to its odd similarity to the far eastern areas of Middle-Earth, to which the moon's namesake travelled during The Lord of the Rings' prequel. As a result, much of the terrain is tough and mountainous- perfectly suited to the dwarves of fantasy legend.`
 		description `	While Bilbo was not hit as hard as its mother planet by the Kaltheim attack, it will still take a long while for the ecosystems to recover.`
+	planet "Memorandum"
+		description `Memorandum is a very "normal" world. The climate is stable and fairly warm, and days are similar to those on Earth. During the recent alien invasion, most of the population were rounded up and placed in pop-up factories built by the Kaltheim, manufacturing unknown alien components and ships.`
+		
 		
 event "seminar retaken"
 	system Thaen

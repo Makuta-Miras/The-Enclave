@@ -1,5 +1,15 @@
 ------------------------------------------------------------------------  v0.0.9  ------------------------------------------------------------------------------- 
-20/09/16
+22/10/16
+
+-Fixed some dodgy XSZ hails.
+
+21/10/16
+
+-Added Enclave Endgame 1E.
+-Added a few lines to an event in Endgame.
+
+
+20/10/16
 
 -Added Enclave Endgame 1D.
 -Put some "to offer" lines in on some of the Endgame missions which I'd forgotten.
