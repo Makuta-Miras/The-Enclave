@@ -458,6 +458,6 @@ mission "Part 3-2"
 			variant
 				"Sea Drake" 15
 				"Penguin" 20
-				"Destroyer" 10
+				"Enclave Destroyer" 10
 	on complete
 		payment 500000

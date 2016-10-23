@@ -233,8 +233,8 @@ ship "Dart"
 	description "	The Dart was designed in tandem with the Apollo- this is where the resemblance between the two comes from."	
 
 	
-ship "Destroyer"
-	sprite "ship/Destroyer"
+ship "Enclave Destroyer"
+	sprite "ship/EnclaveDestroyer"
 	attributes
 		category "Medium Warship"
 		"cost" 4500000
@@ -278,8 +278,8 @@ ship "Destroyer"
 	explode "medium explosion" 24
 	explode "big explosion" 8
 	"final explode" "final explosion medium"
-	description "The Destroyer is a medium-sized warship produced by the Enclave's government shipyards as a fast-moving supplement for their capital ships."
-	description "	While somewhat less comprehensively equipped than the Republic's Frigate, the Destroyer makes up for this with larger capacity for engines, allowing it to attain a level of speed usually unseen in craft this size."
+	description "The Enclave Destroyer is a medium-sized warship produced by the Enclave's government shipyards as a fast-moving supplement for their capital ships."
+	description "	While somewhat less comprehensively equipped than the Republic's Frigate, the Enclave Destroyer makes up for this with larger capacity for engines, allowing it to attain a level of speed usually unseen in craft this size."
 	
 	
 ship "Flurry"

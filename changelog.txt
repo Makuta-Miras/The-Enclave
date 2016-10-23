@@ -3,6 +3,7 @@
 
 -Fixed a problem with Endgame 1B whereby the player couldn't land on Seminar after the battle.
 -Made Endgame 1B somewhat easier.
+-Started fixing compatibility issues with Phil's Flavours.
 
 
 22/10/16

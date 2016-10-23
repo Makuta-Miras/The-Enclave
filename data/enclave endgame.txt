@@ -24,7 +24,7 @@ mission "Enclave Endgame 1A"
 			names "republic small"
 			variant
 				"Penguin" 5
-				"Destroyer" 3
+				"Enclave Destroyer" 3
 				"Sea Drake" 2
 	npc kill
 		personality plunders vindictive entering staying
@@ -109,7 +109,7 @@ mission "Enclave Endgame 1B"
 			names "republic small"
 			variant
 				"Penguin" 12
-				"Destroyer" 3
+				"Enclave Destroyer" 3
 				"Sea Drake" 9
 	npc
 		personality heroic vindictive escort
@@ -117,7 +117,7 @@ mission "Enclave Endgame 1B"
 		government Enclave
 		fleet names "republic small"
 		variant
-			"Destroyer" 4
+			"Enclave Destroyer" 4
 	npc kill
 		personality vindictive staying
 		system Thaen
@@ -269,7 +269,7 @@ mission "Enclave Endgame 1E"
 			names "republic small"
 			variant
 				"Penguin" 12
-				"Destroyer" 7
+				"Enclave Destroyer" 7
 				"Sea Drake" 10
 	npc kill
 		personality vindictive entering

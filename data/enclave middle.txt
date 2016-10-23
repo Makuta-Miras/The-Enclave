@@ -122,12 +122,12 @@ mission "Enclave Middle 1A"
 			names "republic small"
 			variant
 				"Penguin" 10
-				"Destroyer" 4
+				"Enclave Destroyer" 4
 	npc
 		personality heroic vindictive escort
 		system Innenheim
 		government "Enclave"
-		ship "Destroyer" "R.N.S. Severn"
+		ship "Enclave Destroyer" "R.N.S. Severn"
 	
 	on enter Svind
 		dialog
@@ -285,7 +285,7 @@ mission "Enclave Middle 2A"
 		personality heroic vindictive escort
 		system Svind
 		government "Enclave"
-		ship "Destroyer" "R.N.S. Severn"
+		ship "Enclave Destroyer" "R.N.S. Severn"
 	
 	on visit
 		dialog
@@ -320,7 +320,7 @@ mission "Enclave Middle 2B"
 		personality heroic vindictive escort
 		system Cispia
 		government "Enclave"
-		ship "Destroyer" "R.N.S. Severn"
+		ship "Enclave Destroyer" "R.N.S. Severn"
 		
 	on visit
 		dialog
@@ -412,7 +412,7 @@ mission "Enclave Middle 2C-A"
 		personality heroic vindictive escort
 		system Maduras
 		government "Enclave"
-		ship "Destroyer" "R.N.S. Severn"
+		ship "Enclave Destroyer" "R.N.S. Severn"
 			
 	on visit
 		dialog
@@ -489,7 +489,7 @@ mission "Enclave Middle 2E-A"
 		personality heroic vindictive escort
 		system Maduras
 		government "Enclave"
-		ship "Destroyer" "R.N.S. Severn"
+		ship "Enclave Destroyer" "R.N.S. Severn"
 			
 	on visit
 		dialog
@@ -603,7 +603,7 @@ mission "Enclave Middle 3A"
 		fleet
 			names "republic small"
 			variant
-				"Destroyer" 2
+				"Enclave Destroyer" 2
 				"Sea Drake" 4
 				
 	
@@ -667,13 +667,13 @@ mission "Enclave Middle 3B"
 			names "republic small"
 			variant
 				"Penguin" 10
-				"Destroyer" 4
+				"Enclave Destroyer" 4
 				"Sea Drake" 7
 	npc
 		personality heroic vindictive escort
 		system Innenheim
 		government "Enclave"
-		ship "Destroyer" "R.N.S. Severn"
+		ship "Enclave Destroyer" "R.N.S. Severn"
 	npc kill
 		personality staying vindictive
 		government "XSZ Corporation"
