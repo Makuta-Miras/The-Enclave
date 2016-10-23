@@ -150,7 +150,7 @@ mission "Enclave Endgame 1C"
 		has "Enclave Endgame 1B: done"
 	on offer
 		conversation
-			`When your ship touches down, it is almost immediately swarmed by a large number of what appear to be cadets in the Enclave's Navy, gasping and gawking at your ship, which, you think, must look incredibly alien to them in comparison to those built my Storm Crow Shipyards. Steeling yourself for the ordeal, you head to step off your ship.`
+			`When your ship touches down, it is almost immediately swarmed by a large number of what appear to be cadets in the Enclave's Navy, gasping and gawking at your ship, which, you think, must look incredibly alien to them in comparison to those built by the shipyards here in Enclave space. Steeling yourself for the ordeal, you head to step off your ship.`
 			choice
 				`	(Shoot them all.)`
 				`	(Wave.)`
