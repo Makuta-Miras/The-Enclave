@@ -1,7 +1,14 @@
 ------------------------------------------------------------------------  v0.0.9  ------------------------------------------------------------------------------- 
+23/10/16
+
+-Fixed a problem with Endgame 1B whereby the player couldn't land on Seminar after the battle.
+-Made Endgame 1B somewhat easier.
+
+
 22/10/16
 
 -Fixed some dodgy XSZ hails.
+
 
 21/10/16
 

@@ -56,7 +56,7 @@ mission "Enclave Endgame 1B"
 	description "Travel to <destination> in order to retake it from the Kaltheim."
 	source Jumblar
 	destination Seminar
-	clearance Seminar
+	clearance
 	to offer
 		has "Enclave Endgame 1A: done"
 	on offer

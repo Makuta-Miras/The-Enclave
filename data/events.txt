@@ -321,8 +321,7 @@ event "kaltheim take seminar"
 		fleet "Kaltheim Large" 800
 	planet Seminar
 		description `I think when they named this planet, the idea was to have it be home to some of the greatest educational and scientific institutes in the whole galaxy.`
-		description `	Yeah, that never happened. Instead, when some amazing narcotic plants were discovered here, the central galactic government didn't find out about them until it was social norm on Seminar to use substances derived from these plants every. Single. Day. As a result, this is one of the happiest planets in Enclave space.`
-		description `	There is no outfitter here, as it seems that everyone is too busy partying to help upgrade ships.`
+		description `	Yeah, that never happened. Instead, when some amazing narcotic plants were discovered here, the central galactic government didn't find out about them until it was social norm on Seminar to use substances derived from these plants every. Single. Day.`
 		description `It appears that the Kaltheim didn't really know what to do with this world when they captured it; they have left it entirely untouched, apart from the scars of some superficial orbital bombardment.`
 
 event "memus and cispia captured"
@@ -356,6 +355,13 @@ event "memus and cispia captured"
 		fleet "Enclave Capital" 3000
 		fleet "Kaltheim Small" 800
 		fleet "Kaltheim Large" 1200
+	system Thaen
+		fleet Trader 700
+		fleet Transporter 700
+		fleet "Enclave Patrol" 2000
+		fleet "Enclave Capital" 3500
+		fleet "Kaltheim Small" 2600
+		fleet "Kaltheim Large" 2800
 	planet "Frodo"
 		landscape land/bwerner3
 		description `When the first settlers landed on Frodo, they found the habitable zones of the planet to be remarkably similar to the "Shire" from 'The Lord of the Rings', an infamous book from the 20th century. As a result, they decided to name the planet Frodo, after the book's main character.`
@@ -378,6 +384,5 @@ event "seminar retaken"
 		fleet "Kaltheim Small" 2500
 	planet Seminar
 		description `I think when they named this planet, the idea was to have it be home to some of the greatest educational and scientific institutes in the whole galaxy.`
-		description `	Yeah, that never happened. Instead, when some amazing narcotic plants were discovered here, the central galactic government didn't find out about them until it was social norm on Seminar to use substances derived from these plants every. Single. Day. As a result, this is one of the happiest planets in Enclave space.`
-		description `	There is no outfitter here, as it seems that everyone is too busy partying to help upgrade ships.`
+		description `	Yeah, that never happened. Instead, when some amazing narcotic plants were discovered here, the central galactic government didn't find out about them until it was social norm on Seminar to use substances derived from these plants every. Single. Day.`
 		description `	It appears that the Kaltheim didn't really know what to do with this world when they captured it; the planet was left entirely untouched during their occupation, apart from the scars of some superficial orbital bombardment.`
