@@ -1,0 +1,68 @@
+# Chapter five, Rec style...
+
+mission "Enclave Blue 1A"
+	name "Visit the Kaltheim"
+	description "Visit the Kaltheim capital to convince them that the Enclave are willing to work with them."
+	autosave
+	source Seminar
+	destination "Era'lgin'bl"
+	clearance
+	passengers 1
+	blocked "You do not have room for Lron'iirnak on your ship. Abort another mission or fire some non-essential crew members to make room for it."
+	to offer
+		has "Enclave Endgame 5: done"
+	on offer
+		conversation
+			`You arrive in the spaceport to find an aide waiting for you. "Commander <last>?" he says nervously. You nod. "Follow me."`
+			`	An hour or so of non-stop walking later, you arrive in a cavernous chamber dug deep into the bedrock below the spaceport- or at least, you assume it is below the spaceport; you could have easily lost your sense of direction in the labyrinthine sets of tunnels that took you here.`
+			`	"The admiral is over in there," the aide says, pointing to one of the tunnels leading off of the room.`
+			choice
+				`	(Head down the tunnel.)`
+			`	Stepping warily, you find Kuznetsov at the end of the tunnel, conversing rapidly with someone you cannot see, obscured by a corner in the rock.`
+			choice
+				`	(Move around Kuznetsov to see who he's talking to.)`
+					goto 1
+				`	"You asked for me, sir?"`
+			`	Breaking off his conversation, Kuznetsov looks at you. "Indeed I did. Come round here," he says, gesturing to the spot beside him.`
+			label 1
+			`	You move around him to find a short, grey-skinned humanoid standing in a prison cell, an odd clawlike appendage extruding from its back, a grey prison shift covering the rest of the alien's body. Yellow eyes blink in its head, the eyelids opening and closing from the sides of the eye.`
+			`	"This is Lron'iirnak," Kuznetsov says smugly. "A lieutenant for the Kaltheim that we captured during the battle." As Kuznetsov speaks, the Kaltheim in the cell nods its head, the third arm on its back swaying to and fro in the small space above it. "Tell Commander <last> what you told me, Lron'iirnak," the admiral says sternly.`
+			`	The alien gulps before opening its mouth and speaking in your native language, albeit in a somewhat archaic format and with the accent of someone from the Deep. "O good Commander," it begins. "My people want no more blood shed, like thee. However, verily do they plan a most heinous assault on thy stars of..." it pauses to think for a second. "Eenunhaem and Visnd."`
+			choice
+				`	"Innenheim and Svind?"`
+			`	Lron'iirnak nods. "They wish not to harm thy people- truly, are they fighting those terrible demons who ruined two worlds and are even now engineering the demise of freedom, the ones they call 'XSZ'. But if thou shalt fight them, what choice have they but to defend themselves?"`
+			choice
+				`	"So you're saying if we don't fight you, you'll leave us alone?"`
+					goto 2
+				`	"You're lying. Why would your forces have ever attacked any of our systems then, if all you wanted to do was fight XSZ?"`
+			`	The Kaltheim throws its odd, seven-fingered hands up in despair. "My liege, I am but a lowly Lieutenant; the plans and vision of the High Council are above me."`
+			choice
+				`	"Hmmm... I guess that does make sense."`
+					goto 2
+				`	"That's it, I have no doubt about it- you're lying."`
+			label 3
+			`	Lron'iirnak's face turns to stone. "Stupid humans," it says. "Always war, always a fight, alwys more death." When you try to get it to speak to you again, it refuses. "I see you came to the same conclusion as me," Kuznetsov says to you.`
+			choice
+				`	"It was the only logical option, sir."
+			`	The admiral nods. "Well, you know what happens now," he says. "Take a fleet to Innenheim. Turn back any Kaltheim forces that try and attack the system, and stay alive."`
+			`	You nod, a sense of dread filling you at the thought of another battle.`
+				decline
+			label 3
+			`	"So thou dost believe me?" Lron'iirnak says excitedly.`
+			choice
+				`	(Nod.)`
+				`	"No."`
+					goto 3
+			label 2
+			`	A broad grin spreads across the Kaltheim's face. "Contact my leaders, good sirs," it says. "And they will co-ordinate with you our first move agains the demons."`
+			`	As you and Kuznetsov are walking back to the surface, the Admiral says, "Well? What do you think?"`
+			choice
+				`	"I think this will let us defeat XSZ faster."`
+				`	"I'm suspicious of their intentions, but I think this'll work out in the end."`
+			`	Kuznetsov nods his head. "Well, since this was your decision, it's up to you to go and find the Kaltheim capital; I hear you have a cloaking device, so that should save you some trouble. Take Lron'iirnak with you as a peace offering."`
+			choice
+				`	"Yes, sir."`
+					accept
+				`	"How did you find out about my cloaking device?!"`
+			`	The admiral taps the side of his nose. "Magic. Now go, before I make you leave."`
+				accept

@@ -257,11 +257,7 @@ event "kaltheim invasion"
 	government "Kaltheim"
 		"attitude toward"
 			"Enclave" -500000
-			"XSZ Corporation" -500000
 	government "Enclave"
-		"attitude toward"
-			"Kaltheim" -500000
-	government "XSZ Corporation"
 		"attitude toward"
 			"Kaltheim" -500000
 	link Daia Vo'jaerun

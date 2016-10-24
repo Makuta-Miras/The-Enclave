@@ -1,4 +1,12 @@
 ------------------------------------------------------------------------  v0.0.9  ------------------------------------------------------------------------------- 
+24/10/16
+
+-Renamed the Endgame missions.
+-Updated an event that could make you friendly with XSZ by killing Kaltheim.
+-Finished Endgame.
+-Began the Rec-style branch.
+
+
 23/10/16
 
 -Fixed a problem with Endgame 1B whereby the player couldn't land on Seminar after the battle.

@@ -1,6 +1,6 @@
 # Chapter four...
 
-mission "Enclave Endgame 1A"
+mission "Enclave Endgame 1"
 	name "Retreat to Jumblar"
 	description "Fall back to <destination>, where you will regroup with the bulk of Enclave forces."
 	landing
@@ -51,14 +51,14 @@ mission "Enclave Endgame 1A"
 			`The ships you were accompanying land at the spaceport; you should probably go over and meet up with the pilots.`
 	
 	
-mission "Enclave Endgame 1B"
+mission "Enclave Endgame 2"
 	name "Retake Seminar"
 	description "Travel to <destination> in order to retake it from the Kaltheim."
 	source Jumblar
 	destination Seminar
 	clearance
 	to offer
-		has "Enclave Endgame 1A: done"
+		has "Enclave Endgame 1: done"
 	on offer
 		event "memus and cispia captured"
 		conversation
@@ -139,7 +139,7 @@ mission "Enclave Endgame 1B"
 		event "seminar retaken"
 		
 		
-mission "Enclave Endgame 1C"
+mission "Enclave Endgame 3"
 	name "Reinforcements to Seminar"
 	description "Pick up reinforcements from <destination>, then return with them to <origin>."
 	landing
@@ -147,7 +147,7 @@ mission "Enclave Endgame 1C"
 	source Seminar
 	destination Jumblar
 	to offer
-		has "Enclave Endgame 1B: done"
+		has "Enclave Endgame 2: done"
 	on offer
 		conversation
 			`When your ship touches down, it is almost immediately swarmed by a large number of what appear to be cadets in the Enclave's Navy, gasping and gawking at your ship, which, you think, must look incredibly alien to them in comparison to those built by the shipyards here in Enclave space. Steeling yourself for the ordeal, you head to step off your ship.`
@@ -205,7 +205,7 @@ mission "Enclave Endgame 1C"
 					accept
 	
 	
-mission	"Enclave Endgame 1D"
+mission	"Enclave Endgame 4"
 	name "Reinforcements to Seminar"
 	description "Return with your reinforcements to <destination>."
 	landing
@@ -213,7 +213,7 @@ mission	"Enclave Endgame 1D"
 	source Jumblar
 	destination Seminar
 	to offer
-		has "Enclave Endgame 1C: done"
+		has "Enclave Endgame 3: done"
 	on offer
 		conversation
 			`When you touch down on Jumblar, you find that whilst you were travelling here, the Kaltheim took Emeria, in the Whuroxla system, and Ortite, in the Ortus system. You collect your reinforcements- noticing the first skeletons of the new ships that Kuznetsov showed you back on Seminar taking form- and launch straight away. After all, there is no time to waste.`
@@ -237,14 +237,14 @@ mission	"Enclave Endgame 1D"
 		dialog `You drop the ships you were escorting off at one of the various staging points across the planet. Better head to the spaceport now to get ready for the upcoming series of battles.`
 					
 
-mission "Enclave Endgame 1E"
+mission "Enclave Endgame 5"
 	name "Defend Seminar"
 	description "Fight off the Kaltheim ships attacking the Thaen system."
 	autosave
 	source Seminar
 	destination Seminar
 	to offer
-		has "Enclave Endgame 1D: done"
+		has "Enclave Endgame 4: done"
 	on offer
 		conversation
 			`You arrive at the spaceport to see an enormous fleet of Enclave ships flying in a stack formation a few miles into the sky; as more and more of the few ships left on the planet take off, you receive a message on your communicator;`
@@ -288,3 +288,6 @@ mission "Enclave Endgame 1E"
 		dialog
 			`The battle isn't over yet. It would be immoral to stay here whilst the rest of your forces are dying up in orbit...`
 				launch
+	on complete
+		dialog
+			`You receive a message from the Admiral as you land: "Commander, get to the spaceport immediately- we have some new information on our hands."`
