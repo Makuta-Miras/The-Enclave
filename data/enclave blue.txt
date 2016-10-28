@@ -6,7 +6,7 @@ mission "Enclave Blue 1A"
 	autosave
 	source Seminar
 	destination "Era'lgin'bl"
-	clearance
+	clearance "Lron'iirnak talks quickly to the spaceport controller in the Kaltheim tongue, convincing them to allow you to land."
 	passengers 1
 	blocked "You do not have room for Lron'iirnak on your ship. Abort another mission or fire some non-essential crew members to make room for it."
 	to offer
@@ -33,21 +33,21 @@ mission "Enclave Blue 1A"
 			`	Lron'iirnak nods. "They wish not to harm thy people- truly, are they fighting those terrible demons who ruined two worlds and are even now engineering the demise of freedom, the ones they call 'XSZ'. But if thou shalt fight them, what choice have they but to defend themselves?"`
 			choice
 				`	"So you're saying if we don't fight you, you'll leave us alone?"`
-					goto 2
+					goto 4
 				`	"You're lying. Why would your forces have ever attacked any of our systems then, if all you wanted to do was fight XSZ?"`
 			`	The Kaltheim throws its odd, seven-fingered hands up in despair. "My liege, I am but a lowly Lieutenant; the plans and vision of the High Council are above me."`
 			choice
 				`	"Hmmm... I guess that does make sense."`
-					goto 2
+					goto 4
 				`	"That's it, I have no doubt about it- you're lying."`
 			label 3
-			`	Lron'iirnak's face turns to stone. "Stupid humans," it says. "Always war, always a fight, alwys more death." When you try to get it to speak to you again, it refuses. "I see you came to the same conclusion as me," Kuznetsov says to you.`
+			`	Lron'iirnak's face turns to stone. "Stupid humans," it says. "Always war, always a fight, always more death." When you try to get it to speak to you again, it refuses. "I see you came to the same conclusion as me," Kuznetsov says to you.`
 			choice
-				`	"It was the only logical option, sir."
+				`	"It was the only logical option, sir."`
 			`	The admiral nods. "Well, you know what happens now," he says. "Take a fleet to Innenheim. Turn back any Kaltheim forces that try and attack the system, and stay alive."`
 			`	You nod, a sense of dread filling you at the thought of another battle.`
 				decline
-			label 3
+			label 4
 			`	"So thou dost believe me?" Lron'iirnak says excitedly.`
 			choice
 				`	(Nod.)`
@@ -66,3 +66,106 @@ mission "Enclave Blue 1A"
 				`	"How did you find out about my cloaking device?!"`
 			`	The admiral taps the side of his nose. "Magic. Now go, before I make you leave."`
 				accept
+	on complete
+		"reputation: Kaltheim" = 10
+		event "kaltheim truce (blue)"
+		
+				
+mission "Enclave Blue 1B"
+	name "Report to Admiral Kuznetsov"
+	description "Report back to Admiral Kuznetsov on <destination>."
+	autosave
+	landing
+	source "Era'lgin'bl"
+	destination Seminar
+	to offer
+		has "Enclave Blue 1A: done"
+	on offer
+		conversation
+			`Upon landing, you find your ship beset by a large group of Kaltheim soldiers, clearly suspicious of your intentions; hoping to diffuse tensions, Lron'iirnak walks down the gangway first, followed by you. While most of the soldiers look at you, astonished, there are some who turn their backs on you, spitting on your feet as Lron'iirnak leads you through the crowd, escorted by a group of black-armoured soldiers.`
+			`	A few minutes and a short ride in what seems to be a vehicle powered by an oil-based fuel later, you arrive outside a tall, drab concrete building.`
+			`	"Our halls of power, are these!" whispers Lron'iirnak, in an almost reverent tone. The soldiers pile out of the vehicle, before marching you up to the buildings too-small steps, clearly not designed for human legs. You duck through the door, almost banging your head on the frame, and stand up in an enormous room, vaulted pillars of fire-shot marble leaping up to meet the ceiling. Before you can object, Lron'iirnak is herded off down a set of stairs to the side by a pair of the soldiers.`
+			`	"This way please," a small shining box on one of their chests says, the sound tinny and startling in this deserted hall- presumably, some special device designed to allow Kaltheim to speak human languages, although where they could have learned them, you have no idea. You follow the troop of fighters until you reach a pair of cast-iron doors, dark and cold, standing imposingly above you. The leader of your escorts presses a few buttons on a glowing, triskaidecagon-shaped keypad, and, with an ominous clanking and rumbling, the doors swing open, narrowly grazing your nose.`
+			`	A few hours later, you step out of the room, exhausted from too long of being pushed for questions by the Kaltheim high command. You are tired, but satisfied; you have managed to hash out a peace agreement with the Kaltheim, whereby they will fight side by side with the Enclave to vanquish XSZ. While you cannot help but wonder what their motives may be- all they asked for in return was to be allowed to mix and trade with humans- you do suspect that there may be some Pug influence involved, judging by the none-too hidden references to 'sky-elves' present in your conversations with Lron'iirnak on the way here. Apparently, a Kaltheim ship carrying some of their military commanders will be a day or so behind you.`
+			`	However, results are results, and you step out into the dim sunlight of Era'lgin'bl with a good future for this galaxy's people ahead.`
+				accept
+	on complete
+		dialog
+			`The Admiral is probably at the spaceport.`
+			
+			
+mission "Enclave Blue 1C"
+	name "Rescue the <npc>"
+	description "Travel to the <stopovers> system, where the <npc> has been disabled. Rescue it, then escort it back to <destination>."
+	autosave
+	source Seminar
+	destination Jumblar
+	waypoint Aetrus
+	to offer
+		has "Enclave Blue 1B: done"
+	on offer
+		conversation
+			`You find Admiral Kuznetsov in one of the various coffee shops in the spaceport.`
+			choice
+				`	"I'm back, sir."`
+				`	"We've got a truce."`
+					goto 1
+			`	"Did we get a truce?" Kuznetsov says without looking up.`
+			`	"Yup," you reply.`
+			label 1
+			`	"Excellent!" the Admiral says, looking up from his holoscreen. "Do we have a direct line of contact with the Kaltheim now, or do we still have a language barrier?"`
+			choice
+				`	"It looks like they've got translation devices they can use to let them speak human languages."`
+					goto 2
+				`	"No; they don't have hyperspace relays that are compatible with ours."`
+			`	"That's a damn shame," Kuznetsov replies, scratching his beard.`
+			`	"They do have translation devices though," you say in response.`
+			label 2
+			`	"Now that's what we need!" he says. "I don't suppose you brought any back?"`
+			`	You shake your head.`
+			choice
+				`	"They said they'd send a warship with some of their commanders on, though; I'd expect they've got a load on there."`
+					goto 3
+				`	"Nope."`
+			`	"Oh well," Kuznetsov says.`
+			label 3
+			`	Suddenly, your communicator starts buzzing and whirring ominously; when you check it, you see two new messages.`
+			`	The first is a text file, albeit in complete gibberish which somewhat resembles the Kaltheim tongue. The second is a multi-layered, apparently intelligent- according to the metadata- program with a very inviting- looking "Install" button- or at least, you assume it's the "Install" button since it's also written in the Kaltheim language.`
+			choice
+				`	(Install the new program.)`
+					goto 4
+				`	(Show Admiral Kuznetsov.)`
+			`	You show the Admiral the messages; he frowns, then says, "Install that program."`
+			label 4
+			`	After a few minutes of whirring away, the screen of your communicator lights up green and pops up a small message:`
+			`	NEW LANGUAGE FILE SUCCESSFULLY INSTALLED;`
+			`	NOW TRANSLATING MESSAGES...`
+			``
+			`	After another short wait, your communicator throws up the first message, the text file, now completely translated:`
+			`		Commander,`
+			`	Kaltheim High Command has received word that the <npc>, the warship envoy we sent to you, has been disabled in the <stopovers> system. Her last transmission said she was being attacked by the scum you are fighting against. However, we are in the middle of dealing with a minor uprising here, so we have no ships to spare- you will have to rescue the <npc>.`
+			choice
+				`	"What should we do?"`
+					goto 5
+				`	"Think they can deal with that uprising themselves?"`
+			`	"Probably," Kuznetsov replies. "Might be worth sending a small force to help them, though; I'll put Commander Bradford on it."`
+			choice
+				`	"What about me?"`
+			label 5
+			`	"You go get the <npc> and escort them to Jumblar," Kuznetsov says, packing up his stuff. "I'll meet you there."`
+				accept
+	on accept
+		set "language: Kaltheim"
+	npc accompany save
+		government Kaltheim
+		personality heroic vindictive derelict
+		system Aetrus
+		dialog
+			`As your crew EVAs to patch up the damaged Kaltheim vessel, you receive a message from the <npc>;`
+			`	"Our thanks, Commander <last>!"`
+		ship "Tyar'linhalf 67-G" "Scaa'wraken'farae"
+	on visit
+		`You have arrived on <planet>, but you left the <npc> behind!`
+	on fail
+		`The <npc> has been destroyed. Reload your save if you want to continue with the story.`
+		

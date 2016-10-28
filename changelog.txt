@@ -1,4 +1,20 @@
 ------------------------------------------------------------------------  v0.0.9  ------------------------------------------------------------------------------- 
+28/10/16
+
+-Finished off Blue 1A and 1B, added an event.
+-Fixing errors.
+
+
+26/10/16
+
+-Added Blue 1B.
+
+
+25/10/16
+
+-Continued with the first Blue mission.
+
+
 24/10/16
 
 -Renamed the Endgame missions.

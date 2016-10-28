@@ -54,13 +54,13 @@ fleet "Enclave Patrol"
 		"Sea Drake"
 		"Penguin" 2
 	variant 20
-		"Destroyer"
+		"Enclave Destroyer"
 		"Sea Drake" 2
 	variant 10
-		"Destroyer" 2
+		"Enclave Destroyer" 2
 		"Penguin" 5
 	variant 1
-		"Destroyer" 2
+		"Enclave Destroyer" 2
 		"Sea Drake" 5
 		"Penguin" 10
 		

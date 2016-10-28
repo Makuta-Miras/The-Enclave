@@ -382,3 +382,29 @@ event "seminar retaken"
 		description `I think when they named this planet, the idea was to have it be home to some of the greatest educational and scientific institutes in the whole galaxy.`
 		description `	Yeah, that never happened. Instead, when some amazing narcotic plants were discovered here, the central galactic government didn't find out about them until it was social norm on Seminar to use substances derived from these plants every. Single. Day.`
 		description `	It appears that the Kaltheim didn't really know what to do with this world when they captured it; the planet was left entirely untouched during their occupation, apart from the scars of some superficial orbital bombardment.`
+		
+		
+event "kaltheim truce (blue)"
+	government "Kaltheim"
+		"attitude toward"
+			"Enclave" 300
+			"XSZ Corporation" -300
+	government "Enclave"
+		"attitude toward"
+			"Kaltheim" 300
+	government "XSZ Corporation"
+		"attitude toward"
+			"Kaltheim" -300
+	system "Memus"
+		government "Enclave"
+	system "Cispia"
+		government "Enclave"
+	system "Deg Deg"
+		government "Enclave"
+	system "Daia"
+		government "Enclave"
+	system "Four"
+		government "Enclave"
+	system "Gautus"
+		government "Enclave"
+		
