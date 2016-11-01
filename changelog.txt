@@ -1,4 +1,10 @@
 ------------------------------------------------------------------------  v0.0.9  ------------------------------------------------------------------------------- 
+01/11/16
+
+-Continuing with Blue.
+-Altered the XSZ nuclear strikes mission so you don't get weirdness where the attacks on Arikv and Alleshafen don't trigger until after you've been to Jumblar.
+
+
 28/10/16
 
 -Finished off Blue 1A and 1B, added an event.

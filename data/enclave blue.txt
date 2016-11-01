@@ -96,7 +96,7 @@ mission "Enclave Blue 1B"
 			
 mission "Enclave Blue 1C"
 	name "Rescue the <npc>"
-	description "Travel to the <stopovers> system, where the <npc> has been disabled. Rescue it, then escort it back to <destination>."
+	description "Travel to the Aetrus system, where the <npc> has been disabled. Rescue it, then escort it back to <destination>."
 	autosave
 	source Seminar
 	destination Jumblar
@@ -143,7 +143,7 @@ mission "Enclave Blue 1C"
 			``
 			`	After another short wait, your communicator throws up the first message, the text file, now completely translated:`
 			`		Commander,`
-			`	Kaltheim High Command has received word that the <npc>, the warship envoy we sent to you, has been disabled in the <stopovers> system. Her last transmission said she was being attacked by the scum you are fighting against. However, we are in the middle of dealing with a minor uprising here, so we have no ships to spare- you will have to rescue the <npc>.`
+			`	Kaltheim High Command has received word that the <npc>, the warship envoy we sent to you, has been disabled in the Aetrus system. Her last transmission said she was being attacked by the scum you are fighting against. However, we are in the middle of dealing with a minor uprising here, so we have no ships to spare- you will have to rescue the <npc>.`
 			choice
 				`	"What should we do?"`
 					goto 5
@@ -168,4 +168,64 @@ mission "Enclave Blue 1C"
 		`You have arrived on <planet>, but you left the <npc> behind!`
 	on fail
 		`The <npc> has been destroyed. Reload your save if you want to continue with the story.`
-		
+	on complete
+		conversation
+			`You guide the Scaa'wraken'farae in to land a few miles out from the spaceport on Jumblar- after all, there may still be some ill feeling among civilians and Enclave soldiers towards the Kaltheim. The crew of the alien ship come running off the gangway, making strange gestures at you which you assume is their way of thanking you.`
+			`	As teams of engineers and shipbuilders arrive from the shipyards in a large convoy of- surprisingly- aircraft and set to work making the Kaltheim warship as good as new, the foreman pulls you aside.`
+			`	"Admiral Kuznetsov wants you back at the spaceport," she says in a rough, almost Dirt Belt-like accent, reminding you of your youth back on New Boston.`
+			choice
+				`	"Tell him I'll be right there."`
+				`	"Thanks."`
+			`	The engineer nods in response.`
+			
+
+mission "Enclave Blue 1D"
+	name "Shipbuilding supplies"
+	description "Head to <destination> to meet up with a ship carrying supplies necessary to completing construction of the new Enclave warships."
+	autosave
+	source Jumblar
+	destination Emeria
+	to offer
+		has "Enclave Blue 1C: done"
+	on offer
+		conversation
+			`You are greeted by a lower-ranking Enclave officer outside Kuznetsov's office.`
+			`	"The Admiral's not available at the moment, sir," the officer says somewhat snootily. "Something came up which required his attention.`
+			choice
+				`	"What did he want to tell me?"`
+					goto 1
+				`	"What was it?"`
+			`	"He did not see fit to share that information," the officer- a Captain, you think- replies, frowning. "Anyway, he wanted you to escort a freighter from <destination> back to here. Something about supplies for a new warship."`
+			`	You thank the officer and begin to make preparations to leave.`
+				accept
+			label 1
+			`	"He wanted you to escort a freighter from <destination> back to here. Something about supplies for a new warship."`
+			`	You thank the officer and begin to make preparations to leave.`
+				accept
+				
+				
+mission "Enclave Blue 1E"
+	name "Shipbuilding supplies"
+	description "Escort the <npc> back to <destination> safely."
+	autosave
+	landing
+	source Emeria
+	destination Jumblar
+	to offer
+		has "Enclave Blue 1D: done"
+	on offer
+		dialog
+			`You meet up with the crew of the <npc> and make ready to head back to Jumblar.`
+				accept
+	npc accompany save
+		government Enclave
+		personality timid frugal escort
+		system Whuroxla
+		cargo 500 "Mysterious shipbuilding supplies"
+		ship "Leatherback" "R.N.S Banks"
+	on visit
+		dialog
+			`You have arrived on <planet>, but you left the <npc> behind!`
+	on fail
+		dialog
+			`The <npc> has been destroyed. Reload your save if you want to continue with the story.`

@@ -572,7 +572,7 @@ mission "Enclave Middle 3A"
 	description "Head straight to <destination> for orders regarding XSZ's latest attack."
 	landing
 	source
-		attributes enclave
+		near Innenheim 2 16
 	destination Jumblar
 	to offer
 		or
