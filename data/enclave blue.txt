@@ -229,3 +229,17 @@ mission "Enclave Blue 1E"
 	on fail
 		dialog
 			`The <npc> has been destroyed. Reload your save if you want to continue with the story.`
+	on complete
+		conversation
+			`You arrive to find the <npc>'s cargo being unloaded, and as the various crates are being unloaded, you notice something- they're sheets of pure galvium, one of the rarest metals anywhere you've seen- apart from a few minor uses in human tech, the only place you've seen galvium is as plating for the hulls of Quarg ships.`
+			choice
+				`	"Woah, where did that much galvium come from?"`
+				`	"That looks expensive."`
+					goto 1
+			`	"Nobody knows," one of the engineers nearby you says. "Apparently someone high up in the army was contacted anonymously by a private donor who gave us this to use on the new ships Kuznetsov's got us building." He gestures with his pen towards the near-complete form of one of the new warships you've been hearing about; looks like all it needs now is some armour in a few places.`
+			`	(Head to the spaceport to see Admiral Kuznetsov now.)`
+				accept
+			label 1
+			`	"Damn right," one of the engineers near you says with a grin.`
+			`	(Head to the spaceport to see Admiral Kuznetsov now.)`
+				accept
