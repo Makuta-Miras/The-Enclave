@@ -4,6 +4,7 @@
 -Added Blue 2A.
 -Cathy's hair is now blue.
 -Renamed the image file for the Destroyer.
+-Some quick bugfixes.
 
 
 01/11/16

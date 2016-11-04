@@ -165,9 +165,11 @@ mission "Enclave Blue 1C"
 			`	"Our thanks, Commander <last>!"`
 		ship "Tyar'linhalf 67-G" "Scaa'wraken'farae"
 	on visit
-		`You have arrived on <planet>, but you left the <npc> behind!`
+		dialog
+			`You have arrived on <planet>, but you left the <npc> behind!`
 	on fail
-		`The <npc> has been destroyed. Reload your save if you want to continue with the story.`
+		dialog	
+			`The <npc> has been destroyed. Reload your save if you want to continue with the story.`
 	on complete
 		conversation
 			`You guide the Scaa'wraken'farae in to land a few miles out from the spaceport on Jumblar- after all, there may still be some ill feeling among civilians and Enclave soldiers towards the Kaltheim. The crew of the alien ship come running off the gangway, making strange gestures at you which you assume is their way of thanking you.`
@@ -278,9 +280,11 @@ mission "Enclave Blue 2A"
 				"Enclave Destroyer" 3
 				"Sea Drake" 2
 	on fail
-		`The <npc> has been destroyed. Reload your save if you want to continue with the story.`
+		dialog
+			`The <npc> has been destroyed. Reload your save if you want to continue with the story.`
 	on visit
-		`You have arrived on <planet>, but you left the <npc> behind!`
+		dialog
+			`You have arrived on <planet>, but you left the <npc> behind!`
 	on complete
 		conversation
 			`You arrive to find the spaceport on <planet> in a state of organised chaos, not unlike when this planet was first recaptured from XSZ, months ago. An impressive number of Kaltheim ships- most notably, FIVE Tyar'linhalf 67-Gs!- are landed on a small, fairly flat island a good kilometre or so out from the nearby coast, with both civilians and military personnel pointing at the blue and grey hulls, glinting in the sunlight.`
