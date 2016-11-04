@@ -135,7 +135,7 @@ mission "Enclave Middle 1A"
 
 	on complete
 		conversation
-			`You bring your ship in for a smooth landing, touching down just outside the biggest city on New Asgard. As it turns out, a number of troop transports landed here before you, and the commanding officers of the XSZ forces have been rounded up and are lined up against the outside of the glass dome, somewhat ominously. A small contingent of soldiers, led by an officer in a uniform almost identical to yours, breaks off to meet you as you step off your ship.`
+			`You bring your ship in for a smooth landing, touching down just outside the biggest city on New Asgard. As it turns out, a number of troop transports landed here before you, and the commanding officers of the XSZ forces have been rounded up and are lined up against the outside of the glass dome, somewhat ominously. A small contingent of soldiers, led by an officer in a uniform almost identical to yours, with startlingly blue hair, breaks off to meet you as you step off your ship.`
 			`	"Lieutenant <last>," the officer says, shaking your hand. "I'm Cathy Bradford. Lieutenant, like yourself."`
 			choice
 				`	"Why are those prisoners out in the open? Shouldn't they have been loaded onto a ship by now?"`

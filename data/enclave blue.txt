@@ -237,9 +237,95 @@ mission "Enclave Blue 1E"
 				`	"That looks expensive."`
 					goto 1
 			`	"Nobody knows," one of the engineers nearby you says. "Apparently someone high up in the army was contacted anonymously by a private donor who gave us this to use on the new ships Kuznetsov's got us building." He gestures with his pen towards the near-complete form of one of the new warships you've been hearing about; looks like all it needs now is some armour in a few places.`
-			`	(Head to the spaceport to see Admiral Kuznetsov now.)`
-				accept
+			choice	
+				`	(Head to the spaceport to see Admiral Kuznetsov now.)`
+					accept
 			label 1
 			`	"Damn right," one of the engineers near you says with a grin.`
-			`	(Head to the spaceport to see Admiral Kuznetsov now.)`
+			choice
+				`	(Head to the spaceport to see Admiral Kuznetsov now.)`
+					accept
+				
+				
+mission "Enclave Blue 2A"
+	name "Fleet to <planet>"
+	description "Escort a fleet of Enclave warships to <destination> in preparation for the first attacks against XSZ."
+	autosave
+	source Jumblar
+	destination "New Asgard"
+	to offer
+		has "Enclave Blue 1E: done"
+	on offer
+		conversation
+			`All the orders that are awaiting you- and all the other Enclave officers around here- are the words "FLEETS TO NEW ASGARD," in bright red on a massive holoscreen in the spaceport. You shrug and go to find some ships to bring with you.`
 				accept
+	npc accompany save
+		personality heroic vindictive escort
+		system Innenheim
+		government Enclave
+		fleet
+			names "republic capital"
+			fighters "republic fighter"
+			variant
+				"Muesli Carrier" 3
+				"Apollo" 2
+				"Dart" 36
+				"Enclave Lance" 6
+		fleet
+			names "republic small"
+			variant
+				"Penguin" 2
+				"Enclave Destroyer" 3
+				"Sea Drake" 2
+	on fail
+		`The <npc> has been destroyed. Reload your save if you want to continue with the story.`
+	on visit
+		`You have arrived on <planet>, but you left the <npc> behind!`
+	on complete
+		conversation
+			`You arrive to find the spaceport on <planet> in a state of organised chaos, not unlike when this planet was first recaptured from XSZ, months ago. An impressive number of Kaltheim ships- most notably, FIVE Tyar'linhalf 67-Gs!- are landed on a small, fairly flat island a good kilometre or so out from the nearby coast, with both civilians and military personnel pointing at the blue and grey hulls, glinting in the sunlight.`
+			`	A few minutes after you land, a Destroyer comes swooping in low over the nearest city dome, flying unevenly, smoke trailing from one of its engines. The scorch marks and dents along the hull match the patterns created by XSZ's variation on the particle cannon, and, judging by the rogueish green stripes painted on it, its name is the R.N.S. Severn- Cathy's ship.`
+			choice
+				`	(Go find where Cathy's ship has touched down.)`
+				`	(Ignore it and head to the spaceport for orders.)`
+					accept
+			`	You follow the trail of acrid black smoke left by the R.N.S. Severn to a small hangar not far from the city. You arrive just in time to see the crew stepping off the gangplank as a dumpy little hovercar begins to tow the Severn inside the hangar, presumably for repairs.`
+			`	Scanning the survivors- a Destroyer usually carries around 30 crew- you see no sign of Cathy. Beginning to get worried, you move closer- only to see her distinctive sky-coloured hair, stained with oil and blood, pop up between some of her crew.`
+			choice
+				`	"Cathy!"`
+			`	She turns at the sound of your voice, pushing her way past the soldiers in the way.`
+			`	"<first>!" she says with a smile, the sunlight reflecting off her suit of mechanized battle-armour and almost dazzling you. "It's been ages since we've seen each other!"`
+			choice
+				`	"What happened with the Kaltheim? I heard Kuznetsov was sending you to help them out with an uprising."`
+					goto 1
+				`	"What happened to the Severn?"`
+			`	Cathy shrugs. "We were on our way back from helping out with the Kaltheim- even though I'm pretty sure we hindered them more than helped them- and we got jumped by some XSZ ships in the Aetrus system. We only barely escaped; the Drakes and the Muesli Carrier we took with us got completely wiped out."`
+				goto 2
+			label 1
+			`	Cathy shrugs. "I'm pretty sure we hindered them more than helped them- they barely needed us. On the way back, though, our fleet got jumped by some XSZ ships in the Aetrus system. We only barely escaped; the Drakes and the Muesli Carrier we took with us got completely wiped out."`
+			label 2
+			choice
+				`	"That's the same system that Kaltheim envoy ship got attacked in..."`
+					goto 3
+				`	"Surpised you're still in one piece."`
+			`	"I know, right?!" she replies. "I've been in some close scrapes before, but not like that." Cathy turns towards the hangar, where the tail end of the R.N.S. Severn has just about disappeared into the gloom. "Doubt she'll ever fly as a warship again," your fellow commander says mournfully. "First ship I ever got to be in command of, and now she's gone."`
+			label 5
+			choice
+				`	"If you want, you can ride on the <ship> during the battles coming up..."`
+			`	Cathy grins. "Really? Thanks!" she says. At that moment, you get a message on your communicator- from Kuznetsov, telling you to hurry the #### up and find him at the spaceport.`
+			choice
+				`	"Kuznetsov wants us at the spaceport."`
+			`	"Thanks for your service, everyone," Cathy says, turning to salute her crew. "Wouldn't have made it out of there without all of you."`
+			`	The engineers, soldiers, and pilots nod solemnly, raising some grimy plastic bottles of water in what you assume is a toast to the crews of the other ships from Cathy's fleet. "Come on," she says, turning away again. "To the spaceport!"`
+				accept
+			label 3
+			`	"That can't be a coincidence," Cathy says with a frown. "Should probably tell Kuznetsov about that, he's into detective-y stuff like that."`
+			choice
+				`	"Really? I thought Kuznetsov was just some boring old Admiral, I didn't think he had any interests outside of war and fancy warships..."`
+				`	"Definitely."`
+					goto 4
+			`	Cathy laughs. "That's probably true, to be honest; I suspect he's just pretending." She turns towards the hangar, where the tail end of the R.N.S. Severn has just about disappeared into the gloom. "Doubt she'll ever fly as a warship again," your fellow commander says mournfully. "First ship I ever got to be in command of, and now she's gone."`
+				goto 5
+			label 4
+			`	Cathy turns towards the hangar, where the tail end of the R.N.S. Severn has just about disappeared into the gloom. "Doubt she'll ever fly as a warship again," your fellow commander says mournfully. "First ship I ever got to be in command of, and now she's gone."`
+				goto 5				
