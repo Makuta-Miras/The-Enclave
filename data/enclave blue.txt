@@ -291,8 +291,6 @@ mission "Enclave Blue 2A"
 			`	A few minutes after you land, a Destroyer comes swooping in low over the nearest city dome, flying unevenly, smoke trailing from one of its engines. The scorch marks and dents along the hull match the patterns created by XSZ's variation on the particle cannon, and, judging by the rogueish green stripes painted on it, its name is the R.N.S. Severn- Cathy's ship.`
 			choice
 				`	(Go find where Cathy's ship has touched down.)`
-				`	(Ignore it and head to the spaceport for orders.)`
-					accept
 			`	You follow the trail of acrid black smoke left by the R.N.S. Severn to a small hangar not far from the city. You arrive just in time to see the crew stepping off the gangplank as a dumpy little hovercar begins to tow the Severn inside the hangar, presumably for repairs.`
 			`	Scanning the survivors- a Destroyer usually carries around 30 crew- you see no sign of Cathy. Beginning to get worried, you move closer- only to see her distinctive sky-coloured hair, stained with oil and blood, pop up between some of her crew.`
 			choice
@@ -332,4 +330,108 @@ mission "Enclave Blue 2A"
 				goto 5
 			label 4
 			`	Cathy turns towards the hangar, where the tail end of the R.N.S. Severn has just about disappeared into the gloom. "Doubt she'll ever fly as a warship again," your fellow commander says mournfully. "First ship I ever got to be in command of, and now she's gone."`
-				goto 5				
+				goto 5
+				
+				
+mission "Enclave Blue 2B"
+	name "Attack <system>"
+	description "Along with a number of Kaltheim ships, capture the <system> system from XSZ."
+	autosave
+	source "New Asgard"
+	destination Fluorine
+	to offer
+		has "Enclave Blue 2A: done"
+	on offer
+		conversation
+			`"Commanders Bradford and <last>, reporting for orders," Cathy says to the officer on duty when you reach the spaceport. He looks up from the desk at the two of you, scrolling quickly through a document on his computer.`
+			`	"Admiral Kuznetsov is waiting for you in hall C," the officer says, curtly. You thank him and head down the appropriate cavernous corridor, eventually winding up in hall C, a long, low room with mildew in the corners; you suspect that this must have been a part of an older spaceport, considering how new the rest of the building is.`
+			`	An enormous, hexagonal table has been set up in the middle of the room, projecting a holographic view of what you assume to be Fluorine, with major settlements, defences and generally strategic areas marked in green, contrasting with the planet's rough, brownish landscapes. A small army of officers are stood around the table talking seriously as they manipulate arrays of small glowing dots in purple, orange and light blue; representations of XSZ, Enclave, and Kaltheim warships, according to Cathy.`
+			`	"We're prepping for the assault on <system>," Kuznetsov says, turning to the two of you. "Since you're late-" he says this with a quick glare- "I'll fill you in on what we know so far. Firstly-" Kuznetsov points towards an area on the hologram pulsing bright crimson- "this is where the authorities are all holed up. It isn't anywhere near the biggest settlement, but what it is, is an enormous cave network; presumably the remains of an old mine."`
+			choice
+				`	"We'll need a full-on ground assault force to take that down."`
+				`	"What else?"`
+					goto 1
+			`	The Admiral nods grimly. "And what's worse, is the temperatures down on the surface are incredibly low, so it'd be hard for us to even set up a siege of the caves, let alone send a force down there."`
+			`	"The Kaltheim have some pretty damn impressive heat weapons, don't they?" Cathy says thoughtfully. "Once we've got the rest of the planet secured, if they bombard the area around the caves with those weapons some fancy physics stuff should happen and make the rock expand and blow up, right?"`
+			`	Kuznetsov's face brightens. "That might actually work," he replies. "With no need for a ground force..."`
+			`	"What else?" you say.`
+			label 1
+			`	"The usual stuff," Kuznetsov says. "Ground-to-orbit weaponry around most of the towns and active mining complexes. Shouldn't be too hard."`
+			`	"Won't they have early-warning systems in place in Dvorak and Fallout, though?" Cathy asks. "It'd make sense. So they likely already know we're coming and we've got the Kaltheim with us."`
+			choice
+				`	"Probably, that's what everyone did during the Free Worlds war back home."`
+					goto 2
+				`	(Wait for Kuznetsov to say something.)`
+			`	"I'd expect so," Kuznetsov says. "Basic tactics."`
+				goto 3
+			label 2
+			`	"There's your answer," Kuznetsov says.`
+			label 3
+			`	Cathy nods.`
+			choice
+				`	"So basically, it should be easy apart from the nukes?"`
+				`	"Since the R.N.S. Severn isn't going to be flying any time soon, is it okay for Cathy to ride on board the <ship> with me?"`
+					goto 4
+			`	"Precisely," the Admiral replies.`
+			choice
+				`	"Since the R.N.S. Severn isn't going to be flying any time soon, is it okay for Cathy to ride on board the <ship> with me?"`
+			label 4
+			`	"Any preference, Commander?" Kuznetsov says, turning to Cathy. "Plan was for you to lead a division of your own but yours and <last>'s can be merged without too many changes to the plans being made."`
+			`	"I'm happy to go with <first>, sir," Cathy replies. "I'll wait and see if I can get my hands on one of your fancy new warships from Jumblar." Kuznetsov nods in response, and turns back to the meeting.`
+			`	You stick around for another hour or so until the battle planning gets boring.`
+				accept
+	npc
+		personality heroic vindictive escort
+		system Svind
+		government Enclave
+		fleet
+			names "republic capital"
+			fighters "republic fighter"
+			variant
+				"Muesli Carrier" 6
+				"Apollo" 4
+				"Dart" 40
+				"Enclave Lance" 40
+		fleet
+			names "republic small"
+			variant
+				"Penguin" 12
+				"Enclave Destroyer" 7
+				"Sea Drake" 9
+	npc
+		personality heroic vindictive escort
+		system Svind
+		government Enclave
+		fleet
+			names "kaltheim large"
+			variant
+				"Tyar'linhalf 67-G" 3
+				"Lenmig'sraor 52-T" 4
+		fleet
+			names "kaltheim small"
+			variant
+				"Kru'urlin 89-B" 5
+	npc kill
+		personality staying vindictive
+		government "XSZ Corporation"
+		system Indigo
+		fleet
+			names "syndicate capital"
+			variant
+				"Turbulence" 5
+				"Bloodhound" 3
+				"Turbulence (Nuclear)" 3
+		fleet
+			names "syndicate small"
+			variant
+				"Buzzard" 8
+		fleet
+			names "kor sestor fighter"
+			variant
+				"Scorched Earth" 3
+	on visit
+		dialog
+			`The battle isn't over yet. It would be immoral to stay here whilst the rest of your forces are dying up in orbit...`
+				launch
+	on complete
+		event "fluorine captured"

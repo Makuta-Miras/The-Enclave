@@ -408,3 +408,13 @@ event "kaltheim truce (blue)"
 	system "Gautus"
 		government "Enclave"
 		
+
+event "fluorine captured"
+	system "Indigo"
+		government "Enclave"
+		fleet Trader 700
+		fleet Transporter 700
+		fleet "Enclave Patrol" 600
+		fleet "Enclave Capital" 900
+		fleet "XSZ Small" 2500
+		
