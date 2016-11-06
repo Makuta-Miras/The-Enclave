@@ -3195,7 +3195,7 @@ system Mezzanine
 	fleet Trader 1000
 	fleet Transporter 1000
 	object
-		sprite "star (animated)/k0"
+		sprite "star (animated)/neutron"
 			"frame rate" 0.2
 		period 10
 	object
