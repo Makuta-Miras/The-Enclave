@@ -3196,7 +3196,7 @@ system Mezzanine
 	fleet Transporter 1000
 	object
 		sprite "star (animated)/neutron"
-			"frame rate" 0.2
+			"frame rate" 40
 		period 10
 	object
 		sprite planet/cloud2
