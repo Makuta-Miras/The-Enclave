@@ -420,3 +420,78 @@ event "fluorine captured"
 		fleet "Enclave Capital" 900
 		fleet "XSZ Small" 2500
 		
+		
+event "XSZ expansion 1"
+	system "Anvyu"
+		government "XSZ Corporation"
+		fleet Trader 1500
+		fleet Transporter 1600
+		fleet "Enclave Patrol" 1800
+		fleet "XSZ Small" 600
+		fleet "XSZ Large" 900
+		fleet "XSZ Nuclear" 1200
+		fleet "Scorched Earth" 1200
+	system "Ithaos"
+		government "XSZ Corporation"
+		fleet Trader 900
+		fleet Transporter 900
+		fleet "Enclave Patrol" 2100
+		fleet "XSZ Small" 800
+		fleet "XSZ Large" 1100
+		fleet "XSZ Nuclear" 1400
+		fleet "Scorched Earth" 1400		
+	planet "Arikv"
+		description `Arikv was settled only fairly recently, according to the locals- the terraforming process is still continuing, which explains the humid conditions, and a decent part of the planet is still uncharted.`
+		description `	However, XSZ, in a last, desparate push, have captured Arikv, resulting in massive casualties and dangerous amounts of radiation lingering in the atmosphere.`
+
+event "XSZ expansion 2"
+	system "Five"
+		government "XSZ Corporation"
+		fleet Trader 800
+		fleet Transporter 800
+		fleet "XSZ Small" 500
+		fleet "XSZ Large" 800
+		fleet "XSZ Nuclear" 1100
+		fleet "Scorched Earth" 1100
+	planet "Lyfon"
+		description `Lyfon was the capital of the Enclave, until relatively recently. It has since been conquered by XSZ in their last desparate push, resulting in a few of the many mountains being nuked and much of the population being put in work camps.`	
+	planet "Idivine"
+		description `Idivine is a major manufacturing world- as such, it happens to be the second most notable planet in the system, after Lyfon. It is here that most of the Enclave's military-grade weapons and other outfits were constructed- the recent attack by XSZ has resulted in many of the facilities being destroyed.`
+		outfitter "Small Engines"
+		outfitter Ammo
+		outfitter Basicness
+	planet "Korine"
+		landscape land/sea13-sfiera
+		description `Like Carmine, Korine has been completely devastated by a series of XSZ nuclear strikes. Currently plunged in the depths of a nuclear winter, it is doubtful the survivors will be able to stay alive without external help.`
+		spaceport clear
+	planet "Bantilium"
+		description `Bantilium is mainly covered by large areas of primeval woodland, gnarled trees that reach far too high into the sky. While little of the planet has been explored thus far, it appears to have a unique ecosystem whereby life has evolved from silicon-based compounds, instead of carbon-based compounds like humans. As a result, you and other non-scientists are restricted to the spaceport village.`
+		description `	Bantilium was barely touched by the XSZ attack on this system.`
+		
+event "XSZ expansion 3"
+	system "Theurrhaeus"
+		government "XSZ Corporation"
+		fleet Trader 3000
+		fleet Transporter 3000
+		fleet "Enclave Patrol" 2000
+		fleet "XSZ Small" 600
+		fleet "XSZ Large" 900
+		fleet "XSZ Nuclear" 1200
+		fleet "Scorched Earth" 1200
+	system "Arkhos"
+		government "XSZ Corporation"
+		fleet Trader 900
+		fleet Transporter 900
+		fleet "Enclave Patrol" 2100
+		fleet "XSZ Small" 800
+		fleet "XSZ Large" 1100
+		fleet "XSZ Nuclear" 1400
+		fleet "Scorched Earth" 1400
+	planet "Saal"
+		description `Saal is an idyllic farming world, entirely at contrast with most of the other human residents of this galaxy, who seem to act very similarly to the humans of the Deep. Most power generation facilities, instead of using fusion or fission to generate electricity, are in fact wind-powered.`
+		description `	Saal was barely touched by the recent XSZ attack; it seems XSZ have little to no interest in farming worlds.`
+		
+
+event "caesennia available"
+	shipyard "Enclave Tier 3"
+		"Caesennia"

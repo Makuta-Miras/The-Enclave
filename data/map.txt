@@ -5439,6 +5439,7 @@ planet Puggleswap
 	spaceport `		O`
 	spaceport `	R`
 	spaceport `	T`
+	shipyard "All ships"
 
 planet Quaver
 	attributes enclave notjumblar

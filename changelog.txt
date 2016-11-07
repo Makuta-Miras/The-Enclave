@@ -5,6 +5,9 @@
 -Renamed the Juno to the Caesennia.
 -Forgot to give the player clearance in Blue 2B.
 -Fixed some accidental incorrect governments.
+-Added the Caesennia.
+-Added Blue 2D, 2E and 2F. (2F is optional)
+-Quick bugfix in Endgame.
 
 
 06/11/16

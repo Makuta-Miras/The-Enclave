@@ -203,6 +203,9 @@ mission "Enclave Endgame 3"
 			choice
 				`	"Understood."`
 					accept
+			label impressive
+			`	"Indeed it is," Kuznetsov says with a smile.`
+				goto 6
 	
 	
 mission	"Enclave Endgame 4"

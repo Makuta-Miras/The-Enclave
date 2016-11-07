@@ -94,6 +94,7 @@ outfit "Heavy Electron Beam"
 	category "Guns"
 	cost 750000
 	thumbnail "outfit/heavy electron beam"
+	"outfit space" -27
 	"mass" 27
 	"weapon capacity" -27
 	"gun ports" -1

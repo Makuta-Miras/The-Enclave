@@ -434,7 +434,9 @@ mission "Enclave Blue 2B"
 				launch
 	on complete
 		event "fluorine captured"
-		
+		event "XSZ expansion 1" 3
+		event "XSZ expansion 2" 5
+		event "XSZ expansion 3" 6
 		
 mission "Enclave Blue 2C"
 	name "Warships to Fluorine"
@@ -485,3 +487,144 @@ mission "Enclave Blue 2C"
 			label 4
 			`	He scratches his chin, brow furrowed. "One more battle," Kuznetsov says. "One more battle and we don't have to worry about it then. I'll deal with it then."`
 				accept
+	on complete
+		dialog
+			`At the spaceport, it seems like everyone is running around like a headless chicken; when you ask, you find that XSZ have captured the Anvyu system, and they seem to be heading for the other nearby systems as well. You should be quick here.`
+			`The crews on board the new ships turn out to be some of the best in the Enclave's navy, hand-picked by the Grand Admiral to crew them. You introduce yourself to the crews and make preparations to head back to Fluorine.`
+		event "caesennia available" 30
+		
+			
+mission "Enclave Blue 2D"
+	name "Warships to <planet>"
+	description "Escort five new Caesennia-class warships to <destination> in preparation for the assault on Latent."
+	autosave
+	landing
+	source Jumblar
+	destination Fluorine
+	to offer
+		has "Enclave Blue 2C: done"
+	npc accompany save
+		personality vindictive heroic escort
+		system Innenheim
+		government Enclave
+		fleet
+			names "Enclave Capital"
+			variant
+				"Caesennia" 5
+	on visit
+		dialog
+			`You have arrived on <planet>, but you left the <npc> behind!`
+	on fail
+		dialog	
+			`The <npc> has been destroyed. Reload your save if you want to continue with the story.`
+			
+			
+mission "Enclave Blue 2E"
+	name "Attack <system>"
+	description "Launch a final assault on <planet> in order to finally neutralise XSZ."
+	autosave
+	landing
+	source Fluorine
+	destination Latent
+	passengers 1
+	clearance
+	to offer
+		has "Enclave Blue 2D: done"
+	on offer
+		conversation
+			`Admiral Kuznetsov meets you as soon as you land, a grimace on his face despite the new Caesennias (Caesenniae?). "We're headed to Latent in the morning," he says flatly. "Tarkir is the only one of our worlds left standing on the other side of XSZ; we need to take out their administration before Tarkir falls as well."`
+			choice
+				`	"How many ships have we got?"`
+					goto 1
+				`	"Are the Kaltheim still with us?"`
+			`	"They are," Kuznetsov replies. "We had an awkward incident the other night where one of our officers- albeit very drunk and fairly low ranking- had a massive go at a Kaltheim and almost hit them, but other than that we're good."`
+			label 1
+			`	"Fleetwise, we've got these six Caesennias-" Kuznetsov gestures at the five you just brought here and his own, personal one- "ten Apollos, seven Muesli Carriers, a good fifteen or so Destroyers, an ungodly number of Sea Drakes and Penguins, and more Darts and Lances than you've killed pirates."`
+			choice
+				`	"What about the Kaltheim, what are they bringing to the table?"`
+					goto 2
+				`	"Noice."`
+				`	"Sounds good to me."`
+			`	"We leave at dawn," the Admiral replies, beginning to leave. "Commander Bradford's been assigned to the <ship> with you; you'll probably find her at the spaceport. Understood?"`
+			choice
+				`	"Understood."`
+					accept
+				`	"What about the Kaltheim, what are they bringing to the table?"`			
+			label 2
+			`	"From what their commanders have told me," the Admiral replies, "They've got seven of their big sexy warships, ten of their medium, less sexy warships, and too many of their light ones."`
+			choice
+				`	"Since when were warships sexy?"`
+					goto 3
+				`	"WAIT A SECOND. You find warships sexy too?!"`
+					goto 4
+				`	"Noice."`
+			`	"We leave at dawn," the Admiral replies, beginning to leave. "Commander Bradford's been assigned to the <ship> with you; you'll probably find her at the spaceport. Understood?"`
+			choice
+				`	"Understood."`
+					accept
+			label 3
+				`	"Since they were invented," Kuznetsov says snarkily, walking off.`
+					accept
+			label 4
+				`	"That is correct," Kuznetsov says, walking off.`
+					accept
+	npc
+		personality heroic vindictive escort
+		system Indigo
+		government Enclave
+		fleet
+			names "republic capital"
+			fighters "republic fighter"
+			variant
+				"Caesennia" 6
+				"Apollo" 10
+				"Muesli Carrier" 7
+				"Dart" 52
+				"Enclave Lance" 52
+		fleet
+			names "republic small"
+			variant
+				"Enclave Destroyer" 15
+				"Sea Drake" 17
+				"Penguin" 20
+	npc
+		personality heroic vindictive escort
+		system Indigo
+		government Kaltheim
+		fleet
+			names "kaltheim large"
+			variant
+				"Tyar'linhalf 67-G" 7
+		fleet	
+			names "kaltheim small"
+			variant
+				"Lenmig'sraor 52-T" 10
+				"Kru'urlin 89-B" 15
+	npc kill
+		personality heroic vindictive staying
+		system Maduras
+		government "XSZ Corporation"
+		fleet
+			names "syndicate capital"
+			variant
+				"Bloodhound" 7
+				"Turbulence (Nuclear)" 7
+		fleet
+			names "syndicate small"
+			variant
+				"Buzzard" 35
+				
+				
+mission "Enclave Blue 2F"
+	invisible
+	source Fluorine
+	to offer
+		has "Enclave Blue 2D: done"
+		not "Enclave Blue 2E: done"
+	on offer
+		conversation
+			`On the eve of what should be the last assault against XSZ, you find much of the Enclave forces stationed here in preparation for the battle flooding the few bars and gambling stores in the spaceport town.`
+			`	There are even a few wary-looking Kaltheim about, seemingly having been welcomed with open arms by some of the more drunken Enclave officers.`
+			`	You find Cathy in the Pedro's Arms, a squat, smoky building on the outskirts of the port. It appears that the soldiers Cathy is with are some old friends who used to crew the R.N.S. Severn with her, back before the Severn got destroyed- her twin sister Anna, who is almost identical to Cathy, if not for her luminous green hair in comparison to Cathy's blue; Bob, the Severn's chief engineer, a grizzled old man originally hailing from Cynic; and Steve, a relatively soft-spoken pilot from Tarkir, face split open by a large scar.`
+			`	You while away the night with Cathy and her crew, dreading the bloodshed to come in the morning.`
+				decline

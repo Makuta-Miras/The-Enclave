@@ -55,6 +55,7 @@ shipyard "All ships"
 	"Tyar'linhalf 67-G"
 	"Kru'urlin 89-B"
 	"Lenmig'sraor 52-T"
+	"Caesennia"
 
 	
 	
