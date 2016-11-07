@@ -185,7 +185,7 @@ mission "Enclave Endgame 3"
 					goto 6
 			label jugjug
 			`	"I've actually got a new prototype warship here that the shipyards on Alleshafen sent us a few days ago," Kuznetsov says, swinging the holoscreen around so you can see it.`
-			scene "scene/juno"
+			scene "scene/caesennia"
 			`	"They sent the plans during those massive nuclear strikes a few weeks ago, presumably as a last resort- it's got all of the data we need to start producing them on Jumblar," the Admiral continues, clearly excited about adding what appears to be such a tank-like ship to his forces.`
 			choice
 				`	"Looks like an impressive ship."`

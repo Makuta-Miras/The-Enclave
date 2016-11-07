@@ -339,6 +339,7 @@ mission "Enclave Blue 2B"
 	autosave
 	source "New Asgard"
 	destination Fluorine
+	passengers 1
 	to offer
 		has "Enclave Blue 2A: done"
 	on offer
@@ -435,3 +436,54 @@ mission "Enclave Blue 2B"
 				launch
 	on complete
 		event "fluorine captured"
+		
+		
+mission "Enclave Blue 2C"
+	name "Warships to Fluorine"
+	description "Travel to <destination>, where you will find a number of the new Enclave warships waiting for you."
+	autosave
+	landing
+	source Fluorine
+	destination Jumblar
+	to offer
+		has "Enclave Blue 2B: done"
+	on offer
+		conversation
+			`Kuznetsov was right; it was an easy battle. You and Cathy step off the <ship>'s gangplank inside one of the outer landing halls at the spaceport; due to the frigid nature of conditions on Fluorine's surface, the spaceport was designed with interior landing pads, complete with airtight doors to prevent the inside heat from escaping.`
+			`	In the corridors leading to the main departures hall, you spot a group of Enclave soldiers staring distrustfully at the Kaltheim ship in the landing hall next to the <ship>'s.`
+			`	Upon you asking them as to why they're looking so hostile to the aliens, one of them- just a Corporal- says "One of their missiles hit an Apollo during the battle. They're saying it was an accident-" he gestures towards the nearby Kaltheim ship- "but I bet my hat they're lying, alien scum."`
+			choice
+				`	"I'm pretty sure they wouldn't do that; their ships took the bulk of XSZ's nuclear fire for us."`
+				`	"Probably are. I mean, I'm fairly sure they're being influenced by the Pug, and the Pug don't exactly have an awesome track record for honesty with humans, from my experiences with them."`
+					goto 1
+			`	"Tell me, did you lose anyone when they attacked us?" the Corporal replies, angrily. "Both my brother and my sister got killed when they took Frodo. Killed during the orbital bombardment. If you'd seen, first hand, what they did, you wouldn't trust them as blindly as you do, idiot!"`
+			choice
+				`	"To be fair, even if they didn't do that, they probably aren't being entirely honest with us; I mean, I'm fairly sure they're being influenced by the Pug, and the Pug don't exactly have an awesome track record for honesty with humans, from my experiences with them."`
+			label 1
+			`	He shrugs. "Probably."`
+			`	As you and Cathy are walking away, she says quietly to you, "That's not a good sign. Better tell Kuznetsov."`
+			choice
+				`	"Definitely."`
+				`	"Nah."`
+			`	A few minutes later, having asked around as to Kuznetsov's location, you find him in one of the more central landing halls, right next to one of the new warships from Jumblar. He turns to greet you and Cathy, grinning like a schoolboy.`
+			`	"Commanders!" the Admiral says animatedly. "May I present to you, the first of the new Caesennia-class heavy warships, the R.N.S. Tsavo!"`
+			choice
+				`	(Clap excitedly.)`
+					goto 3
+				`	"Hey... That's pretty good!"`
+					goto 3
+				`	"Hey... That's mildly adequate!"`
+				`	(Do nothing.)`
+			`	Kuznetsov looks disappointed. "I'd have thought you'd be more excited about that... Anyway, this is only the first of the new ships- the rest are still on <planet>, just having the last touches put on them. <last>, I need you to go there and escort them here; we'll need them for the assault on Latent. Any questions?"`
+			label 2
+			choice
+				`	"There's some animosity between our soldiers and the Kaltheim brewing, you might want to look into it...`
+					goto 4
+				`	"None."`
+					accept
+			label 3
+			`	Kuznetsov looks smug. "She's great, isn't she? Anyway, this is only the first of the new ships- the rest are still on <planet>, just having the last touches put on them. <last>, I need you to go there and escort them here; we'll need them for the assault on Latent. Any questions?"`
+				goto 2
+			label 4
+			`	He scratches his chin, brow furrowed. "One more battle," Kuznetsov says. "One more battle and we don't have to worry about it then. I'll deal with it then."`
+				accept
