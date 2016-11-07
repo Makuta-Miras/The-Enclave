@@ -267,12 +267,9 @@ mission "Enclave Blue 2A"
 		government Enclave
 		fleet
 			names "republic capital"
-			fighters "republic fighter"
 			variant
 				"Muesli Carrier" 3
 				"Apollo" 2
-				"Dart" 36
-				"Enclave Lance" 6
 		fleet
 			names "republic small"
 			variant
@@ -340,6 +337,7 @@ mission "Enclave Blue 2B"
 	source "New Asgard"
 	destination Fluorine
 	passengers 1
+	clearance
 	to offer
 		has "Enclave Blue 2A: done"
 	on offer

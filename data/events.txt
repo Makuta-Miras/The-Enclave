@@ -407,6 +407,8 @@ event "kaltheim truce (blue)"
 		government "Enclave"
 	system "Gautus"
 		government "Enclave"
+	system "Aetrus"
+		government "Enclave"
 		
 
 event "fluorine captured"

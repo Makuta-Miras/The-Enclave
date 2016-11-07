@@ -2294,7 +2294,7 @@ system Grundel'froae
 
 system Hrau'ngri'liadien
 	pos 5320.59 698.763
-	government Enclave
+	government Kaltheim
 	habitable 320
 	link Jaaaar'aaaaa'l'u
 	asteroids "small rock" 23 3.9962

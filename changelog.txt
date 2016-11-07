@@ -3,6 +3,8 @@
 
 -Finished off Blue 2C.
 -Renamed the Juno to the Caesennia.
+-Forgot to give the player clearance in Blue 2B.
+-Fixed some accidental incorrect governments.
 
 
 06/11/16
