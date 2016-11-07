@@ -1,0 +1,630 @@
+# Chapter five, Rec style...
+
+mission "Enclave Blue 1A"
+	name "Visit the Kaltheim"
+	description "Visit the Kaltheim capital to convince them that the Enclave are willing to work with them."
+	autosave
+	source Seminar
+	destination "Era'lgin'bl"
+	clearance "Lron'iirnak talks quickly to the spaceport controller in the Kaltheim tongue, convincing them to allow you to land."
+	passengers 1
+	blocked "You do not have room for Lron'iirnak on your ship. Abort another mission or fire some non-essential crew members to make room for it."
+	to offer
+		has "Enclave Endgame 5: done"
+	on offer
+		conversation
+			`You arrive in the spaceport to find an aide waiting for you. "Commander <last>?" he says nervously. You nod. "Follow me."`
+			`	An hour or so of non-stop walking later, you arrive in a cavernous chamber dug deep into the bedrock below the spaceport- or at least, you assume it is below the spaceport; you could have easily lost your sense of direction in the labyrinthine sets of tunnels that took you here.`
+			`	"The admiral is over in there," the aide says, pointing to one of the tunnels leading off of the room.`
+			choice
+				`	(Head down the tunnel.)`
+			`	Stepping warily, you find Kuznetsov at the end of the tunnel, conversing rapidly with someone you cannot see, obscured by a corner in the rock.`
+			choice
+				`	(Move around Kuznetsov to see who he's talking to.)`
+					goto 1
+				`	"You asked for me, sir?"`
+			`	Breaking off his conversation, Kuznetsov looks at you. "Indeed I did. Come round here," he says, gesturing to the spot beside him.`
+			label 1
+			`	You move around him to find a short, grey-skinned humanoid standing in a prison cell, an odd clawlike appendage extruding from its back, a grey prison shift covering the rest of the alien's body. Yellow eyes blink in its head, the eyelids opening and closing from the sides of the eye.`
+			`	"This is Lron'iirnak," Kuznetsov says smugly. "A lieutenant for the Kaltheim that we captured during the battle." As Kuznetsov speaks, the Kaltheim in the cell nods its head, the third arm on its back swaying to and fro in the small space above it. "Tell Commander <last> what you told me, Lron'iirnak," the admiral says sternly.`
+			`	The alien gulps before opening its mouth and speaking in your native language, albeit in a somewhat archaic format and with the accent of someone from the Deep. "O good Commander," it begins. "My people want no more blood shed, like thee. However, verily do they plan a most heinous assault on thy stars of..." it pauses to think for a second. "Eenunhaem and Visnd."`
+			choice
+				`	"Innenheim and Svind?"`
+			`	Lron'iirnak nods. "They wish not to harm thy people- truly, are they fighting those terrible demons who ruined two worlds and are even now engineering the demise of freedom, the ones they call 'XSZ'. But if thou shalt fight them, what choice have they but to defend themselves?"`
+			choice
+				`	"So you're saying if we don't fight you, you'll leave us alone?"`
+					goto 4
+				`	"You're lying. Why would your forces have ever attacked any of our systems then, if all you wanted to do was fight XSZ?"`
+			`	The Kaltheim throws its odd, seven-fingered hands up in despair. "My liege, I am but a lowly Lieutenant; the plans and vision of the High Council are above me."`
+			choice
+				`	"Hmmm... I guess that does make sense."`
+					goto 4
+				`	"That's it, I have no doubt about it- you're lying."`
+			label 3
+			`	Lron'iirnak's face turns to stone. "Stupid humans," it says. "Always war, always a fight, always more death." When you try to get it to speak to you again, it refuses. "I see you came to the same conclusion as me," Kuznetsov says to you.`
+			choice
+				`	"It was the only logical option, sir."`
+			`	The admiral nods. "Well, you know what happens now," he says. "Take a fleet to Innenheim. Turn back any Kaltheim forces that try and attack the system, and stay alive."`
+			`	You nod, a sense of dread filling you at the thought of another battle.`
+				decline
+			label 4
+			`	"So thou dost believe me?" Lron'iirnak says excitedly.`
+			choice
+				`	(Nod.)`
+				`	"No."`
+					goto 3
+			label 2
+			`	A broad grin spreads across the Kaltheim's face. "Contact my leaders, good sirs," it says. "And they will co-ordinate with you our first move agains the demons."`
+			`	As you and Kuznetsov are walking back to the surface, the Admiral says, "Well? What do you think?"`
+			choice
+				`	"I think this will let us defeat XSZ faster."`
+				`	"I'm suspicious of their intentions, but I think this'll work out in the end."`
+			`	Kuznetsov nods his head. "Well, since this was your decision, it's up to you to go and find the Kaltheim capital; I hear you have a cloaking device, so that should save you some trouble. Take Lron'iirnak with you as a peace offering."`
+			choice
+				`	"Yes, sir."`
+					accept
+				`	"How did you find out about my cloaking device?!"`
+			`	The admiral taps the side of his nose. "Magic. Now go, before I make you leave."`
+				accept
+	on complete
+		"reputation: Kaltheim" = 10
+		event "kaltheim truce (blue)"
+		
+				
+mission "Enclave Blue 1B"
+	name "Report to Admiral Kuznetsov"
+	description "Report back to Admiral Kuznetsov on <destination>."
+	autosave
+	landing
+	source "Era'lgin'bl"
+	destination Seminar
+	to offer
+		has "Enclave Blue 1A: done"
+	on offer
+		conversation
+			`Upon landing, you find your ship beset by a large group of Kaltheim soldiers, clearly suspicious of your intentions; hoping to diffuse tensions, Lron'iirnak walks down the gangway first, followed by you. While most of the soldiers look at you, astonished, there are some who turn their backs on you, spitting on your feet as Lron'iirnak leads you through the crowd, escorted by a group of black-armoured soldiers.`
+			`	A few minutes and a short ride in what seems to be a vehicle powered by an oil-based fuel later, you arrive outside a tall, drab concrete building.`
+			`	"Our halls of power, are these!" whispers Lron'iirnak, in an almost reverent tone. The soldiers pile out of the vehicle, before marching you up to the buildings too-small steps, clearly not designed for human legs. You duck through the door, almost banging your head on the frame, and stand up in an enormous room, vaulted pillars of fire-shot marble leaping up to meet the ceiling. Before you can object, Lron'iirnak is herded off down a set of stairs to the side by a pair of the soldiers.`
+			`	"This way please," a small shining box on one of their chests says, the sound tinny and startling in this deserted hall- presumably, some special device designed to allow Kaltheim to speak human languages, although where they could have learned them, you have no idea. You follow the troop of fighters until you reach a pair of cast-iron doors, dark and cold, standing imposingly above you. The leader of your escorts presses a few buttons on a glowing, triskaidecagon-shaped keypad, and, with an ominous clanking and rumbling, the doors swing open, narrowly grazing your nose.`
+			`	A few hours later, you step out of the room, exhausted from too long of being pushed for questions by the Kaltheim high command. You are tired, but satisfied; you have managed to hash out a peace agreement with the Kaltheim, whereby they will fight side by side with the Enclave to vanquish XSZ. While you cannot help but wonder what their motives may be- all they asked for in return was to be allowed to mix and trade with humans- you do suspect that there may be some Pug influence involved, judging by the none-too hidden references to 'sky-elves' present in your conversations with Lron'iirnak on the way here. Apparently, a Kaltheim ship carrying some of their military commanders will be a day or so behind you.`
+			`	However, results are results, and you step out into the dim sunlight of Era'lgin'bl with a good future for this galaxy's people ahead.`
+				accept
+	on complete
+		dialog
+			`The Admiral is probably at the spaceport.`
+			
+			
+mission "Enclave Blue 1C"
+	name "Rescue the <npc>"
+	description "Travel to the Aetrus system, where the <npc> has been disabled. Rescue it, then escort it back to <destination>."
+	autosave
+	source Seminar
+	destination Jumblar
+	waypoint Aetrus
+	to offer
+		has "Enclave Blue 1B: done"
+	on offer
+		conversation
+			`You find Admiral Kuznetsov in one of the various coffee shops in the spaceport.`
+			choice
+				`	"I'm back, sir."`
+				`	"We've got a truce."`
+					goto 1
+			`	"Did we get a truce?" Kuznetsov says without looking up.`
+			`	"Yup," you reply.`
+			label 1
+			`	"Excellent!" the Admiral says, looking up from his holoscreen. "Do we have a direct line of contact with the Kaltheim now, or do we still have a language barrier?"`
+			choice
+				`	"It looks like they've got translation devices they can use to let them speak human languages."`
+					goto 2
+				`	"No; they don't have hyperspace relays that are compatible with ours."`
+			`	"That's a damn shame," Kuznetsov replies, scratching his beard.`
+			`	"They do have translation devices though," you say in response.`
+			label 2
+			`	"Now that's what we need!" he says. "I don't suppose you brought any back?"`
+			`	You shake your head.`
+			choice
+				`	"They said they'd send a warship with some of their commanders on, though; I'd expect they've got a load on there."`
+					goto 3
+				`	"Nope."`
+			`	"Oh well," Kuznetsov says.`
+			label 3
+			`	Suddenly, your communicator starts buzzing and whirring ominously; when you check it, you see two new messages.`
+			`	The first is a text file, albeit in complete gibberish which somewhat resembles the Kaltheim tongue. The second is a multi-layered, apparently intelligent- according to the metadata- program with a very inviting- looking "Install" button- or at least, you assume it's the "Install" button since it's also written in the Kaltheim language.`
+			choice
+				`	(Install the new program.)`
+					goto 4
+				`	(Show Admiral Kuznetsov.)`
+			`	You show the Admiral the messages; he frowns, then says, "Install that program."`
+			label 4
+			`	After a few minutes of whirring away, the screen of your communicator lights up green and pops up a small message:`
+			`	NEW LANGUAGE FILE SUCCESSFULLY INSTALLED;`
+			`	NOW TRANSLATING MESSAGES...`
+			``
+			`	After another short wait, your communicator throws up the first message, the text file, now completely translated:`
+			`		Commander,`
+			`	Kaltheim High Command has received word that the <npc>, the warship envoy we sent to you, has been disabled in the Aetrus system. Her last transmission said she was being attacked by the scum you are fighting against. However, we are in the middle of dealing with a minor uprising here, so we have no ships to spare- you will have to rescue the <npc>.`
+			choice
+				`	"What should we do?"`
+					goto 5
+				`	"Think they can deal with that uprising themselves?"`
+			`	"Probably," Kuznetsov replies. "Might be worth sending a small force to help them, though; I'll put Commander Bradford on it."`
+			choice
+				`	"What about me?"`
+			label 5
+			`	"You go get the <npc> and escort them to Jumblar," Kuznetsov says, packing up his stuff. "I'll meet you there."`
+				accept
+	on accept
+		set "language: Kaltheim"
+	npc accompany save
+		government Kaltheim
+		personality heroic vindictive derelict
+		system Aetrus
+		dialog
+			`As your crew EVAs to patch up the damaged Kaltheim vessel, you receive a message from the <npc>;`
+			`	"Our thanks, Commander <last>!"`
+		ship "Tyar'linhalf 67-G" "Scaa'wraken'farae"
+	on visit
+		dialog
+			`You have arrived on <planet>, but you left the <npc> behind!`
+	on fail
+		dialog	
+			`The <npc> has been destroyed. Reload your save if you want to continue with the story.`
+	on complete
+		conversation
+			`You guide the Scaa'wraken'farae in to land a few miles out from the spaceport on Jumblar- after all, there may still be some ill feeling among civilians and Enclave soldiers towards the Kaltheim. The crew of the alien ship come running off the gangway, making strange gestures at you which you assume is their way of thanking you.`
+			`	As teams of engineers and shipbuilders arrive from the shipyards in a large convoy of- surprisingly- aircraft and set to work making the Kaltheim warship as good as new, the foreman pulls you aside.`
+			`	"Admiral Kuznetsov wants you back at the spaceport," she says in a rough, almost Dirt Belt-like accent, reminding you of your youth back on New Boston.`
+			choice
+				`	"Tell him I'll be right there."`
+				`	"Thanks."`
+			`	The engineer nods in response.`
+			
+
+mission "Enclave Blue 1D"
+	name "Shipbuilding supplies"
+	description "Head to <destination> to meet up with a ship carrying supplies necessary to completing construction of the new Enclave warships."
+	autosave
+	source Jumblar
+	destination Emeria
+	to offer
+		has "Enclave Blue 1C: done"
+	on offer
+		conversation
+			`You are greeted by a lower-ranking Enclave officer outside Kuznetsov's office.`
+			`	"The Admiral's not available at the moment, sir," the officer says somewhat snootily. "Something came up which required his attention.`
+			choice
+				`	"What did he want to tell me?"`
+					goto 1
+				`	"What was it?"`
+			`	"He did not see fit to share that information," the officer- a Captain, you think- replies, frowning. "Anyway, he wanted you to escort a freighter from <destination> back to here. Something about supplies for a new warship."`
+			`	You thank the officer and begin to make preparations to leave.`
+				accept
+			label 1
+			`	"He wanted you to escort a freighter from <destination> back to here. Something about supplies for a new warship."`
+			`	You thank the officer and begin to make preparations to leave.`
+				accept
+				
+				
+mission "Enclave Blue 1E"
+	name "Shipbuilding supplies"
+	description "Escort the <npc> back to <destination> safely."
+	autosave
+	landing
+	source Emeria
+	destination Jumblar
+	to offer
+		has "Enclave Blue 1D: done"
+	on offer
+		dialog
+			`You meet up with the crew of the <npc> and make ready to head back to Jumblar.`
+				accept
+	npc accompany save
+		government Enclave
+		personality timid frugal escort
+		system Whuroxla
+		cargo 500 "Mysterious shipbuilding supplies"
+		ship "Leatherback" "R.N.S Banks"
+	on visit
+		dialog
+			`You have arrived on <planet>, but you left the <npc> behind!`
+	on fail
+		dialog
+			`The <npc> has been destroyed. Reload your save if you want to continue with the story.`
+	on complete
+		conversation
+			`You arrive to find the <npc>'s cargo being unloaded, and as the various crates are being unloaded, you notice something- they're sheets of pure galvium, one of the rarest metals anywhere you've seen- apart from a few minor uses in human tech, the only place you've seen galvium is as plating for the hulls of Quarg ships.`
+			choice
+				`	"Woah, where did that much galvium come from?"`
+				`	"That looks expensive."`
+					goto 1
+			`	"Nobody knows," one of the engineers nearby you says. "Apparently someone high up in the army was contacted anonymously by a private donor who gave us this to use on the new ships Kuznetsov's got us building." He gestures with his pen towards the near-complete form of one of the new warships you've been hearing about; looks like all it needs now is some armour in a few places.`
+			choice	
+				`	(Head to the spaceport to see Admiral Kuznetsov now.)`
+					accept
+			label 1
+			`	"Damn right," one of the engineers near you says with a grin.`
+			choice
+				`	(Head to the spaceport to see Admiral Kuznetsov now.)`
+					accept
+				
+				
+mission "Enclave Blue 2A"
+	name "Fleet to <planet>"
+	description "Escort a fleet of Enclave warships to <destination> in preparation for the first attacks against XSZ."
+	autosave
+	source Jumblar
+	destination "New Asgard"
+	to offer
+		has "Enclave Blue 1E: done"
+	on offer
+		conversation
+			`All the orders that are awaiting you- and all the other Enclave officers around here- are the words "FLEETS TO NEW ASGARD," in bright red on a massive holoscreen in the spaceport. You shrug and go to find some ships to bring with you.`
+				accept
+	npc accompany save
+		personality heroic vindictive escort
+		system Innenheim
+		government Enclave
+		fleet
+			names "republic capital"
+			variant
+				"Muesli Carrier" 3
+				"Apollo" 2
+		fleet
+			names "republic small"
+			variant
+				"Penguin" 2
+				"Enclave Destroyer" 3
+				"Sea Drake" 2
+	on fail
+		dialog
+			`The <npc> has been destroyed. Reload your save if you want to continue with the story.`
+	on visit
+		dialog
+			`You have arrived on <planet>, but you left the <npc> behind!`
+	on complete
+		conversation
+			`You arrive to find the spaceport on <planet> in a state of organised chaos, not unlike when this planet was first recaptured from XSZ, months ago. An impressive number of Kaltheim ships- most notably, FIVE Tyar'linhalf 67-Gs!- are landed on a small, fairly flat island a good kilometre or so out from the nearby coast, with both civilians and military personnel pointing at the blue and grey hulls, glinting in the sunlight.`
+			`	A few minutes after you land, a Destroyer comes swooping in low over the nearest city dome, flying unevenly, smoke trailing from one of its engines. The scorch marks and dents along the hull match the patterns created by XSZ's variation on the particle cannon, and, judging by the rogueish green stripes painted on it, its name is the R.N.S. Severn- Cathy's ship.`
+			choice
+				`	(Go find where Cathy's ship has touched down.)`
+			`	You follow the trail of acrid black smoke left by the R.N.S. Severn to a small hangar not far from the city. You arrive just in time to see the crew stepping off the gangplank as a dumpy little hovercar begins to tow the Severn inside the hangar, presumably for repairs.`
+			`	Scanning the survivors- a Destroyer usually carries around 30 crew- you see no sign of Cathy. Beginning to get worried, you move closer- only to see her distinctive sky-coloured hair, stained with oil and blood, pop up between some of her crew.`
+			choice
+				`	"Cathy!"`
+			`	She turns at the sound of your voice, pushing her way past the soldiers in the way.`
+			`	"<first>!" she says with a smile, the sunlight reflecting off her suit of mechanized battle-armour and almost dazzling you. "It's been ages since we've seen each other!"`
+			choice
+				`	"What happened with the Kaltheim? I heard Kuznetsov was sending you to help them out with an uprising."`
+					goto 1
+				`	"What happened to the Severn?"`
+			`	Cathy shrugs. "We were on our way back from helping out with the Kaltheim- even though I'm pretty sure we hindered them more than helped them- and we got jumped by some XSZ ships in the Aetrus system. We only barely escaped; the Drakes and the Muesli Carrier we took with us got completely wiped out."`
+				goto 2
+			label 1
+			`	Cathy shrugs. "I'm pretty sure we hindered them more than helped them- they barely needed us. On the way back, though, our fleet got jumped by some XSZ ships in the Aetrus system. We only barely escaped; the Drakes and the Muesli Carrier we took with us got completely wiped out."`
+			label 2
+			choice
+				`	"That's the same system that Kaltheim envoy ship got attacked in..."`
+					goto 3
+				`	"Surpised you're still in one piece."`
+			`	"I know, right?!" she replies. "I've been in some close scrapes before, but not like that." Cathy turns towards the hangar, where the tail end of the R.N.S. Severn has just about disappeared into the gloom. "Doubt she'll ever fly as a warship again," your fellow commander says mournfully. "First ship I ever got to be in command of, and now she's gone."`
+			label 5
+			choice
+				`	"If you want, you can ride on the <ship> during the battles coming up..."`
+			`	Cathy grins. "Really? Thanks!" she says. At that moment, you get a message on your communicator- from Kuznetsov, telling you to hurry the #### up and find him at the spaceport.`
+			choice
+				`	"Kuznetsov wants us at the spaceport."`
+			`	"Thanks for your service, everyone," Cathy says, turning to salute her crew. "Wouldn't have made it out of there without all of you."`
+			`	The engineers, soldiers, and pilots nod solemnly, raising some grimy plastic bottles of water in what you assume is a toast to the crews of the other ships from Cathy's fleet. "Come on," she says, turning away again. "To the spaceport!"`
+				accept
+			label 3
+			`	"That can't be a coincidence," Cathy says with a frown. "Should probably tell Kuznetsov about that, he's into detective-y stuff like that."`
+			choice
+				`	"Really? I thought Kuznetsov was just some boring old Admiral, I didn't think he had any interests outside of war and fancy warships..."`
+				`	"Definitely."`
+					goto 4
+			`	Cathy laughs. "That's probably true, to be honest; I suspect he's just pretending." She turns towards the hangar, where the tail end of the R.N.S. Severn has just about disappeared into the gloom. "Doubt she'll ever fly as a warship again," your fellow commander says mournfully. "First ship I ever got to be in command of, and now she's gone."`
+				goto 5
+			label 4
+			`	Cathy turns towards the hangar, where the tail end of the R.N.S. Severn has just about disappeared into the gloom. "Doubt she'll ever fly as a warship again," your fellow commander says mournfully. "First ship I ever got to be in command of, and now she's gone."`
+				goto 5
+				
+				
+mission "Enclave Blue 2B"
+	name "Attack <system>"
+	description "Along with a number of Kaltheim ships, capture the <system> system from XSZ."
+	autosave
+	source "New Asgard"
+	destination Fluorine
+	passengers 1
+	clearance
+	to offer
+		has "Enclave Blue 2A: done"
+	on offer
+		conversation
+			`"Commanders Bradford and <last>, reporting for orders," Cathy says to the officer on duty when you reach the spaceport. He looks up from the desk at the two of you, scrolling quickly through a document on his computer.`
+			`	"Admiral Kuznetsov is waiting for you in hall C," the officer says, curtly. You thank him and head down the appropriate cavernous corridor, eventually winding up in hall C, a long, low room with mildew in the corners; you suspect that this must have been a part of an older spaceport, considering how new the rest of the building is.`
+			`	An enormous, hexagonal table has been set up in the middle of the room, projecting a holographic view of what you assume to be Fluorine, with major settlements, defences and generally strategic areas marked in green, contrasting with the planet's rough, brownish landscapes. A small army of officers are stood around the table talking seriously as they manipulate arrays of small glowing dots in purple, orange and light blue; representations of XSZ, Enclave, and Kaltheim warships, according to Cathy.`
+			`	"We're prepping for the assault on <system>," Kuznetsov says, turning to the two of you. "Since you're late-" he says this with a quick glare- "I'll fill you in on what we know so far. Firstly-" Kuznetsov points towards an area on the hologram pulsing bright crimson- "this is where the authorities are all holed up. It isn't anywhere near the biggest settlement, but what it is, is an enormous cave network; presumably the remains of an old mine."`
+			choice
+				`	"We'll need a full-on ground assault force to take that down."`
+				`	"What else?"`
+					goto 1
+			`	The Admiral nods grimly. "And what's worse, is the temperatures down on the surface are incredibly low, so it'd be hard for us to even set up a siege of the caves, let alone send a force down there."`
+			`	"The Kaltheim have some pretty damn impressive heat weapons, don't they?" Cathy says thoughtfully. "Once we've got the rest of the planet secured, if they bombard the area around the caves with those weapons some fancy physics stuff should happen and make the rock expand and blow up, right?"`
+			`	Kuznetsov's face brightens. "That might actually work," he replies. "With no need for a ground force..."`
+			`	"What else?" you say.`
+			label 1
+			`	"The usual stuff," Kuznetsov says. "Ground-to-orbit weaponry around most of the towns and active mining complexes. Shouldn't be too hard."`
+			`	"Won't they have early-warning systems in place in Dvorak and Fallout, though?" Cathy asks. "It'd make sense. So they likely already know we're coming and we've got the Kaltheim with us."`
+			choice
+				`	"Probably, that's what everyone did during the Free Worlds war back home."`
+					goto 2
+				`	(Wait for Kuznetsov to say something.)`
+			`	"I'd expect so," Kuznetsov says. "Basic tactics."`
+				goto 3
+			label 2
+			`	"There's your answer," Kuznetsov says.`
+			label 3
+			`	Cathy nods.`
+			choice
+				`	"So basically, it should be easy apart from the nukes?"`
+				`	"Since the R.N.S. Severn isn't going to be flying any time soon, is it okay for Cathy to ride on board the <ship> with me?"`
+					goto 4
+			`	"Precisely," the Admiral replies.`
+			choice
+				`	"Since the R.N.S. Severn isn't going to be flying any time soon, is it okay for Cathy to ride on board the <ship> with me?"`
+			label 4
+			`	"Any preference, Commander?" Kuznetsov says, turning to Cathy. "Plan was for you to lead a division of your own but yours and <last>'s can be merged without too many changes to the plans being made."`
+			`	"I'm happy to go with <first>, sir," Cathy replies. "I'll wait and see if I can get my hands on one of your fancy new warships from Jumblar." Kuznetsov nods in response, and turns back to the meeting.`
+			`	You stick around for another hour or so until the battle planning gets boring.`
+				accept
+	npc
+		personality heroic vindictive escort
+		system Svind
+		government Enclave
+		fleet
+			names "republic capital"
+			fighters "republic fighter"
+			variant
+				"Muesli Carrier" 6
+				"Apollo" 4
+				"Dart" 40
+				"Enclave Lance" 40
+		fleet
+			names "republic small"
+			variant
+				"Penguin" 12
+				"Enclave Destroyer" 7
+				"Sea Drake" 9
+	npc
+		personality heroic vindictive escort
+		system Svind
+		government Enclave
+		fleet
+			names "kaltheim large"
+			variant
+				"Tyar'linhalf 67-G" 3
+				"Lenmig'sraor 52-T" 4
+		fleet
+			names "kaltheim small"
+			variant
+				"Kru'urlin 89-B" 5
+	npc kill
+		personality staying vindictive
+		government "XSZ Corporation"
+		system Indigo
+		fleet
+			names "syndicate capital"
+			variant
+				"Turbulence" 5
+				"Bloodhound" 3
+				"Turbulence (Nuclear)" 3
+		fleet
+			names "syndicate small"
+			variant
+				"Buzzard" 8
+		fleet
+			names "kor sestor fighter"
+			variant
+				"Scorched Earth" 3
+	on visit
+		dialog
+			`The battle isn't over yet. It would be immoral to stay here whilst the rest of your forces are dying up in orbit...`
+				launch
+	on complete
+		event "fluorine captured"
+		event "XSZ expansion 1" 3
+		event "XSZ expansion 2" 5
+		event "XSZ expansion 3" 6
+		
+mission "Enclave Blue 2C"
+	name "Warships to Fluorine"
+	description "Travel to <destination>, where you will find a number of the new Enclave warships waiting for you."
+	autosave
+	landing
+	source Fluorine
+	destination Jumblar
+	to offer
+		has "Enclave Blue 2B: done"
+	on offer
+		conversation
+			`Kuznetsov was right; it was an easy battle. You and Cathy step off the <ship>'s gangplank inside one of the outer landing halls at the spaceport; due to the frigid nature of conditions on Fluorine's surface, the spaceport was designed with interior landing pads, complete with airtight doors to prevent the inside heat from escaping.`
+			`	In the corridors leading to the main departures hall, you spot a group of Enclave soldiers staring distrustfully at the Kaltheim ship in the landing hall next to the <ship>'s.`
+			`	Upon you asking them as to why they're looking so hostile to the aliens, one of them- just a Corporal- says "One of their missiles hit an Apollo during the battle. They're saying it was an accident-" he gestures towards the nearby Kaltheim ship- "but I bet my hat they're lying, alien scum."`
+			choice
+				`	"I'm pretty sure they wouldn't do that; their ships took the bulk of XSZ's nuclear fire for us."`
+				`	"Probably are. I mean, I'm fairly sure they're being influenced by the Pug, and the Pug don't exactly have an awesome track record for honesty with humans, from my experiences with them."`
+					goto 1
+			`	"Tell me, did you lose anyone when they attacked us?" the Corporal replies, angrily. "Both my brother and my sister got killed when they took Frodo. Killed during the orbital bombardment. If you'd seen, first hand, what they did, you wouldn't trust them as blindly as you do, idiot!"`
+			choice
+				`	"To be fair, even if they didn't do that, they probably aren't being entirely honest with us; I mean, I'm fairly sure they're being influenced by the Pug, and the Pug don't exactly have an awesome track record for honesty with humans, from my experiences with them."`
+			label 1
+			`	He shrugs. "Probably."`
+			`	As you and Cathy are walking away, she says quietly to you, "That's not a good sign. Better tell Kuznetsov."`
+			choice
+				`	"Definitely."`
+				`	"Nah."`
+			`	A few minutes later, having asked around as to Kuznetsov's location, you find him in one of the more central landing halls, right next to one of the new warships from Jumblar. He turns to greet you and Cathy, grinning like a schoolboy.`
+			`	"Commanders!" the Admiral says animatedly. "May I present to you, the first of the new Caesennia-class heavy warships, the R.N.S. Tsavo!"`
+			choice
+				`	(Clap excitedly.)`
+					goto 3
+				`	"Hey... That's pretty good!"`
+					goto 3
+				`	"Hey... That's mildly adequate!"`
+				`	(Do nothing.)`
+			`	Kuznetsov looks disappointed. "I'd have thought you'd be more excited about that... Anyway, this is only the first of the new ships- the rest are still on <planet>, just having the last touches put on them. <last>, I need you to go there and escort them here; we'll need them for the assault on Latent. Any questions?"`
+			label 2
+			choice
+				`	"There's some animosity between our soldiers and the Kaltheim brewing, you might want to look into it...`
+					goto 4
+				`	"None."`
+					accept
+			label 3
+			`	Kuznetsov looks smug. "She's great, isn't she? Anyway, this is only the first of the new ships- the rest are still on <planet>, just having the last touches put on them. <last>, I need you to go there and escort them here; we'll need them for the assault on Latent. Any questions?"`
+				goto 2
+			label 4
+			`	He scratches his chin, brow furrowed. "One more battle," Kuznetsov says. "One more battle and we don't have to worry about it then. I'll deal with it then."`
+				accept
+	on complete
+		dialog
+			`At the spaceport, it seems like everyone is running around like a headless chicken; when you ask, you find that XSZ have captured the Anvyu system, and they seem to be heading for the other nearby systems as well. You should be quick here.`
+			`The crews on board the new ships turn out to be some of the best in the Enclave's navy, hand-picked by the Grand Admiral to crew them. You introduce yourself to the crews and make preparations to head back to Fluorine.`
+		event "caesennia available" 30
+		
+			
+mission "Enclave Blue 2D"
+	name "Warships to <planet>"
+	description "Escort five new Caesennia-class warships to <destination> in preparation for the assault on Latent."
+	autosave
+	landing
+	source Jumblar
+	destination Fluorine
+	to offer
+		has "Enclave Blue 2C: done"
+	npc accompany save
+		personality vindictive heroic escort
+		system Innenheim
+		government Enclave
+		fleet
+			names "Enclave Capital"
+			variant
+				"Caesennia" 5
+	on visit
+		dialog
+			`You have arrived on <planet>, but you left the <npc> behind!`
+	on fail
+		dialog	
+			`The <npc> has been destroyed. Reload your save if you want to continue with the story.`
+			
+			
+mission "Enclave Blue 2E"
+	name "Attack <system>"
+	description "Launch a final assault on <planet> in order to finally neutralise XSZ."
+	autosave
+	landing
+	source Fluorine
+	destination Latent
+	passengers 1
+	clearance
+	to offer
+		has "Enclave Blue 2D: done"
+	on offer
+		conversation
+			`Admiral Kuznetsov meets you as soon as you land, a grimace on his face despite the new Caesennias (Caesenniae?). "We're headed to Latent in the morning," he says flatly. "Tarkir is the only one of our worlds left standing on the other side of XSZ; we need to take out their administration before Tarkir falls as well."`
+			choice
+				`	"How many ships have we got?"`
+					goto 1
+				`	"Are the Kaltheim still with us?"`
+			`	"They are," Kuznetsov replies. "We had an awkward incident the other night where one of our officers- albeit very drunk and fairly low ranking- had a massive go at a Kaltheim and almost hit them, but other than that we're good."`
+			label 1
+			`	"Fleetwise, we've got these six Caesennias-" Kuznetsov gestures at the five you just brought here and his own, personal one- "ten Apollos, seven Muesli Carriers, a good fifteen or so Destroyers, an ungodly number of Sea Drakes and Penguins, and more Darts and Lances than you've killed pirates."`
+			choice
+				`	"What about the Kaltheim, what are they bringing to the table?"`
+					goto 2
+				`	"Noice."`
+				`	"Sounds good to me."`
+			`	"We leave at dawn," the Admiral replies, beginning to leave. "Commander Bradford's been assigned to the <ship> with you; you'll probably find her at the spaceport. Understood?"`
+			choice
+				`	"Understood."`
+					accept
+				`	"What about the Kaltheim, what are they bringing to the table?"`			
+			label 2
+			`	"From what their commanders have told me," the Admiral replies, "They've got seven of their big sexy warships, ten of their medium, less sexy warships, and too many of their light ones."`
+			choice
+				`	"Since when were warships sexy?"`
+					goto 3
+				`	"WAIT A SECOND. You find warships sexy too?!"`
+					goto 4
+				`	"Noice."`
+			`	"We leave at dawn," the Admiral replies, beginning to leave. "Commander Bradford's been assigned to the <ship> with you; you'll probably find her at the spaceport. Understood?"`
+			choice
+				`	"Understood."`
+					accept
+			label 3
+				`	"Since they were invented," Kuznetsov says snarkily, walking off.`
+					accept
+			label 4
+				`	"That is correct," Kuznetsov says, walking off.`
+					accept
+	npc
+		personality heroic vindictive escort
+		system Indigo
+		government Enclave
+		fleet
+			names "republic capital"
+			fighters "republic fighter"
+			variant
+				"Caesennia" 6
+				"Apollo" 10
+				"Muesli Carrier" 7
+				"Dart" 52
+				"Enclave Lance" 52
+		fleet
+			names "republic small"
+			variant
+				"Enclave Destroyer" 15
+				"Sea Drake" 17
+				"Penguin" 20
+	npc
+		personality heroic vindictive escort
+		system Indigo
+		government Kaltheim
+		fleet
+			names "kaltheim large"
+			variant
+				"Tyar'linhalf 67-G" 7
+		fleet	
+			names "kaltheim small"
+			variant
+				"Lenmig'sraor 52-T" 10
+				"Kru'urlin 89-B" 15
+	npc kill
+		personality heroic vindictive staying
+		system Maduras
+		government "XSZ Corporation"
+		fleet
+			names "syndicate capital"
+			variant
+				"Bloodhound" 7
+				"Turbulence (Nuclear)" 7
+		fleet
+			names "syndicate small"
+			variant
+				"Buzzard" 35
+				
+				
+mission "Enclave Blue 2F"
+	invisible
+	source Fluorine
+	to offer
+		has "Enclave Blue 2D: done"
+		not "Enclave Blue 2E: done"
+	on offer
+		conversation
+			`On the eve of what should be the last assault against XSZ, you find much of the Enclave forces stationed here in preparation for the battle flooding the few bars and gambling stores in the spaceport town.`
+			`	There are even a few wary-looking Kaltheim about, seemingly having been welcomed with open arms by some of the more drunken Enclave officers.`
+			`	You find Cathy in the Pedro's Arms, a squat, smoky building on the outskirts of the port. It appears that the soldiers Cathy is with are some old friends who used to crew the R.N.S. Severn with her, back before the Severn got destroyed- her twin sister Anna, who is almost identical to Cathy, if not for her luminous green hair in comparison to Cathy's blue; Bob, the Severn's chief engineer, a grizzled old man originally hailing from Cynic; and Steve, a relatively soft-spoken pilot from Tarkir, face split open by a large scar.`
+			`	You while away the night with Cathy and her crew, dreading the bloodshed to come in the morning.`
+				decline

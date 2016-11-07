@@ -150,7 +150,68 @@ ship "Buzzard"
 	gun -6 -43
 	explode "tiny explosion" 12
 	explode "small explosion" 16
-	description "The Buzzard is a light warship designed by the XSZ Corporation to be able to carry two of their heavy particle cannons. As a result, this ship has very little outfit space free, and has been designed to use the most efficient setup possible in order to extract the most value from the HFS-8B1."	
+	description "The Buzzard is a heavy warship designed by the XSZ Corporation to be able to carry two of their heavy particle cannons. As a result, this ship has very little outfit space free, and has been designed to use the most efficient setup possible in order to extract the most value from the HFS-8B1."	
+	
+	
+ship "Caesennia" 
+	sprite "ship/Caesennia"
+	attributes 
+		category "Heavy Warship" 
+		"cost" 20000000 
+		"shields" 25538 
+		"hull" 11891 
+		"required crew" 75 
+		"bunks" 120 
+		"mass" 1000
+		"drag" 12 
+		"heat dissipation" 2 
+		"fuel capacity" 700 
+		"cargo space" 50 
+		"outfit space" 1000 
+		"weapon capacity" 426 
+		"engine capacity" 322 
+		weapon 
+			"blast radius" 119 
+			"shield damage" 1189 
+			"hull damage" 595 
+			"hit force" 1784 
+	outfits
+		"Heavy Electron Beam" 4
+		"Heavy Electron Turret" 2
+		"Heavy Anti-Missile Turret" 2
+		"Torpedo Launcher" 3
+		"Torpedo" 60
+	
+		"Fusion Reactor"
+		"Blaze-Class Power Pack"
+		"SLD-95 Shield Generator" 2
+		
+		Hyperdrive
+		"A860 Atomic Thruster"
+		"A520 Atomic Thruster"
+		"A865 Atomic Steering"
+	
+	engine -16.5 173.5
+	engine 16.5 173.5
+	gun -62 -61.5 "Heavy Electron Beam"
+	gun 62 -61.5 "Heavy Electron Beam"
+	gun -58.5 -57.5 "Heavy Electron Beam"
+	gun 58.5 -57.5 "Heavy Electron Beam"
+	gun -16 -135.5 "Torpedo Launcher"
+	gun 16 -135.5 "Torpedo Launcher"
+	gun 0 -132.5 "Torpedo Launcher"
+	turret -10.5 121.5 "Heavy Electron Turret"
+	turret 10.5 121.5 "Heavy Electron Turret"
+	turret -18 -39 "Heavy Anti-Missile Turret"
+	turret 18 -39 "Heavy Anti-Missile Turret"
+	explode "tiny explosion" 50
+	explode "small explosion" 50
+	explode "medium explosion" 50
+	explode "large explosion" 50
+	explode "huge explosion" 20
+	"final explode" "final explosion large"
+	description "The Caesennia is an incredibly odd warship- one of the most heavily armoured in Enclave space, and yet it is also one of the fastest. (And most power hungry.)"
+	description "	The Caesennia was developed during the Enclave Civil War as a response to XSZ's alarming new nuclear arsenal- through some very clandestine contacts, the designers were able to get hold of some incredibly interesting metal which was used to plate the hull, resulting in the Caesennia's abnormally high hull strength."
 	
 	
 ship "Cheetah"
@@ -233,8 +294,8 @@ ship "Dart"
 	description "	The Dart was designed in tandem with the Apollo- this is where the resemblance between the two comes from."	
 
 	
-ship "Destroyer"
-	sprite "ship/Destroyer"
+ship "Enclave Destroyer"
+	sprite "ship/EnclaveDestroyer"
 	attributes
 		category "Medium Warship"
 		"cost" 4500000
@@ -278,8 +339,8 @@ ship "Destroyer"
 	explode "medium explosion" 24
 	explode "big explosion" 8
 	"final explode" "final explosion medium"
-	description "The Destroyer is a medium-sized warship produced by the Enclave's government shipyards as a fast-moving supplement for their capital ships."
-	description "	While somewhat less comprehensively equipped than the Republic's Frigate, the Destroyer makes up for this with larger capacity for engines, allowing it to attain a level of speed usually unseen in craft this size."
+	description "The Enclave Destroyer is a medium-sized warship produced by the Enclave's government shipyards as a fast-moving supplement for their capital ships."
+	description "	While somewhat less comprehensively equipped than the Republic's Frigate, the Enclave Destroyer makes up for this with larger capacity for engines, allowing it to attain a level of speed usually unseen in craft this size."
 	
 	
 ship "Flurry"

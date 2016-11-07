@@ -22,7 +22,7 @@ shipyard "Enclave Tier 2"
 	"Dart"
 	
 shipyard "Enclave Tier 3"
-	"Destroyer"
+	"Enclave Destroyer"
 	"Muesli Carrier"
 	"Apollo"
 	
@@ -51,10 +51,11 @@ shipyard "All ships"
 	"Ravager"
 	"Strike Drone"
 	"Anteater"
-	"Destroyer"
+	"Enclave Destroyer"
 	"Tyar'linhalf 67-G"
 	"Kru'urlin 89-B"
 	"Lenmig'sraor 52-T"
+	"Caesennia"
 
 	
 	

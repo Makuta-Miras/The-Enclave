@@ -1,3 +1,5 @@
+# Chapter one...
+
 mission "Enclave Opens 1A"
 	name "Muster the Fleet"
 	description "Travel to <destination> to inform the Free Worlds Senate of Parliament's decision to request a Free Worlds fleet accompany the Navy into the system just off of Suhail."
@@ -105,12 +107,9 @@ mission "Enclave Opens 1B"
 	to offer
 		has "main plot completed"
 		has "event: battle of algenib"
-	
 	to fail
 		or
 			has "Enclave Opens 1A: active"
-			has "Enclave Opens 1B: done"
-			
 	on complete
 		conversation
 			`When you request to be allowed a hearing in front of Parliament, the civil servants who register your request don't seem to be surprised; presumably, they had guessed you wouldn't react well to the news.`

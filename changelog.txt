@@ -1,3 +1,107 @@
+------------------------------------------------------------------------  v0.0.9  ------------------------------------------------------------------------------- 
+07/11/16
+
+-Finished off Blue 2C.
+-Renamed the Juno to the Caesennia.
+-Forgot to give the player clearance in Blue 2B.
+-Fixed some accidental incorrect governments.
+-Added the Caesennia.
+-Added Blue 2D, 2E and 2F. (2F is optional)
+-Quick bugfix in Endgame.
+
+
+06/11/16
+
+-Added animated stars. (Thanks @Derpy!)
+
+
+05/11/16
+
+-Added Blue 2B.
+
+
+04/11/16
+
+-Added Blue 2A.
+-Cathy's hair is now blue.
+-Renamed the image file for the Destroyer.
+-Some quick bugfixes.
+
+
+01/11/16
+
+-Continuing with Blue.
+-Altered the XSZ nuclear strikes mission so you don't get weirdness where the attacks on Arikv and Alleshafen don't trigger until after you've been to Jumblar.
+
+
+28/10/16
+
+-Finished off Blue 1A and 1B, added an event.
+-Fixing errors.
+
+
+26/10/16
+
+-Added Blue 1B.
+
+
+25/10/16
+
+-Continued with the first Blue mission.
+
+
+24/10/16
+
+-Renamed the Endgame missions.
+-Updated an event that could make you friendly with XSZ by killing Kaltheim.
+-Finished Endgame.
+-Began the Rec-style branch.
+
+
+23/10/16
+
+-Fixed a problem with Endgame 1B whereby the player couldn't land on Seminar after the battle.
+-Made Endgame 1B somewhat easier.
+-Started fixing compatibility issues with Phil's Flavours.
+-It is not Storm Crow Shipyards' time yet.
+
+
+22/10/16
+
+-Fixed some dodgy XSZ hails.
+
+
+21/10/16
+
+-Added Enclave Endgame 1E.
+-Added a few lines to an event in Endgame.
+
+
+20/10/16
+
+-Added Enclave Endgame 1D.
+-Put some "to offer" lines in on some of the Endgame missions which I'd forgotten.
+
+
+18/10/16
+
+-Added the next mission in Enclave Endgame.
+-Added an extra event that triggers upon Enclave Endgame 1B being offered so that Memus and Cispia get captured by the Kaltheim.
+-Changed Carmine's landscape during the nuke attack.
+
+
+17/10/16
+
+-Added the first two missions in Enclave Endgame.
+-Added some events.
+-Altered the Kaltheim Invasion event to change the planet description for New Scotland.
+
+
+06/10/16
+
+-Fixed a government in the series of XSZ nuking events.
+
+
 ------------------------------------------------------------------------  v0.0.8b -------------------------------------------------------------------------------
 26/09/16
 

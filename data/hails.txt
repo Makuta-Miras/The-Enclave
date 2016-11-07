@@ -62,9 +62,9 @@ phrase "friendly enclave"
 
 phrase "friendly xsz"
 	word
-		"Welcome to"
-		"You have entered"
-		"You are within"
+		"Welcome to "
+		"You have entered "
+		"You are within "
 	word
 		"The XSZ Corporation's "
 	word
@@ -74,10 +74,10 @@ phrase "friendly xsz"
 	word
 		". "
 	word
-		"The latest "
-		"The newest "
+		"Our latest "
+		"Our newest "
 		"Our most advanced "
-		"Cutting-edge "
+		"Our cutting-edge "
 	word
 		"anti-pirate weaponry is "
 		"tax-dodging software is "
@@ -108,13 +108,15 @@ phrase "friendly xsz"
 		"feminists "
 		"keyboard warriors "
 		"democracy "
+		"SJWs "
 	word
 		"and "
 	word
-		"control your own lives"
+		"submit to our will"
 		"help XSZ grow"
 		"contribute to economic stability"
 		"let humanity progress"
+		"make our founders filthy rich"
 	word
 		"!"
 		
