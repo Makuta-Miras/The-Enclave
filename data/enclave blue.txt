@@ -192,7 +192,7 @@ mission "Enclave Blue 1D"
 	on offer
 		conversation
 			`You are greeted by a lower-ranking Enclave officer outside Kuznetsov's office.`
-			`	"The Admiral's not available at the moment, sir," the officer says somewhat snootily. "Something came up which required his attention.`
+			`	"The Admiral's not available at the moment, sir," the officer says somewhat snootily. "Something came up which required his attention."`
 			choice
 				`	"What did he want to tell me?"`
 					goto 1
@@ -563,10 +563,10 @@ mission "Enclave Blue 2E"
 				`	"Understood."`
 					accept
 			label 3
-				`	"Since they were invented," Kuznetsov says snarkily, walking off.`
+			`	"Since they were invented," Kuznetsov says snarkily, walking off.`
 					accept
 			label 4
-				`	"That is correct," Kuznetsov says, walking off.`
+			`	"That is correct," Kuznetsov says, walking off.`
 					accept
 	npc
 		personality heroic vindictive escort
@@ -613,10 +613,64 @@ mission "Enclave Blue 2E"
 			names "syndicate small"
 			variant
 				"Buzzard" 35
-				
-				
+	on complete
+		event "latent captured"
+		conversation
+			`Latent's capital lies smoking and screaming, a not-so stark contrast to the last time you were here. From what you here, some districts were blown apart from underground; molten rock spewing up in violent eruptions from beneath the surface, presumably the result of orbital bombardment by the Kaltheim. You shudder at the thought of the lost lives.`
+			`	A small squadron of Flurries, escorted by an incredibly imposing Muesli Carrier, are taking off as you land, the faint blue glow beneath them belying the fact that they are currently only engaging their repulsor engines.`
+			`	"We did it," Cathy says wearily as she steps off the <ship> behind you, a makeshift bandage round her head already turning red.`
+			choice
+				`	"Wow, we did..."`
+					goto 1
+				`	"We should find an actual medic to swap that bandage of yours."`
+			`	She shrugs you away. "It's fine, I'll survive. It'll take a lot more than a stray bulkhead to kill me."`
+				goto 2
+			label 1
+			`	"I guess it's over, then?" she replies. "Back to normal... Hunting pirates, scanning for contraband... Seems almost boring, now."`
+			label 2
+			`	At that moment, a bright, burning projectile streaks up into the sky from the far side of the city to strike the departing Muesli Carrier.`
+			choice
+				`	"GET DOWN!"`
+			`	You throw yourself and Cathy to the floor underneath the <ship>'s gangplank- the other people milling around the landing site do the same, just as the projectile hits the carrier.`
+			``
+			``
+			``
+			``
+			`	You open your eyes, ears throbbing numbly. You roll out from under the gangplank, stepping on uneasily soft asphalt as you heave yourself to your feet.`
+			`	Of the Muesli Carrier, there is no trace. However, judging by the sizeable chunk ripped out of the skyscrapers above the city, you suspect there are no traces to be found; the projectile was quite clearly a nuke.`
+			`	You look around at the other soldiers, engineers and civilians still present. Oddly, many of them have thin streams of blood leaking from their ears. When you put your hand to your own, it comes away reddened.`
+			``
+			`	A few hours later, the insides of your ears itch as a small stream of miniscule nanobots stitch the remnants of your eardrums back together in the harsh light of a hospital.`
+			`	Within a few seconds, you begin to hear the faint whirrings of the nanobots, causing you to flinch instinctively. Another second or two, and you think you can hear at full capacity again. The nurse nearby presses a button on her computer, and the scuttle out of your ears, through a tube of antiseptic solution, and on to the victim lying on the bed adjacent to yours.`
+			`	You are quickly discharged, unceremoniously shoved out into a waiting room, where you find Cathy waiting for you. The wound on her head is almost gone now; just a faint red mark on her forehead, stitched up by the nanobots.`
+			`	"And all of a sudden, things start to go awfully again," Cathy says dejectedly.`
+			choice
+				`	"What?!"`
+			`	"Looks like XSZ had some nasty surprises in store for us," she continues. "We had a joint force of our troops and Kaltheim troops attacking the biggest bunker we know of- I just heard from Kuznetsov that some neurotoxin, or something, got pumped into the tunnels where they were; the Kaltheim immediately started spazzing out, and as soon as that happened XSZ troops just swamped the rest of our force. Never stood a chance."`
+			choice
+				`	"Did anyone survive?"`
+				`	"Uh-oh..."`
+			`	At that very moment, a large glass tube goes flying down the hallway on its repulsors. Inside is what you think is a Kaltheim, their skin deathly pale, limbs shaking, restrained by some very heavy-duty metal shackles.`
+			choice
+				`	"Guess there were some survivors, then."`
+				`	"Uh-oh..."`
+			`	Cathy turns to you, shocked. "That Kaltheim wasn't wearing their battle uniform," she says urgently.`
+			choice
+				`	"Is that important?"`
+					goto 3
+				`	"Surely they'd have just taken it off..."`
+			`	Cathy shakes her head. "No. That Kaltheim was just an engineer-" at your look of cynicism, she breaks off to say "Trust me, I know what their uniforms look like." before continuing: "Which means that they weren't down in the tunnels when XSZ released that bioweapon."`
+				goto 4
+			label 3
+			`	"That Kaltheim was just an engineer-" at your look of cynicism, Cathy breaks off to say "Trust me, I know what their uniforms look like." before continuing: "Which means that they weren't down in the tunnels when XSZ released that bioweapon."`
+			label 4
+			choice
+				`	"So, XSZ are releasing it in other spots as well. So what?"`
+				`	"So you think it's contagious?"`
+					goto 5
+			`	Cathy glares at you. "Stop being wilfully stupid," she replies angrily. "I'd say this probably means that neurotoxin is contagious; it's the only way "
+			
 mission "Enclave Blue 2F"
-	invisible
 	source Fluorine
 	to offer
 		has "Enclave Blue 2D: done"
