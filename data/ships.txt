@@ -267,7 +267,7 @@ ship "Dart"
 		"mass" 37
 		"drag" .81
 		"heat dissipation" .85
-		"outfit space" 100
+		"outfit space" 107
 		"weapon capacity" 20
 		"engine capacity" 40
 		weapon
