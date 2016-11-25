@@ -491,6 +491,9 @@ mission "Enclave Blue 2C"
 		dialog
 			`At the spaceport, it seems like everyone is running around like a headless chicken; when you ask, you find that XSZ have captured the Anvyu system, and they seem to be heading for the other nearby systems as well. You should be quick here.`
 			`The crews on board the new ships turn out to be some of the best in the Enclave's navy, hand-picked by the Grand Admiral to crew them. You introduce yourself to the crews and make preparations to head back to Fluorine.`
+		event "caesennia fleets I" 7
+		event "caesennia fleets II" 14
+		event "caesennia fleets III" 21
 		event "caesennia available" 30
 		
 			
@@ -614,7 +617,7 @@ mission "Enclave Blue 2E"
 			variant
 				"Buzzard" 35
 	on complete
-		event "latent captured"
+		event "battle of maduras"
 		conversation
 			`Latent's capital lies smoking and screaming, a not-so stark contrast to the last time you were here. From what you here, some districts were blown apart from underground; molten rock spewing up in violent eruptions from beneath the surface, presumably the result of orbital bombardment by the Kaltheim. You shudder at the thought of the lost lives.`
 			`	A small squadron of Flurries, escorted by an incredibly imposing Muesli Carrier, are taking off as you land, the faint blue glow beneath them belying the fact that they are currently only engaging their repulsor engines.`

@@ -490,8 +490,120 @@ event "XSZ expansion 3"
 	planet "Saal"
 		description `Saal is an idyllic farming world, entirely at contrast with most of the other human residents of this galaxy, who seem to act very similarly to the humans of the Deep. Most power generation facilities, instead of using fusion or fission to generate electricity, are in fact wind-powered.`
 		description `	Saal was barely touched by the recent XSZ attack; it seems XSZ have little to no interest in farming worlds.`
+
 		
+event "caesennia fleets I"
+	fleet "Enclave Capital"
+	government "Enclave"
+	names "republic capital"
+	fighters "republic fighter"
+	cargo 0
+	personality
+		heroic
+	variant 800
+		"Apollo"
+		"Dart" 2
+		"Sea Drake" 3
+	variant 700
+		"Apollo"
+		"Dart" 2
+		"Penguin" 5
+	variant 500
+		"Apollo" 2
+		"Muesli Carrier"
+		"Dart" 4
+		"Enclave Lance" 12
+		"Sea Drake" 2
+		"Penguin" 5
+	variant 10
+		"Apollo" 5
+		"Muesli Carrier" 5
+		"Sea Drake" 15
+		"Penguin" 20
+		"Dart" 70
+	variant 5
+		"Caesennia" 3
+		"Apollo" 2
+		"Sea Drake" 5
+		
+event "caesennia fleets II"
+	fleet "Enclave Capital"
+	government "Enclave"
+	names "republic capital"
+	fighters "republic fighter"
+	cargo 0
+	personality
+		heroic
+	variant 80
+		"Apollo"
+		"Dart" 2
+		"Sea Drake" 3
+	variant 70
+		"Apollo"
+		"Dart" 2
+		"Penguin" 5
+	variant 50
+		"Apollo" 2
+		"Muesli Carrier"
+		"Dart" 4
+		"Enclave Lance" 12
+		"Sea Drake" 2
+		"Penguin" 5
+	variant 1
+		"Apollo" 5
+		"Muesli Carrier" 5
+		"Sea Drake" 15
+		"Penguin" 20
+		"Dart" 70
+	variant 1
+		"Caesennia" 3
+		"Apollo" 2
+		"Sea Drake" 5
+		
+event "caesennia fleets III"
+	fleet "Enclave Capital"
+	government "Enclave"
+	names "republic capital"
+	fighters "republic fighter"
+	cargo 0
+	personality
+		heroic
+	variant 80
+		"Apollo"
+		"Caesennia"
+		"Dart" 2
+		"Sea Drake" 3
+	variant 70
+		"Caesennia" 2
+		"Dart" 2
+		"Penguin" 5
+	variant 50
+		"Apollo" 2
+		"Caesennia"
+		"Muesli Carrier"
+		"Dart" 4
+		"Enclave Lance" 12
+		"Sea Drake" 2
+		"Penguin" 5
+	variant 1
+		"Apollo" 5
+		"Caesennia" 3
+		"Muesli Carrier" 5
+		"Sea Drake" 15
+		"Penguin" 20
+		"Dart" 70
 
 event "caesennia available"
 	shipyard "Enclave Tier 3"
 		"Caesennia"
+		
+		
+event "battle of maduras"
+	system "Maduras"
+		government "Enclave"
+		fleet Trader 600
+		fleet Transporter 600
+		fleet "XSZ Small" 4000
+		fleet "XSZ Large" 6000
+		fleet "Enclave Patrol" 500
+		fleet "Enclave Capital" 800
