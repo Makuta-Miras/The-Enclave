@@ -668,8 +668,40 @@ mission "Enclave Blue 2E"
 				`	"So, XSZ are releasing it in other spots as well. So what?"`
 				`	"So you think it's contagious?"`
 					goto 5
-			`	Cathy glares at you. "Stop being wilfully stupid," she replies angrily. "I'd say this probably means that neurotoxin is contagious; it's the only way "
-			
+			`	Cathy glares at you. "Stop being wilfully stupid," she replies angrily. "I'd say this probably means that neurotoxin is contagious; it's the only plausible idea. Obviously, I'm no scientist, but still."`
+				goto 6
+			label 5
+			`	"Exactly!" she says.`
+			label 6
+			choice
+				`	"Right, then."`
+					goto 7
+				`	"It isn't any of our business though, right? The Kaltheim can deal with this themselves!"`
+			`	Cathy drops her head into her hands. "You're an imbecile," she says, her voice somewhat muffled.`
+			choice
+				`	"No, I'm not!"`
+					goto 8
+				`	"So?"`
+					goto 9
+				`	"That is correct."`
+					goto 10
+			label 7
+			`	"This is something more important than Kuznetsov has jurisdiction over," Cathy replies. "I guess we've probably got orders waiting for us at the spaceport about this."`
+			`	(NOTE: v0.0.9x ENDS HERE)`
+				accept
+			label 8
+			`	"You literally are," Cathy retorts. Actually looking at you now, somewhat disgruntled, she continues- "This is something more important than Kuznetsov has jurisdiction over. I guess we've probably got orders waiting for us at the spaceport about this, so I say we head there."`
+			`	(NOTE: v0.0.9x ENDS HERE)`
+				accept
+			label 9
+			`	"That isn't the point," Cathy snaps. "This is something more important than Kuznetsov has jurisdiction over. I guess we've probably got orders waiting for us at the spaceport about this, so I say we head there."`
+			`	(NOTE: v0.0.9x ENDS HERE)`
+				accept
+			label 10
+			`	Cathy sighs, taking her head out of her hands. "This is something more important than Kuznetsov has jurisdiction over. I guess we've probably got orders waiting for us at the spaceport about this, so I say we head there."`
+			`	(NOTE: v0.0.9x ENDS HERE)`
+				accept
+				
 mission "Enclave Blue 2F"
 	source Fluorine
 	to offer
