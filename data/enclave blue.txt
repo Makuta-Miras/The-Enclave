@@ -717,3 +717,172 @@ mission "Enclave Blue 2F"
 			`	You find Cathy in the Pedro's Arms, a squat, smoky building on the outskirts of the port. It appears that the soldiers Cathy is with are some old friends who used to crew the R.N.S. Severn with her, back before the Severn got destroyed- her twin sister Anna, who is almost identical to Cathy, if not for her luminous green hair in comparison to Cathy's blue; Bob, the Severn's chief engineer, a grizzled old man originally hailing from Cynic; and Steve, a relatively soft-spoken pilot from Tarkir, face split open by a large scar.`
 			`	You while away the night with Cathy and her crew, dreading the bloodshed to come in the morning.`
 				decline
+				
+				
+mission "Enclave Blue 3A"
+	name "Fight off XSZ"
+	description "Drive off the XSZ forces occupying the <system> system."
+	autosave
+	source Latent
+	destination Termite
+	clearance
+	to offer
+		has "Enclave Blue 2E: done"
+	on offer
+		conversation
+			`Having dropped Cathy off at the shipyards to try and find a Caesennia for herself, you find Admiral Kuznetsov sitting around at the summit of one of the many skyscrapers present in the capital city, oil-streaked boots up on the dark brown, mahogany desk of some XSZ official.`
+			choice
+				`	"Do we know what's happening with the Kaltheim yet, sir?"`
+			`	"Their doctors are saying it's some kind of contagion," Kuznetsov says, rubbing the side of his head. You notice the desk is literred with empty steel mugs, faint brown stains at the bottom of them. You doubt Kuznetsov has slept. "As a result," the Admiral continues, "They're pulling their troops back to their worlds; saying they want as many test subjects as possible."`
+			choice
+				`	"That sounds fair enough."`
+					goto 1
+				`	"Won't that just make it worse, having all those infected around the rest of their people?"`
+			`	"That's what I said," Kuznetsov replies with a faint tone of disgust in his voice. "But they wouldn't listen. Nothing we can do about that now though, so your next job is to just go through XSZ space and drive off their remaining mercs. If you manage to find any of their executives, I'll give you a bonus. All clear?"`
+			choice
+				`	"Yes sir."`
+					accept
+			label 1
+			`	"Your next job is to just go through XSZ space and drive off their remaining mercs," Kuznetsov replies. "If you manage to find any of their executives, I'll give you a bonus. All clear?"`
+			choice
+				`	"Yes sir."`
+					accept
+	npc
+		personality heroic vindictive escort
+		system Maduras
+		government Enclave
+		fleet
+			names "republic capital"
+			fighters "republic fighter"
+			variant
+				"Caesennia"
+				"Apollo" 3
+				"Muesli Carrier"
+				"Dart" 18
+		fleet
+			names "republic small"
+			variant
+				"Sea Drake" 3
+				"Penguin" 5
+	npc kill
+		personality heroic vindictive staying
+		system Finitum
+		government "XSZ Corporation"
+		fleet
+			names "syndicate capital"
+			variant
+				"Bloodhound" 
+				"Turbulence (Nuclear)" 2
+				"Turbulence" 3
+		fleet
+			names "syndicate small"
+			variant
+				"Buzzard" 4
+	on visit
+		dialog
+			`The battle isn't over yet. It would be immoral to stay here whilst the rest of your forces are dying up in orbit...`
+				launch
+	on complete
+		event "battle of finitum"
+		
+mission "Enclave Blue 3B"
+	name "Fight off XSZ"
+	description "Drive off the XSZ forces occupying the <system> system."
+	autosave
+	landing
+	source Termite
+	destination Crackle
+	clearance
+	to offer
+		has "Enclave Blue 3A: done"
+	on offer
+		conversation
+			`Having fought off the fairly ragtag XSZ mercs who were stationed here, you land at the spaceport. As your troops secure key areas of the city, a few Muesli Carriers fly overhead, their relative clumsiness belying the numbers of fighters within their bays.`
+			`	Now that your reinforcements are here, you make ready to attack the <system> system.`
+				accept
+	npc
+		personality heroic vindictive escort
+		system Finitum
+		government Enclave
+		fleet
+			names "republic capital"
+			fighters "republic fighter"
+			variant
+				"Apollo" 3
+				"Muesli Carrier" 4
+				"Dart" 54
+		fleet
+			names "republic small"
+			variant
+				"Sea Drake" 3
+				"Penguin" 2
+	npc kill
+		personality heroic vindictive staying
+		system Kaladesh
+		government "XSZ Corporation"
+		fleet
+			names "syndicate capital"
+			variant
+				"Bloodhound" 2
+				"Turbulence" 2
+		fleet
+			names "syndicate small"
+			variant
+				"Buzzard" 5
+	on visit
+		dialog
+			`The battle isn't over yet. It would be immoral to stay here whilst the rest of your forces are dying up in orbit...`
+				launch
+	on complete
+		event "battle of kaladesh"
+		event "cynic surrenders"
+		dialog
+			`While Cavalier Station likely still has some XSZ employees holed up in it, you dare not attack the station, in case you accidentally knock some asteroids down onto Crackle.`
+			`	As you begin to make ready to attack Cynic, in the Ark system, you receive a message from fleet command-`
+			`		'Commander <last>,`
+			`	The governing authorities on Cynic have destroyed the XSZ mercenaries occupying the Ark system and have acquiesced to joining the Enclave. Head straight to the Orff system, then wait for reinforcements before you attack Skryydr; our intelligence indicates that there's a worryingly large force gathered there.'`
+			
+mission "Enclave Blue 3C"
+	name "Fight off XSZ"
+	description "Drive off the XSZ forces occupying the <system> system."
+	autosave
+	landing
+	source Crackle
+	destination Magna
+	clearance
+	to offer
+		has "Enclave Blue 3B: done"
+	npc
+		personality heroic vindictive escort
+		system Kaladesh
+		government Enclave
+		fleet
+			names "republic capital"
+			fighters "republic fighter"
+			variant
+				"Apollo" 3
+				"Muesli Carrier" 4
+				"Dart" 54
+		fleet
+			names "republic small"
+			variant
+				"Sea Drake" 3
+				"Penguin" 2
+	npc kill
+		personality heroic vindictive staying
+		system Orff
+		government "XSZ Corporation"
+		fleet
+			names "syndicate capital"
+			variant
+				"Turbulence" 3
+		fleet
+			names "syndicate small"
+			variant
+				"Buzzard" 8
+	on visit
+		dialog
+			`The battle isn't over yet. It would be immoral to stay here whilst the rest of your forces are dying up in orbit...`
+				launch
+	on complete
+		event "battle of orff"
