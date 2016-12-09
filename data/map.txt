@@ -888,7 +888,6 @@ system Breijkip
 
 system Cheons
 	pos 4749.31 323.306
-	government Enclave
 	habitable 858.28
 	link Rumebali
 	link Thornton
@@ -1990,7 +1989,6 @@ system Four
 
 system Frill
 	pos 4788.61 502.955
-	government Enclave
 	habitable 1080
 	link Adke
 	link Gaenealf
@@ -2334,7 +2332,6 @@ system Hrau'ngri'liadien
 
 system Ibained
 	pos 4728.99 380.102
-	government Enclave
 	habitable 486.68
 	link Rumebali
 	link Akildocs
@@ -3282,7 +3279,6 @@ system Muraganda
 
 system Ninsug
 	pos 4824.61 497.955
-	government Enclave
 	habitable 2507.76
 	link Pipaeus
 	link Pralmia
@@ -3639,7 +3635,6 @@ system Pipaeus
 
 system Pralmia
 	pos 4800.61 418.955
-	government Enclave
 	habitable 320
 	link Ninsug
 	link Thornton
@@ -4525,7 +4520,6 @@ system Theurrhaeus
 
 system Thornton
 	pos 4765.61 407.955
-	government Enclave
 	habitable 5000
 	link Ninsug
 	link Pralmia

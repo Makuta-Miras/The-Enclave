@@ -886,3 +886,142 @@ mission "Enclave Blue 3C"
 				launch
 	on complete
 		event "battle of orff"
+		
+mission "Enclave Blue 3D"
+	name "Attack Mirrodin"
+	description "Wait for reinforcements to arrive, then attack the <system> system."
+	autosave
+	landing
+	source Magna
+	destination Mirrodin
+	clearance
+	to offer
+		has "Enclave Blue 3C: done"
+	on offer
+		conversation
+			`A small convoy of Muesli Carriers- escorted by a Caesennia- touches down not long after you have secured the spaceport city, leaking smoke; presumably they were attacked by some random XSZ ships during their flight here.`
+			`	"Commander <last>!" Admiral Kuznetsov shouts, stepping off the R.N.S. Tsavo and heading towards you.`
+			choice
+				`	"Yes, sir?"`
+			`	"Good work here," Kuznetsov replies, looking around at the surprisingly undamaged spaceport. "You heard about what's going on next door in Skryydr?"`
+			choice
+				`	"I heard about the fleets gathering there."`
+					goto 1
+				`	"No- what's happened?"`
+			`	"On the bright side," Kuznetsov begins, shaking his head, "Whichever exec was still paying XSZ's mercs is either dead or captured, because they've repainted their ships in pirate colours. On the bad side, that means that we've got a whole lot of pirates, in the middle of our space, armed with nukes, and who have now got fleets of independent pirate ships arriving every few hours in Skryydr."`
+			label 4
+			choice
+				`	"We'll be able to smash them, right? What are some pirates compared to our navy?"`
+				`	"That's worrying."`
+					goto 2
+				`	"Do we know how many ships they've got gathered there at the moment?"`
+					goto 3
+			`	Kuznetsov gives you a hard stare. "They're nuclear."`
+			choice
+				`	"Fine."`
+				`	"Forgot about that."`
+			label 2
+			`	The Admiral nods. "We're going to have to do this, no matter what, so plan is we're going to send in some Scorched Earths that we managed to capture from XSZ. They'll be operating with some rudimentary cloaking technology- it only masks their thermal and gravitational signatures- which will hopefully draw the fire of the nuclear ships, after which the bulk of our fleet can jump in, which should minimise casualties. Also, we've got a few squadrons still in transit from Maduras- they should be getting here in the next few hours. Don't head to Skryydr before they arrive; you won't have fun."`
+			`	"Any questions?"`
+			choice
+				`	"None."`
+					accept
+			label 1
+			`	"Whichever exec was still paying XSZ's mercs is either dead or captured, because they've repainted their ships in pirate colours," Kuznetsov replies. "However, that means that we've got a whole lot of pirates, in the middle of our space, armed with nukes, and who have now got fleets of other pirate ships arriving every few hours in Skryydr."`
+			goto 4
+			label 3
+			`	"Reports are suggesting that they've got somewhere in the region of fifty or so warships and interceptors parked in the system," Kuznetsov replies. "In addition to new fleets arriving every few hours."`
+			goto 4
+	npc
+		personality heroic vindictive
+		system Orff
+		government Enclave
+		fleet
+			names "republic capital"
+			fighters "republic fighter"
+			variant
+				"Apollo" 6
+				"Caesennia" 3
+				"Muesli Carrier" 5
+				"Enclave Lance" 30
+				"Dart" 42
+		fleet
+			names "republic small"
+			variant
+				"Sea Drake" 10
+				"Penguin" 15
+				"Enclave Destroyer" 7
+	npc
+		personality heroic vindictive
+		system Orff
+		government Enclave
+		ship "Caesennia" "R.N.S. Tsavo"
+	npc
+		personality heroic vindictive
+		system Ark
+		government Enclave
+		fleet
+			names "republic capital"
+			fighters "republic fighter"
+			variant
+				"Caesennia" 2
+				"Apollo"
+				"Dart" 2
+	npc
+		personality heroic vindictive
+		system Finitum
+		government Enclave
+		fleet
+			names "republic small"
+			variant
+				"Penguin" 5
+				"Sea Drake" 3
+				"Enclave Destroyer" 2
+	npc kill
+		personality heroic staying
+		system Skryydr
+		government Pirate
+		fleet
+			names "syndicate capital"
+			variant
+				"Bloodhound" 5
+				"Turbulence (Nuclear)" 3
+		fleet
+			names "syndicate small"
+			variant
+				"Buzzard" 15
+	npc kill
+		personality heroic entering staying
+		system Skryydr
+		government Pirate
+		fleet
+			names "syndicate capital"
+			variant
+				"Bloodhound" 2
+				"Turbulence (Nuclear)" 2
+		fleet
+			names "syndicate small"
+			variant
+				"Buzzard" 5
+	npc evade
+		personality timid plunders coward
+		system Smoline
+		government Pirate
+		fleet
+			names "pirate"
+			variant
+				"Penguin" 5
+				"Sea Drake" 3
+				"Turbulence"
+	npc evade
+		personality timid plunders coward
+		system Skryydr
+		government Pirate
+		fleet
+			names "pirate"
+			fighters "pirate"
+			variant
+				"Penguin" 6
+				"Sea Drake" 4
+				"Muesli Carrier"
+				"Enclave Lance" 12

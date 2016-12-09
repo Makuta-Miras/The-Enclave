@@ -494,104 +494,104 @@ event "XSZ expansion 3"
 		
 event "caesennia fleets I"
 	fleet "Enclave Capital"
-	government "Enclave"
-	names "republic capital"
-	fighters "republic fighter"
-	cargo 0
-	personality
-		heroic
-	variant 800
-		"Apollo"
-		"Dart" 2
-		"Sea Drake" 3
-	variant 700
-		"Apollo"
-		"Dart" 2
-		"Penguin" 5
-	variant 500
-		"Apollo" 2
-		"Muesli Carrier"
-		"Dart" 4
-		"Enclave Lance" 12
-		"Sea Drake" 2
-		"Penguin" 5
-	variant 10
-		"Apollo" 5
-		"Muesli Carrier" 5
-		"Sea Drake" 15
-		"Penguin" 20
-		"Dart" 70
-	variant 5
-		"Caesennia" 3
-		"Apollo" 2
-		"Sea Drake" 5
+		government "Enclave"
+		names "republic capital"
+		fighters "republic fighter"
+		cargo 0
+		personality
+			heroic
+		variant 800
+			"Apollo"
+			"Dart" 2
+			"Sea Drake" 3
+		variant 700
+			"Apollo"
+			"Dart" 2
+			"Penguin" 5
+		variant 500
+			"Apollo" 2
+			"Muesli Carrier"
+			"Dart" 4
+			"Enclave Lance" 12
+			"Sea Drake" 2
+			"Penguin" 5
+		variant 10
+			"Apollo" 5
+			"Muesli Carrier" 5
+			"Sea Drake" 15
+			"Penguin" 20
+			"Dart" 70
+		variant 5
+			"Caesennia" 3
+			"Apollo" 2
+			"Sea Drake" 5
 		
 event "caesennia fleets II"
 	fleet "Enclave Capital"
-	government "Enclave"
-	names "republic capital"
-	fighters "republic fighter"
-	cargo 0
-	personality
-		heroic
-	variant 80
-		"Apollo"
-		"Dart" 2
-		"Sea Drake" 3
-	variant 70
-		"Apollo"
-		"Dart" 2
-		"Penguin" 5
-	variant 50
-		"Apollo" 2
-		"Muesli Carrier"
-		"Dart" 4
-		"Enclave Lance" 12
-		"Sea Drake" 2
-		"Penguin" 5
-	variant 1
-		"Apollo" 5
-		"Muesli Carrier" 5
-		"Sea Drake" 15
-		"Penguin" 20
-		"Dart" 70
-	variant 1
-		"Caesennia" 3
-		"Apollo" 2
-		"Sea Drake" 5
+		government "Enclave"
+		names "republic capital"
+		fighters "republic fighter"
+		cargo 0
+		personality
+			heroic
+		variant 80
+			"Apollo"
+			"Dart" 2
+			"Sea Drake" 3
+		variant 70
+			"Apollo"
+			"Dart" 2
+			"Penguin" 5
+		variant 50
+			"Apollo" 2
+			"Muesli Carrier"
+			"Dart" 4
+			"Enclave Lance" 12
+			"Sea Drake" 2
+			"Penguin" 5
+		variant 1
+			"Apollo" 5
+			"Muesli Carrier" 5
+			"Sea Drake" 15
+			"Penguin" 20
+			"Dart" 70
+		variant 1
+			"Caesennia" 3
+			"Apollo" 2
+			"Sea Drake" 5
 		
 event "caesennia fleets III"
 	fleet "Enclave Capital"
-	government "Enclave"
-	names "republic capital"
-	fighters "republic fighter"
-	cargo 0
-	personality
-		heroic
-	variant 80
-		"Apollo"
-		"Caesennia"
-		"Dart" 2
-		"Sea Drake" 3
-	variant 70
-		"Caesennia" 2
-		"Dart" 2
-		"Penguin" 5
-	variant 50
-		"Apollo" 2
-		"Caesennia"
-		"Muesli Carrier"
-		"Dart" 4
-		"Enclave Lance" 12
-		"Sea Drake" 2
-		"Penguin" 5
-	variant 1
-		"Apollo" 5
-		"Caesennia" 3
-		"Muesli Carrier" 5
-		"Sea Drake" 15
-		"Penguin" 20
-		"Dart" 70
+		government "Enclave"
+		names "republic capital"
+		fighters "republic fighter"
+		cargo 0
+		personality
+			heroic
+		variant 80
+			"Apollo"
+			"Caesennia"
+			"Dart" 2
+			"Sea Drake" 3
+		variant 70
+			"Caesennia" 2
+			"Dart" 2
+			"Penguin" 5
+		variant 50
+			"Apollo" 2
+			"Caesennia"
+			"Muesli Carrier"
+			"Dart" 4
+			"Enclave Lance" 12
+			"Sea Drake" 2
+			"Penguin" 5
+		variant 1
+			"Apollo" 5
+			"Caesennia" 3
+			"Muesli Carrier" 5
+			"Sea Drake" 15
+			"Penguin" 20
+			"Dart" 70
 
 event "caesennia available"
 	shipyard "Enclave Tier 3"
@@ -647,6 +647,7 @@ event "cynic surrenders"
 
 event "battle of orff"
 	system "Orff"
+		government "Enclave"
 		fleet Trader 500
 		fleet Transporter 500
 		fleet "Enclave Patrol" 1000
@@ -655,3 +656,21 @@ event "battle of orff"
 		description `	While you hear Storm Crow Industries has plans to salvage some of XSZ's old designs and convert the shipyards here into a complex for manufacturing their own ships, nothing has happened as of yet. As a result, many families are out of work, with grumblings of discontent common among the populace.`
 		spaceport `The spaceport is an enormous complex, taking advantage of the massive space afforded by being in an area that has already been exhausted of its raw materials.`
 		spaceport `	A good third of the spaceport is filled by the now derelict and abandoned recruiting offices for various divisions of XSZ- XSZ Shipyards, XSZ Steel, XSZ Systems- and more.`
+	system "Anvyu"
+		government "Pirate"
+	system "Ithaos"
+		government "Pirate"
+	system "Theurrhaeus"
+		government "Pirate"
+	system "Five"
+		government "Pirate"
+	system "Pipaeus"
+		government "Pirate"
+	system "Smoline"
+		government "Pirate"
+	system "Adke"
+		government "Pirate"
+	system "Arkhos"
+		government "Pirate"
+	system "Skryydr"
+		government "Pirate"
