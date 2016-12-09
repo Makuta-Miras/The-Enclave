@@ -1,4 +1,15 @@
 ------------------------------------------------------------------------  v0.0.10  ------------------------------------------------------------------------------
+09/12/16
+
+-Finished up Blue 3C.
+
+
+27/11/16
+
+-Quick bugfix for the Caesennia fleet missions.
+-Made some systems Uninhabited.
+
+
 26/11/16
 
 -Added Blue 3A, 3B and 3C.
