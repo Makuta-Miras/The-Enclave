@@ -195,6 +195,7 @@ outfit "Iceberg Reactor"
 
 
 outfit "Polar Batteries"
+	plural "Polar Batteries"
 	category "Power"
 	cost 750000
 	thumbnail "outfit/polar_battery"
