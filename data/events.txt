@@ -653,7 +653,7 @@ event "battle of orff"
 		fleet "Enclave Patrol" 1000
 	planet "Magna"
 		description `Magna is a desolate planet, having been continually strip mined by XSZ for the past two centuries. However, there are a reasonable number of settlements here. The reason why? XSZ's largest shipyards were once located here, meaning thousands of people migrated here each year to fill the massive number of jobs required to work in the shipyards, as well as the mines.`
-		description `	While you hear Storm Crow Industries has plans to salvage some of XSZ's old designs and convert the shipyards here into a complex for manufacturing their own ships, nothing has happened as of yet. As a result, many families are out of work, with grumblings of discontent common among the populace.`
+		description `	While you hear Storm Crow Industries has plans to salvage some of XSZ's old designs and convert the shipyards here into a new complex for manufacturing their own ships, nothing has happened as of yet. As a result, many families are out of work, with grumblings of discontent common among the populace.`
 		spaceport `The spaceport is an enormous complex, taking advantage of the massive space afforded by being in an area that has already been exhausted of its raw materials.`
 		spaceport `	A good third of the spaceport is filled by the now derelict and abandoned recruiting offices for various divisions of XSZ- XSZ Shipyards, XSZ Steel, XSZ Systems- and more.`
 	system "Anvyu"

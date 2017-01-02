@@ -63,6 +63,7 @@ mission "Enclave Middle 1A"
 	autosave
 	source Jumblar
 	destination "New Asgard"
+	clearance
 	to offer
 		has "Part 3-2: done"
 	on offer
@@ -385,7 +386,7 @@ mission "Enclave Middle 2C-A"
 				`	"Still don't think it's a good idea."`
 				`	"Okay, then. Sounds good!"`
 					goto idea
-			`	"Fine, then," Annabele says. "It was just an idea, anyway."`
+			`	"Fine, then," Cathy says. "It was just an idea, anyway."`
 				goto diplomaticness
 			label idea
 			`	"Guess I'll see you in a week or so, then," Cathy says. You make preparations for takeoff.`

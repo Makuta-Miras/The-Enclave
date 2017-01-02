@@ -516,7 +516,7 @@ mission "Enclave Opens 2B"
 	
 	to offer
 		has "Enclave Opens 1B: done"
-		random < 30
+		random < 40
 		
 	on offer
 		dialog

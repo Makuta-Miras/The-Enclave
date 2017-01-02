@@ -836,7 +836,7 @@ mission "Enclave Blue 3B"
 	on complete
 		event "battle of kaladesh"
 		event "cynic surrenders"
-		dialog
+		conversation
 			`While Cavalier Station likely still has some XSZ employees holed up in it, you dare not attack the station, in case you accidentally knock some asteroids down onto Crackle.`
 			`	As you begin to make ready to attack Cynic, in the Ark system, you receive a message from fleet command-`
 			`		'Commander <last>,`
@@ -1003,9 +1003,9 @@ mission "Enclave Blue 3D"
 			names "syndicate small"
 			variant
 				"Buzzard" 5
-	npc evade
-		personality timid plunders coward
-		system Smoline
+	npc kill
+		personality plunders staying
+		system Skryydr
 		government Pirate
 		fleet
 			names "pirate"
@@ -1013,8 +1013,8 @@ mission "Enclave Blue 3D"
 				"Penguin" 5
 				"Sea Drake" 3
 				"Turbulence"
-	npc evade
-		personality timid plunders coward
+	npc kill
+		personality plunders staying
 		system Skryydr
 		government Pirate
 		fleet
@@ -1025,3 +1025,7 @@ mission "Enclave Blue 3D"
 				"Sea Drake" 4
 				"Muesli Carrier"
 				"Enclave Lance" 12
+	on visit
+		dialog
+			`The battle isn't over yet. It would be immoral to stay here whilst the rest of your forces are dying up in orbit...`
+				launch
