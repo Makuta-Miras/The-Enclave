@@ -1,16 +1,3 @@
-ship "Pug Arfecta" "Arfecta (De-Cloaked)"
-	outfits
-		"Tier 3 Anti-Missile" 2
-		"Pug Gridfire Turret" 3
-		
-		"Pug Biodefenses" 12
-		
-		"Pug Lohmar Thruster"
-		"Pug Lohmar Steering"
-		"Pug Lohmar Steering"
-		"Jump Drive"
-
-		
 ship "Lance" "Enclave Lance"
 	description "The Enclave's variant on the Lance was initially developed during the war against the Ascendancy, strangely mirroring the one used by the Republic Navy. However, the Enclave is now beginning to phase the Lance out, in favour of the more agile Dart."
 
@@ -43,3 +30,62 @@ ship "Turbulence" "Turbulence (Nuclear)"
 	gun -39.25 16 "Nuclear Missile"
 	description "This is XSZ Corporation's most dangerous ship- the nuclear-armed Turbulence."
 	description "	Eschewing traditional weaponry in favour of nukes, this variation on the Turbulence is, to be honest, pretty bloody terrifying to be facing."
+
+# Pirate ships
+
+ship "Apollo" "Apollo (Pirate)"
+	outfits
+		"Heavy Electron Turret" 4
+		"Heavy Electron Beam" 4
+		
+		"Fusion Reactor" 2
+		"SLD-24 Shield Generator"
+		"SLD-95 Shield Generator"
+		"Liquid Helium Cooler"
+		"Large Radar Jammer"
+		
+		Hyperdrive
+		"A525 Atomic Steering"
+		"A860 Atomic Thruster"
+	gun -15.5 -165.1 "Heavy Electron Beam"
+	gun -20.5 -154.6 "Heavy Electron Beam"
+	gun 21 -165 "Heavy Electron Beam"
+	gun 26 -154.6 "Heavy Electron Beam"
+	turret 0 -78 "Heavy Electron Turret"
+	turret 0 -3 "Heavy Electron Turret"
+	turret 23 118 "Heavy Electron Turret"
+	turret -18 118 "Heavy Electron Turret"
+	
+ship "Buzzard" "Buzzard (Pirate)"
+	outfits
+		"HFS-8B1 Particle Cannon" 2
+		
+		"Fission Reactor"
+		"SLD-15 Shield Generator"
+		"Cooling Ducts"
+		
+		"Greyhound Plasma Thruster"
+		"Greyhound Plasma Steering"
+		"Hyperdrive"
+		
+ship "Bloodhound" "Bloodhound (Pirate)"
+	outfits
+		"HFS-8B1 Particle Cannon" 2
+		"Heavy Electron Turret" 5
+		"Armageddon Core"
+		"Breeder Reactor"
+		"Blaze-Class Power Pack"
+		"SLD-68 Shield Generator"
+		"Liquid Helium Cooler"
+		"A370 Atomic Thruster"
+		"A525 Atomic Steering"
+		"Hyperdrive"
+	engine -24 180
+	engine 24 180
+	gun 23 -188 "HFS-8B1 Particle Cannon"
+	gun -23 -188 "HFS-8B1 Particle Cannon"
+	turret 75 -31 "Heavy Electron Turret"
+	turret -75 -31 "Heavy Electron Turret"
+	turret 0 140 "Heavy Electron Turret"
+	turret 30 44 "Heavy Electron Turret"
+	turret -30 44 "Heavy Electron Turret"

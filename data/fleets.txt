@@ -155,6 +155,83 @@ fleet "XSZ Nuclear"
 	variant 100
 		"Turbulence (Nuclear)"
 		
+
+fleet "enclave small pirate west"
+	government "Pirate"
+	names "pirate"
+	personality
+		plunders
+	variant 50
+		"Penguin" 2
+	variant 20
+		"Penguin"
+		"Sea Drake"
+	variant 10
+		"Penguin" 3
+		"Sea Drake" 2
+	variant 5
+		"Sea Drake" 2
+	variant 1
+		"Sea Drake" 4
+		"Penguin" 3
+		
+fleet "enclave large pirate west"
+	government "Pirate"
+	names "pirate"
+	personality
+		plunders
+	variant 30
+		"Apollo (Pirate)"
+	variant 40
+		"Sea Drake" 6
+	variant 50
+		"Penguin" 10
+	variant 20
+		"Apollo (Pirate)" 2
+	variant 10
+		"Apollo (Pirate)"
+		"Sea Drake" 5
+	variant 5
+		"Apollo (Pirate)" 5
+		
+fleet "enclave small pirate east"
+	government "Pirate"
+	names "pirate"
+	personality
+		plunders
+	variant 50
+		"Buzzard (Pirate)" 3
+	variant 50
+		"Buzzard (Pirate)"
+		"Penguin" 3
+	variant 30
+		"Buzzard (Pirate)" 2
+		"Penguin" 2
+	variant 10
+		"Buzzard (Pirate)" 3
+		"Penguin"
+	variant 1
+		"Buzzard (Pirate)" 7
+		
+fleet "enclave large pirate east"
+	government "Pirate"
+	names "pirate"
+	personality
+		plunders
+	variant 30
+		"Bloodhound (Pirate)"
+	variant 40
+		"Buzzard (Pirate)" 6
+	variant 50
+		"Penguin" 10
+	variant 20
+		"Bloodhound (Pirate)" 2
+	variant 10
+		"Bloodhound (Pirate)"
+		"Buzzard (Pirate)" 5
+	variant 5
+		"Bloodhound (Pirate)" 5	
+		
 		
 fleet "Kaltheim Small"
 	government "Kaltheim"

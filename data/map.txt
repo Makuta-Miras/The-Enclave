@@ -431,6 +431,10 @@ system Anvyu
 	fleet Trader 500
 	fleet Transporter 600
 	fleet "Enclave Patrol" 1600
+	fleet "enclave small pirate west" 800
+	fleet "enclave large pirate west" 1700
+	fleet "enclave small pirate east" 2300
+	fleet "enclave large pirate east" 2700
 	object
 		sprite "star (animated)/k5"
 			"frame rate" 0.2
@@ -1696,6 +1700,9 @@ system Five
 	fleet Trader 500
 	fleet Transporter 500
 	fleet "Enclave Patrol" 600
+	fleet "enclave small pirate west" 1700
+	fleet "enclave large pirate west" 1900
+	fleet "enclave small pirate east" 3000
 	object
 		sprite "star (animated)/g5"
 			"frame rate" 0.2
@@ -3580,6 +3587,8 @@ system Pipaeus
 	fleet Transporter 500
 	fleet "Enclave Patrol" 1000
 	fleet "Enclave Capital" 2000
+	fleet "enclave small pirate west" 1200
+	fleet "enclave large pirate west" 2100
 	object
 		sprite "star (animated)/f5"
 			"frame rate" 0.2
@@ -4102,6 +4111,8 @@ system Smoline
 	fleet "Enclave Capital" 5000
 	fleet "XSZ Small" 3000
 	fleet "XSZ Large" 5000
+	fleet "enclave small pirate west" 1200
+	fleet "enclave small pirate east" 1200
 	object
 		sprite "star (animated)/f5"
 			"frame rate" 0.2
@@ -4471,9 +4482,11 @@ system Theurrhaeus
 	trade Medical 830
 	trade Metal 350
 	trade Plastic 430
-	fleet Trader 3000
-	fleet Transporter 3000
-	fleet "Enclave Patrol" 2000
+	fleet Trader 600
+	fleet Transporter 600
+	fleet "Enclave Patrol" 1200
+	fleet "enclave small pirate west" 900
+	fleet "enclave large pirate west" 1500
 	object
 		sprite "star (animated)/m0"
 			"frame rate" 0.2

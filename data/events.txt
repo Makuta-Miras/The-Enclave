@@ -192,6 +192,8 @@ event "attack on carmine"
 		fleet "XSZ Small" 500
 		fleet "XSZ Large" 1000
 		fleet "XSZ Nuclear" 1500
+		fleet "enclave small pirate west" 1200
+		fleet "enclave large pirate west" 2100
 	system Smoline
 		government "XSZ Corporation"
 	planet Carmine
@@ -471,8 +473,8 @@ event "XSZ expansion 2"
 event "XSZ expansion 3"
 	system "Theurrhaeus"
 		government "XSZ Corporation"
-		fleet Trader 3000
-		fleet Transporter 3000
+		fleet Trader 600
+		fleet Transporter 600
 		fleet "Enclave Patrol" 2000
 		fleet "XSZ Small" 600
 		fleet "XSZ Large" 900
@@ -658,19 +660,113 @@ event "battle of orff"
 		spaceport `	A good third of the spaceport is filled by the now derelict and abandoned recruiting offices for various divisions of XSZ- XSZ Shipyards, XSZ Steel, XSZ Systems- and more.`
 	system "Anvyu"
 		government "Pirate"
+		fleet Trader 1500
+		fleet Transporter 1600
+		fleet "Enclave Patrol" 1800
+		fleet "enclave small pirate west" 1600
+		fleet "enclave large pirate west" 1900
 	system "Ithaos"
 		government "Pirate"
+		fleet Trader 900
+		fleet Transporter 900
+		fleet "Enclave Patrol" 2100
+		fleet "enclave small pirate west" 800
+		fleet "enclave large pirate west" 1100
 	system "Theurrhaeus"
 		government "Pirate"
+		fleet Trader 600
+		fleet Transporter 600
+		fleet "Enclave Patrol" 2000
+		fleet "enclave small pirate west" 600
+		fleet "enclave large pirate west" 900
 	system "Five"
 		government "Pirate"
+		fleet Trader 800
+		fleet Transporter 800
+		fleet "enclave small pirate west" 500
+		fleet "enclave large pirate west" 800
 	system "Pipaeus"
 		government "Pirate"
+		fleet "enclave small pirate west" 500
+		fleet "enclave large pirate west" 1000
 	system "Smoline"
 		government "Pirate"
+		fleet Trader 600
+		fleet Transporter 600
+		fleet "Enclave Patrol" 3000
+		fleet "Enclave Capital" 5000
+		fleet "enclave small pirate west" 1200
+		fleet "enclave small pirate east" 1200
 	system "Adke"
 		government "Pirate"
+		fleet "enclave small pirate west" 500
+		fleet "enclave large pirate west" 1000
 	system "Arkhos"
 		government "Pirate"
+		fleet Trader 900
+		fleet Transporter 900
+		fleet "Enclave Patrol" 2100
+		fleet "enclave small pirate west" 800
+		fleet "enclave small pirate west" 1100
 	system "Skryydr"
 		government "Pirate"
+		fleet Trader 600
+		fleet Transporter 600
+		fleet "enclave small pirate west" 300
+		fleet "enclave large pirate west" 400
+		
+event "battle of skryydr"
+	system "Skryydr"
+		government "Enclave"
+		fleet Trader 300
+		fleet Transporter 300
+		fleet "Enclave Patrol" 500
+		fleet "Enclave Capital" 600
+	planet "Mirrodin"
+		description `Mirrodin is an advanced space station designed by the XSZ Corporation. Encompassing much of the Skryydr system, Mirrodin is somewhat like a Quarg ringworld, albeit that it is constructed with proportions more suited to your human psyche. Mirrodin, like an onion, consists of layers; the spaceports are situated on the outer edge of the ring, followed by the outfitters and shipyards, then the commercial band, and then the residential sector, facing the star in the centre of the system.`
+		description `	The interior corridors are heavily scarred from the fighting between the occupying pirate forces and the Enclave's military in the first few weeks after the fall of XSZ. Luckily, Mirrodin's advanced hull prevented any hull breaches- relatively few civilians were killed during the fighting.`
+	system "Anvyu"
+		government "Enclave"
+			fleet Trader 500
+		fleet Transporter 600
+		fleet "Enclave Patrol" 1600
+		fleet "enclave small pirate west" 800
+		fleet "enclave large pirate west" 1700
+		fleet "enclave small pirate east" 2300
+		fleet "enclave large pirate east" 2700
+	system "Ithaos"
+		government "Enclave"
+	system "Theurrhaeus"
+		government "Enclave"
+		fleet Trader 600
+		fleet Transporter 600
+		fleet "Enclave Patrol" 1200
+		fleet "enclave small pirate west" 900
+		fleet "enclave large pirate west" 1500
+	system "Five"
+		government "Enclave"
+		fleet "Enclave Capital" 900
+		fleet Trader 500
+		fleet Transporter 500
+		fleet "Enclave Patrol" 600
+		fleet "enclave small pirate west" 1700
+		fleet "enclave large pirate west" 1900
+		fleet "enclave small pirate east" 3000
+	system "Pipaeus"
+		government "Enclave"
+		fleet Trader 500
+		fleet Transporter 500
+		fleet "Enclave Patrol" 1000
+		fleet "Enclave Capital" 2000
+		fleet "enclave small pirate west" 1200
+		fleet "enclave large pirate west" 2100
+	system "Smoline"
+		government "Enclave"
+		fleet Trader 600
+		fleet Transporter 600
+		fleet "Enclave Patrol" 3000
+		fleet "Enclave Capital" 5000
+		fleet "enclave small pirate west" 1200
+		fleet "enclave small pirate east" 1200
+	system "Arkhos"
+		government "Enclave"

@@ -38,7 +38,7 @@ shipyard "All ships"
 	"Flurry"
 	"Buzzard"
 	"Turbulence"
-	"Nuclear Turbulence"
+	"Turbulence (Nuclear)"
 	"Bloodhound"
 	"Scorched Earth"
 	"Leatherback"
@@ -56,6 +56,9 @@ shipyard "All ships"
 	"Kru'urlin 89-B"
 	"Lenmig'sraor 52-T"
 	"Caesennia"
+	"Apollo (Pirate)"
+	"Buzzard (Pirate)"
+	"Bloodhound (Pirate)"
 
 	
 	

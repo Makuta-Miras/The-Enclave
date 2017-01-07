@@ -1,4 +1,15 @@
 ------------------------------------------------------------------------  v0.0.10  ------------------------------------------------------------------------------
+07/01/17
+
+-Added pirate fleets.
+-Added pirate fleets to Smoline, Pipaeus, Anvyu, Five and Theurrhaeus.
+-Updated the Battle of Orff event to add pirate fleets to the western XSZ systems.
+-Removed the cloak-less Arfecta.
+-Added Pirate variants of the Apollo, Buzzard and Bloodhound.
+-Added an event for the Battle of Skryydr.
+-Began Enclave Blue 4A.
+
+
 19/12/16
 
 -Added a few words to the Battle of Orff event.
