@@ -5,7 +5,7 @@ mission "Pug in Enclave galaxy"
 		government Pug
 		personality heroic vindictive staying
 		system "Pug Morbosa"
-		ship "Arfecta (De-Cloaked)" "Yot Hort"
+		ship "Pug Arfecta" "Yot Hort"
 
 		
 # Add outfitters to Helheim so as not to conflict with other mods.
