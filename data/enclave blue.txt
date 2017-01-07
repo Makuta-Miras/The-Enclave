@@ -1029,3 +1029,21 @@ mission "Enclave Blue 3D"
 		dialog
 			`The battle isn't over yet. It would be immoral to stay here whilst the rest of your forces are dying up in orbit...`
 				launch
+	on complete
+		event "battle of skryydr"
+
+	
+mission "Enclave Blue 4A"
+	name "Report to <planet>"
+	description "Locate Forward Command on <stopovers>, then report to the Kaltheim on <planet>."
+	autosave
+	landing
+	source Mirrodin
+	stopover Maduras
+	destination Era'lgin'bl
+	to offer
+		has "Enclave Blue 3D: done"
+	on offer
+		conversation
+			`You land on Mirrodin just as the last of the internal fighting is dying down- by the time you have checked your ship for any damage that went unnoticed during the battle, Mirrodin has been secured.`
+			`	
