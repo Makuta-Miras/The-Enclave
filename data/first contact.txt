@@ -3,11 +3,7 @@ mission "First Contact: Enclave"
 	autosave
 	source
 		attributes enclave
-	destination Arikv	
-	to offer
-		or
-			has "Enclave Opens A: done"
-			has "Enclave Opens B: done"
+	destination Arikv
 	on offer
 		conversation
 			`The landing pad is deserted as your ship touches down, yet as you walk out into this world in a new galaxy, surprisingly, a group of humans exit the main spaceport building and begin walking towards you.`
@@ -59,11 +55,7 @@ mission "First Contact: Kaltheim"
 	autosave
 	source
 		attributes kaltheim
-	destination Arikv	
-	to offer
-		or
-			has "Enclave Opens A: done"
-			has "Enclave Opens B: done"
+	destination Arikv
 	on offer
 		"reputation: Kaltheim" = 500
 		conversation
