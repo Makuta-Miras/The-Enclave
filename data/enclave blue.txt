@@ -249,6 +249,7 @@ mission "Enclave Blue 1E"
 					accept
 				
 				
+				
 mission "Enclave Blue 2A"
 	name "Fleet to <planet>"
 	description "Escort a fleet of Enclave warships to <destination> in preparation for the first attacks against XSZ."
@@ -400,7 +401,7 @@ mission "Enclave Blue 2B"
 	npc
 		personality heroic vindictive escort
 		system Svind
-		government Enclave
+		government Kaltheim
 		fleet
 			names "kaltheim large"
 			variant
@@ -719,6 +720,7 @@ mission "Enclave Blue 2F"
 				decline
 				
 				
+				
 mission "Enclave Blue 3A"
 	name "Fight off XSZ"
 	description "Drive off the XSZ forces occupying the <system> system."
@@ -928,10 +930,10 @@ mission "Enclave Blue 3D"
 					accept
 			label 1
 			`	"Whichever exec was still paying XSZ's mercs is either dead or captured, because they've repainted their ships in pirate colours," Kuznetsov replies. "However, that means that we've got a whole lot of pirates, in the middle of our space, armed with nukes, and who have now got fleets of other pirate ships arriving every few hours in Skryydr."`
-			goto 4
+				goto 4
 			label 3
 			`	"Reports are suggesting that they've got somewhere in the region of fifty or so warships and interceptors parked in the system," Kuznetsov replies. "In addition to new fleets arriving every few hours."`
-			goto 4
+				goto 4
 	npc
 		personality heroic vindictive
 		system Orff
@@ -991,7 +993,7 @@ mission "Enclave Blue 3D"
 			variant
 				"Buzzard" 15
 	npc kill
-		personality heroic entering staying
+		personality heroic staying
 		system Skryydr
 		government Pirate
 		fleet
@@ -1032,6 +1034,7 @@ mission "Enclave Blue 3D"
 	on complete
 		event "battle of skryydr"
 
+		
 	
 mission "Enclave Blue 4A"
 	name "Report to <planet>"
@@ -1046,4 +1049,23 @@ mission "Enclave Blue 4A"
 	on offer
 		conversation
 			`You land on Mirrodin just as the last of the internal fighting is dying down- by the time you have checked your ship for any damage that went unnoticed during the battle, Mirrodin has been secured.`
-			`	
+			`	The inhabitants- mostly wealthy, arrogant individuals who moved here eager for the social claim of living on the most advanced space station in the galaxy, are nowhere to be seen; it appears, out of those who were not killed during the pirate occupation, that they are hidden in their homes, a wise enough choice.`
+			`	As you stand around waiting for orders- Admiral Kuznetsov is nowhere to be seen- your communicator starts beeping.`
+			`	Upon checking it, you find it to be a message from the Kaltheim-`
+			`	Commander <last>,`
+			`		Your help is required. The bioweapon is deadlier than first assumed. Entire cities have been wiped out.`
+			`		Inform your commanders of your absence and report to us on <planet>.`
+				accept
+	on stopover
+		dialog
+			`You contact the officer in charge of the temporary Forward Command base on Maduras and submit your form notifying the navy of your absence, then make preparations to leave for Kaltheim space.`
+	on visit
+		dialog
+			`You have arrived on <planet>, but you have not notified the Enclave of your absence- head to <stopovers> to do so before returning here.`
+			
+mission "Enclave Blue 4B"
+	name "Kaltheim Medical Aid"
+	description "Find the facility of Kaltheim scientists researching the bioweapon currently affecting the Kaltheim."
+	landing
+	source Era'lgin'bl
+	destination 

@@ -724,10 +724,10 @@ event "battle of skryydr"
 		fleet "Enclave Capital" 600
 	planet "Mirrodin"
 		description `Mirrodin is an advanced space station designed by the XSZ Corporation. Encompassing much of the Skryydr system, Mirrodin is somewhat like a Quarg ringworld, albeit that it is constructed with proportions more suited to your human psyche. Mirrodin, like an onion, consists of layers; the spaceports are situated on the outer edge of the ring, followed by the outfitters and shipyards, then the commercial band, and then the residential sector, facing the star in the centre of the system.`
-		description `	The interior corridors are heavily scarred from the fighting between the occupying pirate forces and the Enclave's military in the first few weeks after the fall of XSZ. Luckily, Mirrodin's advanced hull prevented any hull breaches- relatively few civilians were killed during the fighting.`
+		description `	The interior corridors are heavily scarred from the fighting between the occupying pirate forces and the Enclave's military in the weeks after the fall of XSZ. Luckily, Mirrodin's advanced hull prevented any breaches- relatively few civilians were killed during the fighting.`
 	system "Anvyu"
 		government "Enclave"
-			fleet Trader 500
+		fleet Trader 500
 		fleet Transporter 600
 		fleet "Enclave Patrol" 1600
 		fleet "enclave small pirate west" 800
