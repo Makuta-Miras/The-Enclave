@@ -1042,7 +1042,7 @@ mission "Enclave Blue 4A"
 	autosave
 	landing
 	source Mirrodin
-	stopover Maduras
+	stopover "Maduras"
 	destination Era'lgin'bl
 	to offer
 		has "Enclave Blue 3D: done"
@@ -1064,8 +1064,43 @@ mission "Enclave Blue 4A"
 			`You have arrived on <planet>, but you have not notified the Enclave of your absence- head to <stopovers> to do so before returning here.`
 			
 mission "Enclave Blue 4B"
-	name "Kaltheim Medical Aid"
+	name "Visit scientists on <planet>"
 	description "Find the facility of Kaltheim scientists researching the bioweapon currently affecting the Kaltheim."
 	landing
 	source Era'lgin'bl
-	destination 
+	destination Kri'eg'lyen
+	to offer
+		has "Enclave Blue 4A: done"
+	on offer
+		conversation
+			`The capital city is deathly silent, a stark contrast to how it was the last time you were here, before the fall of XSZ.`
+			`	You are met outside the building you visited last time by a small platoon of Kaltheim soldiers dressed in what appear to be almost armoured spacesuits. Over the course of a few hours, they escort you out of the city and to what you assume is some kind of underground complex in the wilds outside of the city- although you cannot be sure, thanks to the stifling blindfold that has been placed around your head.`
+			`	Upon the removal of your blindfold, your eyes take a few seconds to adjust to the dim red light within this room, and the stumpy, three-armed shapes moving about within.`
+			`	"Commander," one of the Kaltheim inside says, their native tongue drowned out by the echoing of their translator. "Our thanks for coming when you were summoned."`
+			`	Their speech is punctuated with the occasional cough.`
+			choice
+				`	"What do you need me to help with?"`
+					goto 1
+				`	"Why do you need me, instead of just one of your own operatives?"`
+			`	"Because this contagion which affects us, is contagious," they reply. "Too many of our lives have been lost already to... what do you call it... this bioweapon. We cannot risk more of our citizens being infected. Thus the quarantine."`
+			choice
+				`	"Fair enough. What do you need me to do?"`
+			label 1
+			`	"The primary facility has been established on <destination>," the Kaltheim says. "Report to our scientists there; they requested your help, so they should have tasks for you."`
+			choice
+				`	"Happy to help."`
+				`	"I just hope we can find a cure for the weapon."`
+			`	They nod. "Good luck, Commander <last>."`
+				accept
+	
+mission "Enclave Blue 4C"
+	name "Investigate the XSZ bioweapon"
+	description "Begin searching for any samples of the processes used to create the bioweapon XSZ used against the Kaltheim."
+	landing
+	source Kri'eg'lyen
+	to offer
+		has "Enclave Blue 4B: done"
+	on offer
+		conversation
+			`The facility's doors open silently, the darkened glass panels moving gently downwards to allow you access.`
+			`	As you step in, the receptionist
