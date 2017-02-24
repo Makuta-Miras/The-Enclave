@@ -1,4 +1,9 @@
 ------------------------------------------------------------------------  v0.0.10  ------------------------------------------------------------------------------
+24/02/17
+
+-Moved Xenos further west to make the gap unjumpable without the hyperspace link.
+
+
 29/01/17
 
 -Added Blue 4B and began Blue 4C.

@@ -4918,7 +4918,7 @@ system Whuroxla
 			period 12.7484
 
 system Xenos
-	pos -848.78 -338
+	pos -878.78 -338
 	government Republic
 	habitable 625
 	asteroids "large rock" 1 4.0608
