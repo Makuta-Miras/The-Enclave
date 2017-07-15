@@ -1,11 +1,7 @@
 
-galaxy "Enclave Galaxy"
+galaxy "Tyridium"
 	pos 5000 500
 	sprite ui/EnclaveGalaxy
-
-galaxy Labels
-	pos 5000 500
-	sprite label/Labels
 
 system Abomin
 	pos 4806.53 362.251
@@ -3200,7 +3196,7 @@ system Mezzanine
 	fleet Transporter 1000
 	object
 		sprite "star (animated)/neutron"
-			"frame rate" 40
+			"frame rate" 18
 		period 10
 	object
 		sprite planet/cloud2
@@ -5442,11 +5438,12 @@ planet Puggleswap
 	spaceport `		A`
 	spaceport `			C`
 	spaceport `				E`
-	spaceport `			P`
-	spaceport `		O`
-	spaceport `	R`
+	spaceport `				P`
+	spaceport `			O`
+	spaceport `		R`
 	spaceport `	T`
 	shipyard "All ships"
+	outfitter "Enclave.mod outfits"
 
 planet Quaver
 	attributes enclave notjumblar

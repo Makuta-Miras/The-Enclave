@@ -151,6 +151,8 @@ outfitter "Enclave.mod outfits"
 	"Heavy Electron Beam"
 	"Kelvin Turret"
 	"Kelvin Beam"
+	"Engine Destabiliser"
+	"Engine Destabiliser Turret"
 	
 	
 outfitter "Ascendancy Miniaturised"

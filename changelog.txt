@@ -1,4 +1,12 @@
 ------------------------------------------------------------------------  v0.0.10  ------------------------------------------------------------------------------
+15/07/17
+
+-Added the Destabiliser and Destabiliser Turret
+-Removed the labels because they're bad
+-Removed the shield heat variable for the Kaltheim shields because the negative value messes things up with outfitting
+-Added a description for the Kelvin Turret
+
+
 24/02/17
 
 -Moved Xenos further west to make the gap unjumpable without the hyperspace link.

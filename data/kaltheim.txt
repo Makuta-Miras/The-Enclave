@@ -130,8 +130,78 @@ outfit "Kelvin Turret"
 		"firing heat" 4.7
 		"shield damage" 7.9
 		"hull damage" 8.6
+	description "For greater firepower, the Kaltheim mounted two of their already formidable Kelvin Beams onto a rotating turret. While the energy requirements for this weapon are high, so is the damage output."
 
-
+	
+outfit "Engine Destabiliser"
+	category "Guns"
+	cost 950000
+	thumbnail "outfit/destabiliser"
+	"mass" 45
+	"outfit space" -45
+	"weapon capacity" -45
+	"gun ports" -1
+	weapon
+		sprite "projectile/Destabiliser"
+			"frame rate" 60
+		sound "destabiliser"
+		"hit effect" "destabiliser"
+		"inaccuracy" .7
+		"velocity" 500
+		"lifetime" 1
+		"reload" 1
+		"firing energy" 8.2
+		"firing heat" 2.0
+		"shield damage" 2.3
+		"hull damage" 1.9
+		"slowing damage" -20
+		"hit force" 30
+	description "Kaltheim ships have frequently had problems with preventing enemy ships from jumping into hyperspace; while Phase Missiles are somewhat effective, they are also rather expensive and can be foiled by anti-missile systems."
+	description "	As a result, the Engine Destabiliser was built, designed to mess with the output of the target's engines, making their main thrusters and steering ineffective for a time."
+	description "	The Destabiliser also has the side effect of the target ship being thrown off into space once the weapon's effects begin to recede."
+		
+effect "destabiliser"
+	sprite "effect/destabiliser"
+		"random start frame"
+		"frame rate" 10
+	"lifetime" 0.5
+	"random angle" 360
+	"velocity scale" -.05
+	
+outfit "Engine Destabiliser Turret"
+	category "Turrets"
+	cost 1572000
+	thumbnail "outfit/destabiliser turret"
+	"mass" 80
+	"outfit space" -80
+	"weapon capacity" -80
+	"turret mounts" -1
+	weapon
+		sprite "projectile/Destabiliser2x"
+			"frame rate" 60
+		sound "destabiliser"
+		"hit effect" "destabiliser2"
+		"inaccuracy" 1.2
+		"velocity" 500
+		"lifetime" 1
+		"reload" 1
+		"firing energy" 9
+		"firing heat" 2.3
+		"shield damage" 2.7
+		"hull damage" 2.4
+		"slowing damage" -24
+		"hit force" 62
+	description "In order to allow more slowly-turning Kaltheim ships to hold their targets within range, two Engine Destabilisers were placed on a rotating turret, resulting in a far heavier, but far more powerful, weapon."
+	
+effect "destabiliser2"
+	sprite "effect/2destabiliser"
+		"random start frame"
+		"frame rate" 10
+	"lifetime" 0.5
+	"random angle" 360
+	"velocity scale" -.05
+	
+		
 # Shields:	
 	
 outfit "Tundra-Class Shield Generator"
@@ -142,7 +212,6 @@ outfit "Tundra-Class Shield Generator"
 	"outfit space" -25
 	"shield generation" 1.3
 	"shield energy" 1.3
-	"shield heat" -3
 	description "The Tundra-Class Shield Generator is the smallest Kaltheim shield system. Designed to absorb energy from the projectiles which it deflects, this allows smaller Kaltheim ships to operate only on relatively small generators. The dissipation effects used by Kaltheim shields also allow them to cool their ships when being fired on."
 	
 
@@ -154,7 +223,6 @@ outfit "Glacial-Class Shield Generator"
 	"outfit space" -50
 	"shield generation" 2.8
 	"shield energy" 2.8
-	"shield heat" -7
 	description "The Glacial-Class Shield Generator is the next step up in Kaltheim shielding technology. It employs better cooling, energy absorption and shield generation than Tundra shields in order to provide a more efficient shielding system for larger Kaltheim ships."
 
 
@@ -166,7 +234,6 @@ outfit "Boreal-Class Shield Generator"
 	"outfit space" -75
 	"shield generation" 4.4
 	"shield energy" 4.4
-	"shield heat" -11.5
 	description "This is the largest set of shields devised by the Kaltheim so far."
 	
 
