@@ -102,7 +102,7 @@ outfit "Kelvin Beam"
 		"velocity" 500
 		"lifetime" 1
 		"reload" 1
-		"firing energy" 6.8
+		"firing energy" 3.5
 		"firing heat" 2.1
 		"shield damage" 5
 		"hull damage" 4.7
@@ -126,7 +126,7 @@ outfit "Kelvin Turret"
 		"velocity" 500
 		"lifetime" 1
 		"reload" 1
-		"firing energy" 8.3
+		"firing energy" 5
 		"firing heat" 4.7
 		"shield damage" 7.9
 		"hull damage" 8.6
@@ -137,9 +137,9 @@ outfit "Engine Destabiliser"
 	category "Guns"
 	cost 950000
 	thumbnail "outfit/destabiliser"
-	"mass" 45
-	"outfit space" -45
-	"weapon capacity" -45
+	"mass" 40
+	"outfit space" -40
+	"weapon capacity" -40
 	"gun ports" -1
 	weapon
 		sprite "projectile/Destabiliser"
@@ -150,7 +150,7 @@ outfit "Engine Destabiliser"
 		"velocity" 500
 		"lifetime" 1
 		"reload" 1
-		"firing energy" 8.2
+		"firing energy" 4.87
 		"firing heat" 2.0
 		"shield damage" 2.3
 		"hull damage" 1.9
@@ -172,9 +172,9 @@ outfit "Engine Destabiliser Turret"
 	category "Turrets"
 	cost 1572000
 	thumbnail "outfit/destabiliser turret"
-	"mass" 80
-	"outfit space" -80
-	"weapon capacity" -80
+	"mass" 76
+	"outfit space" -76
+	"weapon capacity" -76
 	"turret mounts" -1
 	weapon
 		sprite "projectile/Destabiliser2x"
@@ -185,7 +185,7 @@ outfit "Engine Destabiliser Turret"
 		"velocity" 500
 		"lifetime" 1
 		"reload" 1
-		"firing energy" 9
+		"firing energy" 5.67
 		"firing heat" 2.3
 		"shield damage" 2.7
 		"hull damage" 2.4
@@ -262,7 +262,6 @@ outfit "Iceberg Reactor"
 
 
 outfit "Polar Batteries"
-	plural "Polar Batteries"
 	category "Power"
 	cost 750000
 	thumbnail "outfit/polar_battery"
