@@ -75,6 +75,11 @@
 
 
 ------------------------------------------------------------------------  v0.0.9b  ------------------------------------------------------------------------------
+04/01/17
+
+-Removed title.png since it's now irrelevant thanks to 0.9.5's plugin manager.
+
+
 02/01/17
 
 -Added an icon and about file ready for ES 0.9.5.
