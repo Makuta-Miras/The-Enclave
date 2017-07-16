@@ -1,10 +1,18 @@
 ------------------------------------------------------------------------  v0.0.10  ------------------------------------------------------------------------------
+16/07/17
+
+-Added the Hyperborean Anti-Missile.
+-Moved the Kaltheim ships into a separate file.
+-Refitted the standard Tyar'linhalf 67-G build.
+-Moved the old Tyar'linhalf 67-G build into a Missile variant.
+
+
 15/07/17
 
--Added the Destabiliser and Destabiliser Turret
--Removed the labels because they're bad
--Removed the shield heat variable for the Kaltheim shields because the negative value messes things up with outfitting
--Added a description for the Kelvin Turret
+-Added the Destabiliser and Destabiliser Turret.
+-Removed the labels because they're bad.
+-Removed the shield heat variable for the Kaltheim shields because the negative value messes things up with outfitting.
+-Added a description for the Kelvin Turret.
 
 
 24/02/17

@@ -1,0 +1,203 @@
+ship "Tyar'linhalf 67-G"
+	sprite "ship/Tyar'linhalf 67-G"
+	attributes
+		category "Heavy Warship"
+		"cost" 40000000
+		"shields" 40600
+		"hull" 18300
+		"required crew" 112
+		"bunks" 169
+		"mass" 1150
+		"drag" 18.7
+		"heat dissipation" .2
+		"fuel capacity" 600
+		"cargo space" 65
+		"outfit space" 884
+		"weapon capacity" 364
+		"engine capacity" 200
+		"ramscoop" 3
+		weapon
+			"blast radius" 350
+			"shield damage" 5400
+			"hull damage" 1200
+			"hit force" 6600
+	outfits
+		"Engine Destabiliser" 2
+		"Hyperborean Anti-Missile" 2
+		"Kelvin Turret" 2
+		"Phase Missile Launcher" 2
+		"Phase Missile" 200
+		
+		"Iceberg Reactor"
+		"Polar Batteries"
+		"Boreal-Class Shield Generator" 2
+		
+		Hyperdrive
+		"A525 Atomic Steering"
+		"A860 Atomic Thruster"
+		
+	engine -15 187
+	engine 15 187
+	engine -60 202.5
+	engine 60 202.5
+	gun -24 -132.5 "Phase Missile Launcher"
+	gun -18 -126 "Engine Destabiliser"
+	gun 18 -126 "Engine Destabiliser"
+	gun 24 -132.5 "Phase Missile Launcher"
+	gun 0 -202
+	turret 17.5 30 "Kelvin Turret"
+	turret -17.5 30 "Kelvin Turret"
+	turret 20 153 "Hyperborean Anti-Missile"
+	turret -20 153 "Hyperborean Anti-Missile"
+	explode "tiny explosion" 20
+	explode "small explosion" 45
+	explode "medium explosion" 50
+	explode "big explosion" 40
+	explode "huge explosion" 10
+	"final explode" "final explosion large"
+	description "This is the Kaltheim's largest warship. Devised only relatively recently, it is designed for just one thing: the invasion of human space."
+
+ship "Tyar'linhalf 67-G" "Tyar (Missile)"
+	outfits
+		"Heat Redistribution Ray" 2
+		"Kelvin Turret" 2
+		"Phase Missile Launcher" 5
+		"Phase Missile" 500
+		
+		"Iceberg Reactor"
+		"Polar Batteries"
+		"Glacial-Class Shield Generator"
+		"Boreal-Class Shield Generator"
+		
+		Hyperdrive
+		"A525 Atomic Steering"
+		"A860 Atomic Thruster"
+	gun -24 -132.5 "Phase Missile Launcher"
+	gun -18 -126 "Phase Missile Launcher"
+	gun 18 -126 "Phase Missile Launcher"
+	gun 24 -132.5 "Phase Missile Launcher"
+	gun 0 -202 "Phase Missile Launcher"
+	turret 17.5 30 "Heat Redistribution Ray"
+	turret -17.5 30 "Heat Redistribution Ray"
+	turret 20 153 "Kelvin Turret"
+	turret -20 153 "Kelvin Turret"
+	explode "tiny explosion" 20
+	explode "small explosion" 45
+	explode "medium explosion" 50
+	explode "big explosion" 40
+	explode "huge explosion" 10
+	"final explode" "final explosion large"
+	description "This build of the Tyar'linhalf 67-G has been optimised for bombarding the enemy with Phase Missiles."
+	
+	
+ship "Kru'urlin 89-B"
+	sprite "ship/Kru'urlin 89-B"
+	attributes
+		category "Light Warship"
+		"cost" 2000000
+		"shields" 19000
+		"hull" 7500
+		"required crew" 12
+		"bunks" 12
+		"mass" 145
+		"drag" 3.0
+		"heat dissipation" .2
+		"fuel capacity" 400
+		"cargo space" 20
+		"outfit space" 421
+		"weapon capacity" 182
+		"engine capacity" 91
+		"ramscoop" 3
+		weapon
+			"blast radius" 80
+			"shield damage" 800
+			"hull damage" 400
+			"hit force" 1200
+	outfits
+		"Phase Missile Launcher" 2
+		"Kelvin Beam" 2
+		"Heat Redistribution Ray"
+		"Phase Missile" 200
+		
+		"Floe Reactor"
+		"Tundra-Class Shield Generator" 2
+		"Polar Batteries"
+		
+		Hyperdrive
+		"A375 Atomic Steering"
+		"A370 Atomic Thruster"
+		
+	engine 0 72.5
+	gun 35 0 "Phase Missile Launcher"
+	gun 30.5 -10 "Kelvin Beam"
+	gun -35 0 "Phase Missile Launcher"
+	gun -30.5 -10 "Kelvin Beam"
+	turret 0 2 "Heat Redistribution Ray"
+	explode "tiny explosion" 50
+	explode "small explosion" 30
+	explode "medium explosion" 20
+	"final explode" "final explosion small"
+	description "The Kru'urlin 89-B is a small Kaltheim warship, designed to be able to hop in and out of systems quickly in order to somewhat shred defences before the larger warships arrive."
+	
+	
+ship "Lenmig'sraor 52-T"
+	sprite "ship/Lenmig'sraor 52-T"
+	attributes
+		category "Medium Warship"
+		"cost" 20000000
+		"shields" 18030
+		"hull" 8255
+		"required crew" 42
+		"bunks" 93
+		"mass" 755
+		"drag" 10.1
+		"heat dissipation" .6
+		"fuel capacity" 700
+		"cargo space" 36
+		"outfit space" 752
+		"weapon capacity" 325
+		"engine capacity" 156
+		"ramscoop" 3
+		weapon
+			"blast radius" 320
+			"shield damage" 4000
+			"hull damage" 2000
+			"hit force" 6000
+	outfits
+		"Phase Missile Launcher" 2
+		"Kelvin Beam" 4
+		"Heat Redistribution Ray" 3
+		"Phase Missile" 200
+		
+		"Iceberg Reactor"
+		"Glacial-Class Shield Generator" 2
+		"Polar Batteries"
+		
+		Hyperdrive
+		"A520 Atomic Thruster"
+		"A525 Atomic Steering"
+		
+	engine -52.25 117.5
+	engine -37.75 117
+	engine -15.75 94.5
+	engine 0.75 127.5
+	engine 16.25 95
+	engine 40.25 117
+	engine 54.75 117.5
+	gun -51.75 -66 "Kelvin Beam"
+	gun -37.25 -66 "Kelvin Beam"
+	gun -11.75 -89.5 "Phase Missile Launcher"
+	gun 15.75 -89.5 "Phase Missile Launcher"
+	gun 40.75 -66 "Kelvin Beam"
+	gun 55.25 -66 "Kelvin Beam"
+	turret -45.75 74 "Heat Redistribution Ray"
+	turret 14.25 69 "Heat Redistribution Ray"
+	turret 68.25 74 "Heat Redistribution Ray"
+	explode "tiny explosion" 80
+	explode "small explosion" 45
+	explode "medium explosion" 50
+	explode "large explosion" 40
+	explode "huge explosion" 10
+	"final explode" "final explosion large"
+	description "The Lenmig'sraor 52-T is a somewhat antiquated Kaltheim design, from the days before they began ramping up for the invasion. The original versions were equipped with a number of fighter bays, but in the run-up to war many were heavily modified to become hunter-killers, sacrificing the fighters in favour of more maneuverability as well as more gun slots and turrets."
+	description "	While the old versions of the ship are rarely seen nowadays, when they are deemed suitable for a battle they are a major force on the battlefield."

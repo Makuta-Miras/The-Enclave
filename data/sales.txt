@@ -153,6 +153,7 @@ outfitter "Enclave.mod outfits"
 	"Kelvin Beam"
 	"Engine Destabiliser"
 	"Engine Destabiliser Turret"
+	"Hyperborean Anti-Missile"
 	
 	
 outfitter "Ascendancy Miniaturised"
