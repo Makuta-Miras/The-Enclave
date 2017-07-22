@@ -87,7 +87,7 @@ ship "Tyar'linhalf 67-G" "Tyar (Missile)"
 	explode "big explosion" 40
 	explode "huge explosion" 10
 	"final explode" "final explosion large"
-	description "This build of the Tyar'linhalf 67-G has been optimised for bombarding the enemy with Phase Missiles."
+	description "This build of the Tyar'linhalf 67-G has been optimised for bombarding the enemy with Phase Missiles, even disregarding anti-missile systems in favour of more weaponry."
 	
 	
 ship "Kru'urlin 89-B"
@@ -201,3 +201,28 @@ ship "Lenmig'sraor 52-T"
 	"final explode" "final explosion large"
 	description "The Lenmig'sraor 52-T is a somewhat antiquated Kaltheim design, from the days before they began ramping up for the invasion. The original versions were equipped with a number of fighter bays, but in the run-up to war many were heavily modified to become hunter-killers, sacrificing the fighters in favour of more maneuverability as well as more gun slots and turrets."
 	description "	While the old versions of the ship are rarely seen nowadays, when they are deemed suitable for a battle they are a major force on the battlefield."
+	
+ship "Lenmig'sraor 52-T" "Lenmig (Trapper)"
+	outfits
+		"Phase Missile Launcher" 3
+		"Engine Destabiliser" 3
+		"Engine Destabiliser Turret" 3
+		"Phase Missile" 300
+		
+		"Iceberg Reactor"
+		"Glacial-Class Shield Generator" 2
+		"Polar Batteries"
+		
+		Hyperdrive
+		"A520 Atomic Thruster"
+		"A525 Atomic Steering"
+	gun -51.75 -66 "Phase Missile Launcher"
+	gun -37.25 -66 "Engine Destabiliser"
+	gun -11.75 -89.5 "Phase Missile Launcher"
+	gun 15.75 -89.5 "Engine Destabiliser"
+	gun 40.75 -66 "Phase Missile Launcher"
+	gun 55.25 -66 "Engine Destabiliser"
+	turret -45.75 74 "Engine Destabiliser Turret"
+	turret 14.25 69 "Engine Destabiliser Turret"
+	turret 68.25 74 "Engine Destabiliser Turret"
+	description "This alternate loadout for the Lenmig-sraor 52-T is aimed towards converting the aged design into a support ship for other, newer Kaltheim warships, intended to hold enemy vessels in place whilst other ships destroy the target."
