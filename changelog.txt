@@ -3,7 +3,7 @@
 
 -Added a Trapper variant of the Lenmig.
 -Added to the description of the Missile variant of the Tyar.
--Made the Trapper and Missile variants of the Tyar'linhalf and Lenmig'sraor purchasable at Puggleshank.
+-Made the Trapper and Missile variants of the Tyar'linhalf and Lenmig'sraor purchasable at Puggleswap.
 
 
 16/07/17
