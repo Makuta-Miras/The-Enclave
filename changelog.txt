@@ -1,4 +1,14 @@
 ------------------------------------------------------------------------  v0.0.10  ------------------------------------------------------------------------------
+29/07/17
+
+-Rearranged the Kaltheim ship file.
+-Added the Holzst'rnak 11-P.
+-Alphabetised all the shipyards as well as the Ascendancy ship file.
+-Alphabetised the Kaltheim ship file.
+-Added a Fighter variant of the Lenmig.
+-Fixed some license problems with the Scorched Earth and Turbulence (Nuclear).
+
+
 22/07/17
 
 -Added a Trapper variant of the Lenmig.

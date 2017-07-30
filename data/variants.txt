@@ -8,8 +8,28 @@ ship "Scout" "Enclave Scout"
 
 	
 ship "Turbulence" "Turbulence (Nuclear)"
-	licenses
-		"XSZ Nuclear"
+	attributes	
+		category "Medium Warship"
+		licenses
+			"XSZ Nuclear"
+		"cost" 3100000
+		"shields" 5200
+		"hull" 1700
+		"required crew" 12
+		"bunks" 21
+		"mass" 250
+		"drag" 4.0
+		"heat dissipation" .7
+		"fuel capacity" 600
+		"cargo space" 75
+		"outfit space" 400
+		"weapon capacity" 150
+		"engine capacity" 100
+		weapon
+			"blast radius" 60
+			"shield damage" 600
+			"hull damage" 300
+			"hit force" 900
 	outfits
 		"X3700 Ion Thruster"
 		Hyperdrive
