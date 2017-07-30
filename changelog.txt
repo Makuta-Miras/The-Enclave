@@ -1,4 +1,9 @@
 ------------------------------------------------------------------------  v0.0.10  ------------------------------------------------------------------------------
+30/07/17
+
+-Added the Bulkort 2-V image.
+
+
 29/07/17
 
 -Rearranged the Kaltheim ship file.
@@ -715,7 +720,7 @@
 	-Weapon and engine hardpoints have been redefined in order to fit with the new sprite.
 	-Drag has been increased.
 -Three new Ascendancy power cores- the EM Core, the Violet Core, and the Gamma Core.
--The Metalweavers have been renamed to the Ascendancy so that more alerts etc in the game make sense gramatically. (E.g. fines and so on- "The Ascendancy fines you 1.000M for carrying illegal outfits" vs "The Metalweaver fiens you 1.000M for carrying illegal outfits")
+-The Metalweavers have been renamed to the Ascendancy so that more alerts etc in the game make sense gramatically. (E.g. fines and so on- "The Ascendancy fines you 1.000M for carrying illegal outfits" vs "The Metalweaver fines you 1.000M for carrying illegal outfits")
 -Miras the Omniscient now notifies the player that this mod is installed and advises them to uninstall it before seeking help if their game is experiencing bugs.
 -ALL OBNOXIOUS MTG IS GONE, GONE I TELL YOU!
 -Heavy Electron Turret now has its own sprite and appears in the "Enclave Outfits" outfitter.
