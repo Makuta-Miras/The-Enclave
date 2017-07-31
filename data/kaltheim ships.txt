@@ -1,5 +1,41 @@
 # Normal builds
 
+ship "Bulkort 2-V"
+	sprite "ship/Bulkort 2-V"
+	attributes
+		category "Fighter"
+		"cost"
+		"shields" 1200
+		"hull" 2000
+		"required crew" 1
+		"bunks" 1
+		"mass" 36
+		"drag" 1
+		"heat dissipation" 1.5
+		"outfit space" 120
+		"weapon capacity" 34
+		"engine capacity" 26
+		weapon
+			"blast radius" 12
+			"shield damage" 120
+			"hull damage" 60
+			"hit force" 180
+	outfits
+		"Slush Beam" 2
+		
+		"Floe Reactor"
+		"Tundra-Class Shield Generator"
+		
+		`"Baellie" Atomic Engines`
+	engine -5.75 34
+	engine 6.25 34
+	gun -6.25 -22 "Slush Beam"
+	gun 6.25 -22.5 "Slush Beam"
+	explode "tiny explosion" 25
+	explode "small explosion" 15
+	description "Centuries ago, when the initial, carrier versions of the Lenmig'sraor 52-T were being developed, the Kaltheim had no fighters- as a result, the Bulkort 2-V was what was developed for the new carriers, iterating on old Kaltheim designs from previous wars in their species' history."
+	description "	However, thanks to the decline in use of carriers by the Kaltheim, many Bulkort 2-Vs have been dismantled for parts and scrap metal, leaving just a few hundred remaining- some in active service, and some collecting dust in museums alongside their carrier counterparts."
+
 ship "Holzst'rnak 11-P"
 	sprite "ship/Holzst'rnak 11-P"
 	attributes
@@ -229,6 +265,20 @@ ship "Tyar'linhalf 67-G"
 	description "This is the Kaltheim's largest warship. Devised only relatively recently, it is designed for just one thing: the invasion of human space."
 
 # Variants	
+
+ship "Bulkort 2-V" "Bulkort (Missile)"
+	outfits
+		"Phase Missile Launcher"
+		"Phase Missile" 100
+		
+		"Floe Reactor"
+		"Tundra-Class Shield Generator"
+		
+		`"Baellie" Atomic Engines`
+	gun -6.25 -22 "Phase Missile Launcher"
+	gun 6.25 -22.5
+	description "This version of the Bulkort 2-V has been equipped with Phase Missiles, weaponry far more advanced than its typical Slush Beams."
+
 	
 ship "Lenmig'sraor 52-T" "Lenmig (Carrier)"
 	attributes
@@ -265,15 +315,14 @@ ship "Lenmig'sraor 52-T" "Lenmig (Carrier)"
 		Hyperdrive
 		"A520 Atomic Thruster"
 		"A525 Atomic Steering"
-		
 	gun -51.75 -66 "Kelvin Beam"
 	gun -11.75 -89.5 "Phase Missile Launcher"
 	gun 15.75 -89.5 "Phase Missile Launcher"
 	gun 40.75 -66 "Kelvin Beam"
 	turret 14.25 69 "Hyperborean Anti-Missile"
-	fighter -59.75 -16.5 under left
+	fighter -59.75 -16.5 under
 	fighter 17.75 -16.5 over
-	fighter 48.25 -16.5 under right
+	fighter 48.25 -16.5 under
 	description "This is the original build of the Lenmig'sraor 52-T: a carrier for three Kaltheim fighters. Many instances of this ship have been refitted at great expense to become hunter-killers, but a small number of the original carriers remain operational, in addition to a yet smaller number on display in various museums throughout Kaltheim space."
 	
 ship "Lenmig'sraor 52-T" "Lenmig (Trapper)"
@@ -301,6 +350,7 @@ ship "Lenmig'sraor 52-T" "Lenmig (Trapper)"
 	turret 68.25 74 "Engine Destabiliser Turret"
 	description "This alternate loadout for the Lenmig'sraor 52-T is aimed towards converting the aged design into a support ship for other, newer Kaltheim warships, intended to hold enemy vessels in place whilst other ships destroy the target."	
 	
+	
 ship "Tyar'linhalf 67-G" "Tyar (Missile)"
 	outfits
 		"Heat Redistribution Ray" 2
@@ -325,10 +375,4 @@ ship "Tyar'linhalf 67-G" "Tyar (Missile)"
 	turret -17.5 30 "Heat Redistribution Ray"
 	turret 20 153 "Kelvin Turret"
 	turret -20 153 "Kelvin Turret"
-	explode "tiny explosion" 20
-	explode "small explosion" 45
-	explode "medium explosion" 50
-	explode "big explosion" 40
-	explode "huge explosion" 10
-	"final explode" "final explosion large"
 	description "This build of the Tyar'linhalf 67-G has been optimised for bombarding the enemy with Phase Missiles, even disregarding anti-missile systems in favour of more weaponry."

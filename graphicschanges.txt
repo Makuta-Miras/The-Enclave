@@ -1,0 +1,27 @@
+Graphics to redo:
+	Ships:
+		-Enclave Destroyer (Complete rework)
+		-Flurry (Smoothing, re-post-processing)
+		-Bloodhound (Complete rework)
+		-Dart (Extra greebling, outline adjustment)
+		-Fregter (Complete rework)
+		-Kru'urlin 89-B (Colour change, outline adjustment, greebling change, fuselage change)
+		-Ravager (Complete rework)
+		-Scorched Earth (Complete rework)
+		-Sea Drake (Extra greebling, re-post-processing)
+		-Muesli Carrier (Complete rework)
+		-Turbulence (Extra greebling)
+	Outfits:
+		-Power packs (Re-post-processing)
+		-Ascendancy cores (Complete rework)
+		-Heat Redistribution Ray (Colour change, extra greebling, major barrel alterations, re-post-processing)
+		-Kelvin weaponry (Complete rework, re-post-processing)
+		-Phase launcher (Extra greebling, re-post-processing)
+		-Tritium AM (Complete rework, colour change)
+	
+	
+
+					If anyone wants to start working on any of 
+					these for me, send me a PM on Discord or Steam
+					and I can get you the Blender and Gimp files
+					plus some more guidance as to what I want.

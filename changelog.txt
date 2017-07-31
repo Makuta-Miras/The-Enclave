@@ -1,4 +1,13 @@
 ------------------------------------------------------------------------  v0.0.10  ------------------------------------------------------------------------------
+31/07/17
+
+-Added the Bulkort 2-V.
+-Rotated two of the Carrier Lenmig'sraor 52-T's fighter bays to launch forwards.
+-Added the Slush Beam.
+-Added a Missile variant of the Bulkort 2-V.
+-Alphabetised the Kaltheim weapons.
+
+
 30/07/17
 
 -Added the Bulkort 2-V image.
