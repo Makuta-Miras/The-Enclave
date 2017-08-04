@@ -225,7 +225,7 @@ outfit "Phase Missile"
 outfit "Slush Beam"
 	category "Guns"
 	cost 836400
-	thumbnail "outfit/unknown"
+	thumbnail "outfit/Slush Beam"
 	"mass" 17
 	"outfit space" -17
 	"weapon capacity" -17
