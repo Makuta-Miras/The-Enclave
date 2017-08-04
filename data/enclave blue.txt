@@ -1103,4 +1103,61 @@ mission "Enclave Blue 4C"
 	on offer
 		conversation
 			`The facility's doors open silently, the darkened glass panels moving gently downwards to allow you access.`
-			`	As you step in, the receptionist
+			`	As you step inside, the second set of doors ahead of you remain closed, just as the previous set swishes shut behind you. Before you can take the time to wonder why the interior doors are still shut, however, multiple jets of liquid are sprayed out of the walls, drenching you in what smells like disinfectant.`
+			`	After a few moments, the jets of chemicals stop, the excess draining away through hidden gaps in the floor as a high-intensity fan in the ceiling switches on, blowing hot air at you at what feels like mach 2.`
+			`	Once you have been fully dried off and thoroughly confused, the doors ahead open, an electronic voice saying something incomprehensible in the Kaltheim language as you step into the lobby of the building.`
+			`	The room is startling white, bar-shaped lights on the floor and ceiling illuminating the sterile-looking room. There is some sort of desk in front of you- a reception desk?- but there is nobody manning it. The room is entirely empty.`
+			choice
+				`	(Look behind the desk.)`
+				`	(Wait for someone to come and find you.)`
+					goto 5
+			`	Hoping that nobody is watching, you climb over the desk. You are faced with what appears to be a computer monitor, although the input devices seem strange- instead of a simple touch-based system, there is a sphere with various indentations in it that seem to match the setup of the clawlike third appendage characteristic of the Kaltheim.`
+			choice
+				`	(Try to gain access to the computer.)`
+				`	(Go back and wait for someone to appear.)`
+					goto 4
+			`	Entirely unaware of how Kaltheim computers work, you try pressing the indentations in the sphere. Unfortunately, nothing happens- and even more unfortunately, at that point, a section of the wall to the side of the desk slides upwards, revealing a doorway into a darkened corridor.`
+			`	A doorway through which a Kaltheim dressed in a lab coat walks.`
+			choice
+				`	(Hide behind the desk.)`
+				`	(Do nothing.)`
+					goto 3
+			`	The Kaltheim scientist walks into the centre of the room, a clipboard clutched in their hand as they look round, presumably searching for you. Just as you think that they are about to leave, you hear the buzzing voice of the Kaltheim translation devices ring out, accompanied by presumably the equivalent in the Kaltheim language.`
+			`	"Please come out from behind the desk. I know you're there."`
+			`	Slowly, you stand up, making yourself visible to the scientist.`
+			label 1
+			choice
+				`	"I'm sorry, I was just curious as to what was behind the desk."`
+					goto 2
+				`	"You know, your computer here really has some security issues. I'm human, and I managed to hack it in seconds!"`
+			`	The Kaltheim makes a strange facial expression, the meaning of which you can't figure out. "I think you'll find that you didn't," they say through their translator. "Humans don't have the necessary third limb to operate our designs."`
+			choice
+				`	"Yeah actually you're right, I was just curious as to what was going on behind the desk."`
+			label 2
+			`	The Kaltheim shakes their head.`
+				goto 6
+			label 3
+			`	The scientist easily spots you. "What do you think you're doing behind there?" they say, the buzz of their translator conveying no emotion or feeling.`
+				goto 1
+			label 4
+			`	You climb back over the desk and stand against the wall, waiting for someone to find you.`			
+			label 5
+			`	After waiting for a few minutes, a section of the wall next to the desk slides downwards to reveal a corridor much like the room you are currently in, stretching further than you can see. A Kaltheim dressed in a lab coat steps out through the doorway, a surprisingly human clipboard in their hand.`
+			label 6
+			`	"You must be Commander <first> <last>," the Kaltheim says through their translator, walking briskly over to you. They stick their hand towards you in what you assume is a crude imitation of human customs.`
+			`	Not wanting to offend the scientist, you take their hand and awkwardly shake it. "My name is Feun'ragnam," the Kaltheim tells you. "While I am told our gender system is very different to that of you humans, you may refer to me as female, if it so helps you. Now, follow me. The laboratories are this way." Having no opportunity to argue, you follow Feun'ragnam back into the hallway from where she came.`
+			label 7
+			`	After a few steps, it becomes apparent that the hallway is in fact on a gentle slope downwards. All you can see ahead is a very uniform corridor design, completely silent apart from yours and Feun'ragnam's footsteps and the gentle whirring of the electronics.`
+			``
+			`	An hour of walking later, and you must be very deep into the crust of <source>; if the facility had simply been dug into a mountainside or something, you almost certainly would have come out the other side by now.`
+			`	In fact, you've been walking for so long that you can actually see a set of visible doors in front of you. Striding ahead, Feun'ragnam says something in the Kaltheim tongue- which, surprisingly, isn't translated- and the doors slide open to reveal a small chamber, presumably an elevator.`
+			`	"The laboratories are deep within the planet's crust, on the very edge of the mantle," Feun'ragnam says. "This is the only way down."`
+			`	As you step inside, the doors sealing and closing with a high-pitched pneumatic hum to maintain the pressure inside the elevator, you cannot help but feel a more than slight sense of trepidation about travelling miles downwards with this elevator as your only way out. You feel slightly heavier as the artifical gravity switches on, returning somewhat to your normal mass as the lift begins to descend at what must be breakneck speed.`
+			`	After a surprisingly short five minutes of descent, the elevator begins to slow; according to the altimeter, you should be almost at the bottom of the crust, although the temperature in the elevator doesn't feel like it.`
+			`	"We have arrived," Feun'ragnam announces as the elevator fully stops. The scientist yanks a large, red lever in the wall labelled with Kaltheim glyphs 
+			
+			
+			
+			
+			
+			

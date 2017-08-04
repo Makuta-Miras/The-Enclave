@@ -1,4 +1,12 @@
 ------------------------------------------------------------------------  v0.0.10  ------------------------------------------------------------------------------
+04/08/17
+
+-Updated graphicschanges.txt.
+-Added the image for the Slush Beam.
+-Messed with some wording in Enclave Endgame.
+-Added a load of stuff to Blue 4C.
+
+
 31/07/17
 
 -Added the Bulkort 2-V.
