@@ -1095,9 +1095,10 @@ mission "Enclave Blue 4B"
 	
 mission "Enclave Blue 4C"
 	name "Investigate the XSZ bioweapon"
-	description "Begin searching for any samples of the processes used to create the bioweapon XSZ used against the Kaltheim."
+	description "Search the planet of <planet> for concentrated areas of the XSZ bioweapon used against the Kaltheim."
 	landing
 	source Kri'eg'lyen
+	destination Affalan
 	to offer
 		has "Enclave Blue 4B: done"
 	on offer
@@ -1151,13 +1152,61 @@ mission "Enclave Blue 4C"
 			``
 			`	An hour of walking later, and you must be very deep into the crust of <source>; if the facility had simply been dug into a mountainside or something, you almost certainly would have come out the other side by now.`
 			`	In fact, you've been walking for so long that you can actually see a set of visible doors in front of you. Striding ahead, Feun'ragnam says something in the Kaltheim tongue- which, surprisingly, isn't translated- and the doors slide open to reveal a small chamber, presumably an elevator.`
-			`	"The laboratories are deep within the planet's crust, on the very edge of the mantle," Feun'ragnam says. "This is the only way down."`
+			`	"The laboratories are deep within the moon's crust, on the very edge of the primitive mantle which it has developed," Feun'ragnam says. "This is the only way down."`
 			`	As you step inside, the doors sealing and closing with a high-pitched pneumatic hum to maintain the pressure inside the elevator, you cannot help but feel a more than slight sense of trepidation about travelling miles downwards with this elevator as your only way out. You feel slightly heavier as the artifical gravity switches on, returning somewhat to your normal mass as the lift begins to descend at what must be breakneck speed.`
 			`	After a surprisingly short five minutes of descent, the elevator begins to slow; according to the altimeter, you should be almost at the bottom of the crust, although the temperature in the elevator doesn't feel like it.`
-			`	"We have arrived," Feun'ragnam announces as the elevator fully stops. The scientist yanks a large, red lever in the wall labelled with Kaltheim glyphs 
-			
-			
-			
-			
-			
-			
+			`	"We have arrived," Feun'ragnam announces as the elevator fully stops. The scientist yanks a large, red lever in the wall labelled with Kaltheim glyphs, and the chamber once again hisses with air as the pressure inside the elevator equalises with that of the complex beyond the doors. A few seconds later, the doors open, and Feun'ragnam heads out into the laboratory system.`
+			``
+			`	It is surprisingly cool down here; this close to the mantle, the air should be swelteringly hot, even on a small moon like this with what must be a relatively cool core, at least for one with tectonic activity.`
+			choice
+				`	"The temperature- why is it so cool down here?"`
+				`	(Say nothing.)`
+					goto 8
+			`	Feun'ragnam turns around. "You know our ships, yes?" You nod in reply. "Our race is naturally suited to the cold," she says. "The result of thousands of years of slavery and selective breeding, forced upon us by another species. When we discovered that <source> had enough tectonic activity to be able to sustain life, while not rising above our livable temperatures, it was the perfect moon for shipbuilding; low gravity, temperate albeit dry climate, large reserves of compounds required for our ships."`
+			`	The scientist pauses for a second. "We have been building our warships here for centuries," Feun'ragnam continues. "Unfortunately, a quarry for the ores we need for our ships went down too far. They broke through into the core, the only liquid rock on the moon. The sudden exposure of the core to the cold air outside caused some kind of reaction that resulted in a vast amount of the hot matter at the core of the moon being dragged out and expelled into the atmosphere."`
+			choice
+				`	"So, some miners accidentally sucked the entire core of the moon out?"`
+			`	She nods. "And now the moon is slowly becoming less and less habitable. In a few hundred years- our years, circuits of Era'lgin'bl around Fo'gar'helien- it is likely we will no longer be able to survive here." Feun'ragnam sighs. "Such a waste."`
+			label 8
+			`	You soon reach another set of doors, startling white like everything else, standing out in contrast to the rough stone walls lining the tunnel you are currently standing in.`
+			`	An imperceptible security check of some kind, and the doors open, allowing you and Feun'ragnam to enter the laboratory complex.`
+			`	There appear to be four other corridors leading off from the area where you are standing, seemly some kind of intersection, presumably leading to the specific labs.`
+			`	"We have four hundred and ninety-two scientists working non-stop to devise a cure for the bioweapon's effects," Feun'ragnam says from beside you. "Eight billion koriums invested in saving our species, and we have got exactly nowhere. There is nothing that we have that can stop it, and we can't go off-planet or we'll risk catching it. Hopeless."`
+			choice
+				`	"So is that why I'm here?"`
+			`	At that moment, a group of three or so more Kaltheim scientists round the corner and stop, seemingly startled by your presence. Feun'ragnam almost immediately begins speaking rapidly to them in the Kaltheim language, seemingly due to their apparent lack of translators.`
+			`	Their short conversation ending, one of the other scientists turns to you and bows, saying something in Kaltheim. "Commander <last>," Feun'ragnam's translator barks out, translating for the other Kaltheim. "You know why you are here?"`
+			choice
+				`	"...because you asked me to come?"`
+				`	"You need me to get you samples or whatever from human space?"`
+					goto 10
+			`	The scientist appears to chuckle. "No,"	Feun'ragnam's translator replies. "We summoned you here for help in our research. It is too dangerous for any Kaltheim to travel into human space and risk catching the contagion; we have quarantines set up which should contain it within our own space."`
+			`	"However," another of the scientists says, "As our colleague will have told you, we need data from the development of the bioweapon. We cannot go, for fear of dying."`
+			choice
+				`	"But I can."`
+			`	"Because you are human, and the bioweapon is targeted specifically at Kaltheim DNA," the same scientist replies, apparently pleased with you.`
+			label 9
+			`	"So," Feun'ragnam says. "Will you help us?"`
+			choice
+				`	"Sure."`
+					goto 11
+			label 10
+			`	"Correct," another scientist replies. "If we went, we would die from exposure to traces of the bioweapon. But as it is genetically coded only to target we Kaltheim, you can safely enter the facilities where it was developed."`
+				goto 9
+			label 11
+			`	"Excellent," Feun'ragnam replies, becoming more animated. "Firstly, we would like you to visit <destination>. According to our intelligence, the planet is frequently used for large-scale experiments; it's likely that Affalan is where the bioweapon tests were conducted."`
+			choice
+				`	"So, how do I actually find any data?"`
+			`	"We have developed powerful scanning systems which can scan an entire planet for traces of a single type of organism," the first scientist says. "You can use them to scan the planet for concentrations of the bioweapon; the areas with the highest concentrations of it should correlate to the location of testing facilities."`
+			choice
+				`	"Understood."`
+			`	"The scanning equipment will have been loaded onto your ship already," Feun'ragnam says as you walk back through the miles-long tunnel up near the surface.`
+			choice
+				`	"That's fast."`
+			`	"Our crews are efficient, Commander <last>," the Kaltheim replies. "Good luck," she continues, after a short pause. "Our species' entire existence depends on you now."`
+			choice
+				`	"Well, I'll try not to let you all die horrifically."`
+				`	"I guarantee you that I'll find what you need."`
+			`	"What a comfort," Feun'ragnam replies through her translator.`
+			`	An hour later, you are on board your ship, ready to take off for the haunted planet of Affalan.`
+				accept

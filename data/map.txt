@@ -5259,7 +5259,7 @@ planet Kri'eg'lyen
 	attributes kaltheim
 	landscape land/mountain7
 	description `This ice-ridden moon seems like an environment which the Kaltheim feel particularly comfortable in- even moreso than the climate of their native world. A surprisingly large amount of scruffy vegetation has survived here, riddling the foothills of the larger mountains.`
-	description `	Most Kaltheim settlements here appear to be decentralised pockets of warship building- each town may be working on a single heavy warhsip at a time, but when that is put together, the total ship output of this planet is formidable.`
+	description `	Most Kaltheim settlements here appear to be decentralised pockets of warship building- each town may be working on a single heavy warship at a time, but when that is put together, the total ship output of this planet is formidable.`
 	spaceport `The spaceport seems to be the hub to which newly built ships are flown from all over the planet- from what you can see, a large section of the spaceport is off-limits to visitors, presumably to allow Kaltheim authorities to ensure that new battleships are ready for spaceflight.`
 	"required reputation" 500
 

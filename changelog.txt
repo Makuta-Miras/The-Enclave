@@ -1,4 +1,12 @@
 ------------------------------------------------------------------------  v0.0.10  ------------------------------------------------------------------------------
+05/08/17
+
+-Finished Blue 4C.
+-Added a cost to the hull of the Bulkort 2-V.
+-Typo fix in map.txt.
+-Added priorities to graphicschanges.txt.
+
+
 04/08/17
 
 -Updated graphicschanges.txt.

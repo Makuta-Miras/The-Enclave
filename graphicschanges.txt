@@ -1,23 +1,23 @@
-Graphics to redo:
+Graphics to redo:																										Priority (1-10, 1 is high)
 	Ships:
-		-Enclave Destroyer (Complete rework)
-		-Flurry (Smoothing, re-post-processing)
-		-Bloodhound (Complete rework)
-		-Dart (Extra greebling, outline adjustment)
-		-Fregter (Complete rework)
-		-Kru'urlin 89-B (Colour change, outline adjustment, greebling change, fuselage change)
-		-Ravager (Complete rework)
-		-Scorched Earth (Complete rework)
-		-Sea Drake (Extra greebling, re-post-processing)
-		-Muesli Carrier (Complete rework)
-		-Turbulence (Extra greebling)
+		-Enclave Destroyer (Complete rework)																			1
+		-Flurry (Smoothing, re-post-processing)																			6
+		-Bloodhound (Complete rework)																					1
+		-Dart (Extra greebling, outline adjustment)																		7
+		-Fregter (Complete rework)																						3
+		-Kru'urlin 89-B (Colour change, outline adjustment, greebling change, fuselage change)							4
+		-Ravager (Complete rework)																						6
+		-Scorched Earth (Complete rework)																				5
+		-Sea Drake (Extra greebling, re-post-processing)																8
+		-Muesli Carrier (Complete rework)																				7
+		-Turbulence (Extra greebling)																					2
 	Outfits:
-		-Power packs (Re-post-processing)
-		-Ascendancy cores (Complete rework)
-		-Heat Redistribution Ray (Colour change, extra greebling, major barrel alterations, re-post-processing)
-		-Kelvin weaponry (Complete rework, re-post-processing)
-		-Phase launcher (Extra greebling, colour change, re-post-processing)
-		-Tritium AM (Complete rework, colour change)
+		-Power packs (Re-post-processing)																				7
+		-Ascendancy cores (Complete rework)																				4
+		-Heat Redistribution Ray (Colour change, extra greebling, major barrel alterations, re-post-processing)			3
+		-Kelvin weaponry (Complete rework, re-post-processing)															1
+		-Phase launcher (Extra greebling, colour change, re-post-processing)											1
+		-Tritium AM (Complete rework, colour change)																	1
 	
 	
 

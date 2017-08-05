@@ -4,7 +4,7 @@ ship "Bulkort 2-V"
 	sprite "ship/Bulkort 2-V"
 	attributes
 		category "Fighter"
-		"cost"
+		"cost" 800000
 		"shields" 1200
 		"hull" 2000
 		"required crew" 1
