@@ -1099,6 +1099,8 @@ mission "Enclave Blue 4C"
 	landing
 	source Kri'eg'lyen
 	destination Affalan
+	cargo "Scanning Equipment" 2
+	blocked "You do not have enough cargo space to take on this mission. Free up some cargo space, then return to take on the mission."
 	to offer
 		has "Enclave Blue 4B: done"
 	on offer
@@ -1210,3 +1212,15 @@ mission "Enclave Blue 4C"
 			`	"What a comfort," Feun'ragnam replies through her translator.`
 			`	An hour later, you are on board your ship, ready to take off for the haunted planet of Affalan.`
 				accept
+				
+mission "Enclave Blue 4D"
+	name "Return to <planet>"
+	description "Evade the XSZ ships pursuing you, and return to <destination> to confer with the Kaltheim scientists."
+	landing
+	source Affalan
+	destination Kri'eg'lyen
+	to offer
+		has "Enclave Blue 4C: done"
+	on offer
+		conversation
+			`You bring your ship in low over Affalan, 
