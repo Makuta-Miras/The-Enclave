@@ -1097,6 +1097,7 @@ mission "Enclave Blue 4C"
 	name "Investigate the XSZ bioweapon"
 	description "Search the planet of <planet> for concentrated areas of the XSZ bioweapon used against the Kaltheim."
 	landing
+	infiltrating
 	source Kri'eg'lyen
 	destination Affalan
 	cargo "Scanning Equipment" 2
@@ -1219,8 +1220,32 @@ mission "Enclave Blue 4D"
 	landing
 	source Affalan
 	destination Kri'eg'lyen
+	cargo "Scanning Equipment" 2
 	to offer
 		has "Enclave Blue 4C: done"
 	on offer
 		conversation
-			`You bring your ship in low over Affalan, 
+			`You bring your ship in low over Affalan, the ugly clouds obstructing much of your view; in fact, the visibility is so poor that you have had to rely entirely on your ship's gravitational and sonar-based sensors to get a picture of the deformed, primeval landscape below.`
+			`	Having more or less circumnavigated the planet, crossing both poles and four points along the equator to establish a safe flight route, you boot up the scanning equipment given to you by the Kaltheim.`
+			`	Wired into your ship, the alien equipment has access to both your reactor and all of your other sensors. As the scanners start up and begin their first procedures, you notice a siginificant drop in the amount of geographical data you're receiving from your sensors- dangerously so; you feel a jolt as your ship scrapes against a remarkably high cliff face, your shields thankfully protecting the hull from any major harm.`
+			choice
+				`	(Pull up and scan from higher in the atmosphere; it's far too risky.)`
+				`	(Continue scanning at low altitude.)`
+					goto 1
+			`	Deciding not to risk a far more serious collision, you pull your ship up, ascending a few thousand feet to an altitude where there should be far fewer mountains to interfere with your flight path.`
+			label 1
+			`	An hour later and your ship has once again crossed most latitudes and longitudes of the planet- the scan is complete.`
+			`	According to the data collected by the scan, the genetic signature of the bioweapon only actually exists in very, very tiny quantities on <source>'s surface and in the atmosphere, even smaller than would be expected. However, there is a small spot, only a square kilometre or two in size, on one of the southern continents which boasts a much higher concentration of the bioweapon than anywhere else.`
+			choice
+				`	(Investigate the source.)`
+			`	You circle back round, plotting a course for the bioweapon-ridden area. During the flight there, you take the time to get into an armoured hazmat suit; if XSZ cooked up the bioweapon here, you have no idea what kind of other dangerous stuff could be holed up in the facility.`
+			`	Your ship touches down not too far off the facility, at the edge of the concentrated zone of bioweapon, leaving you a small trek in your hazmat suit to get to the facility.`
+			`	Back when XSZ was still around, there were never any personnel stationed on Affalan- the climate was far too changeable, and insuring any personnel would have been far too expensive for XSZ. As a result, the only workers in the facility should be unarmed drones- unless a group of ex-XSZ fugitives are hiding out in the facility, which is unlikely, to say the least.`
+			`	Upon arriving at the perimeter of the facility, you notice a small gate in the chain-link fence standing open.`
+			choice
+				`	(Head through the gate.)`
+					goto 2
+				`	(Cut your own hole in the fence.)`
+			`	You unpack the wire cutters that you handily brought with you, and set to work clipping apart the links, your rubber gloves protecting you from an electric shock in the event of the fence being electrified. You manage to cut a human-sized hole in the fence, and step through.`
+			label 2
+			`	On the other side, the ground is packed rubble, held together by cement; a crude job. Up ahead, the facility glows red in your visor, the software from the Kaltheim scanning equipment copied over into your suit's internal computer and heads-up display.`

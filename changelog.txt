@@ -1,4 +1,10 @@
 ------------------------------------------------------------------------  v0.0.10  ------------------------------------------------------------------------------
+08/08/17
+
+-Added the sound for the Slush Beam since for some reason it wasn't implemented yet.
+-Continued on Blue 4D.
+
+
 07/08/17
 
 -Added to Blue 4C.
