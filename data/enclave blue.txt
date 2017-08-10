@@ -1218,6 +1218,7 @@ mission "Enclave Blue 4D"
 	name "Return to <planet>"
 	description "Evade the XSZ ships pursuing you, and return to <destination> to confer with the Kaltheim scientists."
 	landing
+	autosave
 	source Affalan
 	destination Kri'eg'lyen
 	cargo "Scanning Equipment" 2
@@ -1249,3 +1250,39 @@ mission "Enclave Blue 4D"
 			`	You unpack the wire cutters that you handily brought with you, and set to work clipping apart the links, your rubber gloves protecting you from an electric shock in the event of the fence being electrified. You manage to cut a human-sized hole in the fence, and step through.`
 			label 2
 			`	On the other side, the ground is packed rubble, held together by cement; a crude job. Up ahead, the facility glows red in your visor, the software from the Kaltheim scanning equipment copied over into your suit's internal computer and heads-up display.`
+			`	Eventually, you reach the facility. Ahead of you, an airlock into the building stands open. The rest of this side of the facility appears to be smooth, solid concrete, with no other way in.`
+			choice
+				`	(Enter the building.)`
+			`	You step warily through the airlock, turning on your torch to illuminate the darkened corridor.`
+			`	For a while, you follow the traces of bioweapon on your heads-up display, eventually finding the floor where the concentration is at its highest. Aware that there is every chance that you are currently receiving a substantial radiation dose, you quickly download as much data on the bioweapon as you can from the floor's mainframe computer, hoping that what you've managed to obtain is useful.`
+			`	Just as your suit finishes downloading the data, you receive an alert on your heads-up display: five ships, hulls matching typical XSZ ships, heading towards you, fast. You must have tripped some kind of alarm.`
+			choice
+				`	(Hide and hope the ships pass overhead.)`
+				`	(Run back to your ship and take off.)`
+					goto 3
+			`	You stay where you are, the ships getting ominously closer and closer. As they near your position, you hear a weapons discharge echo through the structure of the facility, followed by a loud explosion. Your ship has been destroyed.`
+			`	Eventually, the XSZ ships pass overhead, leaving you stranded on Affalan. With no way of making contact with the rest of the galaxy, you slowly starve to death.`
+				die
+			label 3
+			`	Clumsily, you run to your ship, crossing the distance from the facility, to the perimeter, to the field where you parked your ship. You fire up your ship just as the ships appear over the horizon, your shields coming online in just enough time to block the first weapons discharge.`
+			`	You take off as fast as you can, a course plotted back to <destination>.`
+				launch
+	npc evade
+		personality heroic vindictive unconstrained marked
+		system Mezzanine
+		government "XSZ Corporation"
+		fleet
+			names "syndicate small"
+			variant
+				"Buzzard" 3
+	npc evade
+		personality heroic vindictive unconstrained marked
+		system Mezzanine
+		government "XSZ Corporation"
+		fleet
+			names "syndicate capital"
+			variant
+				"Turbulence (Nuclear)" 2
+	on visit
+		dialog `The XSZ ships chasing you are still in orbit. Destroy them or lose them before returning.`
+			launch
