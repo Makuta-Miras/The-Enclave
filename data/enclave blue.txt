@@ -620,7 +620,7 @@ mission "Enclave Blue 2E"
 	on complete
 		event "battle of maduras"
 		conversation
-			`Latent's capital lies smoking and screaming, a not-so stark contrast to the last time you were here. From what you here, some districts were blown apart from underground; molten rock spewing up in violent eruptions from beneath the surface, presumably the result of orbital bombardment by the Kaltheim. You shudder at the thought of the lost lives.`
+			`Latent's capital lies smoking and screaming, a not-so stark contrast to the last time you were here. From what you hear, some districts were blown apart from underground; molten rock spewing up in violent eruptions from beneath the surface, presumably the result of orbital bombardment by the Kaltheim. You shudder at the thought of the lost lives.`
 			`	A small squadron of Flurries, escorted by an incredibly imposing Muesli Carrier, are taking off as you land, the faint blue glow beneath them belying the fact that they are currently only engaging their repulsor engines.`
 			`	"We did it," Cathy says wearily as she steps off the <ship> behind you, a makeshift bandage round her head already turning red.`
 			choice
@@ -691,19 +691,15 @@ mission "Enclave Blue 2E"
 					goto 10
 			label 7
 			`	"This is something more important than Kuznetsov has jurisdiction over," Cathy replies. "I guess we've probably got orders waiting for us at the spaceport about this."`
-			`	(NOTE: v0.0.9x ENDS HERE)`
 				accept
 			label 8
 			`	"You literally are," Cathy retorts. Actually looking at you now, somewhat disgruntled, she continues- "This is something more important than Kuznetsov has jurisdiction over. I guess we've probably got orders waiting for us at the spaceport about this, so I say we head there."`
-			`	(NOTE: v0.0.9x ENDS HERE)`
 				accept
 			label 9
 			`	"That isn't the point," Cathy snaps. "This is something more important than Kuznetsov has jurisdiction over. I guess we've probably got orders waiting for us at the spaceport about this, so I say we head there."`
-			`	(NOTE: v0.0.9x ENDS HERE)`
 				accept
 			label 10
 			`	Cathy sighs, taking her head out of her hands. "This is something more important than Kuznetsov has jurisdiction over. I guess we've probably got orders waiting for us at the spaceport about this, so I say we head there."`
-			`	(NOTE: v0.0.9x ENDS HERE)`
 				accept
 				
 mission "Enclave Blue 2F"
@@ -1284,5 +1280,96 @@ mission "Enclave Blue 4D"
 			variant
 				"Turbulence (Nuclear)" 2
 	on visit
-		dialog `The XSZ ships chasing you are still in orbit. Destroy them or lose them before returning.`
+		dialog `The XSZ ships chasing you are still in orbit. Destroy or evade them before returning.`
 			launch
+	on complete
+		conversation
+			`You return to the facility immediately after landing on <planet>. Upon arriving, you are met again by a different Kaltheim scientist, one who doesn't give their name. You hand the data you collected from the facility on <source> over to them.`
+			choice
+				`	"When will we know if any of this helps?"`
+				`	(Leave.)`
+					goto leave
+			`	"It is unknown," the scientist says. "Tests are complex, lengthy, unreliable. Upon their conclusion, we will notify you."`
+			label end
+			`	You thank the Kaltheim and leave.`
+				decline
+			label leave
+			`	"We will notify you upon the conclusion of the tests," the Kaltheim scientist tells you.`
+				goto end
+
+mission "Enclave Blue 4E"
+	name "Return to <planet>"
+	description "Travel to <destination> to receive your next assignment from the team of Kaltheim scientists who are trying to find a cure for XSZ's bioweapon."
+	landing
+	source
+		government "Kaltheim" "Enclave" "XSZ Corporation"
+	destination Kri'eg'lyen
+	to offer
+		has "Enclave Blue 4D: done"
+		random < 52
+	on offer
+		dialog
+			`As you land, you receive a message on your communicator:`
+			`		Commander <last>,`
+			`	Tests on the data you gave us have been concluded. Please report back to <planet> for your next assignment.`
+			`	-Feun'ragnam, Head of Operations`
+			`	Kaltheim Bioweapon Research Division Z-29`
+				accept
+	
+mission "Enclave Blue 4F"
+	name "Bioweapon Sampling"
+	description "Travel to <destination> to retrieve uncontaminated samples of the bioweapon for research."
+	landing
+	source Kri'eg'lyen
+	destination Latent
+	to offer
+		has "Enclave Blue 4E: done"
+	on offer
+		conversation
+			`"Commander <last>!" Feun'ragnam says, greeting you (relatively) warmly as you step out of the elevator inside the laboratory complex on <source>. "The data you collected for us was a start, at least, in understanding how the bioweapon works."`
+			choice
+				`	"What do you mean, 'a start'? Was it incomplete?"`
+				`	(Nod as if you know what she's talking about.)`
+					goto 1
+			`	"A lot of it was ruptured, corrupted," she replies. "All we were able to establish is that the bioweapon is based on a simple virus, rather than any more complex pathogen; we were unable to sequence its genome in any way."`
+				goto 2
+			label 1
+			`	"A lot of it was ruptured, corrupted," she continues. "All we were able to establish is that the bioweapon is based on a simple virus, rather than any more complex pathogen; we were unable to sequence its genome in any way."`
+			label 2
+			choice
+				`	"That's a problem, then."`
+			`	"Indeed it is," Feun'ragnam says. "If we can't sequence the genome, we can't reproduce the virus in the laboratory, and therefore cannot test on it."`
+			choice
+				`	"Why would you want to reproduce the bioweapon? Isn't that dangerous if it's so contagious?"`
+				`	"What do you need me to do?"`
+					goto 3
+			`	The scientist performs the Kaltheim equivalent of a sigh. "Another difference between human and Kaltheim biology. When our bodies are attacked by pathogens, our cells infest the pathogen, destroying it by eating away at it from the inside, corrupting its DNA so it dies by its own hand."`
+			`	"The problem with this, is that when our natural defense mechanisms fail to destroy a foreign organism, the organism is so infested with our own cells that said organism cannot be extracted and examined in order to divine a cure."`
+			`	"And therefore, it is necessary to replicate afflictions in the laboratory so that we have clean copies of the pathogen to test on." Having finally finished, Feun'ragnam looks quite pleased with herself.`
+			choice
+				`	"Right then. Why do you need me here?"`
+			label 3
+			`	"As you probably guessed," Feun'ragnam replies, "We need you to locate clean samples of the bioweapon in order to allow us to replicate it."`
+			`	Bringing up a galactic map on a holoscreen, the Kaltheim highlights <system>. "<planet> is the origin point of the bioweapon; its first deployment against us," Feun'ragnam says. "The first troops to be affected were storming the tunnels underneath the capital city. As a result, there should be something of the bioweapon left in there."`
+			choice
+				`	"That bunker is still active- you want me to go down there?!"`
+				`	"Okay, I'll go do that for you then."`
+					goto end
+			`	Feun'ragnam shrugs. "It's the only potential source that we could obtain samples of the gas from; Affalan is an environmental disaster- anything of the bioweapon in the atmosphere has likely mutated into something else already."`
+			choice
+				`	"Fine, I'll do it- if your entire species' fate depends on it, I don't really have a choice, do I?"`
+					goto end
+				`	"You know what? No. I'm not risking my life for this again, not after I almost got stranded on Affalan."`
+			`	"You're sure?" the scientist asks. "Declining this mission could stop you taking part in any future story developments."`
+			choice
+				`	"Actually, I don't want to compromise my progress in the storyline. I'll do it."`
+					goto end
+				`	"I'm sure. I want to completely mess up the story for myself."`
+			`	"Well, it was your choice," Feun'ragnam says. "It was nice knowing you."`
+				decline
+			label end
+			`	"If this works, we should have a cure within weeks," Feun'ragnam tells you as she accompanies you out of the facility. "Good luck."`
+				accept
+	on complete
+		dialog
+			`You've arrived on <planet>. You should contact some Enclave higher-ups to see if you can get some troops to assist you.`
