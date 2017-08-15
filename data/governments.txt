@@ -35,7 +35,6 @@ government Kaltheim
 	swizzle 0
 	color 0 0.5 1
 	
-	language "Kaltheim"	
 	"player reputation" 0
 	"attitude toward"
 		"Enclave" 0

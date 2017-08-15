@@ -1,5 +1,5 @@
 
-galaxy "Tyridium"
+galaxy Tyridium
 	pos 5000 500
 	sprite ui/EnclaveGalaxy
 
@@ -236,12 +236,10 @@ system Aetrus
 			period 40.198
 
 system Akildocs
-	pos 4722.05 435.649
+	pos 4699.5 433.394
 	habitable 1080
-	link Taarsten
 	link Gaenealf
 	link Thornton
-	link Ibained
 	asteroids "small rock" 8 5.9976
 	asteroids "medium rock" 16 5.5216
 	asteroids "large rock" 6 4.284
@@ -889,12 +887,10 @@ system Breijkip
 system Cheons
 	pos 4749.31 323.306
 	habitable 858.28
-	link Rumebali
 	link Thornton
 	link Schnael
 	link Ibained
 	link Abomin
-	link Opheuldod
 	asteroids "medium rock" 86 1.17
 	asteroids "large rock" 1 2.412
 	asteroids "medium metal" 5 1.62
@@ -1398,11 +1394,9 @@ system Descent
 		period 1390.57
 
 system Driaca
-	pos 4654.21 458.486
+	pos 4559.5 377.306
 	habitable 486.68
-	link Taarsten
 	link Lardiam
-	link Gaenealf
 	asteroids "small rock" 9 3.0324
 	asteroids "medium rock" 30 3.2452
 	asteroids "large rock" 48 2.0216
@@ -1757,7 +1751,7 @@ system Five
 			offset 119.527
 
 system Floop
-	pos 4632.21 339.486
+	pos 4615.3 296.641
 	habitable 425.92
 	link Lardiam
 	link Crourp
@@ -2100,7 +2094,6 @@ system Gaenealf
 	link Frill
 	link Akildocs
 	link Thornton
-	link Driaca
 	link Arkhos
 	link Theurrhaeus
 	asteroids "medium rock" 3 5.3676
@@ -2334,11 +2327,11 @@ system Hrau'ngri'liadien
 		period 2650.08
 
 system Ibained
-	pos 4728.99 380.102
+	pos 4721.1 389.122
 	habitable 486.68
 	link Rumebali
-	link Akildocs
 	link Cheons
+	link Thornton
 	asteroids "medium rock" 18 5.7024
 	asteroids "large rock" 7 3.1482
 	asteroids "medium metal" 5 4.158
@@ -2890,7 +2883,7 @@ system Kama'la'ez
 			period 35.8918
 
 system Lardiam
-	pos 4627.21 376.486
+	pos 4603.53 356.191
 	habitable 320
 	link Floop
 	link Taarsten
@@ -3285,7 +3278,6 @@ system Ninsug
 	habitable 2507.76
 	link Pipaeus
 	link Pralmia
-	link Thornton
 	link Frill
 	asteroids "small rock" 1 1.3409
 	asteroids "medium rock" 5 1.4168
@@ -3333,10 +3325,9 @@ system Ninsug
 			period 32.9038
 
 system Opheuldod
-	pos 4748.21 244.486
+	pos 4745.96 245.613
 	habitable 486.68
 	link Schnael
-	link Cheons
 	asteroids "small rock" 1 3.3033
 	asteroids "medium rock" 3 2.8392
 	asteroids "large rock" 7 3.8493
@@ -3789,7 +3780,6 @@ system Rumebali
 	habitable 1948.28
 	link Taarsten
 	link Crourp
-	link Cheons
 	link Ibained
 	asteroids "small rock" 5 2.1714
 	asteroids "medium rock" 21 3.234
@@ -4336,10 +4326,8 @@ system Syj'ngf'bnk
 			period 15.2932
 
 system Taarsten
-	pos 4682.21 403.486
+	pos 4656.28 379.809
 	habitable 1505.92
-	link Driaca
-	link Akildocs
 	link Lardiam
 	link Rumebali
 	asteroids "small rock" 41 1.624
@@ -4530,11 +4518,11 @@ system Theurrhaeus
 system Thornton
 	pos 4765.61 407.955
 	habitable 5000
-	link Ninsug
 	link Pralmia
 	link Akildocs
 	link Gaenealf
 	link Cheons
+	link Ibained
 	asteroids "small rock" 51 3.168
 	asteroids "medium rock" 143 3.234
 	asteroids "large rock" 50 1.452
@@ -4657,8 +4645,6 @@ system Umba'draeuin
 	asteroids "small metal" 2 3.36
 	asteroids "medium metal" 6 6.144
 	asteroids "large metal" 5 2.496
-	fleet "Kaltheim Small" 700
-	fleet "Kaltheim Large" 1100
 	trade Clothing 290
 	trade Electronics 740
 	trade Equipment 530
@@ -4669,6 +4655,8 @@ system Umba'draeuin
 	trade Medical 680
 	trade Metal 390
 	trade Plastic 390
+	fleet "Kaltheim Small" 700
+	fleet "Kaltheim Large" 1100
 	object
 		sprite "star (animated)/k0"
 			"frame rate" 0.2
@@ -4914,8 +4902,8 @@ system Whuroxla
 			period 12.7484
 
 system Xenos
-	pos -878.78 -338
-	government Republic
+	pos -842.525 -376.208
+	government Uninhabited
 	habitable 625
 	asteroids "large rock" 1 4.0608
 	asteroids "small metal" 2 2.9088
@@ -4932,6 +4920,7 @@ system Xenos
 	trade Plastic 390
 	object
 		sprite "star (animated)/g5"
+			"frame rate" 0.2
 		period 10
 	object "Enclave Wormhole"
 		sprite planet/wormhole
@@ -5139,7 +5128,6 @@ planet Era'lgin'bl
 	description `	The inhabitants regard you with more than interest- the look in their eyes is more akin to how a predator watches their prey.`
 	spaceport `The spaceport is sunk deep into a large crater, and, oddly enough, the fuel pumps align with your ship's relevant ports perfectly.`
 	spaceport `	The complex appears to be built out of some odd, glowing blue metal. While you suspect it may be reactive, it is impossible to tell.`
-	"required reputation" 500
 
 planet "Euclid Station"
 	attributes xsz

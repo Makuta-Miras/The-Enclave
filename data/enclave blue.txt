@@ -154,8 +154,6 @@ mission "Enclave Blue 1C"
 			label 5
 			`	"You go get the <npc> and escort them to Jumblar," Kuznetsov says, packing up his stuff. "I'll meet you there."`
 				accept
-	on accept
-		set "language: Kaltheim"
 	npc accompany save
 		government Kaltheim
 		personality heroic vindictive derelict
@@ -1373,3 +1371,14 @@ mission "Enclave Blue 4F"
 	on complete
 		dialog
 			`You've arrived on <planet>. You should contact some Enclave higher-ups to see if you can get some troops to assist you.`
+					
+mission "Enclave Blue 4G"
+	name "Return to <planet>"
+	description "Travel to <destination> with the samples of the XSZ bioweapon for the Kaltheim scientists to test on."
+	source Latent
+	destination Kri'eg'lyen
+	to offer
+		has "Enclave Blue 4F: done"
+	on offer
+		conversation
+			

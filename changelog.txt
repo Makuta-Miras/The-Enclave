@@ -1,4 +1,13 @@
 ------------------------------------------------------------------------  v0.0.10  ------------------------------------------------------------------------------
+15/08/17
+
+-Started on Blue 4G.
+-Changed around some Kaltheim landing restrictions.
+-Removed Enclave Opens.
+-Made the Suhail-Xenos gap Jump Drive-able.
+-Messed with the west of the map.
+
+
 14/08/17
 
 -Added Blue 4E.
