@@ -165,6 +165,7 @@ mission "Part 1 done"
 	to offer
 		"reputation: Enclave" >= 500
 		has "First Contact: Enclave: offered"
+		has "main plot completed"
 	on offer
 		conversation
 			`As you step off your ship, you receive what appears to be an official notification from the Enclave government-`

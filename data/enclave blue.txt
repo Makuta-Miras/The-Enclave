@@ -1381,4 +1381,55 @@ mission "Enclave Blue 4G"
 		has "Enclave Blue 4F: done"
 	on offer
 		conversation
-			
+			`Having requested a platoon of soldiers to assist you in digging any traces of the bioweapon out of the tunnels, you meet them at the tunnel entrance, in the basement of one of Latent's skyscrapers. In the weeks in which you have been away, the bunker which the tunnels lead to has remained unbreached; according to the latest reports from the team surveilling the bunker, the number of life signs within has held constant, meaning that the food stocks within there have not yet been depleted.`
+			`	"Most of the traps and dangers within the tunnels have been removed," one of the soldiers tells you. "Since you're still on leave, you're technically a civilian, Commander, so we'll take the lead."`
+			choice
+				`	"Sure. Let's go."`
+				`	"No, I want to be in the lead!" (Head into the tunnel.)`
+					goto other
+			`	Half of the platoon heads into the tunnel ahead of you, the other half behind. As you descend into the bowels of the planet, the floor slowly begins to even out, changing from the slick, polished metal flooring and walls to bare concrete. As you walk, you hear the click of automated laser turrets in the walls multiple times, but nothing happens; clearly, the Navy successfully managed to deactivate them all.`
+			label 1
+			`	After some consultation with a map, the soldiers tell you to stop. "This is the spot where the bioweapon was released," they say. The only noticeable difference in this area of the tunnel to the previous areas is a set of small metal grilles covering the floor and walls- clearly the deployment method of the bioweapon.`
+			choice
+				`	"Can we remove the grilles?"`
+					goto 3
+				`	"Does anyone know how to reactivate this trap?"`
+			`	A soldier steps forward, seemingly the unit's engineer. "I can," he says, taking out a toolkit and heading over to an exposed panel of electronics in the wall.`
+			label 2
+			`	Five minutes of soldering later, and the trap is apparently reactivated- when you walk over it, there is a small hissing sound, and a tangible feeling of gas escaping.`
+			choice
+				`	(Capture some of the gas in a vial.)`
+			`	Taking out a small glass vial given to you by the Kaltheim on <planet>, you place it over the nearest grille, capturing as much of the gas as possible. Once you feel like the vial is full enough, you remove it from the grille and quickly place a stopper on it to prevent any gas from leaking out of the vial.`
+			choice
+				`	"We're done here. Let's go."`
+			`	The soldiers form up ahead of and behind you, ready for a nice, long walk back to the surface with a vial of deadly bioweapon in your pocket.`
+				accept
+			label 3
+			`	"We can't," one of the soldiers, seemingly the unit's engineer, says. "It's far easier to just reactivate it."`
+			choice
+				`	"Fair enough. Go ahead."`
+					goto 2
+			label other
+			`	You run ahead into the tunnel, the soldiers behind you. After a while, they (sadly) catch up with you, however.`
+				goto 1
+	on complete
+	payment 50000000
+		conversation
+			`"Excellent!" Feun'ragnam says excitedly as you hand the vial over to her. "There'll be no barrier to our research now- with any luck, our species is saved!"`
+			choice
+				`	"It was my pleasure."`
+				`	"How much am I getting paid for this?"`
+			`	"<payment>," the scientist replies. "We're paying you <payment> for this; it's all we could afford out of our budget."`
+			choice
+				`	"That's... a lot. Thank you!"`
+			`	"You saved our entire race," Feun'ragnam says. "It's reasonable."`
+			choice
+				`	"How likely am I to be coming back here again after this?"`
+				`	"Bye, then."`
+					goto 1
+			`	"Unlikely," she replies. "This entire facility is classified; to most of our people, we don't exist. We might meet again, though; you never know."`
+			choice
+				`	"Bye, then."`
+			label 1
+			`	"Goodbye indeed," Feun'ragnam says, awkwardly shaking your hand.`
+				decline

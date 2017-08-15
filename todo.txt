@@ -1,0 +1,7 @@
+To do before v0.0.10:
+--------------------------------
+
+-Round off Blue 4. (Kaltheim return to action, human/Kaltheim integration, player gets access to Kaltheim tech)
+-Add the slush effect.
+-Change XSZ's colours to something less obviously Syndicate.
+-Add an event during Blue 4 to finish driving the pirates out of Enclave space.
