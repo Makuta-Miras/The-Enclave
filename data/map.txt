@@ -5036,6 +5036,7 @@ planet Brun'ily'rhasunx
 	description `	The few major cities here seem to be little more than enormous processing plants for the food produced here, with most of the population employed there.`
 	spaceport `The spaceport, instead of having been designed purely to facilitate the transportation of food, appears to have been simply converted from an enormously devoted military complex, to the transportation centre which it is now.`
 	spaceport `	As you scanned the spaceport area as you landed, you noticed that there are a number of deeply sunken walls below the surface, although they do not appear to have any structural significance.`
+	outfitter "Kaltheim Small"
 	"required reputation" 500
 
 planet Carmine
@@ -5128,7 +5129,10 @@ planet Era'lgin'bl
 	description `	The inhabitants regard you with more than interest- the look in their eyes is more akin to how a predator watches their prey.`
 	spaceport `The spaceport is sunk deep into a large crater, and, oddly enough, the fuel pumps align with your ship's relevant ports perfectly.`
 	spaceport `	The complex appears to be built out of some odd, glowing blue metal. While you suspect it may be reactive, it is impossible to tell.`
-
+	shipyard "Kaltheim Small"
+	outfitter "Kaltheim Basics"
+	outfitter "Kaltheim Advanced"
+	
 planet "Euclid Station"
 	attributes xsz
 	landscape land/space1
@@ -5176,6 +5180,9 @@ planet Gahr'wregdl'iahr
 	description `	Gahr'wregdl'iahr is, seemingly, a heavily militarized world. Nearly every facility you see is in some way optimized to contribute to a galactic war effort, with either orbital defense systems in place, heavy-duty planetary shielding, or vast strips of abandoned tarmac landing pads designed for enormous armadas of ships.`
 	description `	You find this odd- the Kaltheim have not yet accessed the Jump Drive, and yet they are still preparing for war, with no obvious schisms in their society, nor opposing species in their region of space.`
 	spaceport `The spaceport is more of a garrison than a true spaceport; most of the areas within the complex are given over to weapons storage and barracks. The whole site is surrounded by a somewhat unnervingly large array of planet-to-space defence weaponry, in addition to the gargantuan shield generators nearby.`
+	shipyard "Kaltheim Small"
+	outfitter "Kaltheim Basics"
+	outfitter "Kaltheim Advanced"
 	"required reputation" 500
 
 planet Idivine
@@ -5249,6 +5256,10 @@ planet Kri'eg'lyen
 	description `This ice-ridden moon seems like an environment which the Kaltheim feel particularly comfortable in- even moreso than the climate of their native world. A surprisingly large amount of scruffy vegetation has survived here, riddling the foothills of the larger mountains.`
 	description `	Most Kaltheim settlements here appear to be decentralised pockets of warship building- each town may be working on a single heavy warship at a time, but when that is put together, the total ship output of this planet is formidable.`
 	spaceport `The spaceport seems to be the hub to which newly built ships are flown from all over the planet- from what you can see, a large section of the spaceport is off-limits to visitors, presumably to allow Kaltheim authorities to ensure that new battleships are ready for spaceflight.`
+	shipyard "Kaltheim Small"
+	shipyard "Kaltheim Big"
+	outfitter "Kaltheim Basics"
+	outfitter "Kaltheim Advanced"
 	"required reputation" 500
 
 planet Latent
@@ -5373,6 +5384,7 @@ planet Oro'alein'platrez
 	landscape land/sea0
 	description `Oro'alein'platrez is cold and gloomy, somewhat typical of Kaltheim worlds. Most of the land is flat and low-lying, and while the massive life readings coming from the oceans indicate that fishing here would be a successful commercial enterprise, there seem to be only a few seaborne vessels. A lot of the areas above sea level appear to have been given to farming; the fact that the vast majority of the planet's landscape is divided into perfectly square fields seems to indicate that this planet is the breadbasket of the Kaltheim's civilisation, despite the low levels of sunlight that reach the planet's surface.`
 	spaceport `The spaceport is a regimented mass of sullen, blocky buildings. It appears that most of the infrastructure here has been designed solely for the purpose of shifting food from the farms, to the spaceport, and off the planet in order to feed the rest of the Kaltheim race.`
+	outfitter "Kaltheim Basics"
 	"required reputation" 500
 
 planet Ortite
@@ -5516,5 +5528,9 @@ planet Ziv'rahk'ashgrir
 	description `	Unlike other major Kaltheim garrisons, Ziv'rahk'ashgrir has a fairly large shipbuilding industry in addition to the pure military features- presumably, the on-world shipbuilding is to allow the fleets stationed here to be replenished relatively quickly without needing to transfer forces from other parts of space.`
 	spaceport `The spaceport has a decent section of it devoted to the transfer of civilians to and from space; in fact, this area feels almost like a human spaceport, if it were not for the grey-skinned aliens walking around in place of humans.`
 	spaceport `	The rest of the spaceport is comprised of military buildings, planetary defences, and a few small ship construction lines.`
+	shipyard "Kaltheim Small"
+	shipyard "Kaltheim Big"
+	outfitter "Kaltheim Basics"
+	outfitter "Kaltheim Advanced"
 	"required reputation" 500
 

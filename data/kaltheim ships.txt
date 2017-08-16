@@ -4,6 +4,8 @@ ship "Bulkort 2-V"
 	sprite "ship/Bulkort 2-V"
 	attributes
 		category "Fighter"
+		licenses
+			"Kaltheim"
 		"cost" 800000
 		"shields" 1200
 		"hull" 2000
@@ -40,6 +42,8 @@ ship "Holzst'rnak 11-P"
 	sprite "ship/Holzst'rnak 11-P"
 	attributes
 		category "Medium Warship"
+		licenses
+			"Kaltheim"
 		"cost" 27000000
 		"shields" 25000
 		"hull" 8400
@@ -98,6 +102,8 @@ ship "Kru'urlin 89-B"
 	sprite "ship/Kru'urlin 89-B"
 	attributes
 		category "Light Warship"
+		licenses
+			"Kaltheim"
 		"cost" 2000000
 		"shields" 19000
 		"hull" 7500
@@ -147,6 +153,8 @@ ship "Lenmig'sraor 52-T"
 	sprite "ship/Lenmig'sraor 52-T"
 	attributes
 		category "Medium Warship"
+		licenses
+			"Kaltheim"
 		"cost" 20000000
 		"shields" 18030
 		"hull" 8255
@@ -209,6 +217,8 @@ ship "Tyar'linhalf 67-G"
 	sprite "ship/Tyar'linhalf 67-G"
 	attributes
 		category "Heavy Warship"
+		licenses
+			"Kaltheim"
 		"cost" 40000000
 		"shields" 40600
 		"hull" 18300

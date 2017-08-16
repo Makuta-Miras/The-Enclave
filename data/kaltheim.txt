@@ -2,6 +2,8 @@
 
 outfit "Engine Destabiliser"
 	category "Guns"
+	licenses
+		"Kaltheim"
 	cost 950000
 	thumbnail "outfit/destabiliser"
 	"mass" 40
@@ -37,6 +39,8 @@ effect "destabiliser"
 	
 outfit "Engine Destabiliser Turret"
 	category "Turrets"
+	licenses
+		"Kaltheim"
 	cost 1572000
 	thumbnail "outfit/destabiliser turret"
 	"mass" 76
@@ -71,6 +75,8 @@ effect "destabiliser2"
 
 outfit "Heat Redistribution Ray"
 	category "Turrets"
+	licenses
+		"Kaltheim"
 	cost 500000
 	thumbnail "outfit/Heat Ray"
 	"mass" 35
@@ -109,6 +115,8 @@ effect "heat ray hit"
 
 outfit "Hyperborean Anti-Missile"
 	category "Turrets"
+	licenses
+		"Kaltheim"
 	cost 1250000
 	thumbnail "outfit/hyperboreanAM"
 	"mass" 25
@@ -129,6 +137,8 @@ outfit "Hyperborean Anti-Missile"
 	
 outfit "Kelvin Beam"
 	category "Guns"
+	licenses
+		"Kaltheim"
 	cost 2100000
 	thumbnail "outfit/Kelvin Beam"
 	"mass" 30
@@ -152,6 +162,8 @@ outfit "Kelvin Beam"
 	
 outfit "Kelvin Turret"
 	category "Turrets"
+	licenses
+		"Kaltheim"
 	cost 4500000
 	thumbnail "outfit/Kelvin Turret"
 	mass "69"
@@ -177,6 +189,8 @@ outfit "Kelvin Turret"
 	
 outfit "Phase Missile Launcher"
 	category "Secondary Weapons"
+	licenses
+		"Kaltheim"
 	cost 5000000
 	thumbnail "outfit/Phase Launcher"
 	"mass" 30
@@ -215,6 +229,8 @@ outfit "Phase Missile Launcher"
 	
 outfit "Phase Missile"
 	category "Ammunition"
+	licenses
+		"Kaltheim"
 	cost 80000
 	thumbnail "outfit/Phase"
 	"mass" .2
@@ -224,6 +240,8 @@ outfit "Phase Missile"
 	
 outfit "Slush Beam"
 	category "Guns"
+	licenses
+		"Kaltheim"
 	cost 836400
 	thumbnail "outfit/Slush Beam"
 	"mass" 17
@@ -248,11 +266,21 @@ outfit "Slush Beam"
 	description "The Slush Beam is a small beam weapon, designed by the Kaltheim centuries ago specifically for their Bulkort 2-V fighters, in order to allow the fighters to properly utilise both of their gun ports. As a result of condensing the design down to only take up 17 tons of outfit space, the Slush Beam's damage output is much lower than other Kaltheim weapons."
 	description "	As the Bulkort 2-V is rarely used nowadays due to the conversion of many Kaltheim carriers into hunter-killers, the Slush Beam is instead used on larger Kaltheim warships to fill out spare gun ports on ships which cannot fit any other weapons."
 	
+effect "slush"
+	sprite "effect/slush"
+		"random start frame"
+	"lifetime" 34
+	"random angle" 135
+	"random spin" 5
+	"velocity scale" -0.01
+	
 	
 # Shields:	
 	
 outfit "Tundra-Class Shield Generator"
 	category "Systems"
+	licenses
+		"Kaltheim"
 	cost 520000
 	thumbnail "outfit/tundra_shields"
 	"mass" 25
@@ -264,6 +292,8 @@ outfit "Tundra-Class Shield Generator"
 
 outfit "Glacial-Class Shield Generator"
 	category "Systems"
+	licenses
+		"Kaltheim"
 	cost 1100000
 	thumbnail "outfit/glacial_shields"
 	"mass" 50
@@ -275,6 +305,8 @@ outfit "Glacial-Class Shield Generator"
 
 outfit "Boreal-Class Shield Generator"
 	category "Systems"
+	licenses
+		"Kaltheim"
 	cost 1650000
 	thumbnail "outfit/boreal_shields"
 	"mass" 75
@@ -288,6 +320,8 @@ outfit "Boreal-Class Shield Generator"
 
 outfit "Floe Reactor"
 	category "Power"
+	licenses
+		"Kaltheim"
 	cost 2000000
 	thumbnail "outfit/floe_core"
 	"mass" 35
@@ -299,6 +333,8 @@ outfit "Floe Reactor"
 
 outfit "Iceberg Reactor"
 	category "Power"
+	licenses
+		"Kaltheim"
 	cost 15000000
 	thumbnail "outfit/iceberg_core"
 	"mass" 120
@@ -310,6 +346,8 @@ outfit "Iceberg Reactor"
 
 outfit "Polar Batteries"
 	category "Power"
+	licenses
+		"Kaltheim"
 	cost 750000
 	thumbnail "outfit/polar_battery"
 	"mass" 50
