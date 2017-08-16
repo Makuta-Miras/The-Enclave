@@ -743,6 +743,9 @@ mission "Enclave Blue 3A"
 			choice
 				`	"Yes sir."`
 					accept
+		event "bioweapon retreat I"
+		event "bioweapon retreat II" 5
+		event "bioweapon retreat III" 10
 	npc
 		personality heroic vindictive escort
 		system Maduras
@@ -1027,7 +1030,7 @@ mission "Enclave Blue 3D"
 				launch
 	on complete
 		event "battle of skryydr"
-
+		event "battle of adke" 5
 		
 	
 mission "Enclave Blue 4A"
@@ -1413,13 +1416,20 @@ mission "Enclave Blue 4G"
 			`	You run ahead into the tunnel, the soldiers behind you. After a while, they (sadly) catch up with you, however.`
 				goto 1
 	on complete
-	payment 50000000
+		payment 50000000
+		set "license: Kaltheim"
+		event "kaltheim recovery I" 2
+		event "kaltheim recovery II" 7
+		event "kaltheim integration I" 14
+		event "kaltheim integration II" 21
+		event "kaltheim integration III" 28
+		event "morbosa" 31
 		conversation
 			`"Excellent!" Feun'ragnam says excitedly as you hand the vial over to her. "There'll be no barrier to our research now- with any luck, our species is saved!"`
 			choice
 				`	"It was my pleasure."`
 				`	"How much am I getting paid for this?"`
-			`	"<payment>," the scientist replies. "We're paying you <payment> for this; it's all we could afford out of our budget."`
+			`	"<payment>," the scientist replies. "We're paying you <payment> for this; it's all we could afford out of our budget. You also have access to our ships and technology. Go wild."`
 			choice
 				`	"That's... a lot. Thank you!"`
 			`	"You saved our entire race," Feun'ragnam says. "It's reasonable."`

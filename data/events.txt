@@ -300,7 +300,10 @@ event "kaltheim invasion"
 	planet "New Scotland"
 		description `New Scotland is a world consisting of scrubland and low mountain ranges, for the most part; it is an old world, where tectonic activity is beginning to die down. As a result of the decrease in tectonic activity, the planet's magnetoshpere is also slowly weakening. This in turn increases the amount of radiation falling on the surface, making the inhabitants much more likely to develop cancerous growths as they age.`
 		description `	Although this world is currently being occupied by the Kaltheim, you cannot actually see any signs of them in person; the only signs of their activities are the smoking remains of ships crashed into the deserts, and the frequent patrols that fly overhead.`
-		
+	planet Gahr'wregdl'iahr
+		description `This is a world of near-unbearable heat. As day turns to night, oceans emerge in the sunlit deserts, and as night turns to day, billions of cubic metres of liquid evaporate into the grim, foreboding clouds above.`
+		description `	Gahr'wregdl'iahr is, seemingly, a heavily militarized world. Nearly every facility you see is in some way optimized to contribute to a galactic war effort, with either orbital defense systems in place, heavy-duty planetary shielding, or vast strips of abandoned tarmac landing pads designed for enormous armadas of ships.`
+	
 event "kaltheim take seminar"
 	system Thaen
 		government Kaltheim
@@ -601,6 +604,128 @@ event "battle of maduras"
 		fleet "Enclave Patrol" 500
 		fleet "Enclave Capital" 800
 		
+event "bioweapon retreat I"
+	system Thaen
+		fleet Trader 300
+		fleet Transporter 300
+		fleet "Enclave Patrol" 800
+		fleet "Enclave Capital" 1500
+	system Memus
+		fleet Trader 600
+		fleet Transporter 600
+		fleet "Enclave Patrol" 6000
+	system Cispia
+		fleet Trader 700
+		fleet "Enclave Patrol" 2400
+		fleet "Enclave Capital" 6000
+	system Daia
+		fleet Trader 700
+		fleet Transporter 700
+		fleet "Enclave Patrol" 1500
+		fleet "Enclave Capital" 3000
+	system "Deg Deg"
+		fleet Trader 700
+		fleet Transporter 700
+		fleet "Enclave Patrol" 1500
+		fleet "Enclave Capital" 3000
+	system Gautus
+		fleet Trader 700
+		fleet Transporter 700
+		fleet "Enclave Patrol" 2000
+		fleet "Enclave Capital" 3500
+	system Four
+		government Kaltheim
+		fleet Trader 1000
+		fleet Transporter 1000
+	system Aetrus
+		government Kaltheim
+		fleet Trader 700
+		fleet Transporter 700
+		fleet "Enclave Patrol" 2000
+		fleet "Enclave Capital" 3500
+		
+event "bioweapon retreat II"
+	system Fo'gar'helien
+		fleet "Kaltheim Small" 1100
+		fleet "Kaltheim Large" 1500
+	system Syj'ngf'bnk
+		fleet "Kaltheim Small" 1200
+		fleet "Kaltheim Large" 1600
+	system Ik'ari'aka
+		fleet "Kaltheim Small" 1200
+		fleet "Kaltheim Large" 1600
+	system Banq'rujol'ifus
+		fleet "Kaltheim Small" 1400
+		fleet "Kaltheim Large" 2200
+	system Jaaaar'aaaaa'l'u
+		fleet "Kaltheim Small" 1400
+		fleet "Kaltheim Large" 2200
+	system Umba'draeuin
+		fleet "Kaltheim Small" 1400
+		fleet "Kaltheim Large" 2200
+	system Crul'im'heim
+		fleet "Kaltheim Small" 2000
+		fleet "Kaltheim Large" 3000
+	system Grundel'froae
+		fleet "Kaltheim Small" 2000
+		fleet "Kaltheim Large" 3000
+	system Kama'la'ez
+		fleet "Kaltheim Small" 2000
+		fleet "Kaltheim Large" 3000
+	system Lo'or'awaen
+		fleet "Kaltheim Small" 2000
+		fleet "Kaltheim Large" 3000
+	system Ytgfrv'hjusd'ikmuivra	
+		fleet "Kaltheim Small" 2000
+		fleet "Kaltheim Large" 3000
+	system Vo'jaerun
+		fleet "Kaltheim Small" 2500
+		fleet "Kaltheim Large" 3500
+	system Hrau'ngri'liadien
+		fleet "Kaltheim Small" 2500
+		fleet "Kaltheim Large" 3500
+		
+event "bioweapon retreat III"
+	system Fo'gar'helien
+		fleet "Kaltheim Small" 1200
+		fleet "Kaltheim Large" 1600
+	system Syj'ngf'bnk
+		fleet "Kaltheim Small" 1400
+		fleet "Kaltheim Large" 2200
+	system Ik'ari'aka
+		fleet "Kaltheim Small" 1400
+		fleet "Kaltheim Large" 2200		
+	system Banq'rujol'ifus
+		fleet "Kaltheim Small" 1700
+		fleet "Kaltheim Large" 2500
+	system Jaaaar'aaaaa'l'u
+		fleet "Kaltheim Small" 1700
+		fleet "Kaltheim Large" 2500
+	system Umba'draeuin
+		fleet "Kaltheim Small" 1700
+		fleet "Kaltheim Large" 2500		
+	system Crul'im'heim
+		fleet "Kaltheim Small" 2500
+		remove fleet "Kaltheim Large"
+	system Kama'la'ez
+		fleet "Kaltheim Small" 2500
+		remove fleet "Kaltheim Large"
+	system Lo'or'awaen
+		fleet "Kaltheim Small" 2500
+		remove fleet "Kaltheim Large"
+	system Ytgfrv'hjusd'ikmuivra	
+		fleet "Kaltheim Small" 2500
+		remove fleet "Kaltheim Large"		
+	system Grundel'froae
+		remove fleet "Kaltheim Small"
+		remove fleet "Kaltheim Large"		
+	system Vo'jaerun
+		remove fleet "Kaltheim Small"
+		remove fleet "Kaltheim Large"
+	system Hrau'ngri'liadien
+		remove fleet "Kaltheim Small"
+		remove fleet "Kaltheim Large"
+		
 event "battle of finitum"
 	system "Finitum"
 		government "Enclave"
@@ -763,3 +888,167 @@ event "battle of skryydr"
 		fleet "enclave small pirate east" 1200
 	system "Arkhos"
 		government "Enclave"
+		
+event "battle of adke"
+	system "Adke"
+		government "Enclave"
+		fleet Trader 800
+		fleet Transporter 800
+		fleet "Enclave Patrol" 900
+		fleet "Enclave Capital" 500
+	planet "Alleshafen"
+		landscape land/fields13-sfiera
+		description `This planet was once the home of the Enclave's largest ship manufacturing centres, much like Geminus in the Republic. While it is a relatively old world, the crust is composed mostly of very heavy metals and rocks, and so handily, the lighter metals which are useful for shipbuilding are found very near to the surface.`
+		description `Like Carmine, however, Alleshafen bore the brunt of a large number of nuclear attacks. As a result, while it has not been decimated as completely as Carmine was- especially in the shipbuilding areas- the environment on Alleshafen will continue to be in a dire state thanks to the radiation from the nuclear blasts until well after you are dead.`
+		spaceport `	The nuclear attacks on Alleshafen, and the successive pirate occupation have led to a sudden surge of emigration to other planets. The year-long nuclear winters, widespread destruction of infrastructure, and irradiated environment have suddenly made Alleshafen an undesirable place to live. Consequently, the remains of the spaceport are bursting with refugees, looking for a way to get off-world.`
+
+event "kaltheim recovery I"
+	system Fo'gar'helien
+		fleet "Kaltheim Small" 1100
+		fleet "Kaltheim Large" 1500
+	system Syj'ngf'bnk
+		fleet "Kaltheim Small" 1200
+		fleet "Kaltheim Large" 1600
+	system Ik'ari'aka
+		fleet "Kaltheim Small" 1200
+		fleet "Kaltheim Large" 1600
+	system Banq'rujol'ifus
+		fleet "Kaltheim Small" 1400
+		fleet "Kaltheim Large" 2200
+	system Jaaaar'aaaaa'l'u
+		fleet "Kaltheim Small" 1400
+		fleet "Kaltheim Large" 2200
+	system Umba'draeuin
+		fleet "Kaltheim Small" 1400
+		fleet "Kaltheim Large" 2200
+	system Crul'im'heim
+		fleet "Kaltheim Small" 2000
+		add fleet "Kaltheim Large" 3000
+	system Grundel'froae
+		add fleet "Kaltheim Small" 2000
+		add fleet "Kaltheim Large" 3000
+	system Kama'la'ez
+		fleet "Kaltheim Small" 2000
+		add fleet "Kaltheim Large" 3000
+	system Lo'or'awaen
+		fleet "Kaltheim Small" 2000
+		add fleet "Kaltheim Large" 3000
+	system Ytgfrv'hjusd'ikmuivra	
+		fleet "Kaltheim Small" 2000
+		add fleet "Kaltheim Large" 3000
+	system Vo'jaerun
+		add fleet "Kaltheim Small" 2500
+		add fleet "Kaltheim Large" 3500
+	system Hrau'ngri'liadien
+		add fleet "Kaltheim Small" 2500
+		add fleet "Kaltheim Large" 3500
+
+event "kaltheim recovery II"
+	system Fo'gar'helien
+		fleet "Kaltheim Small" 600
+		fleet "Kaltheim Large" 1000
+	system Syj'ngf'bnk
+		fleet "Kaltheim Small" 700
+		fleet "Kaltheim Large" 1100
+	system Ik'ari'aka
+		fleet "Kaltheim Small" 700
+		fleet "Kaltheim Large" 1100
+	system Banq'rujol'ifus
+		fleet "Kaltheim Small" 700
+		fleet "Kaltheim Large" 1100
+	system Jaaaar'aaaaa'l'u
+		fleet "Kaltheim Small" 700
+		fleet "Kaltheim Large" 1100
+	system Umba'draeuin
+		fleet "Kaltheim Small" 700
+		fleet "Kaltheim Large" 1100
+	system Crul'im'heim
+		fleet "Kaltheim Small" 900
+		fleet "Kaltheim Large" 1300
+	system Kama'la'ez
+		fleet "Kaltheim Small" 900
+		fleet "Kaltheim Large" 1300
+	system Ytgfrv'hjusd'ikmuivra	
+		fleet "Kaltheim Small" 900
+		fleet "Kaltheim Large" 1300
+	system Vo'jaerun
+		fleet "Kaltheim Small" 800
+		fleet "Kaltheim Large" 1200
+	system Hrau'ngri'liadien
+		fleet "Kaltheim Small" 800
+		fleet "Kaltheim Large" 1200
+	system Lo'or'awaen
+		fleet "Kaltheim Small" 1000
+		fleet "Kaltheim Large" 1400
+	system Grundel'froae
+		fleet "Kaltheim Small" 1000
+		fleet "Kaltheim Large" 1400
+
+event "kaltheim integration I"
+	system Daia
+		add fleet "Kaltheim Small" 900
+		add fleet "Kaltheim Large" 1300
+	system Gautus
+		add fleet "Kaltheim Small" 900
+		add fleet "Kaltheim Large" 1300
+	system Four
+		add fleet "Kaltheim Small" 800
+		add fleet "Kaltheim Large" 1200
+	system Aetrus
+		add fleet "Kaltheim Small" 900
+		add fleet "Kaltheim Large" 1300
+	system Vo'jaerun
+		add fleet Trader 800
+		add fleet Transporter 800
+	system Hrau'ngri'liadien
+		add fleet Trader 800
+		add fleet Transporter 800
+	
+event "kaltheim integration II"
+	system Cispia
+		add fleet "Kaltheim Small" 900
+		add fleet "Kaltheim Large" 1300
+	system "Deg Deg"
+		add fleet "Kaltheim Small" 1000
+		add fleet "Kaltheim Large" 1400
+	system Aether
+		add fleet "Kaltheim Small" 1000
+		add fleet "Kaltheim Large" 1400
+	system Thaen
+		add fleet "Kaltheim Small" 900
+		add fleet "Kaltheim Large" 1300
+	system Innenheim
+		add fleet "Kaltheim Small" 900
+		add fleet "Kaltheim Large" 1300
+	system Jaaaar'aaaaa'l'u
+		add fleet Trader 800
+		add fleet Transporter 800
+	system Umba'draeuin
+		add fleet Trader 800
+		add fleet Transporter 800	
+
+event "kaltheim integration III"
+	system Ortus
+		add fleet "Kaltheim Small" 1000
+		add fleet "Kaltheim Large" 1400
+	system Eskidilium
+		add fleet "Kaltheim Small" 1100
+		add fleet "Kaltheim Large" 1500
+	system Memus
+		add fleet "Kaltheim Small" 1000
+		add fleet "Kaltheim Large" 1400
+	system Outenheim
+		add fleet "Kaltheim Small" 1000
+		add fleet "Kaltheim Large" 1400
+	system Ares
+		add fleet "Kaltheim Small" 1100
+		add fleet "Kaltheim Large" 1500
+	system Fallout
+		add fleet "Kaltheim Small" 1100
+		add fleet "Kaltheim Large" 1500
+	system Banq'rujol'ifus
+		add fleet Trader 900
+		add fleet Transporter 900
+	system Fo'gar'helien
+		add fleet Trader 900
+		add fleet Transporter 900

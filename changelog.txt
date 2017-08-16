@@ -1,4 +1,18 @@
 ------------------------------------------------------------------------  v0.0.10  ------------------------------------------------------------------------------
+16/08/17
+
+-Changed XSZ's swizzle and government colour.
+-Added the hit effect for the Slush Beam.
+-Added a set of events in Blue 3 to reduce the frequency of Kaltheim fleets once the bioweapon has been released.
+-Added an event between Blue 3 and 4 to have Adke be retaken from the pirates.
+-Added shipyards and outfitters to Kaltheim planets.
+-Locked all Kaltheim tech behind a license.
+-Altered the invasion event to change Gahr'wregdl'iahr's description to keep it up to date.
+-Gave the player the Kaltheim license at the end of Blue 4G.
+-Updated the galaxy image to remove some weird lines at the edges.
+-Added two sets of events to return the Kaltheim fleets to normal and allow Kaltheim and Enclave merchant fleets bleed over into each other's space.
+
+
 15/08/17
 
 -Added Blue 4G.
