@@ -1442,4 +1442,5 @@ mission "Enclave Blue 4G"
 				`	"Bye, then."`
 			label 1
 			`	"Goodbye indeed," Feun'ragnam says, awkwardly shaking your hand.`
+			`	(NOTE: THIS BRANCH OF THE STORYLINE IS FINISHED UNTIL v0.0.12, COMING THIS FALL)
 				decline
