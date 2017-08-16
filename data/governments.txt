@@ -2,7 +2,7 @@ government Enclave
 	swizzle 0
 	color .99 .99 .99
 		
-	"player reputation" 1000
+	"player reputation" 1
 	"attitude toward"
 		"Merchant" 100
 		"Pirate" -1000
