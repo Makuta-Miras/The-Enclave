@@ -605,10 +605,10 @@ ship "Penguin"
 	
 ship "Scorched Earth"
 	sprite "ship/Scorched Earth"
-	licenses
-		"XSZ Nuclear"
 	attributes
 		category "Interceptor"
+		licenses 
+			"XSZ Nuclear"
 		"cost" 126000
 		"shields" 1100
 		"hull" 200

@@ -83,7 +83,7 @@ mission "Enclave Endgame 2"
 			`	Kuznetsov spits on the ground. "Idiots like you are who'll lose us this war," he says angrily, glaring at you from under his 18th-century admiral's hat. "We need to pick our battles, minimise our losses. New Scotland isn't worth that much to us yet."`
 				goto 1
 			label 2
-			`	"Good point," Kuznetsov replies. "But it's immediately next to one of the alien systems, so as soon as we took it they'd launch an assault to retake it. But retaking Seminar puts them in a weaker position, and from there we can strike back at New Scotland with the rest of the southern arm behind us."`
+			`	"It's immediately next to one of the alien systems," Kuznetsov replies. "So as soon as we took it, they'd simply launch an assault to retake it. But retaking Seminar puts them in a weaker position, and from there we can strike back at New Scotland with the rest of the southern arm behind us."`
 				goto 1
 			label 3
 			`	Kuznetsov looks at you with a dirty look in his eyes. "They're only farmers," he says disdainfully. "Not worth liberating them except if we wanted to make a political point. Which we don't."`
@@ -150,7 +150,7 @@ mission "Enclave Endgame 3"
 		has "Enclave Endgame 2: done"
 	on offer
 		conversation
-			`When your ship touches down, it is almost immediately swarmed by a large number of what appear to be cadets in the Enclave's Navy, gasping and gawking at your ship, which, you think, must look incredibly alien to them in comparison to those built by the shipyards here in Enclave space. Steeling yourself for the ordeal, you head to step off your ship.`
+			`When your ship touches down, it is almost immediately swarmed by a large number of what appear to be cadets in the Enclave's navy, gasping and gawking at your ship, which, you think, must look incredibly alien to them in comparison to those built by the shipyards here in Enclave space. Steeling yourself for the ordeal, you head to step off your ship.`
 			choice
 				`	(Shoot them all.)`
 				`	(Wave.)`

@@ -154,8 +154,6 @@ mission "Enclave Blue 1C"
 			label 5
 			`	"You go get the <npc> and escort them to Jumblar," Kuznetsov says, packing up his stuff. "I'll meet you there."`
 				accept
-	on accept
-		set "language: Kaltheim"
 	npc accompany save
 		government Kaltheim
 		personality heroic vindictive derelict
@@ -247,6 +245,7 @@ mission "Enclave Blue 1E"
 			choice
 				`	(Head to the spaceport to see Admiral Kuznetsov now.)`
 					accept
+				
 				
 				
 mission "Enclave Blue 2A"
@@ -400,7 +399,7 @@ mission "Enclave Blue 2B"
 	npc
 		personality heroic vindictive escort
 		system Svind
-		government Enclave
+		government Kaltheim
 		fleet
 			names "kaltheim large"
 			variant
@@ -491,6 +490,9 @@ mission "Enclave Blue 2C"
 		dialog
 			`At the spaceport, it seems like everyone is running around like a headless chicken; when you ask, you find that XSZ have captured the Anvyu system, and they seem to be heading for the other nearby systems as well. You should be quick here.`
 			`The crews on board the new ships turn out to be some of the best in the Enclave's navy, hand-picked by the Grand Admiral to crew them. You introduce yourself to the crews and make preparations to head back to Fluorine.`
+		event "caesennia fleets I" 7
+		event "caesennia fleets II" 14
+		event "caesennia fleets III" 21
 		event "caesennia available" 30
 		
 			
@@ -614,9 +616,9 @@ mission "Enclave Blue 2E"
 			variant
 				"Buzzard" 35
 	on complete
-		event "latent captured"
+		event "battle of maduras"
 		conversation
-			`Latent's capital lies smoking and screaming, a not-so stark contrast to the last time you were here. From what you here, some districts were blown apart from underground; molten rock spewing up in violent eruptions from beneath the surface, presumably the result of orbital bombardment by the Kaltheim. You shudder at the thought of the lost lives.`
+			`Latent's capital lies smoking and screaming, a not-so stark contrast to the last time you were here. From what you hear, some districts were blown apart from underground; molten rock spewing up in violent eruptions from beneath the surface, presumably the result of orbital bombardment by the Kaltheim. You shudder at the thought of the lost lives.`
 			`	A small squadron of Flurries, escorted by an incredibly imposing Muesli Carrier, are taking off as you land, the faint blue glow beneath them belying the fact that they are currently only engaging their repulsor engines.`
 			`	"We did it," Cathy says wearily as she steps off the <ship> behind you, a makeshift bandage round her head already turning red.`
 			choice
@@ -687,19 +689,15 @@ mission "Enclave Blue 2E"
 					goto 10
 			label 7
 			`	"This is something more important than Kuznetsov has jurisdiction over," Cathy replies. "I guess we've probably got orders waiting for us at the spaceport about this."`
-			`	(NOTE: v0.0.9x ENDS HERE)`
 				accept
 			label 8
 			`	"You literally are," Cathy retorts. Actually looking at you now, somewhat disgruntled, she continues- "This is something more important than Kuznetsov has jurisdiction over. I guess we've probably got orders waiting for us at the spaceport about this, so I say we head there."`
-			`	(NOTE: v0.0.9x ENDS HERE)`
 				accept
 			label 9
 			`	"That isn't the point," Cathy snaps. "This is something more important than Kuznetsov has jurisdiction over. I guess we've probably got orders waiting for us at the spaceport about this, so I say we head there."`
-			`	(NOTE: v0.0.9x ENDS HERE)`
 				accept
 			label 10
 			`	Cathy sighs, taking her head out of her hands. "This is something more important than Kuznetsov has jurisdiction over. I guess we've probably got orders waiting for us at the spaceport about this, so I say we head there."`
-			`	(NOTE: v0.0.9x ENDS HERE)`
 				accept
 				
 mission "Enclave Blue 2F"
@@ -713,4 +711,735 @@ mission "Enclave Blue 2F"
 			`	There are even a few wary-looking Kaltheim about, seemingly having been welcomed with open arms by some of the more drunken Enclave officers.`
 			`	You find Cathy in the Pedro's Arms, a squat, smoky building on the outskirts of the port. It appears that the soldiers Cathy is with are some old friends who used to crew the R.N.S. Severn with her, back before the Severn got destroyed- her twin sister Anna, who is almost identical to Cathy, if not for her luminous green hair in comparison to Cathy's blue; Bob, the Severn's chief engineer, a grizzled old man originally hailing from Cynic; and Steve, a relatively soft-spoken pilot from Tarkir, face split open by a large scar.`
 			`	You while away the night with Cathy and her crew, dreading the bloodshed to come in the morning.`
+				decline
+				
+				
+				
+mission "Enclave Blue 3A"
+	name "Fight off XSZ"
+	description "Drive off the XSZ forces occupying the <system> system."
+	autosave
+	source Latent
+	destination Termite
+	clearance
+	to offer
+		has "Enclave Blue 2E: done"
+	on offer
+		conversation
+			`Having dropped Cathy off at the shipyards to try and find a Caesennia for herself, you find Admiral Kuznetsov sitting around at the summit of one of the many skyscrapers present in the capital city, oil-streaked boots up on the dark brown, mahogany desk of some XSZ official.`
+			choice
+				`	"Do we know what's happening with the Kaltheim yet, sir?"`
+			`	"Their doctors are saying it's some kind of contagion," Kuznetsov says, rubbing the side of his head. You notice the desk is literred with empty steel mugs, faint brown stains at the bottom of them. You doubt Kuznetsov has slept. "As a result," the Admiral continues, "They're pulling their troops back to their worlds; saying they want as many test subjects as possible."`
+			choice
+				`	"That sounds fair enough."`
+					goto 1
+				`	"Won't that just make it worse, having all those infected around the rest of their people?"`
+			`	"That's what I said," Kuznetsov replies with a faint tone of disgust in his voice. "But they wouldn't listen. Nothing we can do about that now though, so your next job is to just go through XSZ space and drive off their remaining mercs. If you manage to find any of their executives, I'll give you a bonus. All clear?"`
+			choice
+				`	"Yes sir."`
+					accept
+			label 1
+			`	"Your next job is to just go through XSZ space and drive off their remaining mercs," Kuznetsov replies. "If you manage to find any of their executives, I'll give you a bonus. All clear?"`
+			choice
+				`	"Yes sir."`
+					accept
+		event "bioweapon retreat I"
+		event "bioweapon retreat II" 5
+		event "bioweapon retreat III" 10
+	npc
+		personality heroic vindictive escort
+		system Maduras
+		government Enclave
+		fleet
+			names "republic capital"
+			fighters "republic fighter"
+			variant
+				"Caesennia"
+				"Apollo" 3
+				"Muesli Carrier"
+				"Dart" 18
+		fleet
+			names "republic small"
+			variant
+				"Sea Drake" 3
+				"Penguin" 5
+	npc kill
+		personality heroic vindictive staying
+		system Finitum
+		government "XSZ Corporation"
+		fleet
+			names "syndicate capital"
+			variant
+				"Bloodhound" 
+				"Turbulence (Nuclear)" 2
+				"Turbulence" 3
+		fleet
+			names "syndicate small"
+			variant
+				"Buzzard" 4
+	on visit
+		dialog
+			`The battle isn't over yet. It would be immoral to stay here whilst the rest of your forces are dying up in orbit...`
+				launch
+	on complete
+		event "battle of finitum"
+		
+mission "Enclave Blue 3B"
+	name "Fight off XSZ"
+	description "Drive off the XSZ forces occupying the <system> system."
+	autosave
+	landing
+	source Termite
+	destination Crackle
+	clearance
+	to offer
+		has "Enclave Blue 3A: done"
+	on offer
+		conversation
+			`Having fought off the fairly ragtag XSZ mercs who were stationed here, you land at the spaceport. As your troops secure key areas of the city, a few Muesli Carriers fly overhead, their relative clumsiness belying the numbers of fighters within their bays.`
+			`	Now that your reinforcements are here, you make ready to attack the <system> system.`
+				accept
+	npc
+		personality heroic vindictive escort
+		system Finitum
+		government Enclave
+		fleet
+			names "republic capital"
+			fighters "republic fighter"
+			variant
+				"Apollo" 3
+				"Muesli Carrier" 4
+				"Dart" 54
+		fleet
+			names "republic small"
+			variant
+				"Sea Drake" 3
+				"Penguin" 2
+	npc kill
+		personality heroic vindictive staying
+		system Kaladesh
+		government "XSZ Corporation"
+		fleet
+			names "syndicate capital"
+			variant
+				"Bloodhound" 2
+				"Turbulence" 2
+		fleet
+			names "syndicate small"
+			variant
+				"Buzzard" 5
+	on visit
+		dialog
+			`The battle isn't over yet. It would be immoral to stay here whilst the rest of your forces are dying up in orbit...`
+				launch
+	on complete
+		event "battle of kaladesh"
+		event "cynic surrenders"
+		conversation
+			`While Cavalier Station likely still has some XSZ employees holed up in it, you dare not attack the station, in case you accidentally knock some asteroids down onto Crackle.`
+			`	As you begin to make ready to attack Cynic, in the Ark system, you receive a message from fleet command-`
+			`		'Commander <last>,`
+			`	The governing authorities on Cynic have destroyed the XSZ mercenaries occupying the Ark system and have acquiesced to joining the Enclave. Head straight to the Orff system, then wait for reinforcements before you attack Skryydr; our intelligence indicates that there's a worryingly large force gathered there.'`
+			
+mission "Enclave Blue 3C"
+	name "Fight off XSZ"
+	description "Drive off the XSZ forces occupying the <system> system."
+	autosave
+	landing
+	source Crackle
+	destination Magna
+	clearance
+	to offer
+		has "Enclave Blue 3B: done"
+	npc
+		personality heroic vindictive escort
+		system Kaladesh
+		government Enclave
+		fleet
+			names "republic capital"
+			fighters "republic fighter"
+			variant
+				"Apollo" 3
+				"Muesli Carrier" 4
+				"Dart" 54
+		fleet
+			names "republic small"
+			variant
+				"Sea Drake" 3
+				"Penguin" 2
+	npc kill
+		personality heroic vindictive staying
+		system Orff
+		government "XSZ Corporation"
+		fleet
+			names "syndicate capital"
+			variant
+				"Turbulence" 3
+		fleet
+			names "syndicate small"
+			variant
+				"Buzzard" 8
+	on visit
+		dialog
+			`The battle isn't over yet. It would be immoral to stay here whilst the rest of your forces are dying up in orbit...`
+				launch
+	on complete
+		event "battle of orff"
+		
+mission "Enclave Blue 3D"
+	name "Attack Mirrodin"
+	description "Wait for reinforcements to arrive, then attack the <system> system."
+	autosave
+	landing
+	source Magna
+	destination Mirrodin
+	clearance
+	to offer
+		has "Enclave Blue 3C: done"
+	on offer
+		conversation
+			`A small convoy of Muesli Carriers- escorted by a Caesennia- touches down not long after you have secured the spaceport city, leaking smoke; presumably they were attacked by some random XSZ ships during their flight here.`
+			`	"Commander <last>!" Admiral Kuznetsov shouts, stepping off the R.N.S. Tsavo and heading towards you.`
+			choice
+				`	"Yes, sir?"`
+			`	"Good work here," Kuznetsov replies, looking around at the surprisingly undamaged spaceport. "You heard about what's going on next door in Skryydr?"`
+			choice
+				`	"I heard about the fleets gathering there."`
+					goto 1
+				`	"No- what's happened?"`
+			`	"On the bright side," Kuznetsov begins, shaking his head, "Whichever exec was still paying XSZ's mercs is either dead or captured, because they've repainted their ships in pirate colours. On the bad side, that means that we've got a whole lot of pirates, in the middle of our space, armed with nukes, and who have now got fleets of independent pirate ships arriving every few hours in Skryydr."`
+			label 4
+			choice
+				`	"We'll be able to smash them, right? What are some pirates compared to our navy?"`
+				`	"That's worrying."`
+					goto 2
+				`	"Do we know how many ships they've got gathered there at the moment?"`
+					goto 3
+			`	Kuznetsov gives you a hard stare. "They're nuclear."`
+			choice
+				`	"Fine."`
+				`	"Forgot about that."`
+			label 2
+			`	The Admiral nods. "We're going to have to do this, no matter what, so plan is we're going to send in some Scorched Earths that we managed to capture from XSZ. They'll be operating with some rudimentary cloaking technology- it only masks their thermal and gravitational signatures- which will hopefully draw the fire of the nuclear ships, after which the bulk of our fleet can jump in, which should minimise casualties. Also, we've got a few squadrons still in transit from Maduras- they should be getting here in the next few hours. Don't head to Skryydr before they arrive; you won't have fun."`
+			`	"Any questions?"`
+			choice
+				`	"None."`
+					accept
+			label 1
+			`	"Whichever exec was still paying XSZ's mercs is either dead or captured, because they've repainted their ships in pirate colours," Kuznetsov replies. "However, that means that we've got a whole lot of pirates, in the middle of our space, armed with nukes, and who have now got fleets of other pirate ships arriving every few hours in Skryydr."`
+				goto 4
+			label 3
+			`	"Reports are suggesting that they've got somewhere in the region of fifty or so warships and interceptors parked in the system," Kuznetsov replies. "In addition to new fleets arriving every few hours."`
+				goto 4
+	npc
+		personality heroic vindictive
+		system Orff
+		government Enclave
+		fleet
+			names "republic capital"
+			fighters "republic fighter"
+			variant
+				"Apollo" 6
+				"Caesennia" 3
+				"Muesli Carrier" 5
+				"Enclave Lance" 30
+				"Dart" 42
+		fleet
+			names "republic small"
+			variant
+				"Sea Drake" 10
+				"Penguin" 15
+				"Enclave Destroyer" 7
+	npc
+		personality heroic vindictive
+		system Orff
+		government Enclave
+		ship "Caesennia" "R.N.S. Tsavo"
+	npc
+		personality heroic vindictive
+		system Ark
+		government Enclave
+		fleet
+			names "republic capital"
+			fighters "republic fighter"
+			variant
+				"Caesennia" 2
+				"Apollo"
+				"Dart" 2
+	npc
+		personality heroic vindictive
+		system Finitum
+		government Enclave
+		fleet
+			names "republic small"
+			variant
+				"Penguin" 5
+				"Sea Drake" 3
+				"Enclave Destroyer" 2
+	npc kill
+		personality heroic staying
+		system Skryydr
+		government Pirate
+		fleet
+			names "syndicate capital"
+			variant
+				"Bloodhound" 5
+				"Turbulence (Nuclear)" 3
+		fleet
+			names "syndicate small"
+			variant
+				"Buzzard" 15
+	npc kill
+		personality heroic staying
+		system Skryydr
+		government Pirate
+		fleet
+			names "syndicate capital"
+			variant
+				"Bloodhound" 2
+				"Turbulence (Nuclear)" 2
+		fleet
+			names "syndicate small"
+			variant
+				"Buzzard" 5
+	npc kill
+		personality plunders staying
+		system Skryydr
+		government Pirate
+		fleet
+			names "pirate"
+			variant
+				"Penguin" 5
+				"Sea Drake" 3
+				"Turbulence"
+	npc kill
+		personality plunders staying
+		system Skryydr
+		government Pirate
+		fleet
+			names "pirate"
+			fighters "pirate"
+			variant
+				"Penguin" 6
+				"Sea Drake" 4
+				"Muesli Carrier"
+				"Enclave Lance" 12
+	on visit
+		dialog
+			`The battle isn't over yet. It would be immoral to stay here whilst the rest of your forces are dying up in orbit...`
+				launch
+	on complete
+		event "battle of skryydr"
+		event "battle of adke" 5
+		
+	
+mission "Enclave Blue 4A"
+	name "Report to <planet>"
+	description "Locate Forward Command on <stopovers>, then report to the Kaltheim on <planet>."
+	autosave
+	landing
+	source Mirrodin
+	stopover "Maduras"
+	destination Era'lgin'bl
+	to offer
+		has "Enclave Blue 3D: done"
+	on offer
+		conversation
+			`You land on Mirrodin just as the last of the internal fighting is dying down- by the time you have checked your ship for any damage that went unnoticed during the battle, Mirrodin has been secured.`
+			`	The inhabitants- mostly wealthy, arrogant individuals who moved here eager for the social claim of living on the most advanced space station in the galaxy, are nowhere to be seen; it appears, out of those who were not killed during the pirate occupation, that they are hidden in their homes, a wise enough choice.`
+			`	As you stand around waiting for orders- Admiral Kuznetsov is nowhere to be seen- your communicator starts beeping.`
+			`	Upon checking it, you find it to be a message from the Kaltheim-`
+			`	Commander <last>,`
+			`		Your help is required. The bioweapon is deadlier than first assumed. Entire cities have been wiped out.`
+			`		Inform your commanders of your absence and report to us on <planet>.`
+				accept
+	on stopover
+		dialog
+			`You contact the officer in charge of the temporary Forward Command base on Maduras and submit your form notifying the navy of your absence, then make preparations to leave for Kaltheim space.`
+	on visit
+		dialog
+			`You have arrived on <planet>, but you have not notified the Enclave of your absence- head to <stopovers> to do so before returning here.`
+			
+mission "Enclave Blue 4B"
+	name "Visit scientists on <planet>"
+	description "Find the facility of Kaltheim scientists researching the bioweapon currently affecting the Kaltheim."
+	landing
+	source Era'lgin'bl
+	destination Kri'eg'lyen
+	to offer
+		has "Enclave Blue 4A: done"
+	on offer
+		conversation
+			`The capital city is deathly silent, a stark contrast to how it was the last time you were here, before the fall of XSZ.`
+			`	You are met outside the building you visited last time by a small platoon of Kaltheim soldiers dressed in what appear to be almost armoured spacesuits. Over the course of a few hours, they escort you out of the city and to what you assume is some kind of underground complex in the wilds outside of the city- although you cannot be sure, thanks to the stifling blindfold that has been placed around your head.`
+			`	Upon the removal of your blindfold, your eyes take a few seconds to adjust to the dim red light within this room, and the stumpy, three-armed shapes moving about within.`
+			`	"Commander," one of the Kaltheim inside says, their native tongue drowned out by the echoing of their translator. "Our thanks for coming when you were summoned."`
+			`	Their speech is punctuated with the occasional cough.`
+			choice
+				`	"What do you need me to help with?"`
+					goto 1
+				`	"Why do you need me, instead of just one of your own operatives?"`
+			`	"Because this contagion which affects us, is contagious," they reply. "Too many of our lives have been lost already to... what do you call it... this bioweapon. We cannot risk more of our citizens being infected. Thus the quarantine."`
+			choice
+				`	"Fair enough. What do you need me to do?"`
+			label 1
+			`	"The primary facility has been established on <destination>," the Kaltheim says. "Report to our scientists there; they requested your help, so they should have tasks for you."`
+			choice
+				`	"Happy to help."`
+				`	"I just hope we can find a cure for the weapon."`
+			`	They nod. "Good luck, Commander <last>."`
+				accept
+	
+mission "Enclave Blue 4C"
+	name "Investigate the XSZ bioweapon"
+	description "Search the planet of <planet> for concentrated areas of the XSZ bioweapon used against the Kaltheim."
+	landing
+	infiltrating
+	source Kri'eg'lyen
+	destination Affalan
+	cargo "Scanning Equipment" 2
+	blocked "You do not have enough cargo space to take on this mission. Free up some cargo space, then return to take on the mission."
+	to offer
+		has "Enclave Blue 4B: done"
+	on offer
+		conversation
+			`The facility's doors open silently, the darkened glass panels moving gently downwards to allow you access.`
+			`	As you step inside, the second set of doors ahead of you remain closed, just as the previous set swishes shut behind you. Before you can take the time to wonder why the interior doors are still shut, however, multiple jets of liquid are sprayed out of the walls, drenching you in what smells like disinfectant.`
+			`	After a few moments, the jets of chemicals stop, the excess draining away through hidden gaps in the floor as a high-intensity fan in the ceiling switches on, blowing hot air at you at what feels like mach 2.`
+			`	Once you have been fully dried off and thoroughly confused, the doors ahead open, an electronic voice saying something incomprehensible in the Kaltheim language as you step into the lobby of the building.`
+			`	The room is startling white, bar-shaped lights on the floor and ceiling illuminating the sterile-looking room. There is some sort of desk in front of you- a reception desk?- but there is nobody manning it. The room is entirely empty.`
+			choice
+				`	(Look behind the desk.)`
+				`	(Wait for someone to come and find you.)`
+					goto 5
+			`	Hoping that nobody is watching, you climb over the desk. You are faced with what appears to be a computer monitor, although the input devices seem strange- instead of a simple touch-based system, there is a sphere with various indentations in it that seem to match the setup of the clawlike third appendage characteristic of the Kaltheim.`
+			choice
+				`	(Try to gain access to the computer.)`
+				`	(Go back and wait for someone to appear.)`
+					goto 4
+			`	Entirely unaware of how Kaltheim computers work, you try pressing the indentations in the sphere. Unfortunately, nothing happens- and even more unfortunately, at that point, a section of the wall to the side of the desk slides upwards, revealing a doorway into a darkened corridor.`
+			`	A doorway through which a Kaltheim dressed in a lab coat walks.`
+			choice
+				`	(Hide behind the desk.)`
+				`	(Do nothing.)`
+					goto 3
+			`	The Kaltheim scientist walks into the centre of the room, a clipboard clutched in their hand as they look round, presumably searching for you. Just as you think that they are about to leave, you hear the buzzing voice of the Kaltheim translation devices ring out, accompanied by presumably the equivalent in the Kaltheim language.`
+			`	"Please come out from behind the desk. I know you're there."`
+			`	Slowly, you stand up, making yourself visible to the scientist.`
+			label 1
+			choice
+				`	"I'm sorry, I was just curious as to what was behind the desk."`
+					goto 2
+				`	"You know, your computer here really has some security issues. I'm human, and I managed to hack it in seconds!"`
+			`	The Kaltheim makes a strange facial expression, the meaning of which you can't figure out. "I think you'll find that you didn't," they say through their translator. "Humans don't have the necessary third limb to operate our designs."`
+			choice
+				`	"Yeah actually you're right, I was just curious as to what was going on behind the desk."`
+			label 2
+			`	The Kaltheim shakes their head.`
+				goto 6
+			label 3
+			`	The scientist easily spots you. "What do you think you're doing behind there?" they say, the buzz of their translator conveying no emotion or feeling.`
+				goto 1
+			label 4
+			`	You climb back over the desk and stand against the wall, waiting for someone to find you.`			
+			label 5
+			`	After waiting for a few minutes, a section of the wall next to the desk slides downwards to reveal a corridor much like the room you are currently in, stretching further than you can see. A Kaltheim dressed in a lab coat steps out through the doorway, a surprisingly human clipboard in their hand.`
+			label 6
+			`	"You must be Commander <first> <last>," the Kaltheim says through their translator, walking briskly over to you. They stick their hand towards you in what you assume is a crude imitation of human customs.`
+			`	Not wanting to offend the scientist, you take their hand and awkwardly shake it. "My name is Feun'ragnam," the Kaltheim tells you. "While I am told our gender system is very different to that of you humans, you may refer to me as female, if it so helps you. Now, follow me. The laboratories are this way." Having no opportunity to argue, you follow Feun'ragnam back into the hallway from where she came.`
+			label 7
+			`	After a few steps, it becomes apparent that the hallway is in fact on a gentle slope downwards. All you can see ahead is a very uniform corridor design, completely silent apart from yours and Feun'ragnam's footsteps and the gentle whirring of the electronics.`
+			``
+			`	An hour of walking later, and you must be very deep into the crust of <source>; if the facility had simply been dug into a mountainside or something, you almost certainly would have come out the other side by now.`
+			`	In fact, you've been walking for so long that you can actually see a set of visible doors in front of you. Striding ahead, Feun'ragnam says something in the Kaltheim tongue- which, surprisingly, isn't translated- and the doors slide open to reveal a small chamber, presumably an elevator.`
+			`	"The laboratories are deep within the moon's crust, on the very edge of the primitive mantle which it has developed," Feun'ragnam says. "This is the only way down."`
+			`	As you step inside, the doors sealing and closing with a high-pitched pneumatic hum to maintain the pressure inside the elevator, you cannot help but feel a more than slight sense of trepidation about travelling miles downwards with this elevator as your only way out. You feel slightly heavier as the artifical gravity switches on, returning somewhat to your normal mass as the lift begins to descend at what must be breakneck speed.`
+			`	After a surprisingly short five minutes of descent, the elevator begins to slow; according to the altimeter, you should be almost at the bottom of the crust, although the temperature in the elevator doesn't feel like it.`
+			`	"We have arrived," Feun'ragnam announces as the elevator fully stops. The scientist yanks a large, red lever in the wall labelled with Kaltheim glyphs, and the chamber once again hisses with air as the pressure inside the elevator equalises with that of the complex beyond the doors. A few seconds later, the doors open, and Feun'ragnam heads out into the laboratory system.`
+			``
+			`	It is surprisingly cool down here; this close to the mantle, the air should be swelteringly hot, even on a small moon like this with what must be a relatively cool core, at least for one with tectonic activity.`
+			choice
+				`	"The temperature- why is it so cool down here?"`
+				`	(Say nothing.)`
+					goto 8
+			`	Feun'ragnam turns around. "You know our ships, yes?" You nod in reply. "Our race is naturally suited to the cold," she says. "The result of thousands of years of slavery and selective breeding, forced upon us by another species. When we discovered that <source> had enough tectonic activity to be able to sustain life, while not rising above our livable temperatures, it was the perfect moon for shipbuilding; low gravity, temperate albeit dry climate, large reserves of compounds required for our ships."`
+			`	The scientist pauses for a second. "We have been building our warships here for centuries," Feun'ragnam continues. "Unfortunately, a quarry for the ores we need for our ships went down too far. They broke through into the core, the only liquid rock on the moon. The sudden exposure of the core to the cold air outside caused some kind of reaction that resulted in a vast amount of the hot matter at the core of the moon being dragged out and expelled into the atmosphere."`
+			choice
+				`	"So, some miners accidentally sucked the entire core of the moon out?"`
+			`	She nods. "And now the moon is slowly becoming less and less habitable. In a few hundred years- our years, circuits of Era'lgin'bl around Fo'gar'helien- it is likely we will no longer be able to survive here." Feun'ragnam sighs. "Such a waste."`
+			label 8
+			`	You soon reach another set of doors, startling white like everything else, standing out in contrast to the rough stone walls lining the tunnel you are currently standing in.`
+			`	An imperceptible security check of some kind, and the doors open, allowing you and Feun'ragnam to enter the laboratory complex.`
+			`	There appear to be four other corridors leading off from the area where you are standing, seemly some kind of intersection, presumably leading to the specific labs.`
+			`	"We have four hundred and ninety-two scientists working non-stop to devise a cure for the bioweapon's effects," Feun'ragnam says from beside you. "Eight billion koriums invested in saving our species, and we have got exactly nowhere. There is nothing that we have that can stop it, and we can't go off-planet or we'll risk catching it. Hopeless."`
+			choice
+				`	"So is that why I'm here?"`
+			`	At that moment, a group of three or so more Kaltheim scientists round the corner and stop, seemingly startled by your presence. Feun'ragnam almost immediately begins speaking rapidly to them in the Kaltheim language, seemingly due to their apparent lack of translators.`
+			`	Their short conversation ending, one of the other scientists turns to you and bows, saying something in Kaltheim. "Commander <last>," Feun'ragnam's translator barks out, translating for the other Kaltheim. "You know why you are here?"`
+			choice
+				`	"...because you asked me to come?"`
+				`	"You need me to get you samples or whatever from human space?"`
+					goto 10
+			`	The scientist appears to chuckle. "No,"	Feun'ragnam's translator replies. "We summoned you here for help in our research. It is too dangerous for any Kaltheim to travel into human space and risk catching the contagion; we have quarantines set up which should contain it within our own space."`
+			`	"However," another of the scientists says, "As our colleague will have told you, we need data from the development of the bioweapon. We cannot go, for fear of dying."`
+			choice
+				`	"But I can."`
+			`	"Because you are human, and the bioweapon is targeted specifically at Kaltheim DNA," the same scientist replies, apparently pleased with you.`
+			label 9
+			`	"So," Feun'ragnam says. "Will you help us?"`
+			choice
+				`	"Sure."`
+					goto 11
+			label 10
+			`	"Correct," another scientist replies. "If we went, we would die from exposure to traces of the bioweapon. But as it is genetically coded only to target we Kaltheim, you can safely enter the facilities where it was developed."`
+				goto 9
+			label 11
+			`	"Excellent," Feun'ragnam replies, becoming more animated. "Firstly, we would like you to visit <destination>. According to our intelligence, the planet is frequently used for large-scale experiments; it's likely that Affalan is where the bioweapon tests were conducted."`
+			choice
+				`	"So, how do I actually find any data?"`
+			`	"We have developed powerful scanning systems which can scan an entire planet for traces of a single type of organism," the first scientist says. "You can use them to scan the planet for concentrations of the bioweapon; the areas with the highest concentrations of it should correlate to the location of testing facilities."`
+			choice
+				`	"Understood."`
+			`	"The scanning equipment will have been loaded onto your ship already," Feun'ragnam says as you walk back through the miles-long tunnel up near the surface.`
+			choice
+				`	"That's fast."`
+			`	"Our crews are efficient, Commander <last>," the Kaltheim replies. "Good luck," she continues, after a short pause. "Our species' entire existence depends on you now."`
+			choice
+				`	"Well, I'll try not to let you all die horrifically."`
+				`	"I guarantee you that I'll find what you need."`
+			`	"What a comfort," Feun'ragnam replies through her translator.`
+			`	An hour later, you are on board your ship, ready to take off for the haunted planet of Affalan.`
+				accept
+				
+mission "Enclave Blue 4D"
+	name "Return to <planet>"
+	description "Evade the XSZ ships pursuing you, and return to <destination> to confer with the Kaltheim scientists."
+	landing
+	autosave
+	source Affalan
+	destination Kri'eg'lyen
+	cargo "Scanning Equipment" 2
+	to offer
+		has "Enclave Blue 4C: done"
+	on offer
+		conversation
+			`You bring your ship in low over Affalan, the ugly clouds obstructing much of your view; in fact, the visibility is so poor that you have had to rely entirely on your ship's gravitational and sonar-based sensors to get a picture of the deformed, primeval landscape below.`
+			`	Having more or less circumnavigated the planet, crossing both poles and four points along the equator to establish a safe flight route, you boot up the scanning equipment given to you by the Kaltheim.`
+			`	Wired into your ship, the alien equipment has access to both your reactor and all of your other sensors. As the scanners start up and begin their first procedures, you notice a siginificant drop in the amount of geographical data you're receiving from your sensors- dangerously so; you feel a jolt as your ship scrapes against a remarkably high cliff face, your shields thankfully protecting the hull from any major harm.`
+			choice
+				`	(Pull up and scan from higher in the atmosphere; it's far too risky.)`
+				`	(Continue scanning at low altitude.)`
+					goto 1
+			`	Deciding not to risk a far more serious collision, you pull your ship up, ascending a few thousand feet to an altitude where there should be far fewer mountains to interfere with your flight path.`
+			label 1
+			`	An hour later and your ship has once again crossed most latitudes and longitudes of the planet- the scan is complete.`
+			`	According to the data collected by the scan, the genetic signature of the bioweapon only actually exists in very, very tiny quantities on <source>'s surface and in the atmosphere, even smaller than would be expected. However, there is a small spot, only a square kilometre or two in size, on one of the southern continents which boasts a much higher concentration of the bioweapon than anywhere else.`
+			choice
+				`	(Investigate the source.)`
+			`	You circle back round, plotting a course for the bioweapon-ridden area. During the flight there, you take the time to get into an armoured hazmat suit; if XSZ cooked up the bioweapon here, you have no idea what kind of other dangerous stuff could be holed up in the facility.`
+			`	Your ship touches down not too far off the facility, at the edge of the concentrated zone of bioweapon, leaving you a small trek in your hazmat suit to get to the facility.`
+			`	Back when XSZ was still around, there were never any personnel stationed on Affalan- the climate was far too changeable, and insuring any personnel would have been far too expensive for XSZ. As a result, the only workers in the facility should be unarmed drones- unless a group of ex-XSZ fugitives are hiding out in the facility, which is unlikely, to say the least.`
+			`	Upon arriving at the perimeter of the facility, you notice a small gate in the chain-link fence standing open.`
+			choice
+				`	(Head through the gate.)`
+					goto 2
+				`	(Cut your own hole in the fence.)`
+			`	You unpack the wire cutters that you handily brought with you, and set to work clipping apart the links, your rubber gloves protecting you from an electric shock in the event of the fence being electrified. You manage to cut a human-sized hole in the fence, and step through.`
+			label 2
+			`	On the other side, the ground is packed rubble, held together by cement; a crude job. Up ahead, the facility glows red in your visor, the software from the Kaltheim scanning equipment copied over into your suit's internal computer and heads-up display.`
+			`	Eventually, you reach the facility. Ahead of you, an airlock into the building stands open. The rest of this side of the facility appears to be smooth, solid concrete, with no other way in.`
+			choice
+				`	(Enter the building.)`
+			`	You step warily through the airlock, turning on your torch to illuminate the darkened corridor.`
+			`	For a while, you follow the traces of bioweapon on your heads-up display, eventually finding the floor where the concentration is at its highest. Aware that there is every chance that you are currently receiving a substantial radiation dose, you quickly download as much data on the bioweapon as you can from the floor's mainframe computer, hoping that what you've managed to obtain is useful.`
+			`	Just as your suit finishes downloading the data, you receive an alert on your heads-up display: five ships, hulls matching typical XSZ ships, heading towards you, fast. You must have tripped some kind of alarm.`
+			choice
+				`	(Hide and hope the ships pass overhead.)`
+				`	(Run back to your ship and take off.)`
+					goto 3
+			`	You stay where you are, the ships getting ominously closer and closer. As they near your position, you hear a weapons discharge echo through the structure of the facility, followed by a loud explosion. Your ship has been destroyed.`
+			`	Eventually, the XSZ ships pass overhead, leaving you stranded on Affalan. With no way of making contact with the rest of the galaxy, you slowly starve to death.`
+				die
+			label 3
+			`	Clumsily, you run to your ship, crossing the distance from the facility, to the perimeter, to the field where you parked your ship. You fire up your ship just as the ships appear over the horizon, your shields coming online in just enough time to block the first weapons discharge.`
+			`	You take off as fast as you can, a course plotted back to <destination>.`
+				launch
+	npc evade
+		personality heroic vindictive unconstrained marked
+		system Mezzanine
+		government "XSZ Corporation"
+		fleet
+			names "syndicate small"
+			variant
+				"Buzzard" 3
+	npc evade
+		personality heroic vindictive unconstrained marked
+		system Mezzanine
+		government "XSZ Corporation"
+		fleet
+			names "syndicate capital"
+			variant
+				"Turbulence (Nuclear)" 2
+	on visit
+		dialog `The XSZ ships chasing you are still in orbit. Destroy or evade them before returning.`
+			launch
+	on complete
+		conversation
+			`You return to the facility immediately after landing on <planet>. Upon arriving, you are met again by a different Kaltheim scientist, one who doesn't give their name. You hand the data you collected from the facility on <source> over to them.`
+			choice
+				`	"When will we know if any of this helps?"`
+				`	(Leave.)`
+					goto leave
+			`	"It is unknown," the scientist says. "Tests are complex, lengthy, unreliable. Upon their conclusion, we will notify you."`
+			label end
+			`	You thank the Kaltheim and leave.`
+				decline
+			label leave
+			`	"We will notify you upon the conclusion of the tests," the Kaltheim scientist tells you.`
+				goto end
+
+mission "Enclave Blue 4E"
+	name "Return to <planet>"
+	description "Travel to <destination> to receive your next assignment from the team of Kaltheim scientists who are trying to find a cure for XSZ's bioweapon."
+	landing
+	source
+		government "Kaltheim" "Enclave" "XSZ Corporation"
+	destination Kri'eg'lyen
+	to offer
+		has "Enclave Blue 4D: done"
+		random < 52
+	on offer
+		dialog
+			`As you land, you receive a message on your communicator:`
+			`		Commander <last>,`
+			`	Tests on the data you gave us have been concluded. Please report back to <planet> for your next assignment.`
+			`	-Feun'ragnam, Head of Operations`
+			`	Kaltheim Bioweapon Research Division Z-29`
+				accept
+	
+mission "Enclave Blue 4F"
+	name "Bioweapon Sampling"
+	description "Travel to <destination> to retrieve uncontaminated samples of the bioweapon for research."
+	landing
+	source Kri'eg'lyen
+	destination Latent
+	to offer
+		has "Enclave Blue 4E: done"
+	on offer
+		conversation
+			`"Commander <last>!" Feun'ragnam says, greeting you (relatively) warmly as you step out of the elevator inside the laboratory complex on <source>. "The data you collected for us was a start, at least, in understanding how the bioweapon works."`
+			choice
+				`	"What do you mean, 'a start'? Was it incomplete?"`
+				`	(Nod as if you know what she's talking about.)`
+					goto 1
+			`	"A lot of it was ruptured, corrupted," she replies. "All we were able to establish is that the bioweapon is based on a simple virus, rather than any more complex pathogen; we were unable to sequence its genome in any way."`
+				goto 2
+			label 1
+			`	"A lot of it was ruptured, corrupted," she continues. "All we were able to establish is that the bioweapon is based on a simple virus, rather than any more complex pathogen; we were unable to sequence its genome in any way."`
+			label 2
+			choice
+				`	"That's a problem, then."`
+			`	"Indeed it is," Feun'ragnam says. "If we can't sequence the genome, we can't reproduce the virus in the laboratory, and therefore cannot test on it."`
+			choice
+				`	"Why would you want to reproduce the bioweapon? Isn't that dangerous if it's so contagious?"`
+				`	"What do you need me to do?"`
+					goto 3
+			`	The scientist performs the Kaltheim equivalent of a sigh. "Another difference between human and Kaltheim biology. When our bodies are attacked by pathogens, our cells infest the pathogen, destroying it by eating away at it from the inside, corrupting its DNA so it dies by its own hand."`
+			`	"The problem with this, is that when our natural defense mechanisms fail to destroy a foreign organism, the organism is so infested with our own cells that said organism cannot be extracted and examined in order to divine a cure."`
+			`	"And therefore, it is necessary to replicate afflictions in the laboratory so that we have clean copies of the pathogen to test on." Having finally finished, Feun'ragnam looks quite pleased with herself.`
+			choice
+				`	"Right then. Why do you need me here?"`
+			label 3
+			`	"As you probably guessed," Feun'ragnam replies, "We need you to locate clean samples of the bioweapon in order to allow us to replicate it."`
+			`	Bringing up a galactic map on a holoscreen, the Kaltheim highlights <system>. "<planet> is the origin point of the bioweapon; its first deployment against us," Feun'ragnam says. "The first troops to be affected were storming the tunnels underneath the capital city. As a result, there should be something of the bioweapon left in there."`
+			choice
+				`	"That bunker is still active- you want me to go down there?!"`
+				`	"Okay, I'll go do that for you then."`
+					goto end
+			`	Feun'ragnam shrugs. "It's the only potential source that we could obtain samples of the gas from; Affalan is an environmental disaster- anything of the bioweapon in the atmosphere has likely mutated into something else already."`
+			choice
+				`	"Fine, I'll do it- if your entire species' fate depends on it, I don't really have a choice, do I?"`
+					goto end
+				`	"You know what? No. I'm not risking my life for this again, not after I almost got stranded on Affalan."`
+			`	"You're sure?" the scientist asks. "Declining this mission could stop you taking part in any future story developments."`
+			choice
+				`	"Actually, I don't want to compromise my progress in the storyline. I'll do it."`
+					goto end
+				`	"I'm sure. I want to completely mess up the story for myself."`
+			`	"Well, it was your choice," Feun'ragnam says. "It was nice knowing you."`
+				decline
+			label end
+			`	"If this works, we should have a cure within weeks," Feun'ragnam tells you as she accompanies you out of the facility. "Good luck."`
+				accept
+	on complete
+		dialog
+			`You've arrived on <planet>. You should contact some Enclave higher-ups to see if you can get some troops to assist you.`
+					
+mission "Enclave Blue 4G"
+	name "Return to <planet>"
+	description "Travel to <destination> with the samples of the XSZ bioweapon for the Kaltheim scientists to test on."
+	source Latent
+	destination Kri'eg'lyen
+	to offer
+		has "Enclave Blue 4F: done"
+	on offer
+		conversation
+			`Having requested a platoon of soldiers to assist you in digging any traces of the bioweapon out of the tunnels, you meet them at the tunnel entrance, in the basement of one of Latent's skyscrapers. In the weeks in which you have been away, the bunker which the tunnels lead to has remained unbreached; according to the latest reports from the team surveilling the bunker, the number of life signs within has held constant, meaning that the food stocks within there have not yet been depleted.`
+			`	"Most of the traps and dangers within the tunnels have been removed," one of the soldiers tells you. "Since you're still on leave, you're technically a civilian, Commander, so we'll take the lead."`
+			choice
+				`	"Sure. Let's go."`
+				`	"No, I want to be in the lead!" (Head into the tunnel.)`
+					goto other
+			`	Half of the platoon heads into the tunnel ahead of you, the other half behind. As you descend into the bowels of the planet, the floor slowly begins to even out, changing from the slick, polished metal flooring and walls to bare concrete. As you walk, you hear the click of automated laser turrets in the walls multiple times, but nothing happens; clearly, the Navy successfully managed to deactivate them all.`
+			label 1
+			`	After some consultation with a map, the soldiers tell you to stop. "This is the spot where the bioweapon was released," they say. The only noticeable difference in this area of the tunnel to the previous areas is a set of small metal grilles covering the floor and walls- clearly the deployment method of the bioweapon.`
+			choice
+				`	"Can we remove the grilles?"`
+					goto 3
+				`	"Does anyone know how to reactivate this trap?"`
+			`	A soldier steps forward, seemingly the unit's engineer. "I can," he says, taking out a toolkit and heading over to an exposed panel of electronics in the wall.`
+			label 2
+			`	Five minutes of soldering later, and the trap is apparently reactivated- when you walk over it, there is a small hissing sound, and a tangible feeling of gas escaping.`
+			choice
+				`	(Capture some of the gas in a vial.)`
+			`	Taking out a small glass vial given to you by the Kaltheim on <planet>, you place it over the nearest grille, capturing as much of the gas as possible. Once you feel like the vial is full enough, you remove it from the grille and quickly place a stopper on it to prevent any gas from leaking out of the vial.`
+			choice
+				`	"We're done here. Let's go."`
+			`	The soldiers form up ahead of and behind you, ready for a nice, long walk back to the surface with a vial of deadly bioweapon in your pocket.`
+				accept
+			label 3
+			`	"We can't," one of the soldiers, seemingly the unit's engineer, says. "It's far easier to just reactivate it."`
+			choice
+				`	"Fair enough. Go ahead."`
+					goto 2
+			label other
+			`	You run ahead into the tunnel, the soldiers behind you. After a while, they (sadly) catch up with you, however.`
+				goto 1
+	on complete
+		payment 50000000
+		set "license: Kaltheim"
+		event "kaltheim recovery I" 2
+		event "kaltheim recovery II" 7
+		event "kaltheim integration I" 14
+		event "kaltheim integration II" 21
+		event "kaltheim integration III" 28
+		event "morbosa" 31
+		conversation
+			`"Excellent!" Feun'ragnam says excitedly as you hand the vial over to her. "There'll be no barrier to our research now- with any luck, our species is saved!"`
+			choice
+				`	"It was my pleasure."`
+				`	"How much am I getting paid for this?"`
+			`	"<payment>," the scientist replies. "We're paying you <payment> for this; it's all we could afford out of our budget. You also have access to our ships and technology. Go wild."`
+			choice
+				`	"That's... a lot. Thank you!"`
+			`	"You saved our entire race," Feun'ragnam says. "It's reasonable."`
+			choice
+				`	"How likely am I to be coming back here again after this?"`
+				`	"Bye, then."`
+					goto 1
+			`	"Unlikely," she replies. "This entire facility is classified; to most of our people, we don't exist. We might meet again, though; you never know."`
+			choice
+				`	"Bye, then."`
+			label 1
+			`	"Goodbye indeed," Feun'ragnam says, awkwardly shaking your hand.`
 				decline

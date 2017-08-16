@@ -1,11 +1,7 @@
 
-galaxy "Enclave Galaxy"
+galaxy Tyridium
 	pos 5000 500
 	sprite ui/EnclaveGalaxy
-
-galaxy Labels
-	pos 5000 500
-	sprite label/Labels
 
 system Abomin
 	pos 4806.53 362.251
@@ -240,12 +236,10 @@ system Aetrus
 			period 40.198
 
 system Akildocs
-	pos 4722.05 435.649
+	pos 4699.5 433.394
 	habitable 1080
-	link Taarsten
 	link Gaenealf
 	link Thornton
-	link Ibained
 	asteroids "small rock" 8 5.9976
 	asteroids "medium rock" 16 5.5216
 	asteroids "large rock" 6 4.284
@@ -431,6 +425,10 @@ system Anvyu
 	fleet Trader 500
 	fleet Transporter 600
 	fleet "Enclave Patrol" 1600
+	fleet "enclave small pirate west" 800
+	fleet "enclave large pirate west" 1700
+	fleet "enclave small pirate east" 2300
+	fleet "enclave large pirate east" 2700
 	object
 		sprite "star (animated)/k5"
 			"frame rate" 0.2
@@ -888,14 +886,11 @@ system Breijkip
 
 system Cheons
 	pos 4749.31 323.306
-	government Enclave
 	habitable 858.28
-	link Rumebali
 	link Thornton
 	link Schnael
 	link Ibained
 	link Abomin
-	link Opheuldod
 	asteroids "medium rock" 86 1.17
 	asteroids "large rock" 1 2.412
 	asteroids "medium metal" 5 1.62
@@ -1399,11 +1394,9 @@ system Descent
 		period 1390.57
 
 system Driaca
-	pos 4654.21 458.486
+	pos 4559.5 377.306
 	habitable 486.68
-	link Taarsten
 	link Lardiam
-	link Gaenealf
 	asteroids "small rock" 9 3.0324
 	asteroids "medium rock" 30 3.2452
 	asteroids "large rock" 48 2.0216
@@ -1697,6 +1690,9 @@ system Five
 	fleet Trader 500
 	fleet Transporter 500
 	fleet "Enclave Patrol" 600
+	fleet "enclave small pirate west" 1700
+	fleet "enclave large pirate west" 1900
+	fleet "enclave small pirate east" 3000
 	object
 		sprite "star (animated)/g5"
 			"frame rate" 0.2
@@ -1755,7 +1751,7 @@ system Five
 			offset 119.527
 
 system Floop
-	pos 4632.21 339.486
+	pos 4615.3 296.641
 	habitable 425.92
 	link Lardiam
 	link Crourp
@@ -1990,7 +1986,6 @@ system Four
 
 system Frill
 	pos 4788.61 502.955
-	government Enclave
 	habitable 1080
 	link Adke
 	link Gaenealf
@@ -2099,7 +2094,6 @@ system Gaenealf
 	link Frill
 	link Akildocs
 	link Thornton
-	link Driaca
 	link Arkhos
 	link Theurrhaeus
 	asteroids "medium rock" 3 5.3676
@@ -2333,12 +2327,11 @@ system Hrau'ngri'liadien
 		period 2650.08
 
 system Ibained
-	pos 4728.99 380.102
-	government Enclave
+	pos 4721.1 389.122
 	habitable 486.68
 	link Rumebali
-	link Akildocs
 	link Cheons
+	link Thornton
 	asteroids "medium rock" 18 5.7024
 	asteroids "large rock" 7 3.1482
 	asteroids "medium metal" 5 4.158
@@ -2890,7 +2883,7 @@ system Kama'la'ez
 			period 35.8918
 
 system Lardiam
-	pos 4627.21 376.486
+	pos 4603.53 356.191
 	habitable 320
 	link Floop
 	link Taarsten
@@ -3196,7 +3189,7 @@ system Mezzanine
 	fleet Transporter 1000
 	object
 		sprite "star (animated)/neutron"
-			"frame rate" 40
+			"frame rate" 18
 		period 10
 	object
 		sprite planet/cloud2
@@ -3282,11 +3275,9 @@ system Muraganda
 
 system Ninsug
 	pos 4824.61 497.955
-	government Enclave
 	habitable 2507.76
 	link Pipaeus
 	link Pralmia
-	link Thornton
 	link Frill
 	asteroids "small rock" 1 1.3409
 	asteroids "medium rock" 5 1.4168
@@ -3334,10 +3325,9 @@ system Ninsug
 			period 32.9038
 
 system Opheuldod
-	pos 4748.21 244.486
+	pos 4745.96 245.613
 	habitable 486.68
 	link Schnael
-	link Cheons
 	asteroids "small rock" 1 3.3033
 	asteroids "medium rock" 3 2.8392
 	asteroids "large rock" 7 3.8493
@@ -3584,6 +3574,8 @@ system Pipaeus
 	fleet Transporter 500
 	fleet "Enclave Patrol" 1000
 	fleet "Enclave Capital" 2000
+	fleet "enclave small pirate west" 1200
+	fleet "enclave large pirate west" 2100
 	object
 		sprite "star (animated)/f5"
 			"frame rate" 0.2
@@ -3639,7 +3631,6 @@ system Pipaeus
 
 system Pralmia
 	pos 4800.61 418.955
-	government Enclave
 	habitable 320
 	link Ninsug
 	link Thornton
@@ -3789,7 +3780,6 @@ system Rumebali
 	habitable 1948.28
 	link Taarsten
 	link Crourp
-	link Cheons
 	link Ibained
 	asteroids "small rock" 5 2.1714
 	asteroids "medium rock" 21 3.234
@@ -4107,6 +4097,8 @@ system Smoline
 	fleet "Enclave Capital" 5000
 	fleet "XSZ Small" 3000
 	fleet "XSZ Large" 5000
+	fleet "enclave small pirate west" 1200
+	fleet "enclave small pirate east" 1200
 	object
 		sprite "star (animated)/f5"
 			"frame rate" 0.2
@@ -4334,10 +4326,8 @@ system Syj'ngf'bnk
 			period 15.2932
 
 system Taarsten
-	pos 4682.21 403.486
+	pos 4656.28 379.809
 	habitable 1505.92
-	link Driaca
-	link Akildocs
 	link Lardiam
 	link Rumebali
 	asteroids "small rock" 41 1.624
@@ -4476,9 +4466,11 @@ system Theurrhaeus
 	trade Medical 830
 	trade Metal 350
 	trade Plastic 430
-	fleet Trader 3000
-	fleet Transporter 3000
-	fleet "Enclave Patrol" 2000
+	fleet Trader 600
+	fleet Transporter 600
+	fleet "Enclave Patrol" 1200
+	fleet "enclave small pirate west" 900
+	fleet "enclave large pirate west" 1500
 	object
 		sprite "star (animated)/m0"
 			"frame rate" 0.2
@@ -4525,13 +4517,12 @@ system Theurrhaeus
 
 system Thornton
 	pos 4765.61 407.955
-	government Enclave
 	habitable 5000
-	link Ninsug
 	link Pralmia
 	link Akildocs
 	link Gaenealf
 	link Cheons
+	link Ibained
 	asteroids "small rock" 51 3.168
 	asteroids "medium rock" 143 3.234
 	asteroids "large rock" 50 1.452
@@ -4654,8 +4645,6 @@ system Umba'draeuin
 	asteroids "small metal" 2 3.36
 	asteroids "medium metal" 6 6.144
 	asteroids "large metal" 5 2.496
-	fleet "Kaltheim Small" 700
-	fleet "Kaltheim Large" 1100
 	trade Clothing 290
 	trade Electronics 740
 	trade Equipment 530
@@ -4666,6 +4655,8 @@ system Umba'draeuin
 	trade Medical 680
 	trade Metal 390
 	trade Plastic 390
+	fleet "Kaltheim Small" 700
+	fleet "Kaltheim Large" 1100
 	object
 		sprite "star (animated)/k0"
 			"frame rate" 0.2
@@ -4911,8 +4902,8 @@ system Whuroxla
 			period 12.7484
 
 system Xenos
-	pos -848.78 -338
-	government Republic
+	pos -842.525 -376.208
+	government Uninhabited
 	habitable 625
 	asteroids "large rock" 1 4.0608
 	asteroids "small metal" 2 2.9088
@@ -4929,6 +4920,7 @@ system Xenos
 	trade Plastic 390
 	object
 		sprite "star (animated)/g5"
+			"frame rate" 0.2
 		period 10
 	object "Enclave Wormhole"
 		sprite planet/wormhole
@@ -5044,6 +5036,7 @@ planet Brun'ily'rhasunx
 	description `	The few major cities here seem to be little more than enormous processing plants for the food produced here, with most of the population employed there.`
 	spaceport `The spaceport, instead of having been designed purely to facilitate the transportation of food, appears to have been simply converted from an enormously devoted military complex, to the transportation centre which it is now.`
 	spaceport `	As you scanned the spaceport area as you landed, you noticed that there are a number of deeply sunken walls below the surface, although they do not appear to have any structural significance.`
+	outfitter "Kaltheim Small"
 	"required reputation" 500
 
 planet Carmine
@@ -5136,8 +5129,10 @@ planet Era'lgin'bl
 	description `	The inhabitants regard you with more than interest- the look in their eyes is more akin to how a predator watches their prey.`
 	spaceport `The spaceport is sunk deep into a large crater, and, oddly enough, the fuel pumps align with your ship's relevant ports perfectly.`
 	spaceport `	The complex appears to be built out of some odd, glowing blue metal. While you suspect it may be reactive, it is impossible to tell.`
-	"required reputation" 500
-
+	shipyard "Kaltheim Small"
+	outfitter "Kaltheim Basics"
+	outfitter "Kaltheim Advanced"
+	
 planet "Euclid Station"
 	attributes xsz
 	landscape land/space1
@@ -5185,6 +5180,9 @@ planet Gahr'wregdl'iahr
 	description `	Gahr'wregdl'iahr is, seemingly, a heavily militarized world. Nearly every facility you see is in some way optimized to contribute to a galactic war effort, with either orbital defense systems in place, heavy-duty planetary shielding, or vast strips of abandoned tarmac landing pads designed for enormous armadas of ships.`
 	description `	You find this odd- the Kaltheim have not yet accessed the Jump Drive, and yet they are still preparing for war, with no obvious schisms in their society, nor opposing species in their region of space.`
 	spaceport `The spaceport is more of a garrison than a true spaceport; most of the areas within the complex are given over to weapons storage and barracks. The whole site is surrounded by a somewhat unnervingly large array of planet-to-space defence weaponry, in addition to the gargantuan shield generators nearby.`
+	shipyard "Kaltheim Small"
+	outfitter "Kaltheim Basics"
+	outfitter "Kaltheim Advanced"
 	"required reputation" 500
 
 planet Idivine
@@ -5256,8 +5254,12 @@ planet Kri'eg'lyen
 	attributes kaltheim
 	landscape land/mountain7
 	description `This ice-ridden moon seems like an environment which the Kaltheim feel particularly comfortable in- even moreso than the climate of their native world. A surprisingly large amount of scruffy vegetation has survived here, riddling the foothills of the larger mountains.`
-	description `	Most Kaltheim settlements here appear to be decentralised pockets of warship building- each town may be working on a single heavy warhsip at a time, but when that is put together, the total ship output of this planet is formidable.`
+	description `	Most Kaltheim settlements here appear to be decentralised pockets of warship building- each town may be working on a single heavy warship at a time, but when that is put together, the total ship output of this planet is formidable.`
 	spaceport `The spaceport seems to be the hub to which newly built ships are flown from all over the planet- from what you can see, a large section of the spaceport is off-limits to visitors, presumably to allow Kaltheim authorities to ensure that new battleships are ready for spaceflight.`
+	shipyard "Kaltheim Small"
+	shipyard "Kaltheim Big"
+	outfitter "Kaltheim Basics"
+	outfitter "Kaltheim Advanced"
 	"required reputation" 500
 
 planet Latent
@@ -5382,6 +5384,7 @@ planet Oro'alein'platrez
 	landscape land/sea0
 	description `Oro'alein'platrez is cold and gloomy, somewhat typical of Kaltheim worlds. Most of the land is flat and low-lying, and while the massive life readings coming from the oceans indicate that fishing here would be a successful commercial enterprise, there seem to be only a few seaborne vessels. A lot of the areas above sea level appear to have been given to farming; the fact that the vast majority of the planet's landscape is divided into perfectly square fields seems to indicate that this planet is the breadbasket of the Kaltheim's civilisation, despite the low levels of sunlight that reach the planet's surface.`
 	spaceport `The spaceport is a regimented mass of sullen, blocky buildings. It appears that most of the infrastructure here has been designed solely for the purpose of shifting food from the farms, to the spaceport, and off the planet in order to feed the rest of the Kaltheim race.`
+	outfitter "Kaltheim Basics"
 	"required reputation" 500
 
 planet Ortite
@@ -5435,11 +5438,12 @@ planet Puggleswap
 	spaceport `		A`
 	spaceport `			C`
 	spaceport `				E`
-	spaceport `			P`
-	spaceport `		O`
-	spaceport `	R`
+	spaceport `				P`
+	spaceport `			O`
+	spaceport `		R`
 	spaceport `	T`
 	shipyard "All ships"
+	outfitter "Enclave.mod outfits"
 
 planet Quaver
 	attributes enclave notjumblar
@@ -5524,5 +5528,9 @@ planet Ziv'rahk'ashgrir
 	description `	Unlike other major Kaltheim garrisons, Ziv'rahk'ashgrir has a fairly large shipbuilding industry in addition to the pure military features- presumably, the on-world shipbuilding is to allow the fleets stationed here to be replenished relatively quickly without needing to transfer forces from other parts of space.`
 	spaceport `The spaceport has a decent section of it devoted to the transfer of civilians to and from space; in fact, this area feels almost like a human spaceport, if it were not for the grey-skinned aliens walking around in place of humans.`
 	spaceport `	The rest of the spaceport is comprised of military buildings, planetary defences, and a few small ship construction lines.`
+	shipyard "Kaltheim Small"
+	shipyard "Kaltheim Big"
+	outfitter "Kaltheim Basics"
+	outfitter "Kaltheim Advanced"
 	"required reputation" 500
 

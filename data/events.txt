@@ -1,10 +1,3 @@
-event "helheim outfitter"
-	planet Helheim
-		outfitter "Deep Sky Basics"
-
-event "enclave opens"
-	link Xenos Suhail
-		
 event "civil war"
 	government "Enclave"
 		"attitude toward"
@@ -192,6 +185,8 @@ event "attack on carmine"
 		fleet "XSZ Small" 500
 		fleet "XSZ Large" 1000
 		fleet "XSZ Nuclear" 1500
+		fleet "enclave small pirate west" 1200
+		fleet "enclave large pirate west" 2100
 	system Smoline
 		government "XSZ Corporation"
 	planet Carmine
@@ -305,7 +300,10 @@ event "kaltheim invasion"
 	planet "New Scotland"
 		description `New Scotland is a world consisting of scrubland and low mountain ranges, for the most part; it is an old world, where tectonic activity is beginning to die down. As a result of the decrease in tectonic activity, the planet's magnetoshpere is also slowly weakening. This in turn increases the amount of radiation falling on the surface, making the inhabitants much more likely to develop cancerous growths as they age.`
 		description `	Although this world is currently being occupied by the Kaltheim, you cannot actually see any signs of them in person; the only signs of their activities are the smoking remains of ships crashed into the deserts, and the frequent patrols that fly overhead.`
-		
+	planet Gahr'wregdl'iahr
+		description `This is a world of near-unbearable heat. As day turns to night, oceans emerge in the sunlit deserts, and as night turns to day, billions of cubic metres of liquid evaporate into the grim, foreboding clouds above.`
+		description `	Gahr'wregdl'iahr is, seemingly, a heavily militarized world. Nearly every facility you see is in some way optimized to contribute to a galactic war effort, with either orbital defense systems in place, heavy-duty planetary shielding, or vast strips of abandoned tarmac landing pads designed for enormous armadas of ships.`
+	
 event "kaltheim take seminar"
 	system Thaen
 		government Kaltheim
@@ -471,8 +469,8 @@ event "XSZ expansion 2"
 event "XSZ expansion 3"
 	system "Theurrhaeus"
 		government "XSZ Corporation"
-		fleet Trader 3000
-		fleet Transporter 3000
+		fleet Trader 600
+		fleet Transporter 600
 		fleet "Enclave Patrol" 2000
 		fleet "XSZ Small" 600
 		fleet "XSZ Large" 900
@@ -490,8 +488,567 @@ event "XSZ expansion 3"
 	planet "Saal"
 		description `Saal is an idyllic farming world, entirely at contrast with most of the other human residents of this galaxy, who seem to act very similarly to the humans of the Deep. Most power generation facilities, instead of using fusion or fission to generate electricity, are in fact wind-powered.`
 		description `	Saal was barely touched by the recent XSZ attack; it seems XSZ have little to no interest in farming worlds.`
+
 		
+event "caesennia fleets I"
+	fleet "Enclave Capital"
+		government "Enclave"
+		names "republic capital"
+		fighters "republic fighter"
+		cargo 0
+		personality
+			heroic
+		variant 800
+			"Apollo"
+			"Dart" 2
+			"Sea Drake" 3
+		variant 700
+			"Apollo"
+			"Dart" 2
+			"Penguin" 5
+		variant 500
+			"Apollo" 2
+			"Muesli Carrier"
+			"Dart" 4
+			"Enclave Lance" 12
+			"Sea Drake" 2
+			"Penguin" 5
+		variant 10
+			"Apollo" 5
+			"Muesli Carrier" 5
+			"Sea Drake" 15
+			"Penguin" 20
+			"Dart" 70
+		variant 5
+			"Caesennia" 3
+			"Apollo" 2
+			"Sea Drake" 5
+		
+event "caesennia fleets II"
+	fleet "Enclave Capital"
+		government "Enclave"
+		names "republic capital"
+		fighters "republic fighter"
+		cargo 0
+		personality
+			heroic
+		variant 80
+			"Apollo"
+			"Dart" 2
+			"Sea Drake" 3
+		variant 70
+			"Apollo"
+			"Dart" 2
+			"Penguin" 5
+		variant 50
+			"Apollo" 2
+			"Muesli Carrier"
+			"Dart" 4
+			"Enclave Lance" 12
+			"Sea Drake" 2
+			"Penguin" 5
+		variant 1
+			"Apollo" 5
+			"Muesli Carrier" 5
+			"Sea Drake" 15
+			"Penguin" 20
+			"Dart" 70
+		variant 1
+			"Caesennia" 3
+			"Apollo" 2
+			"Sea Drake" 5
+		
+event "caesennia fleets III"
+	fleet "Enclave Capital"
+		government "Enclave"
+		names "republic capital"
+		fighters "republic fighter"
+		cargo 0
+		personality
+			heroic
+		variant 80
+			"Apollo"
+			"Caesennia"
+			"Dart" 2
+			"Sea Drake" 3
+		variant 70
+			"Caesennia" 2
+			"Dart" 2
+			"Penguin" 5
+		variant 50
+			"Apollo" 2
+			"Caesennia"
+			"Muesli Carrier"
+			"Dart" 4
+			"Enclave Lance" 12
+			"Sea Drake" 2
+			"Penguin" 5
+		variant 1
+			"Apollo" 5
+			"Caesennia" 3
+			"Muesli Carrier" 5
+			"Sea Drake" 15
+			"Penguin" 20
+			"Dart" 70
 
 event "caesennia available"
 	shipyard "Enclave Tier 3"
 		"Caesennia"
+		
+		
+event "battle of maduras"
+	system "Maduras"
+		government "Enclave"
+		fleet Trader 600
+		fleet Transporter 600
+		fleet "Enclave Patrol" 500
+		fleet "Enclave Capital" 800
+		
+event "bioweapon retreat I"
+	system Thaen
+		fleet Trader 300
+		fleet Transporter 300
+		fleet "Enclave Patrol" 800
+		fleet "Enclave Capital" 1500
+	system Memus
+		fleet Trader 600
+		fleet Transporter 600
+		fleet "Enclave Patrol" 6000
+	system Cispia
+		fleet Trader 700
+		fleet "Enclave Patrol" 2400
+		fleet "Enclave Capital" 6000
+	system Daia
+		fleet Trader 700
+		fleet Transporter 700
+		fleet "Enclave Patrol" 1500
+		fleet "Enclave Capital" 3000
+	system "Deg Deg"
+		fleet Trader 700
+		fleet Transporter 700
+		fleet "Enclave Patrol" 1500
+		fleet "Enclave Capital" 3000
+	system Gautus
+		fleet Trader 700
+		fleet Transporter 700
+		fleet "Enclave Patrol" 2000
+		fleet "Enclave Capital" 3500
+	system Four
+		government Kaltheim
+		fleet Trader 1000
+		fleet Transporter 1000
+	system Aetrus
+		government Kaltheim
+		fleet Trader 700
+		fleet Transporter 700
+		fleet "Enclave Patrol" 2000
+		fleet "Enclave Capital" 3500
+		
+event "bioweapon retreat II"
+	system Fo'gar'helien
+		fleet "Kaltheim Small" 1100
+		fleet "Kaltheim Large" 1500
+	system Syj'ngf'bnk
+		fleet "Kaltheim Small" 1200
+		fleet "Kaltheim Large" 1600
+	system Ik'ari'aka
+		fleet "Kaltheim Small" 1200
+		fleet "Kaltheim Large" 1600
+	system Banq'rujol'ifus
+		fleet "Kaltheim Small" 1400
+		fleet "Kaltheim Large" 2200
+	system Jaaaar'aaaaa'l'u
+		fleet "Kaltheim Small" 1400
+		fleet "Kaltheim Large" 2200
+	system Umba'draeuin
+		fleet "Kaltheim Small" 1400
+		fleet "Kaltheim Large" 2200
+	system Crul'im'heim
+		fleet "Kaltheim Small" 2000
+		fleet "Kaltheim Large" 3000
+	system Grundel'froae
+		fleet "Kaltheim Small" 2000
+		fleet "Kaltheim Large" 3000
+	system Kama'la'ez
+		fleet "Kaltheim Small" 2000
+		fleet "Kaltheim Large" 3000
+	system Lo'or'awaen
+		fleet "Kaltheim Small" 2000
+		fleet "Kaltheim Large" 3000
+	system Ytgfrv'hjusd'ikmuivra	
+		fleet "Kaltheim Small" 2000
+		fleet "Kaltheim Large" 3000
+	system Vo'jaerun
+		fleet "Kaltheim Small" 2500
+		fleet "Kaltheim Large" 3500
+	system Hrau'ngri'liadien
+		fleet "Kaltheim Small" 2500
+		fleet "Kaltheim Large" 3500
+		
+event "bioweapon retreat III"
+	system Fo'gar'helien
+		fleet "Kaltheim Small" 1200
+		fleet "Kaltheim Large" 1600
+	system Syj'ngf'bnk
+		fleet "Kaltheim Small" 1400
+		fleet "Kaltheim Large" 2200
+	system Ik'ari'aka
+		fleet "Kaltheim Small" 1400
+		fleet "Kaltheim Large" 2200		
+	system Banq'rujol'ifus
+		fleet "Kaltheim Small" 1700
+		fleet "Kaltheim Large" 2500
+	system Jaaaar'aaaaa'l'u
+		fleet "Kaltheim Small" 1700
+		fleet "Kaltheim Large" 2500
+	system Umba'draeuin
+		fleet "Kaltheim Small" 1700
+		fleet "Kaltheim Large" 2500		
+	system Crul'im'heim
+		fleet "Kaltheim Small" 2500
+		remove fleet "Kaltheim Large"
+	system Kama'la'ez
+		fleet "Kaltheim Small" 2500
+		remove fleet "Kaltheim Large"
+	system Lo'or'awaen
+		fleet "Kaltheim Small" 2500
+		remove fleet "Kaltheim Large"
+	system Ytgfrv'hjusd'ikmuivra	
+		fleet "Kaltheim Small" 2500
+		remove fleet "Kaltheim Large"		
+	system Grundel'froae
+		remove fleet "Kaltheim Small"
+		remove fleet "Kaltheim Large"		
+	system Vo'jaerun
+		remove fleet "Kaltheim Small"
+		remove fleet "Kaltheim Large"
+	system Hrau'ngri'liadien
+		remove fleet "Kaltheim Small"
+		remove fleet "Kaltheim Large"
+		
+event "battle of finitum"
+	system "Finitum"
+		government "Enclave"
+		fleet Trader 1000
+		fleet Transporter 1000
+		fleet "Enclave Patrol" 1100
+		fleet "Enclave Capital" 1200
+	planet "Termite"
+		description `Termite is almost uninhabitable, even by usual standards for mining worlds. However, what does make it worthwhile to attempt to build settlements here is the lightning.`
+		description `	Termite's lightning is far, far stronger than on any other planet known to humanity, and as a result, whenever a bolt strikes, the enormous temperatures can actually fuse together hydrogen molecules found in the atmosphere to form helium. As a result, this planet is used as a massive, planet-sized fusion reactor in order to both generate large amounts of energy which can be stored and then shipped off-world, and to synthesise some rare elements via controlled fusion.`
+		
+event "battle of kaladesh"
+	system "Kaladesh"
+		government "Enclave"
+		fleet Trader 400
+		fleet Transporter 400
+		fleet "Enclave Patrol" 800
+		fleet "Enclave Capital" 1000
+	planet "Crackle"	
+		description `Crackle is one of the main manufacturing and mining worlds in this region of the Tyridium galaxy, thanks to the frequent impacts from objects falling out of the planetary rings above. While these impacts often throw up clouds of dust which may obscure the system's star for days or even weeks at a time, they both bring new material to the planet for mining and dig out large craters, allowing elements usually found deep within the crust to be mined relatively easily.`
+		description `	Most of the factories are situated well away from where the rings currently orbit; as the ring orbit moves north or south, the industrial centres move with it. They are designed to be able to be disassembled in mere weeks.`
+	planet "Cavalier Station"
+		description `Cavalier Station is a small facility which was once used by XSZ to prospect through the rings of Crackle, hunting for ore-rich bodies to push down onto Crackle.`
+		description `	Now, however, it has been turned into a ragged military platform, with the last remnants of XSZ holding out here behind the immensely powerful shields.`
+		spaceport `The docking areas have been turned into wastelands, entirely stripped of useful parts, the doors into the rest of the station barred with huge chunks of debris.`
+		bribe 0
+		government "XSZ Corporation"
+		
+event "cynic surrenders"
+	system "Ark"
+		government "Enclave"
+		fleet Trader 500
+		fleet Transporter 500
+		fleet "Enclave Patrol" 900
+		fleet "Enclave Capital" 1200
+	planet "Cynic"
+		description `The governing authorites on Cynic are notoriously stubborn and rebellious, having landed it the title of "Largest Thorn in XSZ's Backside" almost every year before it was liberated by the Enclave.`
+		description `	Since the liberation, however, an alarmingly lower amount of money has been invested in the development of new reactors- a move by the Enclave which will doubtlessly slow down technological development in this galaxy.`
+
+event "battle of orff"
+	system "Orff"
+		government "Enclave"
+		fleet Trader 500
+		fleet Transporter 500
+		fleet "Enclave Patrol" 1000
+	planet "Magna"
+		description `Magna is a desolate planet, having been continually strip mined by XSZ for the past two centuries. However, there are a reasonable number of settlements here. The reason why? XSZ's largest shipyards were once located here, meaning thousands of people migrated here each year to fill the massive number of jobs required to work in the shipyards, as well as the mines.`
+		description `	While you hear Storm Crow Industries has plans to salvage some of XSZ's old designs and convert the shipyards here into a new complex for manufacturing their own ships, nothing has happened as of yet. As a result, many families are out of work, with grumblings of discontent common among the populace.`
+		spaceport `The spaceport is an enormous complex, taking advantage of the massive space afforded by being in an area that has already been exhausted of its raw materials.`
+		spaceport `	A good third of the spaceport is filled by the now derelict and abandoned recruiting offices for various divisions of XSZ- XSZ Shipyards, XSZ Steel, XSZ Systems- and more.`
+	system "Anvyu"
+		government "Pirate"
+		fleet Trader 1500
+		fleet Transporter 1600
+		fleet "Enclave Patrol" 1800
+		fleet "enclave small pirate west" 1600
+		fleet "enclave large pirate west" 1900
+	system "Ithaos"
+		government "Pirate"
+		fleet Trader 900
+		fleet Transporter 900
+		fleet "Enclave Patrol" 2100
+		fleet "enclave small pirate west" 800
+		fleet "enclave large pirate west" 1100
+	system "Theurrhaeus"
+		government "Pirate"
+		fleet Trader 600
+		fleet Transporter 600
+		fleet "Enclave Patrol" 2000
+		fleet "enclave small pirate west" 600
+		fleet "enclave large pirate west" 900
+	system "Five"
+		government "Pirate"
+		fleet Trader 800
+		fleet Transporter 800
+		fleet "enclave small pirate west" 500
+		fleet "enclave large pirate west" 800
+	system "Pipaeus"
+		government "Pirate"
+		fleet "enclave small pirate west" 500
+		fleet "enclave large pirate west" 1000
+	system "Smoline"
+		government "Pirate"
+		fleet Trader 600
+		fleet Transporter 600
+		fleet "Enclave Patrol" 3000
+		fleet "Enclave Capital" 5000
+		fleet "enclave small pirate west" 1200
+		fleet "enclave small pirate east" 1200
+	system "Adke"
+		government "Pirate"
+		fleet "enclave small pirate west" 500
+		fleet "enclave large pirate west" 1000
+	system "Arkhos"
+		government "Pirate"
+		fleet Trader 900
+		fleet Transporter 900
+		fleet "Enclave Patrol" 2100
+		fleet "enclave small pirate west" 800
+		fleet "enclave small pirate west" 1100
+	system "Skryydr"
+		government "Pirate"
+		fleet Trader 600
+		fleet Transporter 600
+		fleet "enclave small pirate west" 300
+		fleet "enclave large pirate west" 400
+		
+event "battle of skryydr"
+	system "Skryydr"
+		government "Enclave"
+		fleet Trader 300
+		fleet Transporter 300
+		fleet "Enclave Patrol" 500
+		fleet "Enclave Capital" 600
+	planet "Mirrodin"
+		description `Mirrodin is an advanced space station designed by the XSZ Corporation. Encompassing much of the Skryydr system, Mirrodin is somewhat like a Quarg ringworld, albeit that it is constructed with proportions more suited to your human psyche. Mirrodin, like an onion, consists of layers; the spaceports are situated on the outer edge of the ring, followed by the outfitters and shipyards, then the commercial band, and then the residential sector, facing the star in the centre of the system.`
+		description `	The interior corridors are heavily scarred from the fighting between the occupying pirate forces and the Enclave's military in the weeks after the fall of XSZ. Luckily, Mirrodin's advanced hull prevented any breaches- relatively few civilians were killed during the fighting.`
+	system "Anvyu"
+		government "Enclave"
+		fleet Trader 500
+		fleet Transporter 600
+		fleet "Enclave Patrol" 1600
+		fleet "enclave small pirate west" 800
+		fleet "enclave large pirate west" 1700
+		fleet "enclave small pirate east" 2300
+		fleet "enclave large pirate east" 2700
+	system "Ithaos"
+		government "Enclave"
+	system "Theurrhaeus"
+		government "Enclave"
+		fleet Trader 600
+		fleet Transporter 600
+		fleet "Enclave Patrol" 1200
+		fleet "enclave small pirate west" 900
+		fleet "enclave large pirate west" 1500
+	system "Five"
+		government "Enclave"
+		fleet "Enclave Capital" 900
+		fleet Trader 500
+		fleet Transporter 500
+		fleet "Enclave Patrol" 600
+		fleet "enclave small pirate west" 1700
+		fleet "enclave large pirate west" 1900
+		fleet "enclave small pirate east" 3000
+	system "Pipaeus"
+		government "Enclave"
+		fleet Trader 500
+		fleet Transporter 500
+		fleet "Enclave Patrol" 1000
+		fleet "Enclave Capital" 2000
+		fleet "enclave small pirate west" 1200
+		fleet "enclave large pirate west" 2100
+	system "Smoline"
+		government "Enclave"
+		fleet Trader 600
+		fleet Transporter 600
+		fleet "Enclave Patrol" 3000
+		fleet "Enclave Capital" 5000
+		fleet "enclave small pirate west" 1200
+		fleet "enclave small pirate east" 1200
+	system "Arkhos"
+		government "Enclave"
+		
+event "battle of adke"
+	system "Adke"
+		government "Enclave"
+		fleet Trader 800
+		fleet Transporter 800
+		fleet "Enclave Patrol" 900
+		fleet "Enclave Capital" 500
+	planet "Alleshafen"
+		landscape land/fields13-sfiera
+		description `This planet was once the home of the Enclave's largest ship manufacturing centres, much like Geminus in the Republic. While it is a relatively old world, the crust is composed mostly of very heavy metals and rocks, and so handily, the lighter metals which are useful for shipbuilding are found very near to the surface.`
+		description `Like Carmine, however, Alleshafen bore the brunt of a large number of nuclear attacks. As a result, while it has not been decimated as completely as Carmine was- especially in the shipbuilding areas- the environment on Alleshafen will continue to be in a dire state thanks to the radiation from the nuclear blasts until well after you are dead.`
+		spaceport `	The nuclear attacks on Alleshafen, and the successive pirate occupation have led to a sudden surge of emigration to other planets. The year-long nuclear winters, widespread destruction of infrastructure, and irradiated environment have suddenly made Alleshafen an undesirable place to live. Consequently, the remains of the spaceport are bursting with refugees, looking for a way to get off-world.`
+
+event "kaltheim recovery I"
+	system Fo'gar'helien
+		fleet "Kaltheim Small" 1100
+		fleet "Kaltheim Large" 1500
+	system Syj'ngf'bnk
+		fleet "Kaltheim Small" 1200
+		fleet "Kaltheim Large" 1600
+	system Ik'ari'aka
+		fleet "Kaltheim Small" 1200
+		fleet "Kaltheim Large" 1600
+	system Banq'rujol'ifus
+		fleet "Kaltheim Small" 1400
+		fleet "Kaltheim Large" 2200
+	system Jaaaar'aaaaa'l'u
+		fleet "Kaltheim Small" 1400
+		fleet "Kaltheim Large" 2200
+	system Umba'draeuin
+		fleet "Kaltheim Small" 1400
+		fleet "Kaltheim Large" 2200
+	system Crul'im'heim
+		fleet "Kaltheim Small" 2000
+		add fleet "Kaltheim Large" 3000
+	system Grundel'froae
+		add fleet "Kaltheim Small" 2000
+		add fleet "Kaltheim Large" 3000
+	system Kama'la'ez
+		fleet "Kaltheim Small" 2000
+		add fleet "Kaltheim Large" 3000
+	system Lo'or'awaen
+		fleet "Kaltheim Small" 2000
+		add fleet "Kaltheim Large" 3000
+	system Ytgfrv'hjusd'ikmuivra	
+		fleet "Kaltheim Small" 2000
+		add fleet "Kaltheim Large" 3000
+	system Vo'jaerun
+		add fleet "Kaltheim Small" 2500
+		add fleet "Kaltheim Large" 3500
+	system Hrau'ngri'liadien
+		add fleet "Kaltheim Small" 2500
+		add fleet "Kaltheim Large" 3500
+
+event "kaltheim recovery II"
+	system Fo'gar'helien
+		fleet "Kaltheim Small" 600
+		fleet "Kaltheim Large" 1000
+	system Syj'ngf'bnk
+		fleet "Kaltheim Small" 700
+		fleet "Kaltheim Large" 1100
+	system Ik'ari'aka
+		fleet "Kaltheim Small" 700
+		fleet "Kaltheim Large" 1100
+	system Banq'rujol'ifus
+		fleet "Kaltheim Small" 700
+		fleet "Kaltheim Large" 1100
+	system Jaaaar'aaaaa'l'u
+		fleet "Kaltheim Small" 700
+		fleet "Kaltheim Large" 1100
+	system Umba'draeuin
+		fleet "Kaltheim Small" 700
+		fleet "Kaltheim Large" 1100
+	system Crul'im'heim
+		fleet "Kaltheim Small" 900
+		fleet "Kaltheim Large" 1300
+	system Kama'la'ez
+		fleet "Kaltheim Small" 900
+		fleet "Kaltheim Large" 1300
+	system Ytgfrv'hjusd'ikmuivra	
+		fleet "Kaltheim Small" 900
+		fleet "Kaltheim Large" 1300
+	system Vo'jaerun
+		fleet "Kaltheim Small" 800
+		fleet "Kaltheim Large" 1200
+	system Hrau'ngri'liadien
+		fleet "Kaltheim Small" 800
+		fleet "Kaltheim Large" 1200
+	system Lo'or'awaen
+		fleet "Kaltheim Small" 1000
+		fleet "Kaltheim Large" 1400
+	system Grundel'froae
+		fleet "Kaltheim Small" 1000
+		fleet "Kaltheim Large" 1400
+
+event "kaltheim integration I"
+	system Daia
+		add fleet "Kaltheim Small" 900
+		add fleet "Kaltheim Large" 1300
+	system Gautus
+		add fleet "Kaltheim Small" 900
+		add fleet "Kaltheim Large" 1300
+	system Four
+		add fleet "Kaltheim Small" 800
+		add fleet "Kaltheim Large" 1200
+	system Aetrus
+		add fleet "Kaltheim Small" 900
+		add fleet "Kaltheim Large" 1300
+	system Vo'jaerun
+		add fleet Trader 800
+		add fleet Transporter 800
+	system Hrau'ngri'liadien
+		add fleet Trader 800
+		add fleet Transporter 800
+	
+event "kaltheim integration II"
+	system Cispia
+		add fleet "Kaltheim Small" 900
+		add fleet "Kaltheim Large" 1300
+	system "Deg Deg"
+		add fleet "Kaltheim Small" 1000
+		add fleet "Kaltheim Large" 1400
+	system Aether
+		add fleet "Kaltheim Small" 1000
+		add fleet "Kaltheim Large" 1400
+	system Thaen
+		add fleet "Kaltheim Small" 900
+		add fleet "Kaltheim Large" 1300
+	system Innenheim
+		add fleet "Kaltheim Small" 900
+		add fleet "Kaltheim Large" 1300
+	system Jaaaar'aaaaa'l'u
+		add fleet Trader 800
+		add fleet Transporter 800
+	system Umba'draeuin
+		add fleet Trader 800
+		add fleet Transporter 800	
+
+event "kaltheim integration III"
+	system Ortus
+		add fleet "Kaltheim Small" 1000
+		add fleet "Kaltheim Large" 1400
+	system Eskidilium
+		add fleet "Kaltheim Small" 1100
+		add fleet "Kaltheim Large" 1500
+	system Memus
+		add fleet "Kaltheim Small" 1000
+		add fleet "Kaltheim Large" 1400
+	system Outenheim
+		add fleet "Kaltheim Small" 1000
+		add fleet "Kaltheim Large" 1400
+	system Ares
+		add fleet "Kaltheim Small" 1100
+		add fleet "Kaltheim Large" 1500
+	system Fallout
+		add fleet "Kaltheim Small" 1100
+		add fleet "Kaltheim Large" 1500
+	system Banq'rujol'ifus
+		add fleet Trader 900
+		add fleet Transporter 900
+	system Fo'gar'helien
+		add fleet Trader 900
+		add fleet Transporter 900
