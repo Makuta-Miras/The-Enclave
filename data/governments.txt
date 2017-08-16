@@ -11,8 +11,8 @@ government Enclave
 	"hostile hail" "hostile enclave"
 	
 government "XSZ Corporation"
-	swizzle 4
-	color 0 .41 .71
+	swizzle 1
+	color .71 .41 .71
 		
 	"player reputation" 500
 	"attitude toward"
