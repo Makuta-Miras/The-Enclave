@@ -1,0 +1,43 @@
+mission "Enclave Orange 1A"
+	name "Defend Innenheim"
+	description "Fight off the coming Kaltheim attack on <destination>."
+	source Seminar
+	destination Jumblar
+	to offer
+		has "Enclave Endgame 5: done"
+	to fail
+		has "Enclave Blue 1A: active"
+	npc
+		government Enclave
+		personality heroic vindictive escort
+		system Thaen
+		fleet
+			names "republic capital"
+			fighters "republic fighter"
+			variant
+				"Muesli Carrier" 8
+				"Apollo" 5
+				"Dart" 90
+		fleet
+			names "republic small"
+			variant
+				"Penguin" 15
+				"Enclave Destroyer" 10
+				"Sea Drake" 12
+	npc kill
+		government Kaltheim
+		personality entering staying vindictive
+		system Innenheim
+		fleet
+			names "kaltheim small"
+			variant
+				"Kru'urlin 89-B" 8
+				"Holzst'rnak 11-P" 5
+		fleet
+			names "kaltheim large"
+			fighters "kaltheim small"
+			variant
+				"Lenmig (Trapper)"
+				"Lenmig (Carrier)" 3
+				"Tyar'linhalf 67-G" 4
+				"Bulkort (Missile)" 9
