@@ -1,3 +1,17 @@
+------------------------------------------------------------------------  v0.0.10a ------------------------------------------------------------------------------
+19/08/17
+
+-Fixed some errors in Blue where I used <source> instead of <origin>.
+-Spellchecked Blue.
+
+
+16/08/17
+
+-Reset the player's Enclave rep upon first contact.
+-Grammary stuff in Enclave Intro.
+-Made the Kaltheim hostile to the player upon the beginning of the invasion.
+
+
 ------------------------------------------------------------------------  v0.0.10  ------------------------------------------------------------------------------
 16/08/17
 

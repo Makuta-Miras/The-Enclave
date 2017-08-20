@@ -54,7 +54,7 @@ mission "Enclave Blue 1A"
 				`	"No."`
 					goto 3
 			label 2
-			`	A broad grin spreads across the Kaltheim's face. "Contact my leaders, good sirs," it says. "And they will co-ordinate with you our first move agains the demons."`
+			`	A broad grin spreads across the Kaltheim's face. "Contact my leaders, good sirs," it says. "And they will co-ordinate with you our first move against the demons."`
 			`	As you and Kuznetsov are walking back to the surface, the Admiral says, "Well? What do you think?"`
 			choice
 				`	"I think this will let us defeat XSZ faster."`
@@ -1039,7 +1039,7 @@ mission "Enclave Blue 4A"
 	autosave
 	landing
 	source Mirrodin
-	stopover "Maduras"
+	stopover latent
 	destination Era'lgin'bl
 	to offer
 		has "Enclave Blue 3D: done"
@@ -1150,7 +1150,7 @@ mission "Enclave Blue 4C"
 			label 7
 			`	After a few steps, it becomes apparent that the hallway is in fact on a gentle slope downwards. All you can see ahead is a very uniform corridor design, completely silent apart from yours and Feun'ragnam's footsteps and the gentle whirring of the electronics.`
 			``
-			`	An hour of walking later, and you must be very deep into the crust of <source>; if the facility had simply been dug into a mountainside or something, you almost certainly would have come out the other side by now.`
+			`	An hour of walking later, and you must be very deep into the crust of <origin>; if the facility had simply been dug into a mountainside or something, you almost certainly would have come out the other side by now.`
 			`	In fact, you've been walking for so long that you can actually see a set of visible doors in front of you. Striding ahead, Feun'ragnam says something in the Kaltheim tongue- which, surprisingly, isn't translated- and the doors slide open to reveal a small chamber, presumably an elevator.`
 			`	"The laboratories are deep within the moon's crust, on the very edge of the primitive mantle which it has developed," Feun'ragnam says. "This is the only way down."`
 			`	As you step inside, the doors sealing and closing with a high-pitched pneumatic hum to maintain the pressure inside the elevator, you cannot help but feel a more than slight sense of trepidation about travelling miles downwards with this elevator as your only way out. You feel slightly heavier as the artifical gravity switches on, returning somewhat to your normal mass as the lift begins to descend at what must be breakneck speed.`
@@ -1162,7 +1162,7 @@ mission "Enclave Blue 4C"
 				`	"The temperature- why is it so cool down here?"`
 				`	(Say nothing.)`
 					goto 8
-			`	Feun'ragnam turns around. "You know our ships, yes?" You nod in reply. "Our race is naturally suited to the cold," she says. "The result of thousands of years of slavery and selective breeding, forced upon us by another species. When we discovered that <source> had enough tectonic activity to be able to sustain life, while not rising above our livable temperatures, it was the perfect moon for shipbuilding; low gravity, temperate albeit dry climate, large reserves of compounds required for our ships."`
+			`	Feun'ragnam turns around. "You know our ships, yes?" You nod in reply. "Our race is naturally suited to the cold," she says. "The result of thousands of years of slavery and selective breeding, forced upon us by another species. When we discovered that <origin> had enough tectonic activity to be able to sustain life, while not rising above our livable temperatures, it was the perfect moon for shipbuilding; low gravity, temperate albeit dry climate, large reserves of compounds required for our ships."`
 			`	The scientist pauses for a second. "We have been building our warships here for centuries," Feun'ragnam continues. "Unfortunately, a quarry for the ores we need for our ships went down too far. They broke through into the core, the only liquid rock on the moon. The sudden exposure of the core to the cold air outside caused some kind of reaction that resulted in a vast amount of the hot matter at the core of the moon being dragged out and expelled into the atmosphere."`
 			choice
 				`	"So, some miners accidentally sucked the entire core of the moon out?"`
@@ -1233,7 +1233,7 @@ mission "Enclave Blue 4D"
 			`	Deciding not to risk a far more serious collision, you pull your ship up, ascending a few thousand feet to an altitude where there should be far fewer mountains to interfere with your flight path.`
 			label 1
 			`	An hour later and your ship has once again crossed most latitudes and longitudes of the planet- the scan is complete.`
-			`	According to the data collected by the scan, the genetic signature of the bioweapon only actually exists in very, very tiny quantities on <source>'s surface and in the atmosphere, even smaller than would be expected. However, there is a small spot, only a square kilometre or two in size, on one of the southern continents which boasts a much higher concentration of the bioweapon than anywhere else.`
+			`	According to the data collected by the scan, the genetic signature of the bioweapon only actually exists in very, very tiny quantities on <origin>'s surface and in the atmosphere, even smaller than would be expected. However, there is a small spot, only a square kilometre or two in size, on one of the southern continents which boasts a much higher concentration of the bioweapon than anywhere else.`
 			choice
 				`	(Investigate the source.)`
 			`	You circle back round, plotting a course for the bioweapon-ridden area. During the flight there, you take the time to get into an armoured hazmat suit; if XSZ cooked up the bioweapon here, you have no idea what kind of other dangerous stuff could be holed up in the facility.`
@@ -1285,7 +1285,7 @@ mission "Enclave Blue 4D"
 			launch
 	on complete
 		conversation
-			`You return to the facility immediately after landing on <planet>. Upon arriving, you are met again by a different Kaltheim scientist, one who doesn't give their name. You hand the data you collected from the facility on <source> over to them.`
+			`You return to the facility immediately after landing on <planet>. Upon arriving, you are met again by a different Kaltheim scientist, one who doesn't give their name. You hand the data you collected from the facility on <origin> over to them.`
 			choice
 				`	"When will we know if any of this helps?"`
 				`	(Leave.)`
@@ -1327,7 +1327,7 @@ mission "Enclave Blue 4F"
 		has "Enclave Blue 4E: done"
 	on offer
 		conversation
-			`"Commander <last>!" Feun'ragnam says, greeting you (relatively) warmly as you step out of the elevator inside the laboratory complex on <source>. "The data you collected for us was a start, at least, in understanding how the bioweapon works."`
+			`"Commander <last>!" Feun'ragnam says, greeting you (relatively) warmly as you step out of the elevator inside the laboratory complex on <origin>. "The data you collected for us was a start, at least, in understanding how the bioweapon works."`
 			choice
 				`	"What do you mean, 'a start'? Was it incomplete?"`
 				`	(Nod as if you know what she's talking about.)`

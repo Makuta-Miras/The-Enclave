@@ -250,6 +250,7 @@ event "battle of perihelion"
 	
 event "kaltheim invasion"
 	government "Kaltheim"
+		"player reputation" -500000
 		"attitude toward"
 			"Enclave" -500000
 	government "Enclave"

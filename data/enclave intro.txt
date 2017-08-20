@@ -324,7 +324,7 @@ mission "Part 2 done"
 		has "Part 1 done: offered"
 	on offer
 		conversation
-			`As you step off your ship, you receive what appears to be another official notification from the Enclave government-`
+			`As you step off your ship, you receive what appears to be another official notification from the Enclave government:`
 			`	Captain <last>,`
 			`	Your recent work in helping to construct the new shipyards on Jumblar, in a far more proactive role than many other private captains who have been employed to do so, has brought you once again to the government's attention. As a result, you are hereby summoned to appear before Congress at any time before <date>.`
 			`	Regards,`
