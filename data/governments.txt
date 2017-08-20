@@ -2,7 +2,7 @@ government Enclave
 	swizzle 0
 	color .99 .99 .99
 		
-	"player reputation" 1000
+	"player reputation" 1
 	"attitude toward"
 		"Merchant" 100
 		"Pirate" -1000
@@ -35,8 +35,3 @@ government Kaltheim
 	swizzle 0
 	color 0 0.5 1
 	
-	"player reputation" 0
-	"attitude toward"
-		"Enclave" 0
-		"XSZ Corporation" 0
-	bribe 0
