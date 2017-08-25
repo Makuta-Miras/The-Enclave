@@ -3,6 +3,7 @@ mission "Enclave Orange 1A"
 	description "Fight off the coming Kaltheim attack on <destination>."
 	source Seminar
 	destination Jumblar
+	autosave
 	to offer
 		has "Enclave Endgame 5: done"
 	to fail
@@ -41,3 +42,69 @@ mission "Enclave Orange 1A"
 				"Lenmig (Carrier)" 3
 				"Tyar'linhalf 67-G" 4
 				"Bulkort (Missile)" 9
+	
+mission "Enclave Orange 1B"
+	name "Convoy to <planet>"
+	description "Escort the <npc> and their fleet to <destination>."
+	source Jumblar
+	destination Five
+	landing
+	autosave
+	to offer
+		has "Enclave Orange 1A: done"
+	on offer
+		conversation
+			`You meet Admiral Kuznetsov upon landing, all the Kaltheim forces in orbit having been destroyed.`
+			`	"That was sheer luck that we survived that," Kuznetsov says; the human death toll in the battle was horrendously high. "Anyway," the Admiral continues; "We've received reports of some Kaltheim forces jumping through the outskirts of our systems, but not engaging at all."`
+			choice
+				`	"Have they been doing anything else?"`
+					goto 1
+				`	"That's not right, do we know why they haven't been engaging?"`
+			`	"We're presuming that they simply can't be bothered with us," Kuznetsov replies. "They've established a strong presence to the west of us here already, so it would seem that they're favouring attacking XSZ over wiping out our meagre presence left here."`
+				goto 2
+			label 1
+			`	"Our scouts are reporting that they've actually been attacking XSZ," Kuznetsov replies. "So we've got no idea where that's going, but if the Kaltheim are ignoring us in favour of XSZ for a while, I don't think any of us have any complaints."`#
+			label 2
+			choice
+				`	"What now, then?"`
+			`	"We're pulling out of this arm of the galaxy," Kuznetsov replies. "We've got, what, three systems under our control here, surrounded by Kaltheim occupiers to the southwest and XSZ to the north. It simply isn't a good place to be, tactically."`
+			choice
+				`	"Fair enough. What do you need me to do?"`
+					goto 3
+				`	"So we're just giving these systems away?"`
+			`	"Yes, essentially," Kuznetsov says. "We can't hold on to them forever, anyway; if XSZ can hurt the Kaltheim at all then we'll inevitably end up fighting a war on two fronts here. If we cede the systems to the Kaltheim then with any luck we'll save civilian lives that would be lost to orbital bombardment and so on."`
+			choice
+				`	"That doesn't sit right with me."`
+			`	"Not my problem," the Admiral replies. "We think we've got a temporary ceasefire negotiated with XSZ, under the pretence that we're moving civilians and humanitarian supplies through their space to help the later relief efforts on Carmine and Alleshafen. While we are doing that, we're also using it as an excuse to consolidate our forces and build up for a nice counter-offensive to cut down XSZ. I want you to escort the first convoy of ships to <destination>. If we're lucky the Kaltheim will continue to ignore us. Otherwise, just jump the hell out of there; don't try to fight them."`
+				goto 4
+			label 3
+			`"We think we've got a temporary ceasefire negotiated with XSZ, under the pretence that we're moving civilians and humanitarian supplies through their space to help the later relief efforts on Carmine and Alleshafen," Kuznetsov begins. "While we are doing that, we're also using it as an excuse to consolidate our forces and build up for a nice counter-offensive to cut down XSZ. I want you to escort the first convoy of ships to <destination>. If we're lucky the Kaltheim will continue to ignore us. Otherwise, just jump the hell out of there; don't try to fight them."`
+			label 4
+			choice
+				`	"Understood."`
+			`	"Good luck, Commander," Kuznetsov says, beginning to walk away.`
+				accept
+		event "XSZ ceasefire (Orange)"
+	npc accompany save
+		government Enclave
+		personality timid disables escort
+		system Innenheim
+		fleet
+			names "republic small"
+			variant
+				"Sea Drake" 2
+				"Penguin" 3
+		fleet
+			names "republic capital"
+			fighters "republic fighter"
+			variant
+				"Apollo"
+				"Muesli Carrier" 2
+				"Dart" 26
+				"Leatherback" 2
+	on fail
+		dialog
+			`The <npc> has been destroyed. If you want to continue the story, reload your game.`
+	on visit
+		dialog
+			`You have arrived on <planet>, but you left the <npc> behind! Better take off and wait for them to arrive.`

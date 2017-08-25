@@ -1,3 +1,5 @@
+# Middle
+
 event "civil war"
 	government "Enclave"
 		"attitude toward"
@@ -247,6 +249,7 @@ event "battle of perihelion"
 	system Three
 		government Enclave
 	
+# Endgame
 	
 event "kaltheim invasion"
 	government "Kaltheim"
@@ -381,7 +384,8 @@ event "seminar retaken"
 		description `I think when they named this planet, the idea was to have it be home to some of the greatest educational and scientific institutes in the whole galaxy.`
 		description `	Yeah, that never happened. Instead, when some amazing narcotic plants were discovered here, the central galactic government didn't find out about them until it was social norm on Seminar to use substances derived from these plants every. Single. Day.`
 		description `	It appears that the Kaltheim didn't really know what to do with this world when they captured it; the planet was left entirely untouched during their occupation, apart from the scars of some superficial orbital bombardment.`
-		
+
+# Blue		
 		
 event "kaltheim truce (blue)"
 	government "Kaltheim"
@@ -1053,3 +1057,19 @@ event "kaltheim integration III"
 	system Fo'gar'helien
 		add fleet Trader 900
 		add fleet Transporter 900
+		
+# Orange
+
+event "XSZ ceasefire (Orange)"
+	government "XSZ Corporation"
+		"attitude toward"
+			"Kaltheim" -200
+			"Enclave" 0
+	government "Enclave"
+		"attitude toward"
+			"XSZ Corporation" 0
+			"Kaltheim" 0
+	government "Kaltheim"
+		"attitude toward"
+			"XSZ Corporation" -200
+			"Enclave" 0

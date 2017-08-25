@@ -1,4 +1,11 @@
 ------------------------------------------------------------------------  v0.0.11  ------------------------------------------------------------------------------
+25/08/17
+
+-Added Orange 1B.
+-Commented in which part of the story each event is for.
+-Started on the ceasefire event.
+
+
 20/08/17
 
 -Added Orange 1A.
