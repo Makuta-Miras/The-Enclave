@@ -1229,8 +1229,11 @@ mission "Enclave Blue 4D"
 			choice
 				`	(Pull up and scan from higher in the atmosphere; it's far too risky.)`
 				`	(Continue scanning at low altitude.)`
-					goto 1
+					goto 5
 			`	Deciding not to risk a far more serious collision, you pull your ship up, ascending a few thousand feet to an altitude where there should be far fewer mountains to interfere with your flight path.`
+				goto 1
+			label 5
+			scene "scene/keepgoing"
 			label 1
 			`	An hour later and your ship has once again crossed most latitudes and longitudes of the planet- the scan is complete.`
 			`	According to the data collected by the scan, the genetic signature of the bioweapon only actually exists in very, very tiny quantities on <origin>'s surface and in the atmosphere, even smaller than would be expected. However, there is a small spot, only a square kilometre or two in size, on one of the southern continents which boasts a much higher concentration of the bioweapon than anywhere else.`
