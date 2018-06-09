@@ -4,8 +4,8 @@ government Enclave
 		
 	"player reputation" 1
 	"attitude toward"
-		"Merchant" 100
-		"Pirate" -1000
+		"Merchant" .25
+		"Pirate" -.3
 	bribe 0
 	"friendly hail" "friendly enclave"
 	"hostile hail" "hostile enclave"
@@ -14,10 +14,10 @@ government "XSZ Corporation"
 	swizzle 1
 	color .71 .41 .71
 		
-	"player reputation" 500
+	"player reputation" 1
 	"attitude toward"
-		"Merchant" 150
-		"Pirate" -10
+		"Merchant" .25
+		"Pirate" -.3
 	bribe 0
 	"friendly hail" "friendly xsz"
 	"hostile hail" "hostile xsz"
