@@ -28,13 +28,13 @@ system Abomin
 	fleet Trader 900
 	fleet Transporter 900
 	object
-		sprite "star (animated)/k5"
+		sprite "star/animated/k5"
 			"frame rate" 0.2
 		distance 42.5
 		period 10.7401
 		offset 180
 	object
-		sprite "star (animated)/k5"
+		sprite "star/animated/k5"
 			"frame rate" 0.2
 		distance 42.5
 		period 10.7401
@@ -95,7 +95,7 @@ system Adke
 	fleet "Enclave Patrol" 1000
 	fleet "Enclave Capital" 500
 	object
-		sprite "star (animated)/f5"
+		sprite "star/animated/f5"
 			"frame rate" 0.2
 		period 10
 	object Alleshafen
@@ -147,7 +147,7 @@ system Aether
 	fleet "Enclave Patrol" 1500
 	fleet "Enclave Capital" 3000
 	object
-		sprite "star (animated)/k0"
+		sprite "star/animated/k0"
 			"frame rate" 0.2
 		period 10
 	object
@@ -203,7 +203,7 @@ system Aetrus
 	fleet "Enclave Patrol" 1500
 	fleet "Enclave Capital" 3000
 	object
-		sprite "star (animated)/m0"
+		sprite "star/animated/m0"
 			"frame rate" 0.2
 		period 10
 	object
@@ -247,7 +247,7 @@ system Akildocs
 	asteroids "medium metal" 20 4.522
 	asteroids "large metal" 11 3.9508
 	object
-		sprite "star (animated)/g0"
+		sprite "star/animated/g0"
 			"frame rate" 0.2
 		period 10
 	object
@@ -297,13 +297,13 @@ system Alcove
 	asteroids "medium metal" 3 3.2544
 	asteroids "large metal" 58 2.2752
 	object
-		sprite "star (animated)/f5"
+		sprite "star/animated/f5"
 			"frame rate" 0.2
 		distance 55.2558
 		period 12.9382
 		offset 180
 	object
-		sprite "star (animated)/g0"
+		sprite "star/animated/g0"
 			"frame rate" 0.2
 		distance 87.7442
 		period 12.9382
@@ -362,7 +362,7 @@ system Antithesis
 	fleet "Enclave Patrol" 2000
 	fleet "Enclave Capital" 2000
 	object
-		sprite "star (animated)/g0"
+		sprite "star/animated/g0"
 			"frame rate" 0.2
 		period 10
 	object Perihelion
@@ -430,7 +430,7 @@ system Anvyu
 	fleet "enclave small pirate east" 2300
 	fleet "enclave large pirate east" 2700
 	object
-		sprite "star (animated)/k5"
+		sprite "star/animated/k5"
 			"frame rate" 0.2
 		period 10
 	object
@@ -482,7 +482,7 @@ system Ares
 	fleet "Enclave Patrol" 1500
 	fleet "Enclave Capital" 3000
 	object
-		sprite "star (animated)/k0"
+		sprite "star/animated/k0"
 			"frame rate" 0.2
 		period 10
 	object
@@ -545,7 +545,7 @@ system Ark
 	fleet Transporter 500
 	fleet "XSZ Small" 1600
 	object
-		sprite "star (animated)/k5"
+		sprite "star/animated/k5"
 			"frame rate" 0.2
 		period 10
 	object
@@ -593,7 +593,7 @@ system Arkhos
 	asteroids "medium metal" 30 3.9798
 	asteroids "large metal" 2 7.4844
 	object
-		sprite "star (animated)/m8"
+		sprite "star/animated/m8"
 			"frame rate" 0.2
 		period 10
 	object
@@ -647,13 +647,13 @@ system Ascendant
 	asteroids "medium metal" 127 2.3958
 	asteroids "large metal" 5 2.1296
 	object
-		sprite "star (animated)/g5"
+		sprite "star/animated/g5"
 			"frame rate" 0.2
 		distance 33.5238
 		period 12.8173
 		offset 180
 	object
-		sprite "star (animated)/m0"
+		sprite "star/animated/m0"
 			"frame rate" 0.2
 		distance 65.4762
 		period 12.8173
@@ -721,13 +721,13 @@ system Banq'rujol'ifus
 	fleet "Kaltheim Small" 700
 	fleet "Kaltheim Large" 1100
 	object
-		sprite "star (animated)/g0"
+		sprite "star/animated/g0"
 			"frame rate" 0.2
 		distance 31.9963
 		period 10.5639
 		offset 180
 	object
-		sprite "star (animated)/k0"
+		sprite "star/animated/k0"
 			"frame rate" 0.2
 		distance 71.0037
 		period 10.5639
@@ -774,7 +774,7 @@ system Blackfriar
 	asteroids "medium metal" 6 7.7112
 	asteroids "large metal" 15 8.3592
 	object
-		sprite "star (animated)/g5"
+		sprite "star/animated/g5"
 			"frame rate" 0.2
 		period 10
 	object
@@ -841,12 +841,12 @@ system Breijkip
 	fleet Transporter 2000
 	fleet "XSZ Small" 3200
 	object
-		sprite "star (animated)/a5"
+		sprite "star/animated/a5"
 			"frame rate" 0.2
 		distance 19.0281
 		period 9.07321
 	object
-		sprite "star (animated)/g5"
+		sprite "star/animated/g5"
 			"frame rate" 0.2
 		distance 110.972
 		period 9.07321
@@ -896,12 +896,12 @@ system Cheons
 	asteroids "medium metal" 5 1.62
 	asteroids "large metal" 4 1.026
 	object
-		sprite "star (animated)/g5"
+		sprite "star/animated/g5"
 			"frame rate" 0.2
 		distance 30.1697
 		period 15.9672
 	object
-		sprite "star (animated)/m4"
+		sprite "star/animated/m4"
 			"frame rate" 0.2
 		distance 80.8303
 		period 15.9672
@@ -958,12 +958,12 @@ system Cispia
 	fleet "Enclave Patrol" 2400
 	fleet "Enclave Capital" 6000
 	object
-		sprite "star (animated)/g5"
+		sprite "star/animated/g5"
 			"frame rate" 0.2
 		distance 47.8234
 		period 15.8161
 	object
-		sprite "star (animated)/k5"
+		sprite "star/animated/k5"
 			"frame rate" 0.2
 		distance 70.1766
 		period 15.8161
@@ -1014,7 +1014,7 @@ system Clurth
 	fleet "Enclave Patrol" 1500
 	fleet "Enclave Capital" 3000
 	object
-		sprite "star (animated)/k5"
+		sprite "star/animated/k5"
 			"frame rate" 0.2
 		period 10
 	object
@@ -1074,7 +1074,7 @@ system Crourp
 	trade Metal 390
 	trade Plastic 390
 	object
-		sprite "star (animated)/m4"
+		sprite "star/animated/m4"
 			"frame rate" 0.2
 		period 10
 	object
@@ -1143,7 +1143,7 @@ system Crul'im'heim
 	fleet "Kaltheim Small" 700
 	fleet "Kaltheim Large" 1100
 	object
-		sprite "star (animated)/g5"
+		sprite "star/animated/g5"
 			"frame rate" 0.2
 		period 10
 	object
@@ -1207,13 +1207,13 @@ system Cymexes
 	fleet "Enclave Patrol" 1500
 	fleet "Enclave Capital" 3000
 	object
-		sprite "star (animated)/g5"
+		sprite "star/animated/g5"
 			"frame rate" 0.2
 		distance 51.0657
 		period 17.4514
 		offset 180
 	object
-		sprite "star (animated)/k5"
+		sprite "star/animated/k5"
 			"frame rate" 0.2
 		distance 74.9343
 		period 17.4514
@@ -1267,7 +1267,7 @@ system Daia
 	fleet "Enclave Patrol" 1500
 	fleet "Enclave Capital" 3000
 	object
-		sprite "star (animated)/k0"
+		sprite "star/animated/k0"
 			"frame rate" 0.2
 		period 10
 	object
@@ -1315,7 +1315,7 @@ system "Deg Deg"
 	fleet "Enclave Patrol" 1500
 	fleet "Enclave Capital" 3000
 	object
-		sprite "star (animated)/m0"
+		sprite "star/animated/m0"
 			"frame rate" 0.2
 		period 10
 	object
@@ -1354,12 +1354,12 @@ system Descent
 	asteroids "medium metal" 31 3.036
 	asteroids "large metal" 12 4.692
 	object
-		sprite "star (animated)/m0"
+		sprite "star/animated/m0"
 			"frame rate" 0.2
 		distance 45.1145
 		period 18.8219
 	object
-		sprite "star (animated)/m4"
+		sprite "star/animated/m4"
 			"frame rate" 0.2
 		distance 61.8855
 		period 18.8219
@@ -1414,7 +1414,7 @@ system Driaca
 	trade Metal 390
 	trade Plastic 390
 	object
-		sprite "star (animated)/k0"
+		sprite "star/animated/k0"
 			"frame rate" 0.2
 		period 10
 	object
@@ -1466,12 +1466,12 @@ system Dvorak
 	fleet "XSZ Small" 3000
 	fleet "XSZ Large" 5000
 	object
-		sprite "star (animated)/b5"
+		sprite "star/animated/b5"
 			"frame rate" 0.2
 		distance 8.47867
 		period 8.39459
 	object
-		sprite "star (animated)/k0"
+		sprite "star/animated/k0"
 			"frame rate" 0.2
 		distance 150.521
 		period 8.39459
@@ -1523,12 +1523,12 @@ system Eskidilium
 	fleet "Enclave Patrol" 1500
 	fleet "Enclave Capital" 3000
 	object
-		sprite "star (animated)/g0"
+		sprite "star/animated/g0"
 			"frame rate" 0.2
 		distance 39.4518
 		period 14.4636
 	object
-		sprite "star (animated)/k0"
+		sprite "star/animated/k0"
 			"frame rate" 0.2
 		distance 87.5482
 		period 14.4636
@@ -1581,13 +1581,13 @@ system Fallout
 	fleet "XSZ Small" 4000
 	fleet "XSZ Large" 6000
 	object
-		sprite "star (animated)/k0"
+		sprite "star/animated/k0"
 			"frame rate" 0.2
 		distance 50.5
 		period 13.0138
 		offset 180
 	object
-		sprite "star (animated)/k0"
+		sprite "star/animated/k0"
 			"frame rate" 0.2
 		distance 50.5
 		period 13.0138
@@ -1634,7 +1634,7 @@ system Finitum
 	fleet "XSZ Small" 3000
 	fleet "XSZ Large" 5000
 	object
-		sprite "star (animated)/g0"
+		sprite "star/animated/g0"
 			"frame rate" 0.2
 		period 10
 	object
@@ -1694,13 +1694,13 @@ system Five
 	fleet "enclave large pirate west" 1900
 	fleet "enclave small pirate east" 3000
 	object
-		sprite "star (animated)/g5"
+		sprite "star/animated/g5"
 			"frame rate" 0.2
 		distance 19.5395
 		period 16.7395
 		offset 180
 	object
-		sprite "star (animated)/m8"
+		sprite "star/animated/m8"
 			"frame rate" 0.2
 		distance 90.4605
 		period 16.7395
@@ -1771,7 +1771,7 @@ system Floop
 	trade Metal 390
 	trade Plastic 390
 	object
-		sprite "star (animated)/k5"
+		sprite "star/animated/k5"
 			"frame rate" 0.2
 		period 10
 	object
@@ -1840,7 +1840,7 @@ system Fo'gar'helien
 	fleet "Kaltheim Small" 700
 	fleet "Kaltheim Large" 1100
 	object
-		sprite "star (animated)/m4"
+		sprite "star/animated/m4"
 			"frame rate" 0.2
 		period 10
 	object
@@ -1927,13 +1927,13 @@ system Four
 	fleet Trader 1000
 	fleet Transporter 1000
 	object
-		sprite "star (animated)/g0"
+		sprite "star/animated/g0"
 			"frame rate" 0.2
 		distance 33.5496
 		period 11.3424
 		offset 180
 	object
-		sprite "star (animated)/k0"
+		sprite "star/animated/k0"
 			"frame rate" 0.2
 		distance 74.4504
 		period 11.3424
@@ -2000,7 +2000,7 @@ system Frill
 	fleet Transporter 9000
 	fleet "Enclave Capital" 20000
 	object
-		sprite "star (animated)/g0"
+		sprite "star/animated/g0"
 			"frame rate" 0.2
 		period 10
 	object
@@ -2048,13 +2048,13 @@ system Frontier
 	asteroids "medium metal" 24 2.9975
 	asteroids "large metal" 42 2.2275
 	object
-		sprite "star (animated)/m0"
+		sprite "star/animated/m0"
 			"frame rate" 0.2
 		distance 53.5
 		period 17.5003
 		offset 180
 	object
-		sprite "star (animated)/m0"
+		sprite "star/animated/m0"
 			"frame rate" 0.2
 		distance 53.5
 		period 17.5003
@@ -2112,7 +2112,7 @@ system Gaenealf
 	trade Metal 390
 	trade Plastic 390
 	object
-		sprite "star (animated)/k0"
+		sprite "star/animated/k0"
 			"frame rate" 0.2
 		period 10
 	object
@@ -2165,7 +2165,7 @@ system Gautus
 	fleet "Enclave Patrol" 1500
 	fleet "Enclave Capital" 3000
 	object
-		sprite "star (animated)/k0"
+		sprite "star/animated/k0"
 			"frame rate" 0.2
 		period 10
 	object
@@ -2246,7 +2246,7 @@ system Grundel'froae
 	fleet "Kaltheim Small" 700
 	fleet "Kaltheim Large" 1100
 	object
-		sprite "star (animated)/k0"
+		sprite "star/animated/k0"
 			"frame rate" 0.2
 		period 10
 	object
@@ -2298,7 +2298,7 @@ system Hrau'ngri'liadien
 	asteroids "medium metal" 56 2.8652
 	asteroids "large metal" 46 2.4505
 	object
-		sprite "star (animated)/m0"
+		sprite "star/animated/m0"
 			"frame rate" 0.2
 		period 10
 	object
@@ -2337,7 +2337,7 @@ system Ibained
 	asteroids "medium metal" 5 4.158
 	asteroids "large metal" 1 6.7716
 	object
-		sprite "star (animated)/k0"
+		sprite "star/animated/k0"
 			"frame rate" 0.2
 		period 10
 	object
@@ -2392,7 +2392,7 @@ system Ik'ari'aka
 	fleet "Kaltheim Small" 700
 	fleet "Kaltheim Large" 1100
 	object
-		sprite "star (animated)/k0"
+		sprite "star/animated/k0"
 			"frame rate" 0.2
 		period 10
 	object
@@ -2460,7 +2460,7 @@ system Indigo
 	fleet Transporter 700
 	fleet "XSZ Small" 2000
 	object
-		sprite "star (animated)/k5"
+		sprite "star/animated/k5"
 			"frame rate" 0.2
 		period 10
 	object
@@ -2542,7 +2542,7 @@ system Innenheim
 	fleet "Enclave Patrol" 3000
 	fleet "Enclave Capital" 5000
 	object
-		sprite "star (animated)/m0"
+		sprite "star/animated/m0"
 			"frame rate" 0.2
 		period 10
 	object
@@ -2594,7 +2594,7 @@ system Insolence
 	asteroids "medium metal" 65 1.496
 	asteroids "large metal" 12 3.212
 	object
-		sprite "star (animated)/m0"
+		sprite "star/animated/m0"
 			"frame rate" 0.2
 		period 10
 	object
@@ -2647,7 +2647,7 @@ system Ithaos
 	trade Metal 390
 	trade Plastic 390
 	object
-		sprite "star (animated)/k0"
+		sprite "star/animated/k0"
 			"frame rate" 0.2
 		period 10
 	object
@@ -2702,13 +2702,13 @@ system Jaaaar'aaaaa'l'u
 	fleet "Kaltheim Small" 700
 	fleet "Kaltheim Large" 1100
 	object
-		sprite "star (animated)/g0"
+		sprite "star/animated/g0"
 			"frame rate" 0.2
 		distance 19.7171
 		period 12.9082
 		offset 180
 	object
-		sprite "star (animated)/m4"
+		sprite "star/animated/m4"
 			"frame rate" 0.2
 		distance 91.2829
 		period 12.9082
@@ -2784,7 +2784,7 @@ system Kaladesh
 	fleet "XSZ Small" 1000
 	fleet "XSZ Large" 800
 	object
-		sprite "star (animated)/f5"
+		sprite "star/animated/f5"
 			"frame rate" 0.2
 		period 10
 	object
@@ -2847,12 +2847,12 @@ system Kama'la'ez
 	fleet "Kaltheim Small" 700
 	fleet "Kaltheim Large" 1100
 	object
-		sprite "star (animated)/g5"
+		sprite "star/animated/g5"
 			"frame rate" 0.2
 		distance 25.8209
 		period 12.6424
 	object
-		sprite "star (animated)/m4"
+		sprite "star/animated/m4"
 			"frame rate" 0.2
 		distance 69.1791
 		period 12.6424
@@ -2905,7 +2905,7 @@ system Lardiam
 	trade Metal 390
 	trade Plastic 390
 	object
-		sprite "star (animated)/m0"
+		sprite "star/animated/m0"
 			"frame rate" 0.2
 		period 10
 	object
@@ -2946,7 +2946,7 @@ system Lo'or'awaen
 	fleet "Kaltheim Small" 700
 	fleet "Kaltheim Large" 1100
 	object
-		sprite "star (animated)/m8"
+		sprite "star/animated/m8"
 			"frame rate" 0.2
 		period 10
 	object
@@ -2993,12 +2993,12 @@ system Lyvven
 	fleet "Enclave Patrol" 1500
 	fleet "Enclave Capital" 3000
 	object
-		sprite "star (animated)/g0"
+		sprite "star/animated/g0"
 			"frame rate" 0.2
 		distance 31.677
 		period 12.2176
 	object
-		sprite "star (animated)/k5"
+		sprite "star/animated/k5"
 			"frame rate" 0.2
 		distance 80.323
 		period 12.2176
@@ -3064,7 +3064,7 @@ system Maduras
 	fleet "XSZ Small" 600
 	fleet "XSZ Large" 800
 	object
-		sprite "star (animated)/f5"
+		sprite "star/animated/f5"
 			"frame rate" 0.2
 		period 10
 	object
@@ -3120,13 +3120,13 @@ system Memus
 	fleet Transporter 600
 	fleet "Enclave Patrol" 6000
 	object
-		sprite "star (animated)/g0"
+		sprite "star/animated/g0"
 			"frame rate" 0.2
 		distance 28.5659
 		period 10.4626
 		offset 180
 	object
-		sprite "star (animated)/k5"
+		sprite "star/animated/k5"
 			"frame rate" 0.2
 		distance 72.4341
 		period 10.4626
@@ -3188,7 +3188,7 @@ system Mezzanine
 	fleet Trader 1000
 	fleet Transporter 1000
 	object
-		sprite "star (animated)/neutron"
+		sprite "star/animated/neutron"
 			"frame rate" 18
 		period 10
 	object
@@ -3241,7 +3241,7 @@ system Muraganda
 	fleet "Enclave Patrol" 1500
 	fleet "Enclave Capital" 3000
 	object
-		sprite "star (animated)/g0"
+		sprite "star/animated/g0"
 			"frame rate" 0.2
 		period 10
 	object
@@ -3289,12 +3289,12 @@ system Ninsug
 	fleet Transporter 9000
 	fleet "Enclave Capital" 20000
 	object
-		sprite "star (animated)/f0"
+		sprite "star/animated/f0"
 			"frame rate" 0.2
 		distance 5.49096
 		period 8.22844
 	object
-		sprite "star (animated)/m8"
+		sprite "star/animated/m8"
 			"frame rate" 0.2
 		distance 96.509
 		period 8.22844
@@ -3345,7 +3345,7 @@ system Opheuldod
 	trade Metal 390
 	trade Plastic 390
 	object
-		sprite "star (animated)/k0"
+		sprite "star/animated/k0"
 			"frame rate" 0.2
 		period 10
 	object
@@ -3386,7 +3386,7 @@ system Orff
 	fleet Transporter 500
 	fleet "XSZ Small" 1000
 	object
-		sprite "star (animated)/g5"
+		sprite "star/animated/g5"
 			"frame rate" 0.2
 		period 10
 	object
@@ -3445,7 +3445,7 @@ system Ortus
 	fleet Transporter 600
 	fleet "Enclave Patrol" 4000
 	object
-		sprite "star (animated)/g0"
+		sprite "star/animated/g0"
 			"frame rate" 0.2
 		period 10
 	object
@@ -3511,7 +3511,7 @@ system Outenheim
 	fleet "Enclave Patrol" 3000
 	fleet "Enclave Capital" 5000
 	object
-		sprite "star (animated)/g0"
+		sprite "star/animated/g0"
 			"frame rate" 0.2
 		period 10
 	object
@@ -3577,12 +3577,12 @@ system Pipaeus
 	fleet "enclave small pirate west" 1200
 	fleet "enclave large pirate west" 2100
 	object
-		sprite "star (animated)/f5"
+		sprite "star/animated/f5"
 			"frame rate" 0.2
 		distance 27.6312
 		period 11.9137
 	object
-		sprite "star (animated)/k0"
+		sprite "star/animated/k0"
 			"frame rate" 0.2
 		distance 97.3688
 		period 11.9137
@@ -3640,7 +3640,7 @@ system Pralmia
 	fleet Transporter 1000
 	fleet "Enclave Patrol" 1500
 	object
-		sprite "star (animated)/m0"
+		sprite "star/animated/m0"
 			"frame rate" 0.2
 		period 10
 	object
@@ -3686,7 +3686,7 @@ system "Pug Aerzyrnium"
 	fleet "Small Pug" 800
 	fleet "Large Pug" 2000
 	object
-		sprite "star (animated)/m0"
+		sprite "star/animated/m0"
 			"frame rate" 0.2
 		period 10
 	object Puggleswap
@@ -3735,7 +3735,7 @@ system "Pug Morbosa"
 	fleet "Small Pug" 800
 	fleet "Large Pug" 2000
 	object
-		sprite "star (animated)/g5"
+		sprite "star/animated/g5"
 			"frame rate" 0.2
 		period 10
 	object
@@ -3798,12 +3798,12 @@ system Rumebali
 	trade Metal 390
 	trade Plastic 390
 	object
-		sprite "star (animated)/f5"
+		sprite "star/animated/f5"
 			"frame rate" 0.2
 		distance 15.5657
 		period 13.4323
 	object
-		sprite "star (animated)/m4"
+		sprite "star/animated/m4"
 			"frame rate" 0.2
 		distance 114.434
 		period 13.4323
@@ -3871,7 +3871,7 @@ system Saeus
 	fleet "Enclave Patrol" 800
 	fleet "Enclave Capital" 1500
 	object
-		sprite "star (animated)/k5"
+		sprite "star/animated/k5"
 			"frame rate" 0.2
 		period 10
 	object
@@ -3921,7 +3921,7 @@ system Schnael
 	trade Metal 390
 	trade Plastic 390
 	object
-		sprite "star (animated)/k5"
+		sprite "star/animated/k5"
 			"frame rate" 0.2
 		period 10
 	object
@@ -3981,7 +3981,7 @@ system Skryydr
 	fleet "XSZ Small" 500
 	fleet "XSZ Large" 600
 	object
-		sprite "star (animated)/g5"
+		sprite "star/animated/g5"
 			"frame rate" 0.2
 		period 10
 	object
@@ -4100,7 +4100,7 @@ system Smoline
 	fleet "enclave small pirate west" 1200
 	fleet "enclave small pirate east" 1200
 	object
-		sprite "star (animated)/f5"
+		sprite "star/animated/f5"
 			"frame rate" 0.2
 		period 10
 	object
@@ -4141,13 +4141,13 @@ system Staircase
 	asteroids "medium metal" 2 6.9525
 	asteroids "large metal" 9 3.5775
 	object
-		sprite "star (animated)/g5"
+		sprite "star/animated/g5"
 			"frame rate" 0.2
 		distance 43.7706
 		period 13.8488
 		offset 180
 	object
-		sprite "star (animated)/k5"
+		sprite "star/animated/k5"
 			"frame rate" 0.2
 		distance 64.2294
 		period 13.8488
@@ -4213,12 +4213,12 @@ system Svind
 	fleet "Enclave Capital" 4000
 	fleet "XSZ Small" 20000
 	object
-		sprite "star (animated)/f0"
+		sprite "star/animated/f0"
 			"frame rate" 0.2
 		distance 50.765
 		period 8.32713
 	object
-		sprite "star (animated)/f5"
+		sprite "star/animated/f5"
 			"frame rate" 0.2
 		distance 70.235
 		period 8.32713
@@ -4279,12 +4279,12 @@ system Syj'ngf'bnk
 	fleet "Kaltheim Small" 700
 	fleet "Kaltheim Large" 1100
 	object
-		sprite "star (animated)/f0"
+		sprite "star/animated/f0"
 			"frame rate" 0.2
 		distance 25.2272
 		period 9.72388
 	object
-		sprite "star (animated)/g5"
+		sprite "star/animated/g5"
 			"frame rate" 0.2
 		distance 95.7728
 		period 9.72388
@@ -4347,12 +4347,12 @@ system Taarsten
 	trade Metal 390
 	trade Plastic 390
 	object
-		sprite "star (animated)/g0"
+		sprite "star/animated/g0"
 			"frame rate" 0.2
 		distance 26.3032
 		period 9.2445
 	object
-		sprite "star (animated)/k5"
+		sprite "star/animated/k5"
 			"frame rate" 0.2
 		distance 66.6968
 		period 9.2445
@@ -4412,7 +4412,7 @@ system Thaen
 	fleet Transporter 300
 	fleet "Enclave Patrol" 2000
 	object
-		sprite "star (animated)/g5"
+		sprite "star/animated/g5"
 			"frame rate" 0.2
 		period 10
 	object
@@ -4472,12 +4472,12 @@ system Theurrhaeus
 	fleet "enclave small pirate west" 900
 	fleet "enclave large pirate west" 1500
 	object
-		sprite "star (animated)/m0"
+		sprite "star/animated/m0"
 			"frame rate" 0.2
 		distance 27.5934
 		period 16.8182
 	object
-		sprite "star (animated)/m8"
+		sprite "star/animated/m8"
 			"frame rate" 0.2
 		distance 65.4066
 		period 16.8182
@@ -4534,7 +4534,7 @@ system Thornton
 	fleet "Enclave Patrol" 1500
 	fleet "Enclave Capital" 2000
 	object
-		sprite "star (animated)/a0"
+		sprite "star/animated/a0"
 			"frame rate" 0.2
 		period 10
 	object
@@ -4584,7 +4584,7 @@ system Three
 	fleet "XSZ Small" 1500
 	fleet "XSZ Large" 3000
 	object
-		sprite "star (animated)/g5"
+		sprite "star/animated/g5"
 			"frame rate" 0.2
 		period 10
 	object
@@ -4658,12 +4658,12 @@ system Umba'draeuin
 	fleet "Kaltheim Small" 700
 	fleet "Kaltheim Large" 1100
 	object
-		sprite "star (animated)/k0"
+		sprite "star/animated/k0"
 			"frame rate" 0.2
 		distance 39.6704
 		period 10.3764
 	object
-		sprite "star (animated)/k5"
+		sprite "star/animated/k5"
 			"frame rate" 0.2
 		distance 45.3296
 		period 10.3764
@@ -4724,7 +4724,7 @@ system Unobu
 	fleet "Enclave Patrol" 5000
 	fleet "Enclave Capital" 7000
 	object
-		sprite "star (animated)/m0"
+		sprite "star/animated/m0"
 			"frame rate" 0.2
 		period 10
 	object Quaver
@@ -4750,7 +4750,7 @@ system Veil
 	asteroids "medium metal" 3 3.444
 	asteroids "large metal" 3 2.268
 	object
-		sprite "star (animated)/m8"
+		sprite "star/animated/m8"
 			"frame rate" 0.2
 		period 10
 	object
@@ -4806,7 +4806,7 @@ system Vo'jaerun
 	fleet "Kaltheim Small" 700
 	fleet "Kaltheim Large" 1100
 	object
-		sprite "star (animated)/a5"
+		sprite "star/animated/a5"
 			"frame rate" 0.2
 		period 10
 	object
@@ -4859,13 +4859,13 @@ system Whuroxla
 	fleet Transporter 1000
 	fleet "Enclave Patrol" 30000
 	object
-		sprite "star (animated)/k0"
+		sprite "star/animated/k0"
 			"frame rate" 0.2
 		distance 23.4526
 		period 18.0058
 		offset 180
 	object
-		sprite "star (animated)/m8"
+		sprite "star/animated/m8"
 			"frame rate" 0.2
 		distance 84.5474
 		period 18.0058
@@ -4919,7 +4919,7 @@ system Xenos
 	trade Metal 390
 	trade Plastic 390
 	object
-		sprite "star (animated)/g5"
+		sprite "star/animated/g5"
 			"frame rate" 0.2
 		period 10
 	object "Enclave Wormhole"
@@ -4942,7 +4942,7 @@ system Ytgfrv'hjusd'ikmuivra
 	fleet "Kaltheim Small" 700
 	fleet "Kaltheim Large" 1100
 	object
-		sprite "star (animated)/m4"
+		sprite "star/animated/m4"
 			"frame rate" 0.2
 		period 10
 	object
